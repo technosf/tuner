@@ -10,10 +10,10 @@
   <developer_name>technosf</developer_name>
   <launchable type="desktop-id">com.github.louis77.tuner.desktop</launchable>
   <branding>
-    <color type="primary" scheme_preference="light">#fafafa</color>
-    <color type="primary" scheme_preference="dark">#abacae</color>
+    <color type="primary" scheme_preference="light">#d2d9db</color>
+    <color type="primary" scheme_preference="dark">#77b8f1</color>
   </branding>
-  <summary>Internet Radio</summary>
+  <summary>Internet radio</summary>
   <description>
     <p>Make finding and listening to internet radio stations fun again!</p>
     <p>Instead of showing all the stations you already know,
