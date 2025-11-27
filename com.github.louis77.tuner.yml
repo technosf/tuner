@@ -4,7 +4,7 @@ app-id: com.github.louis77.tuner
 command: com.github.louis77.tuner
 
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 
 sdk: org.freedesktop.Sdk
 sdk-extensions:
@@ -58,8 +58,8 @@ modules:
   sources:
     - type: git
       url: https://gitlab.gnome.org/GNOME/libsoup.git
-      tag: 3.6.1
-      commit: 8b46a93bc1cbadb22dcdbb6844d9616723376535
+      tag: 3.6.5
+      commit: 766e17528251c9b696a6076300ac61adc95536ac
 
 - name: gee
   buildsystem: autotools
