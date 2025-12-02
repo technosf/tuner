@@ -99,7 +99,7 @@ public class Tuner.StationContextMenu : Gtk.Menu
 			website.activate.connect (on_website_handler);
 		}
 
-		var stream_url = new Gtk.MenuItem.with_label (_("Copy Stream-URL to clipboard"));
+		var stream_url = new Gtk.MenuItem.with_label (_("Copy Stream-URI to clipboard"));
 		stream_url.sensitive = true;
 		stream_url.activate.connect (on_streamurl_handler);
 

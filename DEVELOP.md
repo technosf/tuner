@@ -27,6 +27,19 @@ Discover and Listen to your favourite internet radio stations, and add improve t
 
 Hosted on Github, the _main_ branch reflects the current stable release. The _development_ branch is the development branch and where releases are staged. Pull Requests should be made against the _development_ branch.
 
+### Naming Conventions
+
+Going forward, all new code should conform to the following naming conventions:
+
+- Namespaces are named in camel case: NameSpaceName
+- Classes are named in camel case: ClassName
+- Method names are all lowercase and use underscores to separate words: method_name
+- Constants (and values of enumerated types) are all uppercase, with underscores between words: CONSTANT_NAME
+- Public properties are named in camel case: propertyName
+- Private member variables are named all lowercase and use underscores to separate words prefixed with an underscore: _var_name
+
+<!---- Signals are named all lowercase and use underscores to separate words postfixed with \_sig: propertyName_sig -->
+
 ### Dependencies
 
 Development dependencies for Tuner are:
@@ -77,11 +90,11 @@ meson configure -Dprefix=/usr
 sudo ninja install
 ```
 
-## Valadoc
+### Valadoc
 
 valadoc --force --pkg gtk+-3.0 --pkg glib-2.0 --pkg gee-0.8 --pkg gio-2.0 --pkg libsoup-3.0 --pkg json-glib-1.0 --pkg gstreamer-1.0 --pkg gstreamer-player-1.0 --pkg granite --package-name=Tuner -o apidocs  --verbose src/**/*.vala
 
-### Building the Tuner Flatpak
+## Building the Tuner Flatpak
 
 Tuner uses the **org.freedesktop.Sdk** version **25.08** with the  **Vala** extension. To build the tuner flatpak, install the freedesktop SDK, Platform and Vala extension. For example, for x86:
 
@@ -106,7 +119,13 @@ flatpak --user run com.github.louis77.tuner
 
 Check the app version to ensure that it matches the version in the manifest.
 
-### Readying code for a Pull Request
+## Readying code for a Pull Request
+
+### Build Changes
+
+If the build has changed it may be required to update repository check-in **Actions**. For example if the *Platform* chnges the Repository _Build and Test_ and _CI_ actions need to be updated. It is also good practice to check to see if the action components themselves have been superceded and need to reference new versions.
+
+### Code Changes
 
 Before a pull request can be accepted, the code must pass linting. This is done by running the following command:
 
@@ -129,19 +148,6 @@ Linting currently produces the following issues (adddressed in ticket #140):
 ```
 
 Ensure that the CI checks pass before pushing your changes.
-
-### NamingConventions
-
-Going forward, all new code should conform to the following naming conventions:
-
-- Namespaces are named in camel case: NameSpaceName
-- Classes are named in camel case: ClassName
-- Method names are all lowercase and use underscores to separate words: method_name
-- Constants (and values of enumerated types) are all uppercase, with underscores between words: CONSTANT_NAME
-- Public properties are named in camel case: propertyName
-- Private member variables are named all lowercase and use underscores to separate words prefixed with an underscore: _var_name
-
-<!---- Signals are named all lowercase and use underscores to separate words postfixed with \_sig: propertyName_sig -->
 
 ## Debugging
 

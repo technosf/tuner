@@ -31,8 +31,6 @@ LANGUAGE=de_DE ./com.github.louis77.tuner
 The flathub build manifest can be found here:
 <https://github.com/louis77/flathub/tree/com.github.louis77.tuner>
 
-- [ ] Move over to a non-elementary base image
-
 ## Pacstall
 
 Tuner is in the pacstall repo with the lastest release (1.3.1):

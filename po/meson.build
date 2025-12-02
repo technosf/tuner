@@ -48,9 +48,10 @@ foreach lang : run_command('cat', 'LINGUAS', check: true).stdout().strip().split
                 '@INPUT@',
                 '-o', '@OUTPUT@'
             ],
-            build_by_default: true,
-            install: true,
-            install_dir: join_paths(get_option('localedir'), lang, 'LC_MESSAGES')
+            build_by_default: false,
+    #        build_by_default: true,
+   #         install: true,
+  #          install_dir: join_paths(get_option('localedir'), lang, 'LC_MESSAGES')
         )
     endif
 endforeach

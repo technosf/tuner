@@ -143,7 +143,7 @@ namespace Tuner
             item.icon = _icon;
             item.set_data<string> ("stack_child", name);  
 
-            var alert = new AlertView (_("Nothing here"), _("Something went wrong loading radio stations data from radio-browser.info. Please try again later."), "dialog-warning");
+            var alert = new AlertView (_("Nothing here"), _("Something went wrong loading radio stations data from staion provider. Please try again later."), "dialog-warning");
             //  /*
             //  alert.show_action ("Try again");
             //  alert.action_activated.connect (() => {
