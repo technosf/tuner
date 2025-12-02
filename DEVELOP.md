@@ -123,7 +123,7 @@ Check the app version to ensure that it matches the version in the manifest.
 
 ### Build Changes
 
-If the build has changed it may be required to update repository check-in **Actions**. For example if the *Platform* chnges the Repository _Build and Test_ and _CI_ actions need to be updated. It is also good practice to check to see if the action components themselves have been superceded and need to reference new versions.
+If the build has changed it may be required to update repository check-in **Action** workflows in the _.github_ directory prior to check-in. For example if the *Platform* chnges the Repository _Build and Test_ and _CI_ actions need to be updated. It is also good practice to check to see if the action components themselves have been superceded and need to reference new versions.
 
 ### Code Changes
 
