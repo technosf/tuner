@@ -262,12 +262,11 @@ namespace Tuner {
         /** @brief Data directory path */
         public string? data_dir { get; construct; }
 
+        /** @brief provide a Cancellable for online processes */
         public Cancellable offline_cancel { get; construct; }
 
-
-
         /** @brief Are we online */
-        public bool is_offline { get; private set; }   
+        public bool is_offline { get; private set; default = true;}   
         private bool _is_online = false;
         public bool is_online { 
             get { return _is_online; } 
@@ -343,11 +342,10 @@ namespace Tuner {
                 Wrap network monitoring into a bool property 
             */
             offline_cancel = new Cancellable();
+            is_online = NETMON.get_network_available ();   
             NETMON.network_changed.connect((monitor) => {      
                 check_online_status();
-            });
-            is_online = NETMON.get_network_available ();           
-            is_offline = !is_online;
+            });        
 
 
             /* 
@@ -451,6 +449,7 @@ namespace Tuner {
             window.present();
         }
 
+
         /**
         * @brief Create directory structure quietly
         *
@@ -468,6 +467,7 @@ namespace Tuner {
             return _dir.get_path ();
 
         } // stat_dir
+
 
         /**
         * @brief Set the network availability
