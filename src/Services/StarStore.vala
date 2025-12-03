@@ -349,7 +349,8 @@ public class Tuner.StarStore : Object
          foreach ( var station in _starred_station_map.values)
          {
              var url = ( station.urlResolved == null || station.urlResolved == "") ? station.url : station.urlResolved;
-             playlist.append (@"#EXTINF:-1,$(station.name) - logo=\"$(station.favicon)\",$M3U8_UUID=\"$(station.stationuuid)\"\n$(url)\n#EXTIMG:$(station.favicon)\n");
+             playlist.append (@"\n#EXT-X-MEDIA:$M3U8_UUID=\"$(station.stationuuid)\"\n");
+             playlist.append (@"#EXTINF:-1,$(station.name)\n$(url)\n");
          }
  
          return playlist.str;
