@@ -270,7 +270,8 @@ namespace Tuner {
         private bool _is_online = false;
         public bool is_online { 
             get { return _is_online; } 
-            private set {        
+            private set {   
+                if ( value == _is_online ) return;     
                 if ( value ) 
                 { 
                     _offline_cancel.reset (); 
@@ -492,7 +493,7 @@ namespace Tuner {
             */
             if ( is_offline && NETMON.get_network_available ()  )
             {
-                _monitor_changed_id = Timeout.add_seconds( (uint)_has_started, () => 
+                _monitor_changed_id = Timeout.add_seconds( (uint)_has_started+1, () => 
                 {           
                     _monitor_changed_id = 0; // Reset timeout ID after scheduling  
                     is_online = NETMON.get_network_available ();

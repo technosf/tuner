@@ -92,7 +92,19 @@ sudo ninja install
 
 ### Valadoc
 
-valadoc --force --pkg gtk+-3.0 --pkg glib-2.0 --pkg gee-0.8 --pkg gio-2.0 --pkg libsoup-3.0 --pkg json-glib-1.0 --pkg gstreamer-1.0 --pkg gstreamer-player-1.0 --pkg granite --package-name=Tuner -o apidocs  --verbose src/**/*.vala
+```bash
+valadoc --force \
+  --pkg gtk+-3.0 --pkg glib-2.0 \
+  --pkg gee-0.8 --pkg gio-2.0 \
+  --pkg libsoup-3.0 --pkg json-glib-1.0 \
+  --pkg gstreamer-1.0 --pkg gstreamer-player-1.0 \
+  --pkg granite \
+  --package-name=Tuner \
+  --directory=src \
+  -o apidocs \
+  --verbose
+  $(find src -type f -name '*.vala')
+```
 
 ## Building the Tuner Flatpak
 
