@@ -143,6 +143,7 @@ namespace Tuner {
         return text._strip();
     } // safestrip
 
+    //-------------------------------------
 
     /*
     
@@ -181,14 +182,14 @@ namespace Tuner {
         /** @brief Application ID */
         public const string APP_ID = "com.github.louis77.tuner";
         
-        /** @brief Unicode character for starred items */
-        public const string STAR_CHAR = "★ ";
+        /** @brief Unicode character for starred items ★ */
+        public const string STAR_CHAR = "\u2605 ";
 
-        /** @brief Unicode character for unstarred items */
-        public const string UNSTAR_CHAR = "☆ ";
+        /** @brief Unicode character for unstarred items ☆ */ 
+        public const string UNSTAR_CHAR = "\u2606 ";
 
-        /** @brief Unicode character for out-of-date items */
-        public const string EXCLAIM_CHAR = "⚠ ";
+        /** @brief Unicode character for out-of-date items ⚠ */ 
+        public const string EXCLAIM_CHAR = "\u26A0 ";
     
         /** @brief File name for starred station sore */
         public const string STARRED = "starred.json";
