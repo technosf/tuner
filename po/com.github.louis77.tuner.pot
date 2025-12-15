@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: com.github.louis77.tuner 2.0.0-BETA2\n"
+"Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-07 18:16-0800\n"
+"POT-Creation-Date: 2025-12-14 18:17-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,82 +16,24 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Models/Station.vala:492
-msgid ""
-"\n"
-"\tBitrate: $(this.bitrate) > $(p.bitrate)"
-msgstr ""
-
-#: src/Models/Station.vala:489
-msgid ""
-"\n"
-"\tFavicon address"
-msgstr ""
-
-#: src/Models/Station.vala:490
-msgid ""
-"\n"
-"\tHomepage address"
-msgstr ""
-
-#: src/Models/Station.vala:491
-msgid ""
-"\n"
-"\tStation tags"
-msgstr ""
-
-#: src/Models/Station.vala:488
-msgid ""
-"\n"
-"\tStream Resolved Url"
-msgstr ""
-
-#: src/Models/Station.vala:487
-msgid ""
-"\n"
-"\tStream Url"
-msgstr ""
-
-#: src/Models/Station.vala:493
-msgid ""
-"\n"
-"\todec: $(this.codec) > $(p.codec)"
-msgstr ""
-
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:290
-msgid "Album"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:306
-msgid "Application Name"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:289
-msgid "Artist"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:298
-msgid "Audio Codec"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:50
 msgid "Auto-play last station on startup"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:297
+#: src/Models/Station.vala:363
 msgid "Bitrate"
 msgstr ""
 
-#: src/Models/Station.vala:486
+#: src/Models/Station.vala:357
 msgid "Changes:"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:299
-msgid "Channel Mode"
+#: src/Widgets/PreferencesPopover.vala:210
+msgid "Choose a file"
 msgstr ""
 
 #: src/Widgets/Window.vala:69
@@ -100,8 +42,12 @@ msgid ""
 "window."
 msgstr ""
 
+#: src/Models/Station.vala:364
+msgid "Codec"
+msgstr ""
+
 #: src/Widgets/StationContextMenu.vala:102
-msgid "Copy Stream-URL to clipboard"
+msgid "Copy Stream-URI to clipboard"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:66
@@ -116,20 +62,20 @@ msgstr ""
 msgid "Data Provider"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:309
-msgid "Date Time"
+#: src/Widgets/PreferencesPopover.vala:76
+msgid "Default"
+msgstr ""
+
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr ""
+
+#: src/Widgets/Display.vala:329
+msgid "Discover more stations"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:25
 msgid "Do not participate in Station voting"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:307
-msgid "Encoder"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:308
-msgid "Encoder Version"
 msgstr ""
 
 #: src/Widgets/Display.vala:104
@@ -140,42 +86,34 @@ msgstr ""
 msgid "Explore"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:77
+#: src/Widgets/PreferencesPopover.vala:96
 msgid "Export Starred Sations to Playlist"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:296
-msgid "Extended Comment"
-msgstr ""
-
-#: src/Widgets/PreferencesPopover.vala:72
+#: src/Widgets/PreferencesPopover.vala:71
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:70
+#: src/Widgets/PreferencesPopover.vala:69
 msgid "Faster cycling through stream info"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:292
-msgid "Genre"
+#: src/Models/Station.vala:360
+msgid "Favicon address"
 msgstr ""
 
 #: src/Widgets/Display.vala:102
 msgid "Genres"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:311
-msgid "Has CRC"
-msgstr ""
-
-#: src/Widgets/HeaderBar.vala:208
+#: src/Widgets/HeaderBar.vala:207
 msgid "History"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:293
-msgid "Homepage"
+#: src/Models/Station.vala:361
+msgid "Homepage address"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:27
@@ -194,16 +132,16 @@ msgstr ""
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:291
-msgid "Image"
-msgstr ""
-
-#: src/Widgets/PreferencesPopover.vala:86
+#: src/Widgets/PreferencesPopover.vala:105
 msgid "Import Station UUIDs as Starred Sations"
 msgstr ""
 
-#: src/Widgets/Display.vala:558
+#: src/Widgets/Display.vala:557
 msgid "Jukebox"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:86
+msgid "Language"
 msgstr ""
 
 #: src/Widgets/Display.vala:99
@@ -214,24 +152,12 @@ msgstr ""
 msgid "Light mode"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:295
-msgid "Location"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:304
-msgid "Maximim Bitrate"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:303
-msgid "Minimum Bitrate"
+#: src/Widgets/Display.vala:362
+msgid "Most listened to Stations in the last 24 hours"
 msgstr ""
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:302
-msgid "Nominal Bitrate"
 msgstr ""
 
 #: src/Widgets/base/StationListBox.vala:146
@@ -242,10 +168,6 @@ msgstr ""
 msgid "Open to Starred Stations"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:294
-msgid "Organization"
-msgstr ""
-
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
 msgstr ""
@@ -254,23 +176,27 @@ msgstr ""
 msgid "Please try a different search term."
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:204
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:203
 msgid "Preferences"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:310
-msgid "Private Data"
-msgstr ""
-
-#: src/Widgets/Display.vala:423
+#: src/Widgets/Display.vala:422
 msgid "Recent Search"
 msgstr ""
 
-#: src/Widgets/Display.vala:622
+#: src/Widgets/Display.vala:621
 msgid "Remove this saved search"
 msgstr ""
 
-#: src/Widgets/Display.vala:427
+#: src/Widgets/PreferencesPopover.vala:87
+msgid "Requires restarting Tuner"
+msgstr ""
+
+#: src/Widgets/Display.vala:426
 msgid "Save this search"
 msgstr ""
 
@@ -278,7 +204,7 @@ msgstr ""
 msgid "Saved Searches"
 msgstr ""
 
-#: src/Widgets/Display.vala:424
+#: src/Widgets/Display.vala:423
 msgid "Search Results"
 msgstr ""
 
@@ -292,19 +218,19 @@ msgstr ""
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid ""
-"Something went wrong loading radio stations data from radio-browser.info. "
-"Please try again later."
+"Something went wrong loading radio stations data from staion provider. Please "
+"try again later."
 msgstr ""
 
 #: src/Widgets/HeaderBar.vala:165 src/Widgets/StationContextMenu.vala:163
 msgid "Star this station"
 msgstr ""
 
-#: src/Widgets/Display.vala:398
+#: src/Widgets/Display.vala:397
 msgid "Starred by You"
 msgstr ""
 
-#: src/Widgets/Display.vala:399
+#: src/Widgets/Display.vala:398
 msgid "Starred by You :"
 msgstr ""
 
@@ -316,8 +242,16 @@ msgstr ""
 msgid "Station info updated Online - View changes"
 msgstr ""
 
-#: src/Models/Station.vala:135
+#: src/Models/Station.vala:133
 msgid "Station no longer in the index"
+msgstr ""
+
+#: src/Models/Station.vala:362
+msgid "Station tags"
+msgstr ""
+
+#: src/Widgets/Display.vala:326
+msgid "Stations to Discover"
 msgstr ""
 
 #: src/Widgets/Window.vala:286
@@ -328,8 +262,20 @@ msgstr ""
 msgid "Stream Metadata"
 msgstr ""
 
+#: src/Models/Station.vala:359
+msgid "Stream Resolved Url"
+msgstr ""
+
+#: src/Models/Station.vala:358
+msgid "Stream Url"
+msgstr ""
+
 #: src/Widgets/Display.vala:103
 msgid "Sub Genres"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:32
+msgid "System"
 msgstr ""
 
 #: src/Widgets/Display.vala:105
@@ -340,16 +286,12 @@ msgstr ""
 msgid "Theme"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:288
-msgid "Title"
+#: src/Widgets/Display.vala:346
+msgid "Trending"
 msgstr ""
 
-#: src/Controllers/PlayerController.vala:301
-msgid "Track Count"
-msgstr ""
-
-#: src/Controllers/PlayerController.vala:300
-msgid "Track Number"
+#: src/Widgets/Display.vala:347
+msgid "Trending Stations in the last 24 hours"
 msgstr ""
 
 #: src/Widgets/StationContextMenu.vala:163
@@ -358,10 +300,6 @@ msgstr ""
 
 #: src/Widgets/StationContextMenu.vala:88
 msgid "Update Station from Online"
-msgstr ""
-
-#: src/Widgets/PreferencesPopover.vala:32
-msgid "Use System"
 msgstr ""
 
 #: src/Widgets/StationContextMenu.vala:96
