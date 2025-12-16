@@ -4,13 +4,14 @@
 # Paxton <p1xt4n@pm.me>, 2022.
 # Gaston Martres <cyberzoo@gmail.com>, 2022.
 # scmanjarrez <serchiman@gmail.com>, 2025.
+# technosf <535060+technosf@users.noreply.github.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: louis@brauer.family\n"
 "POT-Creation-Date: 2020-11-08 19:49+0100\n"
-"PO-Revision-Date: 2025-01-09 00:43+0000\n"
-"Last-Translator: scmanjarrez <serchiman@gmail.com>\n"
+"PO-Revision-Date: 2025-12-16 05:53+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "es/>\n"
 "Language: es\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.15.1-dev\n"
 
 #: src/Models/Countries.vala:34
 msgid "Afghanistan"
@@ -1184,7 +1185,7 @@ msgstr "Los mejores 100"
 #. Favourites Box
 #: src/Widgets/Window.vala:232 src/Widgets/Window.vala:236
 msgid "Starred by You"
-msgstr "Estaciones Favoritas"
+msgstr "Destacado por ti"
 
 #. Search Results Box
 #: src/Widgets/Window.vala:245
