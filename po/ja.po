@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the com.github.louis77.tuner package.
 # TANIGUCHI Takaki <takaki@asis.media-as.org>, 2022.
 # ejlaner <everest@bodynaturally.ca>, 2025.
+# technosf <535060+technosf@users.noreply.github.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: louis@brauer.family\n"
 "POT-Creation-Date: 2020-11-08 19:49+0100\n"
-"PO-Revision-Date: 2025-03-12 12:40+0000\n"
-"Last-Translator: ejlaner <everest@bodynaturally.ca>\n"
+"PO-Revision-Date: 2025-12-16 00:48+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ja/>\n"
 "Language: ja\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10.3-dev\n"
+"X-Generator: Weblate 5.15.1-dev\n"
 
 #: src/Models/Countries.vala:34
 msgid "Afghanistan"
@@ -1294,9 +1295,8 @@ msgid "Rock"
 msgstr "Rock"
 
 #: src/Widgets/ContentBox.vala:47
-#, fuzzy
 msgid "Nothing here"
-msgstr "Nothing here"
+msgstr "ここには何もありません"
 
 #: src/Widgets/ContentBox.vala:47
 #, fuzzy
@@ -1308,14 +1308,12 @@ msgstr ""
 "Please try again later."
 
 #: src/Widgets/ContentBox.vala:57
-#, fuzzy
 msgid "No stations found"
-msgstr "No stations found"
+msgstr "駅が見つかりませんでした"
 
 #: src/Widgets/ContentBox.vala:57
-#, fuzzy
 msgid "Please try a different search term."
-msgstr "Please try a different search term."
+msgstr "別の検索語句をお試しください。"
 
 #: src/Widgets/HeaderBar.vala:52
 #, fuzzy
@@ -1323,9 +1321,8 @@ msgid "Choose a station"
 msgstr "Choose a station"
 
 #: src/Widgets/HeaderBar.vala:69
-#, fuzzy
 msgid "About"
-msgstr "About"
+msgstr "について"
 
 #: src/Widgets/HeaderBar.vala:73
 #, fuzzy
@@ -1338,19 +1335,16 @@ msgid "If enabled, we will not send usage info to radio-browser.org"
 msgstr "If enabled, we will not send usage info to radio-browser.org"
 
 #: src/Widgets/HeaderBar.vala:82
-#, fuzzy
 msgid "Light mode"
-msgstr "Light mode"
+msgstr "ライトモード"
 
 #: src/Widgets/HeaderBar.vala:83
-#, fuzzy
 msgid "Dark mode"
-msgstr "Dark mode"
+msgstr "ダークモード"
 
 #: src/Widgets/HeaderBar.vala:108
-#, fuzzy
 msgid "Preferences"
-msgstr "Preferences"
+msgstr "設定"
 
 #: src/Widgets/HeaderBar.vala:114
 #, fuzzy
@@ -1358,9 +1352,8 @@ msgid "Station name"
 msgstr "Station name"
 
 #: src/Widgets/HeaderBar.vala:130 src/Widgets/StationContextMenu.vala:71
-#, fuzzy
 msgid "Star this station"
-msgstr "Star this station"
+msgstr "この放送局をお気に入りに追加する"
 
 #: src/Widgets/HeaderBar.vala:179
 #, fuzzy
@@ -1368,35 +1361,29 @@ msgid "Playing"
 msgstr "Playing"
 
 #: src/Widgets/StationContextMenu.vala:41
-#, fuzzy
 msgid "Visit Website"
-msgstr "Visit Website"
+msgstr "ウェブサイトをご覧ください"
 
 #: src/Widgets/StationContextMenu.vala:71
-#, fuzzy
 msgid "Unstar this station"
-msgstr "Unstar this station"
+msgstr "このステーションのお気に入り登録を解除する"
 
 #: src/Widgets/Window.vala:107
-#, fuzzy
 msgid "Selections"
-msgstr "Selections"
+msgstr "選択肢"
 
 #: src/Widgets/Window.vala:111
-#, fuzzy
 msgid "Library"
-msgstr "Library"
+msgstr "図書館"
 
 #: src/Widgets/Window.vala:115
-#, fuzzy
 msgid "Genres"
-msgstr "Genres"
+msgstr "ジャンル"
 
 #. Discover Box
 #: src/Widgets/Window.vala:122
-#, fuzzy
 msgid "Discover"
-msgstr "Discover"
+msgstr "発見する"
 
 #: src/Widgets/Window.vala:127
 #, fuzzy
@@ -1404,15 +1391,13 @@ msgid "Discover Stations"
 msgstr "Discover Stations"
 
 #: src/Widgets/Window.vala:128
-#, fuzzy
 msgid "Discover more stations"
-msgstr "Discover more stations"
+msgstr "その他の駅を探す"
 
 #. Trending Box
 #: src/Widgets/Window.vala:153
-#, fuzzy
 msgid "Trending"
-msgstr "Trending"
+msgstr "トレンド"
 
 #: src/Widgets/Window.vala:158
 #, fuzzy
@@ -1421,9 +1406,8 @@ msgstr "Trending in the last 24 hours"
 
 #. Popular Box
 #: src/Widgets/Window.vala:174
-#, fuzzy
 msgid "Popular"
-msgstr "Popular"
+msgstr "人気のある"
 
 #: src/Widgets/Window.vala:179
 #, fuzzy
@@ -1443,15 +1427,13 @@ msgstr "Top 100 in"
 
 #. Favourites Box
 #: src/Widgets/Window.vala:232 src/Widgets/Window.vala:236
-#, fuzzy
 msgid "Starred by You"
-msgstr "Starred by You"
+msgstr "あなたがスターを付けました"
 
 #. Search Results Box
 #: src/Widgets/Window.vala:245
-#, fuzzy
 msgid "Recent Search"
-msgstr "Recent Search"
+msgstr "最近の検索"
 
 #: src/Widgets/Window.vala:249
 #, fuzzy
