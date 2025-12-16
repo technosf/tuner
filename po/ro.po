@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: louis@brauer.family\n"
 "POT-Creation-Date: 2025-12-14 18:17-0800\n"
-"PO-Revision-Date: 2025-12-16 06:04+0000\n"
+"PO-Revision-Date: 2025-12-16 06:16+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ro/>\n"
@@ -29,9 +29,8 @@ msgid "Auto-play last station on startup"
 msgstr "Auto-play last station on startup"
 
 #: src/Models/Station.vala:363
-#, fuzzy
 msgid "Bitrate"
-msgstr "Bitrate"
+msgstr "Rata de biți"
 
 #: src/Models/Station.vala:357
 #, fuzzy
