@@ -354,7 +354,8 @@ public class Tuner.Model.Station : Favicon
         }
         else
         {   
-            StringBuilder sb = new StringBuilder(_("Changes")).append(":");
+            StringBuilder sb = new StringBuilder(_("Changes"));
+            sb.append(":");
             if ( this.url != p.url) sb.append("\n\t").append(_("Stream Url"));
             if ( this.urlResolved != p.urlResolved) sb.append("\n\t").append(_("Stream Resolved Url"));
             if ( this.favicon != p.favicon) sb.append("\n\t").append(_("Favicon address"));
