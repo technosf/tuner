@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the com.github.louis77.tuner package.
 # Allan Nordhøy <epost@anotheragency.no>, 2022.
 # Jon Helgeland <jhelg@live.no>, 2022.
+# technosf <535060+technosf@users.noreply.github.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: louis@brauer.family\n"
 "POT-Creation-Date: 2020-11-08 19:49+0100\n"
-"PO-Revision-Date: 2022-11-20 15:47+0000\n"
-"Last-Translator: Jon Helgeland <jhelg@live.no>\n"
+"PO-Revision-Date: 2025-12-16 00:48+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/tuner/"
 "tuner-ui/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 5.15.1-dev\n"
 
 #: src/Models/Countries.vala:34
 msgid "Afghanistan"
@@ -1242,18 +1243,16 @@ msgid "No stations found"
 msgstr "Fant ingen stasjoner"
 
 #: src/Widgets/ContentBox.vala:57
-#, fuzzy
 msgid "Please try a different search term."
-msgstr "Please try a different search term."
+msgstr "Prøv et annet søkeord."
 
 #: src/Widgets/HeaderBar.vala:52
 msgid "Choose a station"
 msgstr "Velg en stasjon"
 
 #: src/Widgets/HeaderBar.vala:69
-#, fuzzy
 msgid "About"
-msgstr "About"
+msgstr "Om"
 
 #: src/Widgets/HeaderBar.vala:73
 msgid "Do not track"
@@ -1290,9 +1289,8 @@ msgid "Playing"
 msgstr "Spiller"
 
 #: src/Widgets/StationContextMenu.vala:41
-#, fuzzy
 msgid "Visit Website"
-msgstr "Visit Website"
+msgstr "Besøk nettstedet"
 
 #: src/Widgets/StationContextMenu.vala:71
 msgid "Unstar this station"
@@ -1360,9 +1358,8 @@ msgstr "Stjernemerket av deg"
 
 #. Search Results Box
 #: src/Widgets/Window.vala:245
-#, fuzzy
 msgid "Recent Search"
-msgstr "Recent Search"
+msgstr "Nylig søk"
 
 #: src/Widgets/Window.vala:249
 msgid "Search"
