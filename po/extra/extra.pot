@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-08 19:20+0100\n"
+"POT-Creation-Date: 2025-12-16 20:24-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,10 +30,6 @@ msgstr ""
 msgid "Listen to Radio Stations all over the world"
 msgstr ""
 
-#: data/com.github.louis77.tuner.desktop.in:9
-msgid "com.github.louis77.tuner"
-msgstr ""
-
 #: data/com.github.louis77.tuner.desktop.in:11
 msgid "Radio;Audio;Listen;Stations;Receiver;"
 msgstr ""
@@ -42,171 +38,401 @@ msgstr ""
 msgid "Louis Brauer"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:11
-msgid "Discover and listen to internet radio stations"
+#: data/com.github.louis77.tuner.appdata.xml.in:10
+msgid "technosf"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:14
-msgid "Make listening to internet radio stations fun again!"
-msgstr ""
-
-#: data/com.github.louis77.tuner.appdata.xml.in:15
-msgid ""
-"Instead of providing you with all the stations you already know, Tuner "
-"presents you a new selection of stations from all over the world every time "
-"you hit the Shuffle button."
+#: data/com.github.louis77.tuner.appdata.xml.in:16
+msgid "Internet radio"
 msgstr ""
 
 #: data/com.github.louis77.tuner.appdata.xml.in:18
-msgid "Tuner uses the community-driven station catalog radio-browser.info."
+msgid "Make finding and listening to internet radio stations fun again!"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:20
-msgid "Discover new stations every day"
-msgstr ""
-
-#: data/com.github.louis77.tuner.appdata.xml.in:21
-msgid "Star stations you like and visit their website"
+#: data/com.github.louis77.tuner.appdata.xml.in:19
+msgid ""
+"Instead of showing all the stations you already know, Tuner presents you a "
+"new selection of stations from all over the world every time you hit the "
+"Shuffle button."
 msgstr ""
 
 #: data/com.github.louis77.tuner.appdata.xml.in:22
+msgid "Tuner uses the community-driven station catalog radio-browser.info."
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:24
+msgid "Discover new stations every day"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:25
+msgid "Star stations you like and visit their website"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:26
 msgid "Control Tuner from your volume indicator"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:64
-#: data/com.github.louis77.tuner.appdata.xml.in:95
-#: data/com.github.louis77.tuner.appdata.xml.in:116
-msgid "New features:"
+#: data/com.github.louis77.tuner.appdata.xml.in:33
+msgid "Tuner with dark theme, discovery"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:66
-msgid "Show the current track playing if supported by station"
+#: data/com.github.louis77.tuner.appdata.xml.in:37
+msgid "Tuner with light theme, starred stations"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:67
-msgid "Show Top 100 stations of user country if detectable"
+#: data/com.github.louis77.tuner.appdata.xml.in:41
+msgid "Tuner search for stations"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:68
-msgid "\"Visit Website\" link in station context menu"
+#: data/com.github.louis77.tuner.appdata.xml.in:45
+msgid "Tuner saved searches"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:70
-#: data/com.github.louis77.tuner.appdata.xml.in:82
-#: data/com.github.louis77.tuner.appdata.xml.in:101
-#: data/com.github.louis77.tuner.appdata.xml.in:123
-msgid "Other improvements:"
+#: data/com.github.louis77.tuner.appdata.xml.in:49
+msgid "Tuner playing station metadata"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:72
-msgid "Added Dutch translation"
+#: data/com.github.louis77.tuner.appdata.xml.in:53
+msgid "Tuner preferences"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:74
-#: data/com.github.louis77.tuner.appdata.xml.in:87
-#: data/com.github.louis77.tuner.appdata.xml.in:108
-#: data/com.github.louis77.tuner.appdata.xml.in:130
-msgid "Bugfixes:"
+#: data/com.github.louis77.tuner.appdata.xml.in:57
+msgid "Tuner station context information"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:76
-#: data/com.github.louis77.tuner.appdata.xml.in:89
-msgid "Fix missing icons for non elementary OS systems"
-msgstr ""
-
-#: data/com.github.louis77.tuner.appdata.xml.in:84
-msgid "Add manual dark mode switch in settings"
-msgstr ""
-
-#: data/com.github.louis77.tuner.appdata.xml.in:85
-msgid "Compact sidebar and content window"
-msgstr ""
-
-#: data/com.github.louis77.tuner.appdata.xml.in:97
-msgid "Right-click a station to add or remove to favourites directly"
+#: data/com.github.louis77.tuner.appdata.xml.in:61
+msgid "Tuner jukebox station shuffle"
 msgstr ""
 
 #: data/com.github.louis77.tuner.appdata.xml.in:98
+msgid "New Version!"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:100
+msgid "Saved Searches - new feature"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:101
+msgid "Explore Genres - new feature"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:102
+msgid "Jukebox Shuffle - Play Random Station - new feature"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:103
+msgid "New Default Genres added"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:104
+msgid "Updated look and feel"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:105
+msgid "Station and Stream History - new feature"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:106
+msgid "More Station and Stream Metadata - new feature"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:107
+msgid "Save, import Starred Stations to playlists - new feature"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:108
+msgid "Faster responsiveness and image loading"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:109
+msgid "New data provider API, plus better support for Radio Browser"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:110
+msgid "Refactored for separation of concerns, OO, maintainability"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:111
+msgid ""
+"Renamed, updated icons, description and screenshots per Flathub quality "
+"directives"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:118
+#: data/com.github.louis77.tuner.appdata.xml.in:130
+#: data/com.github.louis77.tuner.appdata.xml.in:142
+#: data/com.github.louis77.tuner.appdata.xml.in:151
+#: data/com.github.louis77.tuner.appdata.xml.in:161
+msgid "Maintanance release:"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:120
+msgid "Updated HTTP Session params to improve response"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:121
+msgid ""
+"Increased Search re-fire interval to reduce number of concurrent searches"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:122
+msgid "Made Search asynchronous so UI remains responsive during searches"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:123
+msgid "Ignore request to load failing favicons URLs"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:124
+msgid "Removed org.gnome.SettingsDaemon.MediaKeys from manifest per flathub"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:132
+msgid "Added API server lookup via SRV and backup via JSON, plus randomization"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:133
+msgid "Added JSON validation for empty nodes"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:134
+msgid "Refactored libsoup calls out to HttpClient.vala"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:135
+msgid "Refactored loading of favicons to Favicon.vala"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:136
+msgid ""
+"Turned off TLS checks for HTTP calls to avoid non loading of favicons with "
+"invalid certs"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:144
+msgid "Upgrade to taglib 1.13.1"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:145
+msgid "Corrected README (apt libs)"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:153
+msgid "Upgrade to libsoup-3.0"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:154
+msgid "Fix issue where radio-browser.info API did not work"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:155
+msgid "Remove Geolocation service"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:163
+msgid "Change flatpak runtime to lastest eOS 6.1"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:164
+msgid "Change pause button to stop button"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:170
+#: data/com.github.louis77.tuner.appdata.xml.in:193
+#: data/com.github.louis77.tuner.appdata.xml.in:220
+#: data/com.github.louis77.tuner.appdata.xml.in:251
+#: data/com.github.louis77.tuner.appdata.xml.in:272
+msgid "New features:"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:172
+msgid ""
+"Background playback: Tuner can be closed and playback will continue. A "
+"notification provides easy access to bring the Tuner window back."
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:174
+#: data/com.github.louis77.tuner.appdata.xml.in:183
+#: data/com.github.louis77.tuner.appdata.xml.in:199
+#: data/com.github.louis77.tuner.appdata.xml.in:210
+#: data/com.github.louis77.tuner.appdata.xml.in:226
+#: data/com.github.louis77.tuner.appdata.xml.in:238
+#: data/com.github.louis77.tuner.appdata.xml.in:257
+#: data/com.github.louis77.tuner.appdata.xml.in:279
+msgid "Other improvements:"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:176
+msgid ""
+"Dark/light mode optimized with new dropdown (use system, dark or light theme)"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:185
+msgid "Dark/light mode adapts to system settings"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:186
+msgid "Use elementary OS 6 flatpak runtime"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:195
+msgid "Show codec and bitrate on station"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:196
+msgid "New volume control"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:197
+msgid "New setting: Auto-play last station"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:201
+msgid "Dark mode is now saved in settings"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:202
+msgid "Improved Italian translation"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:203
+msgid "Properly set Window name"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:212
+msgid "Added Turkish translation"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:213
+msgid "Improved French translation"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:214
+msgid "Minor improvements in Country name translations"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:222
+msgid "Show the current track playing if supported by station"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:223
+msgid "Show Top 100 stations of user country if detectable"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:224
+msgid "\"Visit Website\" link in station context menu"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:228
+msgid "Added Dutch translation"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:230
+#: data/com.github.louis77.tuner.appdata.xml.in:243
+#: data/com.github.louis77.tuner.appdata.xml.in:264
+#: data/com.github.louis77.tuner.appdata.xml.in:286
+msgid "Bugfixes:"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:232
+#: data/com.github.louis77.tuner.appdata.xml.in:245
+msgid "Fix missing icons for non elementary OS systems"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:240
+msgid "Add manual dark mode switch in settings"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:241
+msgid "Compact sidebar and content window"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:253
+msgid "Right-click a station to add or remove to favourites directly"
+msgstr ""
+
+#: data/com.github.louis77.tuner.appdata.xml.in:254
 msgid ""
 "Add settings menu with \"Do-Not-Track\" option, disables sending station "
 "listening events to radio-browser.org"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:99
+#: data/com.github.louis77.tuner.appdata.xml.in:255
 msgid "Add About dialog"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:103
+#: data/com.github.louis77.tuner.appdata.xml.in:259
 msgid ""
 "If a station is already in your favourites, you'll see a little star in the "
 "title"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:104
+#: data/com.github.louis77.tuner.appdata.xml.in:260
 msgid ""
 "Randomly selects one of the available radio-browser.org servers (was always "
 "de1 before)"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:105
+#: data/com.github.louis77.tuner.appdata.xml.in:261
 msgid ""
 "Favourites are now stored in a local favourites.json file to improve app "
 "startup time"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:106
+#: data/com.github.louis77.tuner.appdata.xml.in:262
 msgid "Added Italian translation"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:110
+#: data/com.github.louis77.tuner.appdata.xml.in:266
 msgid ""
 "Fix broken dark theme support (elementary and Adwaita dark look fine now)"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:118
+#: data/com.github.louis77.tuner.appdata.xml.in:274
 msgid "Search for radio stations"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:119
+#: data/com.github.louis77.tuner.appdata.xml.in:275
 msgid "New \"Genres\" section with select popular genres"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:120
+#: data/com.github.louis77.tuner.appdata.xml.in:276
 msgid "Added French translation"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:121
+#: data/com.github.louis77.tuner.appdata.xml.in:277
 msgid "Added German translation"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:125
+#: data/com.github.louis77.tuner.appdata.xml.in:281
 msgid "Each section now displays the most-voted-for 40 stations"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:126
+#: data/com.github.louis77.tuner.appdata.xml.in:282
 msgid "Station images are now being cached"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:127
+#: data/com.github.louis77.tuner.appdata.xml.in:283
 msgid "The app icon now appears more vertically centered"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:128
+#: data/com.github.louis77.tuner.appdata.xml.in:284
 msgid "Station images are now always the same size"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:132
+#: data/com.github.louis77.tuner.appdata.xml.in:288
 msgid "Fixed a bug where starred stations appeared as unstarred"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:133
+#: data/com.github.louis77.tuner.appdata.xml.in:289
 msgid "Display a nice API error screen"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:140
+#: data/com.github.louis77.tuner.appdata.xml.in:296
 msgid "New sidebar menu with different selections and your favourite stations."
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:145
+#: data/com.github.louis77.tuner.appdata.xml.in:301
 msgid "Initial release"
 msgstr ""

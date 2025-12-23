@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 22:10-0800\n"
+"POT-Creation-Date: 2025-12-23 15:25-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,41 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: src/Widgets/StationContextMenu.vala:167
+#, c-format
+msgid "%s Star this station"
+msgstr ""
+
+#: src/Widgets/StationContextMenu.vala:166
+#, c-format
+msgid "%s Unstar this station"
+msgstr ""
+
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:25
+msgid "Album"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:41
+msgid "Application Name"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:24
+msgid "Artist"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:33
+msgid "Audio Codec"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:50
 msgid "Auto-play last station on startup"
 msgstr ""
 
-#: src/Models/Station.vala:363
+#: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
 msgstr ""
 
@@ -32,7 +58,11 @@ msgstr ""
 msgid "Changes"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:210
+#: src/Models/StreamMetadata.vala:34
+msgid "Channel Mode"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:221
 msgid "Choose a file"
 msgstr ""
 
@@ -46,8 +76,17 @@ msgstr ""
 msgid "Codec"
 msgstr ""
 
+#: src/Models/StreamMetadata.vala:40
+msgid "Container Format"
+msgstr ""
+
 #: src/Widgets/StationContextMenu.vala:102
 msgid "Copy Stream-URI to clipboard"
+msgstr ""
+
+#: src/Widgets/Display.vala:247
+#, c-format
+msgid "Could not get random station: %s"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:66
@@ -60,6 +99,18 @@ msgstr ""
 
 #: src/Widgets/HeaderBar.vala:143
 msgid "Data Provider"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:149
+#, c-format
+msgid ""
+"Data Provider: %s\n"
+"\n"
+"%u Stations,\t%u Tags"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:44
+msgid "Date Time"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:76
@@ -78,8 +129,37 @@ msgstr ""
 msgid "Do not participate in Station voting"
 msgstr ""
 
+#: src/Widgets/Display.vala:559
+#, c-format
+msgid ""
+"Double click to shuffle through %u stations,\n"
+"one, every ten minutes, for %u days"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:42
+msgid "Encoder"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:43
+msgid "Encoder Version"
+msgstr ""
+
 #: src/Widgets/Display.vala:104
 msgid "Eras"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:247
+#, c-format
+msgid "Error reading file: %s"
+msgstr ""
+
+#: src/Widgets/Window.vala:242
+msgid "Error while trying to autoplay, aborting..."
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:208
+#, c-format
+msgid "Error: %s"
 msgstr ""
 
 #: src/Widgets/Display.vala:101
@@ -88,6 +168,10 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:96
 msgid "Export Starred Sations to Playlist"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:31
+msgid "Extended Comment"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:71
@@ -104,12 +188,24 @@ msgstr ""
 msgid "Favicon address"
 msgstr ""
 
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr ""
+
 #: src/Widgets/Display.vala:102
 msgid "Genres"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:207
+#: src/Models/StreamMetadata.vala:46
+msgid "Has CRC"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:213
 msgid "History"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
 msgstr ""
 
 #: src/Models/Station.vala:361
@@ -132,6 +228,10 @@ msgstr ""
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
 
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr ""
+
 #: src/Widgets/PreferencesPopover.vala:105
 msgid "Import Station UUIDs as Starred Sations"
 msgstr ""
@@ -144,12 +244,28 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr ""
+
 #: src/Widgets/Display.vala:99
 msgid "Library"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:39
+msgid "Maximim Bitrate"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:38
+msgid "Minimum Bitrate"
 msgstr ""
 
 #: src/Widgets/Display.vala:362
@@ -160,12 +276,20 @@ msgstr ""
 msgid "No stations found"
 msgstr ""
 
+#: src/Models/StreamMetadata.vala:37
+msgid "Nominal Bitrate"
+msgstr ""
+
 #: src/Widgets/base/StationListBox.vala:146
 msgid "Nothing here"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:57
 msgid "Open to Starred Stations"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
 msgstr ""
 
 #: src/Widgets/Window.vala:68
@@ -180,15 +304,15 @@ msgstr ""
 msgid "Popular"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:203
+#: src/Widgets/HeaderBar.vala:209
 msgid "Preferences"
 msgstr ""
 
-#: src/Widgets/Display.vala:422
-msgid "Recent Search"
+#: src/Models/StreamMetadata.vala:45
+msgid "Private Data"
 msgstr ""
 
-#: src/Widgets/Display.vala:621
+#: src/Widgets/Display.vala:627
 msgid "Remove this saved search"
 msgstr ""
 
@@ -196,8 +320,17 @@ msgstr ""
 msgid "Requires restarting Tuner"
 msgstr ""
 
+#: src/Widgets/PreferencesPopover.vala:184
+msgid "Save File"
+msgstr ""
+
 #: src/Widgets/Display.vala:426
 msgid "Save this search"
+msgstr ""
+
+#: src/Widgets/Display.vala:625
+#, c-format
+msgid "Saved Search :  %s"
 msgstr ""
 
 #: src/Widgets/Display.vala:100
@@ -222,7 +355,7 @@ msgid ""
 "try again later."
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:165 src/Widgets/StationContextMenu.vala:163
+#: src/Widgets/HeaderBar.vala:171
 msgid "Star this station"
 msgstr ""
 
@@ -234,7 +367,7 @@ msgstr ""
 msgid "Starred by You :"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:186
+#: src/Widgets/HeaderBar.vala:192
 msgid "Station Search"
 msgstr ""
 
@@ -286,6 +419,18 @@ msgstr ""
 msgid "Theme"
 msgstr ""
 
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:36
+msgid "Track Count"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr ""
+
 #: src/Widgets/Display.vala:346
 msgid "Trending"
 msgstr ""
@@ -294,8 +439,9 @@ msgstr ""
 msgid "Trending Stations in the last 24 hours"
 msgstr ""
 
-#: src/Widgets/StationContextMenu.vala:163
-msgid "Unstar this station"
+#: src/Widgets/StationContextMenu.vala:143
+#, c-format
+msgid "Unable to open website: %s"
 msgstr ""
 
 #: src/Widgets/StationContextMenu.vala:88
@@ -304,4 +450,17 @@ msgstr ""
 
 #: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:187
+#: src/Widgets/PreferencesPopover.vala:224
+msgid "_Cancel"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:225
+msgid "_Open"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:188
+msgid "_Save"
 msgstr ""

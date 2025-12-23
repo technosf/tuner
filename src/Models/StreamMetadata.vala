@@ -20,30 +20,30 @@ public class Tuner.Model.Metadata : GLib.Object
     private static string[,] METADATA_TITLES =
         // Ordered array of tags and descriptions
     {
-        {"title",            _("Title")                                },
-        {"artist",           _("Artist")                               },
-        {"album",            _("Album")                                },
-        {"image",            _("Image")                                },
-        {"genre",            _("Genre")                                },
-        {"homepage",         _("Homepage")                             },
-        {"organization",     _("Organization")                         },
-        {"location",         _("Location")                             },
-        {"extended-comment", _("Extended Comment")                     },
-        {"bitrate",          _("Bitrate")                              },
-        {"audio-codec",      _("Audio Codec")                          },
-        {"channel-mode",     _("Channel Mode")                         },
-        {"track-number",     _("Track Number")                         },
-        {"track-count",      _("Track Count")                          },
-        {"nominal-bitrate",  _("Nominal Bitrate")                      },
-        {"minimum-bitrate",  _("Minimum Bitrate")                      },
-        {"maximum-bitrate",  _("Maximim Bitrate")                      },
-        {"container-format", ("Container Format")                      },
-        {"application-name", _("Application Name")                     },
-        {"encoder",          _("Encoder")                              },
-        {"encoder-version",  _("Encoder Version")                      },
-        {"datetime",         _("Date Time")                            },
-        {"private-data",     _("Private Data")                         },
-        {"has-crc",          _("Has CRC")                              }
+        {"title",            N_("Title")                                },
+        {"artist",           N_("Artist")                               },
+        {"album",            N_("Album")                                },
+        {"image",            N_("Image")                                },
+        {"genre",            N_("Genre")                                },
+        {"homepage",         N_("Homepage")                             },
+        {"organization",     N_("Organization")                         },
+        {"location",         N_("Location")                             },
+        {"extended-comment", N_("Extended Comment")                     },
+        {"bitrate",          N_("Bitrate")                              },
+        {"audio-codec",      N_("Audio Codec")                          },
+        {"channel-mode",     N_("Channel Mode")                         },
+        {"track-number",     N_("Track Number")                         },
+        {"track-count",      N_("Track Count")                          },
+        {"nominal-bitrate",  N_("Nominal Bitrate")                      },
+        {"minimum-bitrate",  N_("Minimum Bitrate")                      },
+        {"maximum-bitrate",  N_("Maximim Bitrate")                      },
+        {"container-format", N_("Container Format")                      },
+        {"application-name", N_("Application Name")                     },
+        {"encoder",          N_("Encoder")                              },
+        {"encoder-version",  N_("Encoder Version")                      },
+        {"datetime",         N_("Date Time")                            },
+        {"private-data",     N_("Private Data")                         },
+        {"has-crc",          N_("Has CRC")                              }
     };
 
     private static Gee.List<string> METADATA_TAGS =  new Gee.ArrayList<string> ();
@@ -176,7 +176,7 @@ public class Tuner.Model.Metadata : GLib.Object
             {
                 if (_metadata_values.has_key(tag))
                 {
-                    sb.append ( METADATA_TITLES[METADATA_TAGS.index_of (tag),1])
+                    sb.append ( _(METADATA_TITLES[METADATA_TAGS.index_of (tag),1]))
                     .append(" : ")
                     .append( _metadata_values.get (tag))
                     .append("\n");
