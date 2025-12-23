@@ -239,7 +239,7 @@ public class Tuner.Window : Gtk.ApplicationWindow
                 }
             } catch (SourceError e)
             {
-                warning (_("Error while trying to autoplay, aborting..."));
+                warning (_("Error while trying to autoplay, aborting…"));
             }
         }
     } // add_widgets
