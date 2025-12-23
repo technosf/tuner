@@ -145,7 +145,13 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 		{
 			if (app().is_offline)
 				return false;
-			tooltip.set_text(_(@"Data Provider: $(window.directory.provider())\n\n$(app().provider.available_stations()) Stations,\t$(app().provider.available_tags()) Tags"));
+			//tooltip.set_text(_(@"Data Provider: $(window.directory.provider())\n\n$(app().provider.available_stations()) Stations,\t$(app().provider.available_tags()) Tags"));
+			tooltip.set_text ((_("Data Provider: %s\n\n%u Stations,\t%u Tags"))
+			.printf (window.directory.provider (),
+			app ().provider.available_stations (),
+			app ().provider.available_tags ()
+			));
+
 			return true;
 		});
 
@@ -251,7 +257,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 		{
 			if (_station == null)
 				return false;
-			tooltip.set_text(_(@"$(_station.popularity())\n\n$(_player_info.metadata)"));
+			tooltip.set_text(@"$(_station.popularity())\n\n$(_player_info.metadata)");
 			return true;
 		});
 

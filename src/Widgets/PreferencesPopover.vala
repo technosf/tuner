@@ -168,6 +168,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 			GLib.FileUtils.set_contents(temp_file, app().stars.export_m3u8 ());
 
 			// Create the file chooser dialog for saving
+			/*
 			var dialog = new Gtk.FileChooserDialog(
 				"Save File",
 				null,
@@ -177,7 +178,16 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 			// Add buttons to the dialog
 			dialog.add_button("_Cancel", Gtk.ResponseType.CANCEL);
 			dialog.add_button("_Save", Gtk.ResponseType.ACCEPT);
-
+			*/
+					
+			var dialog = new Gtk.FileChooserDialog(
+			_("Save File"),
+			app().window,
+			Gtk.FileChooserAction.SAVE,
+			_("_Cancel"), Gtk.ResponseType.CANCEL,
+			_("_Save"), Gtk.ResponseType.ACCEPT
+			);
+			
 			// Suggest a default filename
 			dialog.set_current_name("tuner-starred.m3u8");
 
@@ -194,7 +204,8 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 		} catch (GLib.Error e)
 		{
-			warning("Error: $(e.message)");
+			//warning("Error: $(e.message)");
+			warning ((_("Error: %s")).printf (e.message));
 		}
 	}     // export_m3u8
 
@@ -210,8 +221,8 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 			_("Choose a file"),
 			app().window,
 			Gtk.FileChooserAction.OPEN,
-			"_Cancel", Gtk.ResponseType.CANCEL,
-			"_Open", Gtk.ResponseType.ACCEPT
+			_("_Cancel"), Gtk.ResponseType.CANCEL,
+			_("_Open"), Gtk.ResponseType.ACCEPT
 			);
 		string filepath;
 
@@ -232,7 +243,8 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 				stream.close();
 			} catch (Error e)
 			{
-				warning(@"Error reading file: $(e.message)");
+				//warning("Error reading file: $(e.message)");
+				warning ((_("Error reading file: %s")).printf (e.message));
 			}
 		} // if
 
