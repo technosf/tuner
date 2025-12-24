@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.louis77.tuner package.
 # AHOHNMYC <lqwh2h2cwa@protonmail.com>, 2022, 2025.
-# Мистер Перевод <sergei@racingrebel.com>, 2022.
+# Мистер Перевод <sergei@racingrebel.com>, 2022, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: louis@brauer.family\n"
 "POT-Creation-Date: 2020-11-08 19:49+0100\n"
 "PO-Revision-Date: 2025-12-24 01:18+0000\n"
-"Last-Translator: AHOHNMYC <lqwh2h2cwa@protonmail.com>\n"
+"Last-Translator: Мистер Перевод <sergei@racingrebel.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ru/>\n"
 "Language: ru\n"
