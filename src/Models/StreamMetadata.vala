@@ -36,7 +36,7 @@ public class Tuner.Model.Metadata : GLib.Object
         {"track-count",      N_("Track Count")                          },
         {"nominal-bitrate",  N_("Nominal Bitrate")                      },
         {"minimum-bitrate",  N_("Minimum Bitrate")                      },
-        {"maximum-bitrate",  N_("Maximim Bitrate")                      },
+        {"maximum-bitrate",  N_("Maximum Bitrate")                      },
         {"container-format", N_("Container Format")                      },
         {"application-name", N_("Application Name")                     },
         {"encoder",          N_("Encoder")                              },

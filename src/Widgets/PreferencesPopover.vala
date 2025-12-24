@@ -93,7 +93,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 		// Export starred
 		var export_starred = new Gtk.ModelButton ();
-		export_starred.text = _("Export Starred Sations to Playlist");
+		export_starred.text = _("Export Starred Stations to Playlist");
 		export_starred.button_press_event.connect (() =>
 		{
 			export_m3u8 ();
@@ -102,7 +102,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 		// Import starred
 		var import_starred = new Gtk.ModelButton ();
-		import_starred.text = _("Import Station UUIDs as Starred Sations");
+		import_starred.text = _("Import Station UUIDs as Starred Stations");
 		import_starred.button_press_event.connect (() =>
 		{
 			import_stationuuids ();
