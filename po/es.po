@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: louis@brauer.family\n"
 "POT-Creation-Date: 2020-11-08 19:49+0100\n"
-"PO-Revision-Date: 2025-12-24 01:19+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-12-25 02:00+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "es/>\n"
 "Language: es\n"
@@ -780,9 +780,8 @@ msgid "Saint Lucia"
 msgstr "Santa Lucía"
 
 #: src/Models/Countries.vala:223
-#, fuzzy
 msgid "Saint Martin"
-msgstr "San Martín (Francia)"
+msgstr "San Martín"
 
 #: src/Models/Countries.vala:224
 msgid "Saint Pierre and Miquelon"
@@ -829,9 +828,8 @@ msgid "Singapore"
 msgstr "Singapur"
 
 #: src/Models/Countries.vala:235
-#, fuzzy
 msgid "Sint Maarten"
-msgstr "San Martín (Países Bajos)"
+msgstr "Sint Maarten"
 
 #: src/Models/Countries.vala:236
 msgid "Slovakia"
@@ -1022,9 +1020,8 @@ msgid "70s"
 msgstr "70s"
 
 #: src/Models/Genre.vala:36
-#, fuzzy
 msgid "80s"
-msgstr "Años 80"
+msgstr "80s"
 
 #: src/Models/Genre.vala:37
 msgid "90s"
@@ -1036,15 +1033,15 @@ msgstr "Clásica"
 
 #: src/Models/Genre.vala:39
 msgid "Country"
-msgstr "Country"
+msgstr "País"
 
 #: src/Models/Genre.vala:40
 msgid "Dance"
-msgstr "Dance"
+msgstr "Baile"
 
 #: src/Models/Genre.vala:41
 msgid "Electronic"
-msgstr "Electronic"
+msgstr "Electrónico"
 
 #: src/Models/Genre.vala:42
 msgid "House"
