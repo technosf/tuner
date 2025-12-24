@@ -2,14 +2,16 @@
 # Copyright (C) 2020 THE com.github.louis77.tuner'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.louis77.tuner package.
 # Safak <bjksafak45@gmail.com>, 2020.
-# Oğuz Ersen <oguz@ersen.moe>, 2022.
+# Oğuz Ersen <oguz@ersen.moe>, 2022, 2025.
+# Deleted User <noreply+13144@weblate.org>, 2025.
+# technosf <535060+technosf@users.noreply.github.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: louis@brauer.family\n"
 "POT-Creation-Date: 2020-11-08 19:49+0100\n"
-"PO-Revision-Date: 2022-05-18 21:15+0000\n"
-"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"PO-Revision-Date: 2025-12-24 01:18+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "tr/>\n"
 "Language: tr\n"
@@ -17,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: src/Models/Countries.vala:34
 msgid "Afghanistan"
