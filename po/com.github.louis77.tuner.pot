@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-23 15:25-0800\n"
+"POT-Creation-Date: 2025-12-23 16:00-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: src/Widgets/StationContextMenu.vala:167
@@ -101,12 +101,12 @@ msgstr ""
 msgid "Data Provider"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:149
+#: src/Widgets/HeaderBar.vala:148
 #, c-format
 msgid ""
-"Data Provider: %s\n"
+"Data Provider: %1$s\n"
 "\n"
-"%u Stations,\t%u Tags"
+"%2$u Stations,\t%3$u Tags"
 msgstr ""
 
 #: src/Models/StreamMetadata.vala:44
@@ -132,8 +132,8 @@ msgstr ""
 #: src/Widgets/Display.vala:559
 #, c-format
 msgid ""
-"Double click to shuffle through %u stations,\n"
-"one, every ten minutes, for %u days"
+"Double click to shuffle through %1$u stations,\n"
+"one, every ten minutes, for %2$u days"
 msgstr ""
 
 #: src/Models/StreamMetadata.vala:42
@@ -154,7 +154,7 @@ msgid "Error reading file: %s"
 msgstr ""
 
 #: src/Widgets/Window.vala:242
-msgid "Error while trying to autoplay, aborting..."
+msgid "Error while trying to autoplay, aborting…"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:208
@@ -200,7 +200,7 @@ msgstr ""
 msgid "Has CRC"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:213
+#: src/Widgets/HeaderBar.vala:212
 msgid "History"
 msgstr ""
 
@@ -304,7 +304,7 @@ msgstr ""
 msgid "Popular"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:209
+#: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
 msgstr ""
 
@@ -355,7 +355,7 @@ msgid ""
 "try again later."
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:171
+#: src/Widgets/HeaderBar.vala:170
 msgid "Star this station"
 msgstr ""
 
@@ -367,7 +367,7 @@ msgstr ""
 msgid "Starred by You :"
 msgstr ""
 
-#: src/Widgets/HeaderBar.vala:192
+#: src/Widgets/HeaderBar.vala:191
 msgid "Station Search"
 msgstr ""
 
