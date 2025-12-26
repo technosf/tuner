@@ -6,9 +6,9 @@ Minimalist radio station player - **Tuner** Version 2
 
 ![Screenshot 01](docs/Tuner_2.0_discover.png?raw=true)
 
-"I love listening to radio while I work. There are tens of tousands of cool internet radio stations available, however I find it hard to "find" new stations by using filters and genres. As of now, this little app takes away all the filtering and just presents me with new radio stations every time I use it.
-
-While I hacked on this App, I discovered so many cool and new stations, which makes it even more enjoyable. I hope you enjoy it too."
+>I love listening to radio while I work. There are tens of thousands of cool internet radio stations available, however I find it hard to "find" new stations by using filters and genres. As of now, this little app takes away all the filtering and just presents me with new radio stations every time I use it.
+>
+>While I hacked on this App, I discovered so many cool and new stations, which makes it even more enjoyable. I hope you enjoy it too.
 
 -- _**louis77**_
 
