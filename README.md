@@ -1,4 +1,4 @@
-# ![icon](docs/logo_01.png) Tuner [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+# ![icon](docs/logo_01.png) Tuner [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Translation status](https://hosted.weblate.org/widgets/tuner/-/tuner-ui/svg-badge.svg)](https://hosted.weblate.org/engage/tuner/)
 
 ## Discover and Listen to your favourite internet radio stations
 
@@ -41,8 +41,6 @@ It can also be built and [distributed via other platforms and distos](PACKAGING.
 ## Translation
 
 **Tuner** is Internationalized, and is available in various languges. Translations are hosted on [Weblate](https://hosted.weblate.org/engage/tuner/). Please help by [translating Tuner into your language or fix any translation issues](I18N.md) you find.
-
-[![Translation status](https://hosted.weblate.org/widgets/tuner/-/tuner-ui/svg-badge.svg)](https://hosted.weblate.org/engage/tuner/)
 
 Thanks to the Weblate team for generously hosting **Tuner** for free!
 
