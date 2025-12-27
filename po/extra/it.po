@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-08 19:20+0100\n"
-"PO-Revision-Date: 2021-04-25 15:00+0100\n"
-"Last-Translator: Albano Battistella<albano_battistella@hotmail.com>\n"
-"Language-Team: Italian\n"
+"PO-Revision-Date: 2025-12-27 22:20+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/tuner/tuner-"
+"desktop/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: data/com.github.louis77.tuner.desktop.in:4
 #: data/com.github.louis77.tuner.appdata.xml.in:8
@@ -73,7 +75,8 @@ msgstr "Scopri nuove stazioni ogni giorno"
 #: data/com.github.louis77.tuner.appdata.xml.in:21
 #, fuzzy
 msgid "Star stations you like and visit their website"
-msgstr "Aggiungi ai preferiti le stazioni che ti piacciono e visita il loro sito web"
+msgstr ""
+"Aggiungi ai preferiti le stazioni che ti piacciono e visita il loro sito web"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:22
 msgid "Control Tuner from your volume indicator"
@@ -122,7 +125,8 @@ msgstr "Corretto le icone mancanti per i sistemi operativi non elemtary OS"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:84
 msgid "Add manual dark mode switch in settings"
-msgstr "Aggiunto l'interruttore manuale della modalità oscura nelle impostazioni"
+msgstr ""
+"Aggiunto l'interruttore manuale della modalità oscura nelle impostazioni"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:85
 msgid "Compact sidebar and content window"

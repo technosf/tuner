@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-08 19:20+0100\n"
-"PO-Revision-Date: 2020-09-28 11:53+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-27 22:20+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/tuner/tuner-"
+"desktop/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: data/com.github.louis77.tuner.desktop.in:4
 #: data/com.github.louis77.tuner.appdata.xml.in:8
@@ -64,20 +66,21 @@ msgstr ""
 #: data/com.github.louis77.tuner.appdata.xml.in:18
 msgid "Tuner uses the community-driven station catalog radio-browser.info."
 msgstr ""
-"Tuner benutzt das offene Community-Radio-Verzeichnis von radio-browser.info"
+"Tuner verwendet den gemeinschaftlichen Senderkatalog radio-browser.info."
 
 #: data/com.github.louis77.tuner.appdata.xml.in:20
 msgid "Discover new stations every day"
-msgstr "Entdecke jeden Tag neue Radio-Stationen"
+msgstr "Entdecken Sie jeden Tag neue Stationen"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:21
-#, fuzzy
 msgid "Star stations you like and visit their website"
-msgstr "Markiere deine Favoriten"
+msgstr ""
+"Markieren Sie Ihre Lieblingssender mit einem Stern und besuchen Sie deren "
+"Website"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:22
 msgid "Control Tuner from your volume indicator"
-msgstr "Steuere Tuner von deinem System-Lautstärkeregler"
+msgstr "Steuern Sie den Tuner über Ihre Lautstärkeanzeige"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:64
 #: data/com.github.louis77.tuner.appdata.xml.in:95
@@ -87,15 +90,17 @@ msgstr "Neue Funktionen:"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:66
 msgid "Show the current track playing if supported by station"
-msgstr ""
+msgstr "Zeigen Sie das aktuelle Track-Spiel, wenn von Station unterstützt"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:67
 msgid "Show Top 100 stations of user country if detectable"
 msgstr ""
+"Zeigen Sie die Top 100 Sender des Landes des Benutzers an, falls dies "
+"ermittelbar ist"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:68
 msgid "\"Visit Website\" link in station context menu"
-msgstr ""
+msgstr "Link „Website besuchen“ im Kontextmenü der Station"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:70
 #: data/com.github.louis77.tuner.appdata.xml.in:82

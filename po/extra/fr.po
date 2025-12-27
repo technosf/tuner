@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-08 19:20+0100\n"
-"PO-Revision-Date: 2020-09-28 11:53+0200\n"
-"Last-Translator: Nathan Bonnemains (@NathanBnm)\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-27 22:20+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-"
+"desktop/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: data/com.github.louis77.tuner.desktop.in:4
 #: data/com.github.louis77.tuner.appdata.xml.in:8
@@ -71,7 +73,8 @@ msgstr "Découvrez de nouvelles stations chaque jour"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:21
 msgid "Star stations you like and visit their website"
-msgstr "Marquez les stations que vous aimez comme favorites et visitez leur site Web"
+msgstr ""
+"Marquez les stations que vous aimez comme favorites et visitez leur site Web"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:22
 msgid "Control Tuner from your volume indicator"
@@ -85,15 +88,20 @@ msgstr "Nouvelles fonctionnalités"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:66
 msgid "Show the current track playing if supported by station"
-msgstr "Affichage de la piste en cours de lecture lorsque cela est pris en charge par la station"
+msgstr ""
+"Affichage de la piste en cours de lecture lorsque cela est pris en charge "
+"par la station"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:67
 msgid "Show Top 100 stations of user country if detectable"
-msgstr "Affichage du top 100 des stations du pays de l'utilisateur si détectable"
+msgstr ""
+"Affichage du top 100 des stations du pays de l'utilisateur si détectable"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:68
 msgid "\"Visit Website\" link in station context menu"
-msgstr "Ajout de l'option « Visiter le site Web » dans le menu contextuel des stations"
+msgstr ""
+"Ajout de l'option « Visiter le site Web » dans le menu contextuel des "
+"stations"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:70
 #: data/com.github.louis77.tuner.appdata.xml.in:82
@@ -116,7 +124,8 @@ msgstr "Corrections de bug :"
 #: data/com.github.louis77.tuner.appdata.xml.in:76
 #: data/com.github.louis77.tuner.appdata.xml.in:89
 msgid "Fix missing icons for non elementary OS systems"
-msgstr "Correction des icônes manquantes pour les systèmes différents d'elementary OS"
+msgstr ""
+"Correction des icônes manquantes pour les systèmes différents d'elementary OS"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:84
 msgid "Add manual dark mode switch in settings"
@@ -137,8 +146,8 @@ msgid ""
 "Add settings menu with \"Do-Not-Track\" option, disables sending station "
 "listening events to radio-browser.org"
 msgstr ""
-"Ajout de l'option « Ne pas suivre », désactive "
-"l'envoi des événements d'écoute de la station à radio-browser.org"
+"Ajout de l'option « Ne pas suivre », désactive l'envoi des événements "
+"d'écoute de la station à radio-browser.org"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:99
 msgid "Add About dialog"
