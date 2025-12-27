@@ -19,9 +19,7 @@ Discover and Listen to your favourite internet radio stations, and add improve t
 
 ## Overview
 
-**_Tuner_** is hosted on [Github](https://github.com/louis77/tuner), packaged as a Flatpak and distributed by Flathub. **_Tuner_** is writen in [Vala](https://vala.dev/), a C#/Java/JavaFX-like language with a self-hosting compiler that generates C code and uses the GObject type system and wrapping a number of GTK libraries. It uses [Meson](https://mesonbuild.com/) as its build system.
-
-**_Tuner_** has not undergone a lot of attention in a while, and would benefit from a review with an eye to refactoring and cleaning up the code, while in the short term addressing known bugs and fixing basic functional issues, documentation and also making it easier to build and test.
+**_Tuner_** is hosted on [Github](https://github.com/tuner-app/tuner), packaged as a Flatpak and distributed by Flathub. **_Tuner_** is writen in [Vala](https://vala.dev/), a C#/Java/JavaFX-like language with a self-hosting compiler that generates C code, uses the GObject type system and wrapping a number of GTK libraries, and utilizes GNOME internationalization and localization (_i18n_) for user-facing strings, which are translated via [Weblate](https://hosted.weblate.org/projects/tuner/). [Meson](https://mesonbuild.com/) is the build system.
 
 ## Tuner Development
 
@@ -70,14 +68,14 @@ There are two build configurations: _debug_ and _release_. The _debug_ build (ma
 Clone the repo and drop into the Tuner directory:
 
 ```bash
-git clone https://github.com/louis77/tuner.git
+git clone https://github.com/tuner-app/tuner.git
 cd tuner
 ```
 
 Configure Meson for development debug build, build Tuner with Ninja, and run the result:
 
 ```bash
-meson setup --buildtype=debug builddir
+meson setup --buildtype=debug builddir -Dtranslate=update
 meson compile -C builddir
 meson install -C builddir     # only needed once to get the gschema in place
 ./builddir/com.github.louis77.tuner
@@ -135,7 +133,18 @@ Check the app version to ensure that it matches the version in the manifest.
 
 ### Build Changes
 
-If the build has changed it may be required to update repository check-in **Action** workflows in the _.github_ directory prior to check-in. For example if the _Platform_ chnges the Repository _Build and Test_ and _CI_ actions need to be updated. It is also good practice to check to see if the action components themselves have been superceded and need to reference new versions.
+If the build has changed it may be required to update repository check-in **Action** workflows in the _.github_ directory prior to check-in. For example if the _Platform_ chnges the Repository _Build and Test_ and _CI_ actions need to be updated and pushed prior to code changes are pushed. It is also good practice to check to see if the action components themselves have been superceded and need to reference new versions.
+
+### Language Changes & Translations
+
+Changes to strings that are internationalized require translation via [Weblate](https://hosted.weblate.org/projects/tuner/) and reintegration of the new translations into the build.
+
+for translation by GNOME gettext require that the _.pot_ file be regenerated, checked in and pushed so
+
+```bash
+meson compile -C builddir pot
+meson compile -C builddir extra-pot
+```
 
 ### Code Changes
 
@@ -212,7 +221,7 @@ After checking out the required version, build and run the app as described abov
 
 ## Release Process
 
-Releasing _Tuner_ comprises cutting a release of the code in [tuner github](https://github.com/louis77/tuner) and then updating the [flathub repo](https://github.com/flathub/com.github.louis77.tuner) which will automatically have the flatpak generated and rolled to Flathub for distribution.
+Releasing _Tuner_ comprises cutting a release of the code in [tuner github](https://github.com/tuner-app/tuner) and then updating the [flathub repo](https://github.com/flathub/com.github.louis77.tuner) which will automatically have the flatpak generated and rolled to Flathub for distribution.
 
 ### Beta Releases
 

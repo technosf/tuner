@@ -100,7 +100,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
 	private SourceList.ExpandableItem _saved_searches_category = new SourceList.ExpandableItem (_("Saved Searches"));
 	private SourceList.ExpandableItem _explore_category        = new SourceList.ExpandableItem (_("Explore"));
 	private SourceList.ExpandableItem _genres_category         = new SourceList.ExpandableItem (_("Genres"));
-	private SourceList.ExpandableItem _subgenres_category      = new SourceList.ExpandableItem (_("Sub Genres"));
+	private SourceList.ExpandableItem _subgenres_category      = new SourceList.ExpandableItem (_("Subgenres"));
 	private SourceList.ExpandableItem _eras_category           = new SourceList.ExpandableItem (_("Eras"));
 	private SourceList.ExpandableItem _talk_category           = new SourceList.ExpandableItem (_("Talk, News, Sport"));
 

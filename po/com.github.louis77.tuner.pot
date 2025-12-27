@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-23 17:12-0800\n"
+"POT-Creation-Date: 2025-12-23 21:09-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -351,8 +351,8 @@ msgstr ""
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid ""
-"Something went wrong loading radio stations data from staion provider. Please "
-"try again later."
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
 msgstr ""
 
 #: src/Widgets/HeaderBar.vala:170
@@ -404,7 +404,7 @@ msgid "Stream Url"
 msgstr ""
 
 #: src/Widgets/Display.vala:103
-msgid "Sub Genres"
+msgid "Subgenres"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:32
