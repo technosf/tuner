@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: louis@brauer.family\n"
 "POT-Creation-Date: 2025-12-23 17:12-0800\n"
-"PO-Revision-Date: 2025-12-26 23:08+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2025-12-27 21:32+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "et/>\n"
 "Language: et\n"
@@ -29,29 +29,24 @@ msgid "%s Unstar this station"
 msgstr "%s Unstar this station"
 
 #: src/Widgets/PreferencesPopover.vala:20
-#, fuzzy
 msgid "About"
-msgstr "About"
+msgstr "Rakenduse teave"
 
 #: src/Models/StreamMetadata.vala:25
-#, fuzzy
 msgid "Album"
 msgstr "Album"
 
 #: src/Models/StreamMetadata.vala:41
-#, fuzzy
 msgid "Application Name"
-msgstr "Application Name"
+msgstr "Rakenduse nimi"
 
 #: src/Models/StreamMetadata.vala:24
-#, fuzzy
 msgid "Artist"
-msgstr "Artist"
+msgstr "Esitaja"
 
 #: src/Models/StreamMetadata.vala:33
-#, fuzzy
 msgid "Audio Codec"
-msgstr "Audio Codec"
+msgstr "Audiokoodek"
 
 #: src/Widgets/PreferencesPopover.vala:50
 #, fuzzy
