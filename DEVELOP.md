@@ -14,8 +14,6 @@ Discover and Listen to your favourite internet radio stations, and add improve t
   - [VSCode](#vscode)
   - [Bug Introduction Deduction](#bug-introduction-deduction)
 - [Release Process](#release-process)
-  - [Beta Releases](#beta-releases)
-  - [Production Releases](#production-releases)
 
 ## Overview
 
@@ -221,22 +219,4 @@ After checking out the required version, build and run the app as described abov
 
 ## Release Process
 
-Releasing _Tuner_ comprises cutting a release of the code in [tuner github](https://github.com/tuner-app/tuner) and then updating the [flathub repo](https://github.com/flathub/com.github.louis77.tuner) which will automatically have the flatpak generated and rolled to Flathub for distribution.
-
-### Beta Releases
-
-Beta releases should be tagged from the Tuner _development_ branch in with a version number format of _v1.\*.\*-beta.\*_
-
-Once a beta release has been tagged, the Flathub _beta_ branch can be updated via a pull request with the _beta_ tag going into the manifest _.json_, and any patches and documentation updated as needed. The pull request will trigger a flathub build, but will not merge the pull request - pull requests should be merged only if they result in a successful build.
-
-Once the beta is successfully built by flathub it will be available for installation and testing within the user community.
-
-Once a beta roll is deamed a success its pull request can be merged, and a production release can be rolled.
-
-### Production Releases
-
-Production releases are generated from _development_ pull requests into _main_. The updated _main_ branch should be tagged with a version number format of _v1.\*.\*_
-
-Once a release has been tagged, the [flathub repo](https://github.com/flathub/com.github.louis77.tuner) _main_ branch can be updated with the _release_ tag going into the manifest _.json_, and any patches and documentation updated as needed. Updates from the _main_ branch should be copied in from a direct _pull request_ of the _main_ branch. The _main_ branch **should not** come from a merge _beta_ branch to avoid triggering subsequent builds in _beta_ .
-
-Once the main production release is built by flathub it will be available for installation and automatically distributed to user community.
+Cutting a releasing **Tuner** on [github](https://github.com/tuner-labs/tuner) and packaging and pushing out a new **Flathub** distribution are covered in the [release doc](RELEASE.md)
