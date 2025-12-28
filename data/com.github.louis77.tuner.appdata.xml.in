@@ -102,7 +102,7 @@
           <li>Bumped libgee to 0.20.8</li>
           <li>Sharpened some wording, fixed typos</li>
           <li>Updated translated strings and incorporated fresh translations</li>
-          <li>i18n - Added trad Chinese, Romaian, Tamil and Lating American Spanish</li>
+          <li>i18n - Added trad Chinese, Romaian, Tamil and Latin American Spanish</li>
         </ul>
       </description>
     </release>     

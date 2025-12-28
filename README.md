@@ -14,17 +14,23 @@ Minimalist radio station player - **Tuner** Version 2
 
 ## Features
 
-- Play ever changing stations found in [radio-browser.info](https://www.radio-browser.info/) radio station index
-- See the top selections of stations (random, top, trending) from the index
-- See the different station content genres and subgeneres from the index
+- Explore ever changing radio stations indexed in [radio-browser.info](https://www.radio-browser.info/)
+- See the top selections of listened to and saved stations from the index
+- Find different station content genres and subgeneres from the index
 - Jukebox - Play a new random station every ten minutes
 - Save your favourite stations
-- Search for stations and content
+- Search for stations and content by keyword
 - Save your favorite station searches
 - Export your favorite stations to _m3u_ playlists
 - DBus integration to pause/resume playing and show station info in Wingpanel
 - Updates station click count at station index on station play
 - Updates station vote count at station index when you star a station
+
+### Internationalization & Translation
+
+**Tuner** is Internationalized, and is available in various languges. Translations are hosted on [Weblate](https://hosted.weblate.org/engage/tuner/). Please help by [translating Tuner into your language or fix any translation issues](I18N.md) you find.
+
+Thanks to the Weblate team for generously hosting **Tuner** for free!
 
 ### Recent Updates
 
@@ -36,21 +42,16 @@ _January 2025_ Version 2 released with major new features and performance improv
 
 **Tuner** is primarily [developed](DEVELOP.md) and distributed as a Flatpak on [Flathub](https://flathub.org/apps/details/com.github.louis77.tuner).
 
-It can also be built and [distributed via other platforms and distos](PACKAGING.md). Make **Tuner** work on your favorite Disto/Package.
-
-## Translation
-
-**Tuner** is Internationalized, and is available in various languges. Translations are hosted on [Weblate](https://hosted.weblate.org/engage/tuner/). Please help by [translating Tuner into your language or fix any translation issues](I18N.md) you find.
-
-Thanks to the Weblate team for generously hosting **Tuner** for free!
-
-## Build, Maintance and Development of Tuner
-
-Building, developing and maintianing **Tuner** is detailed seperately and in detail in the [DEVELOP](DEVELOP.md) markdown.
+It can also be built and [distributed via other platforms and distos](PACKAGING.md).
+Please help make **Tuner** work on your favorite Disto/Package.
 
 ## Status and Support
 
-Feature request, observations and Issues can be documented with tickets on [Github](https://github.com/tuner-labs/tuner/issues)
+Join in or start [discussion about tuner](https://github.com/orgs/tuner-labs/discussions)... Feature request, observations and Issues can be documented with tickets on [Github](https://github.com/tuner-labs/tuner/issues)
+
+### Build, Maintance and Development of Tuner
+
+Building, developing and maintianing **Tuner** is detailed seperately and in detail in the [DEVELOP](DEVELOP.md) markdown.
 
 ### Known Issues
 
