@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
-"Report-Msgid-Bugs-To: louis@brauer.family\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2025-12-23 17:12-0800\n"
-"PO-Revision-Date: 2025-12-27 21:32+0000\n"
+"PO-Revision-Date: 2025-12-31 12:01+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "et/>\n"
@@ -19,14 +19,14 @@ msgstr ""
 "X-Generator: Weblate 5.15.1\n"
 
 #: src/Widgets/StationContextMenu.vala:167
-#, c-format, fuzzy
+#, c-format
 msgid "%s Star this station"
-msgstr "%s Star this station"
+msgstr "%s Märgi see veebiraadio lemmikuks"
 
 #: src/Widgets/StationContextMenu.vala:166
-#, c-format, fuzzy
+#, c-format
 msgid "%s Unstar this station"
-msgstr "%s Unstar this station"
+msgstr "%s Eemalda see veebiraadio lemmikute seast"
 
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
@@ -49,385 +49,322 @@ msgid "Audio Codec"
 msgstr "Audiokoodek"
 
 #: src/Widgets/PreferencesPopover.vala:50
-#, fuzzy
 msgid "Auto-play last station on startup"
-msgstr "Auto-play last station on startup"
+msgstr "Käivitamisel alusta viimatikuulatud jaama esitamist"
 
 #: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
-#, fuzzy
 msgid "Bitrate"
-msgstr "Bitrate"
+msgstr "Bitikiirus"
 
 #: src/Models/Station.vala:357
-#, fuzzy
 msgid "Changes"
-msgstr "Changes"
+msgstr "Muudatused"
 
 #: src/Models/StreamMetadata.vala:34
-#, fuzzy
 msgid "Channel Mode"
-msgstr "Channel Mode"
+msgstr "Kanalirežiim"
 
 #: src/Widgets/PreferencesPopover.vala:221
-#, fuzzy
 msgid "Choose a file"
-msgstr "Choose a file"
+msgstr "Vali fail"
 
 #: src/Widgets/Window.vala:69
-#, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+"Klõpsa siin akna töö jätkamiseks. Tuneri sulgemiseks peata taasesitus ja "
+"sulge aken."
 
 #: src/Models/Station.vala:364
-#, fuzzy
 msgid "Codec"
-msgstr "Codec"
+msgstr "Koodek"
 
 #: src/Models/StreamMetadata.vala:40
-#, fuzzy
 msgid "Container Format"
-msgstr "Container Format"
+msgstr "Konteineri vorming"
 
 #: src/Widgets/StationContextMenu.vala:102
-#, fuzzy
 msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to clipboard"
+msgstr "Kopeeri voogedastuse võrguaadress lõikelauale"
 
 #: src/Widgets/Display.vala:247
-#, c-format, fuzzy
+#, c-format
 msgid "Could not get random station: %s"
-msgstr "Could not get random station: %s"
+msgstr "Juhusliku jaama tuvastamine ei õnnestunud: %s"
 
 #: src/Widgets/PreferencesPopover.vala:66
-#, fuzzy
 msgid "Cycle through the metadata from the playing stream"
-msgstr "Cycle through the metadata from the playing stream"
+msgstr "Töötle esitamisel oleva voogedastuse metateavet"
 
 #: src/Widgets/PreferencesPopover.vala:34
-#, fuzzy
 msgid "Dark mode"
-msgstr "Dark mode"
+msgstr "Tume kujundus"
 
 #: src/Widgets/HeaderBar.vala:143
-#, fuzzy
 msgid "Data Provider"
-msgstr "Data Provider"
+msgstr "Andmeallikas"
 
 #: src/Widgets/HeaderBar.vala:148
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Data Provider: %1$s\n"
 "\n"
 "%2$u Stations,\t%3$u Tags"
 msgstr ""
-"Data Provider: %1$s\n"
+"Andmeallikas: %1$s\n"
 "\n"
-"%2$u Stations,\t%3$u Tags"
+"%2$u jaama,\t%3$u silti"
 
 #: src/Models/StreamMetadata.vala:44
-#, fuzzy
 msgid "Date Time"
-msgstr "Date Time"
+msgstr "Kuupäev ja kellaaeg"
 
 #: src/Widgets/PreferencesPopover.vala:76
-#, fuzzy
 msgid "Default"
-msgstr "Default"
+msgstr "Vaikimisi"
 
 #: src/Widgets/Display.vala:325
-#, fuzzy
 msgid "Discover"
-msgstr "Discover"
+msgstr "Otsi ja avasta"
 
 #: src/Widgets/Display.vala:329
-#, fuzzy
 msgid "Discover more stations"
-msgstr "Discover more stations"
+msgstr "Otsi ja avasta uusi veebiraadiojaamu"
 
 #: src/Widgets/PreferencesPopover.vala:25
-#, fuzzy
 msgid "Do not participate in Station voting"
-msgstr "Do not participate in Station voting"
+msgstr "Ära osale jaamade hääletuses"
 
 #: src/Widgets/Display.vala:559
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
+"Topeltklõpsa, kui tahad juhuslikus valikus läbi kuulata %1$u "
+"veebiraadiojaama,\n"
+"kuulates ühte jaama kümne minuti jooksul ja nii %2$u päeva"
 
 #: src/Models/StreamMetadata.vala:42
-#, fuzzy
 msgid "Encoder"
-msgstr "Encoder"
+msgstr "Kodeerija"
 
 #: src/Models/StreamMetadata.vala:43
-#, fuzzy
 msgid "Encoder Version"
-msgstr "Encoder Version"
+msgstr "Kodeerija versioon"
 
 #: src/Widgets/Display.vala:104
-#, fuzzy
 msgid "Eras"
-msgstr "Eras"
+msgstr "Ajastud"
 
 #: src/Widgets/PreferencesPopover.vala:247
-#, c-format, fuzzy
+#, c-format
 msgid "Error reading file: %s"
-msgstr "Error reading file: %s"
+msgstr "Viga faili lugemisel: %s"
 
 #: src/Widgets/Window.vala:242
-#, fuzzy
 msgid "Error while trying to autoplay, aborting…"
-msgstr "Error while trying to autoplay, aborting…"
+msgstr "Automaatse esituse alustamisel tekkis viga, katkestan…"
 
 #: src/Widgets/PreferencesPopover.vala:208
-#, c-format, fuzzy
+#, c-format
 msgid "Error: %s"
-msgstr "Error: %s"
+msgstr "Viga: %s"
 
 #: src/Widgets/Display.vala:101
-#, fuzzy
 msgid "Explore"
-msgstr "Explore"
+msgstr "Uuri"
 
 #: src/Widgets/PreferencesPopover.vala:96
-#, fuzzy
 msgid "Export Starred Stations to Playlist"
-msgstr "Export Starred Stations to Playlist"
+msgstr "Ekspordi lemmikjaamad esitusloendisse"
 
 #: src/Models/StreamMetadata.vala:31
-#, fuzzy
 msgid "Extended Comment"
-msgstr "Extended Comment"
+msgstr "Laiendatud kommentaar"
 
 #: src/Widgets/PreferencesPopover.vala:71
-#, fuzzy
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
+"Kui voogaedastuse teabe kuvamine on kasutusel, siis selle eelistuse puhul "
+"töödeldakse voogedastuse metateavet kiiremini"
 
 #: src/Widgets/PreferencesPopover.vala:69
-#, fuzzy
 msgid "Faster cycling through stream info"
-msgstr "Faster cycling through stream info"
+msgstr "Voogedastuse metateabe kiirem töötlus"
 
 #: src/Models/Station.vala:360
-#, fuzzy
 msgid "Favicon address"
-msgstr "Favicon address"
+msgstr "Favikoni aadress"
 
 #: src/Models/StreamMetadata.vala:27
-#, fuzzy
 msgid "Genre"
-msgstr "Genre"
+msgstr "Žanr"
 
 #: src/Widgets/Display.vala:102
-#, fuzzy
 msgid "Genres"
-msgstr "Genres"
+msgstr "Žanrid"
 
 #: src/Models/StreamMetadata.vala:46
-#, fuzzy
 msgid "Has CRC"
-msgstr "Has CRC"
+msgstr "CRC on kasutusel"
 
 #: src/Widgets/HeaderBar.vala:212
-#, fuzzy
 msgid "History"
-msgstr "History"
+msgstr "Ajalugu"
 
 #: src/Models/StreamMetadata.vala:28
-#, fuzzy
 msgid "Homepage"
-msgstr "Homepage"
+msgstr "Avaleht"
 
 #: src/Models/Station.vala:361
-#, fuzzy
 msgid "Homepage address"
-msgstr "Homepage address"
+msgstr "Avalehe aadress"
 
 #: src/Widgets/PreferencesPopover.vala:27
-#, fuzzy
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
+"Selle valiku eelistamisel lemmikuks märgitud ja voogedastatud "
+"veebiraadiojaamad ei lähe arvesse ei jaamade populaarsusindeksi ega "
+"populaarsust koguvate ja trendikate jaamade arvestuses"
 
 #: src/Widgets/PreferencesPopover.vala:52
-#, fuzzy
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
+"Selle valiku eelistamisel Tuneri avamisel jätkub viimatikuulatud jaama "
+"kuulamine"
 
 #: src/Widgets/PreferencesPopover.vala:59
-#, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr "Selle valiku eelistamisel Tuneri avamisel kuvatakse lemmikjaamade vaade"
 
 #: src/Models/StreamMetadata.vala:26
-#, fuzzy
 msgid "Image"
-msgstr "Image"
+msgstr "Pilt"
 
 #: src/Widgets/PreferencesPopover.vala:105
-#, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
-msgstr "Import Station UUIDs as Starred Stations"
+msgstr "Impordi jaamade UUID-d lemmikaamade vaatesse"
 
 #: src/Widgets/Display.vala:557
-#, fuzzy
 msgid "Jukebox"
-msgstr "Jukebox"
+msgstr "Muusikaautomaat"
 
 #: src/Widgets/PreferencesPopover.vala:86
-#, fuzzy
 msgid "Language"
-msgstr "Language"
+msgstr "Keel"
 
 #: src/Widgets/Display.vala:422
-#, fuzzy
 msgid "Latest Search"
-msgstr "Latest Search"
+msgstr "Viimane otsing"
 
 #: src/Widgets/Display.vala:99
-#, fuzzy
 msgid "Library"
-msgstr "Library"
+msgstr "Meediakogu"
 
 #: src/Widgets/PreferencesPopover.vala:33
-#, fuzzy
 msgid "Light mode"
-msgstr "Light mode"
+msgstr "Hele kujundus"
 
 #: src/Models/StreamMetadata.vala:30
-#, fuzzy
 msgid "Location"
-msgstr "Location"
+msgstr "Asukoht"
 
 #: src/Models/StreamMetadata.vala:39
-#, fuzzy
 msgid "Maximum Bitrate"
-msgstr "Maximum Bitrate"
+msgstr "Maksimaalne bitikiirus"
 
 #: src/Models/StreamMetadata.vala:38
-#, fuzzy
 msgid "Minimum Bitrate"
-msgstr "Minimum Bitrate"
+msgstr "Minimaalne bitikiirus"
 
 #: src/Widgets/Display.vala:362
-#, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
-msgstr "Most listened to Stations in the last 24 hours"
+msgstr "Viimase 24 tunni jooksul enimkuulatud jaamad"
 
 #: src/Widgets/base/StationListBox.vala:156
-#, fuzzy
 msgid "No stations found"
-msgstr "No stations found"
+msgstr "Veebiraadiojaamu ei leidunud"
 
 #: src/Models/StreamMetadata.vala:37
-#, fuzzy
 msgid "Nominal Bitrate"
-msgstr "Nominal Bitrate"
+msgstr "Nominaalne bitikiirus"
 
 #: src/Widgets/base/StationListBox.vala:146
-#, fuzzy
 msgid "Nothing here"
-msgstr "Nothing here"
+msgstr "Siin pole mitte midagi"
 
 #: src/Widgets/PreferencesPopover.vala:57
-#, fuzzy
 msgid "Open to Starred Stations"
-msgstr "Open to Starred Stations"
+msgstr "Ava lemmikjaamade vaade"
 
 #: src/Models/StreamMetadata.vala:29
-#, fuzzy
 msgid "Organization"
-msgstr "Organization"
+msgstr "Organisatsioon"
 
 #: src/Widgets/Window.vala:68
-#, fuzzy
 msgid "Playing in background"
-msgstr "Playing in background"
+msgstr "Taasesitus taustal"
 
 #: src/Widgets/base/StationListBox.vala:156
-#, fuzzy
 msgid "Please try a different search term."
-msgstr "Please try a different search term."
+msgstr "Palun sisesta muu otsingusõna."
 
 #: src/Widgets/Display.vala:361
-#, fuzzy
 msgid "Popular"
-msgstr "Popular"
+msgstr "Populaarne"
 
 #: src/Widgets/HeaderBar.vala:208
-#, fuzzy
 msgid "Preferences"
-msgstr "Preferences"
+msgstr "Eelistused"
 
 #: src/Models/StreamMetadata.vala:45
-#, fuzzy
 msgid "Private Data"
-msgstr "Private Data"
+msgstr "Privaatsed andmed"
 
 #: src/Widgets/Display.vala:627
-#, fuzzy
 msgid "Remove this saved search"
-msgstr "Remove this saved search"
+msgstr "Eemalda see salvestatud otsing"
 
 #: src/Widgets/PreferencesPopover.vala:87
-#, fuzzy
 msgid "Requires restarting Tuner"
-msgstr "Requires restarting Tuner"
+msgstr "Eeldab Tuneri uuesti käivitamist"
 
 #: src/Widgets/PreferencesPopover.vala:184
-#, fuzzy
 msgid "Save File"
-msgstr "Save File"
+msgstr "Salvesta fail"
 
 #: src/Widgets/Display.vala:426
-#, fuzzy
 msgid "Save this search"
-msgstr "Save this search"
+msgstr "Salvesta see otsing"
 
 #: src/Widgets/Display.vala:625
-#, c-format, fuzzy
+#, c-format
 msgid "Saved Search :  %s"
-msgstr "Saved Search :  %s"
+msgstr "Salvestatud otsing:  %s"
 
 #: src/Widgets/Display.vala:100
-#, fuzzy
 msgid "Saved Searches"
-msgstr "Saved Searches"
+msgstr "Salvestatud otsingud"
 
 #: src/Widgets/Display.vala:423
-#, fuzzy
 msgid "Search Results"
-msgstr "Search Results"
+msgstr "Otsingutulemused"
 
 #: src/Widgets/Display.vala:98
-#, fuzzy
 msgid "Selections"
-msgstr "Selections"
+msgstr "Valikud"
 
 #: src/Widgets/PreferencesPopover.vala:64
-#, fuzzy
 msgid "Show stream info when playing"
-msgstr "Show stream info when playing"
+msgstr "Esitamise ajal näita meediavoo teavet"
 
 #: src/Widgets/base/StationListBox.vala:146
 #, fuzzy
@@ -439,64 +376,52 @@ msgstr ""
 "Please try again later."
 
 #: src/Widgets/HeaderBar.vala:170
-#, fuzzy
 msgid "Star this station"
-msgstr "Star this station"
+msgstr "Märgi see jaam lemmikuks"
 
 #: src/Widgets/Display.vala:397
-#, fuzzy
 msgid "Starred by You"
-msgstr "Starred by You"
+msgstr "Sinu lemmikud"
 
 #: src/Widgets/Display.vala:398
-#, fuzzy
 msgid "Starred by You :"
-msgstr "Starred by You :"
+msgstr "Sinu lemmikud:"
 
 #: src/Widgets/HeaderBar.vala:191
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "Veebiraadiojaamade otsing"
 
 #: src/Widgets/StationContextMenu.vala:87
-#, fuzzy
 msgid "Station info updated Online - View changes"
-msgstr "Station info updated Online - View changes"
+msgstr "Veebiraadiojaama teave on võrgus muutunud. Vaata muudatusi"
 
 #: src/Models/Station.vala:133
-#, fuzzy
 msgid "Station no longer in the index"
-msgstr "Station no longer in the index"
+msgstr "See veebiraadiojaam pole enam indeksis"
 
 #: src/Models/Station.vala:362
-#, fuzzy
 msgid "Station tags"
-msgstr "Station tags"
+msgstr "Veebiraadiojaamade sildid"
 
 #: src/Widgets/Display.vala:326
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "Avastatavad veebiraadiojaamad"
 
 #: src/Widgets/Window.vala:286
-#, fuzzy
 msgid "Stop Playback requested"
-msgstr "Stop Playback requested"
+msgstr "Oled soovinud taasesituse lõpetamist"
 
 #: src/Widgets/HeaderBar.vala:62
-#, fuzzy
 msgid "Stream Metadata"
-msgstr "Stream Metadata"
+msgstr "Voodedastuse metateave"
 
 #: src/Models/Station.vala:359
-#, fuzzy
 msgid "Stream Resolved Url"
-msgstr "Stream Resolved Url"
+msgstr "Voogedastuse võrguaadress"
 
 #: src/Models/Station.vala:358
-#, fuzzy
 msgid "Stream Url"
-msgstr "Stream Url"
+msgstr "Meediavoo aadress"
 
 #: src/Widgets/Display.vala:103
 #, fuzzy
@@ -504,72 +429,59 @@ msgid "Sub Genres"
 msgstr "Sub Genres"
 
 #: src/Widgets/PreferencesPopover.vala:32
-#, fuzzy
 msgid "System"
-msgstr "System"
+msgstr "Süsteemi määratud"
 
 #: src/Widgets/Display.vala:105
-#, fuzzy
 msgid "Talk, News, Sport"
-msgstr "Talk, News, Sport"
+msgstr "Jutusaated, uudised, sport"
 
 #: src/Widgets/PreferencesPopover.vala:45
-#, fuzzy
 msgid "Theme"
-msgstr "Theme"
+msgstr "Kujundus"
 
 #: src/Models/StreamMetadata.vala:23
-#, fuzzy
 msgid "Title"
-msgstr "Title"
+msgstr "Pealkiri"
 
 #: src/Models/StreamMetadata.vala:36
-#, fuzzy
 msgid "Track Count"
-msgstr "Track Count"
+msgstr "Lugude arv"
 
 #: src/Models/StreamMetadata.vala:35
-#, fuzzy
 msgid "Track Number"
-msgstr "Track Number"
+msgstr "Loo number"
 
 #: src/Widgets/Display.vala:346
-#, fuzzy
 msgid "Trending"
-msgstr "Trending"
+msgstr "Hetkel populaarne"
 
 #: src/Widgets/Display.vala:347
-#, fuzzy
 msgid "Trending Stations in the last 24 hours"
-msgstr "Trending Stations in the last 24 hours"
+msgstr "Populaarsust koguvad veebiraadiojaamad viimase 24 tunni jooksul"
 
 #: src/Widgets/StationContextMenu.vala:143
-#, c-format, fuzzy
+#, c-format
 msgid "Unable to open website: %s"
-msgstr "Unable to open website: %s"
+msgstr "Veebisaidi avamine ei õnnestunud: %s"
 
 #: src/Widgets/StationContextMenu.vala:88
-#, fuzzy
 msgid "Update Station from Online"
-msgstr "Update Station from Online"
+msgstr "Uuenda veebiraadiojaama andmed võrgust"
 
 #: src/Widgets/StationContextMenu.vala:96
-#, fuzzy
 msgid "Visit Website"
-msgstr "Visit Website"
+msgstr "Vaata veebisaiti"
 
 #: src/Widgets/PreferencesPopover.vala:187
 #: src/Widgets/PreferencesPopover.vala:224
-#, fuzzy
 msgid "_Cancel"
-msgstr "_Cancel"
+msgstr "_Katkesta"
 
 #: src/Widgets/PreferencesPopover.vala:225
-#, fuzzy
 msgid "_Open"
-msgstr "_Open"
+msgstr "_Ava"
 
 #: src/Widgets/PreferencesPopover.vala:188
-#, fuzzy
 msgid "_Save"
-msgstr "_Save"
+msgstr "_Salvesta"
