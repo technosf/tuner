@@ -5,10 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
-"Report-Msgid-Bugs-To: louis@brauer.family\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2025-12-14 18:17-0800\n"
-"PO-Revision-Date: 2025-12-24 01:19+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2025-12-31 12:01+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/tuner/tuner-ui/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -19,19 +19,16 @@ msgstr ""
 "X-Generator: Weblate 5.15.1\n"
 
 #: src/Widgets/PreferencesPopover.vala:20
-#, fuzzy
 msgid "About"
-msgstr "About"
+msgstr "關於"
 
 #: src/Widgets/PreferencesPopover.vala:50
-#, fuzzy
 msgid "Auto-play last station on startup"
-msgstr "Auto-play last station on startup"
+msgstr "啟動時自動播放最後一站"
 
 #: src/Models/Station.vala:363
-#, fuzzy
 msgid "Bitrate"
-msgstr "Bitrate"
+msgstr "位元率"
 
 #: src/Models/Station.vala:357
 #, fuzzy
@@ -39,73 +36,58 @@ msgid "Changes:"
 msgstr "Changes:"
 
 #: src/Widgets/PreferencesPopover.vala:210
-#, fuzzy
 msgid "Choose a file"
-msgstr "Choose a file"
+msgstr "選擇文件"
 
 #: src/Widgets/Window.vala:69
-#, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
-msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+msgstr "點擊這裡恢復視窗。若要退出調諧器，請暫停播放並關閉視窗。"
 
 #: src/Models/Station.vala:364
-#, fuzzy
 msgid "Codec"
-msgstr "Codec"
+msgstr "編解碼器"
 
 #: src/Widgets/StationContextMenu.vala:102
-#, fuzzy
 msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to clipboard"
+msgstr "將流 URI 複製到剪貼簿"
 
 #: src/Widgets/PreferencesPopover.vala:66
-#, fuzzy
 msgid "Cycle through the metadata from the playing stream"
-msgstr "Cycle through the metadata from the playing stream"
+msgstr "循環瀏覽播放串流的元數據"
 
 #: src/Widgets/PreferencesPopover.vala:34
-#, fuzzy
 msgid "Dark mode"
-msgstr "Dark mode"
+msgstr "黑暗模式"
 
 #: src/Widgets/HeaderBar.vala:143
-#, fuzzy
 msgid "Data Provider"
-msgstr "Data Provider"
+msgstr "數據提供者"
 
 #: src/Widgets/PreferencesPopover.vala:76
-#, fuzzy
 msgid "Default"
-msgstr "Default"
+msgstr "預設"
 
 #: src/Widgets/Display.vala:325
-#, fuzzy
 msgid "Discover"
-msgstr "Discover"
+msgstr "發現"
 
 #: src/Widgets/Display.vala:329
-#, fuzzy
 msgid "Discover more stations"
-msgstr "Discover more stations"
+msgstr "探索更多車站"
 
 #: src/Widgets/PreferencesPopover.vala:25
-#, fuzzy
 msgid "Do not participate in Station voting"
-msgstr "Do not participate in Station voting"
+msgstr "請勿參與電台投票"
 
 #: src/Widgets/Display.vala:104
-#, fuzzy
 msgid "Eras"
-msgstr "Eras"
+msgstr "時代"
 
 #: src/Widgets/Display.vala:101
-#, fuzzy
 msgid "Explore"
-msgstr "Explore"
+msgstr "探索"
 
 #: src/Widgets/PreferencesPopover.vala:96
 #, fuzzy
@@ -113,61 +95,48 @@ msgid "Export Starred Sations to Playlist"
 msgstr "Export Starred Sations to Playlist"
 
 #: src/Widgets/PreferencesPopover.vala:71
-#, fuzzy
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
-msgstr ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
+msgstr "如果啟用了“顯示串流資訊”，則可以快速循環瀏覽播放串流的元資料。"
 
 #: src/Widgets/PreferencesPopover.vala:69
-#, fuzzy
 msgid "Faster cycling through stream info"
-msgstr "Faster cycling through stream info"
+msgstr "更快地循環瀏覽資訊流"
 
 #: src/Models/Station.vala:360
-#, fuzzy
 msgid "Favicon address"
-msgstr "Favicon address"
+msgstr "網站圖示位址"
 
 #: src/Widgets/Display.vala:102
-#, fuzzy
 msgid "Genres"
-msgstr "Genres"
+msgstr "類型"
 
 #: src/Widgets/HeaderBar.vala:207
-#, fuzzy
 msgid "History"
-msgstr "History"
+msgstr "歷史"
 
 #: src/Models/Station.vala:361
-#, fuzzy
 msgid "Homepage address"
-msgstr "Homepage address"
+msgstr "首頁網址"
 
 #: src/Widgets/PreferencesPopover.vala:27
-#, fuzzy
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
+"如果選取此項，您收藏和收聽的電台將不會用於計算電台指數人氣投票，也不會用於計"
+"算熱門和流行電台。"
 
 #: src/Widgets/PreferencesPopover.vala:52
-#, fuzzy
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
-msgstr ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
+msgstr "若啟用此功能，調諧器啟動時將自動播放上次播放的電台。"
 
 #: src/Widgets/PreferencesPopover.vala:59
-#, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr "若啟用此功能，調諧器啟動時將直接開啟已加星標的電台清單。"
 
 #: src/Widgets/PreferencesPopover.vala:105
 #, fuzzy
@@ -175,64 +144,52 @@ msgid "Import Station UUIDs as Starred Sations"
 msgstr "Import Station UUIDs as Starred Sations"
 
 #: src/Widgets/Display.vala:557
-#, fuzzy
 msgid "Jukebox"
-msgstr "Jukebox"
+msgstr "點唱機"
 
 #: src/Widgets/PreferencesPopover.vala:86
-#, fuzzy
 msgid "Language"
-msgstr "Language"
+msgstr "語言"
 
 #: src/Widgets/Display.vala:99
-#, fuzzy
 msgid "Library"
-msgstr "Library"
+msgstr "圖書館"
 
 #: src/Widgets/PreferencesPopover.vala:33
-#, fuzzy
 msgid "Light mode"
-msgstr "Light mode"
+msgstr "淺色模式"
 
 #: src/Widgets/Display.vala:362
-#, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
-msgstr "Most listened to Stations in the last 24 hours"
+msgstr "過去24小時內收聽量最高的電台"
 
 #: src/Widgets/base/StationListBox.vala:156
-#, fuzzy
 msgid "No stations found"
-msgstr "No stations found"
+msgstr "未找到站點"
 
 #: src/Widgets/base/StationListBox.vala:146
-#, fuzzy
 msgid "Nothing here"
-msgstr "Nothing here"
+msgstr "這裡什麼也沒有"
 
 #: src/Widgets/PreferencesPopover.vala:57
-#, fuzzy
 msgid "Open to Starred Stations"
-msgstr "Open to Starred Stations"
+msgstr "向星標電台開放"
 
 #: src/Widgets/Window.vala:68
-#, fuzzy
 msgid "Playing in background"
-msgstr "Playing in background"
+msgstr "正在背景播放"
 
 #: src/Widgets/base/StationListBox.vala:156
-#, fuzzy
 msgid "Please try a different search term."
-msgstr "Please try a different search term."
+msgstr "請嘗試其他搜尋字詞。"
 
 #: src/Widgets/Display.vala:361
-#, fuzzy
 msgid "Popular"
-msgstr "Popular"
+msgstr "受歡迎的"
 
 #: src/Widgets/HeaderBar.vala:203
-#, fuzzy
 msgid "Preferences"
-msgstr "Preferences"
+msgstr "偏好"
 
 #: src/Widgets/Display.vala:422
 #, fuzzy
@@ -240,39 +197,32 @@ msgid "Recent Search"
 msgstr "Recent Search"
 
 #: src/Widgets/Display.vala:621
-#, fuzzy
 msgid "Remove this saved search"
-msgstr "Remove this saved search"
+msgstr "刪除此已儲存的搜尋"
 
 #: src/Widgets/PreferencesPopover.vala:87
-#, fuzzy
 msgid "Requires restarting Tuner"
-msgstr "Requires restarting Tuner"
+msgstr "需要重啟調諧器"
 
 #: src/Widgets/Display.vala:426
-#, fuzzy
 msgid "Save this search"
-msgstr "Save this search"
+msgstr "儲存此搜尋"
 
 #: src/Widgets/Display.vala:100
-#, fuzzy
 msgid "Saved Searches"
-msgstr "Saved Searches"
+msgstr "已儲存的搜尋"
 
 #: src/Widgets/Display.vala:423
-#, fuzzy
 msgid "Search Results"
-msgstr "Search Results"
+msgstr "搜尋結果"
 
 #: src/Widgets/Display.vala:98
-#, fuzzy
 msgid "Selections"
-msgstr "Selections"
+msgstr "精選"
 
 #: src/Widgets/PreferencesPopover.vala:64
-#, fuzzy
 msgid "Show stream info when playing"
-msgstr "Show stream info when playing"
+msgstr "播放時顯示串流訊息"
 
 #: src/Widgets/base/StationListBox.vala:146
 #, fuzzy
@@ -284,29 +234,24 @@ msgstr ""
 "Please try again later."
 
 #: src/Widgets/HeaderBar.vala:165 src/Widgets/StationContextMenu.vala:163
-#, fuzzy
 msgid "Star this station"
-msgstr "Star this station"
+msgstr "給這家電台按讚"
 
 #: src/Widgets/Display.vala:397
-#, fuzzy
 msgid "Starred by You"
-msgstr "Starred by You"
+msgstr "由你主演"
 
 #: src/Widgets/Display.vala:398
-#, fuzzy
 msgid "Starred by You :"
-msgstr "Starred by You :"
+msgstr "由你主演："
 
 #: src/Widgets/HeaderBar.vala:186
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "搜尋電台"
 
 #: src/Widgets/StationContextMenu.vala:87
-#, fuzzy
 msgid "Station info updated Online - View changes"
-msgstr "Station info updated Online - View changes"
+msgstr "電台資訊已線上更新 - 查看變更"
 
 #: src/Models/Station.vala:133
 #, fuzzy
