@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
-# technosf <535060+technosf@users.noreply.github.com>, 2025.
+# technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2025-12-14 18:17-0800\n"
-"PO-Revision-Date: 2025-12-31 12:01+0000\n"
+"PO-Revision-Date: 2026-01-08 19:42+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/tuner/tuner-ui/zh_Hant/>\n"
@@ -254,39 +254,32 @@ msgid "Station info updated Online - View changes"
 msgstr "電台資訊已線上更新 - 查看變更"
 
 #: src/Models/Station.vala:133
-#, fuzzy
 msgid "Station no longer in the index"
-msgstr "Station no longer in the index"
+msgstr "索引中已移除該站點"
 
 #: src/Models/Station.vala:362
-#, fuzzy
 msgid "Station tags"
-msgstr "Station tags"
+msgstr "車站標籤"
 
 #: src/Widgets/Display.vala:326
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "值得探索的車站"
 
 #: src/Widgets/Window.vala:286
-#, fuzzy
 msgid "Stop Playback requested"
-msgstr "Stop Playback requested"
+msgstr "請求停止播放"
 
 #: src/Widgets/HeaderBar.vala:62
-#, fuzzy
 msgid "Stream Metadata"
-msgstr "Stream Metadata"
+msgstr "串流元資料"
 
 #: src/Models/Station.vala:359
-#, fuzzy
 msgid "Stream Resolved Url"
-msgstr "Stream Resolved Url"
+msgstr "串流已解析 Url"
 
 #: src/Models/Station.vala:358
-#, fuzzy
 msgid "Stream Url"
-msgstr "Stream Url"
+msgstr "串流媒體網址"
 
 #: src/Widgets/Display.vala:103
 #, fuzzy
@@ -294,29 +287,24 @@ msgid "Sub Genres"
 msgstr "Sub Genres"
 
 #: src/Widgets/PreferencesPopover.vala:32
-#, fuzzy
 msgid "System"
-msgstr "System"
+msgstr "系統"
 
 #: src/Widgets/Display.vala:105
-#, fuzzy
 msgid "Talk, News, Sport"
-msgstr "Talk, News, Sport"
+msgstr "談話、新聞、體育"
 
 #: src/Widgets/PreferencesPopover.vala:45
-#, fuzzy
 msgid "Theme"
-msgstr "Theme"
+msgstr "主題"
 
 #: src/Widgets/Display.vala:346
-#, fuzzy
 msgid "Trending"
-msgstr "Trending"
+msgstr "趨勢"
 
 #: src/Widgets/Display.vala:347
-#, fuzzy
 msgid "Trending Stations in the last 24 hours"
-msgstr "Trending Stations in the last 24 hours"
+msgstr "過去 24 小時內的熱門電台"
 
 #: src/Widgets/StationContextMenu.vala:163
 #, fuzzy
@@ -324,11 +312,9 @@ msgid "Unstar this station"
 msgstr "Unstar this station"
 
 #: src/Widgets/StationContextMenu.vala:88
-#, fuzzy
 msgid "Update Station from Online"
-msgstr "Update Station from Online"
+msgstr "線上更新站"
 
 #: src/Widgets/StationContextMenu.vala:96
-#, fuzzy
 msgid "Visit Website"
-msgstr "Visit Website"
+msgstr "造訪網站"
