@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-08 19:20+0100\n"
-"PO-Revision-Date: 2025-12-27 22:20+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-01-23 18:51+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/tuner/tuner-"
 "desktop/de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: data/com.github.louis77.tuner.desktop.in:4
 #: data/com.github.louis77.tuner.appdata.xml.in:8
@@ -149,8 +149,9 @@ msgstr ""
 "Senden von Ereignissen an radio-browser.org zu verhindern"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:99
+#, fuzzy
 msgid "Add About dialog"
-msgstr "Über Dialog hinzugefügt "
+msgstr "Über Dialog hinzugefügt"
 
 #: data/com.github.louis77.tuner.appdata.xml.in:103
 msgid ""
