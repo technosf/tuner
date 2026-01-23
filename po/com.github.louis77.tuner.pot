@@ -5,9 +5,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.1\n"
+"Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 23:31-0800\n"
+"POT-Creation-Date: 2026-01-23 01:04-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -321,8 +321,7 @@ msgid "Save this search"
 msgstr ""
 
 #: src/Widgets/Display.vala:625
-#, c-format
-msgid "Saved Search :  %s"
+msgid "Saved Search"
 msgstr ""
 
 #: src/Widgets/Display.vala:100
@@ -351,12 +350,8 @@ msgstr ""
 msgid "Star this station"
 msgstr ""
 
-#: src/Widgets/Display.vala:397
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
 msgid "Starred by You"
-msgstr ""
-
-#: src/Widgets/Display.vala:398
-msgid "Starred by You :"
 msgstr ""
 
 #: src/Widgets/HeaderBar.vala:191

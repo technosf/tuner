@@ -622,7 +622,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
             , search
             , "playlist-symbolic"
             , search
-            , (_("Saved Search :  %s")).printf (search)
+            , (_("Saved Search") + " :  %s").printf (search)
             , station_set
             , _("Remove this saved search")
             , "starred-symbolic"

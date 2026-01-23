@@ -85,11 +85,6 @@ msgstr "時代"
 msgid "Explore"
 msgstr "探索"
 
-#: src/Widgets/PreferencesPopover.vala:96
-#, fuzzy
-msgid "Export Starred Sations to Playlist"
-msgstr "Export Starred Sations to Playlist"
-
 #: src/Widgets/PreferencesPopover.vala:71
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
@@ -133,11 +128,6 @@ msgstr "若啟用此功能，調諧器啟動時將自動播放上次播放的電
 #: src/Widgets/PreferencesPopover.vala:59
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr "若啟用此功能，調諧器啟動時將直接開啟已加星標的電台清單。"
-
-#: src/Widgets/PreferencesPopover.vala:105
-#, fuzzy
-msgid "Import Station UUIDs as Starred Sations"
-msgstr "Import Station UUIDs as Starred Sations"
 
 #: src/Widgets/Display.vala:557
 msgid "Jukebox"
