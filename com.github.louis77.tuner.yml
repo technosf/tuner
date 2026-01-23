@@ -26,7 +26,6 @@ finish-args:
   - "--talk-name=org.freedesktop.Notifications"
   - "--own-name=org.mpris.MediaPlayer2.Tuner"
   - "--env=PATH=/usr/bin:/app/bin:/app/vala/bin"
- # - "--env=add-ld-path=/app/vala/lib:/app/lib:/lib"
 
 cleanup:
   - "/include"
@@ -41,27 +40,8 @@ cleanup:
   - "*.a"
 
 modules:
-- name: vala
-  buildsystem: simple
-  build-commands:
-    - install -d /app/vala
 
-- name: libsoup
-  buildsystem: meson
-  builddir: true
-  config-opts:
-    - "--buildtype=release"
-    - "-Dvapi=enabled"
-    - "-Dtests=false"
-    - "-Dgssapi=disabled"
-    - "-Dsysprof=disabled"
-  sources:
-    - type: git
-      url: https://gitlab.gnome.org/GNOME/libsoup.git
-      tag: 3.6.5
-      commit: 766e17528251c9b696a6076300ac61adc95536ac
-
-- name: gee
+- name: libgee
   buildsystem: autotools
   build-options:
     cflags: -Wno-error=incompatible-pointer-types

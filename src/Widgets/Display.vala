@@ -395,8 +395,8 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
                 , "starred"
                 , "starred"
                 , _("Starred by You")
-                , _("Starred by You :")
-                ,_directory.get_starred() 
+                , _("Starred by You") + " :"
+                , _directory.get_starred() 
             );
 
             starred.badge ( @"$(starred.item_count)\t");
