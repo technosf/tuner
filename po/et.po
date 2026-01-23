@@ -362,15 +362,6 @@ msgstr "Valikud"
 msgid "Show stream info when playing"
 msgstr "Esitamise ajal näita meediavoo teavet"
 
-#: src/Widgets/base/StationListBox.vala:146
-#, fuzzy
-msgid ""
-"Something went wrong loading radio stations data from staion provider. Please "
-"try again later."
-msgstr ""
-"Something went wrong loading radio stations data from staion provider. "
-"Please try again later."
-
 #: src/Widgets/HeaderBar.vala:170
 msgid "Star this station"
 msgstr "Märgi see jaam lemmikuks"
@@ -418,11 +409,6 @@ msgstr "Voogedastuse võrguaadress"
 #: src/Models/Station.vala:358
 msgid "Stream Url"
 msgstr "Meediavoo aadress"
-
-#: src/Widgets/Display.vala:103
-#, fuzzy
-msgid "Sub Genres"
-msgstr "Sub Genres"
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"

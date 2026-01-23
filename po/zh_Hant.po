@@ -30,11 +30,6 @@ msgstr "啟動時自動播放最後一站"
 msgid "Bitrate"
 msgstr "位元率"
 
-#: src/Models/Station.vala:357
-#, fuzzy
-msgid "Changes:"
-msgstr "Changes:"
-
 #: src/Widgets/PreferencesPopover.vala:210
 msgid "Choose a file"
 msgstr "選擇文件"
@@ -210,15 +205,6 @@ msgstr "精選"
 msgid "Show stream info when playing"
 msgstr "播放時顯示串流訊息"
 
-#: src/Widgets/base/StationListBox.vala:146
-#, fuzzy
-msgid ""
-"Something went wrong loading radio stations data from staion provider. Please "
-"try again later."
-msgstr ""
-"Something went wrong loading radio stations data from staion provider. "
-"Please try again later."
-
 #: src/Widgets/HeaderBar.vala:165 src/Widgets/StationContextMenu.vala:163
 msgid "Star this station"
 msgstr "給這家電台按讚"
@@ -266,11 +252,6 @@ msgstr "串流已解析 Url"
 #: src/Models/Station.vala:358
 msgid "Stream Url"
 msgstr "串流媒體網址"
-
-#: src/Widgets/Display.vala:103
-#, fuzzy
-msgid "Sub Genres"
-msgstr "Sub Genres"
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"
