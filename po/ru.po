@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.louis77.tuner package.
-# AHOHNMYC <lqwh2h2cwa@protonmail.com>, 2022, 2025.
-# Мистер Перевод <sergei@racingrebel.com>, 2022, 2025.
-# technosf <535060+technosf@users.noreply.github.com>, 2025.
+# AHOHNMYC <lqwh2h2cwa@protonmail.com>, 2022, 2025, 2026.
+# Мистер Перевод <sergei@racingrebel.com>, 2022, 2025, 2026.
+# technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
-"Report-Msgid-Bugs-To: louis@brauer.family\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2020-11-08 19:49+0100\n"
-"PO-Revision-Date: 2025-12-24 01:18+0000\n"
+"PO-Revision-Date: 2026-01-23 18:59+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ru/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: src/Models/Countries.vala:34
 msgid "Afghanistan"

@@ -4,13 +4,13 @@
 # Nathan Bonnemains (@NathanBnm), 2020.
 #
 # "David D." <dadu042@users.noreply.hosted.weblate.org>, 2025.
-# technosf <535060+technosf@users.noreply.github.com>, 2025.
+# technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
-"Report-Msgid-Bugs-To: louis@brauer.family\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2020-11-08 19:49+0100\n"
-"PO-Revision-Date: 2025-12-24 01:18+0000\n"
+"PO-Revision-Date: 2026-01-23 18:53+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "fr/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: src/Models/Countries.vala:34
 msgid "Afghanistan"
