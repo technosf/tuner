@@ -106,11 +106,6 @@ msgstr "Eras"
 msgid "Explore"
 msgstr "Explore"
 
-#: src/Widgets/PreferencesPopover.vala:96
-#, fuzzy
-msgid "Export Starred Sations to Playlist"
-msgstr "Export Starred Sations to Playlist"
-
 #: src/Widgets/PreferencesPopover.vala:71
 #, fuzzy
 msgid ""
@@ -167,11 +162,6 @@ msgstr ""
 #, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr "If enabled, when Tuner starts it will open to the starred stations view"
-
-#: src/Widgets/PreferencesPopover.vala:105
-#, fuzzy
-msgid "Import Station UUIDs as Starred Sations"
-msgstr "Import Station UUIDs as Starred Sations"
 
 #: src/Widgets/Display.vala:557
 #, fuzzy
