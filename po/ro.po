@@ -32,10 +32,6 @@ msgstr "Auto-play last station on startup"
 msgid "Bitrate"
 msgstr "Rata de biți"
 
-#: src/Models/Station.vala:357
-#, fuzzy
-msgid "Changes:"
-msgstr "Changes:"
 
 #: src/Widgets/PreferencesPopover.vala:210
 #, fuzzy
@@ -331,11 +327,6 @@ msgstr "Stream Resolved Url"
 #, fuzzy
 msgid "Stream Url"
 msgstr "Stream Url"
-
-#: src/Widgets/Display.vala:103
-#, fuzzy
-msgid "Sub Genres"
-msgstr "Sub Genres"
 
 #: src/Widgets/PreferencesPopover.vala:32
 #, fuzzy

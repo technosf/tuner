@@ -1365,12 +1365,6 @@ msgctxt "Countries"
 msgid "Somalia"
 msgstr ""
 
-#: src/Widgets/base/StationListBox.vala:146
-msgid ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
-msgstr ""
-
 #: src/Models/Countries.vala:224
 msgctxt "Countries"
 msgid "South Africa"
