@@ -11,6 +11,7 @@ if get_option('translation') == 'update'
         output: meson.project_name() + '.pot',
         command: [
             'xgettext',
+            '--language=Vala',
             '--files-from=@INPUT@',
             '--output=' + meson.current_source_dir() + '/' + meson.project_name() + '.pot',
             '--from-code=UTF-8',
@@ -55,14 +56,14 @@ foreach lang : run_command('cat', 'LINGUAS', check: true).stdout().strip().split
     endif
 endforeach
 
-i18n.gettext(meson.project_name(),
-    args: [
-        '--directory=' + meson.project_source_root(),
-        '--from-code=UTF-8',
-        '-cTRANSLATORS'
-    ],
-    preset: 'glib'
-)
+# i18n.gettext(meson.project_name(),
+#     args: [
+#         '--directory=' + meson.project_source_root(),
+#         '--from-code=UTF-8',
+#         '-cTRANSLATORS'
+#     ],
+#     preset: 'glib'
+# )
 
 subdir('extra')
 
