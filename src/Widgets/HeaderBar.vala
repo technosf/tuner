@@ -145,7 +145,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 		{
 			if (app().is_offline)
 				return false;
-			tooltip.set_text ((_("Data Provider: %1$s\n\n%2$u Stations,\t%3$u Tags"))
+			tooltip.set_text ((_("Data Provider") + ": %1$s\n\n%u " + _("Stations") + ",\t%u" + _("Tags"))
 			.printf (window.directory.provider (),
 			app ().provider.available_stations (),
 			app ().provider.available_tags ()

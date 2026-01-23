@@ -65,10 +65,6 @@ msgstr "黑暗模式"
 msgid "Data Provider"
 msgstr "數據提供者"
 
-#: src/Widgets/PreferencesPopover.vala:76
-msgid "Default"
-msgstr "預設"
-
 #: src/Widgets/Display.vala:325
 msgid "Discover"
 msgstr "發現"

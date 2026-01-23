@@ -120,10 +120,6 @@ msgstr ""
 msgid "Date Time"
 msgstr "Kuupäev ja kellaaeg"
 
-#: src/Widgets/PreferencesPopover.vala:76
-msgid "Default"
-msgstr "Vaikimisi"
-
 #: src/Widgets/Display.vala:325
 msgid "Discover"
 msgstr "Otsi ja avasta"

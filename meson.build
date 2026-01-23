@@ -2,7 +2,7 @@
 project (
     'com.github.louis77.tuner',
     'vala', 'c',
-    version: '2.0.1-beta.1',
+    version: '2.0.1-beta.2',
     meson_version: '>= 0.60.0',
 )
 
