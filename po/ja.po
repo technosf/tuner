@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the com.github.louis77.tuner package.
 # TANIGUCHI Takaki <takaki@asis.media-as.org>, 2022.
 # ejlaner <everest@bodynaturally.ca>, 2025.
-# technosf <535060+technosf@users.noreply.github.com>, 2025.
+# technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
-"Report-Msgid-Bugs-To: louis@brauer.family\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2020-11-08 19:49+0100\n"
-"PO-Revision-Date: 2025-12-25 02:00+0000\n"
+"PO-Revision-Date: 2026-01-23 18:50+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ja/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: src/Models/Countries.vala:34
 msgid "Afghanistan"
