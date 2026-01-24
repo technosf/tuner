@@ -1,125 +1,136 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>, 2025, 2026.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
+"POT-Creation-Date: 2025-12-23 17:12-0800\n"
+"PO-Revision-Date: 2026-01-23 18:52+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
+"et/>\n"
+"Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: src/Widgets/StationContextMenu.vala:167
 #, c-format
 msgid "%s Star this station"
-msgstr ""
+msgstr "%s Märgi see veebiraadio lemmikuks"
 
 #: src/Widgets/StationContextMenu.vala:166
 #, c-format
 msgid "%s Unstar this station"
-msgstr ""
+msgstr "%s Eemalda see veebiraadio lemmikute seast"
 
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
-msgstr ""
+msgstr "Rakenduse teave"
 
 #: src/Models/StreamMetadata.vala:25
 msgid "Album"
-msgstr ""
+msgstr "Album"
 
 #: src/Models/StreamMetadata.vala:41
 msgid "Application Name"
-msgstr ""
+msgstr "Rakenduse nimi"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
-msgstr ""
+msgstr "Esitaja"
 
 #: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
-msgstr ""
+msgstr "Audiokoodek"
 
 #: src/Widgets/PreferencesPopover.vala:50
 msgid "Auto-play last station on startup"
-msgstr ""
+msgstr "Käivitamisel alusta viimatikuulatud jaama esitamist"
 
 #: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
-msgstr ""
+msgstr "Bitikiirus"
 
 #: src/Models/Station.vala:357
 msgid "Changes"
-msgstr ""
+msgstr "Muudatused"
 
 #: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
-msgstr ""
+msgstr "Kanalirežiim"
 
 #: src/Widgets/PreferencesPopover.vala:221
 msgid "Choose a file"
-msgstr ""
+msgstr "Vali fail"
 
 #: src/Widgets/Window.vala:69
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
+"Klõpsa siin akna töö jätkamiseks. Tuneri sulgemiseks peata taasesitus ja "
+"sulge aken."
 
 #: src/Models/Station.vala:364
 msgid "Codec"
-msgstr ""
+msgstr "Koodek"
 
 #: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
-msgstr ""
+msgstr "Konteineri vorming"
 
 #: src/Widgets/StationContextMenu.vala:102
 msgid "Copy Stream-URI to clipboard"
-msgstr ""
+msgstr "Kopeeri voogedastuse võrguaadress lõikelauale"
 
 #: src/Widgets/Display.vala:247
 #, c-format
 msgid "Could not get random station: %s"
-msgstr ""
+msgstr "Juhusliku jaama tuvastamine ei õnnestunud: %s"
 
 #: src/Widgets/PreferencesPopover.vala:66
 msgid "Cycle through the metadata from the playing stream"
-msgstr ""
+msgstr "Töötle esitamisel oleva voogedastuse metateavet"
 
 #: src/Widgets/PreferencesPopover.vala:34
 msgid "Dark mode"
-msgstr ""
+msgstr "Tume kujundus"
 
-#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
+#: src/Widgets/HeaderBar.vala:143
 msgid "Data Provider"
+msgstr "Andmeallikas"
+
+#: src/Widgets/HeaderBar.vala:148
+#, c-format
+msgid ""
+"Data Provider: %1$s\n"
+"\n"
+"%2$u Stations,\t%3$u Tags"
 msgstr ""
+"Andmeallikas: %1$s\n"
+"\n"
+"%2$u jaama,\t%3$u silti"
 
 #: src/Models/StreamMetadata.vala:44
 msgid "Date Time"
-msgstr ""
-
-#: src/Widgets/PreferencesPopover.vala:76
-msgid "Default"
-msgstr ""
+msgstr "Kuupäev ja kellaaeg"
 
 #: src/Widgets/Display.vala:325
 msgid "Discover"
-msgstr ""
+msgstr "Otsi ja avasta"
 
 #: src/Widgets/Display.vala:329
 msgid "Discover more stations"
-msgstr ""
+msgstr "Otsi ja avasta uusi veebiraadiojaamu"
 
 #: src/Widgets/PreferencesPopover.vala:25
 msgid "Do not participate in Station voting"
-msgstr ""
+msgstr "Ära osale jaamade hääletuses"
 
 #: src/Widgets/Display.vala:559
 #, c-format
@@ -127,335 +138,332 @@ msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
+"Topeltklõpsa, kui tahad juhuslikus valikus läbi kuulata %1$u "
+"veebiraadiojaama,\n"
+"kuulates ühte jaama kümne minuti jooksul ja nii %2$u päeva"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
-msgstr ""
+msgstr "Kodeerija"
 
 #: src/Models/StreamMetadata.vala:43
 msgid "Encoder Version"
-msgstr ""
+msgstr "Kodeerija versioon"
 
 #: src/Widgets/Display.vala:104
 msgid "Eras"
-msgstr ""
+msgstr "Ajastud"
 
 #: src/Widgets/PreferencesPopover.vala:247
 #, c-format
 msgid "Error reading file: %s"
-msgstr ""
+msgstr "Viga faili lugemisel: %s"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
-msgstr ""
+msgstr "Automaatse esituse alustamisel tekkis viga, katkestan…"
 
 #: src/Widgets/PreferencesPopover.vala:208
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Viga: %s"
 
 #: src/Widgets/Display.vala:101
 msgid "Explore"
-msgstr ""
+msgstr "Uuri"
 
 #: src/Widgets/PreferencesPopover.vala:96
 msgid "Export Starred Stations to Playlist"
-msgstr ""
+msgstr "Ekspordi lemmikjaamad esitusloendisse"
 
 #: src/Models/StreamMetadata.vala:31
 msgid "Extended Comment"
-msgstr ""
+msgstr "Laiendatud kommentaar"
 
 #: src/Widgets/PreferencesPopover.vala:71
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
+"Kui voogaedastuse teabe kuvamine on kasutusel, siis selle eelistuse puhul "
+"töödeldakse voogedastuse metateavet kiiremini"
 
 #: src/Widgets/PreferencesPopover.vala:69
 msgid "Faster cycling through stream info"
-msgstr ""
+msgstr "Voogedastuse metateabe kiirem töötlus"
 
 #: src/Models/Station.vala:360
 msgid "Favicon address"
-msgstr ""
+msgstr "Favikoni aadress"
 
 #: src/Models/StreamMetadata.vala:27
 msgid "Genre"
-msgstr ""
+msgstr "Žanr"
 
 #: src/Widgets/Display.vala:102
 msgid "Genres"
-msgstr ""
+msgstr "Žanrid"
 
 #: src/Models/StreamMetadata.vala:46
 msgid "Has CRC"
-msgstr ""
+msgstr "CRC on kasutusel"
 
 #: src/Widgets/HeaderBar.vala:212
 msgid "History"
-msgstr ""
+msgstr "Ajalugu"
 
 #: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
-msgstr ""
+msgstr "Avaleht"
 
 #: src/Models/Station.vala:361
 msgid "Homepage address"
-msgstr ""
+msgstr "Avalehe aadress"
 
 #: src/Widgets/PreferencesPopover.vala:27
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
+"Selle valiku eelistamisel lemmikuks märgitud ja voogedastatud "
+"veebiraadiojaamad ei lähe arvesse ei jaamade populaarsusindeksi ega "
+"populaarsust koguvate ja trendikate jaamade arvestuses"
 
 #: src/Widgets/PreferencesPopover.vala:52
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
+"Selle valiku eelistamisel Tuneri avamisel jätkub viimatikuulatud jaama "
+"kuulamine"
 
 #: src/Widgets/PreferencesPopover.vala:59
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr ""
+msgstr "Selle valiku eelistamisel Tuneri avamisel kuvatakse lemmikjaamade vaade"
 
 #: src/Models/StreamMetadata.vala:26
 msgid "Image"
-msgstr ""
+msgstr "Pilt"
 
 #: src/Widgets/PreferencesPopover.vala:105
 msgid "Import Station UUIDs as Starred Stations"
-msgstr ""
+msgstr "Impordi jaamade UUID-d lemmikaamade vaatesse"
 
 #: src/Widgets/Display.vala:557
 msgid "Jukebox"
-msgstr ""
+msgstr "Muusikaautomaat"
 
 #: src/Widgets/PreferencesPopover.vala:86
 msgid "Language"
-msgstr ""
+msgstr "Keel"
 
 #: src/Widgets/Display.vala:422
 msgid "Latest Search"
-msgstr ""
+msgstr "Viimane otsing"
 
 #: src/Widgets/Display.vala:99
 msgid "Library"
-msgstr ""
+msgstr "Meediakogu"
 
 #: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
-msgstr ""
+msgstr "Hele kujundus"
 
 #: src/Models/StreamMetadata.vala:30
 msgid "Location"
-msgstr ""
+msgstr "Asukoht"
 
 #: src/Models/StreamMetadata.vala:39
 msgid "Maximum Bitrate"
-msgstr ""
+msgstr "Maksimaalne bitikiirus"
 
 #: src/Models/StreamMetadata.vala:38
 msgid "Minimum Bitrate"
-msgstr ""
+msgstr "Minimaalne bitikiirus"
 
 #: src/Widgets/Display.vala:362
 msgid "Most listened to Stations in the last 24 hours"
-msgstr ""
+msgstr "Viimase 24 tunni jooksul enimkuulatud jaamad"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
-msgstr ""
+msgstr "Veebiraadiojaamu ei leidunud"
 
 #: src/Models/StreamMetadata.vala:37
 msgid "Nominal Bitrate"
-msgstr ""
+msgstr "Nominaalne bitikiirus"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid "Nothing here"
-msgstr ""
+msgstr "Siin pole mitte midagi"
 
 #: src/Widgets/PreferencesPopover.vala:57
 msgid "Open to Starred Stations"
-msgstr ""
+msgstr "Ava lemmikjaamade vaade"
 
 #: src/Models/StreamMetadata.vala:29
 msgid "Organization"
-msgstr ""
+msgstr "Organisatsioon"
 
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
-msgstr ""
+msgstr "Taasesitus taustal"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "Please try a different search term."
-msgstr ""
+msgstr "Palun sisesta muu otsingusõna."
 
 #: src/Widgets/Display.vala:361
 msgid "Popular"
-msgstr ""
+msgstr "Populaarne"
 
 #: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
-msgstr ""
+msgstr "Eelistused"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
-msgstr ""
+msgstr "Privaatsed andmed"
 
 #: src/Widgets/Display.vala:627
 msgid "Remove this saved search"
-msgstr ""
+msgstr "Eemalda see salvestatud otsing"
 
 #: src/Widgets/PreferencesPopover.vala:87
 msgid "Requires restarting Tuner"
-msgstr ""
+msgstr "Eeldab Tuneri uuesti käivitamist"
 
 #: src/Widgets/PreferencesPopover.vala:184
 msgid "Save File"
-msgstr ""
+msgstr "Salvesta fail"
 
 #: src/Widgets/Display.vala:426
 msgid "Save this search"
-msgstr ""
+msgstr "Salvesta see otsing"
 
 #: src/Widgets/Display.vala:625
-msgid "Saved Search"
-msgstr ""
+#, c-format
+msgid "Saved Search :  %s"
+msgstr "Salvestatud otsing:  %s"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
-msgstr ""
+msgstr "Salvestatud otsingud"
 
 #: src/Widgets/Display.vala:423
 msgid "Search Results"
-msgstr ""
+msgstr "Otsingutulemused"
 
 #: src/Widgets/Display.vala:98
 msgid "Selections"
-msgstr ""
+msgstr "Valikud"
 
 #: src/Widgets/PreferencesPopover.vala:64
 msgid "Show stream info when playing"
-msgstr ""
-
-#: src/Widgets/base/StationListBox.vala:146
-msgid ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
-msgstr ""
+msgstr "Esitamise ajal näita meediavoo teavet"
 
 #: src/Widgets/HeaderBar.vala:170
 msgid "Star this station"
-msgstr ""
+msgstr "Märgi see jaam lemmikuks"
 
-#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+#: src/Widgets/Display.vala:397
 msgid "Starred by You"
-msgstr ""
+msgstr "Sinu lemmikud"
+
+#: src/Widgets/Display.vala:398
+msgid "Starred by You :"
+msgstr "Sinu lemmikud:"
 
 #: src/Widgets/HeaderBar.vala:191
 msgid "Station Search"
-msgstr ""
+msgstr "Veebiraadiojaamade otsing"
 
 #: src/Widgets/StationContextMenu.vala:87
 msgid "Station info updated Online - View changes"
-msgstr ""
+msgstr "Veebiraadiojaama teave on võrgus muutunud. Vaata muudatusi"
 
 #: src/Models/Station.vala:133
 msgid "Station no longer in the index"
-msgstr ""
+msgstr "See veebiraadiojaam pole enam indeksis"
 
 #: src/Models/Station.vala:362
 msgid "Station tags"
-msgstr ""
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Stations"
-msgstr ""
+msgstr "Veebiraadiojaamade sildid"
 
 #: src/Widgets/Display.vala:326
 msgid "Stations to Discover"
-msgstr ""
+msgstr "Avastatavad veebiraadiojaamad"
 
 #: src/Widgets/Window.vala:286
 msgid "Stop Playback requested"
-msgstr ""
+msgstr "Oled soovinud taasesituse lõpetamist"
 
 #: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
-msgstr ""
+msgstr "Voodedastuse metateave"
 
 #: src/Models/Station.vala:359
 msgid "Stream Resolved Url"
-msgstr ""
+msgstr "Voogedastuse võrguaadress"
 
 #: src/Models/Station.vala:358
 msgid "Stream Url"
-msgstr ""
-
-#: src/Widgets/Display.vala:103
-msgid "Subgenres"
-msgstr ""
+msgstr "Meediavoo aadress"
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"
-msgstr ""
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Tags"
-msgstr ""
+msgstr "Süsteemi määratud"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
-msgstr ""
+msgstr "Jutusaated, uudised, sport"
 
 #: src/Widgets/PreferencesPopover.vala:45
 msgid "Theme"
-msgstr ""
+msgstr "Kujundus"
 
 #: src/Models/StreamMetadata.vala:23
 msgid "Title"
-msgstr ""
+msgstr "Pealkiri"
 
 #: src/Models/StreamMetadata.vala:36
 msgid "Track Count"
-msgstr ""
+msgstr "Lugude arv"
 
 #: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
-msgstr ""
+msgstr "Loo number"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
-msgstr ""
+msgstr "Hetkel populaarne"
 
 #: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
-msgstr ""
+msgstr "Populaarsust koguvad veebiraadiojaamad viimase 24 tunni jooksul"
 
 #: src/Widgets/StationContextMenu.vala:143
 #, c-format
 msgid "Unable to open website: %s"
-msgstr ""
+msgstr "Veebisaidi avamine ei õnnestunud: %s"
 
 #: src/Widgets/StationContextMenu.vala:88
 msgid "Update Station from Online"
-msgstr ""
+msgstr "Uuenda veebiraadiojaama andmed võrgust"
 
 #: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
-msgstr ""
+msgstr "Vaata veebisaiti"
 
 #: src/Widgets/PreferencesPopover.vala:187
 #: src/Widgets/PreferencesPopover.vala:224
 msgid "_Cancel"
-msgstr ""
+msgstr "_Katkesta"
 
 #: src/Widgets/PreferencesPopover.vala:225
 msgid "_Open"
-msgstr ""
+msgstr "_Ava"
 
 #: src/Widgets/PreferencesPopover.vala:188
 msgid "_Save"
-msgstr ""
+msgstr "_Salvesta"
