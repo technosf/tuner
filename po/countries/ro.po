@@ -1,0 +1,369 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2025, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
+"POT-Creation-Date: 2025-12-14 18:17-0800\n"
+"PO-Revision-Date: 2026-01-23 19:00+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"Language-Team: Romanian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
+"ro/>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.16-dev\n"
+
+#: src/Widgets/PreferencesPopover.vala:20
+msgid "About"
+msgstr "Despre"
+
+#: src/Widgets/PreferencesPopover.vala:50
+#, fuzzy
+msgid "Auto-play last station on startup"
+msgstr "Auto-play last station on startup"
+
+#: src/Models/Station.vala:363
+msgid "Bitrate"
+msgstr "Rata de biți"
+
+
+#: src/Widgets/PreferencesPopover.vala:210
+#, fuzzy
+msgid "Choose a file"
+msgstr "Choose a file"
+
+#: src/Widgets/Window.vala:69
+#, fuzzy
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+
+#: src/Models/Station.vala:364
+#, fuzzy
+msgid "Codec"
+msgstr "Codec"
+
+#: src/Widgets/StationContextMenu.vala:102
+#, fuzzy
+msgid "Copy Stream-URI to clipboard"
+msgstr "Copy Stream-URI to clipboard"
+
+#: src/Widgets/PreferencesPopover.vala:66
+#, fuzzy
+msgid "Cycle through the metadata from the playing stream"
+msgstr "Cycle through the metadata from the playing stream"
+
+#: src/Widgets/PreferencesPopover.vala:34
+#, fuzzy
+msgid "Dark mode"
+msgstr "Dark mode"
+
+#: src/Widgets/HeaderBar.vala:143
+#, fuzzy
+msgid "Data Provider"
+msgstr "Data Provider"
+
+#: src/Widgets/PreferencesPopover.vala:76
+#, fuzzy
+msgid "Default"
+msgstr "Default"
+
+#: src/Widgets/Display.vala:325
+#, fuzzy
+msgid "Discover"
+msgstr "Discover"
+
+#: src/Widgets/Display.vala:329
+#, fuzzy
+msgid "Discover more stations"
+msgstr "Discover more stations"
+
+#: src/Widgets/PreferencesPopover.vala:25
+#, fuzzy
+msgid "Do not participate in Station voting"
+msgstr "Do not participate in Station voting"
+
+#: src/Widgets/Display.vala:104
+#, fuzzy
+msgid "Eras"
+msgstr "Eras"
+
+#: src/Widgets/Display.vala:101
+#, fuzzy
+msgid "Explore"
+msgstr "Explore"
+
+#: src/Widgets/PreferencesPopover.vala:71
+#, fuzzy
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+
+#: src/Widgets/PreferencesPopover.vala:69
+#, fuzzy
+msgid "Faster cycling through stream info"
+msgstr "Faster cycling through stream info"
+
+#: src/Models/Station.vala:360
+#, fuzzy
+msgid "Favicon address"
+msgstr "Favicon address"
+
+#: src/Widgets/Display.vala:102
+#, fuzzy
+msgid "Genres"
+msgstr "Genres"
+
+#: src/Widgets/HeaderBar.vala:207
+#, fuzzy
+msgid "History"
+msgstr "History"
+
+#: src/Models/Station.vala:361
+#, fuzzy
+msgid "Homepage address"
+msgstr "Homepage address"
+
+#: src/Widgets/PreferencesPopover.vala:27
+#, fuzzy
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+
+#: src/Widgets/PreferencesPopover.vala:52
+#, fuzzy
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+
+#: src/Widgets/PreferencesPopover.vala:59
+#, fuzzy
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr "If enabled, when Tuner starts it will open to the starred stations view"
+
+#: src/Widgets/Display.vala:557
+#, fuzzy
+msgid "Jukebox"
+msgstr "Jukebox"
+
+#: src/Widgets/PreferencesPopover.vala:86
+#, fuzzy
+msgid "Language"
+msgstr "Language"
+
+#: src/Widgets/Display.vala:99
+#, fuzzy
+msgid "Library"
+msgstr "Library"
+
+#: src/Widgets/PreferencesPopover.vala:33
+#, fuzzy
+msgid "Light mode"
+msgstr "Light mode"
+
+#: src/Widgets/Display.vala:362
+#, fuzzy
+msgid "Most listened to Stations in the last 24 hours"
+msgstr "Most listened to Stations in the last 24 hours"
+
+#: src/Widgets/base/StationListBox.vala:156
+#, fuzzy
+msgid "No stations found"
+msgstr "No stations found"
+
+#: src/Widgets/base/StationListBox.vala:146
+#, fuzzy
+msgid "Nothing here"
+msgstr "Nothing here"
+
+#: src/Widgets/PreferencesPopover.vala:57
+#, fuzzy
+msgid "Open to Starred Stations"
+msgstr "Open to Starred Stations"
+
+#: src/Widgets/Window.vala:68
+#, fuzzy
+msgid "Playing in background"
+msgstr "Playing in background"
+
+#: src/Widgets/base/StationListBox.vala:156
+#, fuzzy
+msgid "Please try a different search term."
+msgstr "Please try a different search term."
+
+#: src/Widgets/Display.vala:361
+#, fuzzy
+msgid "Popular"
+msgstr "Popular"
+
+#: src/Widgets/HeaderBar.vala:203
+#, fuzzy
+msgid "Preferences"
+msgstr "Preferences"
+
+#: src/Widgets/Display.vala:422
+#, fuzzy
+msgid "Recent Search"
+msgstr "Recent Search"
+
+#: src/Widgets/Display.vala:621
+#, fuzzy
+msgid "Remove this saved search"
+msgstr "Remove this saved search"
+
+#: src/Widgets/PreferencesPopover.vala:87
+#, fuzzy
+msgid "Requires restarting Tuner"
+msgstr "Requires restarting Tuner"
+
+#: src/Widgets/Display.vala:426
+#, fuzzy
+msgid "Save this search"
+msgstr "Save this search"
+
+#: src/Widgets/Display.vala:100
+#, fuzzy
+msgid "Saved Searches"
+msgstr "Saved Searches"
+
+#: src/Widgets/Display.vala:423
+#, fuzzy
+msgid "Search Results"
+msgstr "Search Results"
+
+#: src/Widgets/Display.vala:98
+#, fuzzy
+msgid "Selections"
+msgstr "Selections"
+
+#: src/Widgets/PreferencesPopover.vala:64
+#, fuzzy
+msgid "Show stream info when playing"
+msgstr "Show stream info when playing"
+
+#: src/Widgets/base/StationListBox.vala:146
+#, fuzzy
+msgid ""
+"Something went wrong loading radio stations data from staion provider. Please "
+"try again later."
+msgstr ""
+"Something went wrong loading radio stations data from staion provider. "
+"Please try again later."
+
+#: src/Widgets/HeaderBar.vala:165 src/Widgets/StationContextMenu.vala:163
+#, fuzzy
+msgid "Star this station"
+msgstr "Star this station"
+
+#: src/Widgets/Display.vala:397
+#, fuzzy
+msgid "Starred by You"
+msgstr "Starred by You"
+
+#: src/Widgets/Display.vala:398
+#, fuzzy
+msgid "Starred by You :"
+msgstr "Starred by You :"
+
+#: src/Widgets/HeaderBar.vala:186
+#, fuzzy
+msgid "Station Search"
+msgstr "Station Search"
+
+#: src/Widgets/StationContextMenu.vala:87
+#, fuzzy
+msgid "Station info updated Online - View changes"
+msgstr "Station info updated Online - View changes"
+
+#: src/Models/Station.vala:133
+#, fuzzy
+msgid "Station no longer in the index"
+msgstr "Station no longer in the index"
+
+#: src/Models/Station.vala:362
+#, fuzzy
+msgid "Station tags"
+msgstr "Station tags"
+
+#: src/Widgets/Display.vala:326
+#, fuzzy
+msgid "Stations to Discover"
+msgstr "Stations to Discover"
+
+#: src/Widgets/Window.vala:286
+#, fuzzy
+msgid "Stop Playback requested"
+msgstr "Stop Playback requested"
+
+#: src/Widgets/HeaderBar.vala:62
+#, fuzzy
+msgid "Stream Metadata"
+msgstr "Stream Metadata"
+
+#: src/Models/Station.vala:359
+#, fuzzy
+msgid "Stream Resolved Url"
+msgstr "Stream Resolved Url"
+
+#: src/Models/Station.vala:358
+#, fuzzy
+msgid "Stream Url"
+msgstr "Stream Url"
+
+#: src/Widgets/PreferencesPopover.vala:32
+#, fuzzy
+msgid "System"
+msgstr "System"
+
+#: src/Widgets/Display.vala:105
+#, fuzzy
+msgid "Talk, News, Sport"
+msgstr "Talk, News, Sport"
+
+#: src/Widgets/PreferencesPopover.vala:45
+#, fuzzy
+msgid "Theme"
+msgstr "Theme"
+
+#: src/Widgets/Display.vala:346
+#, fuzzy
+msgid "Trending"
+msgstr "Trending"
+
+#: src/Widgets/Display.vala:347
+#, fuzzy
+msgid "Trending Stations in the last 24 hours"
+msgstr "Trending Stations in the last 24 hours"
+
+#: src/Widgets/StationContextMenu.vala:163
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#: src/Widgets/StationContextMenu.vala:88
+#, fuzzy
+msgid "Update Station from Online"
+msgstr "Update Station from Online"
+
+#: src/Widgets/StationContextMenu.vala:96
+#, fuzzy
+msgid "Visit Website"
+msgstr "Visit Website"

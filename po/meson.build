@@ -65,6 +65,7 @@ i18n.gettext(meson.project_name(),
     preset: 'glib'
 )
 
+subdir('countries')
 subdir('extra')
 
 message('Installed translations')

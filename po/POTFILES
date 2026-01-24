@@ -1,7 +1,6 @@
 src/Settings.vala
 src/Config.vala.in
 src/Controllers/PlayerController.vala
-src/Models/Countries.vala
 src/Models/Station.vala
 src/Models/StreamMetadata.vala
 src/Widgets/Display.vala
