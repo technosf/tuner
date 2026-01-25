@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
 # technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
-# Prefill add-on <noreply-addon-prefill@weblate.org>, 2025.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2025-12-14 18:17-0800\n"
-"PO-Revision-Date: 2026-01-23 18:55+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-01-24 14:41-0800\n"
+"PO-Revision-Date: 2026-01-25 01:03+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/tuner/tuner-ui/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -18,95 +18,160 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#: src/Widgets/PreferencesPopover.vala:20
+#, fuzzy, c-format
+msgid "%s Star this station"
+msgstr "%s Star this station"
+
+#, fuzzy, c-format
+msgid "%s Unstar this station"
+msgstr "%s Unstar this station"
+
 msgid "About"
 msgstr "關於"
 
-#: src/Widgets/PreferencesPopover.vala:50
+msgid "Album"
+msgstr "專輯"
+
+#, fuzzy
+msgid "Application Name"
+msgstr "Application Name"
+
+msgid "Artist"
+msgstr "藝術家"
+
+msgid "Audio Codec"
+msgstr "音訊編解碼器"
+
 msgid "Auto-play last station on startup"
 msgstr "啟動時自動播放最後一站"
 
-#: src/Models/Station.vala:363
 msgid "Bitrate"
 msgstr "位元率"
 
-#: src/Widgets/PreferencesPopover.vala:210
+msgid "Changes"
+msgstr "變更"
+
+msgid "Channel Mode"
+msgstr "頻道模式"
+
 msgid "Choose a file"
 msgstr "選擇文件"
 
-#: src/Widgets/Window.vala:69
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr "點擊這裡恢復視窗。若要退出調諧器，請暫停播放並關閉視窗。"
 
-#: src/Models/Station.vala:364
 msgid "Codec"
 msgstr "編解碼器"
 
-#: src/Widgets/StationContextMenu.vala:102
+msgid "Container Format"
+msgstr "容器格式"
+
 msgid "Copy Stream-URI to clipboard"
 msgstr "將流 URI 複製到剪貼簿"
 
-#: src/Widgets/PreferencesPopover.vala:66
+#, fuzzy, c-format
+msgid "Could not get random station: %s"
+msgstr "Could not get random station: %s"
+
 msgid "Cycle through the metadata from the playing stream"
 msgstr "循環瀏覽播放串流的元數據"
 
-#: src/Widgets/PreferencesPopover.vala:34
 msgid "Dark mode"
 msgstr "黑暗模式"
 
-#: src/Widgets/HeaderBar.vala:143
 msgid "Data Provider"
 msgstr "數據提供者"
 
-#: src/Widgets/Display.vala:325
+msgid "Date Time"
+msgstr "日期與時間"
+
+#, fuzzy
+msgid "Default"
+msgstr "Default"
+
 msgid "Discover"
 msgstr "發現"
 
-#: src/Widgets/Display.vala:329
 msgid "Discover more stations"
 msgstr "探索更多車站"
 
-#: src/Widgets/PreferencesPopover.vala:25
 msgid "Do not participate in Station voting"
 msgstr "請勿參與電台投票"
 
-#: src/Widgets/Display.vala:104
+#, c-format
+msgid ""
+"Double click to shuffle through %1$u stations,\n"
+"one, every ten minutes, for %2$u days"
+msgstr ""
+"雙擊即可隨機切換 %1$u 個電台，\n"
+"每十分鐘切換一個，持續 %2$u 天。"
+
+msgid "Encoder"
+msgstr "編碼器"
+
+msgid "Encoder Version"
+msgstr "編碼器版本"
+
 msgid "Eras"
 msgstr "時代"
 
-#: src/Widgets/Display.vala:101
+#, fuzzy, c-format
+msgid "Error reading file: %s"
+msgstr "Error reading file: %s"
+
+#, fuzzy
+msgid "Error while trying to autoplay, aborting…"
+msgstr "Error while trying to autoplay, aborting…"
+
+#, c-format
+msgid "Error: %s"
+msgstr "錯誤: %s"
+
 msgid "Explore"
 msgstr "探索"
 
-#: src/Widgets/PreferencesPopover.vala:71
+#, fuzzy
+msgid "Export Starred Stations to Playlist"
+msgstr "Export Starred Stations to Playlist"
+
+#, fuzzy
+msgid "Extended Comment"
+msgstr "Extended Comment"
+
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr "如果啟用了“顯示串流資訊”，則可以快速循環瀏覽播放串流的元資料。"
 
-#: src/Widgets/PreferencesPopover.vala:69
 msgid "Faster cycling through stream info"
 msgstr "更快地循環瀏覽資訊流"
 
-#: src/Models/Station.vala:360
 msgid "Favicon address"
 msgstr "網站圖示位址"
 
-#: src/Widgets/Display.vala:102
+#, fuzzy
+msgid "Genre"
+msgstr "Genre"
+
 msgid "Genres"
 msgstr "類型"
 
-#: src/Widgets/HeaderBar.vala:207
+#, fuzzy
+msgid "Has CRC"
+msgstr "Has CRC"
+
 msgid "History"
 msgstr "歷史"
 
-#: src/Models/Station.vala:361
+#, fuzzy
+msgid "Homepage"
+msgstr "Homepage"
+
 msgid "Homepage address"
 msgstr "首頁網址"
 
-#: src/Widgets/PreferencesPopover.vala:27
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
@@ -114,174 +179,1454 @@ msgstr ""
 "如果選取此項，您收藏和收聽的電台將不會用於計算電台指數人氣投票，也不會用於計"
 "算熱門和流行電台。"
 
-#: src/Widgets/PreferencesPopover.vala:52
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr "若啟用此功能，調諧器啟動時將自動播放上次播放的電台。"
 
-#: src/Widgets/PreferencesPopover.vala:59
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr "若啟用此功能，調諧器啟動時將直接開啟已加星標的電台清單。"
 
-#: src/Widgets/Display.vala:557
+#, fuzzy
+msgid "Image"
+msgstr "Image"
+
+#, fuzzy
+msgid "Import Station UUIDs as Starred Stations"
+msgstr "Import Station UUIDs as Starred Stations"
+
 msgid "Jukebox"
 msgstr "點唱機"
 
-#: src/Widgets/PreferencesPopover.vala:86
 msgid "Language"
 msgstr "語言"
 
-#: src/Widgets/Display.vala:99
+#, fuzzy
+msgid "Latest Search"
+msgstr "Latest Search"
+
 msgid "Library"
 msgstr "圖書館"
 
-#: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
 msgstr "淺色模式"
 
-#: src/Widgets/Display.vala:362
+#, fuzzy
+msgid "Location"
+msgstr "Location"
+
+#, fuzzy
+msgid "Maximum Bitrate"
+msgstr "Maximum Bitrate"
+
+#, fuzzy
+msgid "Minimum Bitrate"
+msgstr "Minimum Bitrate"
+
 msgid "Most listened to Stations in the last 24 hours"
 msgstr "過去24小時內收聽量最高的電台"
 
-#: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
 msgstr "未找到站點"
 
-#: src/Widgets/base/StationListBox.vala:146
+#, fuzzy
+msgid "Nominal Bitrate"
+msgstr "Nominal Bitrate"
+
 msgid "Nothing here"
 msgstr "這裡什麼也沒有"
 
-#: src/Widgets/PreferencesPopover.vala:57
 msgid "Open to Starred Stations"
 msgstr "向星標電台開放"
 
-#: src/Widgets/Window.vala:68
+#, fuzzy
+msgid "Organization"
+msgstr "Organization"
+
 msgid "Playing in background"
 msgstr "正在背景播放"
 
-#: src/Widgets/base/StationListBox.vala:156
 msgid "Please try a different search term."
 msgstr "請嘗試其他搜尋字詞。"
 
-#: src/Widgets/Display.vala:361
 msgid "Popular"
 msgstr "受歡迎的"
 
-#: src/Widgets/HeaderBar.vala:203
 msgid "Preferences"
 msgstr "偏好"
 
-#: src/Widgets/Display.vala:422
 #, fuzzy
-msgid "Recent Search"
-msgstr "Recent Search"
+msgid "Private Data"
+msgstr "Private Data"
 
-#: src/Widgets/Display.vala:621
 msgid "Remove this saved search"
 msgstr "刪除此已儲存的搜尋"
 
-#: src/Widgets/PreferencesPopover.vala:87
 msgid "Requires restarting Tuner"
 msgstr "需要重啟調諧器"
 
-#: src/Widgets/Display.vala:426
+#, fuzzy
+msgid "Save File"
+msgstr "Save File"
+
 msgid "Save this search"
 msgstr "儲存此搜尋"
 
-#: src/Widgets/Display.vala:100
+#, fuzzy
+msgid "Saved Search"
+msgstr "Saved Search"
+
 msgid "Saved Searches"
 msgstr "已儲存的搜尋"
 
-#: src/Widgets/Display.vala:423
 msgid "Search Results"
 msgstr "搜尋結果"
 
-#: src/Widgets/Display.vala:98
 msgid "Selections"
 msgstr "精選"
 
-#: src/Widgets/PreferencesPopover.vala:64
 msgid "Show stream info when playing"
 msgstr "播放時顯示串流訊息"
 
-#: src/Widgets/HeaderBar.vala:165 src/Widgets/StationContextMenu.vala:163
+#, fuzzy
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+
 msgid "Star this station"
 msgstr "給這家電台按讚"
 
-#: src/Widgets/Display.vala:397
 msgid "Starred by You"
 msgstr "由你主演"
 
-#: src/Widgets/Display.vala:398
-msgid "Starred by You :"
-msgstr "由你主演："
-
-#: src/Widgets/HeaderBar.vala:186
 msgid "Station Search"
-msgstr "搜尋電台"
+msgstr "車站搜索"
 
-#: src/Widgets/StationContextMenu.vala:87
 msgid "Station info updated Online - View changes"
 msgstr "電台資訊已線上更新 - 查看變更"
 
-#: src/Models/Station.vala:133
 msgid "Station no longer in the index"
 msgstr "索引中已移除該站點"
 
-#: src/Models/Station.vala:362
 msgid "Station tags"
 msgstr "車站標籤"
 
-#: src/Widgets/Display.vala:326
+#, fuzzy
+msgid "Stations"
+msgstr "Stations"
+
 msgid "Stations to Discover"
 msgstr "值得探索的車站"
 
-#: src/Widgets/Window.vala:286
 msgid "Stop Playback requested"
 msgstr "請求停止播放"
 
-#: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
 msgstr "串流元資料"
 
-#: src/Models/Station.vala:359
 msgid "Stream Resolved Url"
 msgstr "串流已解析 Url"
 
-#: src/Models/Station.vala:358
 msgid "Stream Url"
 msgstr "串流媒體網址"
 
-#: src/Widgets/PreferencesPopover.vala:32
+#, fuzzy
+msgid "Subgenres"
+msgstr "Subgenres"
+
 msgid "System"
 msgstr "系統"
 
-#: src/Widgets/Display.vala:105
+#, fuzzy
+msgid "Tags"
+msgstr "Tags"
+
 msgid "Talk, News, Sport"
 msgstr "談話、新聞、體育"
 
-#: src/Widgets/PreferencesPopover.vala:45
 msgid "Theme"
 msgstr "主題"
 
-#: src/Widgets/Display.vala:346
+#, fuzzy
+msgid "Title"
+msgstr "Title"
+
+#, fuzzy
+msgid "Track Count"
+msgstr "Track Count"
+
+#, fuzzy
+msgid "Track Number"
+msgstr "Track Number"
+
 msgid "Trending"
 msgstr "趨勢"
 
-#: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
 msgstr "過去 24 小時內的熱門電台"
 
-#: src/Widgets/StationContextMenu.vala:163
-#, fuzzy
-msgid "Unstar this station"
-msgstr "Unstar this station"
+#, fuzzy, c-format
+msgid "Unable to open website: %s"
+msgstr "Unable to open website: %s"
 
-#: src/Widgets/StationContextMenu.vala:88
 msgid "Update Station from Online"
 msgstr "線上更新站"
 
-#: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
 msgstr "造訪網站"
+
+#, fuzzy
+msgid "_Cancel"
+msgstr "_Cancel"
+
+#, fuzzy
+msgid "_Open"
+msgstr "_Open"
+
+#, fuzzy
+msgid "_Save"
+msgstr "_Save"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Afghanistan"
+#~ msgstr "Afghanistan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Albania"
+#~ msgstr "Albania"
+
+#~ msgctxt "Countries"
+#~ msgid "Algeria"
+#~ msgstr "阿爾及利亞"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "American Samoa"
+#~ msgstr "American Samoa"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Andorra"
+#~ msgstr "Andorra"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Angola"
+#~ msgstr "Angola"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Anguilla"
+#~ msgstr "Anguilla"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Antarctica"
+#~ msgstr "Antarctica"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antigua and Barbuda"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Argentina"
+#~ msgstr "Argentina"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Armenia"
+#~ msgstr "Armenia"
+
+#~ msgctxt "Countries"
+#~ msgid "Aruba"
+#~ msgstr "阿魯巴"
+
+#~ msgctxt "Countries"
+#~ msgid "Australia"
+#~ msgstr "澳洲"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Austria"
+#~ msgstr "Austria"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Azerbaijan"
+#~ msgstr "Azerbaijan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bahamas"
+#~ msgstr "Bahamas"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bahrain"
+#~ msgstr "Bahrain"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bangladesh"
+#~ msgstr "Bangladesh"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Barbados"
+#~ msgstr "Barbados"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Belarus"
+#~ msgstr "Belarus"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Belgium"
+#~ msgstr "Belgium"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Belize"
+#~ msgstr "Belize"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Benin"
+#~ msgstr "Benin"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bermuda"
+#~ msgstr "Bermuda"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bhutan"
+#~ msgstr "Bhutan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bolivia"
+#~ msgstr "Bolivia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bonaire, Sint Eustatius and Saba"
+#~ msgstr "Bonaire, Sint Eustatius and Saba"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosnia and Herzegovina"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Botswana"
+#~ msgstr "Botswana"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bouvet Island"
+#~ msgstr "Bouvet Island"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Brazil"
+#~ msgstr "Brazil"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "British Indian Ocean Territory"
+#~ msgstr "British Indian Ocean Territory"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Brunei Darussalam"
+#~ msgstr "Brunei Darussalam"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Bulgaria"
+#~ msgstr "Bulgaria"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Burkina Faso"
+#~ msgstr "Burkina Faso"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Burundi"
+#~ msgstr "Burundi"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Cabo Verde"
+#~ msgstr "Cabo Verde"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Cambodia"
+#~ msgstr "Cambodia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Cameroon"
+#~ msgstr "Cameroon"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Canada"
+#~ msgstr "Canada"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Cayman Islands"
+#~ msgstr "Cayman Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Central African Republic"
+#~ msgstr "Central African Republic"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Chad"
+#~ msgstr "Chad"
+
+#~ msgctxt "Countries"
+#~ msgid "Chile"
+#~ msgstr "智利"
+
+#~ msgctxt "Countries"
+#~ msgid "China"
+#~ msgstr "中國"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Christmas Island"
+#~ msgstr "Christmas Island"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Cocos (Keeling) Islands"
+#~ msgstr "Cocos (Keeling) Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Colombia"
+#~ msgstr "Colombia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Comoros"
+#~ msgstr "Comoros"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Congo"
+#~ msgstr "Congo"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Congo, Democratic Republic of the"
+#~ msgstr "Congo, Democratic Republic of the"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Cook Islands"
+#~ msgstr "Cook Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Costa Rica"
+#~ msgstr "Costa Rica"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Croatia"
+#~ msgstr "Croatia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Cuba"
+#~ msgstr "Cuba"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Curaçao"
+#~ msgstr "Curaçao"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Cyprus"
+#~ msgstr "Cyprus"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Czechia"
+#~ msgstr "Czechia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Côte d'Ivoire"
+#~ msgstr "Côte d'Ivoire"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Denmark"
+#~ msgstr "Denmark"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Djibouti"
+#~ msgstr "Djibouti"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Dominica"
+#~ msgstr "Dominica"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Dominican Republic"
+#~ msgstr "Dominican Republic"
+
+#~ msgctxt "Countries"
+#~ msgid "Ecuador"
+#~ msgstr "厄瓜多爾"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Egypt"
+#~ msgstr "Egypt"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "El Salvador"
+#~ msgstr "El Salvador"
+
+#~ msgctxt "Countries"
+#~ msgid "Equatorial Guinea"
+#~ msgstr "赤道幾內亞"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Eritrea"
+#~ msgstr "Eritrea"
+
+#~ msgctxt "Countries"
+#~ msgid "Estonia"
+#~ msgstr "愛沙尼亞"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Eswatini"
+#~ msgstr "Eswatini"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Ethiopia"
+#~ msgstr "Ethiopia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Falkland Islands (Malvinas)"
+#~ msgstr "Falkland Islands (Malvinas)"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Faroe Islands"
+#~ msgstr "Faroe Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Fiji"
+#~ msgstr "Fiji"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Finland"
+#~ msgstr "Finland"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "France"
+#~ msgstr "France"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "French Guiana"
+#~ msgstr "French Guiana"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "French Polynesia"
+#~ msgstr "French Polynesia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "French Southern Territories"
+#~ msgstr "French Southern Territories"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Gabon"
+#~ msgstr "Gabon"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Gambia"
+#~ msgstr "Gambia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Georgia"
+#~ msgstr "Georgia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Germany"
+#~ msgstr "Germany"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Ghana"
+#~ msgstr "Ghana"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Gibraltar"
+#~ msgstr "Gibraltar"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Greece"
+#~ msgstr "Greece"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Greenland"
+#~ msgstr "Greenland"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Grenada"
+#~ msgstr "Grenada"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Guadeloupe"
+#~ msgstr "Guadeloupe"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Guam"
+#~ msgstr "Guam"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Guatemala"
+#~ msgstr "Guatemala"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Guernsey"
+#~ msgstr "Guernsey"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Guinea"
+#~ msgstr "Guinea"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Guinea-Bissau"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Guyana"
+#~ msgstr "Guyana"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Haiti"
+#~ msgstr "Haiti"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Heard Island and McDonald Islands"
+#~ msgstr "Heard Island and McDonald Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Holy See"
+#~ msgstr "Holy See"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Honduras"
+#~ msgstr "Honduras"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Hong Kong"
+#~ msgstr "Hong Kong"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Hungary"
+#~ msgstr "Hungary"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Iceland"
+#~ msgstr "Iceland"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "India"
+#~ msgstr "India"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Indonesia"
+#~ msgstr "Indonesia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Iran"
+#~ msgstr "Iran"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Iraq"
+#~ msgstr "Iraq"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Ireland"
+#~ msgstr "Ireland"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Isle of Man"
+#~ msgstr "Isle of Man"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Israel"
+#~ msgstr "Israel"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Italy"
+#~ msgstr "Italy"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Jamaica"
+#~ msgstr "Jamaica"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Japan"
+#~ msgstr "Japan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Jersey"
+#~ msgstr "Jersey"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Jordan"
+#~ msgstr "Jordan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Kazakhstan"
+#~ msgstr "Kazakhstan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Kenya"
+#~ msgstr "Kenya"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Kiribati"
+#~ msgstr "Kiribati"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Korea (Democratic People's Republic of)"
+#~ msgstr "Korea (Democratic People's Republic of)"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Korea, Republic of"
+#~ msgstr "Korea, Republic of"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Kuwait"
+#~ msgstr "Kuwait"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Kyrgyzstan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Lao People's Democratic Republic"
+#~ msgstr "Lao People's Democratic Republic"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Latvia"
+#~ msgstr "Latvia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Lebanon"
+#~ msgstr "Lebanon"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Lesotho"
+#~ msgstr "Lesotho"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Liberia"
+#~ msgstr "Liberia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Libya"
+#~ msgstr "Libya"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Liechtenstein"
+#~ msgstr "Liechtenstein"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Lithuania"
+#~ msgstr "Lithuania"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Luxembourg"
+#~ msgstr "Luxembourg"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Macao"
+#~ msgstr "Macao"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Madagascar"
+#~ msgstr "Madagascar"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Malawi"
+#~ msgstr "Malawi"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Malaysia"
+#~ msgstr "Malaysia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Maldives"
+#~ msgstr "Maldives"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Mali"
+#~ msgstr "Mali"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Marshall Islands"
+#~ msgstr "Marshall Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Martinique"
+#~ msgstr "Martinique"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Mauritania"
+#~ msgstr "Mauritania"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Mauritius"
+#~ msgstr "Mauritius"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Mayotte"
+#~ msgstr "Mayotte"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Mexico"
+#~ msgstr "Mexico"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Micronesia"
+#~ msgstr "Micronesia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Moldova"
+#~ msgstr "Moldova"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Monaco"
+#~ msgstr "Monaco"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Mongolia"
+#~ msgstr "Mongolia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Montenegro"
+#~ msgstr "Montenegro"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Montserrat"
+#~ msgstr "Montserrat"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Morocco"
+#~ msgstr "Morocco"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Mozambique"
+#~ msgstr "Mozambique"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Myanmar"
+#~ msgstr "Myanmar"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Namibia"
+#~ msgstr "Namibia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Nauru"
+#~ msgstr "Nauru"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Netherlands"
+#~ msgstr "Netherlands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "New Caledonia"
+#~ msgstr "New Caledonia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "New Zealand"
+#~ msgstr "New Zealand"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Nicaragua"
+#~ msgstr "Nicaragua"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Niger"
+#~ msgstr "Niger"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Nigeria"
+#~ msgstr "Nigeria"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Niue"
+#~ msgstr "Niue"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Norfolk Island"
+#~ msgstr "Norfolk Island"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "North Macedonia"
+#~ msgstr "North Macedonia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Northern Mariana Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Norway"
+#~ msgstr "Norway"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Oman"
+#~ msgstr "Oman"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Pakistan"
+#~ msgstr "Pakistan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Palau"
+#~ msgstr "Palau"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Palestine"
+#~ msgstr "Palestine"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papua New Guinea"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Paraguay"
+#~ msgstr "Paraguay"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Philippines"
+#~ msgstr "Philippines"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Pitcairn"
+#~ msgstr "Pitcairn"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Poland"
+#~ msgstr "Poland"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Portugal"
+#~ msgstr "Portugal"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Puerto Rico"
+#~ msgstr "Puerto Rico"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Qatar"
+#~ msgstr "Qatar"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Romania"
+#~ msgstr "Romania"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Russian Federation"
+#~ msgstr "Russian Federation"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Rwanda"
+#~ msgstr "Rwanda"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Réunion"
+#~ msgstr "Réunion"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Saint Barthélemy"
+#~ msgstr "Saint Barthélemy"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Saint Helena, Ascension and Tristan da Cunha"
+#~ msgstr "Saint Helena, Ascension and Tristan da Cunha"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Saint Kitts and Nevis"
+#~ msgstr "Saint Kitts and Nevis"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Saint Lucia"
+#~ msgstr "Saint Lucia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Saint Martin"
+#~ msgstr "Saint Martin"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Saint Pierre and Miquelon"
+#~ msgstr "Saint Pierre and Miquelon"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Saint Vincent and the Grenadines"
+#~ msgstr "Saint Vincent and the Grenadines"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Samoa"
+#~ msgstr "Samoa"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "San Marino"
+#~ msgstr "San Marino"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Sao Tome and Principe"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Saudi Arabia"
+#~ msgstr "Saudi Arabia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Senegal"
+#~ msgstr "Senegal"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Serbia"
+#~ msgstr "Serbia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Seychelles"
+#~ msgstr "Seychelles"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Sierra Leone"
+#~ msgstr "Sierra Leone"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Singapore"
+#~ msgstr "Singapore"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Sint Maarten"
+#~ msgstr "Sint Maarten"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Slovakia"
+#~ msgstr "Slovakia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Slovenia"
+#~ msgstr "Slovenia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Solomon Islands"
+#~ msgstr "Solomon Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Somalia"
+#~ msgstr "Somalia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "South Africa"
+#~ msgstr "South Africa"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "South Georgia and the South Sandwich Islands"
+#~ msgstr "South Georgia and the South Sandwich Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "South Sudan"
+#~ msgstr "South Sudan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Spain"
+#~ msgstr "Spain"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Sri Lanka"
+#~ msgstr "Sri Lanka"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Sudan"
+#~ msgstr "Sudan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Suriname"
+#~ msgstr "Suriname"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Svalbard and Jan Mayen"
+#~ msgstr "Svalbard and Jan Mayen"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Sweden"
+#~ msgstr "Sweden"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Switzerland"
+#~ msgstr "Switzerland"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Syrian Arab Republic"
+#~ msgstr "Syrian Arab Republic"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Taiwan"
+#~ msgstr "Taiwan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Tajikistan"
+#~ msgstr "Tajikistan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Tanzania"
+#~ msgstr "Tanzania"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Thailand"
+#~ msgstr "Thailand"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Timor-Leste"
+#~ msgstr "Timor-Leste"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Tokelau"
+#~ msgstr "Tokelau"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trinidad and Tobago"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Tunisia"
+#~ msgstr "Tunisia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Turkey"
+#~ msgstr "Turkey"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Turkmenistan"
+#~ msgstr "Turkmenistan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Turks and Caicos Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Tuvalu"
+#~ msgstr "Tuvalu"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Uganda"
+#~ msgstr "Uganda"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Ukraine"
+#~ msgstr "Ukraine"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "United Arab Emirates"
+#~ msgstr "United Arab Emirates"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "United Kingdom of Great Britain and Northern Ireland"
+#~ msgstr "United Kingdom of Great Britain and Northern Ireland"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "United States Minor Outlying Islands"
+#~ msgstr "United States Minor Outlying Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "United States of America"
+#~ msgstr "United States of America"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Uruguay"
+#~ msgstr "Uruguay"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Uzbekistan"
+#~ msgstr "Uzbekistan"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Vanuatu"
+#~ msgstr "Vanuatu"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Venezuela"
+#~ msgstr "Venezuela"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Vietnam"
+#~ msgstr "Vietnam"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Virgin Islands"
+#~ msgstr "Virgin Islands"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Wallis and Futuna"
+#~ msgstr "Wallis and Futuna"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Western Sahara"
+#~ msgstr "Western Sahara"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Yemen"
+#~ msgstr "Yemen"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Zambia"
+#~ msgstr "Zambia"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Zimbabwe"
+#~ msgstr "Zimbabwe"
+
+#, fuzzy
+#~ msgctxt "Countries"
+#~ msgid "Åland Islands"
+#~ msgstr "Åland Islands"
+
+#~ msgid "Recent Search"
+#~ msgstr "最近搜尋"
+
+#~ msgid "Starred by You :"
+#~ msgstr "由你主演："
+
+#~ msgid "Unstar this station"
+#~ msgstr "取消收藏此電台"
