@@ -13,7 +13,7 @@ if get_option('translation') == 'update'
             'xgettext',
             '--language=Vala',
             '--files-from=@INPUT@',
-            '--output=' + meson.current_source_dir() + '/' + meson.project_name() + '.pot',
+            '--output=' + meson.project_name() + '.pot',
             '--from-code=UTF-8',
             '--package-name=' + meson.project_name(),
             '--package-version=' + meson.project_version(),
