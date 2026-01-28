@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the com.github.louis77.tuner package.
 # Nathan Bonnemains (@NathanBnm), 2020.
 #
-# "David D." <dadu042@users.noreply.hosted.weblate.org>, 2025.
+# "David D." <dadu042@users.noreply.hosted.weblate.org>, 2025, 2026.
 # technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-01-25 01:03+0000\n"
+"PO-Revision-Date: 2026-01-28 06:45+0000\n"
 "Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "fr/>\n"
@@ -22,76 +22,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s Star this station"
-msgstr "%s Star this station"
+msgstr "%s Ajouter cette station comme favorite"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s Unstar this station"
-msgstr "%s Unstar this station"
+msgstr "%s Retirer cette station des favorites"
 
 msgid "About"
 msgstr "À propos"
 
-#, fuzzy
 msgid "Album"
 msgstr "Album"
 
-#, fuzzy
 msgid "Application Name"
-msgstr "Application Name"
+msgstr "Nom d'application"
 
-#, fuzzy
 msgid "Artist"
-msgstr "Artist"
+msgstr "Artiste"
 
-#, fuzzy
 msgid "Audio Codec"
-msgstr "Audio Codec"
+msgstr "Codec audio"
 
-#, fuzzy
 msgid "Auto-play last station on startup"
-msgstr "Auto-play last station on startup"
+msgstr "Lecture auto dernière station au démarrage"
 
-#, fuzzy
 msgid "Bitrate"
-msgstr "Bitrate"
+msgstr "Débit binaire"
 
-#, fuzzy
 msgid "Changes"
-msgstr "Changes"
+msgstr "Changements"
 
 #, fuzzy
 msgid "Channel Mode"
 msgstr "Channel Mode"
 
-#, fuzzy
 msgid "Choose a file"
-msgstr "Choose a file"
+msgstr "Choisir un fichier"
 
-#, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+"Cliquez ici pour reprendre la fenêtre. Pour quitter Tuner, mettez en pause "
+"la lecture et fermez la fenêtre."
 
-#, fuzzy
 msgid "Codec"
 msgstr "Codec"
 
-#, fuzzy
 msgid "Container Format"
-msgstr "Container Format"
+msgstr "Format conteneur"
 
-#, fuzzy
 msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to clipboard"
+msgstr "Copier l'URI de flux dans presse-papiers"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not get random station: %s"
-msgstr "Could not get random station: %s"
+msgstr "Impossible d’obtenir une station aléatoire : %s"
 
 #, fuzzy
 msgid "Cycle through the metadata from the playing stream"
@@ -100,17 +88,15 @@ msgstr "Cycle through the metadata from the playing stream"
 msgid "Dark mode"
 msgstr "Thème sombre"
 
-#, fuzzy
 msgid "Data Provider"
-msgstr "Data Provider"
+msgstr "Fournisseur de données"
 
 #, fuzzy
 msgid "Date Time"
 msgstr "Date Time"
 
-#, fuzzy
 msgid "Default"
-msgstr "Default"
+msgstr "Par défaut"
 
 msgid "Discover"
 msgstr "Découvrir"
@@ -118,133 +104,114 @@ msgstr "Découvrir"
 msgid "Discover more stations"
 msgstr "Découvrir plus de stations"
 
-#, fuzzy
 msgid "Do not participate in Station voting"
-msgstr "Do not participate in Station voting"
+msgstr "Ne pas participer au vote de station"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
+"Double-cliquer pour parcourir %1$u stations,\n"
+"une, toutes les dix minutes, pendant %2$u jours"
 
-#, fuzzy
 msgid "Encoder"
-msgstr "Encoder"
+msgstr "Encodeur"
 
-#, fuzzy
 msgid "Encoder Version"
-msgstr "Encoder Version"
+msgstr "Version encodeur"
 
 #, fuzzy
 msgid "Eras"
 msgstr "Eras"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Error reading file: %s"
-msgstr "Error reading file: %s"
+msgstr "Erreur de lecture fichier : %s"
 
-#, fuzzy
 msgid "Error while trying to autoplay, aborting…"
-msgstr "Error while trying to autoplay, aborting…"
+msgstr "Erreur lors de la tentative de lecture automatique, interruption…"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Error: %s"
-msgstr "Error: %s"
+msgstr "Erreur : %s"
 
-#, fuzzy
 msgid "Explore"
-msgstr "Explore"
+msgstr "Explorer"
 
-#, fuzzy
 msgid "Export Starred Stations to Playlist"
-msgstr "Export Starred Stations to Playlist"
+msgstr "Exporter stations étoilées vers playlist"
 
-#, fuzzy
 msgid "Extended Comment"
-msgstr "Extended Comment"
+msgstr "Commentaire étendu"
 
-#, fuzzy
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
+"Parcourir rapidement les métadonnées du flux en cours de lecture si les "
+"informations de flux sont activées"
 
 #, fuzzy
 msgid "Faster cycling through stream info"
 msgstr "Faster cycling through stream info"
 
-#, fuzzy
 msgid "Favicon address"
-msgstr "Favicon address"
+msgstr "Adresse d'icône favorite"
 
-#, fuzzy
 msgid "Genre"
 msgstr "Genre"
 
 msgid "Genres"
 msgstr "Genres"
 
-#, fuzzy
 msgid "Has CRC"
-msgstr "Has CRC"
+msgstr "Possède CRC"
 
-#, fuzzy
 msgid "History"
-msgstr "History"
+msgstr "Historique"
 
-#, fuzzy
 msgid "Homepage"
-msgstr "Homepage"
+msgstr "Page d'accueil"
 
-#, fuzzy
 msgid "Homepage address"
-msgstr "Homepage address"
+msgstr "Adresse page d'accueil"
 
-#, fuzzy
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
+"Si cochée, vos stations favorites et diffusées ne seront pas utilisées pour "
+"calculer le vote de popularité de l’indice de station, ni les stations "
+"populaires et tendance"
 
-#, fuzzy
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
+"Si activé, lorsque Tuner démarre, il commencera automatiquement à lire la "
+"dernière station lue"
 
-#, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
-"If enabled, when Tuner starts it will open to the starred stations view"
+"Si activé, lorsque Tuner démarre, il s’ouvrira sur la vue des stations "
+"favorites"
 
-#, fuzzy
 msgid "Image"
 msgstr "Image"
 
-#, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
-msgstr "Import Station UUIDs as Starred Stations"
+msgstr "Importer des UUID de stations en tant que stations favorites"
 
 #, fuzzy
 msgid "Jukebox"
 msgstr "Jukebox"
 
-#, fuzzy
 msgid "Language"
-msgstr "Language"
+msgstr "Langue"
 
-#, fuzzy
 msgid "Latest Search"
-msgstr "Latest Search"
+msgstr "Dernière recherche"
 
 msgid "Library"
 msgstr "Bibliothèque"
@@ -252,43 +219,35 @@ msgstr "Bibliothèque"
 msgid "Light mode"
 msgstr "Thème clair"
 
-#, fuzzy
 msgid "Location"
-msgstr "Location"
+msgstr "Emplacement"
 
-#, fuzzy
 msgid "Maximum Bitrate"
-msgstr "Maximum Bitrate"
+msgstr "Débit binaire maximal"
 
-#, fuzzy
 msgid "Minimum Bitrate"
-msgstr "Minimum Bitrate"
+msgstr "Débit binaire minimal"
 
-#, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
-msgstr "Most listened to Stations in the last 24 hours"
+msgstr "Stations les plus écoutées ces dernières 24 heures"
 
 msgid "No stations found"
 msgstr "Aucune station trouvée"
 
-#, fuzzy
 msgid "Nominal Bitrate"
-msgstr "Nominal Bitrate"
+msgstr "Débit binaire nominal"
 
 msgid "Nothing here"
 msgstr "Il n'y a rien ici"
 
-#, fuzzy
 msgid "Open to Starred Stations"
-msgstr "Open to Starred Stations"
+msgstr "Ouvrir aux stations favorites"
 
-#, fuzzy
 msgid "Organization"
-msgstr "Organization"
+msgstr "Organisation"
 
-#, fuzzy
 msgid "Playing in background"
-msgstr "Playing in background"
+msgstr "Jouer en arrière-plan"
 
 msgid "Please try a different search term."
 msgstr "Veuillez essayer une autre recherche."
@@ -299,160 +258,127 @@ msgstr "Populaire"
 msgid "Preferences"
 msgstr "Préférences"
 
-#, fuzzy
 msgid "Private Data"
-msgstr "Private Data"
+msgstr "Données privées"
 
-#, fuzzy
 msgid "Remove this saved search"
-msgstr "Remove this saved search"
+msgstr "Retirer cette recherche enregistrée"
 
-#, fuzzy
 msgid "Requires restarting Tuner"
-msgstr "Requires restarting Tuner"
+msgstr "Nécessite de redémarrer Tuner"
 
-#, fuzzy
 msgid "Save File"
-msgstr "Save File"
+msgstr "Fichier de sauvegarde"
 
-#, fuzzy
 msgid "Save this search"
-msgstr "Save this search"
+msgstr "Sauvegarder cette recherche"
 
-#, fuzzy
 msgid "Saved Search"
-msgstr "Saved Search"
+msgstr "Recherche sauvegardée"
 
-#, fuzzy
 msgid "Saved Searches"
-msgstr "Saved Searches"
+msgstr "Recherches sauvegardées"
 
-#, fuzzy
 msgid "Search Results"
-msgstr "Search Results"
+msgstr "Résultats de recherche"
 
 msgid "Selections"
 msgstr "Sélection"
 
-#, fuzzy
 msgid "Show stream info when playing"
-msgstr "Show stream info when playing"
+msgstr "Afficher informations du flux lors de la lecture"
 
-#, fuzzy
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
+"Quelque chose s’est mal passé lors du chargement des données des stations "
+"radio depuis le fournisseur de la station. Veuillez réessayer plus tard."
 
 msgid "Star this station"
-msgstr "Ajouter aux favoris"
+msgstr "Ajouter aux favorites"
 
 msgid "Starred by You"
-msgstr "Vos favoris"
+msgstr "Vos favorites"
 
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "Recherche de station"
 
-#, fuzzy
 msgid "Station info updated Online - View changes"
-msgstr "Station info updated Online - View changes"
+msgstr "Informations de station mise à jour en ligne - Voir changements"
 
-#, fuzzy
 msgid "Station no longer in the index"
-msgstr "Station no longer in the index"
+msgstr "Station n’est plus dans l’index"
 
-#, fuzzy
 msgid "Station tags"
-msgstr "Station tags"
+msgstr "Étiquettes de station"
 
-#, fuzzy
 msgid "Stations"
 msgstr "Stations"
 
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "Stations à découvrir"
 
-#, fuzzy
 msgid "Stop Playback requested"
-msgstr "Stop Playback requested"
+msgstr "Arrêter la lecture demandée"
 
-#, fuzzy
 msgid "Stream Metadata"
-msgstr "Stream Metadata"
+msgstr "Métadonnées de flux"
 
-#, fuzzy
 msgid "Stream Resolved Url"
-msgstr "Stream Resolved Url"
+msgstr "URL résolue du flux"
 
-#, fuzzy
 msgid "Stream Url"
-msgstr "Stream Url"
+msgstr "Url du flux"
 
-#, fuzzy
 msgid "Subgenres"
-msgstr "Subgenres"
+msgstr "Sous-genres"
 
-#, fuzzy
 msgid "System"
-msgstr "System"
+msgstr "Système"
 
-#, fuzzy
 msgid "Tags"
-msgstr "Tags"
+msgstr "Étiquettes"
 
-#, fuzzy
 msgid "Talk, News, Sport"
-msgstr "Talk, News, Sport"
+msgstr "Discussions, actus, sport"
 
-#, fuzzy
 msgid "Theme"
-msgstr "Theme"
+msgstr "Thème"
 
-#, fuzzy
 msgid "Title"
-msgstr "Title"
+msgstr "Titre"
 
-#, fuzzy
 msgid "Track Count"
-msgstr "Track Count"
+msgstr "Compte pistes"
 
-#, fuzzy
 msgid "Track Number"
-msgstr "Track Number"
+msgstr "Numéro de piste"
 
 msgid "Trending"
 msgstr "Tendances"
 
-#, fuzzy
 msgid "Trending Stations in the last 24 hours"
-msgstr "Trending Stations in the last 24 hours"
+msgstr "Stations tendances ces dernières 24 heures"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open website: %s"
-msgstr "Unable to open website: %s"
+msgstr "Impossible d’ouvrir site web : %s"
 
-#, fuzzy
 msgid "Update Station from Online"
-msgstr "Update Station from Online"
+msgstr "Mise à jour station depuis en ligne"
 
 msgid "Visit Website"
 msgstr "Visiter le site Web"
 
-#, fuzzy
 msgid "_Cancel"
-msgstr "_Cancel"
+msgstr "_Annuler"
 
-#, fuzzy
 msgid "_Open"
-msgstr "_Open"
+msgstr "_Ouvrir"
 
-#, fuzzy
 msgid "_Save"
-msgstr "_Save"
+msgstr "_Sauvegarder"
 
 #, fuzzy
 #~ msgctxt "Countries"

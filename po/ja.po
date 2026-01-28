@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-01-25 01:03+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-01-27 03:06+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ja/>\n"
 "Language: ja\n"
@@ -326,9 +326,8 @@ msgstr "Saved Search"
 msgid "Saved Searches"
 msgstr "Saved Searches"
 
-#, fuzzy
 msgid "Search Results"
-msgstr "Search Results"
+msgstr "検索結果"
 
 msgid "Selections"
 msgstr "選択肢"
@@ -351,9 +350,8 @@ msgstr "この放送局をお気に入りに追加する"
 msgid "Starred by You"
 msgstr "あなたがスターを付けました"
 
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "ステーション検索"
 
 #, fuzzy
 msgid "Station info updated Online - View changes"
@@ -367,13 +365,11 @@ msgstr "Station no longer in the index"
 msgid "Station tags"
 msgstr "Station tags"
 
-#, fuzzy
 msgid "Stations"
-msgstr "Stations"
+msgstr "ステーション"
 
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "発見する駅"
 
 #, fuzzy
 msgid "Stop Playback requested"
