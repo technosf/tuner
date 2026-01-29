@@ -7,6 +7,8 @@
  * @file StationContextMenu.vala
  */
  
+using Tuner.Model;
+
 /**
  * @class StationContextMenu
  * @brief A context menu for radio stations.
@@ -53,14 +55,14 @@ public class Tuner.StationContextMenu : Gtk.Menu
         // Country
         if ( _station.countrycode != null && _station.countrycode.length > 0 )
         {
-            var sb = new StringBuilder (_station.countrycode);
+            var sb = new StringBuilder (Countries.get_by_code(_station.countrycode) + "\n");
             if ( _station.state != null && _station.state.length > 0 )
-            sb.append (" - ").append (_station.state);
+            sb.append (_station.state).append ("\t");
 
             // Language
             if ( station_button.station.language != null && station_button.station.language.length > 0 )
             {
-                sb.append ("\t[").append (station_button.station.language).append ("]");
+                sb.append ("[").append (station_button.station.language).append ("]");
             }
 
             var info = new Gtk.MenuItem.with_label (sb.str);
