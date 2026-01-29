@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-01-25 01:03+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-01-26 04:18+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/tuner/"
 "tuner-ui/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -21,68 +21,56 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s Star this station"
-msgstr "%s Star this station"
+msgstr "%s Stjernemerk denne stasjonen"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s Unstar this station"
-msgstr "%s Unstar this station"
+msgstr "%s Fjern stjernen til denne stasjonen"
 
 msgid "About"
 msgstr "Om"
 
-#, fuzzy
 msgid "Album"
 msgstr "Album"
 
-#, fuzzy
 msgid "Application Name"
-msgstr "Application Name"
+msgstr "Programnavn"
 
-#, fuzzy
 msgid "Artist"
 msgstr "Artist"
 
-#, fuzzy
 msgid "Audio Codec"
-msgstr "Audio Codec"
+msgstr "Lydkodek"
 
-#, fuzzy
 msgid "Auto-play last station on startup"
-msgstr "Auto-play last station on startup"
+msgstr "Spill av siste stasjon automatisk ved oppstart"
 
-#, fuzzy
 msgid "Bitrate"
 msgstr "Bitrate"
 
-#, fuzzy
 msgid "Changes"
-msgstr "Changes"
+msgstr "Endringer"
 
-#, fuzzy
 msgid "Channel Mode"
-msgstr "Channel Mode"
+msgstr "Kanalmodus"
 
-#, fuzzy
 msgid "Choose a file"
-msgstr "Choose a file"
+msgstr "Velg en fil"
 
-#, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+"Klikk her for å gjenoppta vinduet. For å avslutte Tuner, sett avspillingen "
+"på pause og lukk vinduet."
 
-#, fuzzy
 msgid "Codec"
-msgstr "Codec"
+msgstr "Kodek"
 
-#, fuzzy
 msgid "Container Format"
-msgstr "Container Format"
+msgstr "Containerformat"
 
 #, fuzzy
 msgid "Copy Stream-URI to clipboard"
@@ -326,9 +314,8 @@ msgstr "Saved Search"
 msgid "Saved Searches"
 msgstr "Saved Searches"
 
-#, fuzzy
 msgid "Search Results"
-msgstr "Search Results"
+msgstr "Søkeresultater"
 
 msgid "Selections"
 msgstr "Utvalg"
@@ -351,9 +338,8 @@ msgstr "Stjernemerk denne stasjonen"
 msgid "Starred by You"
 msgstr "Stjernemerket av deg"
 
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "Stasjonssøk"
 
 #, fuzzy
 msgid "Station info updated Online - View changes"
@@ -371,9 +357,8 @@ msgstr "Station tags"
 msgid "Stations"
 msgstr "Stations"
 
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "Stasjoner å Oppdage"
 
 #, fuzzy
 msgid "Stop Playback requested"

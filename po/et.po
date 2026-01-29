@@ -2,13 +2,14 @@
 # This file is put in the public domain.
 # Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>, 2025, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2025, 2026.
+# technosf <535060+technosf@users.noreply.github.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-01-25 01:03+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-01-28 06:45+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "et/>\n"
 "Language: et\n"
@@ -88,9 +89,8 @@ msgstr "Andmeallikas"
 msgid "Date Time"
 msgstr "Kuupäev ja kellaaeg"
 
-#, fuzzy
 msgid "Default"
-msgstr "Default"
+msgstr "Vaikimisi"
 
 msgid "Discover"
 msgstr "Otsi ja avasta"
@@ -264,9 +264,8 @@ msgstr "Salvesta fail"
 msgid "Save this search"
 msgstr "Salvesta see otsing"
 
-#, fuzzy
 msgid "Saved Search"
-msgstr "Saved Search"
+msgstr "Salvestatud otsing"
 
 msgid "Saved Searches"
 msgstr "Salvestatud otsingud"
@@ -280,13 +279,12 @@ msgstr "Valikud"
 msgid "Show stream info when playing"
 msgstr "Esitamise ajal näita meediavoo teavet"
 
-#, fuzzy
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
+"Raadiojaamade teabe laadimisel teenusepakkujalt läks midagi valesti. Palun "
+"proovi hiljem uuesti."
 
 msgid "Star this station"
 msgstr "Märgi see jaam lemmikuks"
@@ -306,9 +304,8 @@ msgstr "See veebiraadiojaam pole enam indeksis"
 msgid "Station tags"
 msgstr "Veebiraadiojaamade sildid"
 
-#, fuzzy
 msgid "Stations"
-msgstr "Stations"
+msgstr "Jaamad"
 
 msgid "Stations to Discover"
 msgstr "Avastatavad veebiraadiojaamad"
@@ -325,16 +322,14 @@ msgstr "Voogedastuse võrguaadress"
 msgid "Stream Url"
 msgstr "Meediavoo aadress"
 
-#, fuzzy
 msgid "Subgenres"
-msgstr "Subgenres"
+msgstr "Alamžanrid"
 
 msgid "System"
 msgstr "Süsteemi määratud"
 
-#, fuzzy
 msgid "Tags"
-msgstr "Tags"
+msgstr "Sildid"
 
 msgid "Talk, News, Sport"
 msgstr "Jutusaated, uudised, sport"
