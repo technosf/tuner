@@ -205,7 +205,9 @@ namespace Tuner {
 
         static construct 
         {
+            //
             // Interntionalization
+            //
             Intl.setlocale (LocaleCategory.ALL, "");
             Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
             Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
