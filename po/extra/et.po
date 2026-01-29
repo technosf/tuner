@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-16 20:24-0800\n"
-"PO-Revision-Date: 2026-01-23 18:50+0000\n"
+"POT-Creation-Date: 2026-01-24 15:56-0800\n"
+"PO-Revision-Date: 2026-01-28 07:01+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/tuner/tuner-"
 "desktop/et/>\n"
@@ -19,41 +19,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#: data/com.github.louis77.tuner.desktop.in:4
-#: data/com.github.louis77.tuner.appdata.xml.in:8
 msgid "Tuner"
 msgstr "Tuner"
 
-#: data/com.github.louis77.tuner.desktop.in:5
 msgid "Internet Radio Player"
-msgstr "Veebiraadiojaamade otsija ja esitaja"
+msgstr "Internetiraadio Mängija"
 
-#: data/com.github.louis77.tuner.desktop.in:6
 msgid "Listen to Radio Stations all over the world"
 msgstr "Kuula veebiraadioid üle maailma"
 
-#: data/com.github.louis77.tuner.desktop.in:11
 msgid "Radio;Audio;Listen;Stations;Receiver;"
-msgstr ""
-"Radio;Audio;Listen;Stations;Receiver;veebiraadio;raadiojaam;internetiraadio;kuulamine;raadiorakendus;vastuvõtja;kuulama;kuulamine;raadio;"
+msgstr "Radio;Audio;Listen;Stations;Receiver;veebiraadio;raadiojaam;internetiraadio;kuulamine;raadiorakendus;vastuvõtja;kuulama;kuulamine;raadio;"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:9
-msgid "Louis Brauer"
-msgstr "Louis Brauer"
-
-#: data/com.github.louis77.tuner.appdata.xml.in:10
 msgid "technosf"
 msgstr "technosf"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:16
 msgid "Internet radio"
 msgstr "Veebiraadio"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:18
 msgid "Make finding and listening to internet radio stations fun again!"
 msgstr "Veebiraadiote otsimine ja kuulamine on jälle vahva!"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:19
 msgid ""
 "Instead of showing all the stations you already know, Tuner presents you a "
 "new selection of stations from all over the world every time you hit the "
@@ -62,110 +48,114 @@ msgstr ""
 "Selle asemel, et näidata sulle veebiraadiojaamu, mida sa juba tead, kuvab "
 "Tuner sulle juhusliku valiku jaamu iga korda kui kõpsad vastavat nuppu."
 
-#: data/com.github.louis77.tuner.appdata.xml.in:22
 msgid "Tuner uses the community-driven station catalog radio-browser.info."
 msgstr ""
 "Tuner kasutab kogukonna koostatud veebiraadiojaamade kataloogi radio-"
 "browser.info."
 
-#: data/com.github.louis77.tuner.appdata.xml.in:24
 msgid "Discover new stations every day"
 msgstr "Iga päev võid leida mõne uue veebiraadiojaama"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:25
 msgid "Star stations you like and visit their website"
 msgstr ""
 "Märgi sulle meeldivad veebiraadiojaamad lemmikuks ja huvi korral vaata nende "
 "veebisaiti"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:26
 msgid "Control Tuner from your volume indicator"
 msgstr "Juhi Tunerit helivaljuse nupust"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:33
 msgid "Tuner with dark theme, discovery"
 msgstr "Tuneri jaamade avastamise vaade tumedas kujunduses"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:37
 msgid "Tuner with light theme, starred stations"
 msgstr "Tuneri lemmikjaamade vaade heledas kujunduses"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:41
 msgid "Tuner search for stations"
 msgstr "Tuneri jaamade otsing"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:45
 msgid "Tuner saved searches"
 msgstr "Tuneri salvestatud otsingud"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:49
 msgid "Tuner playing station metadata"
 msgstr "Esitamisel oleva veebiraadiojaama metateave"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:53
 msgid "Tuner preferences"
 msgstr "Tuneri eelistused"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:57
 msgid "Tuner station context information"
 msgstr "Veebiraadiojaama kontekstuaalne vaade Tuneris"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:61
 msgid "Tuner jukebox station shuffle"
 msgstr "Veebiraadiojaamade esitus juhuslikus järjekorras"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:98
+msgid "Maintanance release:"
+msgstr "Hooldusversioon:"
+
+msgid "Updated freedesktop platform from 24.08 to 25.08"
+msgstr ""
+
+msgid "Removed module vala as now included in freedesktop platform"
+msgstr ""
+
+msgid "Removed module libsoup as now included in freedesktop platform"
+msgstr ""
+
+msgid "Bumped libgee to 0.20.8"
+msgstr ""
+
+msgid "Sharpened some wording, fixed typos"
+msgstr ""
+
+msgid "Updated translated strings and incorporated fresh translations"
+msgstr ""
+
+msgid "i18n - Broke out Country translation to separate module"
+msgstr ""
+
+msgid ""
+"i18n - Added trad Chinese, Estonian, Romaian, Tamil and Latin American "
+"Spanish"
+msgstr ""
+
 msgid "New Version!"
 msgstr "Uus versioon!"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:100
 msgid "Saved Searches - new feature"
 msgstr "Salvestatud otsingud (uus funktsionaalsus)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:101
 msgid "Explore Genres - new feature"
 msgstr "Žanrite sirvimine (uus funktsionaalsus)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:102
 msgid "Jukebox Shuffle - Play Random Station - new feature"
 msgstr "Juhusliku veebiraadio esitusvaade (uus funktsionaalsus)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:103
 msgid "New Default Genres added"
 msgstr "Lisandusid uued vaikimisi žanrid"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:104
 msgid "Updated look and feel"
 msgstr "Uus välimus ja tunnetus"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:105
 msgid "Station and Stream History - new feature"
 msgstr "Veebiraadiojaamade ja voogedastuse ajalugu (uus funktsionaalsus)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:106
 msgid "More Station and Stream Metadata - new feature"
 msgstr ""
 "Detailsem veebiraadiojaama ja voogedastuse metateave (uus funktsionaalsus)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:107
 msgid "Save, import Starred Stations to playlists - new feature"
 msgstr ""
 "Lemmikjaamade salvestamine esindusloendina ja impordimine sealt (uus "
 "funktsionaalsus)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:108
 msgid "Faster responsiveness and image loading"
 msgstr "Kiirem liides ja piltide laadimine"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:109
 msgid "New data provider API, plus better support for Radio Browser"
 msgstr "Uus andmeallika API ja parem Radio Browser teenuse tugi"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:110
 msgid "Refactored for separation of concerns, OO, maintainability"
 msgstr "Koodiparandused parema hallatavuse nimel"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:111
 msgid ""
 "Renamed, updated icons, description and screenshots per Flathub quality "
 "directives"
@@ -173,59 +163,41 @@ msgstr ""
 "Muutunud ikoonid, kirjeldus ja ekraanitõmmised vastavalt Flathubi "
 "kvaliteedireeglitele"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:118
-#: data/com.github.louis77.tuner.appdata.xml.in:130
-#: data/com.github.louis77.tuner.appdata.xml.in:142
-#: data/com.github.louis77.tuner.appdata.xml.in:151
-#: data/com.github.louis77.tuner.appdata.xml.in:161
-msgid "Maintanance release:"
-msgstr "Hooldusversioon:"
-
-#: data/com.github.louis77.tuner.appdata.xml.in:120
 msgid "Updated HTTP Session params to improve response"
 msgstr "Parandamaks regeerivust täiendasime HTTP Session-meetodi parameetreid"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:121
 msgid ""
 "Increased Search re-fire interval to reduce number of concurrent searches"
 msgstr "Vältimaks rööpseid otsinguid suurendasime kordusotsingu välpa"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:122
 msgid "Made Search asynchronous so UI remains responsive during searches"
 msgstr ""
 "Tagamaks, et kasutajaliides otsingu ajal ei hangu, on otsingud nüüd "
 "asünkroonsed"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:123
 msgid "Ignore request to load failing favicons URLs"
 msgstr ""
 "Eirame päringud favikonide mittetoimivate võrguaadresside uuesti laadimiseks"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:124
 msgid "Removed org.gnome.SettingsDaemon.MediaKeys from manifest per flathub"
 msgstr ""
 "Eemaldasime org.gnome.SettingsDaemon.MediaKeys manifestist flathubi "
 "kontekstis"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:132
 msgid "Added API server lookup via SRV and backup via JSON, plus randomization"
 msgstr ""
 "Lisasime APi serveri otsingu nimeserveri SRV-kirje alusel, varuotsingu JSON-"
 "iga ja juhuslikuma valiku"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:133
 msgid "Added JSON validation for empty nodes"
 msgstr "Lisasime JSON-i valideerimise tühjade sõlmede jaoks"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:134
 msgid "Refactored libsoup calls out to HttpClient.vala"
 msgstr "Kirjutasime uue iteratsiooni libsoupi HttpClient.vala päringutele"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:135
 msgid "Refactored loading of favicons to Favicon.vala"
 msgstr "Kirjutasime uue iteratsiooni favikonide laadimiseks Favicon.vala abil"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:136
 msgid ""
 "Turned off TLS checks for HTTP calls to avoid non loading of favicons with "
 "invalid certs"
@@ -233,43 +205,30 @@ msgstr ""
 "Lülitasime välja TLS-i õigsuse kontrollid olukorras, kus favikonid jäid "
 "vigaste sertifikaatide tõttu laadimata"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:144
 msgid "Upgrade to taglib 1.13.1"
 msgstr "Teegi uuendus: taglib 1.13.1"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:145
 msgid "Corrected README (apt libs)"
 msgstr "Parandasime README-faili (apt libs)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:153
 msgid "Upgrade to libsoup-3.0"
 msgstr "libsoup-3.0 teegi uuendus"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:154
 msgid "Fix issue where radio-browser.info API did not work"
 msgstr "Parandasime olukorra, kus radio-browser.info API ei toiminud"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:155
 msgid "Remove Geolocation service"
 msgstr "Eemaldasime asukohatuvastuse teenuse"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:163
 msgid "Change flatpak runtime to lastest eOS 6.1"
 msgstr "elementary OS 61 flatpaki käitusteegi uuendus"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:164
 msgid "Change pause button to stop button"
 msgstr "Muutsime peatamise nupu loogikat"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:170
-#: data/com.github.louis77.tuner.appdata.xml.in:193
-#: data/com.github.louis77.tuner.appdata.xml.in:220
-#: data/com.github.louis77.tuner.appdata.xml.in:251
-#: data/com.github.louis77.tuner.appdata.xml.in:272
 msgid "New features:"
 msgstr "Uus funktsionaalsus:"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:172
 msgid ""
 "Background playback: Tuner can be closed and playback will continue. A "
 "notification provides easy access to bring the Tuner window back."
@@ -277,125 +236,90 @@ msgstr ""
 "Taasesitus taustal: nüüd saad Tuneri sulgeda ja taasesitus jätkub. "
 "Teavitusest saad ta uuesti avada."
 
-#: data/com.github.louis77.tuner.appdata.xml.in:174
-#: data/com.github.louis77.tuner.appdata.xml.in:183
-#: data/com.github.louis77.tuner.appdata.xml.in:199
-#: data/com.github.louis77.tuner.appdata.xml.in:210
-#: data/com.github.louis77.tuner.appdata.xml.in:226
-#: data/com.github.louis77.tuner.appdata.xml.in:238
-#: data/com.github.louis77.tuner.appdata.xml.in:257
-#: data/com.github.louis77.tuner.appdata.xml.in:279
 msgid "Other improvements:"
 msgstr "Muud parandused:"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:176
 msgid ""
 "Dark/light mode optimized with new dropdown (use system, dark or light theme)"
 msgstr ""
 "Uus heleda ja tumeda kujunduse valik eelistustes (saad kasutada ka süsteemi "
 "kujundust)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:185
 msgid "Dark/light mode adapts to system settings"
 msgstr "Hele ja tume kujundus kohanduvad süsteemi seadistustega"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:186
 msgid "Use elementary OS 6 flatpak runtime"
 msgstr "Võtsime kasutusele elementary OS 6 flatpaki käitusteegi"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:195
 msgid "Show codec and bitrate on station"
 msgstr "Näitame jaama koodekit ja bitisagetus"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:196
 msgid "New volume control"
 msgstr "Uu helivaljuse juhtimise nupp"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:197
 msgid "New setting: Auto-play last station"
 msgstr "Uus seadistus: viimatiesitatud jaama automaatne esitamine"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:201
 msgid "Dark mode is now saved in settings"
 msgstr "Tume kujundus salvestub nüüd seadistustes"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:202
 msgid "Improved Italian translation"
 msgstr "Parem itaalia keele tõlge"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:203
 msgid "Properly set Window name"
 msgstr "Korrektne akna nimi"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:212
 msgid "Added Turkish translation"
 msgstr "Lisandus tõlge türgi keelde"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:213
 msgid "Improved French translation"
 msgstr "Parem prantsuse keele tõlge"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:214
 msgid "Minor improvements in Country name translations"
 msgstr "Riiginimede tõlgete väikesed parandused"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:222
 msgid "Show the current track playing if supported by station"
 msgstr "Kui jaam seda toetab, siis näitame hetkel esitamisel lugu"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:223
 msgid "Show Top 100 stations of user country if detectable"
 msgstr ""
 "Kui riigi tuvastamine õnnestub, siis näitame kasutaja asukohamaa 100 "
 "populaarsemat jaama"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:224
 msgid "\"Visit Website\" link in station context menu"
 msgstr ""
 "Veebiraadiojaama kontekstimenüü valikusse lisandus võimalus jaama saidi "
 "avamiseks"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:228
 msgid "Added Dutch translation"
 msgstr "Lisandus tõlge hollandi keelde"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:230
-#: data/com.github.louis77.tuner.appdata.xml.in:243
-#: data/com.github.louis77.tuner.appdata.xml.in:264
-#: data/com.github.louis77.tuner.appdata.xml.in:286
 msgid "Bugfixes:"
 msgstr "Veaparandused:"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:232
-#: data/com.github.louis77.tuner.appdata.xml.in:245
 msgid "Fix missing icons for non elementary OS systems"
-msgstr "Parandasime puuduvad ikoonid kui operatsioonisüsteem pole elementary OS"
+msgstr ""
+"Parandasime puuduvad ikoonid kui operatsioonisüsteem pole elementary OS"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:240
 msgid "Add manual dark mode switch in settings"
 msgstr "Eelistustesse lisandus tumeda kujunduse valik"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:241
 msgid "Compact sidebar and content window"
 msgstr "Kompaktne külgriba ja sisuaken"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:253
 msgid "Right-click a station to add or remove to favourites directly"
 msgstr "Parema jaamal klõpsuga saad lemmiku lisada või eemaldada"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:254
 msgid ""
 "Add settings menu with \"Do-Not-Track\" option, disables sending station "
 "listening events to radio-browser.org"
 msgstr ""
-"Lisasime seadistustesse võimaluse radio-browser.org'i päringuid täiendada „"
-"Ära jälgi mind“ märkega"
+"Lisasime seadistustesse võimaluse radio-browser.org'i päringuid täiendada "
+"„Ära jälgi mind“ märkega"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:255
 msgid "Add About dialog"
 msgstr "Lisandus rakenduse teabe vaade"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:259
 msgid ""
 "If a station is already in your favourites, you'll see a little star in the "
 "title"
@@ -403,7 +327,6 @@ msgstr ""
 "Kui veebiraadiojaam juba on sinu lemmik, siis näed pealkirja ees väikest "
 "tähekest"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:260
 msgid ""
 "Randomly selects one of the available radio-browser.org servers (was always "
 "de1 before)"
@@ -411,7 +334,6 @@ msgstr ""
 "Nüüd valitakse radio-browser.org serverid juhuslikult (seni oli alati "
 "kasutusel de1.radio-browser.org server)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:261
 msgid ""
 "Favourites are now stored in a local favourites.json file to improve app "
 "startup time"
@@ -419,61 +341,51 @@ msgstr ""
 "Et rakendus käivituks kiiremini salvestame nüüd lemmikuid kohalikus "
 "profiilis asuvasse favourites.json faili"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:262
 msgid "Added Italian translation"
 msgstr "Lisandus tõlge itaalia keelde"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:266
 msgid ""
 "Fix broken dark theme support (elementary and Adwaita dark look fine now)"
 msgstr ""
 "Tumeda kujunduse parandused (elementary ja Adwaita tumedad kujundused "
 "toimivad nüüd korralikult)"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:274
 msgid "Search for radio stations"
 msgstr "Lisandus raadiojaamade otsing"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:275
 msgid "New \"Genres\" section with select popular genres"
-msgstr "Populaarsemate žanrite valimiseks lisandus külgpaanile vastav sektsioon"
+msgstr ""
+"Populaarsemate žanrite valimiseks lisandus külgpaanile vastav sektsioon"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:276
 msgid "Added French translation"
 msgstr "Lisandus tõlge prantsuse keelde"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:277
 msgid "Added German translation"
 msgstr "Lisandus tõlge saksa keelde"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:281
 msgid "Each section now displays the most-voted-for 40 stations"
 msgstr "Igas külgpaani sektsioonis on nüüd 40 enim hääli saanud jaama"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:282
 msgid "Station images are now being cached"
 msgstr "Puhverdame nüüd jaamade pilte"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:283
 msgid "The app icon now appears more vertically centered"
 msgstr "Rakenduse ikoon joondub nüüd täpsemalt keskele"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:284
 msgid "Station images are now always the same size"
 msgstr "Jaamade pildid on nüüd alati sama mõõtu"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:288
 msgid "Fixed a bug where starred stations appeared as unstarred"
 msgstr "Parandasime vea, kus lemmikuks märgitud jaamad kuvati mittelemmikutena"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:289
 msgid "Display a nice API error screen"
 msgstr "API vea puhul kuvame korraliku veavaate"
 
-#: data/com.github.louis77.tuner.appdata.xml.in:296
 msgid "New sidebar menu with different selections and your favourite stations."
 msgstr "Uus menüü külgribal erinevate valikuvõimalustega, sh lemmikud."
 
-#: data/com.github.louis77.tuner.appdata.xml.in:301
 msgid "Initial release"
 msgstr "Esmane versioon"
+
+#~ msgid "Louis Brauer"
+#~ msgstr "Louis Brauer"
