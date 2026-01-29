@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-24 15:56-0800\n"
-"PO-Revision-Date: 2026-01-28 07:01+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-01-28 23:32-0800\n"
+"PO-Revision-Date: 2026-01-29 07:39+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/tuner/tuner-"
 "desktop/et/>\n"
 "Language: et\n"
@@ -34,8 +34,8 @@ msgstr "Radio;Audio;Listen;Stations;Receiver;veebiraadio;raadiojaam;internetiraa
 msgid "technosf"
 msgstr "technosf"
 
-msgid "Internet radio"
-msgstr "Veebiraadio"
+msgid "Internet Radio"
+msgstr ""
 
 msgid "Make finding and listening to internet radio stations fun again!"
 msgstr "Veebiraadiote otsimine ja kuulamine on jälle vahva!"
@@ -92,30 +92,36 @@ msgid "Maintanance release:"
 msgstr "Hooldusversioon:"
 
 msgid "Updated freedesktop platform from 24.08 to 25.08"
-msgstr ""
+msgstr "Freedesktopi alusplatvormi uuendus 24.08 → 25.08"
 
 msgid "Removed module vala as now included in freedesktop platform"
 msgstr ""
+"Kuna vala on nüüd freedesktopi alusplatvormi osa, siis on vastav moodul "
+"eemaldatud"
 
 msgid "Removed module libsoup as now included in freedesktop platform"
 msgstr ""
+"Kuna libsoup on nüüd freedesktopi alusplatvormi osa, siis on vastav moodul "
+"eemaldatud"
 
 msgid "Bumped libgee to 0.20.8"
-msgstr ""
+msgstr "Uuendus libgee versioonini 0.20.8"
 
 msgid "Sharpened some wording, fixed typos"
-msgstr ""
+msgstr "Täpsemad sõnastused ja trükivigade parandused"
 
 msgid "Updated translated strings and incorporated fresh translations"
-msgstr ""
+msgstr "Paljude seniste tõlgete uuendused ja täiendavad uued tõlked"
 
 msgid "i18n - Broke out Country translation to separate module"
-msgstr ""
+msgstr "i18n - riikide ja maade tõlked on eraldi moodulis"
 
 msgid ""
 "i18n - Added trad Chinese, Estonian, Romaian, Tamil and Latin American "
 "Spanish"
 msgstr ""
+"i18n - lisandusid hiina (traditsioonilise), eesti, rumeenia, tamili ja "
+"Ladina-Ameerika hispaania keelte tõlked"
 
 msgid "New Version!"
 msgstr "Uus versioon!"
@@ -386,6 +392,9 @@ msgstr "Uus menüü külgribal erinevate valikuvõimalustega, sh lemmikud."
 
 msgid "Initial release"
 msgstr "Esmane versioon"
+
+#~ msgid "Internet radio"
+#~ msgstr "Veebiraadio"
 
 #~ msgid "Louis Brauer"
 #~ msgstr "Louis Brauer"
