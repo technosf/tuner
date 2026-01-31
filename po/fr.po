@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-01-31 07:05+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"PO-Revision-Date: 2026-01-31 19:12+0000\n"
+"Last-Translator: \"David D.\" <dadu042@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "fr/>\n"
 "Language: fr\n"
@@ -54,9 +54,8 @@ msgstr "Débit binaire"
 msgid "Changes"
 msgstr "Changements"
 
-#, fuzzy
 msgid "Channel Mode"
-msgstr "Channel Mode"
+msgstr "Mode canal"
 
 msgid "Choose a file"
 msgstr "Choisir un fichier"
@@ -81,9 +80,8 @@ msgstr "Copier l'URI de flux dans presse-papiers"
 msgid "Could not get random station: %s"
 msgstr "Impossible d’obtenir une station aléatoire : %s"
 
-#, fuzzy
 msgid "Cycle through the metadata from the playing stream"
-msgstr "Cycle through the metadata from the playing stream"
+msgstr "Parcourir les métadonnées du flux en cours de lecture"
 
 msgid "Dark mode"
 msgstr "Thème sombre"
@@ -91,9 +89,8 @@ msgstr "Thème sombre"
 msgid "Data Provider"
 msgstr "Fournisseur de données"
 
-#, fuzzy
 msgid "Date Time"
-msgstr "Date Time"
+msgstr "Date Heure"
 
 msgid "Default"
 msgstr "Par défaut"
@@ -121,9 +118,8 @@ msgstr "Encodeur"
 msgid "Encoder Version"
 msgstr "Version encodeur"
 
-#, fuzzy
 msgid "Eras"
-msgstr "Eras"
+msgstr "Années"
 
 #, c-format
 msgid "Error reading file: %s"
@@ -152,9 +148,8 @@ msgstr ""
 "Parcourir rapidement les métadonnées du flux en cours de lecture si les "
 "informations de flux sont activées"
 
-#, fuzzy
 msgid "Faster cycling through stream info"
-msgstr "Faster cycling through stream info"
+msgstr "Parcourir plus vite les infos du flux"
 
 msgid "Favicon address"
 msgstr "Adresse d'icône favorite"
@@ -203,7 +198,6 @@ msgstr "Image"
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Importer des UUID de stations en tant que stations favorites"
 
-#, fuzzy
 msgid "Jukebox"
 msgstr "Jukebox"
 
