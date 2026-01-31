@@ -23,7 +23,7 @@ namespace Tuner.Model {
                 if (_map == null) {
                     _map = new HashMap<string, string> ();
                     _map["AF"] = N_("Afghanistan");
-                    _map["AX"] = N_("Åland Islands");
+                    _map["AX"] = N_("Aland Islands");
                     _map["AL"] = N_("Albania");
                     _map["DZ"] = N_("Algeria");
                     _map["AS"] = N_("American Samoa");
@@ -76,10 +76,10 @@ namespace Tuner.Model {
                     _map["CD"] = N_("Congo, Democratic Republic of the");
                     _map["CK"] = N_("Cook Islands");
                     _map["CR"] = N_("Costa Rica");
-                    _map["CI"] = N_("Côte d'Ivoire");
+                    _map["CI"] = N_("Cote d'Ivoire");
                     _map["HR"] = N_("Croatia");
                     _map["CU"] = N_("Cuba");
-                    _map["CW"] = N_("Curaçao");
+                    _map["CW"] = N_("Curacao");
                     _map["CY"] = N_("Cyprus");
                     _map["CZ"] = N_("Czechia");
                     _map["DK"] = N_("Denmark");
@@ -203,11 +203,11 @@ namespace Tuner.Model {
                     _map["PT"] = N_("Portugal");
                     _map["PR"] = N_("Puerto Rico");
                     _map["QA"] = N_("Qatar");
-                    _map["RE"] = N_("Réunion");
+                    _map["RE"] = N_("Reunion");
                     _map["RO"] = N_("Romania");
                     _map["RU"] = N_("Russian Federation");
                     _map["RW"] = N_("Rwanda");
-                    _map["BL"] = N_("Saint Barthélemy");
+                    _map["BL"] = N_("Saint Barthelemy");
                     _map["SH"] = N_("Saint Helena, Ascension and Tristan da Cunha");
                     _map["KN"] = N_("Saint Kitts and Nevis");
                     _map["LC"] = N_("Saint Lucia");
