@@ -5,7 +5,8 @@
 i18n.gettext ('countries',
     args: [
         '--directory=' + meson.project_source_root(),
-        '--from-code=UTF-8'
+        '--from-code=UTF-8',
+        '--no-location'
     ],
     install: false
 )
