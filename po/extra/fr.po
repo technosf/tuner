@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 22:52-0800\n"
-"PO-Revision-Date: 2026-01-31 07:05+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-01-31 02:10-0800\n"
+"PO-Revision-Date: 2026-01-31 19:12+0000\n"
+"Last-Translator: \"David D.\" <dadu042@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-"
 "desktop/fr/>\n"
 "Language: fr\n"
@@ -39,12 +39,17 @@ msgstr ""
 
 msgid "Make finding and listening to internet radio stations fun again!"
 msgstr ""
+"Rendez la recherche et l’écoute des stations de radio Internet amusantes à "
+"nouveau !"
 
 msgid ""
 "Instead of showing all the stations you already know, Tuner presents you a "
 "new selection of stations from all over the world every time you hit the "
 "Shuffle button."
 msgstr ""
+"Au lieu d’afficher toutes les stations que vous connaissez déjà, Tuner vous "
+"présente une nouvelle sélection de stations du monde entier à chaque fois "
+"que vous appuyez sur le bouton Shuffle."
 
 msgid "Tuner uses the community-driven station catalog radio-browser.info."
 msgstr ""
@@ -61,31 +66,31 @@ msgid "Control Tuner from your volume indicator"
 msgstr "Contrôlez la lecture de Tuner depuis votre indicateur de volume"
 
 msgid "Tuner with dark theme, discovery"
-msgstr ""
+msgstr "Tuner avec thème sombre, découverte"
 
 msgid "Tuner with light theme, starred stations"
-msgstr ""
+msgstr "Tuner avec thème clair, stations favorites"
 
 msgid "Tuner search for stations"
-msgstr ""
+msgstr "Tuner recherchant des stations"
 
 msgid "Tuner saved searches"
-msgstr ""
+msgstr "Recherches enregistrées dans Tuner"
 
 msgid "Tuner playing station metadata"
-msgstr ""
+msgstr "Tuner affichant des métadonnées de la station"
 
 msgid "Tuner preferences"
-msgstr ""
+msgstr "Préférences dans Tuner"
 
 msgid "Tuner station context information"
-msgstr ""
+msgstr "Informations contextuelles d'une station Tuner"
 
 msgid "Tuner jukebox station shuffle"
 msgstr ""
 
 msgid "Maintanance release:"
-msgstr ""
+msgstr "Version de maintenance :"
 
 msgid "Updated freedesktop platform from 24.08 to 25.08"
 msgstr ""
@@ -114,7 +119,7 @@ msgid ""
 msgstr ""
 
 msgid "New Version!"
-msgstr ""
+msgstr "Nouvelle version !"
 
 msgid "Saved Searches - new feature"
 msgstr ""
@@ -129,7 +134,7 @@ msgid "New Default Genres added"
 msgstr ""
 
 msgid "Updated look and feel"
-msgstr ""
+msgstr "Amélioration ergonomie et apparence"
 
 msgid "Station and Stream History - new feature"
 msgstr ""

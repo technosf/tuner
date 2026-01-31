@@ -1,35 +1,33 @@
-# Dutch translations for extra package.
-# Copyright (C) 2020 THE extra'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the extra package.
-# Heimen Stoffels <vistausss@outlook.com>, 2020.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-31 02:10-0800\n"
-"PO-Revision-Date: 2026-01-31 07:05+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/tuner/tuner-"
-"desktop/nl/>\n"
-"Language: nl\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Tuner"
-msgstr "Tuner"
+msgstr ""
 
 msgid "Internet Radio Player"
-msgstr "Internetradiospeler"
+msgstr ""
 
 msgid "Listen to Radio Stations all over the world"
-msgstr "Luister naar radiostations van over heel de wereld"
+msgstr ""
 
 msgid "Radio;Audio;Listen;Stations;Receiver;"
-msgstr "Radio;Audio;Luisteren;Stations;Ontvanger;"
+msgstr ""
 
 msgid "technosf"
 msgstr ""
@@ -48,17 +46,15 @@ msgstr ""
 
 msgid "Tuner uses the community-driven station catalog radio-browser.info."
 msgstr ""
-"Tuner maakt gebruik van de door de gemeenschap bijgehouden catalogus op "
-"radio-browser.info"
 
 msgid "Discover new stations every day"
-msgstr "Ontdek elke dag nieuwe radiostations"
+msgstr ""
 
 msgid "Star stations you like and visit their website"
-msgstr "Voeg radiostations toe aan je favorieten en bezoek hun websites"
+msgstr ""
 
 msgid "Control Tuner from your volume indicator"
-msgstr "Bedien Tuner via de volume-indicator"
+msgstr ""
 
 msgid "Tuner with dark theme, discovery"
 msgstr ""
@@ -209,7 +205,7 @@ msgid "Change pause button to stop button"
 msgstr ""
 
 msgid "New features:"
-msgstr "Nieuwe mogelijkheden:"
+msgstr ""
 
 msgid ""
 "Background playback: Tuner can be closed and playback will continue. A "
@@ -217,7 +213,7 @@ msgid ""
 msgstr ""
 
 msgid "Other improvements:"
-msgstr "Andere verbeteringen:"
+msgstr ""
 
 msgid ""
 "Dark/light mode optimized with new dropdown (use system, dark or light theme)"
@@ -258,19 +254,18 @@ msgstr ""
 
 msgid "Show the current track playing if supported by station"
 msgstr ""
-"Toon het momenteel spelende nummer (indien ondersteund door radiostation)"
 
 msgid "Show Top 100 stations of user country if detectable"
-msgstr "Bekijk de top 100 van radiostations in eigen land (indien mogelijk)"
+msgstr ""
 
 msgid "\"Visit Website\" link in station context menu"
-msgstr "‘Website openen’ toegevoegd aan het rechtermuisknopmenu"
+msgstr ""
 
 msgid "Added Dutch translation"
-msgstr "Nederlandse vertaling"
+msgstr ""
 
 msgid "Bugfixes:"
-msgstr "Opgeloste fouten:"
+msgstr ""
 
 msgid "Fix missing icons for non elementary OS systems"
 msgstr ""
@@ -348,25 +343,4 @@ msgid "New sidebar menu with different selections and your favourite stations."
 msgstr ""
 
 msgid "Initial release"
-msgstr "Initiële uitgave"
-
-#~ msgid "com.github.louis77.tuner"
-#~ msgstr "com.github.louis77.tuner"
-
-#~ msgid "Louis Brauer"
-#~ msgstr "Louis Brauer"
-
-#~ msgid "Discover and listen to internet radio stations"
-#~ msgstr "Ontdek en luister naar online-radiostations"
-
-#~ msgid "Make listening to internet radio stations fun again!"
-#~ msgstr "Maak luisteren naar online-radiostreams weer leuk!"
-
-#~ msgid ""
-#~ "Instead of providing you with all the stations you already know, Tuner "
-#~ "presents you a new selection of stations from all over the world every "
-#~ "time you hit the Shuffle button."
-#~ msgstr ""
-#~ "In plaats van een lijst met radiostations die je al kent, toont Tuner je "
-#~ "een selectie van radiostations van over heel de wereld, telkens als je op "
-#~ "de knop 'Willekeurig' klikt."
+msgstr ""
