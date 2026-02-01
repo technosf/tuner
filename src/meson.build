@@ -5,6 +5,7 @@ sources = files (
     'Controllers/SearchController.vala',
 
     'Models/Countries.vala',
+    'Models/Languages.vala',
     'Models/Genre.vala',
     'Models/Station.vala',
     'Models/Favicon.vala',

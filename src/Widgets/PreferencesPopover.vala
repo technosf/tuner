@@ -7,6 +7,7 @@
  * @file PreferencesPopover.vala
  */
 
+using Tuner.Model;
 
 /**
  *
@@ -76,7 +77,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		lang_combo.append("", _("Default"));
 		foreach( var lang in Application.LANGUAGES)
 		{
-			lang_combo.append(lang, lang);
+			lang_combo.append(lang, Languages.get_by_code(lang));
 		}
 		lang_combo.halign    = Gtk.Align.CENTER;
 		lang_combo.active_id = app().settings.language;   // Initial state from settings
