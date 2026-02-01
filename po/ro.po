@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-01-31 07:06+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-02-01 07:51+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ro/>\n"
 "Language: ro\n"
@@ -325,17 +325,15 @@ msgstr "Save File"
 msgid "Save this search"
 msgstr "Save this search"
 
-#, fuzzy
 msgid "Saved Search"
-msgstr "Saved Search"
+msgstr "Căutare salvată"
 
 #, fuzzy
 msgid "Saved Searches"
 msgstr "Saved Searches"
 
-#, fuzzy
 msgid "Search Results"
-msgstr "Search Results"
+msgstr "Rezultatele căutării"
 
 #, fuzzy
 msgid "Selections"
@@ -361,9 +359,8 @@ msgstr "Star this station"
 msgid "Starred by You"
 msgstr "Starred by You"
 
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "Căutare stație"
 
 #, fuzzy
 msgid "Station info updated Online - View changes"
@@ -377,13 +374,11 @@ msgstr "Station no longer in the index"
 msgid "Station tags"
 msgstr "Station tags"
 
-#, fuzzy
 msgid "Stations"
-msgstr "Stations"
+msgstr "Stații"
 
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "Stații de Descoperit"
 
 #, fuzzy
 msgid "Stop Playback requested"

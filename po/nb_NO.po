@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-01-31 07:06+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-02-01 07:51+0000\n"
+"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/tuner/"
 "tuner-ui/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -305,9 +305,8 @@ msgstr "Save File"
 msgid "Save this search"
 msgstr "Save this search"
 
-#, fuzzy
 msgid "Saved Search"
-msgstr "Saved Search"
+msgstr "Lagrede søk"
 
 #, fuzzy
 msgid "Saved Searches"
