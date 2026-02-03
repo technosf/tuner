@@ -70,6 +70,7 @@ namespace Tuner.Model {
                     _map["ko"] = NC_("Languages","Korean");
                     _map["lt"] = NC_("Languages","Lithuanian");
                     _map["lv"] = NC_("Languages","Latvian");
+                    _map["ms"] = NC_("Languages","Malay");
                     _map["nb_NO"] = NC_("Languages","Norwegian (Bokmal)");
                     _map["nl"] = NC_("Languages","Dutch");
                     _map["pt_BR"] = NC_("Languages","Portuguese (Brazil)");

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-31 02:10-0800\n"
-"PO-Revision-Date: 2026-02-03 08:16+0000\n"
+"PO-Revision-Date: 2026-02-03 23:06+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/tuner/tuner-"
 "desktop/it/>\n"
@@ -367,24 +367,3 @@ msgstr ""
 
 msgid "Initial release"
 msgstr "Versione iniziale"
-
-#~ msgid "com.github.louis77.tuner"
-#~ msgstr "com.github.louis77.tuner"
-
-#~ msgid "Louis Brauer"
-#~ msgstr "Louis Brauer"
-
-#~ msgid "Discover and listen to internet radio stations"
-#~ msgstr "Scopri e ascolta le stazioni radio Internet"
-
-#~ msgid "Make listening to internet radio stations fun again!"
-#~ msgstr "Rendi di nuovo divertente l'ascolto delle stazioni radio Internet!"
-
-#~ msgid ""
-#~ "Instead of providing you with all the stations you already know, Tuner "
-#~ "presents you a new selection of stations from all over the world every "
-#~ "time you hit the Shuffle button."
-#~ msgstr ""
-#~ "Invece di fornirti tutte le stazioni che già conosci, Tuner ti presenta "
-#~ "una nuova selezione di stazioni da tutto il mondo ogni volta che premi il "
-#~ "pulsante Shuffle."

@@ -471,34 +471,3 @@ msgstr "_ذخیره"
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
 
-#, c-format
-#~ msgid ""
-#~ "Double click to shuffle through %1$u stations,\n"
-#~ "one, every ten minutes, for %2$u days"
-#~ msgstr ""
-#~ "دو بار کلیک کنید تا از طریق ایستگاه های (X32X) ضربه بزنید.\n"
-#~ "هر ده دقیقه، برای روزها (X75X)"
-
-#, c-format
-#~ msgid "%s Star this station"
-#~ msgstr "ستاره این ایستگاه"
-
-#, c-format
-#~ msgid "%s Unstar this station"
-#~ msgstr "%s این ایستگاه"
-
-#, c-format
-#~ msgid "Could not get random station: %s"
-#~ msgstr "نمی تواند ایستگاه تصادفی داشته باشد (X30X)"
-
-#, c-format
-#~ msgid "Error reading file: %s"
-#~ msgstr "خطای خواندن فایل: %s"
-
-#, c-format
-#~ msgid "Error: %s"
-#~ msgstr "خطا: %s"
-
-#, c-format
-#~ msgid "Unable to open website: %s"
-#~ msgstr "امکان باز کردن وب سایت: %s"

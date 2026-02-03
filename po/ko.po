@@ -466,34 +466,3 @@ msgstr "저장(_S)"
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
 
-#, c-format
-#~ msgid ""
-#~ "Double click to shuffle through %1$u stations,\n"
-#~ "one, every ten minutes, for %2$u days"
-#~ msgstr ""
-#~ "%1$u 역을 통해 두 번 클릭,\n"
-#~ "1, 매 10 분, %2$u 일"
-
-#, c-format
-#~ msgid "%s Star this station"
-#~ msgstr "%s 별이 역"
-
-#, c-format
-#~ msgid "%s Unstar this station"
-#~ msgstr "%s 이 역의 시작"
-
-#, c-format
-#~ msgid "Could not get random station: %s"
-#~ msgstr "임의 역을 얻을 수 없습니다 : %s"
-
-#, c-format
-#~ msgid "Error reading file: %s"
-#~ msgstr "오류 읽기 파일 : %s"
-
-#, c-format
-#~ msgid "Error: %s"
-#~ msgstr "에러: %s"
-
-#, c-format
-#~ msgid "Unable to open website: %s"
-#~ msgstr "웹 사이트를 열 수 없습니다 : %s"

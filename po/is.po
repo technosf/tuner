@@ -555,34 +555,3 @@ msgstr "_Save"
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
 
-#, fuzzy, c-format
-#~ msgid ""
-#~ "Double click to shuffle through %1$u stations,\n"
-#~ "one, every ten minutes, for %2$u days"
-#~ msgstr ""
-#~ "Double click to shuffle through %1$u stations,\n"
-#~ "one, every ten minutes, for %2$u days"
-
-#, fuzzy, c-format
-#~ msgid "%s Star this station"
-#~ msgstr "%s Star this station"
-
-#, fuzzy, c-format
-#~ msgid "%s Unstar this station"
-#~ msgstr "%s Unstar this station"
-
-#, fuzzy, c-format
-#~ msgid "Could not get random station: %s"
-#~ msgstr "Could not get random station: %s"
-
-#, fuzzy, c-format
-#~ msgid "Error reading file: %s"
-#~ msgstr "Error reading file: %s"
-
-#, fuzzy, c-format
-#~ msgid "Error: %s"
-#~ msgstr "Error: %s"
-
-#, fuzzy, c-format
-#~ msgid "Unable to open website: %s"
-#~ msgstr "Unable to open website: %s"
