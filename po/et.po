@@ -215,8 +215,7 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:60
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr ""
-"Selle valiku eelistamisel Tuneri avamisel kuvatakse lemmikjaamade vaade"
+msgstr "Selle valiku eelistamisel Tuneri avamisel kuvatakse lemmikjaamade vaade"
 
 #: src/Models/StreamMetadata.vala:26
 msgid "Image"
