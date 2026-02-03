@@ -1,125 +1,132 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
+# Apertium APy <noreply-mt-apertium-apy@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-02-03 06:10+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Serbian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
+"sr/>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: src/Widgets/StationContextMenu.vala:167
 #, c-format
 msgid "%s Star this station"
-msgstr ""
+msgstr "[@X0@X] #Zvijezda @this #postaja"
 
 #: src/Widgets/StationContextMenu.vala:166
 #, c-format
 msgid "%s Unstar this station"
-msgstr ""
+msgstr "[@X0@X] Unstar @this #postaja"
 
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
-msgstr ""
+msgstr "Opis"
 
 #: src/Models/StreamMetadata.vala:25
 msgid "Album"
-msgstr ""
+msgstr "Албум"
 
 #: src/Models/StreamMetadata.vala:41
 msgid "Application Name"
-msgstr ""
+msgstr "#Prijava"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
-msgstr ""
+msgstr "Уметник"
 
 #: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
-msgstr ""
+msgstr "@Audio"
 
 #: src/Widgets/PreferencesPopover.vala:50
 msgid "Auto-play last station on startup"
-msgstr ""
+msgstr "#Automobil-#predstava #posljednji #postaja @on startup"
 
 #: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
-msgstr ""
+msgstr "Битрате"
 
 #: src/Models/Station.vala:357
 msgid "Changes"
-msgstr ""
+msgstr "Промене"
 
 #: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
-msgstr ""
+msgstr "#Kanal"
 
 #: src/Widgets/PreferencesPopover.vala:221
 msgid "Choose a file"
-msgstr ""
+msgstr "Изаберите датотеку"
 
 #: src/Widgets/Window.vala:69
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
+"@Click tuda #na #rezime #prozor. #Na @quit Tuner, #obustava playback a "
+"@close @the #prozor#."
 
 #: src/Models/Station.vala:364
 msgid "Codec"
-msgstr ""
+msgstr "Кодек"
 
 #: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
-msgstr ""
+msgstr "#Spremnica"
 
 #: src/Widgets/StationContextMenu.vala:102
 msgid "Copy Stream-URI to clipboard"
-msgstr ""
+msgstr "#Kopija #Mlaz-@URI #na clipboard"
 
 #: src/Widgets/Display.vala:247
 #, c-format
 msgid "Could not get random station: %s"
-msgstr ""
+msgstr "#Moći ne #dobiti @random #postaja: [@X30@X]"
 
 #: src/Widgets/PreferencesPopover.vala:66
 msgid "Cycle through the metadata from the playing stream"
-msgstr ""
+msgstr "#Krug #kroz @the metadata @from @the #igrati #mlaz"
 
 #: src/Widgets/PreferencesPopover.vala:34
 msgid "Dark mode"
-msgstr ""
+msgstr "Тамна тема"
 
 #: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
 msgid "Data Provider"
-msgstr ""
+msgstr "#Podatak"
 
 #: src/Models/StreamMetadata.vala:44
 msgid "Date Time"
-msgstr ""
+msgstr "#Datum"
 
 #: src/Widgets/PreferencesPopover.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Врати на подразумевана подешавања"
 
 #: src/Widgets/Display.vala:325
 msgid "Discover"
-msgstr ""
+msgstr "Откриј"
 
 #: src/Widgets/Display.vala:329
 msgid "Discover more stations"
-msgstr ""
+msgstr "@Discover više #postaja"
 
 #: src/Widgets/PreferencesPopover.vala:25
 msgid "Do not participate in Station voting"
-msgstr ""
+msgstr "@Do ne #sudjelovati @in #Postaja #birati"
 
 #: src/Widgets/Display.vala:559
 #, c-format
@@ -127,335 +134,348 @@ msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
+"#Dvostruk @click #na shuffle #kroz [@X32@X] #postaja,\n"
+"#jedan, #svaki #desetorka #minuta, @for [@X75@X] #dan"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
-msgstr ""
+msgstr "Encoder"
 
 #: src/Models/StreamMetadata.vala:43
 msgid "Encoder Version"
-msgstr ""
+msgstr "Encoder"
 
 #: src/Widgets/Display.vala:104
 msgid "Eras"
-msgstr ""
+msgstr "#Doba"
 
 #: src/Widgets/PreferencesPopover.vala:247
 #, c-format
 msgid "Error reading file: %s"
-msgstr ""
+msgstr "#Zabuna #čitanje #dosje: [@X20@X]"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
-msgstr ""
+msgstr "#Zabuna @while #kušati #na autoplay, #prekinuti…"
 
 #: src/Widgets/PreferencesPopover.vala:208
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Грешка: %s"
 
 #: src/Widgets/Display.vala:101
 msgid "Explore"
-msgstr ""
+msgstr "Истражи"
 
 #: src/Widgets/PreferencesPopover.vala:96
 msgid "Export Starred Stations to Playlist"
-msgstr ""
+msgstr "#Izvoz Starred #Postaja #na Playlist"
 
 #: src/Models/StreamMetadata.vala:31
 msgid "Extended Comment"
-msgstr ""
+msgstr "#Produžiti"
 
 #: src/Widgets/PreferencesPopover.vala:71
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
+"#Post #krug #kroz @the metadata @from @the #igrati #mlaz li #sajam #mlaz "
+"@info @i #omogućivati"
 
 #: src/Widgets/PreferencesPopover.vala:69
 msgid "Faster cycling through stream info"
-msgstr ""
+msgstr "@Faster @cycling #kroz #mlaz @info"
 
 #: src/Models/Station.vala:360
 msgid "Favicon address"
-msgstr ""
+msgstr "Favicon #obraćanje"
 
 #: src/Models/StreamMetadata.vala:27
 msgid "Genre"
-msgstr ""
+msgstr "Жанр"
 
 #: src/Widgets/Display.vala:102
 msgid "Genres"
-msgstr ""
+msgstr "Жанрови"
 
 #: src/Models/StreamMetadata.vala:46
 msgid "Has CRC"
-msgstr ""
+msgstr "#Ima"
 
 #: src/Widgets/HeaderBar.vala:212
 msgid "History"
-msgstr ""
+msgstr "Историја"
 
 #: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
-msgstr ""
+msgstr "Почетна страница"
 
 #: src/Models/Station.vala:361
 msgid "Homepage address"
-msgstr ""
+msgstr "Homepage #obraćanje"
 
 #: src/Widgets/PreferencesPopover.vala:27
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
+"Li #provjeriti, #tvoj starred a @stream #postaja #volja ne #biti #uporabiti "
+"#na #izračunati @the #Postaja @index #popularnost #glas, ni @the #izniman a "
+"trending #postaja"
 
 #: src/Widgets/PreferencesPopover.vala:52
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
+"Li #omogućivati, kada Tuner #početak #free #volja @automatically #početak "
+"#na #predstava @the #posljednji #igrati #postaja"
 
 #: src/Widgets/PreferencesPopover.vala:59
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
+"Li #omogućivati, kada Tuner #početak #free #volja #javan #na @the starred "
+"#postaja #stav"
 
 #: src/Models/StreamMetadata.vala:26
 msgid "Image"
-msgstr ""
+msgstr "Слика"
 
 #: src/Widgets/PreferencesPopover.vala:105
 msgid "Import Station UUIDs as Starred Stations"
-msgstr ""
+msgstr "#Uvoz #Postaja UUIDs @as Starred"
 
 #: src/Widgets/Display.vala:557
 msgid "Jukebox"
-msgstr ""
+msgstr "Jukebox"
 
 #: src/Widgets/PreferencesPopover.vala:86
 msgid "Language"
-msgstr ""
+msgstr "Језик"
 
 #: src/Widgets/Display.vala:422
 msgid "Latest Search"
-msgstr ""
+msgstr "#Nov"
 
 #: src/Widgets/Display.vala:99
 msgid "Library"
-msgstr ""
+msgstr "Библиотека"
 
 #: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
-msgstr ""
+msgstr "#Svjetlo @mode"
 
 #: src/Models/StreamMetadata.vala:30
 msgid "Location"
-msgstr ""
+msgstr "Локација"
 
 #: src/Models/StreamMetadata.vala:39
 msgid "Maximum Bitrate"
-msgstr ""
+msgstr "@Maximum"
 
 #: src/Models/StreamMetadata.vala:38
 msgid "Minimum Bitrate"
-msgstr ""
+msgstr "@Minimum"
 
 #: src/Widgets/Display.vala:362
 msgid "Most listened to Stations in the last 24 hours"
-msgstr ""
+msgstr "Najviše #slušati #na #Postaja @in @the #posljednji #24 #sat"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
-msgstr ""
+msgstr "Нису пронађене станице"
 
 #: src/Models/StreamMetadata.vala:37
 msgid "Nominal Bitrate"
-msgstr ""
+msgstr "@Nominal"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid "Nothing here"
-msgstr ""
+msgstr "#Ništica tuda"
 
 #: src/Widgets/PreferencesPopover.vala:57
 msgid "Open to Starred Stations"
-msgstr ""
+msgstr "#Javan #na Starred"
 
 #: src/Models/StreamMetadata.vala:29
 msgid "Organization"
-msgstr ""
+msgstr "Organization"
 
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
-msgstr ""
+msgstr "Пуштање у позадини"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "Please try a different search term."
-msgstr ""
+msgstr "@Please #pokušaj @a #drugačiji #potraga #pojam#."
 
 #: src/Widgets/Display.vala:361
 msgid "Popular"
-msgstr ""
+msgstr "Популарно"
 
 #: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
-msgstr ""
+msgstr "Преференце"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
-msgstr ""
+msgstr "#Privatan"
 
 #: src/Widgets/Display.vala:627
 msgid "Remove this saved search"
-msgstr ""
+msgstr "#Brisati @this #spremati #potraga"
 
 #: src/Widgets/PreferencesPopover.vala:87
 msgid "Requires restarting Tuner"
-msgstr ""
+msgstr "@Require #restartovanje Tuner"
 
 #: src/Widgets/PreferencesPopover.vala:184
 msgid "Save File"
-msgstr ""
+msgstr "Sačuvaj Datoteku"
 
 #: src/Widgets/Display.vala:426
 msgid "Save this search"
-msgstr ""
+msgstr "#Spremati @this #potraga"
 
 #: src/Widgets/Display.vala:625
 msgid "Saved Search"
-msgstr ""
+msgstr "#Spremati"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
-msgstr ""
+msgstr "Сачувана претрага"
 
 #: src/Widgets/Display.vala:423
 msgid "Search Results"
-msgstr ""
+msgstr "Резултати претраге"
 
 #: src/Widgets/Display.vala:98
 msgid "Selections"
-msgstr ""
+msgstr "Избори"
 
 #: src/Widgets/PreferencesPopover.vala:64
 msgid "Show stream info when playing"
-msgstr ""
+msgstr "#Sajam #mlaz @info kada #igrati"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr ""
+"#Nešto #ići #zabluda @loading #radio #postaja #podatak @from #postaja "
+"@provider. @Please #pokušaj opet kasnije#."
 
 #: src/Widgets/HeaderBar.vala:170
 msgid "Star this station"
-msgstr ""
+msgstr "#Zvijezda @this #postaja"
 
 #: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
 msgid "Starred by You"
-msgstr ""
+msgstr "Starred @by #Free"
 
 #: src/Widgets/HeaderBar.vala:191
 msgid "Station Search"
-msgstr ""
+msgstr "#Postaja"
 
 #: src/Widgets/StationContextMenu.vala:87
 msgid "Station info updated Online - View changes"
-msgstr ""
+msgstr "#Postaja @info #poboljšati Online - #Stav #mijena"
 
 #: src/Models/Station.vala:133
 msgid "Station no longer in the index"
-msgstr ""
+msgstr "#Postaja @no longer @in @the @index"
 
 #: src/Models/Station.vala:362
 msgid "Station tags"
-msgstr ""
+msgstr "#Postaja @tag"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Stations"
-msgstr ""
+msgstr "#Postaja"
 
 #: src/Widgets/Display.vala:326
 msgid "Stations to Discover"
-msgstr ""
+msgstr "#Postaja #na @Discover"
 
 #: src/Widgets/Window.vala:286
 msgid "Stop Playback requested"
-msgstr ""
+msgstr "#Prestanak Playback @request"
 
 #: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
-msgstr ""
+msgstr "#Mlaz"
 
 #: src/Models/Station.vala:359
 msgid "Stream Resolved Url"
-msgstr ""
+msgstr "#Mlaz #Razdužiti"
 
 #: src/Models/Station.vala:358
 msgid "Stream Url"
-msgstr ""
+msgstr "#Mlaz"
 
 #: src/Widgets/Display.vala:103
 msgid "Subgenres"
-msgstr ""
+msgstr "Subgenres"
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"
-msgstr ""
+msgstr "Систем"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Tags"
-msgstr ""
+msgstr "Ознаке"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
-msgstr ""
+msgstr "#Razgovor, #Novost, #Sport"
 
 #: src/Widgets/PreferencesPopover.vala:45
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: src/Models/StreamMetadata.vala:23
 msgid "Title"
-msgstr ""
+msgstr "Наслов"
 
 #: src/Models/StreamMetadata.vala:36
 msgid "Track Count"
-msgstr ""
+msgstr "#Traka"
 
 #: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
-msgstr ""
+msgstr "Број нумере"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
-msgstr ""
+msgstr "У порасту"
 
 #: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
-msgstr ""
+msgstr "Trending #Postaja @in @the #posljednji #24 #sat"
 
 #: src/Widgets/StationContextMenu.vala:143
 #, c-format
 msgid "Unable to open website: %s"
-msgstr ""
+msgstr "@Unable #na #javan #stranica: [@X24@X]"
 
 #: src/Widgets/StationContextMenu.vala:88
 msgid "Update Station from Online"
-msgstr ""
+msgstr "#Poboljšati #Postaja @from Online"
 
 #: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
-msgstr ""
+msgstr "#Posjet"
 
 #: src/Widgets/PreferencesPopover.vala:187
 #: src/Widgets/PreferencesPopover.vala:224
 msgid "_Cancel"
-msgstr ""
+msgstr "_Откажи"
 
 #: src/Widgets/PreferencesPopover.vala:225
 msgid "_Open"
-msgstr ""
+msgstr "_Отвори"
 
 #: src/Widgets/PreferencesPopover.vala:188
 msgid "_Save"
-msgstr ""
+msgstr "_Сачувај"

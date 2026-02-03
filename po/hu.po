@@ -1,124 +1,131 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-02-03 06:10+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
+"hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: src/Widgets/StationContextMenu.vala:167
 #, c-format
 msgid "%s Star this station"
-msgstr ""
+msgstr "%s Csillag ez az állomás"
 
 #: src/Widgets/StationContextMenu.vala:166
 #, c-format
 msgid "%s Unstar this station"
-msgstr ""
+msgstr "%s Unstar this állomás"
 
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 #: src/Models/StreamMetadata.vala:25
 msgid "Album"
-msgstr ""
+msgstr "Album"
 
 #: src/Models/StreamMetadata.vala:41
 msgid "Application Name"
-msgstr ""
+msgstr "Alkalmazási név"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
-msgstr ""
+msgstr "Művész"
 
 #: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
-msgstr ""
+msgstr "Audio Codec"
 
 #: src/Widgets/PreferencesPopover.vala:50
 msgid "Auto-play last station on startup"
-msgstr ""
+msgstr "Auto-play utolsó állomás az induláson"
 
 #: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
-msgstr ""
+msgstr "Bitrinus"
 
 #: src/Models/Station.vala:357
 msgid "Changes"
-msgstr ""
+msgstr "Változások"
 
 #: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
-msgstr ""
+msgstr "Channel mód"
 
 #: src/Widgets/PreferencesPopover.vala:221
 msgid "Choose a file"
-msgstr ""
+msgstr "Fájl kiválasztása"
 
 #: src/Widgets/Window.vala:69
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
+"Kattintson ide az ablak újraindításához. Kilépni a Tuner, szünet lejátszani "
+"és bezárni az ablakot."
 
 #: src/Models/Station.vala:364
 msgid "Codec"
-msgstr ""
+msgstr "Kódolás"
 
 #: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
-msgstr ""
+msgstr "Container Format"
 
 #: src/Widgets/StationContextMenu.vala:102
 msgid "Copy Stream-URI to clipboard"
-msgstr ""
+msgstr "Copy Stream-URI a vágólapra"
 
 #: src/Widgets/Display.vala:247
 #, c-format
 msgid "Could not get random station: %s"
-msgstr ""
+msgstr "Nem lehet véletlenszerű állomás: %s"
 
 #: src/Widgets/PreferencesPopover.vala:66
 msgid "Cycle through the metadata from the playing stream"
-msgstr ""
+msgstr "Cycle át a metaadata a játék stream"
 
 #: src/Widgets/PreferencesPopover.vala:34
 msgid "Dark mode"
-msgstr ""
+msgstr "Sötét mód"
 
 #: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
 msgid "Data Provider"
-msgstr ""
+msgstr "Adatszolgáltató"
 
 #: src/Models/StreamMetadata.vala:44
 msgid "Date Time"
-msgstr ""
+msgstr "Időpont"
 
 #: src/Widgets/PreferencesPopover.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Alapértelmezett"
 
 #: src/Widgets/Display.vala:325
 msgid "Discover"
-msgstr ""
+msgstr "Felfedezés"
 
 #: src/Widgets/Display.vala:329
 msgid "Discover more stations"
-msgstr ""
+msgstr "Fedezzen fel több állomást"
 
 #: src/Widgets/PreferencesPopover.vala:25
 msgid "Do not participate in Station voting"
-msgstr ""
+msgstr "Ne vegyen részt a Station szavazáson"
 
 #: src/Widgets/Display.vala:559
 #, c-format
@@ -126,335 +133,348 @@ msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
+"Dupla kattintás a %1$u állomásokon keresztül,\n"
+"minden tíz percben %2$u nap"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
-msgstr ""
+msgstr "Jeladó"
 
 #: src/Models/StreamMetadata.vala:43
 msgid "Encoder Version"
-msgstr ""
+msgstr "Encoder Verzió"
 
 #: src/Widgets/Display.vala:104
 msgid "Eras"
-msgstr ""
+msgstr "Eras"
 
 #: src/Widgets/PreferencesPopover.vala:247
 #, c-format
 msgid "Error reading file: %s"
-msgstr ""
+msgstr "Hibaolvasó fájl: %s"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
-msgstr ""
+msgstr "Hiba, miközben megpróbálja autoplay, abortusz.."
 
 #: src/Widgets/PreferencesPopover.vala:208
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Hiba: %s"
 
 #: src/Widgets/Display.vala:101
 msgid "Explore"
-msgstr ""
+msgstr "Felfedezés"
 
 #: src/Widgets/PreferencesPopover.vala:96
 msgid "Export Starred Stations to Playlist"
-msgstr ""
+msgstr "Export Starred Stations to Playlist"
 
 #: src/Models/StreamMetadata.vala:31
 msgid "Extended Comment"
-msgstr ""
+msgstr "Kiterjedt megjegyzés"
 
 #: src/Widgets/PreferencesPopover.vala:71
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
+"Gyors ciklus a metaadatokon keresztül a játékfolyamból, ha a stream "
+"információt engedélyezik"
 
 #: src/Widgets/PreferencesPopover.vala:69
 msgid "Faster cycling through stream info"
-msgstr ""
+msgstr "Gyorsabb kerékpározás a stream információn keresztül"
 
 #: src/Models/Station.vala:360
 msgid "Favicon address"
-msgstr ""
+msgstr "Favicon cím"
 
 #: src/Models/StreamMetadata.vala:27
 msgid "Genre"
-msgstr ""
+msgstr "Műfaj"
 
 #: src/Widgets/Display.vala:102
 msgid "Genres"
-msgstr ""
+msgstr "Műfajok"
 
 #: src/Models/StreamMetadata.vala:46
 msgid "Has CRC"
-msgstr ""
+msgstr "CRC"
 
 #: src/Widgets/HeaderBar.vala:212
 msgid "History"
-msgstr ""
+msgstr "Előzmények"
 
 #: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
-msgstr ""
+msgstr "Honlap"
 
 #: src/Models/Station.vala:361
 msgid "Homepage address"
-msgstr ""
+msgstr "Homepage cím"
 
 #: src/Widgets/PreferencesPopover.vala:27
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
+"Ha ellenőrzött, a csillagolt és racionalizált állomásokat nem fogják "
+"használni, hogy kiszámítsák a Station index népszerűségi szavazását, sem a "
+"népszerű és trendi állomásokat"
 
 #: src/Widgets/PreferencesPopover.vala:52
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
+"Ha engedélyezik, amikor a Tuner elkezdi, automatikusan elkezdi játszani az "
+"utolsó játszott állomást"
 
 #: src/Widgets/PreferencesPopover.vala:59
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
+"Ha engedélyezték, amikor a Tuner elkezdi megnyitni a csillagolt állomások "
+"nézetét"
 
 #: src/Models/StreamMetadata.vala:26
 msgid "Image"
-msgstr ""
+msgstr "Kép"
 
 #: src/Widgets/PreferencesPopover.vala:105
 msgid "Import Station UUIDs as Starred Stations"
-msgstr ""
+msgstr "Import Station UUIDs mint Starred Stations"
 
 #: src/Widgets/Display.vala:557
 msgid "Jukebox"
-msgstr ""
+msgstr "Jukebox"
 
 #: src/Widgets/PreferencesPopover.vala:86
 msgid "Language"
-msgstr ""
+msgstr "Nyelv"
 
 #: src/Widgets/Display.vala:422
 msgid "Latest Search"
-msgstr ""
+msgstr "Legújabb keresés"
 
 #: src/Widgets/Display.vala:99
 msgid "Library"
-msgstr ""
+msgstr "Könyvtár"
 
 #: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
-msgstr ""
+msgstr "Fény mód"
 
 #: src/Models/StreamMetadata.vala:30
 msgid "Location"
-msgstr ""
+msgstr "Pozíció"
 
 #: src/Models/StreamMetadata.vala:39
 msgid "Maximum Bitrate"
-msgstr ""
+msgstr "Maximum Bitrate"
 
 #: src/Models/StreamMetadata.vala:38
 msgid "Minimum Bitrate"
-msgstr ""
+msgstr "Minimum Bitrate"
 
 #: src/Widgets/Display.vala:362
 msgid "Most listened to Stations in the last 24 hours"
-msgstr ""
+msgstr "A legtöbben hallgatták az állomásokat az elmúlt 24 órában"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
-msgstr ""
+msgstr "Nem leltem állomást"
 
 #: src/Models/StreamMetadata.vala:37
 msgid "Nominal Bitrate"
-msgstr ""
+msgstr "Nominális kalóz"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid "Nothing here"
-msgstr ""
+msgstr "Nincs itt semmi"
 
 #: src/Widgets/PreferencesPopover.vala:57
 msgid "Open to Starred Stations"
-msgstr ""
+msgstr "Nyílt a Starred Stations"
 
 #: src/Models/StreamMetadata.vala:29
 msgid "Organization"
-msgstr ""
+msgstr "Szervezet"
 
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
-msgstr ""
+msgstr "Lejátszás a háttérben"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "Please try a different search term."
-msgstr ""
+msgstr "Kérjük, próbáljon ki egy másik keresési kifejezést."
 
 #: src/Widgets/Display.vala:361
 msgid "Popular"
-msgstr ""
+msgstr "Népszerű"
 
 #: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
-msgstr ""
+msgstr "Beállítások"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
-msgstr ""
+msgstr "Magán adatok"
 
 #: src/Widgets/Display.vala:627
 msgid "Remove this saved search"
-msgstr ""
+msgstr "Távolítsa el ezt a mentett keresést"
 
 #: src/Widgets/PreferencesPopover.vala:87
 msgid "Requires restarting Tuner"
-msgstr ""
+msgstr "Szükséges a Tuner újraindítása"
 
 #: src/Widgets/PreferencesPopover.vala:184
 msgid "Save File"
-msgstr ""
+msgstr "Fájl mentése"
 
 #: src/Widgets/Display.vala:426
 msgid "Save this search"
-msgstr ""
+msgstr "Mentse el ezt a keresést"
 
 #: src/Widgets/Display.vala:625
 msgid "Saved Search"
-msgstr ""
+msgstr "Megtakarított keresés"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
-msgstr ""
+msgstr "Megtakarított keresések"
 
 #: src/Widgets/Display.vala:423
 msgid "Search Results"
-msgstr ""
+msgstr "A keresés eredménye"
 
 #: src/Widgets/Display.vala:98
 msgid "Selections"
-msgstr ""
+msgstr "Kijelölések"
 
 #: src/Widgets/PreferencesPopover.vala:64
 msgid "Show stream info when playing"
-msgstr ""
+msgstr "Mutasd meg a stream info játékot"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr ""
+"Valami rosszul töltötte be a rádióállomások adatait az "
+"állomásszolgáltatótól. Kérjük, próbálja meg később."
 
 #: src/Widgets/HeaderBar.vala:170
 msgid "Star this station"
-msgstr ""
+msgstr "Csillag ez az állomás"
 
 #: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
 msgid "Starred by You"
-msgstr ""
+msgstr "Kezdőlap >"
 
 #: src/Widgets/HeaderBar.vala:191
 msgid "Station Search"
-msgstr ""
+msgstr "Station Search"
 
 #: src/Widgets/StationContextMenu.vala:87
 msgid "Station info updated Online - View changes"
-msgstr ""
+msgstr "Station Info frissített Online - Megtekintés változások"
 
 #: src/Models/Station.vala:133
 msgid "Station no longer in the index"
-msgstr ""
+msgstr "Az állomás már nem szerepel az indexben"
 
 #: src/Models/Station.vala:362
 msgid "Station tags"
-msgstr ""
+msgstr "Station tagok"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Stations"
-msgstr ""
+msgstr "Állások"
 
 #: src/Widgets/Display.vala:326
 msgid "Stations to Discover"
-msgstr ""
+msgstr "Stations to Discover"
 
 #: src/Widgets/Window.vala:286
 msgid "Stop Playback requested"
-msgstr ""
+msgstr "Stop Playback kért"
 
 #: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
-msgstr ""
+msgstr "Stream Metadata"
 
 #: src/Models/Station.vala:359
 msgid "Stream Resolved Url"
-msgstr ""
+msgstr "Stream megoldás Url"
 
 #: src/Models/Station.vala:358
 msgid "Stream Url"
-msgstr ""
+msgstr "Stream Url"
 
 #: src/Widgets/Display.vala:103
 msgid "Subgenres"
-msgstr ""
+msgstr "Subgenres"
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"
-msgstr ""
+msgstr "Rendszer"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Tags"
-msgstr ""
+msgstr "Címkék"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
-msgstr ""
+msgstr "Beszélgetés, hírek, sport"
 
 #: src/Widgets/PreferencesPopover.vala:45
 msgid "Theme"
-msgstr ""
+msgstr "Téma"
 
 #: src/Models/StreamMetadata.vala:23
 msgid "Title"
-msgstr ""
+msgstr "Cím"
 
 #: src/Models/StreamMetadata.vala:36
 msgid "Track Count"
-msgstr ""
+msgstr "Track Count"
 
 #: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
-msgstr ""
+msgstr "Sávszám"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
-msgstr ""
+msgstr "Népszerű"
 
 #: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
-msgstr ""
+msgstr "Trending állomások az elmúlt 24 órában"
 
 #: src/Widgets/StationContextMenu.vala:143
 #, c-format
 msgid "Unable to open website: %s"
-msgstr ""
+msgstr "Képtelen megnyitni a weboldalt: %s"
 
 #: src/Widgets/StationContextMenu.vala:88
 msgid "Update Station from Online"
-msgstr ""
+msgstr "Frissítési állomás online"
 
 #: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
-msgstr ""
+msgstr "Weboldal megtekintése"
 
 #: src/Widgets/PreferencesPopover.vala:187
 #: src/Widgets/PreferencesPopover.vala:224
 msgid "_Cancel"
-msgstr ""
+msgstr "_Mégsem"
 
 #: src/Widgets/PreferencesPopover.vala:225
 msgid "_Open"
-msgstr ""
+msgstr "_Megnyitás"
 
 #: src/Widgets/PreferencesPopover.vala:188
 msgid "_Save"
-msgstr ""
+msgstr "_Mentés"

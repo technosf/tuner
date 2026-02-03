@@ -1,19 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-02-03 06:10+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Vietnamese <https://hosted.weblate.org/projects/tuner/tuner-"
+"ui/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: src/Widgets/StationContextMenu.vala:167
 #, c-format
@@ -27,11 +31,11 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
-msgstr ""
+msgstr "Giới thiệu"
 
 #: src/Models/StreamMetadata.vala:25
 msgid "Album"
-msgstr ""
+msgstr "Album"
 
 #: src/Models/StreamMetadata.vala:41
 msgid "Application Name"
@@ -39,7 +43,7 @@ msgstr ""
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
-msgstr ""
+msgstr "Nghệ sĩ"
 
 #: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
@@ -51,11 +55,11 @@ msgstr ""
 
 #: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
-msgstr ""
+msgstr "Bitress"
 
 #: src/Models/Station.vala:357
 msgid "Changes"
-msgstr ""
+msgstr "Những thay đổi"
 
 #: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
@@ -63,7 +67,7 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:221
 msgid "Choose a file"
-msgstr ""
+msgstr "Chọn tập tin"
 
 #: src/Widgets/Window.vala:69
 msgid ""
@@ -73,7 +77,7 @@ msgstr ""
 
 #: src/Models/Station.vala:364
 msgid "Codec"
-msgstr ""
+msgstr "Bộ giải mã"
 
 #: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
@@ -94,7 +98,7 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:34
 msgid "Dark mode"
-msgstr ""
+msgstr "Dark mode"
 
 #: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
 msgid "Data Provider"
@@ -106,11 +110,11 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Mặc định"
 
 #: src/Widgets/Display.vala:325
 msgid "Discover"
-msgstr ""
+msgstr "Phát hiện"
 
 #: src/Widgets/Display.vala:329
 msgid "Discover more stations"
@@ -129,7 +133,7 @@ msgstr ""
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
-msgstr ""
+msgstr "Bộ mã hóa"
 
 #: src/Models/StreamMetadata.vala:43
 msgid "Encoder Version"
@@ -151,11 +155,11 @@ msgstr ""
 #: src/Widgets/PreferencesPopover.vala:208
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Lỗi: %s"
 
 #: src/Widgets/Display.vala:101
 msgid "Explore"
-msgstr ""
+msgstr "Khám phá"
 
 #: src/Widgets/PreferencesPopover.vala:96
 msgid "Export Starred Stations to Playlist"
@@ -181,11 +185,11 @@ msgstr ""
 
 #: src/Models/StreamMetadata.vala:27
 msgid "Genre"
-msgstr ""
+msgstr "Thể loại"
 
 #: src/Widgets/Display.vala:102
 msgid "Genres"
-msgstr ""
+msgstr "Thể loại"
 
 #: src/Models/StreamMetadata.vala:46
 msgid "Has CRC"
@@ -193,11 +197,11 @@ msgstr ""
 
 #: src/Widgets/HeaderBar.vala:212
 msgid "History"
-msgstr ""
+msgstr "Lịch sử"
 
 #: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
-msgstr ""
+msgstr "Trang chủ"
 
 #: src/Models/Station.vala:361
 msgid "Homepage address"
@@ -221,7 +225,7 @@ msgstr ""
 
 #: src/Models/StreamMetadata.vala:26
 msgid "Image"
-msgstr ""
+msgstr "Hình ảnh"
 
 #: src/Widgets/PreferencesPopover.vala:105
 msgid "Import Station UUIDs as Starred Stations"
@@ -233,7 +237,7 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:86
 msgid "Language"
-msgstr ""
+msgstr "Ngôn ngữ"
 
 #: src/Widgets/Display.vala:422
 msgid "Latest Search"
@@ -241,7 +245,7 @@ msgstr ""
 
 #: src/Widgets/Display.vala:99
 msgid "Library"
-msgstr ""
+msgstr "Thư Viện"
 
 #: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
@@ -249,7 +253,7 @@ msgstr ""
 
 #: src/Models/StreamMetadata.vala:30
 msgid "Location"
-msgstr ""
+msgstr "Vị trí"
 
 #: src/Models/StreamMetadata.vala:39
 msgid "Maximum Bitrate"
@@ -281,11 +285,11 @@ msgstr ""
 
 #: src/Models/StreamMetadata.vala:29
 msgid "Organization"
-msgstr ""
+msgstr "Tổ chức"
 
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
-msgstr ""
+msgstr "Đang phát trong nền"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "Please try a different search term."
@@ -293,11 +297,11 @@ msgstr ""
 
 #: src/Widgets/Display.vala:361
 msgid "Popular"
-msgstr ""
+msgstr "Phổ biến"
 
 #: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
-msgstr ""
+msgstr "Tùy Chọn"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
@@ -313,7 +317,7 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:184
 msgid "Save File"
-msgstr ""
+msgstr "Save File"
 
 #: src/Widgets/Display.vala:426
 msgid "Save this search"
@@ -329,11 +333,11 @@ msgstr ""
 
 #: src/Widgets/Display.vala:423
 msgid "Search Results"
-msgstr ""
+msgstr "kết quả tìm kiếm"
 
 #: src/Widgets/Display.vala:98
 msgid "Selections"
-msgstr ""
+msgstr "Lựa chọn"
 
 #: src/Widgets/PreferencesPopover.vala:64
 msgid "Show stream info when playing"
@@ -399,11 +403,11 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"
-msgstr ""
+msgstr "Hệ thống"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Tags"
-msgstr ""
+msgstr "Thẻ"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
@@ -411,11 +415,11 @@ msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:45
 msgid "Theme"
-msgstr ""
+msgstr "Chủ Đề"
 
 #: src/Models/StreamMetadata.vala:23
 msgid "Title"
-msgstr ""
+msgstr "Tiêu đề"
 
 #: src/Models/StreamMetadata.vala:36
 msgid "Track Count"
@@ -423,11 +427,11 @@ msgstr ""
 
 #: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
-msgstr ""
+msgstr "Số trên album"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
-msgstr ""
+msgstr "Xu hướng"
 
 #: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
@@ -444,17 +448,17 @@ msgstr ""
 
 #: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
-msgstr ""
+msgstr "Truy cập Website"
 
 #: src/Widgets/PreferencesPopover.vala:187
 #: src/Widgets/PreferencesPopover.vala:224
 msgid "_Cancel"
-msgstr ""
+msgstr "_Hủy"
 
 #: src/Widgets/PreferencesPopover.vala:225
 msgid "_Open"
-msgstr ""
+msgstr "_Mở"
 
 #: src/Widgets/PreferencesPopover.vala:188
 msgid "_Save"
-msgstr ""
+msgstr "_Lưu"

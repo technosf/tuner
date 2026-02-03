@@ -1,124 +1,131 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-02-03 06:10+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/tuner/tuner-ui/"
+"sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: src/Widgets/StationContextMenu.vala:167
 #, c-format
 msgid "%s Star this station"
-msgstr ""
+msgstr "%s Hviezda táto stanica"
 
 #: src/Widgets/StationContextMenu.vala:166
 #, c-format
 msgid "%s Unstar this station"
-msgstr ""
+msgstr "%s Zrušiť túto stanicu"
 
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
-msgstr ""
+msgstr "O aplikácii"
 
 #: src/Models/StreamMetadata.vala:25
 msgid "Album"
-msgstr ""
+msgstr "Album"
 
 #: src/Models/StreamMetadata.vala:41
 msgid "Application Name"
-msgstr ""
+msgstr "Meno aplikácie"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
-msgstr ""
+msgstr "Umelec"
 
 #: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
-msgstr ""
+msgstr "Audio Codec"
 
 #: src/Widgets/PreferencesPopover.vala:50
 msgid "Auto-play last station on startup"
-msgstr ""
+msgstr "Autoplay posledná stanica na štarte"
 
 #: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
-msgstr ""
+msgstr "Bitrate"
 
 #: src/Models/Station.vala:357
 msgid "Changes"
-msgstr ""
+msgstr "Zmeny"
 
 #: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
-msgstr ""
+msgstr "Režim kanála"
 
 #: src/Widgets/PreferencesPopover.vala:221
 msgid "Choose a file"
-msgstr ""
+msgstr "Vyberte súbor"
 
 #: src/Widgets/Window.vala:69
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
+"Kliknite tu pre obnovenie okna. Ak chcete ukončiť Tuner, pauza prehrávanie a "
+"zatvoriť okno."
 
 #: src/Models/Station.vala:364
 msgid "Codec"
-msgstr ""
+msgstr "Kodek"
 
 #: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
-msgstr ""
+msgstr "Formát kontajnera"
 
 #: src/Widgets/StationContextMenu.vala:102
 msgid "Copy Stream-URI to clipboard"
-msgstr ""
+msgstr "Kopírovať Stream-URI na klipboard"
 
 #: src/Widgets/Display.vala:247
 #, c-format
 msgid "Could not get random station: %s"
-msgstr ""
+msgstr "Nemohol dostať náhodné stanice: %s"
 
 #: src/Widgets/PreferencesPopover.vala:66
 msgid "Cycle through the metadata from the playing stream"
-msgstr ""
+msgstr "Cyklus cez metadáta z hracieho prúdu"
 
 #: src/Widgets/PreferencesPopover.vala:34
 msgid "Dark mode"
-msgstr ""
+msgstr "Tmavý režim"
 
 #: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
 msgid "Data Provider"
-msgstr ""
+msgstr "Poskytovateľ údajov"
 
 #: src/Models/StreamMetadata.vala:44
 msgid "Date Time"
-msgstr ""
+msgstr "Dátum Čas"
 
 #: src/Widgets/PreferencesPopover.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Predvolené"
 
 #: src/Widgets/Display.vala:325
 msgid "Discover"
-msgstr ""
+msgstr "Objavovať"
 
 #: src/Widgets/Display.vala:329
 msgid "Discover more stations"
-msgstr ""
+msgstr "Objavte viac staníc"
 
 #: src/Widgets/PreferencesPopover.vala:25
 msgid "Do not participate in Station voting"
-msgstr ""
+msgstr "Neúčastnite sa hlasovania stanice"
 
 #: src/Widgets/Display.vala:559
 #, c-format
@@ -126,335 +133,347 @@ msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
+"Dvakrát kliknite na shuffle cez %1$u stanice,\n"
+"jeden, každých desať minút, pre %2$u dní"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
-msgstr ""
+msgstr "Zdroj"
 
 #: src/Models/StreamMetadata.vala:43
 msgid "Encoder Version"
-msgstr ""
+msgstr "Verzia Encoder"
 
 #: src/Widgets/Display.vala:104
 msgid "Eras"
-msgstr ""
+msgstr "Aktuality"
 
 #: src/Widgets/PreferencesPopover.vala:247
 #, c-format
 msgid "Error reading file: %s"
-msgstr ""
+msgstr "Súbor čítania chýb: %s"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
-msgstr ""
+msgstr "Chyba pri pokuse o autoplay, aborting.."
 
 #: src/Widgets/PreferencesPopover.vala:208
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Chyba: %s"
 
 #: src/Widgets/Display.vala:101
 msgid "Explore"
-msgstr ""
+msgstr "Preskúmať"
 
 #: src/Widgets/PreferencesPopover.vala:96
 msgid "Export Starred Stations to Playlist"
-msgstr ""
+msgstr "Export Starred stanice do playlistu"
 
 #: src/Models/StreamMetadata.vala:31
 msgid "Extended Comment"
-msgstr ""
+msgstr "Rozšírené komentáre"
 
 #: src/Widgets/PreferencesPopover.vala:71
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
+"Rýchly cyklus cez metadáta z hracieho prúdu, ak je povolené zobraziť "
+"informácie prúd"
 
 #: src/Widgets/PreferencesPopover.vala:69
 msgid "Faster cycling through stream info"
-msgstr ""
+msgstr "Rýchlejšie cykloturistika cez stream info"
 
 #: src/Models/Station.vala:360
 msgid "Favicon address"
-msgstr ""
+msgstr "Favicon adresa"
 
 #: src/Models/StreamMetadata.vala:27
 msgid "Genre"
-msgstr ""
+msgstr "Žáner"
 
 #: src/Widgets/Display.vala:102
 msgid "Genres"
-msgstr ""
+msgstr "Žánre"
 
 #: src/Models/StreamMetadata.vala:46
 msgid "Has CRC"
-msgstr ""
+msgstr "Má CRC"
 
 #: src/Widgets/HeaderBar.vala:212
 msgid "History"
-msgstr ""
+msgstr "História"
 
 #: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
-msgstr ""
+msgstr "Domovská stránka"
 
 #: src/Models/Station.vala:361
 msgid "Homepage address"
-msgstr ""
+msgstr "Úvodná stránka"
 
 #: src/Widgets/PreferencesPopover.vala:27
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
+"Ak kontrolujete, vaše hviezdne a vysielané stanice nebudú použité na výpočet "
+"indexu stanice, ani populárne a trendy stanice"
 
 #: src/Widgets/PreferencesPopover.vala:52
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
+"Ak je to povolené, keď Tuner začne automaticky začať hrať posledný hral "
+"stanice"
 
 #: src/Widgets/PreferencesPopover.vala:59
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
+"Ak je to povolené, keď Tuner začne, bude otvorený pre zobrazenie hviezdnych "
+"staníc"
 
 #: src/Models/StreamMetadata.vala:26
 msgid "Image"
-msgstr ""
+msgstr "Obrázok"
 
 #: src/Widgets/PreferencesPopover.vala:105
 msgid "Import Station UUIDs as Starred Stations"
-msgstr ""
+msgstr "Importná stanica UUIDs ako Starred stanice"
 
 #: src/Widgets/Display.vala:557
 msgid "Jukebox"
-msgstr ""
+msgstr "Jukebox"
 
 #: src/Widgets/PreferencesPopover.vala:86
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
 #: src/Widgets/Display.vala:422
 msgid "Latest Search"
-msgstr ""
+msgstr "Najnovšie vyhľadávanie"
 
 #: src/Widgets/Display.vala:99
 msgid "Library"
-msgstr ""
+msgstr "Knihovny"
 
 #: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
-msgstr ""
+msgstr "Režim svetla"
 
 #: src/Models/StreamMetadata.vala:30
 msgid "Location"
-msgstr ""
+msgstr "Umiestnenie"
 
 #: src/Models/StreamMetadata.vala:39
 msgid "Maximum Bitrate"
-msgstr ""
+msgstr "Maximálny Bitrate"
 
 #: src/Models/StreamMetadata.vala:38
 msgid "Minimum Bitrate"
-msgstr ""
+msgstr "Minimálne Bitrate"
 
 #: src/Widgets/Display.vala:362
 msgid "Most listened to Stations in the last 24 hours"
-msgstr ""
+msgstr "Najčastejšie počúvané stanice v posledných 24 hodinách"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
-msgstr ""
+msgstr "Nenájdené žiadne stanice."
 
 #: src/Models/StreamMetadata.vala:37
 msgid "Nominal Bitrate"
-msgstr ""
+msgstr "Menovitý Bitrate"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid "Nothing here"
-msgstr ""
+msgstr "Nič tu"
 
 #: src/Widgets/PreferencesPopover.vala:57
 msgid "Open to Starred Stations"
-msgstr ""
+msgstr "Otvorené pre Starred stanice"
 
 #: src/Models/StreamMetadata.vala:29
 msgid "Organization"
-msgstr ""
+msgstr "Organizácia"
 
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
-msgstr ""
+msgstr "Prehrávanie na pozadí"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "Please try a different search term."
-msgstr ""
+msgstr "Prosím, skúste iný výraz vyhľadávania."
 
 #: src/Widgets/Display.vala:361
 msgid "Popular"
-msgstr ""
+msgstr "Populárne"
 
 #: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
-msgstr ""
+msgstr "Nastavenia"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
-msgstr ""
+msgstr "Súkromné údaje"
 
 #: src/Widgets/Display.vala:627
 msgid "Remove this saved search"
-msgstr ""
+msgstr "Odstrániť toto uložené vyhľadávanie"
 
 #: src/Widgets/PreferencesPopover.vala:87
 msgid "Requires restarting Tuner"
-msgstr ""
+msgstr "Vyžaduje reštartovanie Tuner"
 
 #: src/Widgets/PreferencesPopover.vala:184
 msgid "Save File"
-msgstr ""
+msgstr "Uložiť súbor"
 
 #: src/Widgets/Display.vala:426
 msgid "Save this search"
-msgstr ""
+msgstr "Uložiť vyhľadávanie"
 
 #: src/Widgets/Display.vala:625
 msgid "Saved Search"
-msgstr ""
+msgstr "Uložené vyhľadávanie"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
-msgstr ""
+msgstr "Uložené vyhľadávania"
 
 #: src/Widgets/Display.vala:423
 msgid "Search Results"
-msgstr ""
+msgstr "Prehľadať výsledky"
 
 #: src/Widgets/Display.vala:98
 msgid "Selections"
-msgstr ""
+msgstr "Výbery"
 
 #: src/Widgets/PreferencesPopover.vala:64
 msgid "Show stream info when playing"
-msgstr ""
+msgstr "Zobraziť informácie o streame pri hraní"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr ""
+"Niečo sa pokazilo nakladanie dát rádiových staníc od poskytovateľa stanice. "
+"Skúste prosím neskôr."
 
 #: src/Widgets/HeaderBar.vala:170
 msgid "Star this station"
-msgstr ""
+msgstr "Hviezda táto stanica"
 
 #: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
 msgid "Starred by You"
-msgstr ""
+msgstr "Starred Podľa vás"
 
 #: src/Widgets/HeaderBar.vala:191
 msgid "Station Search"
-msgstr ""
+msgstr "Vyhľadávanie stanice"
 
 #: src/Widgets/StationContextMenu.vala:87
 msgid "Station info updated Online - View changes"
-msgstr ""
+msgstr "Informácie o stanici aktualizované Online - Zobrazenie zmien"
 
 #: src/Models/Station.vala:133
 msgid "Station no longer in the index"
-msgstr ""
+msgstr "Stanica už v indexe"
 
 #: src/Models/Station.vala:362
 msgid "Station tags"
-msgstr ""
+msgstr "Signály stanice"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Stations"
-msgstr ""
+msgstr "Stanica"
 
 #: src/Widgets/Display.vala:326
 msgid "Stations to Discover"
-msgstr ""
+msgstr "Stanica na Discover"
 
 #: src/Widgets/Window.vala:286
 msgid "Stop Playback requested"
-msgstr ""
+msgstr "Stop Playback požadovaná"
 
 #: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
-msgstr ""
+msgstr "Stream Metadata"
 
 #: src/Models/Station.vala:359
 msgid "Stream Resolved Url"
-msgstr ""
+msgstr "Spustenie Všeobecný"
 
 #: src/Models/Station.vala:358
 msgid "Stream Url"
-msgstr ""
+msgstr "Stream Url"
 
 #: src/Widgets/Display.vala:103
 msgid "Subgenres"
-msgstr ""
+msgstr "Subgencie"
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"
-msgstr ""
+msgstr "Systém"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Tags"
-msgstr ""
+msgstr "Značky"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
-msgstr ""
+msgstr "Talk, Novinky, Šport"
 
 #: src/Widgets/PreferencesPopover.vala:45
 msgid "Theme"
-msgstr ""
+msgstr "Téma"
 
 #: src/Models/StreamMetadata.vala:23
 msgid "Title"
-msgstr ""
+msgstr "Názov"
 
 #: src/Models/StreamMetadata.vala:36
 msgid "Track Count"
-msgstr ""
+msgstr "Sledovanie"
 
 #: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
-msgstr ""
+msgstr "Stopa číslo"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
-msgstr ""
+msgstr "Trendy"
 
 #: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
-msgstr ""
+msgstr "Trending stanice v posledných 24 hodín"
 
 #: src/Widgets/StationContextMenu.vala:143
 #, c-format
 msgid "Unable to open website: %s"
-msgstr ""
+msgstr "Nemožno otvoriť webové stránky: %s"
 
 #: src/Widgets/StationContextMenu.vala:88
 msgid "Update Station from Online"
-msgstr ""
+msgstr "Aktuálna stanica z Online"
 
 #: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
-msgstr ""
+msgstr "Navštívte stránku"
 
 #: src/Widgets/PreferencesPopover.vala:187
 #: src/Widgets/PreferencesPopover.vala:224
 msgid "_Cancel"
-msgstr ""
+msgstr "_Zrušiť"
 
 #: src/Widgets/PreferencesPopover.vala:225
 msgid "_Open"
-msgstr ""
+msgstr "_Otvoriť"
 
 #: src/Widgets/PreferencesPopover.vala:188
 msgid "_Save"
-msgstr ""
+msgstr "_Uložiť"
