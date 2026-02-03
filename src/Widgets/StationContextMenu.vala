@@ -142,7 +142,7 @@ public class Tuner.StationContextMenu : Gtk.Menu
 		} catch (Error e)
 		{
 			//warning (@"Unable to open website: $(e.message)");
-			warning ((_("Unable to open website: %s")).printf (e.message));
+			warning ((_("Unable to open website") + ": %s").printf (e.message));
 		}
 	}
 
@@ -165,8 +165,8 @@ public class Tuner.StationContextMenu : Gtk.Menu
 	{
 		//item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
         item.label = _station.starred
-        ? (_("%s Unstar this station")).printf (Application.UNSTAR_CHAR)
-        : (_("%s Star this station")).printf (Application.STAR_CHAR);
+        ? ("%s" + _("Unstar this station")).printf (Application.UNSTAR_CHAR)
+        : ("%s" + _("Star this station")).printf (Application.STAR_CHAR);
     }
 
 }

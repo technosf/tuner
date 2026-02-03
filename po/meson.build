@@ -11,19 +11,12 @@
 
 message('Installing translations...')
 
-# Include additional translation sources in subdirs
-# - `extra/` can contain supplementary .po files or helper data
-subdir('extra')
-
-# - `countries/` contains country-specific translations and data
-subdir('countries')
-
 # Generate POT file if the build config `translation` option is set to 'update'
 # This is intended for translators or snapshot builds where we need
 # to extract strings into a .pot template using xgettext.
 if get_option('translation') == 'update'
 
-    message('Updating POT file...')
+    message('Updating Project POT file...')
 
     pot = custom_target('pot',
         input: 'POTFILES',
@@ -34,7 +27,7 @@ if get_option('translation') == 'update'
             'xgettext',
             '--language=Vala',
             '--files-from=@INPUT@',
-            '--output=' + meson.project_name() + '.pot',
+            '--output=' + meson.current_source_dir() + '/' + meson.project_name() + '.pot',
             '--from-code=UTF-8',
             '--package-name=' + meson.project_name(),
             '--package-version=' + meson.project_version(),
@@ -62,6 +55,7 @@ else
     translations = []
 endif
 
+message('Merging PO files...')
 # Process each language listed in `LINGUAS`
 # For each entry we check for a corresponding `<lang>.po` and, if present,
 # create a custom target that runs `msgfmt` to produce a binary `.mo` file.
@@ -125,5 +119,10 @@ i18n.gettext(meson.project_name(),
     preset: 'glib'
 )
 
+# - `countries/` contains country-specific translations and data
+subdir('countries')# Include additional translation sources in subdirs
+
+# - `extra/` can contain supplementary .po files or helper data
+subdir('extra')
 
 message('Installed translations')
