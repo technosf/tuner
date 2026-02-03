@@ -3,14 +3,14 @@
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
 # LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-03 06:10+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"POT-Creation-Date: 2026-02-03 00:05-0800\n"
+"PO-Revision-Date: 2026-02-03 08:26+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "fa/>\n"
 "Language: fa\n"
@@ -20,17 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#: src/Widgets/StationContextMenu.vala:167
-#, c-format
-msgid "%s Star this station"
-msgstr "ستاره این ایستگاه"
-
-#: src/Widgets/StationContextMenu.vala:166
-#, c-format
-msgid "%s Unstar this station"
-msgstr "%s این ایستگاه"
-
-#: src/Widgets/PreferencesPopover.vala:20
+#: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
 msgstr "درباره‌ی Psiphon"
 
@@ -50,7 +40,7 @@ msgstr "هنرمند"
 msgid "Audio Codec"
 msgstr "Audio Codec"
 
-#: src/Widgets/PreferencesPopover.vala:50
+#: src/Widgets/PreferencesPopover.vala:51
 msgid "Auto-play last station on startup"
 msgstr "آخرین ایستگاه Auto-play در استارت آپ"
 
@@ -66,7 +56,7 @@ msgstr "تغییرات"
 msgid "Channel Mode"
 msgstr "کانال Mode"
 
-#: src/Widgets/PreferencesPopover.vala:221
+#: src/Widgets/PreferencesPopover.vala:222
 msgid "Choose a file"
 msgstr "انتخاب یک فایل"
 
@@ -86,20 +76,20 @@ msgstr "کدک"
 msgid "Container Format"
 msgstr "Container Format"
 
-#: src/Widgets/StationContextMenu.vala:102
+#: src/Widgets/StationContextMenu.vala:104
 msgid "Copy Stream-URI to clipboard"
 msgstr "Copy Stream-URI to Clipboard"
 
 #: src/Widgets/Display.vala:247
-#, c-format
-msgid "Could not get random station: %s"
-msgstr "نمی تواند ایستگاه تصادفی داشته باشد (X30X)"
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Widgets/PreferencesPopover.vala:66
+#: src/Widgets/PreferencesPopover.vala:67
 msgid "Cycle through the metadata from the playing stream"
 msgstr "چرخه از طریق متاداده از جریان بازی"
 
-#: src/Widgets/PreferencesPopover.vala:34
+#: src/Widgets/PreferencesPopover.vala:35
 msgid "Dark mode"
 msgstr "Dark mode"
 
@@ -111,7 +101,7 @@ msgstr "Data Provider"
 msgid "Date Time"
 msgstr "تاریخ زمان"
 
-#: src/Widgets/PreferencesPopover.vala:76
+#: src/Widgets/PreferencesPopover.vala:77
 msgid "Default"
 msgstr "پیش‌فرض"
 
@@ -123,7 +113,7 @@ msgstr "کشف"
 msgid "Discover more stations"
 msgstr "کشف ایستگاه های بیشتر"
 
-#: src/Widgets/PreferencesPopover.vala:25
+#: src/Widgets/PreferencesPopover.vala:26
 msgid "Do not participate in Station voting"
 msgstr "در رای گیری ایستگاه شرکت نکنید"
 
@@ -148,25 +138,25 @@ msgstr "نسخه های Dynamic"
 msgid "Eras"
 msgstr "Eras"
 
-#: src/Widgets/PreferencesPopover.vala:247
-#, c-format
-msgid "Error reading file: %s"
-msgstr "خطای خواندن فایل: %s"
+#: src/Widgets/PreferencesPopover.vala:209
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:248
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
 msgstr "خطا در هنگام تلاش برای بازی خودکار، سقط .."
 
-#: src/Widgets/PreferencesPopover.vala:208
-#, c-format
-msgid "Error: %s"
-msgstr "خطا: %s"
-
 #: src/Widgets/Display.vala:101
 msgid "Explore"
 msgstr "بررسی کنید"
 
-#: src/Widgets/PreferencesPopover.vala:96
+#: src/Widgets/PreferencesPopover.vala:97
 msgid "Export Starred Stations to Playlist"
 msgstr "ایستگاه های Starred برای Playlist"
 
@@ -174,13 +164,13 @@ msgstr "ایستگاه های Starred برای Playlist"
 msgid "Extended Comment"
 msgstr "توضیحات گسترده"
 
-#: src/Widgets/PreferencesPopover.vala:71
+#: src/Widgets/PreferencesPopover.vala:72
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr "چرخه سریع از طریق متاداده از جریان بازی اگر نمایش داده می شود"
 
-#: src/Widgets/PreferencesPopover.vala:69
+#: src/Widgets/PreferencesPopover.vala:70
 msgid "Faster cycling through stream info"
 msgstr "سریع تر دوچرخه سواری از طریق جریان اطلاعات"
 
@@ -212,7 +202,7 @@ msgstr "صفحه اصلی"
 msgid "Homepage address"
 msgstr "آدرس صفحه اصلی"
 
-#: src/Widgets/PreferencesPopover.vala:27
+#: src/Widgets/PreferencesPopover.vala:28
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
@@ -220,7 +210,7 @@ msgstr ""
 "اگر بررسی شود، ایستگاه های ستاره دار و جریانی شما برای محاسبه رای گیری شاخص "
 "ایستگاه و نه ایستگاه های محبوب و مرسوم استفاده نخواهد شد"
 
-#: src/Widgets/PreferencesPopover.vala:52
+#: src/Widgets/PreferencesPopover.vala:53
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
@@ -228,7 +218,7 @@ msgstr ""
 "اگر فعال شود، زمانی که Tuner شروع به کار کند، به طور خودکار شروع به بازی "
 "آخرین ایستگاه بازی خواهد کرد"
 
-#: src/Widgets/PreferencesPopover.vala:59
+#: src/Widgets/PreferencesPopover.vala:60
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
 "اگر فعال شود، هنگامی که Tuner شروع به باز شدن به ایستگاه های ستاره دار می کند"
@@ -237,7 +227,7 @@ msgstr ""
 msgid "Image"
 msgstr "تصویر"
 
-#: src/Widgets/PreferencesPopover.vala:105
+#: src/Widgets/PreferencesPopover.vala:106
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "ایستگاه واردات UUID به عنوان ایستگاه های Starred"
 
@@ -245,7 +235,7 @@ msgstr "ایستگاه واردات UUID به عنوان ایستگاه های S
 msgid "Jukebox"
 msgstr "خرید پستی"
 
-#: src/Widgets/PreferencesPopover.vala:86
+#: src/Widgets/PreferencesPopover.vala:87
 msgid "Language"
 msgstr "زبان"
 
@@ -257,7 +247,7 @@ msgstr "آخرین جستجو"
 msgid "Library"
 msgstr "کتابخانه"
 
-#: src/Widgets/PreferencesPopover.vala:33
+#: src/Widgets/PreferencesPopover.vala:34
 msgid "Light mode"
 msgstr "حالت نور"
 
@@ -289,7 +279,7 @@ msgstr "نام تجاری Bitrate"
 msgid "Nothing here"
 msgstr "هیچ چیز در اینجا"
 
-#: src/Widgets/PreferencesPopover.vala:57
+#: src/Widgets/PreferencesPopover.vala:58
 msgid "Open to Starred Stations"
 msgstr "ایستگاه های Starred"
 
@@ -321,11 +311,11 @@ msgstr "داده های خصوصی"
 msgid "Remove this saved search"
 msgstr "حذف این جستجو نجات یافته"
 
-#: src/Widgets/PreferencesPopover.vala:87
+#: src/Widgets/PreferencesPopover.vala:88
 msgid "Requires restarting Tuner"
 msgstr "دانلود آهنگ Restarting Tuner"
 
-#: src/Widgets/PreferencesPopover.vala:184
+#: src/Widgets/PreferencesPopover.vala:185
 msgid "Save File"
 msgstr "Save File"
 
@@ -349,7 +339,7 @@ msgstr "نتایج جستجو"
 msgid "Selections"
 msgstr "انتخاب"
 
-#: src/Widgets/PreferencesPopover.vala:64
+#: src/Widgets/PreferencesPopover.vala:65
 msgid "Show stream info when playing"
 msgstr "نمایش اطلاعات جریان هنگام بازی"
 
@@ -361,7 +351,7 @@ msgstr ""
 "چیزی که داده های ایستگاه های رادیویی را از ارائه دهنده ایستگاه به اشتباه "
 "بارگیری کرد. لطفا دوباره امتحان کنید."
 
-#: src/Widgets/HeaderBar.vala:170
+#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
 msgid "Star this station"
 msgstr "ستاره این ایستگاه"
 
@@ -373,7 +363,7 @@ msgstr "ستاره ای از تو"
 msgid "Station Search"
 msgstr "ایستگاه جستجو"
 
-#: src/Widgets/StationContextMenu.vala:87
+#: src/Widgets/StationContextMenu.vala:89
 msgid "Station info updated Online - View changes"
 msgstr "اطلاعات ایستگاه به روز شده آنلاین - تغییرات مشاهده"
 
@@ -413,7 +403,7 @@ msgstr "جریان Url"
 msgid "Subgenres"
 msgstr "Subgenre"
 
-#: src/Widgets/PreferencesPopover.vala:32
+#: src/Widgets/PreferencesPopover.vala:33
 msgid "System"
 msgstr "سیستم"
 
@@ -425,7 +415,7 @@ msgstr "برچسب ها"
 msgid "Talk, News, Sport"
 msgstr "گفتگو، اخبار، ورزش"
 
-#: src/Widgets/PreferencesPopover.vala:45
+#: src/Widgets/PreferencesPopover.vala:46
 msgid "Theme"
 msgstr "پوسته"
 
@@ -449,28 +439,57 @@ msgstr "روندها"
 msgid "Trending Stations in the last 24 hours"
 msgstr "ایستگاه های روندینگ در 24 ساعت گذشته"
 
-#: src/Widgets/StationContextMenu.vala:143
-#, c-format
-msgid "Unable to open website: %s"
-msgstr "امکان باز کردن وب سایت: %s"
+#: src/Widgets/StationContextMenu.vala:145
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
 
-#: src/Widgets/StationContextMenu.vala:88
+#: src/Widgets/StationContextMenu.vala:168
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#: src/Widgets/StationContextMenu.vala:90
 msgid "Update Station from Online"
 msgstr "ایستگاه به روز رسانی آنلاین"
 
-#: src/Widgets/StationContextMenu.vala:96
+#: src/Widgets/StationContextMenu.vala:98
 msgid "Visit Website"
 msgstr "دیدن وبسایت"
 
-#: src/Widgets/PreferencesPopover.vala:187
-#: src/Widgets/PreferencesPopover.vala:224
+#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:225
 msgid "_Cancel"
 msgstr "_لغو"
 
-#: src/Widgets/PreferencesPopover.vala:225
+#: src/Widgets/PreferencesPopover.vala:226
 msgid "_Open"
 msgstr "_باز کردن"
 
-#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "_ذخیره"
+
+#, c-format
+#~ msgid "%s Star this station"
+#~ msgstr "ستاره این ایستگاه"
+
+#, c-format
+#~ msgid "%s Unstar this station"
+#~ msgstr "%s این ایستگاه"
+
+#, c-format
+#~ msgid "Could not get random station: %s"
+#~ msgstr "نمی تواند ایستگاه تصادفی داشته باشد (X30X)"
+
+#, c-format
+#~ msgid "Error reading file: %s"
+#~ msgstr "خطای خواندن فایل: %s"
+
+#, c-format
+#~ msgid "Error: %s"
+#~ msgstr "خطا: %s"
+
+#, c-format
+#~ msgid "Unable to open website: %s"
+#~ msgstr "امکان باز کردن وب سایت: %s"

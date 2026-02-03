@@ -3,13 +3,14 @@
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
 # LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-03 01:23+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-02-03 00:05-0800\n"
+"PO-Revision-Date: 2026-02-03 08:26+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/tuner/tuner-ui/cs/>"
 "\n"
 "Language: cs\n"
@@ -19,17 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#: src/Widgets/StationContextMenu.vala:167
-#, c-format
-msgid "%s Star this station"
-msgstr "%s Star tuto stanici"
-
-#: src/Widgets/StationContextMenu.vala:166
-#, c-format
-msgid "%s Unstar this station"
-msgstr "%s Nestará tato stanice"
-
-#: src/Widgets/PreferencesPopover.vala:20
+#: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
 msgstr "O programu"
 
@@ -49,7 +40,7 @@ msgstr "Umělec"
 msgid "Audio Codec"
 msgstr "Audio kodek"
 
-#: src/Widgets/PreferencesPopover.vala:50
+#: src/Widgets/PreferencesPopover.vala:51
 msgid "Auto-play last station on startup"
 msgstr "Auto-play poslední stanice na startu"
 
@@ -65,7 +56,7 @@ msgstr "Změny"
 msgid "Channel Mode"
 msgstr "Režim kanálu"
 
-#: src/Widgets/PreferencesPopover.vala:221
+#: src/Widgets/PreferencesPopover.vala:222
 msgid "Choose a file"
 msgstr "Zvolte soubor"
 
@@ -85,20 +76,20 @@ msgstr "Kodek"
 msgid "Container Format"
 msgstr "Formát kontejneru"
 
-#: src/Widgets/StationContextMenu.vala:102
+#: src/Widgets/StationContextMenu.vala:104
 msgid "Copy Stream-URI to clipboard"
 msgstr "Kopírovat Stream-URI do schránky"
 
 #: src/Widgets/Display.vala:247
-#, c-format
-msgid "Could not get random station: %s"
-msgstr "Nelze získat náhodnou stanici: %s"
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Widgets/PreferencesPopover.vala:66
+#: src/Widgets/PreferencesPopover.vala:67
 msgid "Cycle through the metadata from the playing stream"
 msgstr "Cyklus přes metadata z herního proudu"
 
-#: src/Widgets/PreferencesPopover.vala:34
+#: src/Widgets/PreferencesPopover.vala:35
 msgid "Dark mode"
 msgstr "Tmavý režim"
 
@@ -110,7 +101,7 @@ msgstr "Poskytovatel údajů"
 msgid "Date Time"
 msgstr "Datum Čas"
 
-#: src/Widgets/PreferencesPopover.vala:76
+#: src/Widgets/PreferencesPopover.vala:77
 msgid "Default"
 msgstr "Výchozí"
 
@@ -122,7 +113,7 @@ msgstr "Objevte"
 msgid "Discover more stations"
 msgstr "Objevte více stanic"
 
-#: src/Widgets/PreferencesPopover.vala:25
+#: src/Widgets/PreferencesPopover.vala:26
 msgid "Do not participate in Station voting"
 msgstr "Nedílí se v hlasování o nádraží"
 
@@ -147,25 +138,25 @@ msgstr "Verze kodéru"
 msgid "Eras"
 msgstr "Éry"
 
-#: src/Widgets/PreferencesPopover.vala:247
-#, c-format
-msgid "Error reading file: %s"
-msgstr "Chyba čtení souboru: %s"
+#: src/Widgets/PreferencesPopover.vala:209
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:248
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
 msgstr "Chyba při pokusu o automatické přehrávání, přerušení…"
 
-#: src/Widgets/PreferencesPopover.vala:208
-#, c-format
-msgid "Error: %s"
-msgstr "Chyba: %s"
-
 #: src/Widgets/Display.vala:101
 msgid "Explore"
 msgstr "Procházet"
 
-#: src/Widgets/PreferencesPopover.vala:96
+#: src/Widgets/PreferencesPopover.vala:97
 msgid "Export Starred Stations to Playlist"
 msgstr "Export Starred Stations na Playlist"
 
@@ -173,7 +164,7 @@ msgstr "Export Starred Stations na Playlist"
 msgid "Extended Comment"
 msgstr "Rozšířený komentář"
 
-#: src/Widgets/PreferencesPopover.vala:71
+#: src/Widgets/PreferencesPopover.vala:72
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
@@ -181,7 +172,7 @@ msgstr ""
 "Rychlý cyklus pomocí metadat z herního streamu, pokud se zobrazí informace o "
 "streamu"
 
-#: src/Widgets/PreferencesPopover.vala:69
+#: src/Widgets/PreferencesPopover.vala:70
 msgid "Faster cycling through stream info"
 msgstr "Rychlejší kolo přes stream info"
 
@@ -213,7 +204,7 @@ msgstr "Domovská stránka"
 msgid "Homepage address"
 msgstr "Úvodní stránka"
 
-#: src/Widgets/PreferencesPopover.vala:27
+#: src/Widgets/PreferencesPopover.vala:28
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
@@ -222,7 +213,7 @@ msgstr ""
 "použity pro výpočet skóre index popularity hlasovat, ani populární a "
 "trendové stanice"
 
-#: src/Widgets/PreferencesPopover.vala:52
+#: src/Widgets/PreferencesPopover.vala:53
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
@@ -230,7 +221,7 @@ msgstr ""
 "Pokud je povoleno, když Tuner začne automaticky začít hrát poslední hrací "
 "stanici"
 
-#: src/Widgets/PreferencesPopover.vala:59
+#: src/Widgets/PreferencesPopover.vala:60
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr "Pokud je povoleno, když Tuner začne otevírat na hvězdných stanicích"
 
@@ -238,7 +229,7 @@ msgstr "Pokud je povoleno, když Tuner začne otevírat na hvězdných stanicíc
 msgid "Image"
 msgstr "Obrázek"
 
-#: src/Widgets/PreferencesPopover.vala:105
+#: src/Widgets/PreferencesPopover.vala:106
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Import Station UUIDs jako Starred Stations"
 
@@ -246,7 +237,7 @@ msgstr "Import Station UUIDs jako Starred Stations"
 msgid "Jukebox"
 msgstr "Jubobox"
 
-#: src/Widgets/PreferencesPopover.vala:86
+#: src/Widgets/PreferencesPopover.vala:87
 msgid "Language"
 msgstr "Jazyk"
 
@@ -258,7 +249,7 @@ msgstr "Poslední hledání"
 msgid "Library"
 msgstr "Knihovna"
 
-#: src/Widgets/PreferencesPopover.vala:33
+#: src/Widgets/PreferencesPopover.vala:34
 msgid "Light mode"
 msgstr "Světlý motiv"
 
@@ -290,7 +281,7 @@ msgstr "Jmenovité Bitrate"
 msgid "Nothing here"
 msgstr "Nic zde"
 
-#: src/Widgets/PreferencesPopover.vala:57
+#: src/Widgets/PreferencesPopover.vala:58
 msgid "Open to Starred Stations"
 msgstr "Otevřít na Starred Stations"
 
@@ -322,11 +313,11 @@ msgstr "Soukromé údaje"
 msgid "Remove this saved search"
 msgstr "Odebrat toto uložené hledání"
 
-#: src/Widgets/PreferencesPopover.vala:87
+#: src/Widgets/PreferencesPopover.vala:88
 msgid "Requires restarting Tuner"
 msgstr "Vyžaduje restartování Tuner"
 
-#: src/Widgets/PreferencesPopover.vala:184
+#: src/Widgets/PreferencesPopover.vala:185
 msgid "Save File"
 msgstr "Uložit soubor"
 
@@ -350,7 +341,7 @@ msgstr "Výsledky hledání"
 msgid "Selections"
 msgstr "Výběry"
 
-#: src/Widgets/PreferencesPopover.vala:64
+#: src/Widgets/PreferencesPopover.vala:65
 msgid "Show stream info when playing"
 msgstr "Zobrazit informace o streamu při hraní"
 
@@ -362,7 +353,7 @@ msgstr ""
 "Něco bylo špatné načítání dat z poskytovatele stanic. Prosím, zkuste to "
 "později."
 
-#: src/Widgets/HeaderBar.vala:170
+#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
 msgid "Star this station"
 msgstr "Hvězda této stanice"
 
@@ -374,7 +365,7 @@ msgstr "Starred podle vás"
 msgid "Station Search"
 msgstr "Vyhledávání stanic"
 
-#: src/Widgets/StationContextMenu.vala:87
+#: src/Widgets/StationContextMenu.vala:89
 msgid "Station info updated Online - View changes"
 msgstr "Informace o nádraží Online - Zobrazit změny"
 
@@ -414,7 +405,7 @@ msgstr "URL Streamu"
 msgid "Subgenres"
 msgstr "Subžánry"
 
-#: src/Widgets/PreferencesPopover.vala:32
+#: src/Widgets/PreferencesPopover.vala:33
 msgid "System"
 msgstr "Systém"
 
@@ -426,7 +417,7 @@ msgstr "Tagy"
 msgid "Talk, News, Sport"
 msgstr "Rozhovor, Novinky, Sport"
 
-#: src/Widgets/PreferencesPopover.vala:45
+#: src/Widgets/PreferencesPopover.vala:46
 msgid "Theme"
 msgstr "Motiv"
 
@@ -450,28 +441,57 @@ msgstr "Trendující"
 msgid "Trending Stations in the last 24 hours"
 msgstr "Trendy v posledních 24 hodin"
 
-#: src/Widgets/StationContextMenu.vala:143
-#, c-format
-msgid "Unable to open website: %s"
-msgstr "Nelze otevřít webové stránky: %s"
+#: src/Widgets/StationContextMenu.vala:145
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
 
-#: src/Widgets/StationContextMenu.vala:88
+#: src/Widgets/StationContextMenu.vala:168
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#: src/Widgets/StationContextMenu.vala:90
 msgid "Update Station from Online"
 msgstr "Aktualizace stanice z Online"
 
-#: src/Widgets/StationContextMenu.vala:96
+#: src/Widgets/StationContextMenu.vala:98
 msgid "Visit Website"
 msgstr "Navštivte webové stránky"
 
-#: src/Widgets/PreferencesPopover.vala:187
-#: src/Widgets/PreferencesPopover.vala:224
+#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:225
 msgid "_Cancel"
 msgstr "_Zrušit"
 
-#: src/Widgets/PreferencesPopover.vala:225
+#: src/Widgets/PreferencesPopover.vala:226
 msgid "_Open"
 msgstr "_Otevřít"
 
-#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "_Uložit"
+
+#, c-format
+#~ msgid "%s Star this station"
+#~ msgstr "%s Star tuto stanici"
+
+#, c-format
+#~ msgid "%s Unstar this station"
+#~ msgstr "%s Nestará tato stanice"
+
+#, c-format
+#~ msgid "Could not get random station: %s"
+#~ msgstr "Nelze získat náhodnou stanici: %s"
+
+#, c-format
+#~ msgid "Error reading file: %s"
+#~ msgstr "Chyba čtení souboru: %s"
+
+#, c-format
+#~ msgid "Error: %s"
+#~ msgstr "Chyba: %s"
+
+#, c-format
+#~ msgid "Unable to open website: %s"
+#~ msgstr "Nelze otevřít webové stránky: %s"

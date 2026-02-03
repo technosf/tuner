@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-02 21:01+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-02-03 00:05-0800\n"
+"PO-Revision-Date: 2026-02-03 08:26+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/tuner/tuner-ui/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -19,86 +19,102 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#, c-format
-msgid "%s Star this station"
-msgstr "%s 星標此站"
-
-#, c-format
-msgid "%s Unstar this station"
-msgstr "%s 取消收藏此電台"
-
+#: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
 msgstr "關於"
 
+#: src/Models/StreamMetadata.vala:25
 msgid "Album"
 msgstr "專輯"
 
+#: src/Models/StreamMetadata.vala:41
 msgid "Application Name"
 msgstr "應用程式名稱"
 
+#: src/Models/StreamMetadata.vala:24
 msgid "Artist"
 msgstr "藝術家"
 
+#: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
 msgstr "音訊編解碼器"
 
+#: src/Widgets/PreferencesPopover.vala:51
 msgid "Auto-play last station on startup"
 msgstr "啟動時自動播放最後一站"
 
+#: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
 msgstr "位元率"
 
+#: src/Models/Station.vala:357
 msgid "Changes"
 msgstr "變更"
 
+#: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
 msgstr "頻道模式"
 
+#: src/Widgets/PreferencesPopover.vala:222
 msgid "Choose a file"
 msgstr "選擇文件"
 
+#: src/Widgets/Window.vala:69
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr "點擊這裡恢復視窗。若要退出調諧器，請暫停播放並關閉視窗。"
 
+#: src/Models/Station.vala:364
 msgid "Codec"
 msgstr "編解碼器"
 
+#: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
 msgstr "容器格式"
 
+#: src/Widgets/StationContextMenu.vala:104
 msgid "Copy Stream-URI to clipboard"
 msgstr "將流 URI 複製到剪貼簿"
 
-#, c-format
-msgid "Could not get random station: %s"
-msgstr "無法取得隨機電台：%s"
+#: src/Widgets/Display.vala:247
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
+#: src/Widgets/PreferencesPopover.vala:67
 msgid "Cycle through the metadata from the playing stream"
 msgstr "循環瀏覽播放串流的元數據"
 
+#: src/Widgets/PreferencesPopover.vala:35
 msgid "Dark mode"
 msgstr "黑暗模式"
 
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
 msgid "Data Provider"
 msgstr "數據提供者"
 
+#: src/Models/StreamMetadata.vala:44
 msgid "Date Time"
 msgstr "日期與時間"
 
+#: src/Widgets/PreferencesPopover.vala:77
 msgid "Default"
 msgstr "Deafult"
 
+#: src/Widgets/Display.vala:325
 msgid "Discover"
 msgstr "發現"
 
+#: src/Widgets/Display.vala:329
 msgid "Discover more stations"
 msgstr "探索更多車站"
 
+#: src/Widgets/PreferencesPopover.vala:26
 msgid "Do not participate in Station voting"
 msgstr "請勿參與電台投票"
 
+#: src/Widgets/Display.vala:559
 #, c-format
 msgid ""
 "Double click to shuffle through %1$u stations,\n"
@@ -107,64 +123,83 @@ msgstr ""
 "雙擊即可隨機切換 %1$u 個電台，\n"
 "每十分鐘切換一個，持續 %2$u 天。"
 
+#: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
 msgstr "編碼器"
 
+#: src/Models/StreamMetadata.vala:43
 msgid "Encoder Version"
 msgstr "編碼器版本"
 
+#: src/Widgets/Display.vala:104
 msgid "Eras"
 msgstr "時代"
 
-#, c-format
-msgid "Error reading file: %s"
-msgstr "讀取文件時發生錯誤：%s"
+#: src/Widgets/PreferencesPopover.vala:209
+#, fuzzy
+msgid "Error"
+msgstr "Error"
 
+#: src/Widgets/PreferencesPopover.vala:248
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
+
+#: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
 msgstr "自動播放時出錯，已中止…"
 
-#, c-format
-msgid "Error: %s"
-msgstr "錯誤: %s"
-
+#: src/Widgets/Display.vala:101
 msgid "Explore"
 msgstr "探索"
 
+#: src/Widgets/PreferencesPopover.vala:97
 msgid "Export Starred Stations to Playlist"
 msgstr "將已加星號的電台匯出到播放清單"
 
+#: src/Models/StreamMetadata.vala:31
 msgid "Extended Comment"
 msgstr "擴展評論"
 
+#: src/Widgets/PreferencesPopover.vala:72
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr "如果啟用了“顯示串流資訊”，則可以快速循環瀏覽播放串流的元資料。"
 
+#: src/Widgets/PreferencesPopover.vala:70
 msgid "Faster cycling through stream info"
 msgstr "更快地循環瀏覽資訊流"
 
+#: src/Models/Station.vala:360
 msgid "Favicon address"
 msgstr "網站圖示位址"
 
+#: src/Models/StreamMetadata.vala:27
 msgid "Genre"
 msgstr "類型"
 
+#: src/Widgets/Display.vala:102
 msgid "Genres"
 msgstr "類型"
 
+#: src/Models/StreamMetadata.vala:46
 msgid "Has CRC"
 msgstr "患有大腸直腸癌"
 
+#: src/Widgets/HeaderBar.vala:212
 msgid "History"
 msgstr "歷史"
 
+#: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
 msgstr "主頁"
 
+#: src/Models/Station.vala:361
 msgid "Homepage address"
 msgstr "首頁網址"
 
+#: src/Widgets/PreferencesPopover.vala:28
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
@@ -172,193 +207,283 @@ msgstr ""
 "如果選取此項，您收藏和收聽的電台將不會用於計算電台指數人氣投票，也不會用於計"
 "算熱門和流行電台。"
 
+#: src/Widgets/PreferencesPopover.vala:53
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr "如果啟用此功能，Tuner 將在啟動時自動播放上次收聽的電台。"
 
+#: src/Widgets/PreferencesPopover.vala:60
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr "如果啟用，當 Tuner 啟動時，它將開啟星標網站視圖。"
 
+#: src/Models/StreamMetadata.vala:26
 msgid "Image"
 msgstr "圖片"
 
+#: src/Widgets/PreferencesPopover.vala:106
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "將站點 UUID 匯入為星標站點"
 
+#: src/Widgets/Display.vala:557
 msgid "Jukebox"
 msgstr "點唱機"
 
+#: src/Widgets/PreferencesPopover.vala:87
 msgid "Language"
 msgstr "語言"
 
+#: src/Widgets/Display.vala:422
 msgid "Latest Search"
 msgstr "最新搜尋"
 
+#: src/Widgets/Display.vala:99
 msgid "Library"
 msgstr "圖書館"
 
+#: src/Widgets/PreferencesPopover.vala:34
 msgid "Light mode"
 msgstr "淺色模式"
 
+#: src/Models/StreamMetadata.vala:30
 msgid "Location"
 msgstr "位置"
 
+#: src/Models/StreamMetadata.vala:39
 msgid "Maximum Bitrate"
 msgstr "最大比特率"
 
+#: src/Models/StreamMetadata.vala:38
 msgid "Minimum Bitrate"
 msgstr "最低比特率"
 
+#: src/Widgets/Display.vala:362
 msgid "Most listened to Stations in the last 24 hours"
 msgstr "過去24小時內收聽量最高的電台"
 
+#: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
 msgstr "未找到站點"
 
+#: src/Models/StreamMetadata.vala:37
 msgid "Nominal Bitrate"
 msgstr "標稱比特率"
 
+#: src/Widgets/base/StationListBox.vala:146
 msgid "Nothing here"
 msgstr "這裡什麼也沒有"
 
+#: src/Widgets/PreferencesPopover.vala:58
 msgid "Open to Starred Stations"
 msgstr "向星標電台開放"
 
+#: src/Models/StreamMetadata.vala:29
 msgid "Organization"
 msgstr "組織"
 
+#: src/Widgets/Window.vala:68
 msgid "Playing in background"
 msgstr "正在背景播放"
 
+#: src/Widgets/base/StationListBox.vala:156
 msgid "Please try a different search term."
 msgstr "請嘗試其他搜尋字詞。"
 
+#: src/Widgets/Display.vala:361
 msgid "Popular"
 msgstr "受歡迎的"
 
+#: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
 msgstr "偏好"
 
+#: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
 msgstr "私人數據"
 
+#: src/Widgets/Display.vala:627
 msgid "Remove this saved search"
 msgstr "刪除此已儲存的搜尋"
 
+#: src/Widgets/PreferencesPopover.vala:88
 msgid "Requires restarting Tuner"
 msgstr "需要重啟調諧器"
 
+#: src/Widgets/PreferencesPopover.vala:185
 msgid "Save File"
 msgstr "儲存檔案"
 
+#: src/Widgets/Display.vala:426
 msgid "Save this search"
 msgstr "儲存此搜尋"
 
+#: src/Widgets/Display.vala:625
 msgid "Saved Search"
 msgstr "已儲存的搜尋"
 
+#: src/Widgets/Display.vala:100
 msgid "Saved Searches"
 msgstr "已儲存的搜尋"
 
+#: src/Widgets/Display.vala:423
 msgid "Search Results"
 msgstr "搜尋結果"
 
+#: src/Widgets/Display.vala:98
 msgid "Selections"
 msgstr "精選"
 
+#: src/Widgets/PreferencesPopover.vala:65
 msgid "Show stream info when playing"
 msgstr "播放時顯示串流訊息"
 
+#: src/Widgets/base/StationListBox.vala:146
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr "從電台提供者載入電台資料時出錯。請稍後再試。"
 
+#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
 msgid "Star this station"
 msgstr "給這家電台按讚"
 
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
 msgid "Starred by You"
 msgstr "由你主演"
 
+#: src/Widgets/HeaderBar.vala:191
 msgid "Station Search"
 msgstr "車站搜索"
 
+#: src/Widgets/StationContextMenu.vala:89
 msgid "Station info updated Online - View changes"
 msgstr "電台資訊已線上更新 - 查看變更"
 
+#: src/Models/Station.vala:133
 msgid "Station no longer in the index"
 msgstr "索引中已移除該站點"
 
+#: src/Models/Station.vala:362
 msgid "Station tags"
 msgstr "車站標籤"
 
+#: src/Widgets/HeaderBar.vala:148
 msgid "Stations"
 msgstr "車站"
 
+#: src/Widgets/Display.vala:326
 msgid "Stations to Discover"
 msgstr "值得探索的車站"
 
+#: src/Widgets/Window.vala:286
 msgid "Stop Playback requested"
 msgstr "請求停止播放"
 
+#: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
 msgstr "串流元資料"
 
+#: src/Models/Station.vala:359
 msgid "Stream Resolved Url"
 msgstr "串流已解析 Url"
 
+#: src/Models/Station.vala:358
 msgid "Stream Url"
 msgstr "串流媒體網址"
 
+#: src/Widgets/Display.vala:103
 msgid "Subgenres"
 msgstr "子類型"
 
+#: src/Widgets/PreferencesPopover.vala:33
 msgid "System"
 msgstr "系統"
 
+#: src/Widgets/HeaderBar.vala:148
 msgid "Tags"
 msgstr "標籤"
 
+#: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
 msgstr "談話、新聞、體育"
 
+#: src/Widgets/PreferencesPopover.vala:46
 msgid "Theme"
 msgstr "主題"
 
+#: src/Models/StreamMetadata.vala:23
 msgid "Title"
 msgstr "標題"
 
+#: src/Models/StreamMetadata.vala:36
 msgid "Track Count"
 msgstr "軌道數目"
 
+#: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
 msgstr "軌道編號"
 
+#: src/Widgets/Display.vala:346
 msgid "Trending"
 msgstr "趨勢"
 
+#: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
 msgstr "過去 24 小時內的熱門電台"
 
-#, c-format
-msgid "Unable to open website: %s"
-msgstr "無法開啟網站：%s"
+#: src/Widgets/StationContextMenu.vala:145
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
 
+#: src/Widgets/StationContextMenu.vala:168
+msgid "Unstar this station"
+msgstr "取消收藏此電台"
+
+#: src/Widgets/StationContextMenu.vala:90
 msgid "Update Station from Online"
 msgstr "線上更新站"
 
+#: src/Widgets/StationContextMenu.vala:98
 msgid "Visit Website"
 msgstr "造訪網站"
 
+#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:225
 msgid "_Cancel"
 msgstr "取消(_C)"
 
+#: src/Widgets/PreferencesPopover.vala:226
 msgid "_Open"
 msgstr "打开(_O)"
 
+#: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "儲存檔案(_S)"
+
+#, c-format
+#~ msgid "%s Star this station"
+#~ msgstr "%s 星標此站"
+
+#, c-format
+#~ msgid "%s Unstar this station"
+#~ msgstr "%s 取消收藏此電台"
+
+#, c-format
+#~ msgid "Could not get random station: %s"
+#~ msgstr "無法取得隨機電台：%s"
+
+#, c-format
+#~ msgid "Error reading file: %s"
+#~ msgstr "讀取文件時發生錯誤：%s"
+
+#, c-format
+#~ msgid "Error: %s"
+#~ msgstr "錯誤: %s"
+
+#, c-format
+#~ msgid "Unable to open website: %s"
+#~ msgstr "無法開啟網站：%s"
 
 #, fuzzy
 #~ msgctxt "Countries"
@@ -1597,6 +1722,3 @@ msgstr "儲存檔案(_S)"
 
 #~ msgid "Starred by You :"
 #~ msgstr "由你主演："
-
-#~ msgid "Unstar this station"
-#~ msgstr "取消收藏此電台"

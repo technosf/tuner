@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-02 21:01+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-02-03 00:05-0800\n"
+"PO-Revision-Date: 2026-02-03 08:26+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ro/>\n"
 "Language: ro\n"
@@ -20,48 +20,51 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#, fuzzy, c-format
-msgid "%s Star this station"
-msgstr "%s Star this station"
-
-#, fuzzy, c-format
-msgid "%s Unstar this station"
-msgstr "%s Unstar this station"
-
+#: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
 msgstr "Despre"
 
+#: src/Models/StreamMetadata.vala:25
 msgid "Album"
 msgstr "Album"
 
+#: src/Models/StreamMetadata.vala:41
 #, fuzzy
 msgid "Application Name"
 msgstr "Application Name"
 
+#: src/Models/StreamMetadata.vala:24
 msgid "Artist"
 msgstr "Artist"
 
+#: src/Models/StreamMetadata.vala:33
 #, fuzzy
 msgid "Audio Codec"
 msgstr "Audio Codec"
 
+#: src/Widgets/PreferencesPopover.vala:51
 #, fuzzy
 msgid "Auto-play last station on startup"
 msgstr "Auto-play last station on startup"
 
+#: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
 msgstr "Rata de biți"
 
+#: src/Models/Station.vala:357
 msgid "Changes"
 msgstr "Schimbări"
 
+#: src/Models/StreamMetadata.vala:34
 #, fuzzy
 msgid "Channel Mode"
 msgstr "Channel Mode"
 
+#: src/Widgets/PreferencesPopover.vala:222
 msgid "Choose a file"
 msgstr "Alegeți un fișier"
 
+#: src/Widgets/Window.vala:69
 #, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
@@ -70,50 +73,63 @@ msgstr ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 
+#: src/Models/Station.vala:364
 msgid "Codec"
 msgstr "Codec"
 
+#: src/Models/StreamMetadata.vala:40
 #, fuzzy
 msgid "Container Format"
 msgstr "Container Format"
 
+#: src/Widgets/StationContextMenu.vala:104
 #, fuzzy
 msgid "Copy Stream-URI to clipboard"
 msgstr "Copy Stream-URI to clipboard"
 
-#, fuzzy, c-format
-msgid "Could not get random station: %s"
-msgstr "Could not get random station: %s"
+#: src/Widgets/Display.vala:247
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
+#: src/Widgets/PreferencesPopover.vala:67
 #, fuzzy
 msgid "Cycle through the metadata from the playing stream"
 msgstr "Cycle through the metadata from the playing stream"
 
+#: src/Widgets/PreferencesPopover.vala:35
 msgid "Dark mode"
 msgstr "Mod întunecat"
 
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
 #, fuzzy
 msgid "Data Provider"
 msgstr "Data Provider"
 
+#: src/Models/StreamMetadata.vala:44
 #, fuzzy
 msgid "Date Time"
 msgstr "Date Time"
 
+#: src/Widgets/PreferencesPopover.vala:77
 msgid "Default"
 msgstr "Implicit"
 
+#: src/Widgets/Display.vala:325
 msgid "Discover"
 msgstr "Descoperă"
 
+#: src/Widgets/Display.vala:329
 #, fuzzy
 msgid "Discover more stations"
 msgstr "Discover more stations"
 
+#: src/Widgets/PreferencesPopover.vala:26
 #, fuzzy
 msgid "Do not participate in Station voting"
 msgstr "Do not participate in Station voting"
 
+#: src/Widgets/Display.vala:559
 #, fuzzy, c-format
 msgid ""
 "Double click to shuffle through %1$u stations,\n"
@@ -122,40 +138,50 @@ msgstr ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 
+#: src/Models/StreamMetadata.vala:42
 #, fuzzy
 msgid "Encoder"
 msgstr "Encoder"
 
+#: src/Models/StreamMetadata.vala:43
 #, fuzzy
 msgid "Encoder Version"
 msgstr "Encoder Version"
 
+#: src/Widgets/Display.vala:104
 msgid "Eras"
 msgstr "Ere"
 
-#, fuzzy, c-format
-msgid "Error reading file: %s"
-msgstr "Error reading file: %s"
+#: src/Widgets/PreferencesPopover.vala:209
+#, fuzzy
+msgid "Error"
+msgstr "Error"
 
+#: src/Widgets/PreferencesPopover.vala:248
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
+
+#: src/Widgets/Window.vala:242
 #, fuzzy
 msgid "Error while trying to autoplay, aborting…"
 msgstr "Error while trying to autoplay, aborting…"
 
-#, c-format
-msgid "Error: %s"
-msgstr "Eroare: %s"
-
+#: src/Widgets/Display.vala:101
 msgid "Explore"
 msgstr "Explorare"
 
+#: src/Widgets/PreferencesPopover.vala:97
 #, fuzzy
 msgid "Export Starred Stations to Playlist"
 msgstr "Export Starred Stations to Playlist"
 
+#: src/Models/StreamMetadata.vala:31
 #, fuzzy
 msgid "Extended Comment"
 msgstr "Extended Comment"
 
+#: src/Widgets/PreferencesPopover.vala:72
 #, fuzzy
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
@@ -164,34 +190,43 @@ msgstr ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 
+#: src/Widgets/PreferencesPopover.vala:70
 #, fuzzy
 msgid "Faster cycling through stream info"
 msgstr "Faster cycling through stream info"
 
+#: src/Models/Station.vala:360
 #, fuzzy
 msgid "Favicon address"
 msgstr "Favicon address"
 
+#: src/Models/StreamMetadata.vala:27
 msgid "Genre"
 msgstr "Gen"
 
+#: src/Widgets/Display.vala:102
 msgid "Genres"
 msgstr "Genuri"
 
+#: src/Models/StreamMetadata.vala:46
 #, fuzzy
 msgid "Has CRC"
 msgstr "Has CRC"
 
+#: src/Widgets/HeaderBar.vala:212
 msgid "History"
 msgstr "Istorie"
 
+#: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
 msgstr "Pagina de pornire"
 
+#: src/Models/Station.vala:361
 #, fuzzy
 msgid "Homepage address"
 msgstr "Homepage address"
 
+#: src/Widgets/PreferencesPopover.vala:28
 #, fuzzy
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
@@ -200,6 +235,7 @@ msgstr ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 
+#: src/Widgets/PreferencesPopover.vala:53
 #, fuzzy
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
@@ -208,116 +244,149 @@ msgstr ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 
+#: src/Widgets/PreferencesPopover.vala:60
 #, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"If enabled, when Tuner starts it will open to the starred stations view"
 
+#: src/Models/StreamMetadata.vala:26
 msgid "Image"
 msgstr "Imagine"
 
+#: src/Widgets/PreferencesPopover.vala:106
 #, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Import Station UUIDs as Starred Stations"
 
+#: src/Widgets/Display.vala:557
 msgid "Jukebox"
 msgstr "Tonomat"
 
+#: src/Widgets/PreferencesPopover.vala:87
 msgid "Language"
 msgstr "Limba"
 
+#: src/Widgets/Display.vala:422
 #, fuzzy
 msgid "Latest Search"
 msgstr "Latest Search"
 
+#: src/Widgets/Display.vala:99
 msgid "Library"
 msgstr "Bibliotecă"
 
+#: src/Widgets/PreferencesPopover.vala:34
 msgid "Light mode"
 msgstr "Mod luminos"
 
+#: src/Models/StreamMetadata.vala:30
 msgid "Location"
 msgstr "Locaţie"
 
+#: src/Models/StreamMetadata.vala:39
 #, fuzzy
 msgid "Maximum Bitrate"
 msgstr "Maximum Bitrate"
 
+#: src/Models/StreamMetadata.vala:38
 #, fuzzy
 msgid "Minimum Bitrate"
 msgstr "Minimum Bitrate"
 
+#: src/Widgets/Display.vala:362
 #, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
 msgstr "Most listened to Stations in the last 24 hours"
 
+#: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
 msgstr "Nici s-a găsit nici o staţie"
 
+#: src/Models/StreamMetadata.vala:37
 #, fuzzy
 msgid "Nominal Bitrate"
 msgstr "Nominal Bitrate"
 
+#: src/Widgets/base/StationListBox.vala:146
 #, fuzzy
 msgid "Nothing here"
 msgstr "Nothing here"
 
+#: src/Widgets/PreferencesPopover.vala:58
 #, fuzzy
 msgid "Open to Starred Stations"
 msgstr "Open to Starred Stations"
 
+#: src/Models/StreamMetadata.vala:29
 msgid "Organization"
 msgstr "Organizație"
 
+#: src/Widgets/Window.vala:68
 msgid "Playing in background"
 msgstr "Redare în fundal"
 
+#: src/Widgets/base/StationListBox.vala:156
 #, fuzzy
 msgid "Please try a different search term."
 msgstr "Please try a different search term."
 
+#: src/Widgets/Display.vala:361
 msgid "Popular"
 msgstr "Popular"
 
+#: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
 msgstr "Preferințe"
 
+#: src/Models/StreamMetadata.vala:45
 #, fuzzy
 msgid "Private Data"
 msgstr "Private Data"
 
+#: src/Widgets/Display.vala:627
 #, fuzzy
 msgid "Remove this saved search"
 msgstr "Remove this saved search"
 
+#: src/Widgets/PreferencesPopover.vala:88
 #, fuzzy
 msgid "Requires restarting Tuner"
 msgstr "Requires restarting Tuner"
 
+#: src/Widgets/PreferencesPopover.vala:185
 msgid "Save File"
 msgstr "Salvează fișierul"
 
+#: src/Widgets/Display.vala:426
 #, fuzzy
 msgid "Save this search"
 msgstr "Save this search"
 
+#: src/Widgets/Display.vala:625
 msgid "Saved Search"
 msgstr "Căutare salvată"
 
+#: src/Widgets/Display.vala:100
 #, fuzzy
 msgid "Saved Searches"
 msgstr "Saved Searches"
 
+#: src/Widgets/Display.vala:423
 msgid "Search Results"
 msgstr "Rezultatele căutării"
 
+#: src/Widgets/Display.vala:98
 #, fuzzy
 msgid "Selections"
 msgstr "Selections"
 
+#: src/Widgets/PreferencesPopover.vala:65
 #, fuzzy
 msgid "Show stream info when playing"
 msgstr "Show stream info when playing"
 
+#: src/Widgets/base/StationListBox.vala:146
 #, fuzzy
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
@@ -326,101 +395,159 @@ msgstr ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 
+#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
 #, fuzzy
 msgid "Star this station"
 msgstr "Star this station"
 
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
 msgid "Starred by You"
 msgstr "Marcat cu stea de tine"
 
+#: src/Widgets/HeaderBar.vala:191
 msgid "Station Search"
 msgstr "Căutare stație"
 
+#: src/Widgets/StationContextMenu.vala:89
 #, fuzzy
 msgid "Station info updated Online - View changes"
 msgstr "Station info updated Online - View changes"
 
+#: src/Models/Station.vala:133
 #, fuzzy
 msgid "Station no longer in the index"
 msgstr "Station no longer in the index"
 
+#: src/Models/Station.vala:362
 #, fuzzy
 msgid "Station tags"
 msgstr "Station tags"
 
+#: src/Widgets/HeaderBar.vala:148
 msgid "Stations"
 msgstr "Stații"
 
+#: src/Widgets/Display.vala:326
 msgid "Stations to Discover"
 msgstr "Stații de Descoperit"
 
+#: src/Widgets/Window.vala:286
 #, fuzzy
 msgid "Stop Playback requested"
 msgstr "Stop Playback requested"
 
+#: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
 msgstr "Metadate flux"
 
+#: src/Models/Station.vala:359
 #, fuzzy
 msgid "Stream Resolved Url"
 msgstr "Stream Resolved Url"
 
+#: src/Models/Station.vala:358
 #, fuzzy
 msgid "Stream Url"
 msgstr "Stream Url"
 
+#: src/Widgets/Display.vala:103
 #, fuzzy
 msgid "Subgenres"
 msgstr "Subgenres"
 
+#: src/Widgets/PreferencesPopover.vala:33
 msgid "System"
 msgstr "Sistem"
 
+#: src/Widgets/HeaderBar.vala:148
 msgid "Tags"
 msgstr "Etichete"
 
+#: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
 msgstr "Discuții, Știri, Sport"
 
+#: src/Widgets/PreferencesPopover.vala:46
 msgid "Theme"
 msgstr "Temă"
 
+#: src/Models/StreamMetadata.vala:23
 msgid "Title"
 msgstr "Titlu"
 
+#: src/Models/StreamMetadata.vala:36
 #, fuzzy
 msgid "Track Count"
 msgstr "Track Count"
 
+#: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
 msgstr "Număr pistă"
 
+#: src/Widgets/Display.vala:346
 msgid "Trending"
 msgstr "În tendințe"
 
+#: src/Widgets/Display.vala:347
 #, fuzzy
 msgid "Trending Stations in the last 24 hours"
 msgstr "Trending Stations in the last 24 hours"
 
-#, fuzzy, c-format
-msgid "Unable to open website: %s"
-msgstr "Unable to open website: %s"
+#: src/Widgets/StationContextMenu.vala:145
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
 
+#: src/Widgets/StationContextMenu.vala:168
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#: src/Widgets/StationContextMenu.vala:90
 #, fuzzy
 msgid "Update Station from Online"
 msgstr "Update Station from Online"
 
+#: src/Widgets/StationContextMenu.vala:98
 msgid "Visit Website"
 msgstr "Vizitează site web"
 
+#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:225
 msgid "_Cancel"
 msgstr "_Anulare"
 
+#: src/Widgets/PreferencesPopover.vala:226
 msgid "_Open"
 msgstr "_Deschide"
 
+#: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "_Salvează"
+
+#, fuzzy, c-format
+#~ msgid "%s Star this station"
+#~ msgstr "%s Star this station"
+
+#, fuzzy, c-format
+#~ msgid "%s Unstar this station"
+#~ msgstr "%s Unstar this station"
+
+#, fuzzy, c-format
+#~ msgid "Could not get random station: %s"
+#~ msgstr "Could not get random station: %s"
+
+#, fuzzy, c-format
+#~ msgid "Error reading file: %s"
+#~ msgstr "Error reading file: %s"
+
+#, c-format
+#~ msgid "Error: %s"
+#~ msgstr "Eroare: %s"
+
+#, fuzzy, c-format
+#~ msgid "Unable to open website: %s"
+#~ msgstr "Unable to open website: %s"
 
 #, fuzzy
 #~ msgctxt "Countries"
@@ -1677,7 +1804,3 @@ msgstr "_Salvează"
 #, fuzzy
 #~ msgid "Starred by You :"
 #~ msgstr "Starred by You :"
-
-#, fuzzy
-#~ msgid "Unstar this station"
-#~ msgstr "Unstar this station"

@@ -4,13 +4,14 @@
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 # LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# technosf <535060+technosf@users.noreply.github.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-02 09:02+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"POT-Creation-Date: 2026-02-03 00:05-0800\n"
+"PO-Revision-Date: 2026-02-03 08:26+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Spanish (Latin America) <https://hosted.weblate.org/projects/"
 "tuner/tuner-ui/es_419/>\n"
 "Language: es_419\n"
@@ -20,17 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#: src/Widgets/StationContextMenu.vala:167
-#, c-format
-msgid "%s Star this station"
-msgstr "%s Estrella esta emisora"
-
-#: src/Widgets/StationContextMenu.vala:166
-#, c-format
-msgid "%s Unstar this station"
-msgstr "%s Unstar esta estación"
-
-#: src/Widgets/PreferencesPopover.vala:20
+#: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
 msgstr "Acerca de"
 
@@ -50,7 +41,7 @@ msgstr "Artista"
 msgid "Audio Codec"
 msgstr "Audio Codec"
 
-#: src/Widgets/PreferencesPopover.vala:50
+#: src/Widgets/PreferencesPopover.vala:51
 msgid "Auto-play last station on startup"
 msgstr "Auto-play última estación en startup"
 
@@ -66,7 +57,7 @@ msgstr "Cambios"
 msgid "Channel Mode"
 msgstr "Modo de canal"
 
-#: src/Widgets/PreferencesPopover.vala:221
+#: src/Widgets/PreferencesPopover.vala:222
 msgid "Choose a file"
 msgstr "Elija un archivo"
 
@@ -86,20 +77,20 @@ msgstr "Códec"
 msgid "Container Format"
 msgstr "Formato de envase"
 
-#: src/Widgets/StationContextMenu.vala:102
+#: src/Widgets/StationContextMenu.vala:104
 msgid "Copy Stream-URI to clipboard"
 msgstr "Corriente de copia-URI a portapapeles"
 
 #: src/Widgets/Display.vala:247
-#, c-format
-msgid "Could not get random station: %s"
-msgstr "No podía conseguir la estación al azar: %s"
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Widgets/PreferencesPopover.vala:66
+#: src/Widgets/PreferencesPopover.vala:67
 msgid "Cycle through the metadata from the playing stream"
 msgstr "Ciclo a través del metadata de la corriente de tocar"
 
-#: src/Widgets/PreferencesPopover.vala:34
+#: src/Widgets/PreferencesPopover.vala:35
 msgid "Dark mode"
 msgstr "Modo oscuro"
 
@@ -111,7 +102,7 @@ msgstr "Proveedor de dato"
 msgid "Date Time"
 msgstr "Fecha y hora"
 
-#: src/Widgets/PreferencesPopover.vala:76
+#: src/Widgets/PreferencesPopover.vala:77
 msgid "Default"
 msgstr "Por defecto"
 
@@ -123,7 +114,7 @@ msgstr "Descubre"
 msgid "Discover more stations"
 msgstr "Descubre más estaciones"
 
-#: src/Widgets/PreferencesPopover.vala:25
+#: src/Widgets/PreferencesPopover.vala:26
 msgid "Do not participate in Station voting"
 msgstr "No participe en la votación de la Estación"
 
@@ -148,25 +139,25 @@ msgstr "Versión del codificador"
 msgid "Eras"
 msgstr "Eras"
 
-#: src/Widgets/PreferencesPopover.vala:247
-#, c-format
-msgid "Error reading file: %s"
-msgstr "Archivo de lectura de errores: %s"
+#: src/Widgets/PreferencesPopover.vala:209
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:248
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
 msgstr "Error al intentar autojugar, abortar.."
 
-#: src/Widgets/PreferencesPopover.vala:208
-#, c-format
-msgid "Error: %s"
-msgstr "Error: %s"
-
 #: src/Widgets/Display.vala:101
 msgid "Explore"
 msgstr "Explorar"
 
-#: src/Widgets/PreferencesPopover.vala:96
+#: src/Widgets/PreferencesPopover.vala:97
 msgid "Export Starred Stations to Playlist"
 msgstr "Exportar Estaciones Starred a Playlist"
 
@@ -174,7 +165,7 @@ msgstr "Exportar Estaciones Starred a Playlist"
 msgid "Extended Comment"
 msgstr "Comentario extendido"
 
-#: src/Widgets/PreferencesPopover.vala:71
+#: src/Widgets/PreferencesPopover.vala:72
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
@@ -182,7 +173,7 @@ msgstr ""
 "Ciclo rápido a través del metadata de la corriente de tocar si corriente de "
 "espectáculo info está habilitado"
 
-#: src/Widgets/PreferencesPopover.vala:69
+#: src/Widgets/PreferencesPopover.vala:70
 msgid "Faster cycling through stream info"
 msgstr "Más rápido ciclismo a través de la secuencia info"
 
@@ -214,7 +205,7 @@ msgstr "Página de inicio"
 msgid "Homepage address"
 msgstr "Dirección de la página principal"
 
-#: src/Widgets/PreferencesPopover.vala:27
+#: src/Widgets/PreferencesPopover.vala:28
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
@@ -223,7 +214,7 @@ msgstr ""
 "utilizarán para calcular el voto popular del índice de la estación, ni las "
 "estaciones populares y de tendencia"
 
-#: src/Widgets/PreferencesPopover.vala:52
+#: src/Widgets/PreferencesPopover.vala:53
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
@@ -231,7 +222,7 @@ msgstr ""
 "Si está habilitado, cuando Tuner empiece a jugar automáticamente la última "
 "estación jugada"
 
-#: src/Widgets/PreferencesPopover.vala:59
+#: src/Widgets/PreferencesPopover.vala:60
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
 "Si está habilitado, cuando Tuner comience se abrirá a la vista de las "
@@ -241,7 +232,7 @@ msgstr ""
 msgid "Image"
 msgstr "Imagen"
 
-#: src/Widgets/PreferencesPopover.vala:105
+#: src/Widgets/PreferencesPopover.vala:106
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Import Station UUIDs as Starred Stations"
 
@@ -249,7 +240,7 @@ msgstr "Import Station UUIDs as Starred Stations"
 msgid "Jukebox"
 msgstr "Rocola"
 
-#: src/Widgets/PreferencesPopover.vala:86
+#: src/Widgets/PreferencesPopover.vala:87
 msgid "Language"
 msgstr "Idioma"
 
@@ -261,7 +252,7 @@ msgstr "Búsqueda más tardía"
 msgid "Library"
 msgstr "Librería"
 
-#: src/Widgets/PreferencesPopover.vala:33
+#: src/Widgets/PreferencesPopover.vala:34
 msgid "Light mode"
 msgstr "Modo ligero"
 
@@ -293,7 +284,7 @@ msgstr "Nominal Bitrate"
 msgid "Nothing here"
 msgstr "Nada aquí"
 
-#: src/Widgets/PreferencesPopover.vala:57
+#: src/Widgets/PreferencesPopover.vala:58
 msgid "Open to Starred Stations"
 msgstr "Abierto a Estaciones Starred"
 
@@ -325,11 +316,11 @@ msgstr "Dato privado"
 msgid "Remove this saved search"
 msgstr "Eliminar esta búsqueda guardada"
 
-#: src/Widgets/PreferencesPopover.vala:87
+#: src/Widgets/PreferencesPopover.vala:88
 msgid "Requires restarting Tuner"
 msgstr "Requiere reiniciar Tuner"
 
-#: src/Widgets/PreferencesPopover.vala:184
+#: src/Widgets/PreferencesPopover.vala:185
 msgid "Save File"
 msgstr "Guardar archivo"
 
@@ -353,7 +344,7 @@ msgstr "Resultados de la búsqueda"
 msgid "Selections"
 msgstr "Selecciones"
 
-#: src/Widgets/PreferencesPopover.vala:64
+#: src/Widgets/PreferencesPopover.vala:65
 msgid "Show stream info when playing"
 msgstr "Mostrar información de flujo al jugar"
 
@@ -365,7 +356,7 @@ msgstr ""
 "Algo salió mal cargando datos de las estaciones de radio del proveedor de la "
 "estación. Por favor, intente de nuevo más tarde."
 
-#: src/Widgets/HeaderBar.vala:170
+#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
 msgid "Star this station"
 msgstr "Estrella esta estación"
 
@@ -377,7 +368,7 @@ msgstr "Protagonizado por ti"
 msgid "Station Search"
 msgstr "Búsqueda de estaciones"
 
-#: src/Widgets/StationContextMenu.vala:87
+#: src/Widgets/StationContextMenu.vala:89
 msgid "Station info updated Online - View changes"
 msgstr "Información actualizada Online - Ver cambios"
 
@@ -417,7 +408,7 @@ msgstr "Corriente Url"
 msgid "Subgenres"
 msgstr "Subgenres"
 
-#: src/Widgets/PreferencesPopover.vala:32
+#: src/Widgets/PreferencesPopover.vala:33
 msgid "System"
 msgstr "Sistema"
 
@@ -429,7 +420,7 @@ msgstr "Etiquetas"
 msgid "Talk, News, Sport"
 msgstr "Charla, Noticioso, Deporte"
 
-#: src/Widgets/PreferencesPopover.vala:45
+#: src/Widgets/PreferencesPopover.vala:46
 msgid "Theme"
 msgstr "Tema"
 
@@ -453,28 +444,57 @@ msgstr "Tendencia"
 msgid "Trending Stations in the last 24 hours"
 msgstr "Estaciones de Tendencia en las últimas 24 horas"
 
-#: src/Widgets/StationContextMenu.vala:143
-#, c-format
-msgid "Unable to open website: %s"
-msgstr "Incapaz de abrir sitio web: %s"
+#: src/Widgets/StationContextMenu.vala:145
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
 
-#: src/Widgets/StationContextMenu.vala:88
+#: src/Widgets/StationContextMenu.vala:168
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#: src/Widgets/StationContextMenu.vala:90
 msgid "Update Station from Online"
 msgstr "Estación de actualización desde línea"
 
-#: src/Widgets/StationContextMenu.vala:96
+#: src/Widgets/StationContextMenu.vala:98
 msgid "Visit Website"
 msgstr "Sitio web de visita"
 
-#: src/Widgets/PreferencesPopover.vala:187
-#: src/Widgets/PreferencesPopover.vala:224
+#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:225
 msgid "_Cancel"
 msgstr "_Cancelar"
 
-#: src/Widgets/PreferencesPopover.vala:225
+#: src/Widgets/PreferencesPopover.vala:226
 msgid "_Open"
 msgstr "_Abierto"
 
-#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "_Salva"
+
+#, c-format
+#~ msgid "%s Star this station"
+#~ msgstr "%s Estrella esta emisora"
+
+#, c-format
+#~ msgid "%s Unstar this station"
+#~ msgstr "%s Unstar esta estación"
+
+#, c-format
+#~ msgid "Could not get random station: %s"
+#~ msgstr "No podía conseguir la estación al azar: %s"
+
+#, c-format
+#~ msgid "Error reading file: %s"
+#~ msgstr "Archivo de lectura de errores: %s"
+
+#, c-format
+#~ msgid "Error: %s"
+#~ msgstr "Error: %s"
+
+#, c-format
+#~ msgid "Unable to open website: %s"
+#~ msgstr "Incapaz de abrir sitio web: %s"
