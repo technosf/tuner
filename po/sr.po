@@ -3,14 +3,14 @@
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
 # Apertium APy <noreply-mt-apertium-apy@weblate.org>, 2026.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-03 06:10+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"POT-Creation-Date: 2026-02-03 00:05-0800\n"
+"PO-Revision-Date: 2026-02-03 08:26+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Serbian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "sr/>\n"
 "Language: sr\n"
@@ -21,17 +21,7 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#: src/Widgets/StationContextMenu.vala:167
-#, c-format
-msgid "%s Star this station"
-msgstr "[@X0@X] #Zvijezda @this #postaja"
-
-#: src/Widgets/StationContextMenu.vala:166
-#, c-format
-msgid "%s Unstar this station"
-msgstr "[@X0@X] Unstar @this #postaja"
-
-#: src/Widgets/PreferencesPopover.vala:20
+#: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
 msgstr "Opis"
 
@@ -51,7 +41,7 @@ msgstr "Уметник"
 msgid "Audio Codec"
 msgstr "@Audio"
 
-#: src/Widgets/PreferencesPopover.vala:50
+#: src/Widgets/PreferencesPopover.vala:51
 msgid "Auto-play last station on startup"
 msgstr "#Automobil-#predstava #posljednji #postaja @on startup"
 
@@ -67,7 +57,7 @@ msgstr "Промене"
 msgid "Channel Mode"
 msgstr "#Kanal"
 
-#: src/Widgets/PreferencesPopover.vala:221
+#: src/Widgets/PreferencesPopover.vala:222
 msgid "Choose a file"
 msgstr "Изаберите датотеку"
 
@@ -87,20 +77,20 @@ msgstr "Кодек"
 msgid "Container Format"
 msgstr "#Spremnica"
 
-#: src/Widgets/StationContextMenu.vala:102
+#: src/Widgets/StationContextMenu.vala:104
 msgid "Copy Stream-URI to clipboard"
 msgstr "#Kopija #Mlaz-@URI #na clipboard"
 
 #: src/Widgets/Display.vala:247
-#, c-format
-msgid "Could not get random station: %s"
-msgstr "#Moći ne #dobiti @random #postaja: [@X30@X]"
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Widgets/PreferencesPopover.vala:66
+#: src/Widgets/PreferencesPopover.vala:67
 msgid "Cycle through the metadata from the playing stream"
 msgstr "#Krug #kroz @the metadata @from @the #igrati #mlaz"
 
-#: src/Widgets/PreferencesPopover.vala:34
+#: src/Widgets/PreferencesPopover.vala:35
 msgid "Dark mode"
 msgstr "Тамна тема"
 
@@ -112,7 +102,7 @@ msgstr "#Podatak"
 msgid "Date Time"
 msgstr "#Datum"
 
-#: src/Widgets/PreferencesPopover.vala:76
+#: src/Widgets/PreferencesPopover.vala:77
 msgid "Default"
 msgstr "Врати на подразумевана подешавања"
 
@@ -124,7 +114,7 @@ msgstr "Откриј"
 msgid "Discover more stations"
 msgstr "@Discover više #postaja"
 
-#: src/Widgets/PreferencesPopover.vala:25
+#: src/Widgets/PreferencesPopover.vala:26
 msgid "Do not participate in Station voting"
 msgstr "@Do ne #sudjelovati @in #Postaja #birati"
 
@@ -149,25 +139,25 @@ msgstr "Encoder"
 msgid "Eras"
 msgstr "#Doba"
 
-#: src/Widgets/PreferencesPopover.vala:247
-#, c-format
-msgid "Error reading file: %s"
-msgstr "#Zabuna #čitanje #dosje: [@X20@X]"
+#: src/Widgets/PreferencesPopover.vala:209
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:248
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
 msgstr "#Zabuna @while #kušati #na autoplay, #prekinuti…"
 
-#: src/Widgets/PreferencesPopover.vala:208
-#, c-format
-msgid "Error: %s"
-msgstr "Грешка: %s"
-
 #: src/Widgets/Display.vala:101
 msgid "Explore"
 msgstr "Истражи"
 
-#: src/Widgets/PreferencesPopover.vala:96
+#: src/Widgets/PreferencesPopover.vala:97
 msgid "Export Starred Stations to Playlist"
 msgstr "#Izvoz Starred #Postaja #na Playlist"
 
@@ -175,7 +165,7 @@ msgstr "#Izvoz Starred #Postaja #na Playlist"
 msgid "Extended Comment"
 msgstr "#Produžiti"
 
-#: src/Widgets/PreferencesPopover.vala:71
+#: src/Widgets/PreferencesPopover.vala:72
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
@@ -183,7 +173,7 @@ msgstr ""
 "#Post #krug #kroz @the metadata @from @the #igrati #mlaz li #sajam #mlaz "
 "@info @i #omogućivati"
 
-#: src/Widgets/PreferencesPopover.vala:69
+#: src/Widgets/PreferencesPopover.vala:70
 msgid "Faster cycling through stream info"
 msgstr "@Faster @cycling #kroz #mlaz @info"
 
@@ -215,7 +205,7 @@ msgstr "Почетна страница"
 msgid "Homepage address"
 msgstr "Homepage #obraćanje"
 
-#: src/Widgets/PreferencesPopover.vala:27
+#: src/Widgets/PreferencesPopover.vala:28
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
@@ -224,7 +214,7 @@ msgstr ""
 "#na #izračunati @the #Postaja @index #popularnost #glas, ni @the #izniman a "
 "trending #postaja"
 
-#: src/Widgets/PreferencesPopover.vala:52
+#: src/Widgets/PreferencesPopover.vala:53
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
@@ -232,7 +222,7 @@ msgstr ""
 "Li #omogućivati, kada Tuner #početak #free #volja @automatically #početak "
 "#na #predstava @the #posljednji #igrati #postaja"
 
-#: src/Widgets/PreferencesPopover.vala:59
+#: src/Widgets/PreferencesPopover.vala:60
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
 "Li #omogućivati, kada Tuner #početak #free #volja #javan #na @the starred "
@@ -242,7 +232,7 @@ msgstr ""
 msgid "Image"
 msgstr "Слика"
 
-#: src/Widgets/PreferencesPopover.vala:105
+#: src/Widgets/PreferencesPopover.vala:106
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "#Uvoz #Postaja UUIDs @as Starred"
 
@@ -250,7 +240,7 @@ msgstr "#Uvoz #Postaja UUIDs @as Starred"
 msgid "Jukebox"
 msgstr "Jukebox"
 
-#: src/Widgets/PreferencesPopover.vala:86
+#: src/Widgets/PreferencesPopover.vala:87
 msgid "Language"
 msgstr "Језик"
 
@@ -262,7 +252,7 @@ msgstr "#Nov"
 msgid "Library"
 msgstr "Библиотека"
 
-#: src/Widgets/PreferencesPopover.vala:33
+#: src/Widgets/PreferencesPopover.vala:34
 msgid "Light mode"
 msgstr "#Svjetlo @mode"
 
@@ -294,7 +284,7 @@ msgstr "@Nominal"
 msgid "Nothing here"
 msgstr "#Ništica tuda"
 
-#: src/Widgets/PreferencesPopover.vala:57
+#: src/Widgets/PreferencesPopover.vala:58
 msgid "Open to Starred Stations"
 msgstr "#Javan #na Starred"
 
@@ -326,11 +316,11 @@ msgstr "#Privatan"
 msgid "Remove this saved search"
 msgstr "#Brisati @this #spremati #potraga"
 
-#: src/Widgets/PreferencesPopover.vala:87
+#: src/Widgets/PreferencesPopover.vala:88
 msgid "Requires restarting Tuner"
 msgstr "@Require #restartovanje Tuner"
 
-#: src/Widgets/PreferencesPopover.vala:184
+#: src/Widgets/PreferencesPopover.vala:185
 msgid "Save File"
 msgstr "Sačuvaj Datoteku"
 
@@ -354,7 +344,7 @@ msgstr "Резултати претраге"
 msgid "Selections"
 msgstr "Избори"
 
-#: src/Widgets/PreferencesPopover.vala:64
+#: src/Widgets/PreferencesPopover.vala:65
 msgid "Show stream info when playing"
 msgstr "#Sajam #mlaz @info kada #igrati"
 
@@ -366,7 +356,7 @@ msgstr ""
 "#Nešto #ići #zabluda @loading #radio #postaja #podatak @from #postaja "
 "@provider. @Please #pokušaj opet kasnije#."
 
-#: src/Widgets/HeaderBar.vala:170
+#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
 msgid "Star this station"
 msgstr "#Zvijezda @this #postaja"
 
@@ -378,7 +368,7 @@ msgstr "Starred @by #Free"
 msgid "Station Search"
 msgstr "#Postaja"
 
-#: src/Widgets/StationContextMenu.vala:87
+#: src/Widgets/StationContextMenu.vala:89
 msgid "Station info updated Online - View changes"
 msgstr "#Postaja @info #poboljšati Online - #Stav #mijena"
 
@@ -418,7 +408,7 @@ msgstr "#Mlaz"
 msgid "Subgenres"
 msgstr "Subgenres"
 
-#: src/Widgets/PreferencesPopover.vala:32
+#: src/Widgets/PreferencesPopover.vala:33
 msgid "System"
 msgstr "Систем"
 
@@ -430,7 +420,7 @@ msgstr "Ознаке"
 msgid "Talk, News, Sport"
 msgstr "#Razgovor, #Novost, #Sport"
 
-#: src/Widgets/PreferencesPopover.vala:45
+#: src/Widgets/PreferencesPopover.vala:46
 msgid "Theme"
 msgstr "Тема"
 
@@ -454,28 +444,57 @@ msgstr "У порасту"
 msgid "Trending Stations in the last 24 hours"
 msgstr "Trending #Postaja @in @the #posljednji #24 #sat"
 
-#: src/Widgets/StationContextMenu.vala:143
-#, c-format
-msgid "Unable to open website: %s"
-msgstr "@Unable #na #javan #stranica: [@X24@X]"
+#: src/Widgets/StationContextMenu.vala:145
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
 
-#: src/Widgets/StationContextMenu.vala:88
+#: src/Widgets/StationContextMenu.vala:168
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#: src/Widgets/StationContextMenu.vala:90
 msgid "Update Station from Online"
 msgstr "#Poboljšati #Postaja @from Online"
 
-#: src/Widgets/StationContextMenu.vala:96
+#: src/Widgets/StationContextMenu.vala:98
 msgid "Visit Website"
 msgstr "#Posjet"
 
-#: src/Widgets/PreferencesPopover.vala:187
-#: src/Widgets/PreferencesPopover.vala:224
+#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:225
 msgid "_Cancel"
 msgstr "_Откажи"
 
-#: src/Widgets/PreferencesPopover.vala:225
+#: src/Widgets/PreferencesPopover.vala:226
 msgid "_Open"
 msgstr "_Отвори"
 
-#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "_Сачувај"
+
+#, c-format
+#~ msgid "%s Star this station"
+#~ msgstr "[@X0@X] #Zvijezda @this #postaja"
+
+#, c-format
+#~ msgid "%s Unstar this station"
+#~ msgstr "[@X0@X] Unstar @this #postaja"
+
+#, c-format
+#~ msgid "Could not get random station: %s"
+#~ msgstr "#Moći ne #dobiti @random #postaja: [@X30@X]"
+
+#, c-format
+#~ msgid "Error reading file: %s"
+#~ msgstr "#Zabuna #čitanje #dosje: [@X20@X]"
+
+#, c-format
+#~ msgid "Error: %s"
+#~ msgstr "Грешка: %s"
+
+#, c-format
+#~ msgid "Unable to open website: %s"
+#~ msgstr "@Unable #na #javan #stranica: [@X24@X]"

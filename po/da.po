@@ -3,13 +3,14 @@
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 # LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-03 01:24+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-02-03 00:05-0800\n"
+"PO-Revision-Date: 2026-02-03 08:26+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "da/>\n"
 "Language: da\n"
@@ -19,17 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#: src/Widgets/StationContextMenu.vala:167
-#, c-format
-msgid "%s Star this station"
-msgstr "%s Star denne station"
-
-#: src/Widgets/StationContextMenu.vala:166
-#, c-format
-msgid "%s Unstar this station"
-msgstr "%s Unstar denne station"
-
-#: src/Widgets/PreferencesPopover.vala:20
+#: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
 msgstr "Om"
 
@@ -49,7 +40,7 @@ msgstr "Kunstner"
 msgid "Audio Codec"
 msgstr "Audio Codec"
 
-#: src/Widgets/PreferencesPopover.vala:50
+#: src/Widgets/PreferencesPopover.vala:51
 msgid "Auto-play last station on startup"
 msgstr "Auto-play sidste station på opstart"
 
@@ -65,7 +56,7 @@ msgstr "Ændringer"
 msgid "Channel Mode"
 msgstr "Kanaltilstand"
 
-#: src/Widgets/PreferencesPopover.vala:221
+#: src/Widgets/PreferencesPopover.vala:222
 msgid "Choose a file"
 msgstr "Vælg en fil"
 
@@ -85,20 +76,20 @@ msgstr "codec"
 msgid "Container Format"
 msgstr "Container format"
 
-#: src/Widgets/StationContextMenu.vala:102
+#: src/Widgets/StationContextMenu.vala:104
 msgid "Copy Stream-URI to clipboard"
 msgstr "Kopier Stream-URI til udklipsholder"
 
 #: src/Widgets/Display.vala:247
-#, c-format
-msgid "Could not get random station: %s"
-msgstr "Kan ikke komme tilfældig station: %s"
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Widgets/PreferencesPopover.vala:66
+#: src/Widgets/PreferencesPopover.vala:67
 msgid "Cycle through the metadata from the playing stream"
 msgstr "Cykle gennem metadata fra spillestrømmen"
 
-#: src/Widgets/PreferencesPopover.vala:34
+#: src/Widgets/PreferencesPopover.vala:35
 msgid "Dark mode"
 msgstr "Mørk tilstand"
 
@@ -110,7 +101,7 @@ msgstr "Dataudbyder"
 msgid "Date Time"
 msgstr "Dato Tid"
 
-#: src/Widgets/PreferencesPopover.vala:76
+#: src/Widgets/PreferencesPopover.vala:77
 msgid "Default"
 msgstr "Standard"
 
@@ -122,7 +113,7 @@ msgstr "Opdag"
 msgid "Discover more stations"
 msgstr "Opdag flere stationer"
 
-#: src/Widgets/PreferencesPopover.vala:25
+#: src/Widgets/PreferencesPopover.vala:26
 msgid "Do not participate in Station voting"
 msgstr "Deltag ikke i Stationafstemning"
 
@@ -147,25 +138,25 @@ msgstr "Encoderversion"
 msgid "Eras"
 msgstr "Æraer"
 
-#: src/Widgets/PreferencesPopover.vala:247
-#, c-format
-msgid "Error reading file: %s"
-msgstr "Fejl ved indlæsning af fil: %s"
+#: src/Widgets/PreferencesPopover.vala:209
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:248
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
 msgstr "Fejl, mens du forsøger at afspille, afbryde…"
 
-#: src/Widgets/PreferencesPopover.vala:208
-#, c-format
-msgid "Error: %s"
-msgstr "Fejl: %s"
-
 #: src/Widgets/Display.vala:101
 msgid "Explore"
 msgstr "Udforsk"
 
-#: src/Widgets/PreferencesPopover.vala:96
+#: src/Widgets/PreferencesPopover.vala:97
 msgid "Export Starred Stations to Playlist"
 msgstr "Eksport af stjerner til Playlist"
 
@@ -173,7 +164,7 @@ msgstr "Eksport af stjerner til Playlist"
 msgid "Extended Comment"
 msgstr "Udvidet kommentar"
 
-#: src/Widgets/PreferencesPopover.vala:71
+#: src/Widgets/PreferencesPopover.vala:72
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
@@ -181,7 +172,7 @@ msgstr ""
 "Hurtig cyklus gennem metadata fra spille stream, hvis show stream info er "
 "aktiveret"
 
-#: src/Widgets/PreferencesPopover.vala:69
+#: src/Widgets/PreferencesPopover.vala:70
 msgid "Faster cycling through stream info"
 msgstr "Hurtigere cykling gennem stream info"
 
@@ -213,7 +204,7 @@ msgstr "Hjemmeside"
 msgid "Homepage address"
 msgstr "Hjem adresse"
 
-#: src/Widgets/PreferencesPopover.vala:27
+#: src/Widgets/PreferencesPopover.vala:28
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
@@ -222,7 +213,7 @@ msgstr ""
 "brugt til at beregne Stationindeks popularitetsstemmen eller de populære og "
 "trendstationer"
 
-#: src/Widgets/PreferencesPopover.vala:52
+#: src/Widgets/PreferencesPopover.vala:53
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
@@ -230,7 +221,7 @@ msgstr ""
 "Hvis det er aktiveret, begynder Tuner automatisk at spille den sidste "
 "spillede station"
 
-#: src/Widgets/PreferencesPopover.vala:59
+#: src/Widgets/PreferencesPopover.vala:60
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
 "Hvis det er aktiveret, når Tuner starter det vil åbne for de stjernede "
@@ -240,7 +231,7 @@ msgstr ""
 msgid "Image"
 msgstr "Billede"
 
-#: src/Widgets/PreferencesPopover.vala:105
+#: src/Widgets/PreferencesPopover.vala:106
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Import Station UUIDs som Starred stationer"
 
@@ -248,7 +239,7 @@ msgstr "Import Station UUIDs som Starred stationer"
 msgid "Jukebox"
 msgstr "Jukeboks"
 
-#: src/Widgets/PreferencesPopover.vala:86
+#: src/Widgets/PreferencesPopover.vala:87
 msgid "Language"
 msgstr "Sprog"
 
@@ -260,7 +251,7 @@ msgstr "Seneste søgning"
 msgid "Library"
 msgstr "Bibliotek"
 
-#: src/Widgets/PreferencesPopover.vala:33
+#: src/Widgets/PreferencesPopover.vala:34
 msgid "Light mode"
 msgstr "Lys tilstand"
 
@@ -292,7 +283,7 @@ msgstr "Nominel bitrate"
 msgid "Nothing here"
 msgstr "Intet her"
 
-#: src/Widgets/PreferencesPopover.vala:57
+#: src/Widgets/PreferencesPopover.vala:58
 msgid "Open to Starred Stations"
 msgstr "Åbn til Starred stationer"
 
@@ -324,11 +315,11 @@ msgstr "Privat data"
 msgid "Remove this saved search"
 msgstr "Fjern denne gemte søgning"
 
-#: src/Widgets/PreferencesPopover.vala:87
+#: src/Widgets/PreferencesPopover.vala:88
 msgid "Requires restarting Tuner"
 msgstr "Kræver genstart af Tuner"
 
-#: src/Widgets/PreferencesPopover.vala:184
+#: src/Widgets/PreferencesPopover.vala:185
 msgid "Save File"
 msgstr "Gem fil"
 
@@ -352,7 +343,7 @@ msgstr "Søgeresultater"
 msgid "Selections"
 msgstr "Udvælgelser"
 
-#: src/Widgets/PreferencesPopover.vala:64
+#: src/Widgets/PreferencesPopover.vala:65
 msgid "Show stream info when playing"
 msgstr "Vis stream info, når du spiller"
 
@@ -364,7 +355,7 @@ msgstr ""
 "Noget gik forkert indlæsning af radiostationer data fra station udbyder. "
 "Prøv igen senere."
 
-#: src/Widgets/HeaderBar.vala:170
+#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
 msgid "Star this station"
 msgstr "Stjerne denne station"
 
@@ -376,7 +367,7 @@ msgstr "Starred af dig"
 msgid "Station Search"
 msgstr "Station Søg"
 
-#: src/Widgets/StationContextMenu.vala:87
+#: src/Widgets/StationContextMenu.vala:89
 msgid "Station info updated Online - View changes"
 msgstr "Station info opdateret Online - Se ændringer"
 
@@ -416,7 +407,7 @@ msgstr "Stream-URL"
 msgid "Subgenres"
 msgstr "Subgenres"
 
-#: src/Widgets/PreferencesPopover.vala:32
+#: src/Widgets/PreferencesPopover.vala:33
 msgid "System"
 msgstr "System"
 
@@ -428,7 +419,7 @@ msgstr "Tags"
 msgid "Talk, News, Sport"
 msgstr "Nyheder, Sport"
 
-#: src/Widgets/PreferencesPopover.vala:45
+#: src/Widgets/PreferencesPopover.vala:46
 msgid "Theme"
 msgstr "Theme"
 
@@ -452,28 +443,57 @@ msgstr "Populært"
 msgid "Trending Stations in the last 24 hours"
 msgstr "Trending stationer i de sidste 24 timer"
 
-#: src/Widgets/StationContextMenu.vala:143
-#, c-format
-msgid "Unable to open website: %s"
-msgstr "Kan ikke åbne hjemmeside: %s"
+#: src/Widgets/StationContextMenu.vala:145
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
 
-#: src/Widgets/StationContextMenu.vala:88
+#: src/Widgets/StationContextMenu.vala:168
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#: src/Widgets/StationContextMenu.vala:90
 msgid "Update Station from Online"
 msgstr "Opdater Station fra Online"
 
-#: src/Widgets/StationContextMenu.vala:96
+#: src/Widgets/StationContextMenu.vala:98
 msgid "Visit Website"
 msgstr "Besøg Hjemmeside"
 
-#: src/Widgets/PreferencesPopover.vala:187
-#: src/Widgets/PreferencesPopover.vala:224
+#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:225
 msgid "_Cancel"
 msgstr "_Annuller"
 
-#: src/Widgets/PreferencesPopover.vala:225
+#: src/Widgets/PreferencesPopover.vala:226
 msgid "_Open"
 msgstr "_Åbn"
 
-#: src/Widgets/PreferencesPopover.vala:188
+#: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "_Gem"
+
+#, c-format
+#~ msgid "%s Star this station"
+#~ msgstr "%s Star denne station"
+
+#, c-format
+#~ msgid "%s Unstar this station"
+#~ msgstr "%s Unstar denne station"
+
+#, c-format
+#~ msgid "Could not get random station: %s"
+#~ msgstr "Kan ikke komme tilfældig station: %s"
+
+#, c-format
+#~ msgid "Error reading file: %s"
+#~ msgstr "Fejl ved indlæsning af fil: %s"
+
+#, c-format
+#~ msgid "Error: %s"
+#~ msgstr "Fejl: %s"
+
+#, c-format
+#~ msgid "Unable to open website: %s"
+#~ msgstr "Kan ikke åbne hjemmeside: %s"
