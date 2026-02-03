@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-02-03 00:05-0800\n"
-"PO-Revision-Date: 2026-02-03 08:26+0000\n"
+"POT-Creation-Date: 2026-02-03 01:06-0800\n"
+"PO-Revision-Date: 2026-02-03 09:17+0000\n"
 "Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "fr/>\n"
@@ -120,13 +120,9 @@ msgid "Do not participate in Station voting"
 msgstr "Ne pas participer au vote de station"
 
 #: src/Widgets/Display.vala:559
-#, c-format
-msgid ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
-msgstr ""
-"Double-cliquer pour parcourir %1$u stations,\n"
-"une, toutes les dix minutes, pendant %2$u jours"
+#, c-format, fuzzy
+msgid "Double click to shuffle through %1$u stations"
+msgstr "Double click to shuffle through %1$u stations"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
@@ -474,6 +470,19 @@ msgstr "_Ouvrir"
 #: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "_Sauvegarder"
+
+#: src/Widgets/Display.vala:560
+#, fuzzy
+msgid "one, every ten minutes, for %2$u days"
+msgstr "one, every ten minutes, for %2$u days"
+
+#, c-format
+#~ msgid ""
+#~ "Double click to shuffle through %1$u stations,\n"
+#~ "one, every ten minutes, for %2$u days"
+#~ msgstr ""
+#~ "Double-cliquer pour parcourir %1$u stations,\n"
+#~ "une, toutes les dix minutes, pendant %2$u jours"
 
 #, c-format
 #~ msgid "%s Star this station"
