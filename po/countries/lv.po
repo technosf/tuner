@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: countries\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-01 00:34-0800\n"
+"POT-Creation-Date: 2026-02-02 19:46-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -1019,6 +1019,22 @@ msgid "Kosovo"
 msgstr ""
 
 msgctxt "Languages"
+msgid "Arabic"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Bulgarian"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Czech"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Danish"
+msgstr ""
+
+msgctxt "Languages"
 msgid "German"
 msgstr ""
 
@@ -1027,11 +1043,11 @@ msgid "English"
 msgstr ""
 
 msgctxt "Languages"
-msgid "Spanish"
+msgid "Spanish (Latin America)"
 msgstr ""
 
 msgctxt "Languages"
-msgid "Spanish (Latin America)"
+msgid "Spanish"
 msgstr ""
 
 msgctxt "Languages"
@@ -1039,7 +1055,27 @@ msgid "Estonian"
 msgstr ""
 
 msgctxt "Languages"
+msgid "Persian"
+msgstr ""
+
+msgctxt "Languages"
 msgid "French"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Gujarati"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Hungarian"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Indonesian"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Icelandic"
 msgstr ""
 
 msgctxt "Languages"
@@ -1048,6 +1084,18 @@ msgstr ""
 
 msgctxt "Languages"
 msgid "Japanese"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Korean"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Lithuanian"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Latvian"
 msgstr ""
 
 msgctxt "Languages"
@@ -1071,11 +1119,39 @@ msgid "Russian"
 msgstr ""
 
 msgctxt "Languages"
+msgid "Slovak"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Slovenian"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Serbian"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Swahili"
+msgstr ""
+
+msgctxt "Languages"
 msgid "Tamil"
 msgstr ""
 
 msgctxt "Languages"
+msgid "Thai"
+msgstr ""
+
+msgctxt "Languages"
 msgid "Turkish"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Ukrainian"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Vietnamese"
 msgstr ""
 
 msgctxt "Languages"
