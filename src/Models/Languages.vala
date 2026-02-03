@@ -50,21 +50,40 @@ namespace Tuner.Model {
             get {
                 if (_map == null) {
                     _map = new HashMap<string, string> ();
+                    _map["ar"] = NC_("Languages","Arabic");
+                    _map["bg"] = NC_("Languages","Bulgarian");
+                    _map["cs"] = NC_("Languages","Czech");
+                    _map["da"] = NC_("Languages","Danish");
                     _map["de"] = NC_("Languages","German");
                     _map["en"] = NC_("Languages","English");
-                    _map["es"] = NC_("Languages","Spanish");
                     _map["es_419"] = NC_("Languages","Spanish (Latin America)");
+                    _map["es"] = NC_("Languages","Spanish");
                     _map["et"] = NC_("Languages","Estonian");
+                    _map["fa"] = NC_("Languages","Persian");
                     _map["fr"] = NC_("Languages","French");
+                    _map["gu"] = NC_("Languages","Gujarati");
+                    _map["hu"] = NC_("Languages","Hungarian");
+                    _map["id"] = NC_("Languages","Indonesian");
+                    _map["is"] = NC_("Languages","Icelandic");
                     _map["it"] = NC_("Languages","Italian");
                     _map["ja"] = NC_("Languages","Japanese");
+                    _map["ko"] = NC_("Languages","Korean");
+                    _map["lt"] = NC_("Languages","Lithuanian");
+                    _map["lv"] = NC_("Languages","Latvian");
                     _map["nb_NO"] = NC_("Languages","Norwegian (Bokmal)");
                     _map["nl"] = NC_("Languages","Dutch");
                     _map["pt_BR"] = NC_("Languages","Portuguese (Brazil)");
                     _map["ro"] = NC_("Languages","Romanian");
                     _map["ru"] = NC_("Languages","Russian");
+                    _map["sk"] = NC_("Languages","Slovak");
+                    _map["sl"] = NC_("Languages","Slovenian");
+                    _map["sr"] = NC_("Languages","Serbian");
+                    _map["sw"] = NC_("Languages","Swahili");
                     _map["ta"] = NC_("Languages","Tamil");
+                    _map["th"] = NC_("Languages","Thai");
                     _map["tr"] = NC_("Languages","Turkish");
+                    _map["uk"] = NC_("Languages","Ukrainian");
+                    _map["vi"] = NC_("Languages","Vietnamese");
                     _map["zh_Hant"] = NC_("Languages","Traditional Chinese");
                 }
                 return _map;
