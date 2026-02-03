@@ -475,35 +475,3 @@ msgstr "_Сачувај"
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
-
-#, c-format
-#~ msgid ""
-#~ "Double click to shuffle through %1$u stations,\n"
-#~ "one, every ten minutes, for %2$u days"
-#~ msgstr ""
-#~ "#Dvostruk @click #na shuffle #kroz [@X32@X] #postaja,\n"
-#~ "#jedan, #svaki #desetorka #minuta, @for [@X75@X] #dan"
-
-#, c-format
-#~ msgid "%s Star this station"
-#~ msgstr "[@X0@X] #Zvijezda @this #postaja"
-
-#, c-format
-#~ msgid "%s Unstar this station"
-#~ msgstr "[@X0@X] Unstar @this #postaja"
-
-#, c-format
-#~ msgid "Could not get random station: %s"
-#~ msgstr "#Moći ne #dobiti @random #postaja: [@X30@X]"
-
-#, c-format
-#~ msgid "Error reading file: %s"
-#~ msgstr "#Zabuna #čitanje #dosje: [@X20@X]"
-
-#, c-format
-#~ msgid "Error: %s"
-#~ msgstr "Грешка: %s"
-
-#, c-format
-#~ msgid "Unable to open website: %s"
-#~ msgstr "@Unable #na #javan #stranica: [@X24@X]"
