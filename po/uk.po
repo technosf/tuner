@@ -1,529 +1,479 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
-# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
-# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-02 21:01+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/tuner/tuner-ui/ta/>"
-"\n"
-"Language: ta\n"
+"PO-Revision-Date: 2026-02-03 01:23+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
+"uk/>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.16-dev\n"
 
 #: src/Widgets/StationContextMenu.vala:167
-#, c-format, fuzzy
+#, c-format
 msgid "%s Star this station"
-msgstr "%s Star this station"
+msgstr "%s Зірка цієї станції"
 
 #: src/Widgets/StationContextMenu.vala:166
-#, c-format, fuzzy
+#, c-format
 msgid "%s Unstar this station"
-msgstr "%s Unstar this station"
+msgstr "%s Unstar це станція"
 
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
-msgstr "பற்றி"
+msgstr "Інформація"
 
 #: src/Models/StreamMetadata.vala:25
 msgid "Album"
-msgstr "ஆல்பம்"
+msgstr "Альбом"
 
 #: src/Models/StreamMetadata.vala:41
-#, fuzzy
 msgid "Application Name"
-msgstr "Application Name"
+msgstr "Ім'я користувача"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
-msgstr "கலைஞர்"
+msgstr "Художник"
 
 #: src/Models/StreamMetadata.vala:33
-#, fuzzy
 msgid "Audio Codec"
-msgstr "Audio Codec"
+msgstr "Аудіокод"
 
 #: src/Widgets/PreferencesPopover.vala:50
 msgid "Auto-play last station on startup"
-msgstr "தொடங்கும்போது கடைசியாக இயக்கப்பட்ட நிலையத்தை தானாகவே இயக்கவும்."
+msgstr "Автосплеї останню станцію на старті"
 
 #: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
-msgstr "பிட்ரேட்"
+msgstr "Бітрейт"
 
 #: src/Models/Station.vala:357
 msgid "Changes"
-msgstr "மாற்றங்கள்"
+msgstr "Зміни"
 
 #: src/Models/StreamMetadata.vala:34
-#, fuzzy
 msgid "Channel Mode"
-msgstr "Channel Mode"
+msgstr "Режим Каналу"
 
 #: src/Widgets/PreferencesPopover.vala:221
 msgid "Choose a file"
-msgstr "கோப்பினை தேர்ந்தெடுக்கவும்"
+msgstr "Обрати файл"
 
 #: src/Widgets/Window.vala:69
-#, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+"Натисніть тут, щоб відновити вікно. Щоб кинути Тюнер, пауза відтворення і "
+"закрити вікно."
 
 #: src/Models/Station.vala:364
 msgid "Codec"
-msgstr "புரிப்பு"
+msgstr "Кодек"
 
 #: src/Models/StreamMetadata.vala:40
-#, fuzzy
 msgid "Container Format"
-msgstr "Container Format"
+msgstr "Формат контейнера"
 
 #: src/Widgets/StationContextMenu.vala:102
-#, fuzzy
 msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to clipboard"
+msgstr "Статус на сервери"
 
 #: src/Widgets/Display.vala:247
-#, c-format, fuzzy
+#, c-format
 msgid "Could not get random station: %s"
-msgstr "Could not get random station: %s"
+msgstr "Не вдалося отримати випадковий стан: %s"
 
 #: src/Widgets/PreferencesPopover.vala:66
-#, fuzzy
 msgid "Cycle through the metadata from the playing stream"
-msgstr "Cycle through the metadata from the playing stream"
+msgstr "Цикл через метадані з потоку гри"
 
 #: src/Widgets/PreferencesPopover.vala:34
 msgid "Dark mode"
-msgstr "இருண்ட முறை"
+msgstr "Темний режим"
 
 #: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
-#, fuzzy
 msgid "Data Provider"
-msgstr "Data Provider"
+msgstr "Постачальник даних"
 
 #: src/Models/StreamMetadata.vala:44
-#, fuzzy
 msgid "Date Time"
-msgstr "Date Time"
+msgstr "Дата час"
 
 #: src/Widgets/PreferencesPopover.vala:76
 msgid "Default"
-msgstr "இயல்புநிலை"
+msgstr "Типовий"
 
 #: src/Widgets/Display.vala:325
 msgid "Discover"
-msgstr "கண்டுபிடி"
+msgstr "Відкрийте для себе"
 
 #: src/Widgets/Display.vala:329
-#, fuzzy
 msgid "Discover more stations"
-msgstr "Discover more stations"
+msgstr "Дізнатися більше станцій"
 
 #: src/Widgets/PreferencesPopover.vala:25
-#, fuzzy
 msgid "Do not participate in Station voting"
-msgstr "Do not participate in Station voting"
+msgstr "Не брати участь у голосуванні станції"
 
 #: src/Widgets/Display.vala:559
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
+"Подвійний клік для шлафу через %1$u станції,\n"
+"один, кожні десять хвилин, для %2$u днів"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
-msgstr "குறியாக்கி"
+msgstr "Енкодер"
 
 #: src/Models/StreamMetadata.vala:43
-#, fuzzy
 msgid "Encoder Version"
-msgstr "Encoder Version"
+msgstr "Версія Encoder"
 
 #: src/Widgets/Display.vala:104
 msgid "Eras"
-msgstr "காலங்கள்"
+msgstr "Еразмус"
 
 #: src/Widgets/PreferencesPopover.vala:247
-#, c-format, fuzzy
+#, c-format
 msgid "Error reading file: %s"
-msgstr "Error reading file: %s"
+msgstr "Файл зчитування помилок: %s"
 
 #: src/Widgets/Window.vala:242
-#, fuzzy
 msgid "Error while trying to autoplay, aborting…"
-msgstr "Error while trying to autoplay, aborting…"
+msgstr "Помилка при спробі автоплея, аборт .."
 
 #: src/Widgets/PreferencesPopover.vala:208
 #, c-format
 msgid "Error: %s"
-msgstr "பிழை: %s"
+msgstr "Помилка: %s"
 
 #: src/Widgets/Display.vala:101
 msgid "Explore"
-msgstr "ஆராய்தல்"
+msgstr "Цікаве"
 
 #: src/Widgets/PreferencesPopover.vala:96
-#, fuzzy
 msgid "Export Starred Stations to Playlist"
-msgstr "Export Starred Stations to Playlist"
+msgstr "Експортувати Starred Stations для Playlist"
 
 #: src/Models/StreamMetadata.vala:31
-#, fuzzy
 msgid "Extended Comment"
-msgstr "Extended Comment"
+msgstr "Розширений коментар"
 
 #: src/Widgets/PreferencesPopover.vala:71
-#, fuzzy
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
+"Швидкий цикл за допомогою метаданих з потокового передавання, якщо "
+"активовано інформацію про потік"
 
 #: src/Widgets/PreferencesPopover.vala:69
-#, fuzzy
 msgid "Faster cycling through stream info"
-msgstr "Faster cycling through stream info"
+msgstr "Швидке вело через потокову інформацію"
 
 #: src/Models/Station.vala:360
-#, fuzzy
 msgid "Favicon address"
-msgstr "Favicon address"
+msgstr "Фавіконська адреса"
 
 #: src/Models/StreamMetadata.vala:27
 msgid "Genre"
-msgstr "வகை"
+msgstr "Жанр"
 
 #: src/Widgets/Display.vala:102
 msgid "Genres"
-msgstr "வகைகள்"
+msgstr "Жанри"
 
 #: src/Models/StreamMetadata.vala:46
-#, fuzzy
 msgid "Has CRC"
-msgstr "Has CRC"
+msgstr "КАР"
 
 #: src/Widgets/HeaderBar.vala:212
 msgid "History"
-msgstr "வரலாறு"
+msgstr "Історія"
 
 #: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
-msgstr "முகப்புப்பக்கம்"
+msgstr "Домашня сторінка"
 
 #: src/Models/Station.vala:361
-#, fuzzy
 msgid "Homepage address"
-msgstr "Homepage address"
+msgstr "Головна сторінка"
 
 #: src/Widgets/PreferencesPopover.vala:27
-#, fuzzy
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
+"Якщо перевіряються, ваші ранкові та потокові станції не будуть "
+"використовуватися для розрахунку популярності індексу станції, ані популярні "
+"та трендові станції"
 
 #: src/Widgets/PreferencesPopover.vala:52
-#, fuzzy
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
+"Якщо увімкнено, коли Тюнер запускає, що вона автоматично почне грати в "
+"останній відтворений станцію"
 
 #: src/Widgets/PreferencesPopover.vala:59
-#, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr "Якщо увімкнено, коли Тюнер запустив його у зовнішній вигляд"
 
 #: src/Models/StreamMetadata.vala:26
 msgid "Image"
-msgstr "படம்"
+msgstr "Зображення"
 
 #: src/Widgets/PreferencesPopover.vala:105
-#, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
-msgstr "Import Station UUIDs as Starred Stations"
+msgstr "Імпортна станція UUIDs як Starred Stations"
 
 #: src/Widgets/Display.vala:557
 msgid "Jukebox"
-msgstr "ஜூக்பாக்ஸ்"
+msgstr "Юкбокс"
 
 #: src/Widgets/PreferencesPopover.vala:86
 msgid "Language"
-msgstr "மொழி"
+msgstr "Мова"
 
 #: src/Widgets/Display.vala:422
-#, fuzzy
 msgid "Latest Search"
-msgstr "Latest Search"
+msgstr "Пошук"
 
 #: src/Widgets/Display.vala:99
 msgid "Library"
-msgstr "நூலகம்"
+msgstr "Бібліотека"
 
 #: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
-msgstr "ஒளி பயன்முறை"
+msgstr "Світлий режим"
 
 #: src/Models/StreamMetadata.vala:30
 msgid "Location"
-msgstr "இடம்"
+msgstr "Розташування"
 
 #: src/Models/StreamMetadata.vala:39
-#, fuzzy
 msgid "Maximum Bitrate"
-msgstr "Maximum Bitrate"
+msgstr "Максимальний бітрейт"
 
 #: src/Models/StreamMetadata.vala:38
-#, fuzzy
 msgid "Minimum Bitrate"
-msgstr "Minimum Bitrate"
+msgstr "Мінімальний бітрейт"
 
 #: src/Widgets/Display.vala:362
-#, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
-msgstr "Most listened to Stations in the last 24 hours"
+msgstr "Найпопулярніші станції в останні 24 години"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
-msgstr "நிலையங்கள் எதுவும் கிடைக்கவில்லை"
+msgstr "Станцій не знайдено"
 
 #: src/Models/StreamMetadata.vala:37
-#, fuzzy
 msgid "Nominal Bitrate"
-msgstr "Nominal Bitrate"
+msgstr "Номінал бітрейт"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid "Nothing here"
-msgstr "இங்கே எதுவும் இல்லை"
+msgstr "Ніщо тут"
 
 #: src/Widgets/PreferencesPopover.vala:57
-#, fuzzy
 msgid "Open to Starred Stations"
-msgstr "Open to Starred Stations"
+msgstr "Відкрито до Starred Stations"
 
 #: src/Models/StreamMetadata.vala:29
 msgid "Organization"
-msgstr "அமைப்பு"
+msgstr "Організація"
 
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
-msgstr "பிண்ணணியில் ஓடுகிறது"
+msgstr "Відтворення у фоновому режимі"
 
 #: src/Widgets/base/StationListBox.vala:156
-#, fuzzy
 msgid "Please try a different search term."
-msgstr "Please try a different search term."
+msgstr "Будь ласка, спробуйте інший термін пошуку."
 
 #: src/Widgets/Display.vala:361
 msgid "Popular"
-msgstr "பிரபலமானது"
+msgstr "Популярне"
 
 #: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
-msgstr "விருப்பத்தேர்வுகள்"
+msgstr "Властивості"
 
 #: src/Models/StreamMetadata.vala:45
-#, fuzzy
 msgid "Private Data"
-msgstr "Private Data"
+msgstr "Приватні дані"
 
 #: src/Widgets/Display.vala:627
-#, fuzzy
 msgid "Remove this saved search"
-msgstr "Remove this saved search"
+msgstr "Видалити цей збережений пошук"
 
 #: src/Widgets/PreferencesPopover.vala:87
-#, fuzzy
 msgid "Requires restarting Tuner"
-msgstr "Requires restarting Tuner"
+msgstr "Вимагає перезавантаження тонера"
 
 #: src/Widgets/PreferencesPopover.vala:184
 msgid "Save File"
-msgstr "கோப்பை சேமி"
+msgstr "Зберегти файл"
 
 #: src/Widgets/Display.vala:426
-#, fuzzy
 msgid "Save this search"
-msgstr "Save this search"
+msgstr "Збережіть цей пошук"
 
 #: src/Widgets/Display.vala:625
-#, fuzzy
 msgid "Saved Search"
-msgstr "Saved Search"
+msgstr "Збережений пошук"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
-msgstr "சேமித்த தேடல்கள்"
+msgstr "Збережені пошуки"
 
 #: src/Widgets/Display.vala:423
 msgid "Search Results"
-msgstr "முடிவுகளைத் தேடு"
+msgstr "Результати пошуку"
 
 #: src/Widgets/Display.vala:98
-#, fuzzy
 msgid "Selections"
-msgstr "Selections"
+msgstr "Вибірки"
 
 #: src/Widgets/PreferencesPopover.vala:64
-#, fuzzy
 msgid "Show stream info when playing"
-msgstr "Show stream info when playing"
+msgstr "Показати інформацію про потік при грі"
 
 #: src/Widgets/base/StationListBox.vala:146
-#, fuzzy
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
+"У зв'язку з тим, що деякі з них вийшли неправильне завантаження радіостанцій "
+"даних від станції провайдера. Будь ласка, спробуйте ще раз."
 
 #: src/Widgets/HeaderBar.vala:170
-#, fuzzy
 msgid "Star this station"
-msgstr "Star this station"
+msgstr "Зірка цієї станції"
 
 #: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
 msgid "Starred by You"
-msgstr "உங்களால் நட்சத்திரமிடப்பட்டது"
+msgstr "Ви"
 
 #: src/Widgets/HeaderBar.vala:191
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "Пошук станції"
 
 #: src/Widgets/StationContextMenu.vala:87
-#, fuzzy
 msgid "Station info updated Online - View changes"
-msgstr "Station info updated Online - View changes"
+msgstr "Інформація про станцію оновлений Онлайн - Перегляд змін"
 
 #: src/Models/Station.vala:133
-#, fuzzy
 msgid "Station no longer in the index"
-msgstr "Station no longer in the index"
+msgstr "Станція не більше в індексі"
 
 #: src/Models/Station.vala:362
-#, fuzzy
 msgid "Station tags"
-msgstr "Station tags"
+msgstr "Станційні теги"
 
 #: src/Widgets/HeaderBar.vala:148
-#, fuzzy
 msgid "Stations"
-msgstr "Stations"
+msgstr "Станції"
 
 #: src/Widgets/Display.vala:326
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "Станції для відкриття"
 
 #: src/Widgets/Window.vala:286
-#, fuzzy
 msgid "Stop Playback requested"
-msgstr "Stop Playback requested"
+msgstr "Стоп Playback запитав"
 
 #: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
-msgstr "ஸ்ட்ரீம் மெட்டாடேட்டா"
+msgstr "Статус на сервери"
 
 #: src/Models/Station.vala:359
-#, fuzzy
 msgid "Stream Resolved Url"
-msgstr "Stream Resolved Url"
+msgstr "Потокове розчинення Урл"
 
 #: src/Models/Station.vala:358
-#, fuzzy
 msgid "Stream Url"
-msgstr "Stream Url"
+msgstr "Потік Урл"
 
 #: src/Widgets/Display.vala:103
-#, fuzzy
 msgid "Subgenres"
-msgstr "Subgenres"
+msgstr "Субгенти"
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"
-msgstr "மண்டலம்"
+msgstr "Система"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Tags"
-msgstr "குறிச்சொற்கள்"
+msgstr "Теґи"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
-msgstr "பேச்சு, செய்திகள், விளையாட்டு"
+msgstr "Розмова, Новини, Спорт"
 
 #: src/Widgets/PreferencesPopover.vala:45
 msgid "Theme"
-msgstr "கருப்பொருள்"
+msgstr "Тема"
 
 #: src/Models/StreamMetadata.vala:23
 msgid "Title"
-msgstr "தலைப்பு"
+msgstr "Назва"
 
 #: src/Models/StreamMetadata.vala:36
-#, fuzzy
 msgid "Track Count"
-msgstr "Track Count"
+msgstr "Кількість треків"
 
 #: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
-msgstr "ட்ராக் எண்"
+msgstr "Номер доріжки"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
-msgstr "ட்ரெண்டிங்"
+msgstr "В тренді"
 
 #: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
-msgstr "கடந்த 24 மணி நேரத்தில் பிரபலமாகி வரும் நிலையங்கள்"
+msgstr "Модні станції в останні 24 години"
 
 #: src/Widgets/StationContextMenu.vala:143
-#, c-format, fuzzy
+#, c-format
 msgid "Unable to open website: %s"
-msgstr "Unable to open website: %s"
+msgstr "Неможливо відкрити сайт: %s"
 
 #: src/Widgets/StationContextMenu.vala:88
-#, fuzzy
 msgid "Update Station from Online"
-msgstr "Update Station from Online"
+msgstr "Станція оновлень онлайн"
 
 #: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
-msgstr "வலைத்தளத்தைப் பார்க்கவும்"
+msgstr "Відвідати веб-сайт"
 
 #: src/Widgets/PreferencesPopover.vala:187
 #: src/Widgets/PreferencesPopover.vala:224
 msgid "_Cancel"
-msgstr "_ரத்துசெய்"
+msgstr "_Скасувати"
 
 #: src/Widgets/PreferencesPopover.vala:225
 msgid "_Open"
-msgstr "_OPEN"
+msgstr "_Відкрити"
 
 #: src/Widgets/PreferencesPopover.vala:188
 msgid "_Save"
-msgstr "சேமி (_S)"
+msgstr "_Зберегти"

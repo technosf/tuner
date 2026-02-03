@@ -1,529 +1,468 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
-# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
-# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-02 21:01+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/tuner/tuner-ui/ta/>"
+"PO-Revision-Date: 2026-02-03 01:23+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Thai <https://hosted.weblate.org/projects/tuner/tuner-ui/th/>"
 "\n"
-"Language: ta\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
 #: src/Widgets/StationContextMenu.vala:167
-#, c-format, fuzzy
+#, c-format
 msgid "%s Star this station"
-msgstr "%s Star this station"
+msgstr "%s สถานีนี้"
 
 #: src/Widgets/StationContextMenu.vala:166
-#, c-format, fuzzy
+#, c-format
 msgid "%s Unstar this station"
-msgstr "%s Unstar this station"
+msgstr "%s ไม่มีสถานีนี้"
 
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
-msgstr "பற்றி"
+msgstr "เกี่ยวกับ"
 
 #: src/Models/StreamMetadata.vala:25
 msgid "Album"
-msgstr "ஆல்பம்"
+msgstr "อัลบั้ม"
 
 #: src/Models/StreamMetadata.vala:41
-#, fuzzy
 msgid "Application Name"
-msgstr "Application Name"
+msgstr "ชื่อ"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
-msgstr "கலைஞர்"
+msgstr "ศิลปิน"
 
 #: src/Models/StreamMetadata.vala:33
-#, fuzzy
 msgid "Audio Codec"
-msgstr "Audio Codec"
+msgstr "รหัสเสียง"
 
 #: src/Widgets/PreferencesPopover.vala:50
 msgid "Auto-play last station on startup"
-msgstr "தொடங்கும்போது கடைசியாக இயக்கப்பட்ட நிலையத்தை தானாகவே இயக்கவும்."
+msgstr "สถานีอัตโนมัติเริ่มต้นในผู้เริ่มต้น"
 
 #: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
-msgstr "பிட்ரேட்"
+msgstr "บิตเรต"
 
 #: src/Models/Station.vala:357
 msgid "Changes"
-msgstr "மாற்றங்கள்"
+msgstr "เปลี่ยนแปลง"
 
 #: src/Models/StreamMetadata.vala:34
-#, fuzzy
 msgid "Channel Mode"
-msgstr "Channel Mode"
+msgstr "โหมดช่อง"
 
 #: src/Widgets/PreferencesPopover.vala:221
 msgid "Choose a file"
-msgstr "கோப்பினை தேர்ந்தெடுக்கவும்"
+msgstr "เลือกแฟ้ม"
 
 #: src/Widgets/Window.vala:69
-#, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
-msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+msgstr "คลิกที่หน้าต่าง เพื่อหยุดหยุดหยุดและปิดหน้าต่าง."
 
 #: src/Models/Station.vala:364
 msgid "Codec"
-msgstr "புரிப்பு"
+msgstr "ตัวเข้ารหัส"
 
 #: src/Models/StreamMetadata.vala:40
-#, fuzzy
 msgid "Container Format"
-msgstr "Container Format"
+msgstr "รูปแบบคอนเทนเนอร์"
 
 #: src/Widgets/StationContextMenu.vala:102
-#, fuzzy
 msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to clipboard"
+msgstr "คัดลอกสตรีม"
 
 #: src/Widgets/Display.vala:247
-#, c-format, fuzzy
+#, c-format
 msgid "Could not get random station: %s"
-msgstr "Could not get random station: %s"
+msgstr "ไม่สามารถใช้สถานีแบบสุ่ม: [X30]"
 
 #: src/Widgets/PreferencesPopover.vala:66
-#, fuzzy
 msgid "Cycle through the metadata from the playing stream"
-msgstr "Cycle through the metadata from the playing stream"
+msgstr "รอบรอบผ่านเลือดจากการเล่น"
 
 #: src/Widgets/PreferencesPopover.vala:34
 msgid "Dark mode"
-msgstr "இருண்ட முறை"
+msgstr "Dark mode"
 
 #: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
-#, fuzzy
 msgid "Data Provider"
-msgstr "Data Provider"
+msgstr "ผู้ให้บริการ"
 
 #: src/Models/StreamMetadata.vala:44
-#, fuzzy
 msgid "Date Time"
-msgstr "Date Time"
+msgstr "วัน"
 
 #: src/Widgets/PreferencesPopover.vala:76
 msgid "Default"
-msgstr "இயல்புநிலை"
+msgstr "ค่าเริ่มต้น"
 
 #: src/Widgets/Display.vala:325
 msgid "Discover"
-msgstr "கண்டுபிடி"
+msgstr "ค้นหา"
 
 #: src/Widgets/Display.vala:329
-#, fuzzy
 msgid "Discover more stations"
-msgstr "Discover more stations"
+msgstr "ค้นพบสถานี"
 
 #: src/Widgets/PreferencesPopover.vala:25
-#, fuzzy
 msgid "Do not participate in Station voting"
-msgstr "Do not participate in Station voting"
+msgstr "อย่าเข้าร่วมสถานีลงคะแนน"
 
 #: src/Widgets/Display.vala:559
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
+"คลิกที่ปุ่มคู่ผ่าน [X32] สถานี\n"
+"หนึ่งในสิบนาทีสําหรับ [X75] วัน"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
-msgstr "குறியாக்கி"
+msgstr "เข้ารหัส"
 
 #: src/Models/StreamMetadata.vala:43
-#, fuzzy
 msgid "Encoder Version"
-msgstr "Encoder Version"
+msgstr "เวอร์ชัน"
 
 #: src/Widgets/Display.vala:104
 msgid "Eras"
-msgstr "காலங்கள்"
+msgstr "โรค"
 
 #: src/Widgets/PreferencesPopover.vala:247
-#, c-format, fuzzy
+#, c-format
 msgid "Error reading file: %s"
-msgstr "Error reading file: %s"
+msgstr "ข้อความอ่าน: %s"
 
 #: src/Widgets/Window.vala:242
-#, fuzzy
 msgid "Error while trying to autoplay, aborting…"
-msgstr "Error while trying to autoplay, aborting…"
+msgstr "ข้อผิดพลาดในขณะที่พยายามที่จะเปิดอัตโนมัติ, ขโมย .."
 
 #: src/Widgets/PreferencesPopover.vala:208
 #, c-format
 msgid "Error: %s"
-msgstr "பிழை: %s"
+msgstr "ข้อผิดพลาด: %s"
 
 #: src/Widgets/Display.vala:101
 msgid "Explore"
-msgstr "ஆராய்தல்"
+msgstr "สํารวจ"
 
 #: src/Widgets/PreferencesPopover.vala:96
-#, fuzzy
 msgid "Export Starred Stations to Playlist"
-msgstr "Export Starred Stations to Playlist"
+msgstr "สถานีส่งออกหลักเพื่อเล่น"
 
 #: src/Models/StreamMetadata.vala:31
-#, fuzzy
 msgid "Extended Comment"
-msgstr "Extended Comment"
+msgstr "ความคิดเห็น"
 
 #: src/Widgets/PreferencesPopover.vala:71
-#, fuzzy
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
-msgstr ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
+msgstr "การหมุนอย่างรวดเร็วผ่านสถิติจากการเล่นเกมหากแสดงข้อมูล"
 
 #: src/Widgets/PreferencesPopover.vala:69
-#, fuzzy
 msgid "Faster cycling through stream info"
-msgstr "Faster cycling through stream info"
+msgstr "การขี่จักรยานอย่างรวดเร็วผ่านข้อมูล"
 
 #: src/Models/Station.vala:360
-#, fuzzy
 msgid "Favicon address"
-msgstr "Favicon address"
+msgstr "ที่อยู่อีเมล"
 
 #: src/Models/StreamMetadata.vala:27
 msgid "Genre"
-msgstr "வகை"
+msgstr "ประเภท"
 
 #: src/Widgets/Display.vala:102
 msgid "Genres"
-msgstr "வகைகள்"
+msgstr "ประเภท"
 
 #: src/Models/StreamMetadata.vala:46
-#, fuzzy
 msgid "Has CRC"
-msgstr "Has CRC"
+msgstr "มี HM"
 
 #: src/Widgets/HeaderBar.vala:212
 msgid "History"
-msgstr "வரலாறு"
+msgstr "ประวัติศาสตร์"
 
 #: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
-msgstr "முகப்புப்பக்கம்"
+msgstr "หน้าแรก"
 
 #: src/Models/Station.vala:361
-#, fuzzy
 msgid "Homepage address"
-msgstr "Homepage address"
+msgstr "หน้าแรก"
 
 #: src/Widgets/PreferencesPopover.vala:27
-#, fuzzy
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
+"หากตรวจสอบตําแหน่งของคุณและสตรีมสถานีจะไม่ถูกนํามาใช้เพื่อคํานวณดัชนีความนิยมและสถานียอดนิยม"
 
 #: src/Widgets/PreferencesPopover.vala:52
-#, fuzzy
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
-msgstr ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
+msgstr "หากเปิดใช้งานเมื่อ Tuner เริ่มเริ่มเล่นโดยอัตโนมัติ"
 
 #: src/Widgets/PreferencesPopover.vala:59
-#, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr "หากเปิดใช้งานเมื่อโพสต์ที่เริ่มต้นจะเปิดไปที่สถานี"
 
 #: src/Models/StreamMetadata.vala:26
 msgid "Image"
-msgstr "படம்"
+msgstr "รูปภาพ"
 
 #: src/Widgets/PreferencesPopover.vala:105
-#, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
-msgstr "Import Station UUIDs as Starred Stations"
+msgstr "สถานีนําเข้า UUIDs เป็นสถานีหลัก"
 
 #: src/Widgets/Display.vala:557
 msgid "Jukebox"
-msgstr "ஜூக்பாக்ஸ்"
+msgstr "Jukebox"
 
 #: src/Widgets/PreferencesPopover.vala:86
 msgid "Language"
-msgstr "மொழி"
+msgstr "ภาษา"
 
 #: src/Widgets/Display.vala:422
-#, fuzzy
 msgid "Latest Search"
-msgstr "Latest Search"
+msgstr "ค้นหาล่าสุด"
 
 #: src/Widgets/Display.vala:99
 msgid "Library"
-msgstr "நூலகம்"
+msgstr "ห้องสมุด"
 
 #: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
-msgstr "ஒளி பயன்முறை"
+msgstr "โหมดแสง"
 
 #: src/Models/StreamMetadata.vala:30
 msgid "Location"
-msgstr "இடம்"
+msgstr "ที่ตั้ง"
 
 #: src/Models/StreamMetadata.vala:39
-#, fuzzy
 msgid "Maximum Bitrate"
-msgstr "Maximum Bitrate"
+msgstr "ความเร็วสูงสุด"
 
 #: src/Models/StreamMetadata.vala:38
-#, fuzzy
 msgid "Minimum Bitrate"
-msgstr "Minimum Bitrate"
+msgstr "ขั้นต่ํา"
 
 #: src/Widgets/Display.vala:362
-#, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
-msgstr "Most listened to Stations in the last 24 hours"
+msgstr "การเดินทางส่วนใหญ่ถึง 24 ชั่วโมง"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
-msgstr "நிலையங்கள் எதுவும் கிடைக்கவில்லை"
+msgstr "ไม่มีสถานี"
 
 #: src/Models/StreamMetadata.vala:37
-#, fuzzy
 msgid "Nominal Bitrate"
-msgstr "Nominal Bitrate"
+msgstr "อัตราการไหล"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid "Nothing here"
-msgstr "இங்கே எதுவும் இல்லை"
+msgstr "ไม่มีอะไรที่นี่"
 
 #: src/Widgets/PreferencesPopover.vala:57
-#, fuzzy
 msgid "Open to Starred Stations"
-msgstr "Open to Starred Stations"
+msgstr "เปิดสถานีหลัก"
 
 #: src/Models/StreamMetadata.vala:29
 msgid "Organization"
-msgstr "அமைப்பு"
+msgstr "องค์กร"
 
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
-msgstr "பிண்ணணியில் ஓடுகிறது"
+msgstr "กำลังเล่นในโหมดพื้นหลัง"
 
 #: src/Widgets/base/StationListBox.vala:156
-#, fuzzy
 msgid "Please try a different search term."
-msgstr "Please try a different search term."
+msgstr "โปรดลองคําค้นหาที่แตกต่างกัน."
 
 #: src/Widgets/Display.vala:361
 msgid "Popular"
-msgstr "பிரபலமானது"
+msgstr "ยอดนิยม"
 
 #: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
-msgstr "விருப்பத்தேர்வுகள்"
+msgstr "ตั้งความชอบ"
 
 #: src/Models/StreamMetadata.vala:45
-#, fuzzy
 msgid "Private Data"
-msgstr "Private Data"
+msgstr "ข้อมูลส่วนตัว"
 
 #: src/Widgets/Display.vala:627
-#, fuzzy
 msgid "Remove this saved search"
-msgstr "Remove this saved search"
+msgstr "ลบการค้นหานี้"
 
 #: src/Widgets/PreferencesPopover.vala:87
-#, fuzzy
 msgid "Requires restarting Tuner"
-msgstr "Requires restarting Tuner"
+msgstr "ต้องเริ่มโพสต์"
 
 #: src/Widgets/PreferencesPopover.vala:184
 msgid "Save File"
-msgstr "கோப்பை சேமி"
+msgstr "บันทึกไฟล์"
 
 #: src/Widgets/Display.vala:426
-#, fuzzy
 msgid "Save this search"
-msgstr "Save this search"
+msgstr "บันทึกนี้"
 
 #: src/Widgets/Display.vala:625
-#, fuzzy
 msgid "Saved Search"
-msgstr "Saved Search"
+msgstr "บันทึกการค้นหา"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
-msgstr "சேமித்த தேடல்கள்"
+msgstr "บันทึกการค้นหา"
 
 #: src/Widgets/Display.vala:423
 msgid "Search Results"
-msgstr "முடிவுகளைத் தேடு"
+msgstr "ค้นหา"
 
 #: src/Widgets/Display.vala:98
-#, fuzzy
 msgid "Selections"
-msgstr "Selections"
+msgstr "การเลือก"
 
 #: src/Widgets/PreferencesPopover.vala:64
-#, fuzzy
 msgid "Show stream info when playing"
-msgstr "Show stream info when playing"
+msgstr "แสดงข้อมูลเมื่อเล่น"
 
 #: src/Widgets/base/StationListBox.vala:146
-#, fuzzy
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
-msgstr ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
+msgstr "บางสิ่งที่จะโหลดสถานีวิทยุข้อมูลจากผู้ให้บริการ กรุณาลองอีกครั้ง."
 
 #: src/Widgets/HeaderBar.vala:170
-#, fuzzy
 msgid "Star this station"
-msgstr "Star this station"
+msgstr "สถานีนี้"
 
 #: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
 msgid "Starred by You"
-msgstr "உங்களால் நட்சத்திரமிடப்பட்டது"
+msgstr "วิดีโอ"
 
 #: src/Widgets/HeaderBar.vala:191
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "สถานีค้นหา"
 
 #: src/Widgets/StationContextMenu.vala:87
-#, fuzzy
 msgid "Station info updated Online - View changes"
-msgstr "Station info updated Online - View changes"
+msgstr "สถานีตรวจสอบ - ดูการเปลี่ยนแปลง"
 
 #: src/Models/Station.vala:133
-#, fuzzy
 msgid "Station no longer in the index"
-msgstr "Station no longer in the index"
+msgstr "สถานีไม่มีดัชนี"
 
 #: src/Models/Station.vala:362
-#, fuzzy
 msgid "Station tags"
-msgstr "Station tags"
+msgstr "สถานีแท็ก"
 
 #: src/Widgets/HeaderBar.vala:148
-#, fuzzy
 msgid "Stations"
-msgstr "Stations"
+msgstr "สถานี"
 
 #: src/Widgets/Display.vala:326
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "สถานีเพื่อค้นหา"
 
 #: src/Widgets/Window.vala:286
-#, fuzzy
 msgid "Stop Playback requested"
-msgstr "Stop Playback requested"
+msgstr "หยุดเล่น"
 
 #: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
-msgstr "ஸ்ட்ரீம் மெட்டாடேட்டா"
+msgstr "สตรีมหน่วยความจํา"
 
 #: src/Models/Station.vala:359
-#, fuzzy
 msgid "Stream Resolved Url"
-msgstr "Stream Resolved Url"
+msgstr "สตรีม แม่"
 
 #: src/Models/Station.vala:358
-#, fuzzy
 msgid "Stream Url"
-msgstr "Stream Url"
+msgstr "สตรีม"
 
 #: src/Widgets/Display.vala:103
-#, fuzzy
 msgid "Subgenres"
-msgstr "Subgenres"
+msgstr "สารย่อย"
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"
-msgstr "மண்டலம்"
+msgstr "ระบบ"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Tags"
-msgstr "குறிச்சொற்கள்"
+msgstr "แท็ก"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
-msgstr "பேச்சு, செய்திகள், விளையாட்டு"
+msgstr "พูดคุย, ข่าว, กีฬา"
 
 #: src/Widgets/PreferencesPopover.vala:45
 msgid "Theme"
-msgstr "கருப்பொருள்"
+msgstr "ธีม"
 
 #: src/Models/StreamMetadata.vala:23
 msgid "Title"
-msgstr "தலைப்பு"
+msgstr "ชื่อ"
 
 #: src/Models/StreamMetadata.vala:36
-#, fuzzy
 msgid "Track Count"
-msgstr "Track Count"
+msgstr "ติดตาม"
 
 #: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
-msgstr "ட்ராக் எண்"
+msgstr "หมายเลขแทร็ค"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
-msgstr "ட்ரெண்டிங்"
+msgstr "เทรนด์"
 
 #: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
-msgstr "கடந்த 24 மணி நேரத்தில் பிரபலமாகி வரும் நிலையங்கள்"
+msgstr "สถานีเทรนด์ใน 24 ชั่วโมง"
 
 #: src/Widgets/StationContextMenu.vala:143
-#, c-format, fuzzy
+#, c-format
 msgid "Unable to open website: %s"
-msgstr "Unable to open website: %s"
+msgstr "สามารถเปิดเว็บไซต์: [X24]"
 
 #: src/Widgets/StationContextMenu.vala:88
-#, fuzzy
 msgid "Update Station from Online"
-msgstr "Update Station from Online"
+msgstr "ปรับปรุงสถานีออนไลน์"
 
 #: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
-msgstr "வலைத்தளத்தைப் பார்க்கவும்"
+msgstr "เยี่ยมชมเว็บไซต์"
 
 #: src/Widgets/PreferencesPopover.vala:187
 #: src/Widgets/PreferencesPopover.vala:224
 msgid "_Cancel"
-msgstr "_ரத்துசெய்"
+msgstr "_ยกเลิก"
 
 #: src/Widgets/PreferencesPopover.vala:225
 msgid "_Open"
-msgstr "_OPEN"
+msgstr "เ_ปิด"
 
 #: src/Widgets/PreferencesPopover.vala:188
 msgid "_Save"
-msgstr "சேமி (_S)"
+msgstr "_บันทึก"

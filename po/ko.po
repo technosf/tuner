@@ -1,529 +1,471 @@
 # SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
-# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
-# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-02 21:01+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/tuner/tuner-ui/ta/>"
-"\n"
-"Language: ta\n"
+"PO-Revision-Date: 2026-02-03 01:23+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/tuner/tuner-ui/"
+"ko/>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
 #: src/Widgets/StationContextMenu.vala:167
-#, c-format, fuzzy
+#, c-format
 msgid "%s Star this station"
-msgstr "%s Star this station"
+msgstr "%s 별이 역"
 
 #: src/Widgets/StationContextMenu.vala:166
-#, c-format, fuzzy
+#, c-format
 msgid "%s Unstar this station"
-msgstr "%s Unstar this station"
+msgstr "%s 이 역의 시작"
 
 #: src/Widgets/PreferencesPopover.vala:20
 msgid "About"
-msgstr "பற்றி"
+msgstr "소개"
 
 #: src/Models/StreamMetadata.vala:25
 msgid "Album"
-msgstr "ஆல்பம்"
+msgstr "앨범"
 
 #: src/Models/StreamMetadata.vala:41
-#, fuzzy
 msgid "Application Name"
-msgstr "Application Name"
+msgstr "신청 이름"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
-msgstr "கலைஞர்"
+msgstr "작가"
 
 #: src/Models/StreamMetadata.vala:33
-#, fuzzy
 msgid "Audio Codec"
-msgstr "Audio Codec"
+msgstr "오디오 Codec"
 
 #: src/Widgets/PreferencesPopover.vala:50
 msgid "Auto-play last station on startup"
-msgstr "தொடங்கும்போது கடைசியாக இயக்கப்பட்ட நிலையத்தை தானாகவே இயக்கவும்."
+msgstr "Auto-play 스타트 역"
 
 #: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
-msgstr "பிட்ரேட்"
+msgstr "비트 전송률"
 
 #: src/Models/Station.vala:357
 msgid "Changes"
-msgstr "மாற்றங்கள்"
+msgstr "변경"
 
 #: src/Models/StreamMetadata.vala:34
-#, fuzzy
 msgid "Channel Mode"
-msgstr "Channel Mode"
+msgstr "채널 모드"
 
 #: src/Widgets/PreferencesPopover.vala:221
 msgid "Choose a file"
-msgstr "கோப்பினை தேர்ந்தெடுக்கவும்"
+msgstr "파일 선택"
 
 #: src/Widgets/Window.vala:69
-#, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
-msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+msgstr "자주 묻는 질문 튜너를 종료하려면, 일시 재생 및 창을 닫습니다."
 
 #: src/Models/Station.vala:364
 msgid "Codec"
-msgstr "புரிப்பு"
+msgstr "코덱"
 
 #: src/Models/StreamMetadata.vala:40
-#, fuzzy
 msgid "Container Format"
-msgstr "Container Format"
+msgstr "컨테이너 형식"
 
 #: src/Widgets/StationContextMenu.vala:102
-#, fuzzy
 msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to clipboard"
+msgstr "클립보드에 Stream-URI 복사"
 
 #: src/Widgets/Display.vala:247
-#, c-format, fuzzy
+#, c-format
 msgid "Could not get random station: %s"
-msgstr "Could not get random station: %s"
+msgstr "임의 역을 얻을 수 없습니다 : %s"
 
 #: src/Widgets/PreferencesPopover.vala:66
-#, fuzzy
 msgid "Cycle through the metadata from the playing stream"
-msgstr "Cycle through the metadata from the playing stream"
+msgstr "재생 스트림에서 metadata를 통해 사이클"
 
 #: src/Widgets/PreferencesPopover.vala:34
 msgid "Dark mode"
-msgstr "இருண்ட முறை"
+msgstr "어둡게"
 
 #: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
-#, fuzzy
 msgid "Data Provider"
-msgstr "Data Provider"
+msgstr "데이터 공급자"
 
 #: src/Models/StreamMetadata.vala:44
-#, fuzzy
 msgid "Date Time"
-msgstr "Date Time"
+msgstr "일정 시간"
 
 #: src/Widgets/PreferencesPopover.vala:76
 msgid "Default"
-msgstr "இயல்புநிலை"
+msgstr "기본값"
 
 #: src/Widgets/Display.vala:325
 msgid "Discover"
-msgstr "கண்டுபிடி"
+msgstr "탐색"
 
 #: src/Widgets/Display.vala:329
-#, fuzzy
 msgid "Discover more stations"
-msgstr "Discover more stations"
+msgstr "더 많은 역 찾기"
 
 #: src/Widgets/PreferencesPopover.vala:25
-#, fuzzy
 msgid "Do not participate in Station voting"
-msgstr "Do not participate in Station voting"
+msgstr "역 투표에 참여하지 마십시오"
 
 #: src/Widgets/Display.vala:559
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
+"%1$u 역을 통해 두 번 클릭,\n"
+"1, 매 10 분, %2$u 일"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
-msgstr "குறியாக்கி"
+msgstr "지원하다"
 
 #: src/Models/StreamMetadata.vala:43
-#, fuzzy
 msgid "Encoder Version"
-msgstr "Encoder Version"
+msgstr "인코더 버전"
 
 #: src/Widgets/Display.vala:104
 msgid "Eras"
-msgstr "காலங்கள்"
+msgstr "에라스"
 
 #: src/Widgets/PreferencesPopover.vala:247
-#, c-format, fuzzy
+#, c-format
 msgid "Error reading file: %s"
-msgstr "Error reading file: %s"
+msgstr "오류 읽기 파일 : %s"
 
 #: src/Widgets/Window.vala:242
-#, fuzzy
 msgid "Error while trying to autoplay, aborting…"
-msgstr "Error while trying to autoplay, aborting…"
+msgstr "자동 재생하려고하는 동안 오류, aborting .."
 
 #: src/Widgets/PreferencesPopover.vala:208
 #, c-format
 msgid "Error: %s"
-msgstr "பிழை: %s"
+msgstr "에러: %s"
 
 #: src/Widgets/Display.vala:101
 msgid "Explore"
-msgstr "ஆராய்தல்"
+msgstr "찾아보기"
 
 #: src/Widgets/PreferencesPopover.vala:96
-#, fuzzy
 msgid "Export Starred Stations to Playlist"
-msgstr "Export Starred Stations to Playlist"
+msgstr "Playlist에 Starred 역 수출"
 
 #: src/Models/StreamMetadata.vala:31
-#, fuzzy
 msgid "Extended Comment"
-msgstr "Extended Comment"
+msgstr "확장된 코멘트"
 
 #: src/Widgets/PreferencesPopover.vala:71
-#, fuzzy
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
-msgstr ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
+msgstr "스트림 정보가 활성화되면 재생 스트림에서 metadata를 통해 빠른 사이클"
 
 #: src/Widgets/PreferencesPopover.vala:69
-#, fuzzy
 msgid "Faster cycling through stream info"
-msgstr "Faster cycling through stream info"
+msgstr "Faster 순환을 통해 스트림 정보"
 
 #: src/Models/Station.vala:360
-#, fuzzy
 msgid "Favicon address"
-msgstr "Favicon address"
+msgstr "Favicon 주소"
 
 #: src/Models/StreamMetadata.vala:27
 msgid "Genre"
-msgstr "வகை"
+msgstr "장르"
 
 #: src/Widgets/Display.vala:102
 msgid "Genres"
-msgstr "வகைகள்"
+msgstr "장르"
 
 #: src/Models/StreamMetadata.vala:46
-#, fuzzy
 msgid "Has CRC"
-msgstr "Has CRC"
+msgstr "CRC는"
 
 #: src/Widgets/HeaderBar.vala:212
 msgid "History"
-msgstr "வரலாறு"
+msgstr "기록"
 
 #: src/Models/StreamMetadata.vala:28
 msgid "Homepage"
-msgstr "முகப்புப்பக்கம்"
+msgstr "홈페이지"
 
 #: src/Models/Station.vala:361
-#, fuzzy
 msgid "Homepage address"
-msgstr "Homepage address"
+msgstr "홈페이지"
 
 #: src/Widgets/PreferencesPopover.vala:27
-#, fuzzy
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
+"확인된 경우, 당신의 별 및 스트림 스테이션은 역 인덱스 인기 투표를 계산하기 "
+"위해 사용되지 않습니다, 또는 인기 및 추세 역"
 
 #: src/Widgets/PreferencesPopover.vala:52
-#, fuzzy
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
-msgstr ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
+msgstr "활성화되면 Tuner가 마지막 재생 스테이션을 재생하기 시작합니다"
 
 #: src/Widgets/PreferencesPopover.vala:59
-#, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr "활성화되면, Tuner가 Starred 역보기에 열릴 때"
 
 #: src/Models/StreamMetadata.vala:26
 msgid "Image"
-msgstr "படம்"
+msgstr "Image"
 
 #: src/Widgets/PreferencesPopover.vala:105
-#, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
-msgstr "Import Station UUIDs as Starred Stations"
+msgstr "수입 역 UUIDs로 Starred 역"
 
 #: src/Widgets/Display.vala:557
 msgid "Jukebox"
-msgstr "ஜூக்பாக்ஸ்"
+msgstr "주크박스"
 
 #: src/Widgets/PreferencesPopover.vala:86
 msgid "Language"
-msgstr "மொழி"
+msgstr "언어"
 
 #: src/Widgets/Display.vala:422
-#, fuzzy
 msgid "Latest Search"
-msgstr "Latest Search"
+msgstr "최근 검색"
 
 #: src/Widgets/Display.vala:99
 msgid "Library"
-msgstr "நூலகம்"
+msgstr "라이브러리"
 
 #: src/Widgets/PreferencesPopover.vala:33
 msgid "Light mode"
-msgstr "ஒளி பயன்முறை"
+msgstr "밝게"
 
 #: src/Models/StreamMetadata.vala:30
 msgid "Location"
-msgstr "இடம்"
+msgstr "위치"
 
 #: src/Models/StreamMetadata.vala:39
-#, fuzzy
 msgid "Maximum Bitrate"
-msgstr "Maximum Bitrate"
+msgstr "최대 비트레이트"
 
 #: src/Models/StreamMetadata.vala:38
-#, fuzzy
 msgid "Minimum Bitrate"
-msgstr "Minimum Bitrate"
+msgstr "최소 비트레이트"
 
 #: src/Widgets/Display.vala:362
-#, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
-msgstr "Most listened to Stations in the last 24 hours"
+msgstr "가장 가까운 역에 24 시간"
 
 #: src/Widgets/base/StationListBox.vala:156
 msgid "No stations found"
-msgstr "நிலையங்கள் எதுவும் கிடைக்கவில்லை"
+msgstr "발견된 방송국이 없습니다"
 
 #: src/Models/StreamMetadata.vala:37
-#, fuzzy
 msgid "Nominal Bitrate"
-msgstr "Nominal Bitrate"
+msgstr "명목상 비트레이트"
 
 #: src/Widgets/base/StationListBox.vala:146
 msgid "Nothing here"
-msgstr "இங்கே எதுவும் இல்லை"
+msgstr "더 알아보기"
 
 #: src/Widgets/PreferencesPopover.vala:57
-#, fuzzy
 msgid "Open to Starred Stations"
-msgstr "Open to Starred Stations"
+msgstr "Starred 역에 열기"
 
 #: src/Models/StreamMetadata.vala:29
 msgid "Organization"
-msgstr "அமைப்பு"
+msgstr "조직"
 
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
-msgstr "பிண்ணணியில் ஓடுகிறது"
+msgstr "백그라운드에서 재생 중"
 
 #: src/Widgets/base/StationListBox.vala:156
-#, fuzzy
 msgid "Please try a different search term."
-msgstr "Please try a different search term."
+msgstr "다른 검색 용어를 시도하십시오."
 
 #: src/Widgets/Display.vala:361
 msgid "Popular"
-msgstr "பிரபலமானது"
+msgstr "인기"
 
 #: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
-msgstr "விருப்பத்தேர்வுகள்"
+msgstr "환경설정"
 
 #: src/Models/StreamMetadata.vala:45
-#, fuzzy
 msgid "Private Data"
-msgstr "Private Data"
+msgstr "개인 데이터"
 
 #: src/Widgets/Display.vala:627
-#, fuzzy
 msgid "Remove this saved search"
-msgstr "Remove this saved search"
+msgstr "이 저장된 검색 제거"
 
 #: src/Widgets/PreferencesPopover.vala:87
-#, fuzzy
 msgid "Requires restarting Tuner"
-msgstr "Requires restarting Tuner"
+msgstr "다시 시작 Tuner"
 
 #: src/Widgets/PreferencesPopover.vala:184
 msgid "Save File"
-msgstr "கோப்பை சேமி"
+msgstr "파일 저장"
 
 #: src/Widgets/Display.vala:426
-#, fuzzy
 msgid "Save this search"
-msgstr "Save this search"
+msgstr "이 검색"
 
 #: src/Widgets/Display.vala:625
-#, fuzzy
 msgid "Saved Search"
-msgstr "Saved Search"
+msgstr "비밀번호"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
-msgstr "சேமித்த தேடல்கள்"
+msgstr "저장된 검색어"
 
 #: src/Widgets/Display.vala:423
 msgid "Search Results"
-msgstr "முடிவுகளைத் தேடு"
+msgstr "결과 찾기"
 
 #: src/Widgets/Display.vala:98
-#, fuzzy
 msgid "Selections"
-msgstr "Selections"
+msgstr "선택하기"
 
 #: src/Widgets/PreferencesPopover.vala:64
-#, fuzzy
 msgid "Show stream info when playing"
-msgstr "Show stream info when playing"
+msgstr "재생할 때 스트림 정보 표시"
 
 #: src/Widgets/base/StationListBox.vala:146
-#, fuzzy
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
+"역 공급자에서 잘못된 선적 라디오 방송국 자료가 갔다. 나중에 다시 "
+"시도하십시오."
 
 #: src/Widgets/HeaderBar.vala:170
-#, fuzzy
 msgid "Star this station"
-msgstr "Star this station"
+msgstr "이 역"
 
 #: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
 msgid "Starred by You"
-msgstr "உங்களால் நட்சத்திரமிடப்பட்டது"
+msgstr "에 의해 별"
 
 #: src/Widgets/HeaderBar.vala:191
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "역 검색"
 
 #: src/Widgets/StationContextMenu.vala:87
-#, fuzzy
 msgid "Station info updated Online - View changes"
-msgstr "Station info updated Online - View changes"
+msgstr "역 정보 업데이트 Online - 변경 사항 보기"
 
 #: src/Models/Station.vala:133
-#, fuzzy
 msgid "Station no longer in the index"
-msgstr "Station no longer in the index"
+msgstr "역 더 이상 인덱스에서"
 
 #: src/Models/Station.vala:362
-#, fuzzy
 msgid "Station tags"
-msgstr "Station tags"
+msgstr "역 태그"
 
 #: src/Widgets/HeaderBar.vala:148
-#, fuzzy
 msgid "Stations"
-msgstr "Stations"
+msgstr "오시는 길"
 
 #: src/Widgets/Display.vala:326
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "오시는 길"
 
 #: src/Widgets/Window.vala:286
-#, fuzzy
 msgid "Stop Playback requested"
-msgstr "Stop Playback requested"
+msgstr "중지 Playback 요청"
 
 #: src/Widgets/HeaderBar.vala:62
 msgid "Stream Metadata"
-msgstr "ஸ்ட்ரீம் மெட்டாடேட்டா"
+msgstr "Stream 메타데이터"
 
 #: src/Models/Station.vala:359
-#, fuzzy
 msgid "Stream Resolved Url"
-msgstr "Stream Resolved Url"
+msgstr "스트림 Resolved 뚱 베어"
 
 #: src/Models/Station.vala:358
-#, fuzzy
 msgid "Stream Url"
-msgstr "Stream Url"
+msgstr "스트림 Url"
 
 #: src/Widgets/Display.vala:103
-#, fuzzy
 msgid "Subgenres"
-msgstr "Subgenres"
+msgstr "관련 기사"
 
 #: src/Widgets/PreferencesPopover.vala:32
 msgid "System"
-msgstr "மண்டலம்"
+msgstr "시스템"
 
 #: src/Widgets/HeaderBar.vala:148
 msgid "Tags"
-msgstr "குறிச்சொற்கள்"
+msgstr "태그"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
-msgstr "பேச்சு, செய்திகள், விளையாட்டு"
+msgstr "토크, 뉴스, 스포츠"
 
 #: src/Widgets/PreferencesPopover.vala:45
 msgid "Theme"
-msgstr "கருப்பொருள்"
+msgstr "테마"
 
 #: src/Models/StreamMetadata.vala:23
 msgid "Title"
-msgstr "தலைப்பு"
+msgstr "제목"
 
 #: src/Models/StreamMetadata.vala:36
-#, fuzzy
 msgid "Track Count"
-msgstr "Track Count"
+msgstr "트랙 카운트"
 
 #: src/Models/StreamMetadata.vala:35
 msgid "Track Number"
-msgstr "ட்ராக் எண்"
+msgstr "트랙 번호"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
-msgstr "ட்ரெண்டிங்"
+msgstr "유행"
 
 #: src/Widgets/Display.vala:347
 msgid "Trending Stations in the last 24 hours"
-msgstr "கடந்த 24 மணி நேரத்தில் பிரபலமாகி வரும் நிலையங்கள்"
+msgstr "지난 24 시간 동안의 동향"
 
 #: src/Widgets/StationContextMenu.vala:143
-#, c-format, fuzzy
+#, c-format
 msgid "Unable to open website: %s"
-msgstr "Unable to open website: %s"
+msgstr "웹 사이트를 열 수 없습니다 : %s"
 
 #: src/Widgets/StationContextMenu.vala:88
-#, fuzzy
 msgid "Update Station from Online"
-msgstr "Update Station from Online"
+msgstr "Online의 업데이트 역"
 
 #: src/Widgets/StationContextMenu.vala:96
 msgid "Visit Website"
-msgstr "வலைத்தளத்தைப் பார்க்கவும்"
+msgstr "웹사이트 방문"
 
 #: src/Widgets/PreferencesPopover.vala:187
 #: src/Widgets/PreferencesPopover.vala:224
 msgid "_Cancel"
-msgstr "_ரத்துசெய்"
+msgstr "_취소"
 
 #: src/Widgets/PreferencesPopover.vala:225
 msgid "_Open"
-msgstr "_OPEN"
+msgstr "_열기"
 
 #: src/Widgets/PreferencesPopover.vala:188
 msgid "_Save"
-msgstr "சேமி (_S)"
+msgstr "저장(_S)"
