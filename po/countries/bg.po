@@ -1,0 +1,1085 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the countries package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: countries\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-01 00:34-0800\n"
+"PO-Revision-Date: 2026-02-03 01:24+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/tuner/"
+"countries-languages/bg/>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16-dev\n"
+
+msgctxt "Countries"
+msgid "Afghanistan"
+msgstr "Афганистан"
+
+msgctxt "Countries"
+msgid "Aland Islands"
+msgstr "Аленски острови"
+
+msgctxt "Countries"
+msgid "Albania"
+msgstr "Албания"
+
+msgctxt "Countries"
+msgid "Algeria"
+msgstr "Алжир"
+
+msgctxt "Countries"
+msgid "American Samoa"
+msgstr "Американска Самоа"
+
+msgctxt "Countries"
+msgid "Andorra"
+msgstr "Андора"
+
+msgctxt "Countries"
+msgid "Angola"
+msgstr "Ангола"
+
+msgctxt "Countries"
+msgid "Anguilla"
+msgstr "Ангила"
+
+msgctxt "Countries"
+msgid "Antarctica"
+msgstr "Антарктида"
+
+msgctxt "Countries"
+msgid "Antigua and Barbuda"
+msgstr "Антигуа и Барбуда"
+
+msgctxt "Countries"
+msgid "Argentina"
+msgstr "Аржентина"
+
+msgctxt "Countries"
+msgid "Armenia"
+msgstr "Армения"
+
+msgctxt "Countries"
+msgid "Aruba"
+msgstr "Аруба"
+
+msgctxt "Countries"
+msgid "Australia"
+msgstr "Австралия"
+
+msgctxt "Countries"
+msgid "Austria"
+msgstr "Австрия"
+
+msgctxt "Countries"
+msgid "Azerbaijan"
+msgstr "Азербайджан"
+
+msgctxt "Countries"
+msgid "Bahamas"
+msgstr "Бахами"
+
+msgctxt "Countries"
+msgid "Bahrain"
+msgstr "Бахрейн"
+
+msgctxt "Countries"
+msgid "Bangladesh"
+msgstr "Бангладеш"
+
+msgctxt "Countries"
+msgid "Barbados"
+msgstr "Барбадос"
+
+msgctxt "Countries"
+msgid "Belarus"
+msgstr "Беларус"
+
+msgctxt "Countries"
+msgid "Belgium"
+msgstr "Белгия"
+
+msgctxt "Countries"
+msgid "Belize"
+msgstr "Белиз"
+
+msgctxt "Countries"
+msgid "Benin"
+msgstr "Бенин"
+
+msgctxt "Countries"
+msgid "Bermuda"
+msgstr "Бермуда"
+
+msgctxt "Countries"
+msgid "Bhutan"
+msgstr "Бутан"
+
+msgctxt "Countries"
+msgid "Bolivia"
+msgstr "Боливия"
+
+msgctxt "Countries"
+msgid "Bonaire, Sint Eustatius and Saba"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Bosnia and Herzegovina"
+msgstr "Босна и Херцеговина"
+
+msgctxt "Countries"
+msgid "Botswana"
+msgstr "Ботсвана"
+
+msgctxt "Countries"
+msgid "Bouvet Island"
+msgstr "Остров Бувет"
+
+msgctxt "Countries"
+msgid "Brazil"
+msgstr "Бразилия"
+
+msgctxt "Countries"
+msgid "British Indian Ocean Territory"
+msgstr "Британска територия на Индийския океан"
+
+msgctxt "Countries"
+msgid "Brunei Darussalam"
+msgstr "Бруней Дарусалам"
+
+msgctxt "Countries"
+msgid "Bulgaria"
+msgstr "България"
+
+msgctxt "Countries"
+msgid "Burkina Faso"
+msgstr "Буркина Фасо"
+
+msgctxt "Countries"
+msgid "Burundi"
+msgstr "Бурунди"
+
+msgctxt "Countries"
+msgid "Cabo Verde"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Cambodia"
+msgstr "Камбоджа"
+
+msgctxt "Countries"
+msgid "Cameroon"
+msgstr "Камерун"
+
+msgctxt "Countries"
+msgid "Canada"
+msgstr "Канада"
+
+msgctxt "Countries"
+msgid "Cayman Islands"
+msgstr "Каймански острови"
+
+msgctxt "Countries"
+msgid "Central African Republic"
+msgstr "Централноафриканска република"
+
+msgctxt "Countries"
+msgid "Chad"
+msgstr "Чад"
+
+msgctxt "Countries"
+msgid "Chile"
+msgstr "Чили"
+
+msgctxt "Countries"
+msgid "China"
+msgstr "Китай"
+
+msgctxt "Countries"
+msgid "Christmas Island"
+msgstr "Коледен остров"
+
+msgctxt "Countries"
+msgid "Cocos (Keeling) Islands"
+msgstr "Острови Кокос (Килинг)"
+
+msgctxt "Countries"
+msgid "Colombia"
+msgstr "Колумбия"
+
+msgctxt "Countries"
+msgid "Comoros"
+msgstr "Коморос"
+
+msgctxt "Countries"
+msgid "Congo"
+msgstr "Конго"
+
+msgctxt "Countries"
+msgid "Congo, Democratic Republic of the"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Cook Islands"
+msgstr "Кук острови"
+
+msgctxt "Countries"
+msgid "Costa Rica"
+msgstr "Коста Рика"
+
+msgctxt "Countries"
+msgid "Cote d'Ivoire"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Croatia"
+msgstr "Хърватия"
+
+msgctxt "Countries"
+msgid "Cuba"
+msgstr "Куба"
+
+msgctxt "Countries"
+msgid "Curacao"
+msgstr "Кюракао"
+
+msgctxt "Countries"
+msgid "Cyprus"
+msgstr "Кипър"
+
+msgctxt "Countries"
+msgid "Czechia"
+msgstr "Чехия"
+
+msgctxt "Countries"
+msgid "Denmark"
+msgstr "Дания"
+
+msgctxt "Countries"
+msgid "Djibouti"
+msgstr "Джибути"
+
+msgctxt "Countries"
+msgid "Dominica"
+msgstr "Доминика"
+
+msgctxt "Countries"
+msgid "Dominican Republic"
+msgstr "Доминиканска република"
+
+msgctxt "Countries"
+msgid "Ecuador"
+msgstr "Еквадор"
+
+msgctxt "Countries"
+msgid "Egypt"
+msgstr "Египет"
+
+msgctxt "Countries"
+msgid "El Salvador"
+msgstr "Ел Салвадор"
+
+msgctxt "Countries"
+msgid "Equatorial Guinea"
+msgstr "Екваториална Гвинея"
+
+msgctxt "Countries"
+msgid "Eritrea"
+msgstr "Еритрея"
+
+msgctxt "Countries"
+msgid "Estonia"
+msgstr "Естония"
+
+msgctxt "Countries"
+msgid "Eswatini"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Ethiopia"
+msgstr "Етиопия"
+
+msgctxt "Countries"
+msgid "Falkland Islands (Malvinas)"
+msgstr "Фолклендските острови (Малвинас)"
+
+msgctxt "Countries"
+msgid "Faroe Islands"
+msgstr "Фарьорски острови"
+
+msgctxt "Countries"
+msgid "Fiji"
+msgstr "Фиджи"
+
+msgctxt "Countries"
+msgid "Finland"
+msgstr "Финландия"
+
+msgctxt "Countries"
+msgid "France"
+msgstr "Франция"
+
+msgctxt "Countries"
+msgid "French Guiana"
+msgstr "Френска Гвиана"
+
+msgctxt "Countries"
+msgid "French Polynesia"
+msgstr "Френска Полинезия"
+
+msgctxt "Countries"
+msgid "French Southern Territories"
+msgstr "Френски южни територии"
+
+msgctxt "Countries"
+msgid "Gabon"
+msgstr "Габон"
+
+msgctxt "Countries"
+msgid "Gambia"
+msgstr "Гамбия"
+
+msgctxt "Countries"
+msgid "Georgia"
+msgstr "Джорджия"
+
+msgctxt "Countries"
+msgid "Germany"
+msgstr "Германия"
+
+msgctxt "Countries"
+msgid "Ghana"
+msgstr "Гана"
+
+msgctxt "Countries"
+msgid "Gibraltar"
+msgstr "Гибралтар"
+
+msgctxt "Countries"
+msgid "Greece"
+msgstr "Гърция"
+
+msgctxt "Countries"
+msgid "Greenland"
+msgstr "Гренландия"
+
+msgctxt "Countries"
+msgid "Grenada"
+msgstr "Гренада"
+
+msgctxt "Countries"
+msgid "Guadeloupe"
+msgstr "Гваделупа"
+
+msgctxt "Countries"
+msgid "Guam"
+msgstr "Гуам"
+
+msgctxt "Countries"
+msgid "Guatemala"
+msgstr "Гватемала"
+
+msgctxt "Countries"
+msgid "Guernsey"
+msgstr "Гърнси"
+
+msgctxt "Countries"
+msgid "Guinea"
+msgstr "Гвинея"
+
+msgctxt "Countries"
+msgid "Guinea-Bissau"
+msgstr "Гвинея-Бисау"
+
+msgctxt "Countries"
+msgid "Guyana"
+msgstr "Гаяна"
+
+msgctxt "Countries"
+msgid "Haiti"
+msgstr "Хаити"
+
+msgctxt "Countries"
+msgid "Heard Island and McDonald Islands"
+msgstr "Остров Хърд и Макдоналдски острови"
+
+msgctxt "Countries"
+msgid "Holy See"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Honduras"
+msgstr "Хондурас"
+
+msgctxt "Countries"
+msgid "Hong Kong"
+msgstr "Хонконг"
+
+msgctxt "Countries"
+msgid "Hungary"
+msgstr "Унгария"
+
+msgctxt "Countries"
+msgid "Iceland"
+msgstr "Исландия"
+
+msgctxt "Countries"
+msgid "India"
+msgstr "Индия"
+
+msgctxt "Countries"
+msgid "Indonesia"
+msgstr "Индонезия"
+
+msgctxt "Countries"
+msgid "Iran"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Iraq"
+msgstr "Ирак"
+
+msgctxt "Countries"
+msgid "Ireland"
+msgstr "Ирландия"
+
+msgctxt "Countries"
+msgid "Isle of Man"
+msgstr "Остров на човека"
+
+msgctxt "Countries"
+msgid "Israel"
+msgstr "Израел"
+
+msgctxt "Countries"
+msgid "Italy"
+msgstr "Италия"
+
+msgctxt "Countries"
+msgid "Jamaica"
+msgstr "Ямайка"
+
+msgctxt "Countries"
+msgid "Japan"
+msgstr "Япония"
+
+msgctxt "Countries"
+msgid "Jersey"
+msgstr "Джърси"
+
+msgctxt "Countries"
+msgid "Jordan"
+msgstr "Йордания"
+
+msgctxt "Countries"
+msgid "Kazakhstan"
+msgstr "Казахстан"
+
+msgctxt "Countries"
+msgid "Kenya"
+msgstr "Кения"
+
+msgctxt "Countries"
+msgid "Kiribati"
+msgstr "Кирибати"
+
+msgctxt "Countries"
+msgid "Korea (Democratic People's Republic of)"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Korea, Republic of"
+msgstr "Корея, Република"
+
+msgctxt "Countries"
+msgid "Kuwait"
+msgstr "Кувейт"
+
+msgctxt "Countries"
+msgid "Kyrgyzstan"
+msgstr "Киргизстан"
+
+msgctxt "Countries"
+msgid "Lao People's Democratic Republic"
+msgstr "Демократичната република на Лаото"
+
+msgctxt "Countries"
+msgid "Latvia"
+msgstr "Латвия"
+
+msgctxt "Countries"
+msgid "Lebanon"
+msgstr "Ливан"
+
+msgctxt "Countries"
+msgid "Lesotho"
+msgstr "Лесото"
+
+msgctxt "Countries"
+msgid "Liberia"
+msgstr "Либерия"
+
+msgctxt "Countries"
+msgid "Libya"
+msgstr "Либия"
+
+msgctxt "Countries"
+msgid "Liechtenstein"
+msgstr "Лихтенщайн"
+
+msgctxt "Countries"
+msgid "Lithuania"
+msgstr "Литва"
+
+msgctxt "Countries"
+msgid "Luxembourg"
+msgstr "Люксембург"
+
+msgctxt "Countries"
+msgid "Macao"
+msgstr "Макао"
+
+msgctxt "Countries"
+msgid "Madagascar"
+msgstr "Мадагаскар"
+
+msgctxt "Countries"
+msgid "Malawi"
+msgstr "Малави"
+
+msgctxt "Countries"
+msgid "Malaysia"
+msgstr "Малайзия"
+
+msgctxt "Countries"
+msgid "Maldives"
+msgstr "Малдиви"
+
+msgctxt "Countries"
+msgid "Mali"
+msgstr "Мали"
+
+msgctxt "Countries"
+msgid "Malta"
+msgstr "Малта"
+
+msgctxt "Countries"
+msgid "Marshall Islands"
+msgstr "Маршаловите острови"
+
+msgctxt "Countries"
+msgid "Martinique"
+msgstr "Мартиника"
+
+msgctxt "Countries"
+msgid "Mauritania"
+msgstr "Мавритания"
+
+msgctxt "Countries"
+msgid "Mauritius"
+msgstr "Мавриций"
+
+msgctxt "Countries"
+msgid "Mayotte"
+msgstr "Майота"
+
+msgctxt "Countries"
+msgid "Mexico"
+msgstr "Мексико"
+
+msgctxt "Countries"
+msgid "Micronesia"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Moldova"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Monaco"
+msgstr "Монако"
+
+msgctxt "Countries"
+msgid "Mongolia"
+msgstr "Монголия"
+
+msgctxt "Countries"
+msgid "Montenegro"
+msgstr "Черна гора"
+
+msgctxt "Countries"
+msgid "Montserrat"
+msgstr "Монсерат"
+
+msgctxt "Countries"
+msgid "Morocco"
+msgstr "Мароко"
+
+msgctxt "Countries"
+msgid "Mozambique"
+msgstr "Мозамбик"
+
+msgctxt "Countries"
+msgid "Myanmar"
+msgstr "Мианмар"
+
+msgctxt "Countries"
+msgid "Namibia"
+msgstr "Намибия"
+
+msgctxt "Countries"
+msgid "Nauru"
+msgstr "Науруански"
+
+msgctxt "Countries"
+msgid "Nepal"
+msgstr "Непал"
+
+msgctxt "Countries"
+msgid "Netherlands"
+msgstr "Нидерландия"
+
+msgctxt "Countries"
+msgid "New Caledonia"
+msgstr "Нова Каледония"
+
+msgctxt "Countries"
+msgid "New Zealand"
+msgstr "Нова Зеландия"
+
+msgctxt "Countries"
+msgid "Nicaragua"
+msgstr "Никарагуа"
+
+msgctxt "Countries"
+msgid "Niger"
+msgstr "Нигер"
+
+msgctxt "Countries"
+msgid "Nigeria"
+msgstr "Нигерия"
+
+msgctxt "Countries"
+msgid "Niue"
+msgstr "Niue"
+
+msgctxt "Countries"
+msgid "Norfolk Island"
+msgstr "Остров Норфолк"
+
+msgctxt "Countries"
+msgid "North Macedonia"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Northern Mariana Islands"
+msgstr "Северни острови Мариана"
+
+msgctxt "Countries"
+msgid "Norway"
+msgstr "Норвегия"
+
+msgctxt "Countries"
+msgid "Oman"
+msgstr "Оман"
+
+msgctxt "Countries"
+msgid "Pakistan"
+msgstr "Пакистан"
+
+msgctxt "Countries"
+msgid "Palau"
+msgstr "Палау"
+
+msgctxt "Countries"
+msgid "Palestine"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Panama"
+msgstr "Панама"
+
+msgctxt "Countries"
+msgid "Papua New Guinea"
+msgstr "Папуа Нова Гвинея"
+
+msgctxt "Countries"
+msgid "Paraguay"
+msgstr "Парагвай"
+
+msgctxt "Countries"
+msgid "Peru"
+msgstr "Перу"
+
+msgctxt "Countries"
+msgid "Philippines"
+msgstr "Филипини"
+
+msgctxt "Countries"
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+msgctxt "Countries"
+msgid "Poland"
+msgstr "Полша"
+
+msgctxt "Countries"
+msgid "Portugal"
+msgstr "Португалия"
+
+msgctxt "Countries"
+msgid "Puerto Rico"
+msgstr "Пуерто Рико"
+
+msgctxt "Countries"
+msgid "Qatar"
+msgstr "Катар"
+
+msgctxt "Countries"
+msgid "Reunion"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Romania"
+msgstr "Румъния"
+
+msgctxt "Countries"
+msgid "Russian Federation"
+msgstr "Руска федерация"
+
+msgctxt "Countries"
+msgid "Rwanda"
+msgstr "Руанда"
+
+msgctxt "Countries"
+msgid "Saint Barthelemy"
+msgstr "Свети Бартелеми"
+
+msgctxt "Countries"
+msgid "Saint Helena, Ascension and Tristan da Cunha"
+msgstr "Света Елена, Възнесение и Тристан да Куня"
+
+msgctxt "Countries"
+msgid "Saint Kitts and Nevis"
+msgstr "Сейнт Китс и Невис"
+
+msgctxt "Countries"
+msgid "Saint Lucia"
+msgstr "Свети Лусия"
+
+msgctxt "Countries"
+msgid "Saint Martin"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Saint Pierre and Miquelon"
+msgstr "Свети Пиер и Микелон"
+
+msgctxt "Countries"
+msgid "Saint Vincent and the Grenadines"
+msgstr "Сейнт Винсент и гренадините"
+
+msgctxt "Countries"
+msgid "Samoa"
+msgstr "Самоа"
+
+msgctxt "Countries"
+msgid "San Marino"
+msgstr "Сан Марино"
+
+msgctxt "Countries"
+msgid "Sao Tome and Principe"
+msgstr "Сао Томе и Принсипи"
+
+msgctxt "Countries"
+msgid "Saudi Arabia"
+msgstr "Саудитска Арабия"
+
+msgctxt "Countries"
+msgid "Senegal"
+msgstr "Сенегал"
+
+msgctxt "Countries"
+msgid "Serbia"
+msgstr "Сърбия"
+
+msgctxt "Countries"
+msgid "Seychelles"
+msgstr "Сейшели"
+
+msgctxt "Countries"
+msgid "Sierra Leone"
+msgstr "Сиера Леоне"
+
+msgctxt "Countries"
+msgid "Singapore"
+msgstr "Сингапур"
+
+msgctxt "Countries"
+msgid "Sint Maarten"
+msgstr "Синт Маартен"
+
+msgctxt "Countries"
+msgid "Slovakia"
+msgstr "Словакия"
+
+msgctxt "Countries"
+msgid "Slovenia"
+msgstr "Словения"
+
+msgctxt "Countries"
+msgid "Solomon Islands"
+msgstr "Соломонски острови"
+
+msgctxt "Countries"
+msgid "Somalia"
+msgstr "Сомалия"
+
+msgctxt "Countries"
+msgid "South Africa"
+msgstr "Южна Африка"
+
+msgctxt "Countries"
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Южна Джорджия и Южните сандвич острови"
+
+msgctxt "Countries"
+msgid "South Sudan"
+msgstr "Южен Судан"
+
+msgctxt "Countries"
+msgid "Spain"
+msgstr "Испания"
+
+msgctxt "Countries"
+msgid "Sri Lanka"
+msgstr "Шри Ланка"
+
+msgctxt "Countries"
+msgid "Sudan"
+msgstr "Судан"
+
+msgctxt "Countries"
+msgid "Suriname"
+msgstr "Суринам"
+
+msgctxt "Countries"
+msgid "Svalbard and Jan Mayen"
+msgstr "Свалбард и Ян Маййн"
+
+msgctxt "Countries"
+msgid "Sweden"
+msgstr "Швеция"
+
+msgctxt "Countries"
+msgid "Switzerland"
+msgstr "Швейцария"
+
+msgctxt "Countries"
+msgid "Syrian Arab Republic"
+msgstr "Сирийска арабска република"
+
+msgctxt "Countries"
+msgid "Taiwan"
+msgstr "Тайван"
+
+msgctxt "Countries"
+msgid "Tajikistan"
+msgstr "Таджикистан"
+
+msgctxt "Countries"
+msgid "Tanzania"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Thailand"
+msgstr "Тайланд"
+
+msgctxt "Countries"
+msgid "Timor-Leste"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Togo"
+msgstr "Того"
+
+msgctxt "Countries"
+msgid "Tokelau"
+msgstr "Токелау"
+
+msgctxt "Countries"
+msgid "Tonga"
+msgstr "Тонга"
+
+msgctxt "Countries"
+msgid "Trinidad and Tobago"
+msgstr "Тринидад и Тобаго"
+
+msgctxt "Countries"
+msgid "Tunisia"
+msgstr "Тунис"
+
+msgctxt "Countries"
+msgid "Turkey"
+msgstr "Турция"
+
+msgctxt "Countries"
+msgid "Turkmenistan"
+msgstr "Туркменистан"
+
+msgctxt "Countries"
+msgid "Turks and Caicos Islands"
+msgstr "Острови турци и Кайкос"
+
+msgctxt "Countries"
+msgid "Tuvalu"
+msgstr "Тувалуански"
+
+msgctxt "Countries"
+msgid "Uganda"
+msgstr "Уганда"
+
+msgctxt "Countries"
+msgid "Ukraine"
+msgstr "Украйна"
+
+msgctxt "Countries"
+msgid "United Arab Emirates"
+msgstr "Обединени арабски емирства"
+
+msgctxt "Countries"
+msgid "United Kingdom of Great Britain and Northern Ireland"
+msgstr ""
+
+msgctxt "Countries"
+msgid "United States of America"
+msgstr "Съединените американски щати"
+
+msgctxt "Countries"
+msgid "United States Minor Outlying Islands"
+msgstr "Съединените щати Незначителни острови"
+
+msgctxt "Countries"
+msgid "Uruguay"
+msgstr "Уругвай"
+
+msgctxt "Countries"
+msgid "Uzbekistan"
+msgstr "Узбекистан"
+
+msgctxt "Countries"
+msgid "Vanuatu"
+msgstr "Вануату"
+
+msgctxt "Countries"
+msgid "Venezuela"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Vietnam"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Virgin Islands (UK)"
+msgstr ""
+
+msgctxt "Countries"
+msgid "Virgin Islands (US)"
+msgstr "Вирджински острови (САЩ)"
+
+msgctxt "Countries"
+msgid "Wallis and Futuna"
+msgstr "Уолис и Футуна"
+
+msgctxt "Countries"
+msgid "Western Sahara"
+msgstr "Западна Сахара"
+
+msgctxt "Countries"
+msgid "Yemen"
+msgstr "Йемен"
+
+msgctxt "Countries"
+msgid "Zambia"
+msgstr "Замбия"
+
+msgctxt "Countries"
+msgid "Zimbabwe"
+msgstr "Зимбабве"
+
+msgctxt "Countries"
+msgid "Kosovo"
+msgstr ""
+
+msgctxt "Languages"
+msgid "German"
+msgstr "Немски"
+
+msgctxt "Languages"
+msgid "English"
+msgstr "Английски"
+
+msgctxt "Languages"
+msgid "Spanish"
+msgstr "Испански"
+
+msgctxt "Languages"
+msgid "Spanish (Latin America)"
+msgstr "Испански (Латинска Америка)"
+
+msgctxt "Languages"
+msgid "Estonian"
+msgstr "Естонски"
+
+msgctxt "Languages"
+msgid "French"
+msgstr "Френски"
+
+msgctxt "Languages"
+msgid "Italian"
+msgstr "Италиански"
+
+msgctxt "Languages"
+msgid "Japanese"
+msgstr "Японски"
+
+msgctxt "Languages"
+msgid "Norwegian (Bokmal)"
+msgstr ""
+
+msgctxt "Languages"
+msgid "Dutch"
+msgstr "Холандски"
+
+msgctxt "Languages"
+msgid "Portuguese (Brazil)"
+msgstr "Португалски (Бразилия)"
+
+msgctxt "Languages"
+msgid "Romanian"
+msgstr "Румънски"
+
+msgctxt "Languages"
+msgid "Russian"
+msgstr "Руски"
+
+msgctxt "Languages"
+msgid "Tamil"
+msgstr "Тамил"
+
+msgctxt "Languages"
+msgid "Turkish"
+msgstr "Турски"
+
+msgctxt "Languages"
+msgid "Traditional Chinese"
+msgstr "Традиционен китайски"
