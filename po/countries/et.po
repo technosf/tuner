@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: countries\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-02 19:46-0800\n"
-"PO-Revision-Date: 2026-02-03 08:23+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"PO-Revision-Date: 2026-02-03 18:51+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/tuner/countries-"
 "languages/et/>\n"
 "Language: et\n"
@@ -1021,28 +1021,19 @@ msgstr "Kosovo"
 
 msgctxt "Languages"
 msgid "Arabic"
-msgstr ""
+msgstr "araabia keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Bulgaria"
 msgctxt "Languages"
 msgid "Bulgarian"
-msgstr "Bulgaaria"
+msgstr "bulgaaria keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Czechia"
 msgctxt "Languages"
 msgid "Czech"
-msgstr "Tšehhi"
+msgstr "tšehhi keel"
 
-#, fuzzy
-#| msgctxt "Languages"
-#| msgid "Spanish"
 msgctxt "Languages"
 msgid "Danish"
-msgstr "hispaania keel"
+msgstr "taani keel"
 
 msgctxt "Languages"
 msgid "German"
@@ -1054,7 +1045,7 @@ msgstr "inglise keel"
 
 msgctxt "Languages"
 msgid "Spanish (Latin America)"
-msgstr "hispaania (Ladina Ameerika)"
+msgstr "hispaania keel (Ladina Ameerika)"
 
 msgctxt "Languages"
 msgid "Spanish"
@@ -1062,40 +1053,31 @@ msgstr "hispaania keel"
 
 msgctxt "Languages"
 msgid "Estonian"
-msgstr "eestikeelne"
+msgstr "eesti keel"
 
 msgctxt "Languages"
 msgid "Persian"
-msgstr ""
+msgstr "pärsia keel"
 
 msgctxt "Languages"
 msgid "French"
-msgstr "Prantsuse"
+msgstr "prantsuse keel"
 
 msgctxt "Languages"
 msgid "Gujarati"
-msgstr ""
+msgstr "gudžarati keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Hungary"
 msgctxt "Languages"
 msgid "Hungarian"
-msgstr "Ungari"
+msgstr "ungari keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Indonesia"
 msgctxt "Languages"
 msgid "Indonesian"
-msgstr "Indoneesia"
+msgstr "indoneesia keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Iceland"
 msgctxt "Languages"
 msgid "Icelandic"
-msgstr "Island"
+msgstr "islandi keel"
 
 msgctxt "Languages"
 msgid "Italian"
@@ -1103,100 +1085,76 @@ msgstr "itaalia keel"
 
 msgctxt "Languages"
 msgid "Japanese"
-msgstr "jaapanikeelne"
+msgstr "jaapani keel"
 
 msgctxt "Languages"
 msgid "Korean"
-msgstr ""
+msgstr "korea keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Lithuania"
 msgctxt "Languages"
 msgid "Lithuanian"
-msgstr "Leedu"
+msgstr "leedu keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Latvia"
 msgctxt "Languages"
 msgid "Latvian"
-msgstr "Läti"
+msgstr "läti keel"
 
 msgctxt "Languages"
 msgid "Norwegian (Bokmal)"
-msgstr "norra bokmål"
+msgstr "norra keel (bokmål)"
 
 msgctxt "Languages"
 msgid "Dutch"
-msgstr "hollandikeelne"
+msgstr "hollandi keel"
 
 msgctxt "Languages"
 msgid "Portuguese (Brazil)"
-msgstr "portugali (Brasiilia)"
+msgstr "portugali keel (Brasiilia)"
 
 msgctxt "Languages"
 msgid "Romanian"
-msgstr "rumeeniakeelne"
+msgstr "rumeenia keel"
 
 msgctxt "Languages"
 msgid "Russian"
 msgstr "vene keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Slovakia"
 msgctxt "Languages"
 msgid "Slovak"
-msgstr "Slovakkia"
+msgstr "slovaki keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Slovenia"
 msgctxt "Languages"
 msgid "Slovenian"
-msgstr "Sloveenia"
+msgstr "sloveeni keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Serbia"
 msgctxt "Languages"
 msgid "Serbian"
-msgstr "Serbia"
+msgstr "serbia keel"
 
 msgctxt "Languages"
 msgid "Swahili"
-msgstr ""
+msgstr "suahiili keel"
 
 msgctxt "Languages"
 msgid "Tamil"
-msgstr "tamili"
+msgstr "tamili keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Thailand"
 msgctxt "Languages"
 msgid "Thai"
-msgstr "Tai"
+msgstr "tai keel"
 
 msgctxt "Languages"
 msgid "Turkish"
 msgstr "türgi keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Ukraine"
 msgctxt "Languages"
 msgid "Ukrainian"
-msgstr "Ukraina"
+msgstr "ukraina keel"
 
-#, fuzzy
-#| msgctxt "Countries"
-#| msgid "Vietnam"
 msgctxt "Languages"
 msgid "Vietnamese"
-msgstr "Vietnam"
+msgstr "vietnami keel"
 
 msgctxt "Languages"
 msgid "Traditional Chinese"
-msgstr "Traditsiooniline hiina"
+msgstr "hiina keel (traditsiooniline)"
