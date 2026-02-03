@@ -556,9 +556,9 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
     {
         SourceList.Item item = new SourceList.Item(_("Jukebox"));
         item.icon = new ThemedIcon("jukebox");
-        item.tooltip = (_("Double click to shuffle through %1$u stations,\n" 
-                    + "one, every ten minutes, for %2$u days"
-        )).printf (
+        item.tooltip = (_("Double click to shuffle through %1$u stations")
+                    + "\n" + _("one, every ten minutes, for %2$u days")
+        ).printf (
             app ().provider.available_stations (),
             app ().provider.available_stations () / (6 * 24)
         );
