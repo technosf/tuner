@@ -80,9 +80,8 @@ msgid "Copy Stream-URI to clipboard"
 msgstr "Kopeeri voogedastuse võrguaadress lõikelauale"
 
 #: src/Widgets/Display.vala:247
-#, fuzzy
 msgid "Could not get random station"
-msgstr "Could not get random station"
+msgstr "Juhusliku jaama tuvastamine ei õnnestunud"
 
 #: src/Widgets/PreferencesPopover.vala:67
 msgid "Cycle through the metadata from the playing stream"
@@ -134,14 +133,12 @@ msgid "Eras"
 msgstr "Ajastud"
 
 #: src/Widgets/PreferencesPopover.vala:209
-#, fuzzy
 msgid "Error"
-msgstr "Error"
+msgstr "Viga"
 
 #: src/Widgets/PreferencesPopover.vala:248
-#, fuzzy
 msgid "Error reading file"
-msgstr "Error reading file"
+msgstr "Viga faili lugemisel"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
@@ -438,14 +435,12 @@ msgid "Trending Stations in the last 24 hours"
 msgstr "Populaarsust koguvad veebiraadiojaamad viimase 24 tunni jooksul"
 
 #: src/Widgets/StationContextMenu.vala:145
-#, fuzzy
 msgid "Unable to open website"
-msgstr "Unable to open website"
+msgstr "Veebisaidi avamine ei õnnestunud"
 
 #: src/Widgets/StationContextMenu.vala:168
-#, fuzzy
 msgid "Unstar this station"
-msgstr "Unstar this station"
+msgstr "Eemalda see veebiraadio lemmikute seast"
 
 #: src/Widgets/StationContextMenu.vala:90
 msgid "Update Station from Online"
