@@ -206,7 +206,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		} catch (GLib.Error e)
 		{
 			//warning("Error: $(e.message)");
-			warning ((_("Error: %s")).printf (e.message));
+			warning ((_("Error") + ": %s").printf (e.message));
 		}
 	}     // export_m3u8
 
@@ -245,7 +245,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 			} catch (Error e)
 			{
 				//warning("Error reading file: $(e.message)");
-				warning ((_("Error reading file: %s")).printf (e.message));
+				warning ((_("Error reading file") + ": %s").printf (e.message));
 			}
 		} // if
 

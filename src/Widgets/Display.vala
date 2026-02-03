@@ -244,7 +244,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
 		}
 		catch (SourceError e)
 		{
-			warning ((_("Could not get random station: %s" )).printf (e.message));    
+			warning ((_("Could not get random station") + ": %s" ).printf (e.message));    
 		}
 	} // jukebox_shuffle
 

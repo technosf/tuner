@@ -228,7 +228,7 @@ namespace Tuner {
                     }
                 } //  while
             } catch (Error e) {
-			    warning ((_("Error reading locale path: %s")).printf (e.message));
+			    warning ((_("Error reading locale path") + ": %s")).printf (e.message);
                // warning(@"Error reading locale path: $(e.message)");
             }            
         }
