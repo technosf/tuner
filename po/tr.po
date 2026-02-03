@@ -6,13 +6,16 @@
 # Deleted User <noreply+13144@weblate.org>, 2025, 2026.
 # technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-01 07:51+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"PO-Revision-Date: 2026-02-02 09:02+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "tr/>\n"
 "Language: tr\n"
@@ -22,95 +25,78 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s Star this station"
-msgstr "%s Star this station"
+msgstr "%s Bu istasyon"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s Unstar this station"
-msgstr "%s Unstar this station"
+msgstr "%s Bu istasyonda"
 
 msgid "About"
 msgstr "Hakkında"
 
-#, fuzzy
 msgid "Album"
-msgstr "Album"
+msgstr "Albüm"
 
-#, fuzzy
 msgid "Application Name"
-msgstr "Application Name"
+msgstr "Uygulama adı"
 
-#, fuzzy
 msgid "Artist"
-msgstr "Artist"
+msgstr "Sanatçı"
 
-#, fuzzy
 msgid "Audio Codec"
 msgstr "Audio Codec"
 
-#, fuzzy
 msgid "Auto-play last station on startup"
-msgstr "Auto-play last station on startup"
+msgstr "Auto-play son istasyonda başlangıç"
 
-#, fuzzy
 msgid "Bitrate"
-msgstr "Bitrate"
+msgstr "Bit"
 
-#, fuzzy
 msgid "Changes"
-msgstr "Changes"
+msgstr "Değişiklikler"
 
-#, fuzzy
 msgid "Channel Mode"
-msgstr "Channel Mode"
+msgstr "Kanal Modu"
 
-#, fuzzy
 msgid "Choose a file"
-msgstr "Choose a file"
+msgstr "Dosya Seç"
 
-#, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+"Pencereyi yeniden başlatmak için buraya tıklayın. Tuner'ı terk etmek, "
+"duraklama oyunu geri almak ve pencereyi kapatmak."
 
-#, fuzzy
 msgid "Codec"
-msgstr "Codec"
+msgstr "Kodek"
 
-#, fuzzy
 msgid "Container Format"
-msgstr "Container Format"
+msgstr "Konteyner Formatı"
 
-#, fuzzy
 msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to clipboard"
+msgstr "Copy Stream-URI to klipboard"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not get random station: %s"
-msgstr "Could not get random station: %s"
+msgstr "Rastgele istasyon alamaz: %s"
 
-#, fuzzy
 msgid "Cycle through the metadata from the playing stream"
-msgstr "Cycle through the metadata from the playing stream"
+msgstr "Oyun akışından metadata aracılığıyla lisans"
 
 msgid "Dark mode"
 msgstr "Koyu kip"
 
-#, fuzzy
 msgid "Data Provider"
 msgstr "Data Provider"
 
-#, fuzzy
 msgid "Date Time"
-msgstr "Date Time"
+msgstr "Tarih Zamanı"
 
-#, fuzzy
 msgid "Default"
-msgstr "Default"
+msgstr "Öntanımlı"
 
 msgid "Discover"
 msgstr "Keşfet"
@@ -118,132 +104,110 @@ msgstr "Keşfet"
 msgid "Discover more stations"
 msgstr "Daha fazla istasyon keşfet"
 
-#, fuzzy
 msgid "Do not participate in Station voting"
-msgstr "Do not participate in Station voting"
+msgstr "İstasyon oylamasına katılma"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
+"Double, %1$u istasyonları aracılığıyla shuffle'ye tıklayın,\n"
+"Bir, her on dakika, %2$u günler"
 
-#, fuzzy
 msgid "Encoder"
 msgstr "Encoder"
 
-#, fuzzy
 msgid "Encoder Version"
 msgstr "Encoder Version"
 
-#, fuzzy
 msgid "Eras"
-msgstr "Eras"
+msgstr "Çağlar"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Error reading file: %s"
-msgstr "Error reading file: %s"
+msgstr "Hata okuma dosyası: %s"
 
-#, fuzzy
 msgid "Error while trying to autoplay, aborting…"
-msgstr "Error while trying to autoplay, aborting…"
+msgstr "Hata, otoplay etmeye çalışırken, aborting.."
 
-#, fuzzy, c-format
+#, c-format
 msgid "Error: %s"
-msgstr "Error: %s"
+msgstr "Hata: %s"
 
-#, fuzzy
 msgid "Explore"
-msgstr "Explore"
+msgstr "Keşfet"
 
-#, fuzzy
 msgid "Export Starred Stations to Playlist"
 msgstr "Export Starred Stations to Playlist"
 
-#, fuzzy
 msgid "Extended Comment"
-msgstr "Extended Comment"
+msgstr "Genişletilmiş Yorum"
 
-#, fuzzy
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
+"Canlı yayından metadata aracılığıyla hızlı döngü, gösterir yayın bilgileri "
+"etkinleştirilirse"
 
-#, fuzzy
 msgid "Faster cycling through stream info"
-msgstr "Faster cycling through stream info"
+msgstr "Hızlı bisiklet akış bilgisi ile"
 
-#, fuzzy
 msgid "Favicon address"
-msgstr "Favicon address"
+msgstr "Favicon adresi"
 
-#, fuzzy
 msgid "Genre"
-msgstr "Genre"
+msgstr "Tür"
 
 msgid "Genres"
 msgstr "Türler"
 
-#, fuzzy
 msgid "Has CRC"
-msgstr "Has CRC"
+msgstr "CRC"
 
-#, fuzzy
 msgid "History"
-msgstr "History"
+msgstr "Tarihçe"
 
-#, fuzzy
 msgid "Homepage"
-msgstr "Homepage"
+msgstr "Anasayfa"
 
-#, fuzzy
 msgid "Homepage address"
-msgstr "Homepage address"
+msgstr "Anasayfa adresi"
 
-#, fuzzy
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
+"Eğer kontrol edilirse, rol oynadığınız ve yayınlanan istasyonlarınız "
+"istasyon indeks popüler oylarını hesaplamak için kullanılmayacaktır, ne de "
+"popüler ve trend istasyonları"
 
-#, fuzzy
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
+"Eğer etkinleştirilirse, Tuner başladığında, son oynadığı istasyon "
+"istasyonunu otomatik olarak oynamaya başlayacaktır"
 
-#, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"Eğer etkinleştirilirse, Tuner başladığında, rol istasyonlarına açık olacak"
 
-#, fuzzy
 msgid "Image"
-msgstr "Image"
+msgstr "Görüntü"
 
-#, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Import Station UUIDs as Starred Stations"
 
-#, fuzzy
 msgid "Jukebox"
 msgstr "Jukebox"
 
-#, fuzzy
 msgid "Language"
-msgstr "Language"
+msgstr "Dil"
 
-#, fuzzy
 msgid "Latest Search"
-msgstr "Latest Search"
+msgstr "Son Arama"
 
 msgid "Library"
 msgstr "Kütüphane"
@@ -251,43 +215,35 @@ msgstr "Kütüphane"
 msgid "Light mode"
 msgstr "Açık kip"
 
-#, fuzzy
 msgid "Location"
-msgstr "Location"
+msgstr "Konum"
 
-#, fuzzy
 msgid "Maximum Bitrate"
-msgstr "Maximum Bitrate"
+msgstr "En yüksek"
 
-#, fuzzy
 msgid "Minimum Bitrate"
-msgstr "Minimum Bitrate"
+msgstr "Asgari Bitrate"
 
-#, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
-msgstr "Most listened to Stations in the last 24 hours"
+msgstr "Çoğu son 24 saat içinde İstasyonları dinledi"
 
 msgid "No stations found"
 msgstr "İstasyon bulunamadı"
 
-#, fuzzy
 msgid "Nominal Bitrate"
-msgstr "Nominal Bitrate"
+msgstr "Bölünmesi"
 
 msgid "Nothing here"
 msgstr "Burada hiçbir şey yok"
 
-#, fuzzy
 msgid "Open to Starred Stations"
-msgstr "Open to Starred Stations"
+msgstr "Starred Stations'a açık"
 
-#, fuzzy
 msgid "Organization"
-msgstr "Organization"
+msgstr "Organizasyon"
 
-#, fuzzy
 msgid "Playing in background"
-msgstr "Playing in background"
+msgstr "Arka planda oynatılıyor"
 
 msgid "Please try a different search term."
 msgstr "Lütfen başka bir arama terimi girin."
@@ -298,51 +254,42 @@ msgstr "Popüler"
 msgid "Preferences"
 msgstr "Tercihler"
 
-#, fuzzy
 msgid "Private Data"
-msgstr "Private Data"
+msgstr "Özel Veriler"
 
-#, fuzzy
 msgid "Remove this saved search"
-msgstr "Remove this saved search"
+msgstr "Bu kurtarılmış arama"
 
-#, fuzzy
 msgid "Requires restarting Tuner"
-msgstr "Requires restarting Tuner"
+msgstr "Tuner'ı yeniden başlatmalı"
 
-#, fuzzy
 msgid "Save File"
-msgstr "Save File"
+msgstr "Dosyayı Kaydet"
 
-#, fuzzy
 msgid "Save this search"
-msgstr "Save this search"
+msgstr "Bu aramayı Kurtarın"
 
 msgid "Saved Search"
 msgstr "Kaydedilen Arama"
 
-#, fuzzy
 msgid "Saved Searches"
-msgstr "Saved Searches"
+msgstr "Kayıtlı Aramalar"
 
-#, fuzzy
 msgid "Search Results"
-msgstr "Search Results"
+msgstr "Arama Sonuçları"
 
 msgid "Selections"
 msgstr "Seçimler"
 
-#, fuzzy
 msgid "Show stream info when playing"
-msgstr "Show stream info when playing"
+msgstr "Show stream info when playing oynarken"
 
-#, fuzzy
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
+"Bir şey istasyon sağlayıcısından radyo istasyonları verilerini yanlış "
+"yüklemeye gitti. Lütfen daha sonra tekrar deneyin."
 
 msgid "Star this station"
 msgstr "Bu istasyonu yıldızla"
@@ -350,107 +297,84 @@ msgstr "Bu istasyonu yıldızla"
 msgid "Starred by You"
 msgstr "Yıldız Eklediniz"
 
-#, fuzzy
 msgid "Station Search"
-msgstr "Station Search"
+msgstr "İstasyon"
 
-#, fuzzy
 msgid "Station info updated Online - View changes"
-msgstr "Station info updated Online - View changes"
+msgstr "İstasyon bilgileri güncellendi Online - View changes"
 
-#, fuzzy
 msgid "Station no longer in the index"
-msgstr "Station no longer in the index"
+msgstr "İstasyon artık indeksde yok"
 
-#, fuzzy
 msgid "Station tags"
-msgstr "Station tags"
+msgstr "İstasyon etiketleri"
 
-#, fuzzy
 msgid "Stations"
-msgstr "Stations"
+msgstr "İstasyonlar"
 
-#, fuzzy
 msgid "Stations to Discover"
-msgstr "Stations to Discover"
+msgstr "Keşfetmek için İstasyonlar"
 
-#, fuzzy
 msgid "Stop Playback requested"
-msgstr "Stop Playback requested"
+msgstr "Playback talep etti"
 
-#, fuzzy
 msgid "Stream Metadata"
 msgstr "Stream Metadata"
 
-#, fuzzy
 msgid "Stream Resolved Url"
-msgstr "Stream Resolved Url"
+msgstr "Akış Yeniden Çözüldü Url"
 
-#, fuzzy
 msgid "Stream Url"
-msgstr "Stream Url"
+msgstr "Akış Url"
 
-#, fuzzy
 msgid "Subgenres"
 msgstr "Subgenres"
 
-#, fuzzy
 msgid "System"
-msgstr "System"
+msgstr "Sistem"
 
-#, fuzzy
 msgid "Tags"
-msgstr "Tags"
+msgstr "Etiketler"
 
-#, fuzzy
 msgid "Talk, News, Sport"
-msgstr "Talk, News, Sport"
+msgstr "Konuşma, Haberler, Sport"
 
-#, fuzzy
 msgid "Theme"
-msgstr "Theme"
+msgstr "Tema"
 
-#, fuzzy
 msgid "Title"
-msgstr "Title"
+msgstr "Başlık"
 
-#, fuzzy
 msgid "Track Count"
-msgstr "Track Count"
+msgstr "Track Count Count"
 
-#, fuzzy
 msgid "Track Number"
-msgstr "Track Number"
+msgstr "Parça Numarası"
 
 msgid "Trending"
 msgstr "Gündemdekiler"
 
-#, fuzzy
 msgid "Trending Stations in the last 24 hours"
-msgstr "Trending Stations in the last 24 hours"
+msgstr "Trend İstasyonu son 24 saat içinde"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open website: %s"
-msgstr "Unable to open website: %s"
+msgstr "Açık web sitesine açıklanamaz: %s"
 
-#, fuzzy
 msgid "Update Station from Online"
-msgstr "Update Station from Online"
+msgstr "Online Güncelleme İstasyonu"
 
 msgid "Visit Website"
 msgstr "Web Sitesini Gör"
 
-#, fuzzy
 msgid "_Cancel"
-msgstr "_Cancel"
+msgstr "_İptal"
 
-#, fuzzy
 msgid "_Open"
-msgstr "_Open"
+msgstr "_Aç"
 
-#, fuzzy
 msgid "_Save"
-msgstr "_Save"
+msgstr "Ka_ydet"
 
 #, fuzzy
 #~ msgctxt "Countries"

@@ -5,13 +5,15 @@
 # ejlaner <everest@bodynaturally.ca>, 2025.
 # technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-01-31 22:22+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-02-02 09:02+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ja/>\n"
 "Language: ja\n"
@@ -21,95 +23,78 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.16-dev\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s Star this station"
-msgstr "%s Star this station"
+msgstr "%s 星この駅"
 
-#, fuzzy, c-format
+#, c-format
 msgid "%s Unstar this station"
-msgstr "%s Unstar this station"
+msgstr "【X0X】この駅をスタートしない"
 
 msgid "About"
 msgstr "について"
 
-#, fuzzy
 msgid "Album"
-msgstr "Album"
+msgstr "アルバム"
 
-#, fuzzy
 msgid "Application Name"
-msgstr "Application Name"
+msgstr "アプリケーション名"
 
-#, fuzzy
 msgid "Artist"
-msgstr "Artist"
+msgstr "原画"
 
-#, fuzzy
 msgid "Audio Codec"
-msgstr "Audio Codec"
+msgstr "オーディオコーデック"
 
-#, fuzzy
 msgid "Auto-play last station on startup"
-msgstr "Auto-play last station on startup"
+msgstr "スタートアップのオートプレイ最終駅"
 
-#, fuzzy
 msgid "Bitrate"
-msgstr "Bitrate"
+msgstr "ビットレート"
 
-#, fuzzy
 msgid "Changes"
-msgstr "Changes"
+msgstr "変更"
 
-#, fuzzy
 msgid "Channel Mode"
-msgstr "Channel Mode"
+msgstr "チャネルモード"
 
-#, fuzzy
 msgid "Choose a file"
-msgstr "Choose a file"
+msgstr "ファイルを選択"
 
-#, fuzzy
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+"ウィンドウを再開するにはここをクリックしてください。 チューナーを終了するには"
+"、再生を一時停止し、ウィンドウを閉じます."
 
-#, fuzzy
 msgid "Codec"
-msgstr "Codec"
+msgstr "コーデック"
 
-#, fuzzy
 msgid "Container Format"
-msgstr "Container Format"
+msgstr "コンテナ形式"
 
-#, fuzzy
 msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to clipboard"
+msgstr "ストリームURIをクリップボードにコピーする"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not get random station: %s"
-msgstr "Could not get random station: %s"
+msgstr "%s をランダムに表示できません"
 
-#, fuzzy
 msgid "Cycle through the metadata from the playing stream"
-msgstr "Cycle through the metadata from the playing stream"
+msgstr "再生ストリームからメタデータを介してサイクル"
 
 msgid "Dark mode"
 msgstr "ダークモード"
 
-#, fuzzy
 msgid "Data Provider"
-msgstr "Data Provider"
+msgstr "データプロバイダ"
 
-#, fuzzy
 msgid "Date Time"
-msgstr "Date Time"
+msgstr "日付の時間"
 
-#, fuzzy
 msgid "Default"
-msgstr "Default"
+msgstr "デフォルト"
 
 msgid "Discover"
 msgstr "発見する"
@@ -117,132 +102,110 @@ msgstr "発見する"
 msgid "Discover more stations"
 msgstr "その他の駅を探す"
 
-#, fuzzy
 msgid "Do not participate in Station voting"
-msgstr "Do not participate in Station voting"
+msgstr "駅の投票に参加しないでください"
 
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Double click to shuffle through %1$u stations,\n"
 "one, every ten minutes, for %2$u days"
 msgstr ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
+"%1$u ステーションを介してシャッフルするダブルクリック,\n"
+"%2$u 日ごとに 10 分"
 
-#, fuzzy
 msgid "Encoder"
-msgstr "Encoder"
+msgstr "エンコーダ"
 
-#, fuzzy
 msgid "Encoder Version"
-msgstr "Encoder Version"
+msgstr "エンコーダバージョン"
 
-#, fuzzy
 msgid "Eras"
-msgstr "Eras"
+msgstr "エラス"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Error reading file: %s"
-msgstr "Error reading file: %s"
+msgstr "エラー読み込みファイル: %s"
 
-#, fuzzy
 msgid "Error while trying to autoplay, aborting…"
-msgstr "Error while trying to autoplay, aborting…"
+msgstr "自動再生しようとするとエラー, 退屈.."
 
-#, fuzzy, c-format
+#, c-format
 msgid "Error: %s"
-msgstr "Error: %s"
+msgstr "エラー:%s"
 
-#, fuzzy
 msgid "Explore"
-msgstr "Explore"
+msgstr "探す"
 
-#, fuzzy
 msgid "Export Starred Stations to Playlist"
-msgstr "Export Starred Stations to Playlist"
+msgstr "プレイリストにスタードステーションをエクスポート"
 
-#, fuzzy
 msgid "Extended Comment"
-msgstr "Extended Comment"
+msgstr "拡張コメント"
 
-#, fuzzy
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
+"ストリーム情報が有効になっている場合、再生ストリームからメタデータを高速"
+"サイクル"
 
-#, fuzzy
 msgid "Faster cycling through stream info"
-msgstr "Faster cycling through stream info"
+msgstr "ストリーム情報による高速サイクリング"
 
-#, fuzzy
 msgid "Favicon address"
-msgstr "Favicon address"
+msgstr "ファビコンアドレス"
 
-#, fuzzy
 msgid "Genre"
-msgstr "Genre"
+msgstr "ジャンル"
 
 msgid "Genres"
 msgstr "ジャンル"
 
-#, fuzzy
 msgid "Has CRC"
-msgstr "Has CRC"
+msgstr "CRC の"
 
-#, fuzzy
 msgid "History"
-msgstr "History"
+msgstr "履歴"
 
-#, fuzzy
 msgid "Homepage"
-msgstr "Homepage"
+msgstr "ホームページ"
 
-#, fuzzy
 msgid "Homepage address"
-msgstr "Homepage address"
+msgstr "ホームページアドレス"
 
-#, fuzzy
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
+"チェックすると、スタードとストリームされたステーションは、駅の人気投票を計算"
+"するために使用されません。, 人気とトレンドステーション"
 
-#, fuzzy
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
+"有効にすると、Tunerが起動すると、最後に再生されたステーションが自動的に再生さ"
+"れます"
 
-#, fuzzy
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"有効にすると、チューナーがスタートすると、スタードステーションビューに開きま"
+"す"
 
-#, fuzzy
 msgid "Image"
-msgstr "Image"
+msgstr "画像"
 
-#, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
-msgstr "Import Station UUIDs as Starred Stations"
+msgstr "インポートステーションUUIDをスターレッドステーションとして"
 
-#, fuzzy
 msgid "Jukebox"
-msgstr "Jukebox"
+msgstr "ジュークボックス"
 
-#, fuzzy
 msgid "Language"
-msgstr "Language"
+msgstr "言語"
 
-#, fuzzy
 msgid "Latest Search"
-msgstr "Latest Search"
+msgstr "最新の検索"
 
 msgid "Library"
 msgstr "図書館"
@@ -250,43 +213,35 @@ msgstr "図書館"
 msgid "Light mode"
 msgstr "ライトモード"
 
-#, fuzzy
 msgid "Location"
-msgstr "Location"
+msgstr "場所"
 
-#, fuzzy
 msgid "Maximum Bitrate"
-msgstr "Maximum Bitrate"
+msgstr "最高のビットレート"
 
-#, fuzzy
 msgid "Minimum Bitrate"
-msgstr "Minimum Bitrate"
+msgstr "最小ビットレート"
 
-#, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
-msgstr "Most listened to Stations in the last 24 hours"
+msgstr "最後の24時間ステーションに最も耳を傾けました"
 
 msgid "No stations found"
 msgstr "駅が見つかりませんでした"
 
-#, fuzzy
 msgid "Nominal Bitrate"
-msgstr "Nominal Bitrate"
+msgstr "わずかなビットレート"
 
 msgid "Nothing here"
 msgstr "ここには何もありません"
 
-#, fuzzy
 msgid "Open to Starred Stations"
-msgstr "Open to Starred Stations"
+msgstr "星付き駅にオープン"
 
-#, fuzzy
 msgid "Organization"
-msgstr "Organization"
+msgstr "組織図"
 
-#, fuzzy
 msgid "Playing in background"
-msgstr "Playing in background"
+msgstr "バックグラウンドで再生中"
 
 msgid "Please try a different search term."
 msgstr "別の検索語句をお試しください。"
@@ -297,25 +252,20 @@ msgstr "人気のある"
 msgid "Preferences"
 msgstr "設定"
 
-#, fuzzy
 msgid "Private Data"
-msgstr "Private Data"
+msgstr "プライベートデータ"
 
-#, fuzzy
 msgid "Remove this saved search"
-msgstr "Remove this saved search"
+msgstr "保存された検索を削除"
 
-#, fuzzy
 msgid "Requires restarting Tuner"
-msgstr "Requires restarting Tuner"
+msgstr "チューナーを再起動する必要があります"
 
-#, fuzzy
 msgid "Save File"
-msgstr "Save File"
+msgstr "ファイルを保存"
 
-#, fuzzy
 msgid "Save this search"
-msgstr "Save this search"
+msgstr "この検索を保存"
 
 msgid "Saved Search"
 msgstr "保存検索"
@@ -329,17 +279,15 @@ msgstr "検索結果"
 msgid "Selections"
 msgstr "選択肢"
 
-#, fuzzy
 msgid "Show stream info when playing"
-msgstr "Show stream info when playing"
+msgstr "再生するときにストリーム情報を表示する"
 
-#, fuzzy
 msgid ""
 "Something went wrong loading radio stations data from station provider. "
 "Please try again later."
 msgstr ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
+"ステーションプロバイダから電波局データを誤って読み込みました。 もう一度お試し"
+"ください."
 
 msgid "Star this station"
 msgstr "この放送局をお気に入りに追加する"
@@ -350,17 +298,14 @@ msgstr "あなたがスターを付けました"
 msgid "Station Search"
 msgstr "ステーション検索"
 
-#, fuzzy
 msgid "Station info updated Online - View changes"
-msgstr "Station info updated Online - View changes"
+msgstr "駅情報更新 オンライン - 変更の表示"
 
-#, fuzzy
 msgid "Station no longer in the index"
-msgstr "Station no longer in the index"
+msgstr "インデックスに場所がなくなった"
 
-#, fuzzy
 msgid "Station tags"
-msgstr "Station tags"
+msgstr "ステーションタグ"
 
 msgid "Stations"
 msgstr "ステーション"
@@ -368,83 +313,66 @@ msgstr "ステーション"
 msgid "Stations to Discover"
 msgstr "発見する駅"
 
-#, fuzzy
 msgid "Stop Playback requested"
-msgstr "Stop Playback requested"
+msgstr "プレイバック停止リクエスト"
 
-#, fuzzy
 msgid "Stream Metadata"
-msgstr "Stream Metadata"
+msgstr "メタデータをストリームする"
 
-#, fuzzy
 msgid "Stream Resolved Url"
-msgstr "Stream Resolved Url"
+msgstr "ストリーム 解決 ログイン"
 
-#, fuzzy
 msgid "Stream Url"
-msgstr "Stream Url"
+msgstr "ストリームウルル"
 
-#, fuzzy
 msgid "Subgenres"
-msgstr "Subgenres"
+msgstr "サプリメント"
 
-#, fuzzy
 msgid "System"
-msgstr "System"
+msgstr "システム"
 
-#, fuzzy
 msgid "Tags"
-msgstr "Tags"
+msgstr "タグ"
 
-#, fuzzy
 msgid "Talk, News, Sport"
-msgstr "Talk, News, Sport"
+msgstr "トーク、ニュース、スポーツ"
 
-#, fuzzy
 msgid "Theme"
-msgstr "Theme"
+msgstr "テーマ"
 
-#, fuzzy
 msgid "Title"
-msgstr "Title"
+msgstr "ヘッダー"
 
-#, fuzzy
 msgid "Track Count"
-msgstr "Track Count"
+msgstr "トラックカウント"
 
-#, fuzzy
 msgid "Track Number"
-msgstr "Track Number"
+msgstr "トラックナンバー"
 
 msgid "Trending"
 msgstr "トレンド"
 
-#, fuzzy
 msgid "Trending Stations in the last 24 hours"
-msgstr "Trending Stations in the last 24 hours"
+msgstr "過去24時間のトレンドステーション"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open website: %s"
-msgstr "Unable to open website: %s"
+msgstr "ウェブサイトを開くことができない: %s"
 
-#, fuzzy
 msgid "Update Station from Online"
-msgstr "Update Station from Online"
+msgstr "オンラインからステーションを更新する"
 
 msgid "Visit Website"
 msgstr "ウェブサイトをご覧ください"
 
-#, fuzzy
 msgid "_Cancel"
-msgstr "_Cancel"
+msgstr "キャンセル(_C)"
 
-#, fuzzy
 msgid "_Open"
-msgstr "_Open"
+msgstr "開く(_O)"
 
-#, fuzzy
 msgid "_Save"
-msgstr "_Save"
+msgstr "保存(_S)"
 
 #, fuzzy
 #~ msgctxt "Countries"

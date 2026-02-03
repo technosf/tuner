@@ -6,13 +6,15 @@
 # scmanjarrez <serchiman@gmail.com>, 2025.
 # technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-01-31 22:22+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-02-02 09:02+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "es/>\n"
 "Language: es\n"
@@ -366,17 +368,14 @@ msgstr "Actualizar Estación desde En línea"
 msgid "Visit Website"
 msgstr "Visitar Sitio Web"
 
-#, fuzzy
 msgid "_Cancel"
-msgstr "_Cancel"
+msgstr "_Cancelar"
 
-#, fuzzy
 msgid "_Open"
-msgstr "_Open"
+msgstr "_Abrir"
 
-#, fuzzy
 msgid "_Save"
-msgstr "_Save"
+msgstr "_Guardar"
 
 #~ msgctxt "Countries"
 #~ msgid "Afghanistan"

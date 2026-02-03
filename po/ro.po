@@ -2,12 +2,13 @@
 # This file is put in the public domain.
 # technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2025, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-01-24 14:41-0800\n"
-"PO-Revision-Date: 2026-02-01 07:51+0000\n"
+"PO-Revision-Date: 2026-02-02 21:01+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ro/>\n"
@@ -30,7 +31,6 @@ msgstr "%s Unstar this station"
 msgid "About"
 msgstr "Despre"
 
-#, fuzzy
 msgid "Album"
 msgstr "Album"
 
@@ -38,7 +38,6 @@ msgstr "Album"
 msgid "Application Name"
 msgstr "Application Name"
 
-#, fuzzy
 msgid "Artist"
 msgstr "Artist"
 
@@ -53,17 +52,15 @@ msgstr "Auto-play last station on startup"
 msgid "Bitrate"
 msgstr "Rata de biți"
 
-#, fuzzy
 msgid "Changes"
-msgstr "Changes"
+msgstr "Schimbări"
 
 #, fuzzy
 msgid "Channel Mode"
 msgstr "Channel Mode"
 
-#, fuzzy
 msgid "Choose a file"
-msgstr "Choose a file"
+msgstr "Alegeți un fișier"
 
 #, fuzzy
 msgid ""
@@ -73,7 +70,6 @@ msgstr ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 
-#, fuzzy
 msgid "Codec"
 msgstr "Codec"
 
@@ -93,9 +89,8 @@ msgstr "Could not get random station: %s"
 msgid "Cycle through the metadata from the playing stream"
 msgstr "Cycle through the metadata from the playing stream"
 
-#, fuzzy
 msgid "Dark mode"
-msgstr "Dark mode"
+msgstr "Mod întunecat"
 
 #, fuzzy
 msgid "Data Provider"
@@ -105,13 +100,11 @@ msgstr "Data Provider"
 msgid "Date Time"
 msgstr "Date Time"
 
-#, fuzzy
 msgid "Default"
-msgstr "Default"
+msgstr "Implicit"
 
-#, fuzzy
 msgid "Discover"
-msgstr "Discover"
+msgstr "Descoperă"
 
 #, fuzzy
 msgid "Discover more stations"
@@ -137,9 +130,8 @@ msgstr "Encoder"
 msgid "Encoder Version"
 msgstr "Encoder Version"
 
-#, fuzzy
 msgid "Eras"
-msgstr "Eras"
+msgstr "Ere"
 
 #, fuzzy, c-format
 msgid "Error reading file: %s"
@@ -149,13 +141,12 @@ msgstr "Error reading file: %s"
 msgid "Error while trying to autoplay, aborting…"
 msgstr "Error while trying to autoplay, aborting…"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Error: %s"
-msgstr "Error: %s"
+msgstr "Eroare: %s"
 
-#, fuzzy
 msgid "Explore"
-msgstr "Explore"
+msgstr "Explorare"
 
 #, fuzzy
 msgid "Export Starred Stations to Playlist"
@@ -181,25 +172,21 @@ msgstr "Faster cycling through stream info"
 msgid "Favicon address"
 msgstr "Favicon address"
 
-#, fuzzy
 msgid "Genre"
-msgstr "Genre"
+msgstr "Gen"
 
-#, fuzzy
 msgid "Genres"
-msgstr "Genres"
+msgstr "Genuri"
 
 #, fuzzy
 msgid "Has CRC"
 msgstr "Has CRC"
 
-#, fuzzy
 msgid "History"
-msgstr "History"
+msgstr "Istorie"
 
-#, fuzzy
 msgid "Homepage"
-msgstr "Homepage"
+msgstr "Pagina de pornire"
 
 #, fuzzy
 msgid "Homepage address"
@@ -225,37 +212,31 @@ msgstr ""
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr "If enabled, when Tuner starts it will open to the starred stations view"
 
-#, fuzzy
 msgid "Image"
-msgstr "Image"
+msgstr "Imagine"
 
 #, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Import Station UUIDs as Starred Stations"
 
-#, fuzzy
 msgid "Jukebox"
-msgstr "Jukebox"
+msgstr "Tonomat"
 
-#, fuzzy
 msgid "Language"
-msgstr "Language"
+msgstr "Limba"
 
 #, fuzzy
 msgid "Latest Search"
 msgstr "Latest Search"
 
-#, fuzzy
 msgid "Library"
-msgstr "Library"
+msgstr "Bibliotecă"
 
-#, fuzzy
 msgid "Light mode"
-msgstr "Light mode"
+msgstr "Mod luminos"
 
-#, fuzzy
 msgid "Location"
-msgstr "Location"
+msgstr "Locaţie"
 
 #, fuzzy
 msgid "Maximum Bitrate"
@@ -269,9 +250,8 @@ msgstr "Minimum Bitrate"
 msgid "Most listened to Stations in the last 24 hours"
 msgstr "Most listened to Stations in the last 24 hours"
 
-#, fuzzy
 msgid "No stations found"
-msgstr "No stations found"
+msgstr "Nici s-a găsit nici o staţie"
 
 #, fuzzy
 msgid "Nominal Bitrate"
@@ -285,25 +265,21 @@ msgstr "Nothing here"
 msgid "Open to Starred Stations"
 msgstr "Open to Starred Stations"
 
-#, fuzzy
 msgid "Organization"
-msgstr "Organization"
+msgstr "Organizație"
 
-#, fuzzy
 msgid "Playing in background"
-msgstr "Playing in background"
+msgstr "Redare în fundal"
 
 #, fuzzy
 msgid "Please try a different search term."
 msgstr "Please try a different search term."
 
-#, fuzzy
 msgid "Popular"
 msgstr "Popular"
 
-#, fuzzy
 msgid "Preferences"
-msgstr "Preferences"
+msgstr "Preferințe"
 
 #, fuzzy
 msgid "Private Data"
@@ -317,9 +293,8 @@ msgstr "Remove this saved search"
 msgid "Requires restarting Tuner"
 msgstr "Requires restarting Tuner"
 
-#, fuzzy
 msgid "Save File"
-msgstr "Save File"
+msgstr "Salvează fișierul"
 
 #, fuzzy
 msgid "Save this search"
@@ -355,9 +330,8 @@ msgstr ""
 msgid "Star this station"
 msgstr "Star this station"
 
-#, fuzzy
 msgid "Starred by You"
-msgstr "Starred by You"
+msgstr "Marcat cu stea de tine"
 
 msgid "Station Search"
 msgstr "Căutare stație"
@@ -384,9 +358,8 @@ msgstr "Stații de Descoperit"
 msgid "Stop Playback requested"
 msgstr "Stop Playback requested"
 
-#, fuzzy
 msgid "Stream Metadata"
-msgstr "Stream Metadata"
+msgstr "Metadate flux"
 
 #, fuzzy
 msgid "Stream Resolved Url"
@@ -400,37 +373,30 @@ msgstr "Stream Url"
 msgid "Subgenres"
 msgstr "Subgenres"
 
-#, fuzzy
 msgid "System"
-msgstr "System"
+msgstr "Sistem"
 
-#, fuzzy
 msgid "Tags"
-msgstr "Tags"
+msgstr "Etichete"
 
-#, fuzzy
 msgid "Talk, News, Sport"
-msgstr "Talk, News, Sport"
+msgstr "Discuții, Știri, Sport"
 
-#, fuzzy
 msgid "Theme"
-msgstr "Theme"
+msgstr "Temă"
 
-#, fuzzy
 msgid "Title"
-msgstr "Title"
+msgstr "Titlu"
 
 #, fuzzy
 msgid "Track Count"
 msgstr "Track Count"
 
-#, fuzzy
 msgid "Track Number"
-msgstr "Track Number"
+msgstr "Număr pistă"
 
-#, fuzzy
 msgid "Trending"
-msgstr "Trending"
+msgstr "În tendințe"
 
 #, fuzzy
 msgid "Trending Stations in the last 24 hours"
@@ -444,21 +410,17 @@ msgstr "Unable to open website: %s"
 msgid "Update Station from Online"
 msgstr "Update Station from Online"
 
-#, fuzzy
 msgid "Visit Website"
-msgstr "Visit Website"
+msgstr "Vizitează site web"
 
-#, fuzzy
 msgid "_Cancel"
-msgstr "_Cancel"
+msgstr "_Anulare"
 
-#, fuzzy
 msgid "_Open"
-msgstr "_Open"
+msgstr "_Deschide"
 
-#, fuzzy
 msgid "_Save"
-msgstr "_Save"
+msgstr "_Salvează"
 
 #, fuzzy
 #~ msgctxt "Countries"
