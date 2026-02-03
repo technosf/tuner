@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: countries\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-01 00:34-0800\n"
+"POT-Creation-Date: 2026-02-02 19:46-0800\n"
 "PO-Revision-Date: 2026-02-03 01:25+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/tuner/countries-"
@@ -1020,6 +1020,31 @@ msgid "Kosovo"
 msgstr "Kosovo"
 
 msgctxt "Languages"
+msgid "Arabic"
+msgstr ""
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Bulgaria"
+msgctxt "Languages"
+msgid "Bulgarian"
+msgstr "Bulharsko"
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Czechia"
+msgctxt "Languages"
+msgid "Czech"
+msgstr "Česko"
+
+#, fuzzy
+#| msgctxt "Languages"
+#| msgid "Spanish"
+msgctxt "Languages"
+msgid "Danish"
+msgstr "španělština"
+
+msgctxt "Languages"
 msgid "German"
 msgstr "Němec"
 
@@ -1028,20 +1053,49 @@ msgid "English"
 msgstr "Anglicky"
 
 msgctxt "Languages"
-msgid "Spanish"
-msgstr "španělština"
-
-msgctxt "Languages"
 msgid "Spanish (Latin America)"
 msgstr "Španělština (Latinská Amerika)"
+
+msgctxt "Languages"
+msgid "Spanish"
+msgstr "španělština"
 
 msgctxt "Languages"
 msgid "Estonian"
 msgstr "estonština"
 
 msgctxt "Languages"
+msgid "Persian"
+msgstr ""
+
+msgctxt "Languages"
 msgid "French"
 msgstr "francouzština"
+
+msgctxt "Languages"
+msgid "Gujarati"
+msgstr ""
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Hungary"
+msgctxt "Languages"
+msgid "Hungarian"
+msgstr "Maďarsko"
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Indonesia"
+msgctxt "Languages"
+msgid "Indonesian"
+msgstr "Indonésie"
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Iceland"
+msgctxt "Languages"
+msgid "Icelandic"
+msgstr "Island"
 
 msgctxt "Languages"
 msgid "Italian"
@@ -1050,6 +1104,24 @@ msgstr "italština"
 msgctxt "Languages"
 msgid "Japanese"
 msgstr "japonský"
+
+msgctxt "Languages"
+msgid "Korean"
+msgstr ""
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Lithuania"
+msgctxt "Languages"
+msgid "Lithuanian"
+msgstr "Litva"
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Latvia"
+msgctxt "Languages"
+msgid "Latvian"
+msgstr "Lotyšsko"
 
 msgctxt "Languages"
 msgid "Norwegian (Bokmal)"
@@ -1071,13 +1143,59 @@ msgctxt "Languages"
 msgid "Russian"
 msgstr "ruština"
 
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Slovakia"
+msgctxt "Languages"
+msgid "Slovak"
+msgstr "Slovensko"
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Slovenia"
+msgctxt "Languages"
+msgid "Slovenian"
+msgstr "Slovinsko"
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Serbia"
+msgctxt "Languages"
+msgid "Serbian"
+msgstr "Srbsko"
+
+msgctxt "Languages"
+msgid "Swahili"
+msgstr ""
+
 msgctxt "Languages"
 msgid "Tamil"
 msgstr "Tamil"
 
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Thailand"
+msgctxt "Languages"
+msgid "Thai"
+msgstr "Thajsko"
+
 msgctxt "Languages"
 msgid "Turkish"
 msgstr "turečtina"
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Ukraine"
+msgctxt "Languages"
+msgid "Ukrainian"
+msgstr "Ukrajina"
+
+#, fuzzy
+#| msgctxt "Countries"
+#| msgid "Vietnam"
+msgctxt "Languages"
+msgid "Vietnamese"
+msgstr "Vietnam"
 
 msgctxt "Languages"
 msgid "Traditional Chinese"
