@@ -4,19 +4,22 @@ on:
   push:
     branches:
       - development
-    paths-ignore:
-      - '.github/**'
-      - 'docs/**'
-      - '**.md'
-      - '**.mm'
+    paths:
+      - 'src/**'
+      - '**/meson.build'
+      - '!.github/**'
+      - '!apidocs/**'
+      - '!docs/**'
+
   pull_request:
     branches:
-      - development
-    paths-ignore:
-      - '.github/**'
-      - 'docs/**'
-      - '**.md'
-      - '**.mm'
+      - development      
+    paths:
+      - 'src/**'
+      - '**/meson.build'
+      - '!.github/**'
+      - '!apidocs/**'
+      - '!docs/**'
       
 jobs:
   flatpak:
