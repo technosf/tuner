@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: countries\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-02 19:46-0800\n"
-"PO-Revision-Date: 2026-02-03 01:24+0000\n"
+"PO-Revision-Date: 2026-02-03 08:42+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 "Language-Team: Malay <https://hosted.weblate.org/projects/tuner/countries-"
@@ -1022,22 +1022,19 @@ msgstr ""
 
 msgctxt "Languages"
 msgid "Arabic"
-msgstr ""
+msgstr "Bahasa Arab"
 
 msgctxt "Languages"
 msgid "Bulgarian"
-msgstr ""
+msgstr "Bulgarian"
 
 msgctxt "Languages"
 msgid "Czech"
-msgstr ""
+msgstr "Czech"
 
-#, fuzzy
-#| msgctxt "Languages"
-#| msgid "Spanish"
 msgctxt "Languages"
 msgid "Danish"
-msgstr "Spanish"
+msgstr "Danish"
 
 msgctxt "Languages"
 msgid "German"
@@ -1069,19 +1066,19 @@ msgstr "French"
 
 msgctxt "Languages"
 msgid "Gujarati"
-msgstr ""
+msgstr "Gujerat"
 
 msgctxt "Languages"
 msgid "Hungarian"
-msgstr ""
+msgstr "Hungarian"
 
 msgctxt "Languages"
 msgid "Indonesian"
-msgstr ""
+msgstr "Indonesia"
 
 msgctxt "Languages"
 msgid "Icelandic"
-msgstr ""
+msgstr "Icelandic"
 
 msgctxt "Languages"
 msgid "Italian"
@@ -1093,15 +1090,15 @@ msgstr "Japanese"
 
 msgctxt "Languages"
 msgid "Korean"
-msgstr ""
+msgstr "Korean"
 
 msgctxt "Languages"
 msgid "Lithuanian"
-msgstr ""
+msgstr "Lithuanian"
 
 msgctxt "Languages"
 msgid "Latvian"
-msgstr ""
+msgstr "Latvian"
 
 msgctxt "Languages"
 msgid "Norwegian (Bokmal)"
@@ -1125,19 +1122,19 @@ msgstr "Russian"
 
 msgctxt "Languages"
 msgid "Slovak"
-msgstr ""
+msgstr "Slovak"
 
 msgctxt "Languages"
 msgid "Slovenian"
-msgstr ""
+msgstr "Slovenian"
 
 msgctxt "Languages"
 msgid "Serbian"
-msgstr ""
+msgstr "Serbian"
 
 msgctxt "Languages"
 msgid "Swahili"
-msgstr ""
+msgstr "Swahili"
 
 msgctxt "Languages"
 msgid "Tamil"
@@ -1145,7 +1142,7 @@ msgstr ""
 
 msgctxt "Languages"
 msgid "Thai"
-msgstr ""
+msgstr "Thai"
 
 msgctxt "Languages"
 msgid "Turkish"
@@ -1157,7 +1154,7 @@ msgstr ""
 
 msgctxt "Languages"
 msgid "Vietnamese"
-msgstr ""
+msgstr "Vietnamese"
 
 msgctxt "Languages"
 msgid "Traditional Chinese"
