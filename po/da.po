@@ -475,34 +475,3 @@ msgstr "_Gem"
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
 
-#, c-format
-#~ msgid ""
-#~ "Double click to shuffle through %1$u stations,\n"
-#~ "one, every ten minutes, for %2$u days"
-#~ msgstr ""
-#~ "Dobbeltklik for at shuffle gennem %1$u stationer,\n"
-#~ "én, hver 10 minutter, for %2$u dage"
-
-#, c-format
-#~ msgid "%s Star this station"
-#~ msgstr "%s Star denne station"
-
-#, c-format
-#~ msgid "%s Unstar this station"
-#~ msgstr "%s Unstar denne station"
-
-#, c-format
-#~ msgid "Could not get random station: %s"
-#~ msgstr "Kan ikke komme tilfældig station: %s"
-
-#, c-format
-#~ msgid "Error reading file: %s"
-#~ msgstr "Fejl ved indlæsning af fil: %s"
-
-#, c-format
-#~ msgid "Error: %s"
-#~ msgstr "Fejl: %s"
-
-#, c-format
-#~ msgid "Unable to open website: %s"
-#~ msgstr "Kan ikke åbne hjemmeside: %s"

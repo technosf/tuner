@@ -357,25 +357,3 @@ msgstr "Farklı seçimler ve favori istasyonlarınız ile yeni kenar çubuğu me
 
 msgid "Initial release"
 msgstr "İlk sürüm"
-
-#~ msgid "com.github.louis77.tuner"
-#~ msgstr "com.github.louis77.tuner"
-
-#~ msgid "Louis Brauer"
-#~ msgstr "Louis Brauer"
-
-#~ msgid "Discover and listen to internet radio stations"
-#~ msgstr "İnternet radyo istasyonlarını keşfedin ve dinleyin"
-
-#~ msgid "Make listening to internet radio stations fun again!"
-#~ msgstr ""
-#~ "İnternet radyo istasyonlarını dinlemeyi yeniden eğlenceli hale getirin!"
-
-#~ msgid ""
-#~ "Instead of providing you with all the stations you already know, Tuner "
-#~ "presents you a new selection of stations from all over the world every "
-#~ "time you hit the Shuffle button."
-#~ msgstr ""
-#~ "Sizin bildiğiniz tüm istasyonları sağlamak yerine, Tunersize dünyanın her "
-#~ "yerinden yeni bir istasyon seçimi sunarKarıştır düğmesine basmanız "
-#~ "yeterli."

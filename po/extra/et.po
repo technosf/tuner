@@ -391,9 +391,3 @@ msgstr "Uus menüü külgribal erinevate valikuvõimalustega, sh lemmikud."
 
 msgid "Initial release"
 msgstr "Esmane versioon"
-
-#~ msgid "Internet radio"
-#~ msgstr "Veebiraadio"
-
-#~ msgid "Louis Brauer"
-#~ msgstr "Louis Brauer"

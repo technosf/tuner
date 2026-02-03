@@ -65,8 +65,8 @@ foreach lang : run_command('cat', 'LINGUAS', check: true).stdout().strip().split
 
     if run_command('test', '-f', po_file, check: false).returncode() == 0
 
-        merged_po = custom_target(
-            'merge-po-' + lang,
+        merge_po = custom_target(
+            'merged-po-' + lang,
             input: [
                 po_file,
                 'countries/' + po_file,
@@ -81,7 +81,7 @@ foreach lang : run_command('cat', 'LINGUAS', check: true).stdout().strip().split
 
         message('Merged translation: merged-' + po_file)
 
-        translations += custom_target('translation-' + lang,
+        mo_file += custom_target('mo-file-' + lang,
             input: merged_po,
             output: lang + '.mo',
             command: [
@@ -93,31 +93,41 @@ foreach lang : run_command('cat', 'LINGUAS', check: true).stdout().strip().split
                 '@INPUT@',
                 '-o', '@OUTPUT@'
             ],
-            # Build these by default so `ninja` will compile them unless asked not to
-            build_by_default: true,
-            # Install the resulting .mo files into the configured locale directory
-            install: true,
-            install_dir: join_paths(get_option('localedir'), lang, 'LC_MESSAGES')
+            # # Build these by default so `ninja` will compile them unless asked not to
+            # build_by_default: true,
+            # # Install the resulting .mo files into the configured locale directory
+            # install: true,
+            # install_dir: join_paths(get_option('localedir'), lang, 'LC_MESSAGES'),
         )
 
+        install_data(
+        mo_file,
+        install_dir: join_paths(
+            get_option('datadir'),
+            'locale',
+            lang,
+            'LC_MESSAGES'
+        ),
+        rename: meson.project_name() + '.mo'
+        )
     endif
 endforeach
 
 
-message('Scanning gettext resources...') 
-# Let Meson/i18n scan and register gettext resources. The `preset: 'glib'`
-# config tells Meson to use glib-style message catalogs and conventions.
-# `--no-location` prevents adding source file locations to generated messages,
-# and '-cTRANSLATORS' keeps translator comments from source.
-i18n.gettext(meson.project_name(),
-    args: [
-        '--directory=' + meson.project_source_root(),
-        '--from-code=UTF-8',
-        '--no-location',
-        '-cTRANSLATORS'
-    ],
-    preset: 'glib'
-)
+# message('Scanning gettext resources...') 
+# # Let Meson/i18n scan and register gettext resources. The `preset: 'glib'`
+# # config tells Meson to use glib-style message catalogs and conventions.
+# # `--no-location` prevents adding source file locations to generated messages,
+# # and '-cTRANSLATORS' keeps translator comments from source.
+# i18n.gettext(meson.project_name(),
+#     args: [
+#         '--directory=' + meson.project_source_root(),
+#         '--from-code=UTF-8',
+#         '--no-location',
+#         '-cTRANSLATORS'
+#     ],
+#     preset: 'glib'
+# )
 
 # - `countries/` contains country-specific translations and data
 subdir('countries')# Include additional translation sources in subdirs

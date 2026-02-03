@@ -350,23 +350,3 @@ msgstr ""
 msgid "Initial release"
 msgstr "Initiële uitgave"
 
-#~ msgid "com.github.louis77.tuner"
-#~ msgstr "com.github.louis77.tuner"
-
-#~ msgid "Louis Brauer"
-#~ msgstr "Louis Brauer"
-
-#~ msgid "Discover and listen to internet radio stations"
-#~ msgstr "Ontdek en luister naar online-radiostations"
-
-#~ msgid "Make listening to internet radio stations fun again!"
-#~ msgstr "Maak luisteren naar online-radiostreams weer leuk!"
-
-#~ msgid ""
-#~ "Instead of providing you with all the stations you already know, Tuner "
-#~ "presents you a new selection of stations from all over the world every "
-#~ "time you hit the Shuffle button."
-#~ msgstr ""
-#~ "In plaats van een lijst met radiostations die je al kent, toont Tuner je "
-#~ "een selectie van radiostations van over heel de wereld, telkens als je op "
-#~ "de knop 'Willekeurig' klikt."

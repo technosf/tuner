@@ -461,35 +461,3 @@ msgstr "_บันทึก"
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
-
-#, c-format
-#~ msgid ""
-#~ "Double click to shuffle through %1$u stations,\n"
-#~ "one, every ten minutes, for %2$u days"
-#~ msgstr ""
-#~ "คลิกที่ปุ่มคู่ผ่าน [X32] สถานี\n"
-#~ "หนึ่งในสิบนาทีสําหรับ [X75] วัน"
-
-#, c-format
-#~ msgid "%s Star this station"
-#~ msgstr "%s สถานีนี้"
-
-#, c-format
-#~ msgid "%s Unstar this station"
-#~ msgstr "%s ไม่มีสถานีนี้"
-
-#, c-format
-#~ msgid "Could not get random station: %s"
-#~ msgstr "ไม่สามารถใช้สถานีแบบสุ่ม: [X30]"
-
-#, c-format
-#~ msgid "Error reading file: %s"
-#~ msgstr "ข้อความอ่าน: %s"
-
-#, c-format
-#~ msgid "Error: %s"
-#~ msgstr "ข้อผิดพลาด: %s"
-
-#, c-format
-#~ msgid "Unable to open website: %s"
-#~ msgstr "สามารถเปิดเว็บไซต์: [X24]"
