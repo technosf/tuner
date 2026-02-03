@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-02-03 00:05-0800\n"
-"PO-Revision-Date: 2026-02-03 08:26+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"POT-Creation-Date: 2026-02-03 01:06-0800\n"
+"PO-Revision-Date: 2026-02-03 18:51+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "et/>\n"
 "Language: et\n"
@@ -80,9 +80,8 @@ msgid "Copy Stream-URI to clipboard"
 msgstr "Kopeeri voogedastuse võrguaadress lõikelauale"
 
 #: src/Widgets/Display.vala:247
-#, fuzzy
 msgid "Could not get random station"
-msgstr "Could not get random station"
+msgstr "Juhusliku jaama tuvastamine ei õnnestunud"
 
 #: src/Widgets/PreferencesPopover.vala:67
 msgid "Cycle through the metadata from the playing stream"
@@ -118,13 +117,8 @@ msgstr "Ära osale jaamade hääletuses"
 
 #: src/Widgets/Display.vala:559
 #, c-format
-msgid ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
-msgstr ""
-"Topeltklõpsa, kui tahad juhuslikus valikus läbi kuulata %1$u "
-"veebiraadiojaama,\n"
-"kuulates ühte jaama kümne minuti jooksul ja nii %2$u päeva"
+msgid "Double click to shuffle through %1$u stations"
+msgstr "%1$u jaama sirvimiseks topeltklõpsa"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
@@ -139,14 +133,12 @@ msgid "Eras"
 msgstr "Ajastud"
 
 #: src/Widgets/PreferencesPopover.vala:209
-#, fuzzy
 msgid "Error"
-msgstr "Error"
+msgstr "Viga"
 
 #: src/Widgets/PreferencesPopover.vala:248
-#, fuzzy
 msgid "Error reading file"
-msgstr "Error reading file"
+msgstr "Viga faili lugemisel"
 
 #: src/Widgets/Window.vala:242
 msgid "Error while trying to autoplay, aborting…"
@@ -443,14 +435,12 @@ msgid "Trending Stations in the last 24 hours"
 msgstr "Populaarsust koguvad veebiraadiojaamad viimase 24 tunni jooksul"
 
 #: src/Widgets/StationContextMenu.vala:145
-#, fuzzy
 msgid "Unable to open website"
-msgstr "Unable to open website"
+msgstr "Veebisaidi avamine ei õnnestunud"
 
 #: src/Widgets/StationContextMenu.vala:168
-#, fuzzy
 msgid "Unstar this station"
-msgstr "Unstar this station"
+msgstr "Eemalda see veebiraadio lemmikute seast"
 
 #: src/Widgets/StationContextMenu.vala:90
 msgid "Update Station from Online"
@@ -472,6 +462,19 @@ msgstr "_Ava"
 #: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "_Salvesta"
+
+#: src/Widgets/Display.vala:560
+msgid "one, every ten minutes, for %2$u days"
+msgstr "üks kord iga kümne minuti järel %2$u päeva kestel"
+
+#, c-format
+#~ msgid ""
+#~ "Double click to shuffle through %1$u stations,\n"
+#~ "one, every ten minutes, for %2$u days"
+#~ msgstr ""
+#~ "Topeltklõpsa, kui tahad juhuslikus valikus läbi kuulata %1$u "
+#~ "veebiraadiojaama,\n"
+#~ "kuulates ühte jaama kümne minuti jooksul ja nii %2$u päeva"
 
 #, c-format
 #~ msgid "%s Star this station"

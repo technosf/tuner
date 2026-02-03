@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-02-03 00:05-0800\n"
-"PO-Revision-Date: 2026-02-03 08:53+0000\n"
+"POT-Creation-Date: 2026-02-03 01:06-0800\n"
+"PO-Revision-Date: 2026-02-03 09:15+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ar/>\n"
@@ -117,12 +117,8 @@ msgstr "لا تشارك في التصويت بالمحطة"
 
 #: src/Widgets/Display.vala:559
 #, c-format
-msgid ""
-"Double click to shuffle through %1$u stations,\n"
-"one, every ten minutes, for %2$u days"
-msgstr ""
-"نقرة مزدوجة لتشقق في %1$u المحطات،\n"
-"واحد، كل 10 دقائق، لأيام %2$u"
+msgid "Double click to shuffle through %1$u stations"
+msgstr "انقر نقرًا مزدوجًا للتنقل بين %1$u محطة"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
@@ -462,6 +458,18 @@ msgstr "ا_فتح"
 #: src/Widgets/PreferencesPopover.vala:189
 msgid "_Save"
 msgstr "_حفظ"
+
+#: src/Widgets/Display.vala:560
+msgid "one, every ten minutes, for %2$u days"
+msgstr "واحدة كل عشر دقائق، لمدة %2$u يومًا"
+
+#, c-format
+#~ msgid ""
+#~ "Double click to shuffle through %1$u stations,\n"
+#~ "one, every ten minutes, for %2$u days"
+#~ msgstr ""
+#~ "نقرة مزدوجة لتشقق في %1$u المحطات،\n"
+#~ "واحد، كل 10 دقائق، لأيام %2$u"
 
 #, c-format
 #~ msgid "%s Star this station"
