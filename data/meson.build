@@ -51,6 +51,8 @@ message('Installed desktop file\n')
 #
 message('Installing appdata...')
 
+i18n = import ('i18n')
+
 # Translate and install our .appdata.xml file so AppCenter will see it
 i18n.merge_file (
     input: meson.project_name () + '.appdata.xml.in',
