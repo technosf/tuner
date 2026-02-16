@@ -1,4 +1,4 @@
-rm -r builddir
+rm -r builddir build-dir .flatpak-builder
 #meson setup builddir -Dtranslation=update
 meson setup --buildtype=debug builddir -Dtranslation=update
 meson compile -C builddir pot

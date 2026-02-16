@@ -9,12 +9,11 @@ project (
 message('Starting build for project: ' + meson.project_name())
 message('Build type: ' + get_option('buildtype'))
 
+# Imports
 
-# Translation module
-i18n = import ('i18n')
-
-# GNOME module
-gnome = import('gnome')
+i18n = import ('i18n') # Translation module
+gnome = import('gnome') # GNOME module
+fs = import('fs')   # Filesystem
 
 # Project arguments
 add_project_arguments (
@@ -54,6 +53,13 @@ dependencies = [
 ]
 
 subdir ('src')
+
+po_script = join_paths(meson.global_source_root(), 'po', 'update-po.sh')
+
+if fs.exists(po_script)
+  message('Running PO merge hook...')
+  run_command(po_script, check: true)
+endif
 
 subdir ('po')
 
