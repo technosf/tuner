@@ -204,47 +204,31 @@ namespace Tuner {
         public static string SYSTEM_THEME() { return GTK_SYSTEM_THEME; }
 
         static construct 
-        {
-            //
-            // Interntionalization
-            //
-            Intl.setlocale (LocaleCategory.ALL, "");
-            Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-            Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-            Intl.textdomain (GETTEXT_PACKAGE);
-            //LANGUAGES.add("en");    // App core language
-
-            var dir = File.new_for_path(LOCALEDIR);
-            dir.enumerate_children_async.begin ("standard::*", FileQueryInfoFlags.NONE, Priority.HIGH, null, (obj, res) => 
             {
-                warning (@"TLD dir: $(dir.get_path())");
+                // Interntionalization
+                Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+                Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+                Intl.textdomain (GETTEXT_PACKAGE);
+                LANGUAGES.add("en");    // App core language - no .po created for it, but should always be available as fallback
                 try {
-                        FileEnumerator enumerator = dir.enumerate_children_async.end (res);
-                        FileInfo info;
-                        while ((info = enumerator.next_file (null)) != null) 
-                        {
-                            if (info.get_file_type() == FileType.DIRECTORY && info.get_name() != "C") 
-                            {
-                                var lang_dir = dir.get_child(info.get_name());
-
-                                warning (@"Language dir: $(lang_dir.get_path())");
-                                var mo_file = lang_dir.get_child("LC_MESSAGES").get_child(GETTEXT_PACKAGE + "." + info.get_name() + ".mo");
-
-                                warning (@"Language file: $(mo_file.get_path())");
-                                if (mo_file.query_exists()) 
-                                {
-                                    LANGUAGES.add(info.get_name());
-                                    warning (@"Adding language file: $(mo_file.get_path())");
-                                }
-                            } // if
-                        } // while
-                    } catch (Error e)  
+                    // Add translations
+                    var dir = File.new_for_path(LOCALEDIR);
+                    var enumerator = dir.enumerate_children("standard::*", FileQueryInfoFlags.NONE);
+                    FileInfo info;
+                    while ((info = enumerator.next_file()) != null) 
                     {
-                       // warning ((_("Error reading locale path") + ": %s").printf (e.message));
+                        if (info.get_file_type() == FileType.DIRECTORY && info.get_name() != "C") 
+                        {
+                            var lang_dir = dir.get_child(info.get_name());
+                            var mo_file = lang_dir.get_child("LC_MESSAGES").get_child(GETTEXT_PACKAGE + ".mo");
+                            warning(@"Lang search $(mo_file.get_path()): $(mo_file.query_exists())");
+                            if (mo_file.query_exists()) LANGUAGES.add(info.get_name());
+                        }
+                    } //  while
+                } catch (Error e) {
                     warning(@"Error reading locale path: $(e.message)");
-                    }  //   
-            });
-        }
+                }            
+            }
 
         // -------------------------------------
 

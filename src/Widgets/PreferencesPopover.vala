@@ -74,12 +74,13 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 		//Language
 		var lang_combo = new Gtk.ComboBoxText ();
-		lang_combo.append("", _("Default"));
+		lang_combo.append("", "Default");
 		foreach( var lang in Application.LANGUAGES)
 		{
 			lang_combo.append(lang, Languages.get_by_code(lang));
 		}
 		lang_combo.halign    = Gtk.Align.CENTER;
+		lang_combo.valign    = Gtk.Align.FILL;
 		lang_combo.active_id = app().settings.language;   // Initial state from settings
 
 		var lang_box = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 3);
