@@ -37,15 +37,6 @@ add_project_arguments (
 
 config_data = configuration_data()
 
-# message('Build is subproject: ' + meson.is_subproject().to_string())
-# message('Build is project_build_root: ' + meson.project_build_root())
-# message('Build is project_source_root: ' + meson.project_source_root())
-# message('Build is global_build_root: ' + meson.global_build_root())
-# message('Build is gdebug: ' + get_option('debug').to_string())
-#message('Local path: ' + join_paths(get_option('prefix'), get_option('local')))
-#message('Locale path: ' + join_paths(get_option('prefix'), get_option('locale')))
-message('Localedir path: ' + join_paths(get_option('prefix'), get_option('localedir')))
-
 if get_option('debug')
   config_data.set_quoted('LOCALEDIR', join_paths(meson.global_build_root(), 'po'))
 else

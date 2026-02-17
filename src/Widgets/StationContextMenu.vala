@@ -62,7 +62,9 @@ public class Tuner.StationContextMenu : Gtk.Menu
             // Language
             if ( station_button.station.language != null && station_button.station.language.length > 0 )
             {
-                sb.append ("[").append (station_button.station.language).append ("]");
+                sb.append ("[")
+                .append (Languages.get_by_code ( station_button.station.languagecodes,  station_button.station.language))
+                .append ("]");
             }
 
             var info = new Gtk.MenuItem.with_label (sb.str);

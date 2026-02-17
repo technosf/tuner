@@ -13,9 +13,22 @@
 using GLib;
 using Posix;
 
+[CCode (cname="backtrace")]
+extern int backtrace (void** buffer, int size);
+
+[CCode (cname="backtrace_symbols_fd")]
+extern void backtrace_symbols_fd (void** buffer, int size, int fd);
+
+void print_backtrace () {
+    void* buf[64];
+    int n = backtrace (buf, 64);
+    backtrace_symbols_fd (buf, n, 2);
+}
+
 void on_signal (int sig) {
     GLib.stderr.printf ("Tuner abending with Signal %d\n", sig);
     GLib.stderr.flush ();
+    print_backtrace ();
     Posix._exit (128 + sig);
 }
 

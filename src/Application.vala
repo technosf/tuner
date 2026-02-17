@@ -221,7 +221,6 @@ namespace Tuner {
                         {
                             var lang_dir = dir.get_child(info.get_name());
                             var mo_file = lang_dir.get_child("LC_MESSAGES").get_child(GETTEXT_PACKAGE + ".mo");
-                            warning(@"Lang search $(mo_file.get_path()): $(mo_file.query_exists())");
                             if (mo_file.query_exists()) LANGUAGES.add(info.get_name());
                         }
                     } //  while

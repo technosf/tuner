@@ -143,10 +143,11 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 		_tuner.tooltip_text = _("Data Provider");
 		_tuner.query_tooltip.connect((x, y, keyboard_tooltip, tooltip) =>
 		{
+			
 			if (app().is_offline)
 				return false;
-			tooltip.set_text ((_("Data Provider") + ": %1$s\n\n%u " + _("Stations") + ",\t%u" + _("Tags"))
-			.printf (window.directory.provider (),
+			string _provider = _("Data Provider") + ": %s\n\n%u " + _("Stations") + ",\t%u" + _("Tags");
+			tooltip.set_text (_provider.printf (window.directory.provider (),
 			app ().provider.available_stations (),
 			app ().provider.available_tags ()
 			));
