@@ -19,7 +19,7 @@ fs = import('fs')   # Filesystem
 
 # Translations and i18n handling
 
-po_script = join_paths(meson.global_source_root(),'update-po.sh')
+po_script = join_paths(meson.global_source_root(),'scripts','update-po.sh')
 
 if fs.exists(po_script)
   message('Running PO merge hook...')

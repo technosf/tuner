@@ -1,5 +1,6 @@
 build
 builddir
+build-dir
 build-aux
 *~
 apidocs/*
@@ -20,3 +21,4 @@ repo/*/*
 *.log
 *.tmp
 data/*.gresource
+TODO
