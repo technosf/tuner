@@ -3,18 +3,31 @@ project (
     'com.github.louis77.tuner',
     'vala', 'c',
     version: '2.0.1-beta.2',
-    meson_version: '>= 0.60.0',
+    meson_version: '>= 1.3.2',
 )
 
 message('Starting build for project: ' + meson.project_name())
 message('Build type: ' + get_option('buildtype'))
 
 
-# Translation module
-i18n = import ('i18n')
 
-# GNOME module
-gnome = import('gnome')
+# Imports
+
+i18n = import ('i18n') # Translation module
+gnome = import('gnome') # GNOME module
+fs = import('fs')   # Filesystem
+
+# Translations and i18n handling
+
+po_script = join_paths(meson.global_source_root(),'scripts','update-po.sh')
+
+if fs.exists(po_script)
+  message('Running PO merge hook...')
+  run_command(po_script, check: true)
+endif
+
+subdir ('po')
+
 
 # Project arguments
 add_project_arguments (
@@ -23,7 +36,15 @@ add_project_arguments (
 )
 
 config_data = configuration_data()
-config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+
+if get_option('debug')
+  config_data.set_quoted('LOCALEDIR', join_paths(meson.global_build_root(), 'po'))
+else
+  config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+endif
+
+#config_data.set_quoted('LOCALEDIR', localedir)
+#config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
 config_data.set_quoted('VERSION', meson.project_version())
 config_file = configure_file(
@@ -55,8 +76,6 @@ dependencies = [
 
 subdir ('src')
 
-subdir ('po')
-
 # Executable
 executable (
     meson.project_name (),
@@ -64,6 +83,7 @@ executable (
     config_file,
     sources,
     dependencies: dependencies,
+    vala_args: ['--pkg', 'posix'],
     install: true
 )
 

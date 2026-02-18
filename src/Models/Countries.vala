@@ -281,7 +281,7 @@ namespace Tuner.Model {
         public static string get_by_code(string code, string fallback = "") {
             var my_code = code.strip ();
             if (my_code == "") return fallback;
-            if (map.has_key (my_code)) return map.get (my_code);
+            if (map.has_key (my_code)) return dpgettext2(null, "Countries", map.get(my_code));
             return my_code;
         } 
    }

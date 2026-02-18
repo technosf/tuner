@@ -1,5 +1,6 @@
 build
 builddir
+build-dir
 build-aux
 *~
 apidocs/*
@@ -15,4 +16,9 @@ tuner.code-workspace
 labelexpand.ods
 tuner-starred.m3u8
 uncrustify.cfg
-repo/*
+repo/*/*
+*.bak
+*.log
+*.tmp
+data/*.gresource
+TODO

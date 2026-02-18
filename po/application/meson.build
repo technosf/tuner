@@ -1,10 +1,10 @@
-# Generate Country and Language translations
+# Generate Application translations
 #
-# Country-specific translations (regional variants or extra locale data)
-# live under `po/countries/` and are kept separate from the main `po/` 
+# Application translations (regional variants or extra locale data)
+# live under `po/application/` and are kept separate from the main `po/` 
 # directory to modularize the translation process by Weblate components.
 #
-#     meson compile -C builddir countries-pot
+#     meson compile -C builddir application-pot
 #
 # Notes on options used:
 # - `--directory` sets the base directory to the project root for tools.
@@ -13,9 +13,9 @@
 #
 
 
-message('Country translation extraction...')
+message('Application translation extraction...')
 
-i18n.gettext ('countries',
+i18n.gettext ('application',
     args: [
         '--directory=' + meson.project_source_root(),
         '--from-code=UTF-8',

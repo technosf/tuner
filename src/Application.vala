@@ -204,34 +204,30 @@ namespace Tuner {
         public static string SYSTEM_THEME() { return GTK_SYSTEM_THEME; }
 
         static construct 
-        {
-            //
-            // Interntionalization
-            //
-            Intl.setlocale (LocaleCategory.ALL, "");
-            Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-            Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-            Intl.textdomain (GETTEXT_PACKAGE);
-            LANGUAGES.add("en");    // App core language
-            try {
-                // Add translations
-                var dir = File.new_for_path(LOCALEDIR);
-                var enumerator = dir.enumerate_children("standard::*", FileQueryInfoFlags.NONE);
-                FileInfo info;
-                while ((info = enumerator.next_file()) != null) 
-                {
-                    if (info.get_file_type() == FileType.DIRECTORY && info.get_name() != "C") 
+            {
+                // Interntionalization
+                Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+                Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+                Intl.textdomain (GETTEXT_PACKAGE);
+                LANGUAGES.add("en");    // App core language - no .po created for it, but should always be available as fallback
+                try {
+                    // Add translations
+                    var dir = File.new_for_path(LOCALEDIR);
+                    var enumerator = dir.enumerate_children("standard::*", FileQueryInfoFlags.NONE);
+                    FileInfo info;
+                    while ((info = enumerator.next_file()) != null) 
                     {
-                        var lang_dir = dir.get_child(info.get_name());
-                        var mo_file = lang_dir.get_child("LC_MESSAGES").get_child(GETTEXT_PACKAGE + ".mo");
-                        if (mo_file.query_exists()) LANGUAGES.add(info.get_name());
-                    }
-                } //  while
-            } catch (Error e) {
-			    warning ((_("Error reading locale path") + ": %s").printf (e.message));
-               // warning(@"Error reading locale path: $(e.message)");
-            }            
-        }
+                        if (info.get_file_type() == FileType.DIRECTORY && info.get_name() != "C") 
+                        {
+                            var lang_dir = dir.get_child(info.get_name());
+                            var mo_file = lang_dir.get_child("LC_MESSAGES").get_child(GETTEXT_PACKAGE + ".mo");
+                            if (mo_file.query_exists()) LANGUAGES.add(info.get_name());
+                        }
+                    } //  while
+                } catch (Error e) {
+                    warning(@"Error reading locale path: $(e.message)");
+                }            
+            }
 
         // -------------------------------------
 

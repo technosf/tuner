@@ -106,6 +106,7 @@ Help is apreciated:
 
 - [technosf](https://github.com/technosf) Current maintainer and rewriter of a swarthe of Tuner for V2
 - [louis77](https://github.com/louis77) Originator and genius behind Tuner
+- [@jrthwlate](https://hosted.weblate.org/user/jrthwlate/) - Estonian translation
 - [faleksandar.com](https://faleksandar.com/) for icons and colors
 - [faleksandar.com](https://faleksandar.com/) for icons and colors
 - [@NathanBnm](https://github.com/NathanBnm) - French translation
