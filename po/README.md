@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # Translations (po/)
 
 This document explains how translation targets in `po/` are generated, what each build step produces, and the recommended command order for common tasks. ✅

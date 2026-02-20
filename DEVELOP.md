@@ -1,15 +1,27 @@
+<!--
+Copyright © 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # ![icon](docs/logo_01.png) Develop, Build and Contribute to Tuner [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) <!-- omit in toc -->
 
 Discover and Listen to your favourite internet radio stations, and add improve the code!
 
 - [Overview](#overview)
-- [Tuner Development](#tuner-development)
+- [TL;DR](#tldr)
+- [Prerequisits](#prerequisits)
   - [Naming Conventions](#naming-conventions)
   - [Dependencies](#dependencies)
-  - [Building the Tuner App From Source](#building-the-tuner-app-from-source)
-- [Valadoc](#valadoc)
-  - [Building the Tuner Flatpak](#building-the-tuner-flatpak)
-  - [Readying code for a Pull Request](#readying-code-for-a-pull-request)
+- [Tuner Development Lifecycle](#tuner-development-lifecycle)
+  - [Building Tuner From Source](#building-tuner-from-source)
+  - [Valadoc](#valadoc)
+- [Building the Tuner Flatpak](#building-the-tuner-flatpak)
+- [Readying code for a Pull Request](#readying-code-for-a-pull-request)
+  - [Build Changes](#build-changes)
+  - [Language Changes & Translations](#language-changes--translations)
+  - [Code Changes](#code-changes)
 - [Debugging](#debugging)
   - [VSCode](#vscode)
   - [Bug Introduction Deduction](#bug-introduction-deduction)
@@ -19,9 +31,29 @@ Discover and Listen to your favourite internet radio stations, and add improve t
 
 **_Tuner_** is hosted on [Github](https://github.com/tuner-app/tuner), packaged as a Flatpak and distributed by Flathub. **_Tuner_** is writen in [Vala](https://vala.dev/), a C#/Java/JavaFX-like language with a self-hosting compiler that generates C code, uses the GObject type system and wrapping a number of GTK libraries, and utilizes GNOME internationalization and localization (_i18n_) for user-facing strings, which are translated via [Weblate](https://hosted.weblate.org/projects/tuner/). [Meson](https://mesonbuild.com/) is the build system.
 
-## Tuner Development
+## TL;DR
 
-Hosted on Github, the _main_ branch reflects the current stable release. The _development_ branch is the development branch and where releases are staged. Pull Requests should be made against the _development_ branch.
+```bash
+gh repo clone yourusername/tuner
+cd tuner
+checkout development
+meson setup --buildtype=debug builddir
+meson compile -C builddir
+./builddir/com.github.louis77.tuner
+flatpak-builder --force-clean --user --sandbox --install build-dir com.github.louis77.tuner.yml
+flatpak --user run com.github.louis77.tuner
+```
+
+## Prerequisits
+
+### Licenses
+
+_Tuner_ is licensed under **GPL-3.0-or-later** 
+Compliance can be checked using [Reuse](https://reuse.software/) linter:
+
+```bash
+reuse lint
+```
 
 ### Naming Conventions
 
@@ -59,7 +91,34 @@ sudo apt install git valac meson
 sudo apt install libgtk-3-dev libgee-0.8-dev libgranite-dev libgstreamer1.0-dev libgstreamer-plugins-bad1.0-dev libsoup-3.0-dev libjson-glib-dev
 ```
 
-### Building the Tuner App From Source
+## Tuner Development Lifecycle
+
+Hosted on Github, the _main_ branch reflects captured the current release and tags. The _development_ branch is the destination for in progress code, translations and where releases are staged. Fork the project and develop on your forks' _development_ branch. All _Pull Requests_ should be made against the _development_ branch.
+
+The development lifecycle is:
+
+- Build Tuner from Source
+  - Checkout _development_ branch
+  - Setup the build
+  - Local build and confirm
+- Update the Code
+  - Modify code
+  - Local build
+  - Test
+  - Flatpak Build
+  - Local Flatpak User build and test
+  - Github Flatpack build and test
+  - Pull Request
+
+### Building Tuner From Source
+
+After Forking your own copy of the Tuner project from [https://github.com/tuner-labs/tuner](https://github.com/tuner-labs/tuner), _clone_ your copy to your development machine then checkout the velopment branch:
+
+```bash
+gh repo clone yourusername/tuner
+cd tuner
+checkout development
+```
 
 There are two build configurations: _debug_ and _release_. The _debug_ build (manifest _com.github.louis77.tuner.debug.yml_) is recommended for development, while the _release_ build (manifest _com.github.louis77.tuner.yml_) is for distribution. Build instructions will focus on the _debug_ build. Copy the required manifest to _com.github.louis77.tuner.xml_ before building.
 
@@ -113,10 +172,12 @@ flatpak install flathub org.freedesktop.Sdk//x86_64//25.08
 flatpak install flathub org.freedesktop.Sdk.Extension.vala/x86_64/25.08
 ```
 
-Build the flatpak in the _user_ scope:
+Build the flatpak in the _user_ scope with and without debug:
 
 ```bash
 flatpak-builder --force-clean --user --sandbox --install build-dir com.github.louis77.tuner.debug.yml
+
+flatpak-builder --force-clean --user --sandbox --install build-dir com.github.louis77.tuner.yml
 ```
 
 Run the Tuner flatpack:
@@ -135,14 +196,17 @@ If the build has changed it may be required to update repository check-in **Acti
 
 ### Language Changes & Translations
 
-Changes to strings that are internationalized require translation via [Weblate](https://hosted.weblate.org/projects/tuner/) and reintegration of the new translations into the build.
+Changes to strings that are internationalized require translation via [Weblate](https://hosted.weblate.org/projects/tuner/) and reintegration of the new translations, the .po files, into the build via a Weblate pull request.
 
-for translation by GNOME gettext require that the _.pot_ file be regenerated, checked in and pushed so
+If translatable strings have been update for translation by GNOME gettext require that the _.pot_ file be regenerated, checked in and pushed to the development branch for Weblate to pick them up. If _Countries_ or _Languages_, or if other strings in the _Application_ have changed, or if the package _extra_ metadata has changed, the regenration commands are:
 
 ```bash
-meson compile -C builddir pot
+meson compile -C builddir countries-pot
+meson compile -C builddir application-pot
 meson compile -C builddir extra-pot
 ```
+
+If the _.po_ files change, the meson build setup should be rerun.
 
 ### Code Changes
 

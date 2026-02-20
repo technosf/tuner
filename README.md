@@ -1,3 +1,10 @@
+<!--
+Copyright © 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # ![icon](docs/logo_01.png) Tuner [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Translation status](https://hosted.weblate.org/widget/tuner/language-badge.svg) ![Translation status](https://hosted.weblate.org/widgets/tuner/-/tuner-ui/svg-badge.svg)](https://hosted.weblate.org/engage/tuner/)
 
 ## Discover and Listen to your favourite internet radio stations

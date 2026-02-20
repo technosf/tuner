@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2020-2024 Louis Brauer / <louis@brauer.family> -->
+
+<!--
+Copyright 2020-2024 Louis Brauer / <louis@brauer.family>
+Copyright © 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: 2026 <https://github.com/technosf>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 <component type="desktop-application">
 
   <id>com.github.louis77.tuner</id>
