@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-02-03 01:06-0800\n"
-"PO-Revision-Date: 2026-02-03 23:07+0000\n"
+"PO-Revision-Date: 2026-02-17 21:09+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/tuner/tuner-ui/ta/>"
 "\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
@@ -325,7 +325,7 @@ msgstr "Please try a different search term."
 
 #: src/Widgets/Display.vala:361
 msgid "Popular"
-msgstr "பிரபலமானது"
+msgstr "பிரபலமான"
 
 #: src/Widgets/HeaderBar.vala:208
 msgid "Preferences"
@@ -369,9 +369,8 @@ msgid "Search Results"
 msgstr "முடிவுகளைத் தேடு"
 
 #: src/Widgets/Display.vala:98
-#, fuzzy
 msgid "Selections"
-msgstr "Selections"
+msgstr "தேர்ந்தெடுக்கப்பட்டது"
 
 #: src/Widgets/PreferencesPopover.vala:65
 #, fuzzy
@@ -417,9 +416,8 @@ msgid "Station tags"
 msgstr "Station tags"
 
 #: src/Widgets/HeaderBar.vala:148
-#, fuzzy
 msgid "Stations"
-msgstr "Stations"
+msgstr "நிலையங்கள்"
 
 #: src/Widgets/Display.vala:326
 #, fuzzy

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-02-03 01:06-0800\n"
-"PO-Revision-Date: 2026-02-03 23:05+0000\n"
+"PO-Revision-Date: 2026-02-17 21:10+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Latvian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "lv/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
 "19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
@@ -114,7 +114,7 @@ msgstr "Date Time"
 
 #: src/Widgets/PreferencesPopover.vala:77
 msgid "Default"
-msgstr "Nepildīt"
+msgstr "Default"
 
 #: src/Widgets/Display.vala:325
 msgid "Discover"
@@ -374,9 +374,8 @@ msgid "Search Results"
 msgstr "Meklēšanas rezultāti"
 
 #: src/Widgets/Display.vala:98
-#, fuzzy
 msgid "Selections"
-msgstr "Selections"
+msgstr "Izvēle"
 
 #: src/Widgets/PreferencesPopover.vala:65
 #, fuzzy
