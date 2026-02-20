@@ -1,7 +1,11 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the extra package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SPDX-FileCopyrightText: Copyright © 2020-2024 Louis Brauer <louis@brauer.family>
+# SPDX-FileCopyrightText: Copyright © 2024-2026 technosf <https://github.com/technosf>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# Extra translations for Tuner, the Internet Radio Player. These are translations
+# that are not directly related to the application itself, but are used in other
+# contexts, such as packaging and indexing. 
 #
 #, fuzzy
 msgid ""

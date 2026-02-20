@@ -1,13 +1,16 @@
-#
-# PO meson build file
-#
-# This file defines how translations are handled for the project.
-# High-level responsibilities:
-# - include additional translation subdirectories
-# - optionally generate a POT template (when updating translations)
-# - compile .po files into .mo files and install them to the locale dir
-# - call Meson's i18n helper to gather and validate gettext resources
-#
+##
+## SPDX-FileCopyrightText: Copyright © 2024 technosf <https://github.com/technosf>
+## SPDX-License-Identifier: GPL-3.0-or-later
+##
+## @file meson.build
+## @brief PO meson build file
+##
+## This file defines how translations are handled for the project, including:
+## - inclusion of additional translation subdirectories
+## - optional generation of POT templates (when updating translations)
+## - compilation of .po files into .mo files and installation to the locale dir
+## - calling Meson's i18n helper to gather and validate gettext resources
+##
 
 message('Installing translations...')
 
