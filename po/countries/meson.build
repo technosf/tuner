@@ -1,26 +1,16 @@
-# Generate Country and Language translations
-#
-# Country-specific translations (regional variants or extra locale data)
-# live under `po/countries/` and are kept separate from the main `po/` 
-# directory to modularize the translation process by Weblate components.
-#
-#     meson compile -C builddir countries-pot
-#
-# Notes on options used:
-# - `--directory` sets the base directory to the project root for tools.
-# - `--from-code=UTF-8` enforces UTF-8 encoding for source .po files.
-# - `--no-location` omits source-file locations in generated message catalogs.
-#
-
+## SPDX-FileCopyrightText: Copyright © 2024 technosf <https://github.com/technosf>
+## SPDX-License-Identifier: GPL-3.0-or-later
+##
+## @file meson.build
+## @brief meson build file for country-specific translations
+##
+##  This file defines how country-specific translations are extracted for the project:
+## - generation of POT templates for country and language names
+##
 
 message('Country translation extraction...')
 
 i18n.gettext ('countries',
-    args: [
-        '--directory=' + meson.project_source_root(),
-        '--from-code=UTF-8',
-        '--no-location',
-        '-cTRANSLATORS'
-    ],
-    install: false
+  preset: 'glib',
+  install: false
 )
