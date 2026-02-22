@@ -3,7 +3,7 @@
 <!--
 Copyright 2020-2024 Louis Brauer / <louis@brauer.family>
 Copyright © 2026 <https://github.com/technosf>
-SPDX-FileCopyrightText: 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: 2024<https://github.com/technosf>
 
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
@@ -109,7 +109,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
   </replaces>
 
   <releases>
-    <release version="2.0.1" date="2026-01-23">
+    <release version="2.0.1-beta2" date="2026-02-23">
       <description>
         <p>Maintanance release:</p>
         <ul>
@@ -119,7 +119,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
           <li>Bumped libgee to 0.20.8</li>
           <li>Sharpened some wording, fixed typos</li>
           <li>Updated translated strings and incorporated fresh translations</li>
-          <li>i18n - Broke out Country translation to separate module</li>
+          <li>Refactored Language change mechanism and applied translations to more UI elements</li>
+          <li>i18n - Broke out Country and Language translations to separate module</li>
           <li>i18n - Added trad Chinese, Estonian, Romaian, Tamil and Latin American Spanish</li>
         </ul>
       </description>

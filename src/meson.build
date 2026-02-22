@@ -46,6 +46,7 @@ sources = files (
     'Widgets/PreferencesPopover.vala',
 
     'Settings.vala',
+    'Utils.vala',
     'Application.vala',
     'Main.vala'
 )

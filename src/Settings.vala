@@ -9,7 +9,10 @@
  *
  */
 
-
+/**
+ *
+ * @brief Tuner application settings management.
+ */
 public class Tuner.Settings : GLib.Settings 
 {  
     private const string SETTINGS_AUTO_PLAY = "auto-play";
@@ -49,7 +52,8 @@ public class Tuner.Settings : GLib.Settings
     *
     * Settings keyfile file path .var/app/app id/config/glib-2.0/settings/keyfile
     */
-    public Settings() {
+    public Settings() 
+    {
        Object(
             schema_id : Application.APP_ID
        );
@@ -84,8 +88,8 @@ public class Tuner.Settings : GLib.Settings
         }
         app().player.volume = _volume;     
 
-         warning(@"\nConfig settings: pos_x: %d, pos_y: %d, window_width: %d, window_height: %d",
-            _pos_x, _pos_y, _window_width, _window_height);
+        //   warning(@"\nConfig settings: pos_x: %d, pos_y: %d, window_width: %d, window_height: %d",
+        //      _pos_x, _pos_y, _window_width, _window_height);
          
     } // configure
 
@@ -101,15 +105,17 @@ public class Tuner.Settings : GLib.Settings
          * toplevel position on many window managers. */
         if (_pos_x == 0 && _pos_y == 0) {
             var gwin = app().window.get_window();
-            if (gwin != null) {
+            if (gwin != null) 
+            {
                 int gx = 0; int gy = 0; int gw = 0; int gh = 0;
                 gwin.get_geometry(out gx, out gy, out gw, out gh);
-                if (gx != 0 || gy != 0) {
+                if (gx != 0 || gy != 0) 
+                {
                     _pos_x = gx;
                     _pos_y = gy;
-                }
-            }
-        }
+                } // else, leave as (0,0) which will be interpreted as "center" on next launch
+            } // else, leave as (0,0) which will be interpreted as "center" on next launch
+        } // else, use the (0,0) position which will be interpreted as "center" on next launch
 
         if ( _pos_x !=0 && _pos_y != 0 )
         {
@@ -128,7 +134,9 @@ public class Tuner.Settings : GLib.Settings
             _window_height = h;
             set_int(SETTINGS_WINDOW_WIDTH, _window_width);
             set_int(SETTINGS_WINDOW_HEIGHT, _window_height);
-        } else {
+        } // if
+        else 
+        {
             var gwin = app().window.get_window();
                 if (gwin != null) {
                     int gx = 0; int gy = 0; int gw = 0; int gh = 0;
@@ -138,12 +146,12 @@ public class Tuner.Settings : GLib.Settings
                     _window_height = gh;
                     set_int(SETTINGS_WINDOW_WIDTH, _window_width);
                     set_int(SETTINGS_WINDOW_HEIGHT, _window_height);
-                }
-            }
-        }
+                } // 
+            } // else, leave as is which will be interpreted as "default" on next launch
+        } // else, use the (0,0) position which will be interpreted as "default" on next launch
 
-        warning(@"Save settings: pos_x: %d, pos_y: %d, window_width: %d, window_height: %d",
-            _pos_x, _pos_y, _window_width, _window_height);
+        //  warning(@"Save settings: pos_x: %d, pos_y: %d, window_width: %d, window_height: %d",
+        //      _pos_x, _pos_y, _window_width, _window_height);
 
         set_boolean(SETTINGS_AUTO_PLAY, auto_play);
         set_boolean(SETTINGS_DO_NOT_VOTE, do_not_vote);
