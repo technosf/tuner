@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: countries\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 23:25-0800\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
 "PO-Revision-Date: 2026-02-18 08:37+0000\n"
 "Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/tuner/"
@@ -1269,937 +1269,937 @@ msgctxt "Countries"
 msgid "Kosovo"
 msgstr "Kosovo"
 
-#: src/Models/Languages.vala:38
+#: src/Models/Languages.vala:49
 msgctxt "Languages"
 msgid "Afar"
 msgstr "Jauh"
 
-#: src/Models/Languages.vala:39
+#: src/Models/Languages.vala:50
 msgctxt "Languages"
 msgid "Abkhazian"
 msgstr "Abkhazian"
 
-#: src/Models/Languages.vala:40
+#: src/Models/Languages.vala:51
 msgctxt "Languages"
 msgid "Avestan"
 msgstr "Avestan"
 
-#: src/Models/Languages.vala:41
+#: src/Models/Languages.vala:52
 msgctxt "Languages"
 msgid "Afrikaans"
 msgstr "Afrikanas"
 
-#: src/Models/Languages.vala:42
+#: src/Models/Languages.vala:53
 msgctxt "Languages"
 msgid "Akan"
 msgstr "Akan"
 
-#: src/Models/Languages.vala:43
+#: src/Models/Languages.vala:54
 msgctxt "Languages"
 msgid "Amharic"
 msgstr "Amharik"
 
-#: src/Models/Languages.vala:44
+#: src/Models/Languages.vala:55
 msgctxt "Languages"
 msgid "Aragonese"
 msgstr "Orang Aragon"
 
-#: src/Models/Languages.vala:45
+#: src/Models/Languages.vala:56
 msgctxt "Languages"
 msgid "Arabic"
 msgstr "Arab"
 
-#: src/Models/Languages.vala:46
+#: src/Models/Languages.vala:57
 msgctxt "Languages"
 msgid "Assamese"
 msgstr "Orang Assam"
 
-#: src/Models/Languages.vala:47
+#: src/Models/Languages.vala:58
 msgctxt "Languages"
 msgid "Avaric"
 msgstr "Avaric"
 
-#: src/Models/Languages.vala:48
+#: src/Models/Languages.vala:59
 msgctxt "Languages"
 msgid "Aymara"
 msgstr "Aymara"
 
-#: src/Models/Languages.vala:49
+#: src/Models/Languages.vala:60
 msgctxt "Languages"
 msgid "Azerbaijani"
 msgstr "Azerbaijani"
 
-#: src/Models/Languages.vala:51
+#: src/Models/Languages.vala:62
 msgctxt "Languages"
 msgid "Bashkir"
 msgstr "Bashkir"
 
-#: src/Models/Languages.vala:52
+#: src/Models/Languages.vala:63
 msgctxt "Languages"
 msgid "Belarusian"
 msgstr "Belarusia"
 
-#: src/Models/Languages.vala:53
+#: src/Models/Languages.vala:64
 msgctxt "Languages"
 msgid "Bulgarian"
 msgstr "Bulgarian"
 
-#: src/Models/Languages.vala:54
+#: src/Models/Languages.vala:65
 msgctxt "Languages"
 msgid "Bihari"
 msgstr "Bihari"
 
-#: src/Models/Languages.vala:55
+#: src/Models/Languages.vala:66
 msgctxt "Languages"
 msgid "Bislama"
 msgstr "Bislama"
 
-#: src/Models/Languages.vala:56
+#: src/Models/Languages.vala:67
 msgctxt "Languages"
 msgid "Bambara"
 msgstr "Bambara"
 
-#: src/Models/Languages.vala:57
+#: src/Models/Languages.vala:68
 msgctxt "Languages"
 msgid "Bengali"
 msgstr "Bengali"
 
-#: src/Models/Languages.vala:58
+#: src/Models/Languages.vala:69
 msgctxt "Languages"
 msgid "Tibetan"
 msgstr "Tibet"
 
-#: src/Models/Languages.vala:59
+#: src/Models/Languages.vala:70
 msgctxt "Languages"
 msgid "Breton"
 msgstr "Breton"
 
-#: src/Models/Languages.vala:60
+#: src/Models/Languages.vala:71
 msgctxt "Languages"
 msgid "Bosnian"
 msgstr "Bosnia"
 
-#: src/Models/Languages.vala:62
+#: src/Models/Languages.vala:73
 msgctxt "Languages"
 msgid "Catalan"
 msgstr "Katalan"
 
-#: src/Models/Languages.vala:63
+#: src/Models/Languages.vala:74
 msgctxt "Languages"
 msgid "Chechen"
 msgstr "Chechen"
 
-#: src/Models/Languages.vala:64
+#: src/Models/Languages.vala:75
 msgctxt "Languages"
 msgid "Chamorro"
 msgstr "Chamorro"
 
-#: src/Models/Languages.vala:65
+#: src/Models/Languages.vala:76
 msgctxt "Languages"
 msgid "Corsican"
 msgstr "Korsika"
 
-#: src/Models/Languages.vala:66
+#: src/Models/Languages.vala:77
 msgctxt "Languages"
 msgid "Cree"
 msgstr "Cree"
 
-#: src/Models/Languages.vala:67
+#: src/Models/Languages.vala:78
 msgctxt "Languages"
 msgid "Czech"
 msgstr "Ceko"
 
-#: src/Models/Languages.vala:68
+#: src/Models/Languages.vala:79
 msgctxt "Languages"
 msgid "Church Slavic"
 msgstr "Slavia Gereja"
 
-#: src/Models/Languages.vala:69
+#: src/Models/Languages.vala:80
 msgctxt "Languages"
 msgid "Chuvash"
 msgstr "Chuvash"
 
-#: src/Models/Languages.vala:70
+#: src/Models/Languages.vala:81
 msgctxt "Languages"
 msgid "Welsh"
 msgstr "Welsh"
 
-#: src/Models/Languages.vala:72
+#: src/Models/Languages.vala:83
 msgctxt "Languages"
 msgid "Danish"
 msgstr "Denmark"
 
-#: src/Models/Languages.vala:73
+#: src/Models/Languages.vala:84
 msgctxt "Languages"
 msgid "German"
 msgstr "Jerman"
 
-#: src/Models/Languages.vala:74
+#: src/Models/Languages.vala:85
 msgctxt "Languages"
 msgid "Divehi"
 msgstr "Login"
 
-#: src/Models/Languages.vala:75
+#: src/Models/Languages.vala:86
 msgctxt "Languages"
 msgid "Dzongkha"
 msgstr "Dzongkha"
 
-#: src/Models/Languages.vala:77
+#: src/Models/Languages.vala:88
 msgctxt "Languages"
 msgid "Ewe"
 msgstr "Login"
 
-#: src/Models/Languages.vala:78
+#: src/Models/Languages.vala:89
 msgctxt "Languages"
 msgid "Greek"
 msgstr "Yunani"
 
-#: src/Models/Languages.vala:79
+#: src/Models/Languages.vala:90
 msgctxt "Languages"
 msgid "English"
 msgstr "Bahasa inggris"
 
-#: src/Models/Languages.vala:80
+#: src/Models/Languages.vala:91
 msgctxt "Languages"
 msgid "Esperanto"
 msgstr "Esperanto"
 
-#: src/Models/Languages.vala:81
+#: src/Models/Languages.vala:92
 msgctxt "Languages"
 msgid "Spanish"
 msgstr "Spanyol"
 
-#: src/Models/Languages.vala:82
+#: src/Models/Languages.vala:93
 msgctxt "Languages"
 msgid "Spanish (Latin America)"
 msgstr "Spanyol (Amerika Latin)"
 
-#: src/Models/Languages.vala:83
+#: src/Models/Languages.vala:94
 msgctxt "Languages"
 msgid "Estonian"
 msgstr "Estonia"
 
-#: src/Models/Languages.vala:84
+#: src/Models/Languages.vala:95
 msgctxt "Languages"
 msgid "Basque"
 msgstr "Basque"
 
-#: src/Models/Languages.vala:86
+#: src/Models/Languages.vala:97
 msgctxt "Languages"
 msgid "Persian"
 msgstr "Persian"
 
-#: src/Models/Languages.vala:87
+#: src/Models/Languages.vala:98
 msgctxt "Languages"
 msgid "Fulah"
 msgstr "Fulah"
 
-#: src/Models/Languages.vala:88
+#: src/Models/Languages.vala:99
 msgctxt "Languages"
 msgid "Finnish"
 msgstr "Finlandia"
 
-#: src/Models/Languages.vala:89
+#: src/Models/Languages.vala:100
 msgctxt "Languages"
 msgid "Fijian"
 msgstr "Fiji"
 
-#: src/Models/Languages.vala:90
+#: src/Models/Languages.vala:101
 msgctxt "Languages"
 msgid "Faroese"
 msgstr "Faroese"
 
-#: src/Models/Languages.vala:91
+#: src/Models/Languages.vala:102
 msgctxt "Languages"
 msgid "French"
 msgstr "Perancis"
 
-#: src/Models/Languages.vala:92
+#: src/Models/Languages.vala:103
 msgctxt "Languages"
 msgid "Western Frisian"
 msgstr "Frisian Barat"
 
-#: src/Models/Languages.vala:94
+#: src/Models/Languages.vala:105
 msgctxt "Languages"
 msgid "Irish"
 msgstr "Irlandia"
 
-#: src/Models/Languages.vala:95
+#: src/Models/Languages.vala:106
 msgctxt "Languages"
 msgid "Scottish Gaelic"
 msgstr "Skotlandia Gaelic"
 
-#: src/Models/Languages.vala:96
+#: src/Models/Languages.vala:107
 msgctxt "Languages"
 msgid "Galician"
 msgstr "Galicia"
 
-#: src/Models/Languages.vala:97
+#: src/Models/Languages.vala:108
 msgctxt "Languages"
 msgid "Guarani"
 msgstr "Guarani"
 
-#: src/Models/Languages.vala:98
+#: src/Models/Languages.vala:109
 msgctxt "Languages"
 msgid "Gujarati"
 msgstr "Gujarati"
 
-#: src/Models/Languages.vala:99
+#: src/Models/Languages.vala:110
 msgctxt "Languages"
 msgid "Manx"
 msgstr "Manx"
 
-#: src/Models/Languages.vala:101
+#: src/Models/Languages.vala:112
 msgctxt "Languages"
 msgid "Hausa"
 msgstr "Hausa"
 
-#: src/Models/Languages.vala:102
+#: src/Models/Languages.vala:113
 msgctxt "Languages"
 msgid "Hebrew"
 msgstr "Ibrani"
 
-#: src/Models/Languages.vala:103
+#: src/Models/Languages.vala:114
 msgctxt "Languages"
 msgid "Hindi"
 msgstr "Hindi"
 
-#: src/Models/Languages.vala:104
+#: src/Models/Languages.vala:115
 msgctxt "Languages"
 msgid "Hiri Motu"
 msgstr "Hiri Motu"
 
-#: src/Models/Languages.vala:105
+#: src/Models/Languages.vala:116
 msgctxt "Languages"
 msgid "Croatian"
 msgstr "Kroasia"
 
-#: src/Models/Languages.vala:106
+#: src/Models/Languages.vala:117
 msgctxt "Languages"
 msgid "Haitian"
 msgstr "Haiti"
 
-#: src/Models/Languages.vala:107
+#: src/Models/Languages.vala:118
 msgctxt "Languages"
 msgid "Hungarian"
 msgstr "Hongaria"
 
-#: src/Models/Languages.vala:108
+#: src/Models/Languages.vala:119
 msgctxt "Languages"
 msgid "Armenian"
 msgstr "Armenia"
 
-#: src/Models/Languages.vala:109
+#: src/Models/Languages.vala:120
 msgctxt "Languages"
 msgid "Herero"
 msgstr "Herero"
 
-#: src/Models/Languages.vala:111
+#: src/Models/Languages.vala:122
 msgctxt "Languages"
 msgid "Interlingua"
 msgstr "Interlingua"
 
-#: src/Models/Languages.vala:112
+#: src/Models/Languages.vala:123
 msgctxt "Languages"
 msgid "Indonesian"
 msgstr "Masakan indonesia"
 
-#: src/Models/Languages.vala:113
+#: src/Models/Languages.vala:124
 msgctxt "Languages"
 msgid "Interlingue"
 msgstr "Login"
 
-#: src/Models/Languages.vala:114
+#: src/Models/Languages.vala:125
 msgctxt "Languages"
 msgid "Igbo"
 msgstr "Igbo"
 
-#: src/Models/Languages.vala:115
+#: src/Models/Languages.vala:126
 msgctxt "Languages"
 msgid "Sichuan Yi"
 msgstr "Login"
 
-#: src/Models/Languages.vala:116
+#: src/Models/Languages.vala:127
 msgctxt "Languages"
 msgid "Inupiaq"
 msgstr "Inupiaq"
 
-#: src/Models/Languages.vala:117
+#: src/Models/Languages.vala:128
 msgctxt "Languages"
 msgid "Ido"
 msgstr "Login"
 
-#: src/Models/Languages.vala:118
+#: src/Models/Languages.vala:129
 msgctxt "Languages"
 msgid "Icelandic"
 msgstr "Islandia"
 
-#: src/Models/Languages.vala:119
+#: src/Models/Languages.vala:130
 msgctxt "Languages"
 msgid "Italian"
 msgstr "Italian"
 
-#: src/Models/Languages.vala:120
+#: src/Models/Languages.vala:131
 msgctxt "Languages"
 msgid "Inuktitut"
 msgstr "Inuktitut"
 
-#: src/Models/Languages.vala:122
+#: src/Models/Languages.vala:133
 msgctxt "Languages"
 msgid "Japanese"
 msgstr "Masakan jepang"
 
-#: src/Models/Languages.vala:123
+#: src/Models/Languages.vala:134
 msgctxt "Languages"
 msgid "Javanese"
 msgstr "Jawa"
 
-#: src/Models/Languages.vala:125
+#: src/Models/Languages.vala:136
 msgctxt "Languages"
 msgid "Georgian"
 msgstr "Georgia"
 
-#: src/Models/Languages.vala:126
+#: src/Models/Languages.vala:137
 msgctxt "Languages"
 msgid "Kongo"
 msgstr "Kongo"
 
-#: src/Models/Languages.vala:127
+#: src/Models/Languages.vala:138
 msgctxt "Languages"
 msgid "Kikuyu"
 msgstr "Kikuyu (Kenya)"
 
-#: src/Models/Languages.vala:128
+#: src/Models/Languages.vala:139
 msgctxt "Languages"
 msgid "Kwanyama"
 msgstr "Kwanyama"
 
-#: src/Models/Languages.vala:129
+#: src/Models/Languages.vala:140
 msgctxt "Languages"
 msgid "Kazakh"
 msgstr "Kazakh"
 
-#: src/Models/Languages.vala:130
+#: src/Models/Languages.vala:141
 msgctxt "Languages"
 msgid "Kalaallisut"
 msgstr "Greenland"
 
-#: src/Models/Languages.vala:131
+#: src/Models/Languages.vala:142
 msgctxt "Languages"
 msgid "Khmer"
 msgstr "Khmer"
 
-#: src/Models/Languages.vala:132
+#: src/Models/Languages.vala:143
 msgctxt "Languages"
 msgid "Kannada"
 msgstr "Kannada"
 
-#: src/Models/Languages.vala:133
+#: src/Models/Languages.vala:144
 msgctxt "Languages"
 msgid "Korean"
 msgstr "Korea"
 
-#: src/Models/Languages.vala:134
+#: src/Models/Languages.vala:145
 msgctxt "Languages"
 msgid "Kanuri"
 msgstr "Kanuri"
 
-#: src/Models/Languages.vala:135
+#: src/Models/Languages.vala:146
 msgctxt "Languages"
 msgid "Kashmiri"
 msgstr "Kashmir"
 
-#: src/Models/Languages.vala:136
+#: src/Models/Languages.vala:147
 msgctxt "Languages"
 msgid "Kurdish"
 msgstr "Kurdi"
 
-#: src/Models/Languages.vala:137
+#: src/Models/Languages.vala:148
 msgctxt "Languages"
 msgid "Komi"
 msgstr "Komi"
 
-#: src/Models/Languages.vala:138
+#: src/Models/Languages.vala:149
 msgctxt "Languages"
 msgid "Cornish"
 msgstr "Cornish"
 
-#: src/Models/Languages.vala:139
+#: src/Models/Languages.vala:150
 msgctxt "Languages"
 msgid "Kirghiz"
 msgstr "Kirgistan"
 
-#: src/Models/Languages.vala:141
+#: src/Models/Languages.vala:152
 msgctxt "Languages"
 msgid "Latin"
 msgstr "Latin"
 
-#: src/Models/Languages.vala:142
+#: src/Models/Languages.vala:153
 msgctxt "Languages"
 msgid "Luxembourgish"
 msgstr "Luksemburg"
 
-#: src/Models/Languages.vala:143
+#: src/Models/Languages.vala:154
 msgctxt "Languages"
 msgid "Ganda"
 msgstr "Ganda"
 
-#: src/Models/Languages.vala:144
+#: src/Models/Languages.vala:155
 msgctxt "Languages"
 msgid "Limburgish"
 msgstr "Limburg"
 
-#: src/Models/Languages.vala:145
+#: src/Models/Languages.vala:156
 msgctxt "Languages"
 msgid "Lingala"
 msgstr "Lingala"
 
-#: src/Models/Languages.vala:146
+#: src/Models/Languages.vala:157
 msgctxt "Languages"
 msgid "Lao"
 msgstr "Lao"
 
-#: src/Models/Languages.vala:147
+#: src/Models/Languages.vala:158
 msgctxt "Languages"
 msgid "Lithuanian"
 msgstr "Lithuania"
 
-#: src/Models/Languages.vala:148
+#: src/Models/Languages.vala:159
 msgctxt "Languages"
 msgid "Latvian"
 msgstr "Latvia"
 
-#: src/Models/Languages.vala:150
+#: src/Models/Languages.vala:161
 msgctxt "Languages"
 msgid "Malagasy"
 msgstr "Malagasi"
 
-#: src/Models/Languages.vala:151
+#: src/Models/Languages.vala:162
 msgctxt "Languages"
 msgid "Marshallese"
 msgstr "Marshallese"
 
-#: src/Models/Languages.vala:152
+#: src/Models/Languages.vala:163
 msgctxt "Languages"
 msgid "Maori"
 msgstr "Maori"
 
-#: src/Models/Languages.vala:153
+#: src/Models/Languages.vala:164
 msgctxt "Languages"
 msgid "Macedonian"
 msgstr "Makedonia"
 
-#: src/Models/Languages.vala:154
+#: src/Models/Languages.vala:165
 msgctxt "Languages"
 msgid "Malayalam"
 msgstr "Malayalam"
 
-#: src/Models/Languages.vala:155
+#: src/Models/Languages.vala:166
 msgctxt "Languages"
 msgid "Mongolian"
 msgstr "Mongolia"
 
-#: src/Models/Languages.vala:156
+#: src/Models/Languages.vala:167
 msgctxt "Languages"
 msgid "Marathi"
 msgstr "Marathi"
 
-#: src/Models/Languages.vala:157
+#: src/Models/Languages.vala:168
 msgctxt "Languages"
 msgid "Malay"
 msgstr "Melayu"
 
-#: src/Models/Languages.vala:158
+#: src/Models/Languages.vala:169
 msgctxt "Languages"
 msgid "Maltese"
 msgstr "Malta"
 
-#: src/Models/Languages.vala:159
+#: src/Models/Languages.vala:170
 msgctxt "Languages"
 msgid "Burmese"
 msgstr "Birma"
 
-#: src/Models/Languages.vala:161
+#: src/Models/Languages.vala:172
 msgctxt "Languages"
 msgid "Nauru"
 msgstr "Nauru"
 
-#: src/Models/Languages.vala:162
+#: src/Models/Languages.vala:173
 msgctxt "Languages"
 msgid "Norwegian Bokmal"
 msgstr "Norwegia Bokmal"
 
-#: src/Models/Languages.vala:163
+#: src/Models/Languages.vala:174
 msgctxt "Languages"
 msgid "Norwegian (Bokmal)"
 msgstr "Norwegia (Bokmal)"
 
-#: src/Models/Languages.vala:164
+#: src/Models/Languages.vala:175
 msgctxt "Languages"
 msgid "North Ndebele"
 msgstr "Ndebele Utara"
 
-#: src/Models/Languages.vala:165
+#: src/Models/Languages.vala:176
 msgctxt "Languages"
 msgid "Nepali"
 msgstr "Nepal"
 
-#: src/Models/Languages.vala:166
+#: src/Models/Languages.vala:177
 msgctxt "Languages"
 msgid "Ndonga"
 msgstr "Ndonga"
 
-#: src/Models/Languages.vala:167
+#: src/Models/Languages.vala:178
 msgctxt "Languages"
 msgid "Dutch"
 msgstr "Belanda"
 
-#: src/Models/Languages.vala:168
+#: src/Models/Languages.vala:179
 msgctxt "Languages"
 msgid "Norwegian Nynorsk"
 msgstr "Nynorsk Norwegia"
 
-#: src/Models/Languages.vala:169
+#: src/Models/Languages.vala:180
 msgctxt "Languages"
 msgid "Norwegian"
 msgstr "Norwegia"
 
-#: src/Models/Languages.vala:170
+#: src/Models/Languages.vala:181
 msgctxt "Languages"
 msgid "South Ndebele"
 msgstr "Ndebele Selatan"
 
-#: src/Models/Languages.vala:171
+#: src/Models/Languages.vala:182
 msgctxt "Languages"
 msgid "Navajo"
 msgstr "Navajo"
 
-#: src/Models/Languages.vala:172
+#: src/Models/Languages.vala:183
 msgctxt "Languages"
 msgid "Chichewa"
 msgstr "Login"
 
-#: src/Models/Languages.vala:174
+#: src/Models/Languages.vala:185
 msgctxt "Languages"
 msgid "Occitan"
 msgstr "Occitan"
 
-#: src/Models/Languages.vala:175
+#: src/Models/Languages.vala:186
 msgctxt "Languages"
 msgid "Ojibwa"
 msgstr "Ojibwa"
 
-#: src/Models/Languages.vala:176
+#: src/Models/Languages.vala:187
 msgctxt "Languages"
 msgid "Oromo"
 msgstr "Oromo"
 
-#: src/Models/Languages.vala:177
+#: src/Models/Languages.vala:188
 msgctxt "Languages"
 msgid "Oriya"
 msgstr "Oriya"
 
-#: src/Models/Languages.vala:178
+#: src/Models/Languages.vala:189
 msgctxt "Languages"
 msgid "Ossetian"
 msgstr "Ossetian"
 
-#: src/Models/Languages.vala:180
+#: src/Models/Languages.vala:191
 msgctxt "Languages"
 msgid "Punjabi"
 msgstr "Punjabi"
 
-#: src/Models/Languages.vala:181
+#: src/Models/Languages.vala:192
 msgctxt "Languages"
 msgid "Pali"
 msgstr "Pali"
 
-#: src/Models/Languages.vala:182
+#: src/Models/Languages.vala:193
 msgctxt "Languages"
 msgid "Polish"
 msgstr "Polandia"
 
-#: src/Models/Languages.vala:183
+#: src/Models/Languages.vala:194
 msgctxt "Languages"
 msgid "Pashto"
 msgstr "Pashto"
 
-#: src/Models/Languages.vala:184
+#: src/Models/Languages.vala:195
 msgctxt "Languages"
 msgid "Portuguese"
 msgstr "Portugis"
 
-#: src/Models/Languages.vala:185
+#: src/Models/Languages.vala:196
 msgctxt "Languages"
 msgid "Portuguese (Brazil)"
 msgstr "Portugis (Brasil)"
 
-#: src/Models/Languages.vala:187
+#: src/Models/Languages.vala:198
 msgctxt "Languages"
 msgid "Quechua"
 msgstr "Quechua"
 
-#: src/Models/Languages.vala:189
+#: src/Models/Languages.vala:200
 msgctxt "Languages"
 msgid "Romansh"
 msgstr "Romansh"
 
-#: src/Models/Languages.vala:190
+#: src/Models/Languages.vala:201
 msgctxt "Languages"
 msgid "Rundi"
 msgstr "Rundi"
 
-#: src/Models/Languages.vala:191
+#: src/Models/Languages.vala:202
 msgctxt "Languages"
 msgid "Romanian"
 msgstr "Rumania"
 
-#: src/Models/Languages.vala:192
+#: src/Models/Languages.vala:203
 msgctxt "Languages"
 msgid "Russian"
 msgstr "Rusia"
 
-#: src/Models/Languages.vala:193
+#: src/Models/Languages.vala:204
 msgctxt "Languages"
 msgid "Kinyarwanda"
 msgstr "Kinyarwanda"
 
-#: src/Models/Languages.vala:195
+#: src/Models/Languages.vala:206
 msgctxt "Languages"
 msgid "Sanskrit"
 msgstr "Sansekerta"
 
-#: src/Models/Languages.vala:196
+#: src/Models/Languages.vala:207
 msgctxt "Languages"
 msgid "Sardinian"
 msgstr "Sardinian"
 
-#: src/Models/Languages.vala:197
+#: src/Models/Languages.vala:208
 msgctxt "Languages"
 msgid "Sindhi"
 msgstr "Sindhi"
 
-#: src/Models/Languages.vala:198
+#: src/Models/Languages.vala:209
 msgctxt "Languages"
 msgid "Northern Sami"
 msgstr "Sami Utara"
 
-#: src/Models/Languages.vala:199
+#: src/Models/Languages.vala:210
 msgctxt "Languages"
 msgid "Sango"
 msgstr "Sango"
 
-#: src/Models/Languages.vala:200
+#: src/Models/Languages.vala:211
 msgctxt "Languages"
 msgid "Sinhala"
 msgstr "Sinhala"
 
-#: src/Models/Languages.vala:201
+#: src/Models/Languages.vala:212
 msgctxt "Languages"
 msgid "Slovak"
 msgstr "Slovakia"
 
-#: src/Models/Languages.vala:202
+#: src/Models/Languages.vala:213
 msgctxt "Languages"
 msgid "Slovenian"
 msgstr "Slovenia"
 
-#: src/Models/Languages.vala:203
+#: src/Models/Languages.vala:214
 msgctxt "Languages"
 msgid "Samoan"
 msgstr "Samoa"
 
-#: src/Models/Languages.vala:204
+#: src/Models/Languages.vala:215
 msgctxt "Languages"
 msgid "Shona"
 msgstr "Shona"
 
-#: src/Models/Languages.vala:205
+#: src/Models/Languages.vala:216
 msgctxt "Languages"
 msgid "Somali"
 msgstr "Somali"
 
-#: src/Models/Languages.vala:206
+#: src/Models/Languages.vala:217
 msgctxt "Languages"
 msgid "Albanian"
 msgstr "bahasa Albania"
 
-#: src/Models/Languages.vala:207
+#: src/Models/Languages.vala:218
 msgctxt "Languages"
 msgid "Serbian"
 msgstr "Serbia"
 
-#: src/Models/Languages.vala:208
+#: src/Models/Languages.vala:219
 msgctxt "Languages"
 msgid "Swati"
 msgstr "Swati"
 
-#: src/Models/Languages.vala:209
+#: src/Models/Languages.vala:220
 msgctxt "Languages"
 msgid "Southern Sotho"
 msgstr "Login"
 
-#: src/Models/Languages.vala:210
+#: src/Models/Languages.vala:221
 msgctxt "Languages"
 msgid "Sundanese"
 msgstr "Sunda"
 
-#: src/Models/Languages.vala:211
+#: src/Models/Languages.vala:222
 msgctxt "Languages"
 msgid "Swedish"
 msgstr "Swedia"
 
-#: src/Models/Languages.vala:212
+#: src/Models/Languages.vala:223
 msgctxt "Languages"
 msgid "Swahili"
 msgstr "Swahili"
 
-#: src/Models/Languages.vala:214
+#: src/Models/Languages.vala:225
 msgctxt "Languages"
 msgid "Tamil"
 msgstr "Tamil"
 
-#: src/Models/Languages.vala:215
+#: src/Models/Languages.vala:226
 msgctxt "Languages"
 msgid "Telugu"
 msgstr "Telugu"
 
-#: src/Models/Languages.vala:216
+#: src/Models/Languages.vala:227
 msgctxt "Languages"
 msgid "Tajik"
 msgstr "Tajik"
 
-#: src/Models/Languages.vala:217
+#: src/Models/Languages.vala:228
 msgctxt "Languages"
 msgid "Thai"
 msgstr "Thai"
 
-#: src/Models/Languages.vala:218
+#: src/Models/Languages.vala:229
 msgctxt "Languages"
 msgid "Tigrinya"
 msgstr "Tigrinya"
 
-#: src/Models/Languages.vala:219
+#: src/Models/Languages.vala:230
 msgctxt "Languages"
 msgid "Turkmen"
 msgstr "Turkmen"
 
-#: src/Models/Languages.vala:220
+#: src/Models/Languages.vala:231
 msgctxt "Languages"
 msgid "Tagalog"
 msgstr "Tagalog"
 
-#: src/Models/Languages.vala:221
+#: src/Models/Languages.vala:232
 msgctxt "Languages"
 msgid "Tswana"
 msgstr "Tswana"
 
-#: src/Models/Languages.vala:222
+#: src/Models/Languages.vala:233
 msgctxt "Languages"
 msgid "Tonga"
 msgstr "Tonga"
 
-#: src/Models/Languages.vala:223
+#: src/Models/Languages.vala:234
 msgctxt "Languages"
 msgid "Turkish"
 msgstr "Turki"
 
-#: src/Models/Languages.vala:224
+#: src/Models/Languages.vala:235
 msgctxt "Languages"
 msgid "Tsonga"
 msgstr "Tsonga"
 
-#: src/Models/Languages.vala:225
+#: src/Models/Languages.vala:236
 msgctxt "Languages"
 msgid "Tatar"
 msgstr "Tatar"
 
-#: src/Models/Languages.vala:226
+#: src/Models/Languages.vala:237
 msgctxt "Languages"
 msgid "Twi"
 msgstr "Twi"
 
-#: src/Models/Languages.vala:227
+#: src/Models/Languages.vala:238
 msgctxt "Languages"
 msgid "Tahitian"
 msgstr "Tahitian"
 
-#: src/Models/Languages.vala:229
+#: src/Models/Languages.vala:240
 msgctxt "Languages"
 msgid "Uighur"
 msgstr "Uighur"
 
-#: src/Models/Languages.vala:230
+#: src/Models/Languages.vala:241
 msgctxt "Languages"
 msgid "Ukrainian"
 msgstr "Ukraina"
 
-#: src/Models/Languages.vala:231
+#: src/Models/Languages.vala:242
 msgctxt "Languages"
 msgid "Urdu"
 msgstr "Urdu"
 
-#: src/Models/Languages.vala:232
+#: src/Models/Languages.vala:243
 msgctxt "Languages"
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: src/Models/Languages.vala:234
+#: src/Models/Languages.vala:245
 msgctxt "Languages"
 msgid "Venda"
 msgstr "Venda"
 
-#: src/Models/Languages.vala:235
+#: src/Models/Languages.vala:246
 msgctxt "Languages"
 msgid "Vietnamese"
 msgstr "Vietnam"
 
-#: src/Models/Languages.vala:236
+#: src/Models/Languages.vala:247
 msgctxt "Languages"
 msgid "Volapuk"
 msgstr "Volapuk"
 
-#: src/Models/Languages.vala:238
+#: src/Models/Languages.vala:249
 msgctxt "Languages"
 msgid "Walloon"
 msgstr "Walloon"
 
-#: src/Models/Languages.vala:239
+#: src/Models/Languages.vala:250
 msgctxt "Languages"
 msgid "Wolof"
 msgstr "Wolof"
 
-#: src/Models/Languages.vala:241
+#: src/Models/Languages.vala:252
 msgctxt "Languages"
 msgid "Xhosa"
 msgstr "Xhosa"
 
-#: src/Models/Languages.vala:243
+#: src/Models/Languages.vala:254
 msgctxt "Languages"
 msgid "Yiddish"
 msgstr "Yiddi"
 
-#: src/Models/Languages.vala:244
+#: src/Models/Languages.vala:255
 msgctxt "Languages"
 msgid "Yoruba"
 msgstr "Yoruba"
 
-#: src/Models/Languages.vala:246
+#: src/Models/Languages.vala:257
 msgctxt "Languages"
 msgid "Zhuang"
 msgstr "Zhuang"
 
-#: src/Models/Languages.vala:247
+#: src/Models/Languages.vala:258
 msgctxt "Languages"
 msgid "Chinese"
 msgstr "Cina"
 
-#: src/Models/Languages.vala:248
+#: src/Models/Languages.vala:259
 msgctxt "Languages"
 msgid "Traditional Chinese"
 msgstr "Cina tradisional"
 
-#: src/Models/Languages.vala:249
+#: src/Models/Languages.vala:260
 msgctxt "Languages"
 msgid "Zulu"
 msgstr "Zulu"
