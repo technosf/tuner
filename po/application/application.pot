@@ -1,16 +1,14 @@
-# SPDX-FileCopyrightText: Copyright © 2024-2026 technosf <https://github.com/technosf>
-#
-# SPDX-License-Identifier: GPL-3.0-or-later
-#
-# Application translations for Tuner, the Internet Radio Player. These are translations
-# of the main UI elements viewed by the user. 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the application package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: application\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 23:25-0800\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,39 +17,41 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Models/Station.vala:133
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
 msgid "Station no longer in the index"
 msgstr ""
 
-#: src/Models/Station.vala:357
+#: src/Models/Station.vala:355
 msgid "Changes"
 msgstr ""
 
-#: src/Models/Station.vala:358
+#: src/Models/Station.vala:356
 msgid "Stream Url"
 msgstr ""
 
-#: src/Models/Station.vala:359
+#: src/Models/Station.vala:357
 msgid "Stream Resolved Url"
 msgstr ""
 
-#: src/Models/Station.vala:360
+#: src/Models/Station.vala:358
 msgid "Favicon address"
 msgstr ""
 
-#: src/Models/Station.vala:361
+#: src/Models/Station.vala:359
 msgid "Homepage address"
 msgstr ""
 
-#: src/Models/Station.vala:362
+#: src/Models/Station.vala:360
 msgid "Station tags"
 msgstr ""
 
-#: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
 msgid "Bitrate"
 msgstr ""
 
-#: src/Models/Station.vala:364
+#: src/Models/Station.vala:362
 msgid "Codec"
 msgstr ""
 
@@ -295,123 +295,124 @@ msgstr ""
 msgid "History"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:21
+#: src/Widgets/PreferencesPopover.vala:22
 msgid "About"
 msgstr ""
 
 #. Voting
-#: src/Widgets/PreferencesPopover.vala:26
+#: src/Widgets/PreferencesPopover.vala:27
 msgid "Do not participate in Station voting"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:28
+#: src/Widgets/PreferencesPopover.vala:29
 msgid ""
 "If checked, your starred and streamed stations will not be used to calculate "
 "the Station index popularity vote, nor the popular and trending stations"
 msgstr ""
 
 #. Theme
-#: src/Widgets/PreferencesPopover.vala:33
+#: src/Widgets/PreferencesPopover.vala:34
 msgid "System"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:34
+#: src/Widgets/PreferencesPopover.vala:35
 msgid "Light mode"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:35
+#: src/Widgets/PreferencesPopover.vala:36
 msgid "Dark mode"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:46
+#: src/Widgets/PreferencesPopover.vala:41
 msgid "Theme"
 msgstr ""
 
 #. Autoplay
-#: src/Widgets/PreferencesPopover.vala:51
+#: src/Widgets/PreferencesPopover.vala:46
 msgid "Auto-play last station on startup"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:53
+#: src/Widgets/PreferencesPopover.vala:48
 msgid ""
 "If enabled, when Tuner starts it will automatically start to play the last "
 "played station"
 msgstr ""
 
 #. Start on Starred
-#: src/Widgets/PreferencesPopover.vala:58
+#: src/Widgets/PreferencesPopover.vala:53
 msgid "Open to Starred Stations"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:60
+#: src/Widgets/PreferencesPopover.vala:55
 msgid "If enabled, when Tuner starts it will open to the starred stations view"
 msgstr ""
 
 #. Play Display
-#: src/Widgets/PreferencesPopover.vala:65
+#: src/Widgets/PreferencesPopover.vala:60
 msgid "Show stream info when playing"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:67
+#: src/Widgets/PreferencesPopover.vala:62
 msgid "Cycle through the metadata from the playing stream"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:70
+#: src/Widgets/PreferencesPopover.vala:65
 msgid "Faster cycling through stream info"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:72
+#: src/Widgets/PreferencesPopover.vala:67
 msgid ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:88
+#: src/Widgets/PreferencesPopover.vala:78
 msgid "Language"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:89
-msgid "Requires restarting Tuner"
+#: src/Widgets/PreferencesPopover.vala:79
+msgid "Language changes restart Tuner"
 msgstr ""
 
 #. Export starred
-#: src/Widgets/PreferencesPopover.vala:98
+#: src/Widgets/PreferencesPopover.vala:84
 msgid "Export Starred Stations to Playlist"
 msgstr ""
 
 #. Import starred
-#: src/Widgets/PreferencesPopover.vala:107
+#: src/Widgets/PreferencesPopover.vala:93
 msgid "Import Station UUIDs as Starred Stations"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:186
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
 msgid "Save File"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:189
-#: src/Widgets/PreferencesPopover.vala:226
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
 msgid "_Cancel"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:190
+#: src/Widgets/PreferencesPopover.vala:164
 msgid "_Save"
 msgstr ""
 
 #. warning("Error: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:210
+#: src/Widgets/PreferencesPopover.vala:185
 msgid "Error"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:223
+#: src/Widgets/PreferencesPopover.vala:198
 msgid "Choose a file"
 msgstr ""
 
-#: src/Widgets/PreferencesPopover.vala:227
+#: src/Widgets/PreferencesPopover.vala:202
 msgid "_Open"
 msgstr ""
 
 #. warning("Error reading file: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:249
+#: src/Widgets/PreferencesPopover.vala:225
 msgid "Error reading file"
 msgstr ""
 
@@ -442,6 +443,8 @@ msgstr ""
 msgid "Unstar this station"
 msgstr ""
 
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
 #: src/Widgets/Window.vala:68
 msgid "Playing in background"
 msgstr ""
@@ -452,11 +455,11 @@ msgid ""
 "window."
 msgstr ""
 
-#: src/Widgets/Window.vala:242
+#: src/Widgets/Window.vala:240
 msgid "Error while trying to autoplay, aborting…"
 msgstr ""
 
-#: src/Widgets/Window.vala:286
+#: src/Widgets/Window.vala:284
 msgid "Stop Playback requested"
 msgstr ""
 
