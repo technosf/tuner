@@ -29,20 +29,14 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 
 		//Theme
-		var theme_combo = new Gtk.ComboBoxText ();
-		theme_combo.append(THEME.SYSTEM.get_name (), _("System"));
-		theme_combo.append(THEME.LIGHT.get_name (), _("Light mode"));
-		theme_combo.append(THEME.DARK.get_name (), _("Dark mode"));
-		theme_combo.halign    = Gtk.Align.CENTER;
-		theme_combo.active_id = app().settings.theme_mode;   // Initial state from settings
-
-		theme_combo.changed.connect ((elem) => {
-			apply_theme_name(elem.active_id);
-			app().settings.theme_mode = elem.active_id;
-		});
+		var theme_selector = new SelectorButton (app().lookup_action ("set-theme-name"))
+			.with_item (THEME.SYSTEM.get_name (), _("System"))
+			.with_item (THEME.LIGHT.get_name (), _("Light mode"))
+			.with_item (THEME.DARK.get_name (), _("Dark mode"))
+			.with_active_id (app().settings.theme_mode);   
 
 		var theme_box = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 3);
-		theme_box.pack_end (theme_combo, true, true, 5);
+		theme_box.pack_end (theme_selector, true, true, 5);
 		theme_box.pack_end (new Gtk.Label(_("Theme")), false, false, 12);
 
 
@@ -73,24 +67,15 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 
 		//Language
-		var lang_combo = new Gtk.ComboBoxText ();
-		lang_combo.append("", "Default");
-		foreach( var lang in Application.LANGUAGES)
-		{
-			lang_combo.append(lang, Languages.get_by_code(lang));
-		}
-		lang_combo.halign    = Gtk.Align.CENTER;
-		lang_combo.valign    = Gtk.Align.FILL;
-		lang_combo.active_id = app().settings.language;   // Initial state from settings
+		var lang_selector = new SelectorButton (app().lookup_action ("set-language"))
+			.with_item("", "Default")
+			.with_items (Languages.get_language_map())
+			.with_active_id(app().settings.language);
 
 		var lang_box = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 3);
-		lang_box.pack_end (lang_combo, true, true, 5);
+		lang_box.pack_end (lang_selector, true, true, 5);
 		lang_box.pack_end (new Gtk.Label(_("Language")), false, false, 12);
 		lang_box.tooltip_text = _("Requires restarting Tuner");
-
-		lang_combo.changed.connect ((elem) => {
-			app().language = elem.active_id;
-		});
 
 
 		// Export starred

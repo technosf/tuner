@@ -126,8 +126,6 @@ public class Tuner.Model.Station : Favicon
         }
     }
 
-
-    //  public int favicon_loaded;  // Indicates the number of times the favicon has been loaded from cache or internet
     public bool is_in_index;    // Indicates if the station is in the provider index
     public bool is_up_to_date;  // Indicates if the station is up-to-date with the provider index
     public string up_to_date_difference = _("Station no longer in the index");

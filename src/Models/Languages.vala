@@ -29,12 +29,16 @@ namespace Tuner.Model {
 
     public class Languages {
         
-        public static HashMap<string, string> _map = null;
+        private static string? current_locale = null;
 
-        public static HashMap<string, string> map {
+        private static SortedMap<string,string>? cached_map = null;
+
+        private static SortedMap<string, string> _map = null;
+
+        public static Map<string, string> map {
             get {
                 if (_map == null) {
-                    _map = new HashMap<string, string> ();
+                    _map = new TreeMap<string, string> ();
                     _map["aa"] = NC_("Languages","Afar");
                     _map["ab"] = NC_("Languages","Abkhazian");
                     _map["ae"] = NC_("Languages","Avestan");
@@ -253,12 +257,59 @@ namespace Tuner.Model {
             }
         }
 
-        public static string get_by_code(string code, string fallback = "") {
+
+        /**
+         * @brief Returns the translated name for a given language code.
+         * @param code The language code to look up.
+         * @param fallback The fallback string if the code is not found.
+         * @return The translated name of the language or the fallback string.
+         */
+        public static string get_by_code(string code, string fallback = "") 
+        {
             var my_code = code.strip ();
             if (my_code == "") return fallback;
             if (map.has_key (my_code)) return dpgettext2(null, "Languages", map.get(my_code));
             if (map.has_key (my_code.down())) return dpgettext2(null, "Languages", map.get(my_code.down()));
             return my_code;
         } 
+
+
+        /**
+         * @brief Returns a map of language codes to their translated names.
+         * @return Map of language codes to translated names.
+         */
+        public static Map<string,string> get_language_map () 
+        {
+            ensure_locale ();
+            return cached_map;
+        }
+
+        
+        /**
+        * @brief Rebuilds the cached map of language codes to their translated names based on the current locale.
+         */
+        private static void rebuild_language_cache () 
+        {
+            cached_map = new TreeMap<string,string> ();
+
+            foreach (string id in Application.LANGUAGES) {
+                cached_map[id] = dpgettext2(null, "Languages", map.get(id));
+            }
+        }
+
+
+        /**
+        * @brief Ensures that the language map is built for the current locale, rebuilding it if the locale has changed.
+         */
+        private static void ensure_locale () 
+        {
+            string loc = Intl.get_language_names ()[0];
+
+            if (current_locale == loc && cached_map != null)
+                return;
+
+            current_locale = loc;
+            rebuild_language_cache ();
+        }
    }
 }

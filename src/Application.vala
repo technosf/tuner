@@ -23,6 +23,7 @@ namespace Tuner {
     */
     private static Application _instance;
 
+    private static string[] APP_ARGV; 
 
     /**
     * @brief Available themes
@@ -89,6 +90,9 @@ namespace Tuner {
         assert_not_reached();
     } // apply_theme
 
+    // Fade duration used for window and image transitions (milliseconds)
+    public const uint WINDOW_FADE_MS = 400;
+
 
     /**
     * @brief Getter for the singleton instance
@@ -134,6 +138,22 @@ namespace Tuner {
             yield nap (interval);
         }
     } // fade
+
+    /**
+     * Fade the entire toplevel window by adjusting its `opacity` property.
+     */
+    public static async void fade_window(Gtk.Window window, uint duration_ms, bool fading_in)
+    {
+        double step = 0.05;
+        uint interval = (uint) (duration_ms / (1.0 / step));
+
+        while (( !fading_in && window.opacity != 0 ) || (fading_in && window.opacity != 1))
+        {
+            double op = window.opacity + (fading_in ? step : -step);
+            window.opacity = op.clamp(0, 1);
+            yield nap(interval);
+        }
+    }
 
 
     public static unowned string safestrip( string? text )
@@ -204,30 +224,30 @@ namespace Tuner {
         public static string SYSTEM_THEME() { return GTK_SYSTEM_THEME; }
 
         static construct 
-            {
-                // Interntionalization
-                Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-                Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-                Intl.textdomain (GETTEXT_PACKAGE);
-                LANGUAGES.add("en");    // App core language - no .po created for it, but should always be available as fallback
-                try {
-                    // Add translations
-                    var dir = File.new_for_path(LOCALEDIR);
-                    var enumerator = dir.enumerate_children("standard::*", FileQueryInfoFlags.NONE);
-                    FileInfo info;
-                    while ((info = enumerator.next_file()) != null) 
+        {
+            // Interntionalization
+            Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+            Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+            Intl.textdomain (GETTEXT_PACKAGE);
+            LANGUAGES.add("en");    // App core language - no .po created for it, but should always be available as fallback
+            try {
+                // Add translations
+                var dir = File.new_for_path(LOCALEDIR);
+                var enumerator = dir.enumerate_children("standard::*", FileQueryInfoFlags.NONE);
+                FileInfo info;
+                while ((info = enumerator.next_file()) != null) 
+                {
+                    if (info.get_file_type() == FileType.DIRECTORY && info.get_name() != "C") 
                     {
-                        if (info.get_file_type() == FileType.DIRECTORY && info.get_name() != "C") 
-                        {
-                            var lang_dir = dir.get_child(info.get_name());
-                            var mo_file = lang_dir.get_child("LC_MESSAGES").get_child(GETTEXT_PACKAGE + ".mo");
-                            if (mo_file.query_exists()) LANGUAGES.add(info.get_name());
-                        }
-                    } //  while
-                } catch (Error e) {
-                    warning(@"Error reading locale path: $(e.message)");
-                }            
-            }
+                        var lang_dir = dir.get_child(info.get_name());
+                        var mo_file = lang_dir.get_child("LC_MESSAGES").get_child(GETTEXT_PACKAGE + ".mo");
+                        if (mo_file.query_exists()) LANGUAGES.add(info.get_name());
+                    }
+                } //  while
+            } catch (Error e) {
+                warning(@"Error reading locale path: $(e.message)");
+            }            
+        }
 
         // -------------------------------------
 
@@ -236,8 +256,44 @@ namespace Tuner {
             set { 
                 if ( GLib.Environment.get_variable(ENV_LANG) == value 
                 || ( value != "" && !LANGUAGES.contains(value )) ) return;
-               GLib.Environment.set_variable(ENV_LANG, value, true);
-                settings.language = value;
+
+                if ( settings.language != value ) 
+                {
+                    settings.language = value;
+
+                    // Defer save and restart to give the WM/compositor a short
+                    // moment to finalize the resize/move. We still flush
+                    // pending GTK events right before saving inside the
+                    // timeout callback.
+                    Idle.add(() => {
+                        // Start a fade-out using the shared fade constant and
+                        // hide the window after the fade so opacity doesn't revert.
+                        uint fade_ms = WINDOW_FADE_MS;
+                        fade_window.begin(app().window, fade_ms, false, () => { });
+
+                        GLib.Timeout.add((uint) (fade_ms + 80), () => {
+                            while (Gtk.events_pending()) Gtk.main_iteration();
+                            settings.save();
+                            app().window.hide();
+                            // Stop GTK main loop cleanly
+                            spawn_restart();
+                            quit();
+                            return false; // one-shot
+                        });
+                        return Source.REMOVE;
+                    });
+                }
+
+                GLib.Environment.set_variable(ENV_LANG, value, true);
+            }
+        }
+
+        public string theme_name { 
+            get { return settings.theme_mode; }
+            set { 
+                if ( settings.theme_mode == value ) return;
+                settings.theme_mode = value;
+                apply_theme_name(value);
             }
         }
 
@@ -285,6 +341,12 @@ namespace Tuner {
             }
         }   
 
+        /** @brief Run the application with the given command line arguments */
+        public new int run ( string[]? argv = null)
+        {
+            APP_ARGV = argv;     // Keep a copy of the args for rerunning the app from the RestartManager
+            return base.run (argv); 
+        }
 
         /** @brief Main application window */
         public Window window { get; private set; }
@@ -389,6 +451,27 @@ namespace Tuner {
                 station.clicktrend++;
             });
 
+            // Add application actions
+            add_action_entries(ACTION_ENTRIES, this);
+
+            // Add set-theme-name action
+            var set_theme_action = new SimpleAction("set-theme-name", VariantType.STRING);
+            set_theme_action.activate.connect((parameter) => {
+                if (parameter != null) {
+                    theme_name = parameter.get_string();
+                }
+            });
+            add_action(set_theme_action);
+
+            // Add set-language action
+            var set_language_action = new SimpleAction("set-language", VariantType.STRING);
+            set_language_action.activate.connect((parameter) => {
+                if (parameter != null) {
+                    language = parameter.get_string();
+                }
+            });
+            add_action(set_language_action);
+
         } // construct
 
 
@@ -397,7 +480,8 @@ namespace Tuner {
         *
         * @return The Application instance
         */
-        public static Application instance {
+        public static Application instance 
+        {
             get {
                     if (Tuner._instance == null) {  
                     Tuner._instance = new Application ();  
@@ -431,7 +515,6 @@ namespace Tuner {
                 language = settings.language;  
                      
                 window = new Window (this, player, settings, directory); 
-                settings.configure();  
                 //app().window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
 
                 add_window (window);
@@ -506,5 +589,49 @@ namespace Tuner {
             // network is unavailable 
             is_online = false;
         } // check_online_status
+
+
+        /** @brief Spawns a new instance of the application */
+        private void spawn_restart() 
+        {
+            try {
+                Pid pid;
+
+                string[] argv = build_restart_argv();
+
+                Process.spawn_async(
+                    null,
+                    argv,
+                    null, // inherit environment (LANGUAGE already set)
+                    SpawnFlags.SEARCH_PATH,
+                    null,
+                    out pid
+                );
+
+            } catch (SpawnError e) {
+                warning(@"Restart failed: $(e.message)");
+            }
+        } // spawn_restart
+
+
+        /** @brief Build the correct argv for restarting the application, handling Flatpak and Meson cases */   
+        private string[] build_restart_argv() 
+        {
+            string exe = Environment.get_prgname();
+
+            // Prefer stored argv (Meson, Flatpak, debugging correctness)
+            if (APP_ARGV != null && APP_ARGV.length > 0)
+                exe = APP_ARGV[0];
+
+            // Flatpak requires host spawn
+            if (FileUtils.test("/run/.flatpak-info", FileTest.EXISTS) ) 
+            // Is a flatpak
+            {
+                return { "flatpak-spawn", "--host", exe };
+            }
+
+            return { exe };
+        }
+
     } // Application
 } // namespace Tuner
