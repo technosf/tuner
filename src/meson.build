@@ -1,3 +1,9 @@
+# Copyright © 2026 <https://github.com/technosf>
+# SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+
 # Listing files to compile
 sources = files (
     'Controllers/DirectoryController.vala',
@@ -23,6 +29,7 @@ sources = files (
     'Widgets/base/DisplayButton.vala',
     'Widgets/base/RevealLabel.vala',
     'Widgets/base/CyclingRevealLabel.vala',
+    'Widgets/base/SelectorButton.vala',
     'Widgets/base/StationListBox.vala',
     'Widgets/base/StackLabel.vala',
     'Widgets/base/StationList.vala',
@@ -39,6 +46,7 @@ sources = files (
     'Widgets/PreferencesPopover.vala',
 
     'Settings.vala',
+    'Utils.vala',
     'Application.vala',
     'Main.vala'
 )

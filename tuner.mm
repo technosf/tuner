@@ -1,5 +1,11 @@
 <map version="freeplane 1.12.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
+<!--
+Copyright © 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
 <node TEXT="Tuner" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_450036530" CREATED="1727737739945" MODIFIED="1731620222034" VGAP_QUANTITY="0 pt" COMMON_HGAP_QUANTITY="443.91305 pt"><hook NAME="MapStyle">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_tags="UNDER_NODES" show_note_icons="true" fit_to_viewport="false" showTagCategories="false"/>
     <tags category_separator="::" tagcolor1="Singleton#a60062ff"/>

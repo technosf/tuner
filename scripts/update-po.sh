@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-set -euo pipefail
+
+# Copyright © 2026 <https://github.com/technosf>
+# SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#set -euo pipefail
 
 # ================= CONFIG =================
 APP_DIR="$(pwd)/po/application"

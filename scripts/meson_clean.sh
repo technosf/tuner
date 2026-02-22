@@ -1,3 +1,9 @@
+# Copyright © 2026 <https://github.com/technosf>
+# SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+
 rm -r builddir build-dir .flatpak-builder
 #meson setup builddir -Dtranslation=update
 meson setup --buildtype=debug builddir -Dtranslation=update
