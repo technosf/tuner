@@ -35,7 +35,12 @@ jobs:
       image: ghcr.io/flathub-infra/flatpak-github-actions:freedesktop-25.08
       options: --privileged
     steps:
+
     - uses: actions/checkout@v4
+    
+    - name: Install gettext (for msgcat)
+      run: sudo apt-get install -y gettext
+
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
         bundle: com.github.louis77.tuner.flatpak
