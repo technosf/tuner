@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-02-03 01:06-0800\n"
-"PO-Revision-Date: 2026-02-03 23:07+0000\n"
-"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"PO-Revision-Date: 2026-02-23 04:06+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "tr/>\n"
 "Language: tr\n"
@@ -22,109 +22,118 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
-#: src/Widgets/PreferencesPopover.vala:21
-msgid "About"
-msgstr "Hakkında"
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
+msgid "Station no longer in the index"
+msgstr "İstasyon artık indeksde yok"
 
-#: src/Models/StreamMetadata.vala:25
-msgid "Album"
-msgstr "Albüm"
+#: src/Models/Station.vala:355
+msgid "Changes"
+msgstr "Değişiklikler"
 
-#: src/Models/StreamMetadata.vala:41
-msgid "Application Name"
-msgstr "Uygulama adı"
+#: src/Models/Station.vala:356
+msgid "Stream Url"
+msgstr "Akış Url"
+
+#: src/Models/Station.vala:357
+msgid "Stream Resolved Url"
+msgstr "Akış Yeniden Çözüldü Url"
+
+#: src/Models/Station.vala:358
+msgid "Favicon address"
+msgstr "Favicon adresi"
+
+#: src/Models/Station.vala:359
+msgid "Homepage address"
+msgstr "Anasayfa adresi"
+
+#: src/Models/Station.vala:360
+msgid "Station tags"
+msgstr "İstasyon etiketleri"
+
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
+msgid "Bitrate"
+msgstr "Bit"
+
+#: src/Models/Station.vala:362
+msgid "Codec"
+msgstr "Kodek"
+
+#. Ordered array of tags and descriptions
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
+msgstr "Başlık"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
 msgstr "Sanatçı"
 
+#: src/Models/StreamMetadata.vala:25
+msgid "Album"
+msgstr "Albüm"
+
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr "Görüntü"
+
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr "Tür"
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
+msgstr "Anasayfa"
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
+msgstr "Organizasyon"
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr "Konum"
+
+#: src/Models/StreamMetadata.vala:31
+msgid "Extended Comment"
+msgstr "Genişletilmiş Yorum"
+
 #: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
 msgstr "Audio Codec"
-
-#: src/Widgets/PreferencesPopover.vala:51
-msgid "Auto-play last station on startup"
-msgstr "Auto-play son istasyonda başlangıç"
-
-#: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
-msgid "Bitrate"
-msgstr "Bit"
-
-#: src/Models/Station.vala:357
-msgid "Changes"
-msgstr "Değişiklikler"
 
 #: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
 msgstr "Kanal Modu"
 
-#: src/Widgets/PreferencesPopover.vala:222
-msgid "Choose a file"
-msgstr "Dosya Seç"
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr "Parça Numarası"
 
-#: src/Widgets/Window.vala:69
-msgid ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
-msgstr ""
-"Pencereyi yeniden başlatmak için buraya tıklayın. Tuner'ı terk etmek, "
-"duraklama oyunu geri almak ve pencereyi kapatmak."
+#: src/Models/StreamMetadata.vala:36
+msgid "Track Count"
+msgstr "Track Count Count"
 
-#: src/Models/Station.vala:364
-msgid "Codec"
-msgstr "Kodek"
+#: src/Models/StreamMetadata.vala:37
+msgid "Nominal Bitrate"
+msgstr "Bölünmesi"
+
+#: src/Models/StreamMetadata.vala:38
+msgid "Minimum Bitrate"
+msgstr "Asgari Bitrate"
+
+#: src/Models/StreamMetadata.vala:39
+msgid "Maximum Bitrate"
+msgstr "En yüksek"
 
 #: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
 msgstr "Konteyner Formatı"
 
-#: src/Widgets/StationContextMenu.vala:104
-msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to klipboard"
-
-#: src/Widgets/Display.vala:247
-#, fuzzy
-msgid "Could not get random station"
-msgstr "Could not get random station"
-
-#: src/Widgets/PreferencesPopover.vala:67
-msgid "Cycle through the metadata from the playing stream"
-msgstr "Oyun akışından metadata aracılığıyla lisans"
-
-#: src/Widgets/PreferencesPopover.vala:35
-msgid "Dark mode"
-msgstr "Koyu kip"
-
-#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
-msgid "Data Provider"
-msgstr "Data Provider"
-
-#: src/Models/StreamMetadata.vala:44
-msgid "Date Time"
-msgstr "Tarih Zamanı"
-
-#: src/Widgets/PreferencesPopover.vala:77
-msgid "Default"
-msgstr "Öntanımlı"
-
-#: src/Widgets/Display.vala:325
-msgid "Discover"
-msgstr "Keşfet"
-
-#: src/Widgets/Display.vala:329
-msgid "Discover more stations"
-msgstr "Daha fazla istasyon keşfet"
-
-#: src/Widgets/PreferencesPopover.vala:26
-msgid "Do not participate in Station voting"
-msgstr "İstasyon oylamasına katılma"
-
-#: src/Widgets/Display.vala:559
-#, c-format, fuzzy
-msgid "Double click to shuffle through %1$u stations"
-msgstr "Double click to shuffle through %1$u stations"
+#: src/Models/StreamMetadata.vala:41
+msgid "Application Name"
+msgstr "Uygulama adı"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
@@ -134,305 +143,69 @@ msgstr "Encoder"
 msgid "Encoder Version"
 msgstr "Encoder Version"
 
-#: src/Widgets/Display.vala:104
-msgid "Eras"
-msgstr "Çağlar"
-
-#: src/Widgets/PreferencesPopover.vala:209
-#, fuzzy
-msgid "Error"
-msgstr "Error"
-
-#: src/Widgets/PreferencesPopover.vala:248
-#, fuzzy
-msgid "Error reading file"
-msgstr "Error reading file"
-
-#: src/Widgets/Window.vala:242
-msgid "Error while trying to autoplay, aborting…"
-msgstr "Hata, otoplay etmeye çalışırken, aborting.."
-
-#: src/Widgets/Display.vala:101
-msgid "Explore"
-msgstr "Keşfet"
-
-#: src/Widgets/PreferencesPopover.vala:97
-msgid "Export Starred Stations to Playlist"
-msgstr "Export Starred Stations to Playlist"
-
-#: src/Models/StreamMetadata.vala:31
-msgid "Extended Comment"
-msgstr "Genişletilmiş Yorum"
-
-#: src/Widgets/PreferencesPopover.vala:72
-msgid ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
-msgstr ""
-"Canlı yayından metadata aracılığıyla hızlı döngü, gösterir yayın bilgileri "
-"etkinleştirilirse"
-
-#: src/Widgets/PreferencesPopover.vala:70
-msgid "Faster cycling through stream info"
-msgstr "Hızlı bisiklet akış bilgisi ile"
-
-#: src/Models/Station.vala:360
-msgid "Favicon address"
-msgstr "Favicon adresi"
-
-#: src/Models/StreamMetadata.vala:27
-msgid "Genre"
-msgstr "Tür"
-
-#: src/Widgets/Display.vala:102
-msgid "Genres"
-msgstr "Türler"
-
-#: src/Models/StreamMetadata.vala:46
-msgid "Has CRC"
-msgstr "CRC"
-
-#: src/Widgets/HeaderBar.vala:212
-msgid "History"
-msgstr "Tarihçe"
-
-#: src/Models/StreamMetadata.vala:28
-msgid "Homepage"
-msgstr "Anasayfa"
-
-#: src/Models/Station.vala:361
-msgid "Homepage address"
-msgstr "Anasayfa adresi"
-
-#: src/Widgets/PreferencesPopover.vala:28
-msgid ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
-msgstr ""
-"Eğer kontrol edilirse, rol oynadığınız ve yayınlanan istasyonlarınız "
-"istasyon indeks popüler oylarını hesaplamak için kullanılmayacaktır, ne de "
-"popüler ve trend istasyonları"
-
-#: src/Widgets/PreferencesPopover.vala:53
-msgid ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
-msgstr ""
-"Eğer etkinleştirilirse, Tuner başladığında, son oynadığı istasyon "
-"istasyonunu otomatik olarak oynamaya başlayacaktır"
-
-#: src/Widgets/PreferencesPopover.vala:60
-msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr ""
-"Eğer etkinleştirilirse, Tuner başladığında, rol istasyonlarına açık olacak"
-
-#: src/Models/StreamMetadata.vala:26
-msgid "Image"
-msgstr "Görüntü"
-
-#: src/Widgets/PreferencesPopover.vala:106
-msgid "Import Station UUIDs as Starred Stations"
-msgstr "Import Station UUIDs as Starred Stations"
-
-#: src/Widgets/Display.vala:557
-msgid "Jukebox"
-msgstr "Jukebox"
-
-#: src/Widgets/PreferencesPopover.vala:87
-msgid "Language"
-msgstr "Dil"
-
-#: src/Widgets/Display.vala:422
-msgid "Latest Search"
-msgstr "Son Arama"
-
-#: src/Widgets/Display.vala:99
-msgid "Library"
-msgstr "Kütüphane"
-
-#: src/Widgets/PreferencesPopover.vala:34
-msgid "Light mode"
-msgstr "Açık kip"
-
-#: src/Models/StreamMetadata.vala:30
-msgid "Location"
-msgstr "Konum"
-
-#: src/Models/StreamMetadata.vala:39
-msgid "Maximum Bitrate"
-msgstr "En yüksek"
-
-#: src/Models/StreamMetadata.vala:38
-msgid "Minimum Bitrate"
-msgstr "Asgari Bitrate"
-
-#: src/Widgets/Display.vala:362
-msgid "Most listened to Stations in the last 24 hours"
-msgstr "Çoğu son 24 saat içinde İstasyonları dinledi"
-
-#: src/Widgets/base/StationListBox.vala:156
-msgid "No stations found"
-msgstr "İstasyon bulunamadı"
-
-#: src/Models/StreamMetadata.vala:37
-msgid "Nominal Bitrate"
-msgstr "Bölünmesi"
-
-#: src/Widgets/base/StationListBox.vala:146
-msgid "Nothing here"
-msgstr "Burada hiçbir şey yok"
-
-#: src/Widgets/PreferencesPopover.vala:58
-msgid "Open to Starred Stations"
-msgstr "Starred Stations'a açık"
-
-#: src/Models/StreamMetadata.vala:29
-msgid "Organization"
-msgstr "Organizasyon"
-
-#: src/Widgets/Window.vala:68
-msgid "Playing in background"
-msgstr "Arka planda oynatılıyor"
-
-#: src/Widgets/base/StationListBox.vala:156
-msgid "Please try a different search term."
-msgstr "Lütfen başka bir arama terimi girin."
-
-#: src/Widgets/Display.vala:361
-msgid "Popular"
-msgstr "Popüler"
-
-#: src/Widgets/HeaderBar.vala:208
-msgid "Preferences"
-msgstr "Tercihler"
+#: src/Models/StreamMetadata.vala:44
+msgid "Date Time"
+msgstr "Tarih Zamanı"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
 msgstr "Özel Veriler"
 
-#: src/Widgets/Display.vala:627
-msgid "Remove this saved search"
-msgstr "Bu kurtarılmış arama"
+#: src/Models/StreamMetadata.vala:46
+msgid "Has CRC"
+msgstr "CRC"
 
-#: src/Widgets/PreferencesPopover.vala:88
-msgid "Requires restarting Tuner"
-msgstr "Tuner'ı yeniden başlatmalı"
+#.
+#. Display Assets
+#.
+#: src/Widgets/Display.vala:98
+msgid "Selections"
+msgstr "Seçimler"
 
-#: src/Widgets/PreferencesPopover.vala:185
-msgid "Save File"
-msgstr "Dosyayı Kaydet"
-
-#: src/Widgets/Display.vala:426
-msgid "Save this search"
-msgstr "Bu aramayı Kurtarın"
-
-#: src/Widgets/Display.vala:625
-msgid "Saved Search"
-msgstr "Kaydedilen Arama"
+#: src/Widgets/Display.vala:99
+msgid "Library"
+msgstr "Kütüphane"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
 msgstr "Kayıtlı Aramalar"
 
-#: src/Widgets/Display.vala:423
-msgid "Search Results"
-msgstr "Arama Sonuçları"
+#: src/Widgets/Display.vala:101
+msgid "Explore"
+msgstr "Keşfet"
 
-#: src/Widgets/Display.vala:98
-msgid "Selections"
-msgstr "Seçimler"
-
-#: src/Widgets/PreferencesPopover.vala:65
-msgid "Show stream info when playing"
-msgstr "Show stream info when playing oynarken"
-
-#: src/Widgets/base/StationListBox.vala:146
-msgid ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
-msgstr ""
-"Bir şey istasyon sağlayıcısından radyo istasyonları verilerini yanlış "
-"yüklemeye gitti. Lütfen daha sonra tekrar deneyin."
-
-#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
-msgid "Star this station"
-msgstr "Bu istasyonu yıldızla"
-
-#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
-msgid "Starred by You"
-msgstr "Yıldız Eklediniz"
-
-#: src/Widgets/HeaderBar.vala:191
-msgid "Station Search"
-msgstr "İstasyon"
-
-#: src/Widgets/StationContextMenu.vala:89
-msgid "Station info updated Online - View changes"
-msgstr "İstasyon bilgileri güncellendi Online - View changes"
-
-#: src/Models/Station.vala:133
-msgid "Station no longer in the index"
-msgstr "İstasyon artık indeksde yok"
-
-#: src/Models/Station.vala:362
-msgid "Station tags"
-msgstr "İstasyon etiketleri"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Stations"
-msgstr "İstasyonlar"
-
-#: src/Widgets/Display.vala:326
-msgid "Stations to Discover"
-msgstr "Keşfetmek için İstasyonlar"
-
-#: src/Widgets/Window.vala:286
-msgid "Stop Playback requested"
-msgstr "Playback talep etti"
-
-#: src/Widgets/HeaderBar.vala:62
-msgid "Stream Metadata"
-msgstr "Stream Metadata"
-
-#: src/Models/Station.vala:359
-msgid "Stream Resolved Url"
-msgstr "Akış Yeniden Çözüldü Url"
-
-#: src/Models/Station.vala:358
-msgid "Stream Url"
-msgstr "Akış Url"
+#: src/Widgets/Display.vala:102
+msgid "Genres"
+msgstr "Türler"
 
 #: src/Widgets/Display.vala:103
 msgid "Subgenres"
 msgstr "Subgenres"
 
-#: src/Widgets/PreferencesPopover.vala:33
-msgid "System"
-msgstr "Sistem"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Tags"
-msgstr "Etiketler"
+#: src/Widgets/Display.vala:104
+msgid "Eras"
+msgstr "Çağlar"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
 msgstr "Konuşma, Haberler, Sport"
 
-#: src/Widgets/PreferencesPopover.vala:46
-msgid "Theme"
-msgstr "Tema"
+#: src/Widgets/Display.vala:247
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Models/StreamMetadata.vala:23
-msgid "Title"
-msgstr "Başlık"
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr "Keşfet"
 
-#: src/Models/StreamMetadata.vala:36
-msgid "Track Count"
-msgstr "Track Count Count"
+#: src/Widgets/Display.vala:326
+msgid "Stations to Discover"
+msgstr "Keşfetmek için İstasyonlar"
 
-#: src/Models/StreamMetadata.vala:35
-msgid "Track Number"
-msgstr "Parça Numarası"
+#: src/Widgets/Display.vala:329
+msgid "Discover more stations"
+msgstr "Daha fazla istasyon keşfet"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
@@ -442,37 +215,299 @@ msgstr "Gündemdekiler"
 msgid "Trending Stations in the last 24 hours"
 msgstr "Trend İstasyonu son 24 saat içinde"
 
-#: src/Widgets/StationContextMenu.vala:145
-#, fuzzy
-msgid "Unable to open website"
-msgstr "Unable to open website"
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr "Popüler"
 
-#: src/Widgets/StationContextMenu.vala:168
-msgid "Unstar this station"
-msgstr "İstasyonun yıldızını kaldır"
+#: src/Widgets/Display.vala:362
+msgid "Most listened to Stations in the last 24 hours"
+msgstr "Çoğu son 24 saat içinde İstasyonları dinledi"
 
-#: src/Widgets/StationContextMenu.vala:90
-msgid "Update Station from Online"
-msgstr "Online Güncelleme İstasyonu"
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+msgid "Starred by You"
+msgstr "Yıldız Eklediniz"
 
-#: src/Widgets/StationContextMenu.vala:98
-msgid "Visit Website"
-msgstr "Web Sitesini Gör"
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr "Son Arama"
 
-#: src/Widgets/PreferencesPopover.vala:188
-#: src/Widgets/PreferencesPopover.vala:225
-msgid "_Cancel"
-msgstr "_İptal"
+#: src/Widgets/Display.vala:423
+msgid "Search Results"
+msgstr "Arama Sonuçları"
 
-#: src/Widgets/PreferencesPopover.vala:226
-msgid "_Open"
-msgstr "_Aç"
+#: src/Widgets/Display.vala:426
+msgid "Save this search"
+msgstr "Bu aramayı Kurtarın"
 
-#: src/Widgets/PreferencesPopover.vala:189
-msgid "_Save"
-msgstr "Ka_ydet"
+#: src/Widgets/Display.vala:557
+msgid "Jukebox"
+msgstr "Jukebox"
+
+#: src/Widgets/Display.vala:559
+#, fuzzy, c-format
+msgid "Double click to shuffle through %1$u stations"
+msgstr "Double click to shuffle through %1$u stations"
 
 #: src/Widgets/Display.vala:560
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
+
+#: src/Widgets/Display.vala:625
+msgid "Saved Search"
+msgstr "Kaydedilen Arama"
+
+#: src/Widgets/Display.vala:627
+msgid "Remove this saved search"
+msgstr "Bu kurtarılmış arama"
+
+#: src/Widgets/HeaderBar.vala:62
+msgid "Stream Metadata"
+msgstr "Stream Metadata"
+
+#. 20px padding on the right
+#. 20px padding on the right
+#. 20px padding on the right
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:149
+msgid "Data Provider"
+msgstr "Data Provider"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Stations"
+msgstr "İstasyonlar"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Tags"
+msgstr "Etiketler"
+
+#: src/Widgets/HeaderBar.vala:171 src/Widgets/StationContextMenu.vala:171
+msgid "Star this station"
+msgstr "Bu istasyonu yıldızla"
+
+#.
+#. Create and configure play button
+#.
+#. Toggles player state
+#.
+#. RHS Controls
+#.
+#. Search entry
+#: src/Widgets/HeaderBar.vala:192
+msgid "Station Search"
+msgstr "İstasyon"
+
+#: src/Widgets/HeaderBar.vala:209
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: src/Widgets/HeaderBar.vala:213
+msgid "History"
+msgstr "Tarihçe"
+
+#: src/Widgets/PreferencesPopover.vala:22
+msgid "About"
+msgstr "Hakkında"
+
+#. Voting
+#: src/Widgets/PreferencesPopover.vala:27
+msgid "Do not participate in Station voting"
+msgstr "İstasyon oylamasına katılma"
+
+#: src/Widgets/PreferencesPopover.vala:29
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr ""
+"Eğer kontrol edilirse, rol oynadığınız ve yayınlanan istasyonlarınız "
+"istasyon indeks popüler oylarını hesaplamak için kullanılmayacaktır, ne de "
+"popüler ve trend istasyonları"
+
+#. Theme
+#: src/Widgets/PreferencesPopover.vala:34
+msgid "System"
+msgstr "Sistem"
+
+#: src/Widgets/PreferencesPopover.vala:35
+msgid "Light mode"
+msgstr "Açık kip"
+
+#: src/Widgets/PreferencesPopover.vala:36
+msgid "Dark mode"
+msgstr "Koyu kip"
+
+#: src/Widgets/PreferencesPopover.vala:41
+msgid "Theme"
+msgstr "Tema"
+
+#. Autoplay
+#: src/Widgets/PreferencesPopover.vala:46
+msgid "Auto-play last station on startup"
+msgstr "Auto-play son istasyonda başlangıç"
+
+#: src/Widgets/PreferencesPopover.vala:48
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr ""
+"Eğer etkinleştirilirse, Tuner başladığında, son oynadığı istasyon "
+"istasyonunu otomatik olarak oynamaya başlayacaktır"
+
+#. Start on Starred
+#: src/Widgets/PreferencesPopover.vala:53
+msgid "Open to Starred Stations"
+msgstr "Starred Stations'a açık"
+
+#: src/Widgets/PreferencesPopover.vala:55
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"Eğer etkinleştirilirse, Tuner başladığında, rol istasyonlarına açık olacak"
+
+#. Play Display
+#: src/Widgets/PreferencesPopover.vala:60
+msgid "Show stream info when playing"
+msgstr "Show stream info when playing oynarken"
+
+#: src/Widgets/PreferencesPopover.vala:62
+msgid "Cycle through the metadata from the playing stream"
+msgstr "Oyun akışından metadata aracılığıyla lisans"
+
+#: src/Widgets/PreferencesPopover.vala:65
+msgid "Faster cycling through stream info"
+msgstr "Hızlı bisiklet akış bilgisi ile"
+
+#: src/Widgets/PreferencesPopover.vala:67
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr ""
+"Canlı yayından metadata aracılığıyla hızlı döngü, gösterir yayın bilgileri "
+"etkinleştirilirse"
+
+#: src/Widgets/PreferencesPopover.vala:78
+msgid "Language"
+msgstr "Dil"
+
+#: src/Widgets/PreferencesPopover.vala:79
+#, fuzzy
+msgid "Language changes restart Tuner"
+msgstr "Language changes restart Tuner"
+
+#. Export starred
+#: src/Widgets/PreferencesPopover.vala:84
+msgid "Export Starred Stations to Playlist"
+msgstr "Export Starred Stations to Playlist"
+
+#. Import starred
+#: src/Widgets/PreferencesPopover.vala:93
+msgid "Import Station UUIDs as Starred Stations"
+msgstr "Import Station UUIDs as Starred Stations"
+
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
+msgid "Save File"
+msgstr "Dosyayı Kaydet"
+
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
+msgid "_Cancel"
+msgstr "_İptal"
+
+#: src/Widgets/PreferencesPopover.vala:164
+msgid "_Save"
+msgstr "Ka_ydet"
+
+#. warning("Error: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:185
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:198
+msgid "Choose a file"
+msgstr "Dosya Seç"
+
+#: src/Widgets/PreferencesPopover.vala:202
+msgid "_Open"
+msgstr "_Aç"
+
+#. warning("Error reading file: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:225
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
+
+#. ----------------------------------------------
+#: src/Widgets/StationContextMenu.vala:91
+msgid "Station info updated Online - View changes"
+msgstr "İstasyon bilgileri güncellendi Online - View changes"
+
+#: src/Widgets/StationContextMenu.vala:92
+msgid "Update Station from Online"
+msgstr "Online Güncelleme İstasyonu"
+
+#: src/Widgets/StationContextMenu.vala:100
+msgid "Visit Website"
+msgstr "Web Sitesini Gör"
+
+#: src/Widgets/StationContextMenu.vala:106
+msgid "Copy Stream-URI to clipboard"
+msgstr "Copy Stream-URI to klipboard"
+
+#. warning (@"Unable to open website: $(e.message)");
+#: src/Widgets/StationContextMenu.vala:147
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
+
+#. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+#: src/Widgets/StationContextMenu.vala:170
+msgid "Unstar this station"
+msgstr "İstasyonun yıldızını kaldır"
+
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
+#: src/Widgets/Window.vala:68
+msgid "Playing in background"
+msgstr "Arka planda oynatılıyor"
+
+#: src/Widgets/Window.vala:69
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr ""
+"Pencereyi yeniden başlatmak için buraya tıklayın. Tuner'ı terk etmek, "
+"duraklama oyunu geri almak ve pencereyi kapatmak."
+
+#: src/Widgets/Window.vala:240
+msgid "Error while trying to autoplay, aborting…"
+msgstr "Hata, otoplay etmeye çalışırken, aborting.."
+
+#: src/Widgets/Window.vala:284
+msgid "Stop Playback requested"
+msgstr "Playback talep etti"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid "Nothing here"
+msgstr "Burada hiçbir şey yok"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr ""
+"Bir şey istasyon sağlayıcısından radyo istasyonları verilerini yanlış "
+"yüklemeye gitti. Lütfen daha sonra tekrar deneyin."
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "No stations found"
+msgstr "İstasyon bulunamadı"
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "Please try a different search term."
+msgstr "Lütfen başka bir arama terimi girin."
+
+#~ msgid "Default"
+#~ msgstr "Öntanımlı"
+
+#~ msgid "Requires restarting Tuner"
+#~ msgstr "Tuner'ı yeniden başlatmalı"

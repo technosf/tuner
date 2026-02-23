@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-02-03 01:06-0800\n"
-"PO-Revision-Date: 2026-02-17 21:09+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"PO-Revision-Date: 2026-02-23 04:06+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "bg/>\n"
 "Language: bg\n"
@@ -19,119 +19,131 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.16.1-dev\n"
 
-#: src/Widgets/PreferencesPopover.vala:21
-msgid "About"
-msgstr "Относно"
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
+#, fuzzy
+msgid "Station no longer in the index"
+msgstr "Station no longer in the index"
+
+#: src/Models/Station.vala:355
+msgid "Changes"
+msgstr "Промени"
+
+#: src/Models/Station.vala:356
+#, fuzzy
+msgid "Stream Url"
+msgstr "Stream Url"
+
+#: src/Models/Station.vala:357
+#, fuzzy
+msgid "Stream Resolved Url"
+msgstr "Stream Resolved Url"
+
+#: src/Models/Station.vala:358
+#, fuzzy
+msgid "Favicon address"
+msgstr "Favicon address"
+
+#: src/Models/Station.vala:359
+#, fuzzy
+msgid "Homepage address"
+msgstr "Homepage address"
+
+#: src/Models/Station.vala:360
+#, fuzzy
+msgid "Station tags"
+msgstr "Station tags"
+
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
+msgid "Bitrate"
+msgstr "Битрейт"
+
+#: src/Models/Station.vala:362
+msgid "Codec"
+msgstr "Видео кодек"
+
+#. Ordered array of tags and descriptions
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
+msgstr "Заглавие"
+
+#: src/Models/StreamMetadata.vala:24
+msgid "Artist"
+msgstr "Художник"
 
 #: src/Models/StreamMetadata.vala:25
 msgid "Album"
 msgstr "Албум"
 
-#: src/Models/StreamMetadata.vala:41
-#, fuzzy
-msgid "Application Name"
-msgstr "Application Name"
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr "Изображение"
 
-#: src/Models/StreamMetadata.vala:24
-msgid "Artist"
-msgstr "Художник"
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr "Жанр"
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
+msgstr "Начална страница"
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
+msgstr "Организация"
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr "Местоположение"
+
+#: src/Models/StreamMetadata.vala:31
+#, fuzzy
+msgid "Extended Comment"
+msgstr "Extended Comment"
 
 #: src/Models/StreamMetadata.vala:33
 #, fuzzy
 msgid "Audio Codec"
 msgstr "Audio Codec"
 
-#: src/Widgets/PreferencesPopover.vala:51
-#, fuzzy
-msgid "Auto-play last station on startup"
-msgstr "Auto-play last station on startup"
-
-#: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
-msgid "Bitrate"
-msgstr "Битрейт"
-
-#: src/Models/Station.vala:357
-msgid "Changes"
-msgstr "Промени"
-
 #: src/Models/StreamMetadata.vala:34
 #, fuzzy
 msgid "Channel Mode"
 msgstr "Channel Mode"
 
-#: src/Widgets/PreferencesPopover.vala:222
-msgid "Choose a file"
-msgstr "Избиране на файл"
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr "Номер на песен"
 
-#: src/Widgets/Window.vala:69
+#: src/Models/StreamMetadata.vala:36
 #, fuzzy
-msgid ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
-msgstr ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
+msgid "Track Count"
+msgstr "Track Count"
 
-#: src/Models/Station.vala:364
-msgid "Codec"
-msgstr "Видео кодек"
+#: src/Models/StreamMetadata.vala:37
+#, fuzzy
+msgid "Nominal Bitrate"
+msgstr "Nominal Bitrate"
+
+#: src/Models/StreamMetadata.vala:38
+#, fuzzy
+msgid "Minimum Bitrate"
+msgstr "Minimum Bitrate"
+
+#: src/Models/StreamMetadata.vala:39
+#, fuzzy
+msgid "Maximum Bitrate"
+msgstr "Maximum Bitrate"
 
 #: src/Models/StreamMetadata.vala:40
 #, fuzzy
 msgid "Container Format"
 msgstr "Container Format"
 
-#: src/Widgets/StationContextMenu.vala:104
+#: src/Models/StreamMetadata.vala:41
 #, fuzzy
-msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to clipboard"
-
-#: src/Widgets/Display.vala:247
-#, fuzzy
-msgid "Could not get random station"
-msgstr "Could not get random station"
-
-#: src/Widgets/PreferencesPopover.vala:67
-#, fuzzy
-msgid "Cycle through the metadata from the playing stream"
-msgstr "Cycle through the metadata from the playing stream"
-
-#: src/Widgets/PreferencesPopover.vala:35
-msgid "Dark mode"
-msgstr "Тъмен режим"
-
-#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
-#, fuzzy
-msgid "Data Provider"
-msgstr "Data Provider"
-
-#: src/Models/StreamMetadata.vala:44
-#, fuzzy
-msgid "Date Time"
-msgstr "Date Time"
-
-#: src/Widgets/PreferencesPopover.vala:77
-msgid "Default"
-msgstr "Default"
-
-#: src/Widgets/Display.vala:325
-msgid "Discover"
-msgstr "Откриване"
-
-#: src/Widgets/Display.vala:329
-#, fuzzy
-msgid "Discover more stations"
-msgstr "Discover more stations"
-
-#: src/Widgets/PreferencesPopover.vala:26
-#, fuzzy
-msgid "Do not participate in Station voting"
-msgstr "Do not participate in Station voting"
-
-#: src/Widgets/Display.vala:559
-#, c-format, fuzzy
-msgid "Double click to shuffle through %1$u stations"
-msgstr "Double click to shuffle through %1$u stations"
+msgid "Application Name"
+msgstr "Application Name"
 
 #: src/Models/StreamMetadata.vala:42
 #, fuzzy
@@ -143,339 +155,75 @@ msgstr "Encoder"
 msgid "Encoder Version"
 msgstr "Encoder Version"
 
-#: src/Widgets/Display.vala:104
-msgid "Eras"
-msgstr "Ери"
-
-#: src/Widgets/PreferencesPopover.vala:209
+#: src/Models/StreamMetadata.vala:44
 #, fuzzy
-msgid "Error"
-msgstr "Error"
-
-#: src/Widgets/PreferencesPopover.vala:248
-#, fuzzy
-msgid "Error reading file"
-msgstr "Error reading file"
-
-#: src/Widgets/Window.vala:242
-#, fuzzy
-msgid "Error while trying to autoplay, aborting…"
-msgstr "Error while trying to autoplay, aborting…"
-
-#: src/Widgets/Display.vala:101
-msgid "Explore"
-msgstr "Изследване"
-
-#: src/Widgets/PreferencesPopover.vala:97
-#, fuzzy
-msgid "Export Starred Stations to Playlist"
-msgstr "Export Starred Stations to Playlist"
-
-#: src/Models/StreamMetadata.vala:31
-#, fuzzy
-msgid "Extended Comment"
-msgstr "Extended Comment"
-
-#: src/Widgets/PreferencesPopover.vala:72
-#, fuzzy
-msgid ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
-msgstr ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
-
-#: src/Widgets/PreferencesPopover.vala:70
-#, fuzzy
-msgid "Faster cycling through stream info"
-msgstr "Faster cycling through stream info"
-
-#: src/Models/Station.vala:360
-#, fuzzy
-msgid "Favicon address"
-msgstr "Favicon address"
-
-#: src/Models/StreamMetadata.vala:27
-msgid "Genre"
-msgstr "Жанр"
-
-#: src/Widgets/Display.vala:102
-msgid "Genres"
-msgstr "Жанрове"
-
-#: src/Models/StreamMetadata.vala:46
-#, fuzzy
-msgid "Has CRC"
-msgstr "Has CRC"
-
-#: src/Widgets/HeaderBar.vala:212
-msgid "History"
-msgstr "История"
-
-#: src/Models/StreamMetadata.vala:28
-msgid "Homepage"
-msgstr "Начална страница"
-
-#: src/Models/Station.vala:361
-#, fuzzy
-msgid "Homepage address"
-msgstr "Homepage address"
-
-#: src/Widgets/PreferencesPopover.vala:28
-#, fuzzy
-msgid ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
-msgstr ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
-
-#: src/Widgets/PreferencesPopover.vala:53
-#, fuzzy
-msgid ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
-msgstr ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
-
-#: src/Widgets/PreferencesPopover.vala:60
-#, fuzzy
-msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "If enabled, when Tuner starts it will open to the starred stations view"
-
-#: src/Models/StreamMetadata.vala:26
-msgid "Image"
-msgstr "Изображение"
-
-#: src/Widgets/PreferencesPopover.vala:106
-#, fuzzy
-msgid "Import Station UUIDs as Starred Stations"
-msgstr "Import Station UUIDs as Starred Stations"
-
-#: src/Widgets/Display.vala:557
-msgid "Jukebox"
-msgstr "Джубокс"
-
-#: src/Widgets/PreferencesPopover.vala:87
-msgid "Language"
-msgstr "Език"
-
-#: src/Widgets/Display.vala:422
-msgid "Latest Search"
-msgstr "Последно търсене"
-
-#: src/Widgets/Display.vala:99
-msgid "Library"
-msgstr "Библиотека"
-
-#: src/Widgets/PreferencesPopover.vala:34
-#, fuzzy
-msgid "Light mode"
-msgstr "Light mode"
-
-#: src/Models/StreamMetadata.vala:30
-msgid "Location"
-msgstr "Местоположение"
-
-#: src/Models/StreamMetadata.vala:39
-#, fuzzy
-msgid "Maximum Bitrate"
-msgstr "Maximum Bitrate"
-
-#: src/Models/StreamMetadata.vala:38
-#, fuzzy
-msgid "Minimum Bitrate"
-msgstr "Minimum Bitrate"
-
-#: src/Widgets/Display.vala:362
-#, fuzzy
-msgid "Most listened to Stations in the last 24 hours"
-msgstr "Most listened to Stations in the last 24 hours"
-
-#: src/Widgets/base/StationListBox.vala:156
-msgid "No stations found"
-msgstr "Няма открити станции."
-
-#: src/Models/StreamMetadata.vala:37
-#, fuzzy
-msgid "Nominal Bitrate"
-msgstr "Nominal Bitrate"
-
-#: src/Widgets/base/StationListBox.vala:146
-#, fuzzy
-msgid "Nothing here"
-msgstr "Nothing here"
-
-#: src/Widgets/PreferencesPopover.vala:58
-#, fuzzy
-msgid "Open to Starred Stations"
-msgstr "Open to Starred Stations"
-
-#: src/Models/StreamMetadata.vala:29
-msgid "Organization"
-msgstr "Организация"
-
-#: src/Widgets/Window.vala:68
-msgid "Playing in background"
-msgstr "Възпроизвеждане във фонов режим"
-
-#: src/Widgets/base/StationListBox.vala:156
-#, fuzzy
-msgid "Please try a different search term."
-msgstr "Please try a different search term."
-
-#: src/Widgets/Display.vala:361
-msgid "Popular"
-msgstr "Популярен"
-
-#: src/Widgets/HeaderBar.vala:208
-msgid "Preferences"
-msgstr "Предпочитания"
+msgid "Date Time"
+msgstr "Date Time"
 
 #: src/Models/StreamMetadata.vala:45
 #, fuzzy
 msgid "Private Data"
 msgstr "Private Data"
 
-#: src/Widgets/Display.vala:627
+#: src/Models/StreamMetadata.vala:46
 #, fuzzy
-msgid "Remove this saved search"
-msgstr "Remove this saved search"
+msgid "Has CRC"
+msgstr "Has CRC"
 
-#: src/Widgets/PreferencesPopover.vala:88
-#, fuzzy
-msgid "Requires restarting Tuner"
-msgstr "Requires restarting Tuner"
+#.
+#. Display Assets
+#.
+#: src/Widgets/Display.vala:98
+msgid "Selections"
+msgstr "Селекции"
 
-#: src/Widgets/PreferencesPopover.vala:185
-msgid "Save File"
-msgstr "Save File"
-
-#: src/Widgets/Display.vala:426
-#, fuzzy
-msgid "Save this search"
-msgstr "Save this search"
-
-#: src/Widgets/Display.vala:625
-msgid "Saved Search"
-msgstr "Запазено търсене"
+#: src/Widgets/Display.vala:99
+msgid "Library"
+msgstr "Библиотека"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
 msgstr "Запазени търсения"
 
-#: src/Widgets/Display.vala:423
-msgid "Search Results"
-msgstr "Резултати от търсене"
+#: src/Widgets/Display.vala:101
+msgid "Explore"
+msgstr "Изследване"
 
-#: src/Widgets/Display.vala:98
-msgid "Selections"
-msgstr "Селекции"
-
-#: src/Widgets/PreferencesPopover.vala:65
-#, fuzzy
-msgid "Show stream info when playing"
-msgstr "Show stream info when playing"
-
-#: src/Widgets/base/StationListBox.vala:146
-#, fuzzy
-msgid ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
-msgstr ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
-
-#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
-#, fuzzy
-msgid "Star this station"
-msgstr "Star this station"
-
-#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
-msgid "Starred by You"
-msgstr "Означено със звезда от вас"
-
-#: src/Widgets/HeaderBar.vala:191
-msgid "Station Search"
-msgstr "Търсене на станции"
-
-#: src/Widgets/StationContextMenu.vala:89
-#, fuzzy
-msgid "Station info updated Online - View changes"
-msgstr "Station info updated Online - View changes"
-
-#: src/Models/Station.vala:133
-#, fuzzy
-msgid "Station no longer in the index"
-msgstr "Station no longer in the index"
-
-#: src/Models/Station.vala:362
-#, fuzzy
-msgid "Station tags"
-msgstr "Station tags"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Stations"
-msgstr "Станции"
-
-#: src/Widgets/Display.vala:326
-#, fuzzy
-msgid "Stations to Discover"
-msgstr "Stations to Discover"
-
-#: src/Widgets/Window.vala:286
-#, fuzzy
-msgid "Stop Playback requested"
-msgstr "Stop Playback requested"
-
-#: src/Widgets/HeaderBar.vala:62
-msgid "Stream Metadata"
-msgstr "Метаданни за потока"
-
-#: src/Models/Station.vala:359
-#, fuzzy
-msgid "Stream Resolved Url"
-msgstr "Stream Resolved Url"
-
-#: src/Models/Station.vala:358
-#, fuzzy
-msgid "Stream Url"
-msgstr "Stream Url"
+#: src/Widgets/Display.vala:102
+msgid "Genres"
+msgstr "Жанрове"
 
 #: src/Widgets/Display.vala:103
 #, fuzzy
 msgid "Subgenres"
 msgstr "Subgenres"
 
-#: src/Widgets/PreferencesPopover.vala:33
-msgid "System"
-msgstr "Система"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Tags"
-msgstr "Етикети"
+#: src/Widgets/Display.vala:104
+msgid "Eras"
+msgstr "Ери"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
 msgstr "Разговори, Новини, Спорт"
 
-#: src/Widgets/PreferencesPopover.vala:46
-msgid "Theme"
-msgstr "Theme"
-
-#: src/Models/StreamMetadata.vala:23
-msgid "Title"
-msgstr "Заглавие"
-
-#: src/Models/StreamMetadata.vala:36
+#: src/Widgets/Display.vala:247
 #, fuzzy
-msgid "Track Count"
-msgstr "Track Count"
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Models/StreamMetadata.vala:35
-msgid "Track Number"
-msgstr "Номер на песен"
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr "Откриване"
+
+#: src/Widgets/Display.vala:326
+#, fuzzy
+msgid "Stations to Discover"
+msgstr "Stations to Discover"
+
+#: src/Widgets/Display.vala:329
+#, fuzzy
+msgid "Discover more stations"
+msgstr "Discover more stations"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
@@ -486,42 +234,330 @@ msgstr "На тенденция"
 msgid "Trending Stations in the last 24 hours"
 msgstr "Trending Stations in the last 24 hours"
 
-#: src/Widgets/StationContextMenu.vala:145
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr "Популярен"
+
+#: src/Widgets/Display.vala:362
 #, fuzzy
-msgid "Unable to open website"
-msgstr "Unable to open website"
+msgid "Most listened to Stations in the last 24 hours"
+msgstr "Most listened to Stations in the last 24 hours"
 
-#: src/Widgets/StationContextMenu.vala:168
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+msgid "Starred by You"
+msgstr "Означено със звезда от вас"
+
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr "Последно търсене"
+
+#: src/Widgets/Display.vala:423
+msgid "Search Results"
+msgstr "Резултати от търсене"
+
+#: src/Widgets/Display.vala:426
 #, fuzzy
-msgid "Unstar this station"
-msgstr "Unstar this station"
+msgid "Save this search"
+msgstr "Save this search"
 
-#: src/Widgets/StationContextMenu.vala:90
-#, fuzzy
-msgid "Update Station from Online"
-msgstr "Update Station from Online"
+#: src/Widgets/Display.vala:557
+msgid "Jukebox"
+msgstr "Джубокс"
 
-#: src/Widgets/StationContextMenu.vala:98
-msgid "Visit Website"
-msgstr "Посетете сайта ни"
-
-#: src/Widgets/PreferencesPopover.vala:188
-#: src/Widgets/PreferencesPopover.vala:225
-msgid "_Cancel"
-msgstr "_Отказ"
-
-#: src/Widgets/PreferencesPopover.vala:226
-msgid "_Open"
-msgstr "_Отваряне"
-
-#: src/Widgets/PreferencesPopover.vala:189
-msgid "_Save"
-msgstr "_Запазване"
+#: src/Widgets/Display.vala:559
+#, fuzzy, c-format
+msgid "Double click to shuffle through %1$u stations"
+msgstr "Double click to shuffle through %1$u stations"
 
 #: src/Widgets/Display.vala:560
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
+
+#: src/Widgets/Display.vala:625
+msgid "Saved Search"
+msgstr "Запазено търсене"
+
+#: src/Widgets/Display.vala:627
+#, fuzzy
+msgid "Remove this saved search"
+msgstr "Remove this saved search"
+
+#: src/Widgets/HeaderBar.vala:62
+msgid "Stream Metadata"
+msgstr "Метаданни за потока"
+
+#. 20px padding on the right
+#. 20px padding on the right
+#. 20px padding on the right
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:149
+#, fuzzy
+msgid "Data Provider"
+msgstr "Data Provider"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Stations"
+msgstr "Станции"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Tags"
+msgstr "Етикети"
+
+#: src/Widgets/HeaderBar.vala:171 src/Widgets/StationContextMenu.vala:171
+#, fuzzy
+msgid "Star this station"
+msgstr "Star this station"
+
+#.
+#. Create and configure play button
+#.
+#. Toggles player state
+#.
+#. RHS Controls
+#.
+#. Search entry
+#: src/Widgets/HeaderBar.vala:192
+msgid "Station Search"
+msgstr "Търсене на станции"
+
+#: src/Widgets/HeaderBar.vala:209
+msgid "Preferences"
+msgstr "Предпочитания"
+
+#: src/Widgets/HeaderBar.vala:213
+msgid "History"
+msgstr "История"
+
+#: src/Widgets/PreferencesPopover.vala:22
+msgid "About"
+msgstr "Относно"
+
+#. Voting
+#: src/Widgets/PreferencesPopover.vala:27
+#, fuzzy
+msgid "Do not participate in Station voting"
+msgstr "Do not participate in Station voting"
+
+#: src/Widgets/PreferencesPopover.vala:29
+#, fuzzy
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+
+#. Theme
+#: src/Widgets/PreferencesPopover.vala:34
+msgid "System"
+msgstr "Система"
+
+#: src/Widgets/PreferencesPopover.vala:35
+#, fuzzy
+msgid "Light mode"
+msgstr "Light mode"
+
+#: src/Widgets/PreferencesPopover.vala:36
+msgid "Dark mode"
+msgstr "Тъмен режим"
+
+#: src/Widgets/PreferencesPopover.vala:41
+msgid "Theme"
+msgstr "Theme"
+
+#. Autoplay
+#: src/Widgets/PreferencesPopover.vala:46
+#, fuzzy
+msgid "Auto-play last station on startup"
+msgstr "Auto-play last station on startup"
+
+#: src/Widgets/PreferencesPopover.vala:48
+#, fuzzy
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+
+#. Start on Starred
+#: src/Widgets/PreferencesPopover.vala:53
+#, fuzzy
+msgid "Open to Starred Stations"
+msgstr "Open to Starred Stations"
+
+#: src/Widgets/PreferencesPopover.vala:55
+#, fuzzy
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"If enabled, when Tuner starts it will open to the starred stations view"
+
+#. Play Display
+#: src/Widgets/PreferencesPopover.vala:60
+#, fuzzy
+msgid "Show stream info when playing"
+msgstr "Show stream info when playing"
+
+#: src/Widgets/PreferencesPopover.vala:62
+#, fuzzy
+msgid "Cycle through the metadata from the playing stream"
+msgstr "Cycle through the metadata from the playing stream"
+
+#: src/Widgets/PreferencesPopover.vala:65
+#, fuzzy
+msgid "Faster cycling through stream info"
+msgstr "Faster cycling through stream info"
+
+#: src/Widgets/PreferencesPopover.vala:67
+#, fuzzy
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+
+#: src/Widgets/PreferencesPopover.vala:78
+msgid "Language"
+msgstr "Език"
+
+#: src/Widgets/PreferencesPopover.vala:79
+#, fuzzy
+msgid "Language changes restart Tuner"
+msgstr "Language changes restart Tuner"
+
+#. Export starred
+#: src/Widgets/PreferencesPopover.vala:84
+#, fuzzy
+msgid "Export Starred Stations to Playlist"
+msgstr "Export Starred Stations to Playlist"
+
+#. Import starred
+#: src/Widgets/PreferencesPopover.vala:93
+#, fuzzy
+msgid "Import Station UUIDs as Starred Stations"
+msgstr "Import Station UUIDs as Starred Stations"
+
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
+msgid "Save File"
+msgstr "Save File"
+
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
+msgid "_Cancel"
+msgstr "_Отказ"
+
+#: src/Widgets/PreferencesPopover.vala:164
+msgid "_Save"
+msgstr "_Запазване"
+
+#. warning("Error: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:185
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:198
+msgid "Choose a file"
+msgstr "Избиране на файл"
+
+#: src/Widgets/PreferencesPopover.vala:202
+msgid "_Open"
+msgstr "_Отваряне"
+
+#. warning("Error reading file: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:225
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
+
+#. ----------------------------------------------
+#: src/Widgets/StationContextMenu.vala:91
+#, fuzzy
+msgid "Station info updated Online - View changes"
+msgstr "Station info updated Online - View changes"
+
+#: src/Widgets/StationContextMenu.vala:92
+#, fuzzy
+msgid "Update Station from Online"
+msgstr "Update Station from Online"
+
+#: src/Widgets/StationContextMenu.vala:100
+msgid "Visit Website"
+msgstr "Посетете сайта ни"
+
+#: src/Widgets/StationContextMenu.vala:106
+#, fuzzy
+msgid "Copy Stream-URI to clipboard"
+msgstr "Copy Stream-URI to clipboard"
+
+#. warning (@"Unable to open website: $(e.message)");
+#: src/Widgets/StationContextMenu.vala:147
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
+
+#. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+#: src/Widgets/StationContextMenu.vala:170
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
+#: src/Widgets/Window.vala:68
+msgid "Playing in background"
+msgstr "Възпроизвеждане във фонов режим"
+
+#: src/Widgets/Window.vala:69
+#, fuzzy
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+
+#: src/Widgets/Window.vala:240
+#, fuzzy
+msgid "Error while trying to autoplay, aborting…"
+msgstr "Error while trying to autoplay, aborting…"
+
+#: src/Widgets/Window.vala:284
+#, fuzzy
+msgid "Stop Playback requested"
+msgstr "Stop Playback requested"
+
+#: src/Widgets/base/StationListBox.vala:146
+#, fuzzy
+msgid "Nothing here"
+msgstr "Nothing here"
+
+#: src/Widgets/base/StationListBox.vala:146
+#, fuzzy
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "No stations found"
+msgstr "Няма открити станции."
+
+#: src/Widgets/base/StationListBox.vala:156
+#, fuzzy
+msgid "Please try a different search term."
+msgstr "Please try a different search term."
+
+#~ msgid "Default"
+#~ msgstr "Default"
+
+#, fuzzy
+#~ msgid "Requires restarting Tuner"
+#~ msgstr "Requires restarting Tuner"
 
 #, fuzzy, c-format
 #~ msgid ""

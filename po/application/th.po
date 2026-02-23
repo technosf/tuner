@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-02-03 01:06-0800\n"
-"PO-Revision-Date: 2026-02-03 23:07+0000\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"PO-Revision-Date: 2026-02-23 04:06+0000\n"
 "Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Thai <https://hosted.weblate.org/projects/tuner/tuner-ui/th/>"
 "\n"
@@ -18,107 +18,118 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
-#: src/Widgets/PreferencesPopover.vala:21
-msgid "About"
-msgstr "เกี่ยวกับ"
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
+msgid "Station no longer in the index"
+msgstr "สถานีไม่มีดัชนี"
 
-#: src/Models/StreamMetadata.vala:25
-msgid "Album"
-msgstr "อัลบั้ม"
+#: src/Models/Station.vala:355
+msgid "Changes"
+msgstr "เปลี่ยนแปลง"
 
-#: src/Models/StreamMetadata.vala:41
-msgid "Application Name"
+#: src/Models/Station.vala:356
+msgid "Stream Url"
+msgstr "สตรีม"
+
+#: src/Models/Station.vala:357
+msgid "Stream Resolved Url"
+msgstr "สตรีม แม่"
+
+#: src/Models/Station.vala:358
+msgid "Favicon address"
+msgstr "ที่อยู่อีเมล"
+
+#: src/Models/Station.vala:359
+msgid "Homepage address"
+msgstr "หน้าแรก"
+
+#: src/Models/Station.vala:360
+msgid "Station tags"
+msgstr "สถานีแท็ก"
+
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
+msgid "Bitrate"
+msgstr "บิตเรต"
+
+#: src/Models/Station.vala:362
+msgid "Codec"
+msgstr "ตัวเข้ารหัส"
+
+#. Ordered array of tags and descriptions
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
 msgstr "ชื่อ"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
 msgstr "ศิลปิน"
 
+#: src/Models/StreamMetadata.vala:25
+msgid "Album"
+msgstr "อัลบั้ม"
+
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr "รูปภาพ"
+
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr "ประเภท"
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
+msgstr "หน้าแรก"
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
+msgstr "องค์กร"
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr "ที่ตั้ง"
+
+#: src/Models/StreamMetadata.vala:31
+msgid "Extended Comment"
+msgstr "ความคิดเห็น"
+
 #: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
 msgstr "รหัสเสียง"
-
-#: src/Widgets/PreferencesPopover.vala:51
-msgid "Auto-play last station on startup"
-msgstr "สถานีอัตโนมัติเริ่มต้นในผู้เริ่มต้น"
-
-#: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
-msgid "Bitrate"
-msgstr "บิตเรต"
-
-#: src/Models/Station.vala:357
-msgid "Changes"
-msgstr "เปลี่ยนแปลง"
 
 #: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
 msgstr "โหมดช่อง"
 
-#: src/Widgets/PreferencesPopover.vala:222
-msgid "Choose a file"
-msgstr "เลือกแฟ้ม"
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr "หมายเลขแทร็ค"
 
-#: src/Widgets/Window.vala:69
-msgid ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
-msgstr "คลิกที่หน้าต่าง เพื่อหยุดหยุดหยุดและปิดหน้าต่าง."
+#: src/Models/StreamMetadata.vala:36
+msgid "Track Count"
+msgstr "ติดตาม"
 
-#: src/Models/Station.vala:364
-msgid "Codec"
-msgstr "ตัวเข้ารหัส"
+#: src/Models/StreamMetadata.vala:37
+msgid "Nominal Bitrate"
+msgstr "อัตราการไหล"
+
+#: src/Models/StreamMetadata.vala:38
+msgid "Minimum Bitrate"
+msgstr "ขั้นต่ํา"
+
+#: src/Models/StreamMetadata.vala:39
+msgid "Maximum Bitrate"
+msgstr "ความเร็วสูงสุด"
 
 #: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
 msgstr "รูปแบบคอนเทนเนอร์"
 
-#: src/Widgets/StationContextMenu.vala:104
-msgid "Copy Stream-URI to clipboard"
-msgstr "คัดลอกสตรีม"
-
-#: src/Widgets/Display.vala:247
-#, fuzzy
-msgid "Could not get random station"
-msgstr "Could not get random station"
-
-#: src/Widgets/PreferencesPopover.vala:67
-msgid "Cycle through the metadata from the playing stream"
-msgstr "รอบรอบผ่านเลือดจากการเล่น"
-
-#: src/Widgets/PreferencesPopover.vala:35
-msgid "Dark mode"
-msgstr "Dark mode"
-
-#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
-msgid "Data Provider"
-msgstr "ผู้ให้บริการ"
-
-#: src/Models/StreamMetadata.vala:44
-msgid "Date Time"
-msgstr "วัน"
-
-#: src/Widgets/PreferencesPopover.vala:77
-msgid "Default"
-msgstr "ค่าเริ่มต้น"
-
-#: src/Widgets/Display.vala:325
-msgid "Discover"
-msgstr "ค้นหา"
-
-#: src/Widgets/Display.vala:329
-msgid "Discover more stations"
-msgstr "ค้นพบสถานี"
-
-#: src/Widgets/PreferencesPopover.vala:26
-msgid "Do not participate in Station voting"
-msgstr "อย่าเข้าร่วมสถานีลงคะแนน"
-
-#: src/Widgets/Display.vala:559
-#, c-format, fuzzy
-msgid "Double click to shuffle through %1$u stations"
-msgstr "Double click to shuffle through %1$u stations"
+#: src/Models/StreamMetadata.vala:41
+msgid "Application Name"
+msgstr "ชื่อ"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
@@ -128,296 +139,69 @@ msgstr "เข้ารหัส"
 msgid "Encoder Version"
 msgstr "เวอร์ชัน"
 
-#: src/Widgets/Display.vala:104
-msgid "Eras"
-msgstr "โรค"
-
-#: src/Widgets/PreferencesPopover.vala:209
-#, fuzzy
-msgid "Error"
-msgstr "Error"
-
-#: src/Widgets/PreferencesPopover.vala:248
-#, fuzzy
-msgid "Error reading file"
-msgstr "Error reading file"
-
-#: src/Widgets/Window.vala:242
-msgid "Error while trying to autoplay, aborting…"
-msgstr "ข้อผิดพลาดในขณะที่พยายามที่จะเปิดอัตโนมัติ, ขโมย .."
-
-#: src/Widgets/Display.vala:101
-msgid "Explore"
-msgstr "สํารวจ"
-
-#: src/Widgets/PreferencesPopover.vala:97
-msgid "Export Starred Stations to Playlist"
-msgstr "สถานีส่งออกหลักเพื่อเล่น"
-
-#: src/Models/StreamMetadata.vala:31
-msgid "Extended Comment"
-msgstr "ความคิดเห็น"
-
-#: src/Widgets/PreferencesPopover.vala:72
-msgid ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
-msgstr "การหมุนอย่างรวดเร็วผ่านสถิติจากการเล่นเกมหากแสดงข้อมูล"
-
-#: src/Widgets/PreferencesPopover.vala:70
-msgid "Faster cycling through stream info"
-msgstr "การขี่จักรยานอย่างรวดเร็วผ่านข้อมูล"
-
-#: src/Models/Station.vala:360
-msgid "Favicon address"
-msgstr "ที่อยู่อีเมล"
-
-#: src/Models/StreamMetadata.vala:27
-msgid "Genre"
-msgstr "ประเภท"
-
-#: src/Widgets/Display.vala:102
-msgid "Genres"
-msgstr "ประเภท"
-
-#: src/Models/StreamMetadata.vala:46
-msgid "Has CRC"
-msgstr "มี HM"
-
-#: src/Widgets/HeaderBar.vala:212
-msgid "History"
-msgstr "ประวัติศาสตร์"
-
-#: src/Models/StreamMetadata.vala:28
-msgid "Homepage"
-msgstr "หน้าแรก"
-
-#: src/Models/Station.vala:361
-msgid "Homepage address"
-msgstr "หน้าแรก"
-
-#: src/Widgets/PreferencesPopover.vala:28
-msgid ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
-msgstr ""
-"หากตรวจสอบตําแหน่งของคุณและสตรีมสถานีจะไม่ถูกนํามาใช้เพื่อคํานวณดัชนีความนิยมและสถานียอดนิยม"
-
-#: src/Widgets/PreferencesPopover.vala:53
-msgid ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
-msgstr "หากเปิดใช้งานเมื่อ Tuner เริ่มเริ่มเล่นโดยอัตโนมัติ"
-
-#: src/Widgets/PreferencesPopover.vala:60
-msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr "หากเปิดใช้งานเมื่อโพสต์ที่เริ่มต้นจะเปิดไปที่สถานี"
-
-#: src/Models/StreamMetadata.vala:26
-msgid "Image"
-msgstr "รูปภาพ"
-
-#: src/Widgets/PreferencesPopover.vala:106
-msgid "Import Station UUIDs as Starred Stations"
-msgstr "สถานีนําเข้า UUIDs เป็นสถานีหลัก"
-
-#: src/Widgets/Display.vala:557
-msgid "Jukebox"
-msgstr "Jukebox"
-
-#: src/Widgets/PreferencesPopover.vala:87
-msgid "Language"
-msgstr "ภาษา"
-
-#: src/Widgets/Display.vala:422
-msgid "Latest Search"
-msgstr "ค้นหาล่าสุด"
-
-#: src/Widgets/Display.vala:99
-msgid "Library"
-msgstr "ห้องสมุด"
-
-#: src/Widgets/PreferencesPopover.vala:34
-msgid "Light mode"
-msgstr "โหมดแสง"
-
-#: src/Models/StreamMetadata.vala:30
-msgid "Location"
-msgstr "ที่ตั้ง"
-
-#: src/Models/StreamMetadata.vala:39
-msgid "Maximum Bitrate"
-msgstr "ความเร็วสูงสุด"
-
-#: src/Models/StreamMetadata.vala:38
-msgid "Minimum Bitrate"
-msgstr "ขั้นต่ํา"
-
-#: src/Widgets/Display.vala:362
-msgid "Most listened to Stations in the last 24 hours"
-msgstr "การเดินทางส่วนใหญ่ถึง 24 ชั่วโมง"
-
-#: src/Widgets/base/StationListBox.vala:156
-msgid "No stations found"
-msgstr "ไม่มีสถานี"
-
-#: src/Models/StreamMetadata.vala:37
-msgid "Nominal Bitrate"
-msgstr "อัตราการไหล"
-
-#: src/Widgets/base/StationListBox.vala:146
-msgid "Nothing here"
-msgstr "ไม่มีอะไรที่นี่"
-
-#: src/Widgets/PreferencesPopover.vala:58
-msgid "Open to Starred Stations"
-msgstr "เปิดสถานีหลัก"
-
-#: src/Models/StreamMetadata.vala:29
-msgid "Organization"
-msgstr "องค์กร"
-
-#: src/Widgets/Window.vala:68
-msgid "Playing in background"
-msgstr "กำลังเล่นในโหมดพื้นหลัง"
-
-#: src/Widgets/base/StationListBox.vala:156
-msgid "Please try a different search term."
-msgstr "โปรดลองคําค้นหาที่แตกต่างกัน."
-
-#: src/Widgets/Display.vala:361
-msgid "Popular"
-msgstr "ยอดนิยม"
-
-#: src/Widgets/HeaderBar.vala:208
-msgid "Preferences"
-msgstr "ตั้งความชอบ"
+#: src/Models/StreamMetadata.vala:44
+msgid "Date Time"
+msgstr "วัน"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
 msgstr "ข้อมูลส่วนตัว"
 
-#: src/Widgets/Display.vala:627
-msgid "Remove this saved search"
-msgstr "ลบการค้นหานี้"
+#: src/Models/StreamMetadata.vala:46
+msgid "Has CRC"
+msgstr "มี HM"
 
-#: src/Widgets/PreferencesPopover.vala:88
-msgid "Requires restarting Tuner"
-msgstr "ต้องเริ่มโพสต์"
+#.
+#. Display Assets
+#.
+#: src/Widgets/Display.vala:98
+msgid "Selections"
+msgstr "การเลือก"
 
-#: src/Widgets/PreferencesPopover.vala:185
-msgid "Save File"
-msgstr "บันทึกไฟล์"
-
-#: src/Widgets/Display.vala:426
-msgid "Save this search"
-msgstr "บันทึกนี้"
-
-#: src/Widgets/Display.vala:625
-msgid "Saved Search"
-msgstr "บันทึกการค้นหา"
+#: src/Widgets/Display.vala:99
+msgid "Library"
+msgstr "ห้องสมุด"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
 msgstr "บันทึกการค้นหา"
 
-#: src/Widgets/Display.vala:423
-msgid "Search Results"
-msgstr "ค้นหา"
+#: src/Widgets/Display.vala:101
+msgid "Explore"
+msgstr "สํารวจ"
 
-#: src/Widgets/Display.vala:98
-msgid "Selections"
-msgstr "การเลือก"
-
-#: src/Widgets/PreferencesPopover.vala:65
-msgid "Show stream info when playing"
-msgstr "แสดงข้อมูลเมื่อเล่น"
-
-#: src/Widgets/base/StationListBox.vala:146
-msgid ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
-msgstr "บางสิ่งที่จะโหลดสถานีวิทยุข้อมูลจากผู้ให้บริการ กรุณาลองอีกครั้ง."
-
-#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
-msgid "Star this station"
-msgstr "สถานีนี้"
-
-#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
-msgid "Starred by You"
-msgstr "วิดีโอ"
-
-#: src/Widgets/HeaderBar.vala:191
-msgid "Station Search"
-msgstr "สถานีค้นหา"
-
-#: src/Widgets/StationContextMenu.vala:89
-msgid "Station info updated Online - View changes"
-msgstr "สถานีตรวจสอบ - ดูการเปลี่ยนแปลง"
-
-#: src/Models/Station.vala:133
-msgid "Station no longer in the index"
-msgstr "สถานีไม่มีดัชนี"
-
-#: src/Models/Station.vala:362
-msgid "Station tags"
-msgstr "สถานีแท็ก"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Stations"
-msgstr "สถานี"
-
-#: src/Widgets/Display.vala:326
-msgid "Stations to Discover"
-msgstr "สถานีเพื่อค้นหา"
-
-#: src/Widgets/Window.vala:286
-msgid "Stop Playback requested"
-msgstr "หยุดเล่น"
-
-#: src/Widgets/HeaderBar.vala:62
-msgid "Stream Metadata"
-msgstr "สตรีมหน่วยความจํา"
-
-#: src/Models/Station.vala:359
-msgid "Stream Resolved Url"
-msgstr "สตรีม แม่"
-
-#: src/Models/Station.vala:358
-msgid "Stream Url"
-msgstr "สตรีม"
+#: src/Widgets/Display.vala:102
+msgid "Genres"
+msgstr "ประเภท"
 
 #: src/Widgets/Display.vala:103
 msgid "Subgenres"
 msgstr "สารย่อย"
 
-#: src/Widgets/PreferencesPopover.vala:33
-msgid "System"
-msgstr "ระบบ"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Tags"
-msgstr "แท็ก"
+#: src/Widgets/Display.vala:104
+msgid "Eras"
+msgstr "โรค"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
 msgstr "พูดคุย, ข่าว, กีฬา"
 
-#: src/Widgets/PreferencesPopover.vala:46
-msgid "Theme"
-msgstr "ธีม"
+#: src/Widgets/Display.vala:247
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Models/StreamMetadata.vala:23
-msgid "Title"
-msgstr "ชื่อ"
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr "ค้นหา"
 
-#: src/Models/StreamMetadata.vala:36
-msgid "Track Count"
-msgstr "ติดตาม"
+#: src/Widgets/Display.vala:326
+msgid "Stations to Discover"
+msgstr "สถานีเพื่อค้นหา"
 
-#: src/Models/StreamMetadata.vala:35
-msgid "Track Number"
-msgstr "หมายเลขแทร็ค"
+#: src/Widgets/Display.vala:329
+msgid "Discover more stations"
+msgstr "ค้นพบสถานี"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
@@ -427,38 +211,288 @@ msgstr "เทรนด์"
 msgid "Trending Stations in the last 24 hours"
 msgstr "สถานีเทรนด์ใน 24 ชั่วโมง"
 
-#: src/Widgets/StationContextMenu.vala:145
-#, fuzzy
-msgid "Unable to open website"
-msgstr "Unable to open website"
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr "ยอดนิยม"
 
-#: src/Widgets/StationContextMenu.vala:168
-#, fuzzy
-msgid "Unstar this station"
-msgstr "Unstar this station"
+#: src/Widgets/Display.vala:362
+msgid "Most listened to Stations in the last 24 hours"
+msgstr "การเดินทางส่วนใหญ่ถึง 24 ชั่วโมง"
 
-#: src/Widgets/StationContextMenu.vala:90
-msgid "Update Station from Online"
-msgstr "ปรับปรุงสถานีออนไลน์"
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+msgid "Starred by You"
+msgstr "วิดีโอ"
 
-#: src/Widgets/StationContextMenu.vala:98
-msgid "Visit Website"
-msgstr "เยี่ยมชมเว็บไซต์"
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr "ค้นหาล่าสุด"
 
-#: src/Widgets/PreferencesPopover.vala:188
-#: src/Widgets/PreferencesPopover.vala:225
-msgid "_Cancel"
-msgstr "_ยกเลิก"
+#: src/Widgets/Display.vala:423
+msgid "Search Results"
+msgstr "ค้นหา"
 
-#: src/Widgets/PreferencesPopover.vala:226
-msgid "_Open"
-msgstr "เ_ปิด"
+#: src/Widgets/Display.vala:426
+msgid "Save this search"
+msgstr "บันทึกนี้"
 
-#: src/Widgets/PreferencesPopover.vala:189
-msgid "_Save"
-msgstr "_บันทึก"
+#: src/Widgets/Display.vala:557
+msgid "Jukebox"
+msgstr "Jukebox"
+
+#: src/Widgets/Display.vala:559
+#, fuzzy, c-format
+msgid "Double click to shuffle through %1$u stations"
+msgstr "Double click to shuffle through %1$u stations"
 
 #: src/Widgets/Display.vala:560
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
+
+#: src/Widgets/Display.vala:625
+msgid "Saved Search"
+msgstr "บันทึกการค้นหา"
+
+#: src/Widgets/Display.vala:627
+msgid "Remove this saved search"
+msgstr "ลบการค้นหานี้"
+
+#: src/Widgets/HeaderBar.vala:62
+msgid "Stream Metadata"
+msgstr "สตรีมหน่วยความจํา"
+
+#. 20px padding on the right
+#. 20px padding on the right
+#. 20px padding on the right
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:149
+msgid "Data Provider"
+msgstr "ผู้ให้บริการ"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Stations"
+msgstr "สถานี"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Tags"
+msgstr "แท็ก"
+
+#: src/Widgets/HeaderBar.vala:171 src/Widgets/StationContextMenu.vala:171
+msgid "Star this station"
+msgstr "สถานีนี้"
+
+#.
+#. Create and configure play button
+#.
+#. Toggles player state
+#.
+#. RHS Controls
+#.
+#. Search entry
+#: src/Widgets/HeaderBar.vala:192
+msgid "Station Search"
+msgstr "สถานีค้นหา"
+
+#: src/Widgets/HeaderBar.vala:209
+msgid "Preferences"
+msgstr "ตั้งความชอบ"
+
+#: src/Widgets/HeaderBar.vala:213
+msgid "History"
+msgstr "ประวัติศาสตร์"
+
+#: src/Widgets/PreferencesPopover.vala:22
+msgid "About"
+msgstr "เกี่ยวกับ"
+
+#. Voting
+#: src/Widgets/PreferencesPopover.vala:27
+msgid "Do not participate in Station voting"
+msgstr "อย่าเข้าร่วมสถานีลงคะแนน"
+
+#: src/Widgets/PreferencesPopover.vala:29
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr "หากตรวจสอบตําแหน่งของคุณและสตรีมสถานีจะไม่ถูกนํามาใช้เพื่อคํานวณดัชนีความนิยมและสถานียอดนิยม"
+
+#. Theme
+#: src/Widgets/PreferencesPopover.vala:34
+msgid "System"
+msgstr "ระบบ"
+
+#: src/Widgets/PreferencesPopover.vala:35
+msgid "Light mode"
+msgstr "โหมดแสง"
+
+#: src/Widgets/PreferencesPopover.vala:36
+msgid "Dark mode"
+msgstr "Dark mode"
+
+#: src/Widgets/PreferencesPopover.vala:41
+msgid "Theme"
+msgstr "ธีม"
+
+#. Autoplay
+#: src/Widgets/PreferencesPopover.vala:46
+msgid "Auto-play last station on startup"
+msgstr "สถานีอัตโนมัติเริ่มต้นในผู้เริ่มต้น"
+
+#: src/Widgets/PreferencesPopover.vala:48
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr "หากเปิดใช้งานเมื่อ Tuner เริ่มเริ่มเล่นโดยอัตโนมัติ"
+
+#. Start on Starred
+#: src/Widgets/PreferencesPopover.vala:53
+msgid "Open to Starred Stations"
+msgstr "เปิดสถานีหลัก"
+
+#: src/Widgets/PreferencesPopover.vala:55
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr "หากเปิดใช้งานเมื่อโพสต์ที่เริ่มต้นจะเปิดไปที่สถานี"
+
+#. Play Display
+#: src/Widgets/PreferencesPopover.vala:60
+msgid "Show stream info when playing"
+msgstr "แสดงข้อมูลเมื่อเล่น"
+
+#: src/Widgets/PreferencesPopover.vala:62
+msgid "Cycle through the metadata from the playing stream"
+msgstr "รอบรอบผ่านเลือดจากการเล่น"
+
+#: src/Widgets/PreferencesPopover.vala:65
+msgid "Faster cycling through stream info"
+msgstr "การขี่จักรยานอย่างรวดเร็วผ่านข้อมูล"
+
+#: src/Widgets/PreferencesPopover.vala:67
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr "การหมุนอย่างรวดเร็วผ่านสถิติจากการเล่นเกมหากแสดงข้อมูล"
+
+#: src/Widgets/PreferencesPopover.vala:78
+msgid "Language"
+msgstr "ภาษา"
+
+#: src/Widgets/PreferencesPopover.vala:79
+#, fuzzy
+msgid "Language changes restart Tuner"
+msgstr "Language changes restart Tuner"
+
+#. Export starred
+#: src/Widgets/PreferencesPopover.vala:84
+msgid "Export Starred Stations to Playlist"
+msgstr "สถานีส่งออกหลักเพื่อเล่น"
+
+#. Import starred
+#: src/Widgets/PreferencesPopover.vala:93
+msgid "Import Station UUIDs as Starred Stations"
+msgstr "สถานีนําเข้า UUIDs เป็นสถานีหลัก"
+
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
+msgid "Save File"
+msgstr "บันทึกไฟล์"
+
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
+msgid "_Cancel"
+msgstr "_ยกเลิก"
+
+#: src/Widgets/PreferencesPopover.vala:164
+msgid "_Save"
+msgstr "_บันทึก"
+
+#. warning("Error: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:185
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:198
+msgid "Choose a file"
+msgstr "เลือกแฟ้ม"
+
+#: src/Widgets/PreferencesPopover.vala:202
+msgid "_Open"
+msgstr "เ_ปิด"
+
+#. warning("Error reading file: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:225
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
+
+#. ----------------------------------------------
+#: src/Widgets/StationContextMenu.vala:91
+msgid "Station info updated Online - View changes"
+msgstr "สถานีตรวจสอบ - ดูการเปลี่ยนแปลง"
+
+#: src/Widgets/StationContextMenu.vala:92
+msgid "Update Station from Online"
+msgstr "ปรับปรุงสถานีออนไลน์"
+
+#: src/Widgets/StationContextMenu.vala:100
+msgid "Visit Website"
+msgstr "เยี่ยมชมเว็บไซต์"
+
+#: src/Widgets/StationContextMenu.vala:106
+msgid "Copy Stream-URI to clipboard"
+msgstr "คัดลอกสตรีม"
+
+#. warning (@"Unable to open website: $(e.message)");
+#: src/Widgets/StationContextMenu.vala:147
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
+
+#. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+#: src/Widgets/StationContextMenu.vala:170
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
+#: src/Widgets/Window.vala:68
+msgid "Playing in background"
+msgstr "กำลังเล่นในโหมดพื้นหลัง"
+
+#: src/Widgets/Window.vala:69
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr "คลิกที่หน้าต่าง เพื่อหยุดหยุดหยุดและปิดหน้าต่าง."
+
+#: src/Widgets/Window.vala:240
+msgid "Error while trying to autoplay, aborting…"
+msgstr "ข้อผิดพลาดในขณะที่พยายามที่จะเปิดอัตโนมัติ, ขโมย .."
+
+#: src/Widgets/Window.vala:284
+msgid "Stop Playback requested"
+msgstr "หยุดเล่น"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid "Nothing here"
+msgstr "ไม่มีอะไรที่นี่"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr "บางสิ่งที่จะโหลดสถานีวิทยุข้อมูลจากผู้ให้บริการ กรุณาลองอีกครั้ง."
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "No stations found"
+msgstr "ไม่มีสถานี"
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "Please try a different search term."
+msgstr "โปรดลองคําค้นหาที่แตกต่างกัน."
+
+#~ msgid "Default"
+#~ msgstr "ค่าเริ่มต้น"
+
+#~ msgid "Requires restarting Tuner"
+#~ msgstr "ต้องเริ่มโพสต์"

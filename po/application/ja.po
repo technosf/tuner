@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-02-03 01:06-0800\n"
-"PO-Revision-Date: 2026-02-03 23:08+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"PO-Revision-Date: 2026-02-23 04:06+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ja/>\n"
 "Language: ja\n"
@@ -21,109 +21,118 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
-#: src/Widgets/PreferencesPopover.vala:21
-msgid "About"
-msgstr "について"
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
+msgid "Station no longer in the index"
+msgstr "インデックスに場所がなくなった"
 
-#: src/Models/StreamMetadata.vala:25
-msgid "Album"
-msgstr "アルバム"
+#: src/Models/Station.vala:355
+msgid "Changes"
+msgstr "変更"
 
-#: src/Models/StreamMetadata.vala:41
-msgid "Application Name"
-msgstr "アプリケーション名"
+#: src/Models/Station.vala:356
+msgid "Stream Url"
+msgstr "ストリームウルル"
+
+#: src/Models/Station.vala:357
+msgid "Stream Resolved Url"
+msgstr "ストリーム 解決 ログイン"
+
+#: src/Models/Station.vala:358
+msgid "Favicon address"
+msgstr "ファビコンアドレス"
+
+#: src/Models/Station.vala:359
+msgid "Homepage address"
+msgstr "ホームページアドレス"
+
+#: src/Models/Station.vala:360
+msgid "Station tags"
+msgstr "ステーションタグ"
+
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
+msgid "Bitrate"
+msgstr "ビットレート"
+
+#: src/Models/Station.vala:362
+msgid "Codec"
+msgstr "コーデック"
+
+#. Ordered array of tags and descriptions
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
+msgstr "ヘッダー"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
 msgstr "原画"
 
+#: src/Models/StreamMetadata.vala:25
+msgid "Album"
+msgstr "アルバム"
+
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr "画像"
+
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr "ジャンル"
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
+msgstr "ホームページ"
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
+msgstr "組織図"
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr "場所"
+
+#: src/Models/StreamMetadata.vala:31
+msgid "Extended Comment"
+msgstr "拡張コメント"
+
 #: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
 msgstr "オーディオコーデック"
-
-#: src/Widgets/PreferencesPopover.vala:51
-msgid "Auto-play last station on startup"
-msgstr "スタートアップのオートプレイ最終駅"
-
-#: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
-msgid "Bitrate"
-msgstr "ビットレート"
-
-#: src/Models/Station.vala:357
-msgid "Changes"
-msgstr "変更"
 
 #: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
 msgstr "チャネルモード"
 
-#: src/Widgets/PreferencesPopover.vala:222
-msgid "Choose a file"
-msgstr "ファイルを選択"
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr "トラックナンバー"
 
-#: src/Widgets/Window.vala:69
-msgid ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
-msgstr ""
-"ウィンドウを再開するにはここをクリックしてください。 チューナーを終了するには"
-"、再生を一時停止し、ウィンドウを閉じます."
+#: src/Models/StreamMetadata.vala:36
+msgid "Track Count"
+msgstr "トラックカウント"
 
-#: src/Models/Station.vala:364
-msgid "Codec"
-msgstr "コーデック"
+#: src/Models/StreamMetadata.vala:37
+msgid "Nominal Bitrate"
+msgstr "わずかなビットレート"
+
+#: src/Models/StreamMetadata.vala:38
+msgid "Minimum Bitrate"
+msgstr "最小ビットレート"
+
+#: src/Models/StreamMetadata.vala:39
+msgid "Maximum Bitrate"
+msgstr "最高のビットレート"
 
 #: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
 msgstr "コンテナ形式"
 
-#: src/Widgets/StationContextMenu.vala:104
-msgid "Copy Stream-URI to clipboard"
-msgstr "ストリームURIをクリップボードにコピーする"
-
-#: src/Widgets/Display.vala:247
-#, fuzzy
-msgid "Could not get random station"
-msgstr "Could not get random station"
-
-#: src/Widgets/PreferencesPopover.vala:67
-msgid "Cycle through the metadata from the playing stream"
-msgstr "再生ストリームからメタデータを介してサイクル"
-
-#: src/Widgets/PreferencesPopover.vala:35
-msgid "Dark mode"
-msgstr "ダークモード"
-
-#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
-msgid "Data Provider"
-msgstr "データプロバイダ"
-
-#: src/Models/StreamMetadata.vala:44
-msgid "Date Time"
-msgstr "日付の時間"
-
-#: src/Widgets/PreferencesPopover.vala:77
-msgid "Default"
-msgstr "デフォルト"
-
-#: src/Widgets/Display.vala:325
-msgid "Discover"
-msgstr "発見する"
-
-#: src/Widgets/Display.vala:329
-msgid "Discover more stations"
-msgstr "その他の駅を探す"
-
-#: src/Widgets/PreferencesPopover.vala:26
-msgid "Do not participate in Station voting"
-msgstr "駅の投票に参加しないでください"
-
-#: src/Widgets/Display.vala:559
-#, c-format, fuzzy
-msgid "Double click to shuffle through %1$u stations"
-msgstr "Double click to shuffle through %1$u stations"
+#: src/Models/StreamMetadata.vala:41
+msgid "Application Name"
+msgstr "アプリケーション名"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
@@ -133,305 +142,69 @@ msgstr "エンコーダ"
 msgid "Encoder Version"
 msgstr "エンコーダバージョン"
 
-#: src/Widgets/Display.vala:104
-msgid "Eras"
-msgstr "エラス"
-
-#: src/Widgets/PreferencesPopover.vala:209
-#, fuzzy
-msgid "Error"
-msgstr "Error"
-
-#: src/Widgets/PreferencesPopover.vala:248
-#, fuzzy
-msgid "Error reading file"
-msgstr "Error reading file"
-
-#: src/Widgets/Window.vala:242
-msgid "Error while trying to autoplay, aborting…"
-msgstr "自動再生しようとするとエラー, 退屈.."
-
-#: src/Widgets/Display.vala:101
-msgid "Explore"
-msgstr "探す"
-
-#: src/Widgets/PreferencesPopover.vala:97
-msgid "Export Starred Stations to Playlist"
-msgstr "プレイリストにスタードステーションをエクスポート"
-
-#: src/Models/StreamMetadata.vala:31
-msgid "Extended Comment"
-msgstr "拡張コメント"
-
-#: src/Widgets/PreferencesPopover.vala:72
-msgid ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
-msgstr ""
-"ストリーム情報が有効になっている場合、再生ストリームからメタデータを高速"
-"サイクル"
-
-#: src/Widgets/PreferencesPopover.vala:70
-msgid "Faster cycling through stream info"
-msgstr "ストリーム情報による高速サイクリング"
-
-#: src/Models/Station.vala:360
-msgid "Favicon address"
-msgstr "ファビコンアドレス"
-
-#: src/Models/StreamMetadata.vala:27
-msgid "Genre"
-msgstr "ジャンル"
-
-#: src/Widgets/Display.vala:102
-msgid "Genres"
-msgstr "ジャンル"
-
-#: src/Models/StreamMetadata.vala:46
-msgid "Has CRC"
-msgstr "CRC の"
-
-#: src/Widgets/HeaderBar.vala:212
-msgid "History"
-msgstr "履歴"
-
-#: src/Models/StreamMetadata.vala:28
-msgid "Homepage"
-msgstr "ホームページ"
-
-#: src/Models/Station.vala:361
-msgid "Homepage address"
-msgstr "ホームページアドレス"
-
-#: src/Widgets/PreferencesPopover.vala:28
-msgid ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
-msgstr ""
-"チェックすると、スタードとストリームされたステーションは、駅の人気投票を計算"
-"するために使用されません。, 人気とトレンドステーション"
-
-#: src/Widgets/PreferencesPopover.vala:53
-msgid ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
-msgstr ""
-"有効にすると、Tunerが起動すると、最後に再生されたステーションが自動的に再生さ"
-"れます"
-
-#: src/Widgets/PreferencesPopover.vala:60
-msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr ""
-"有効にすると、チューナーがスタートすると、スタードステーションビューに開きま"
-"す"
-
-#: src/Models/StreamMetadata.vala:26
-msgid "Image"
-msgstr "画像"
-
-#: src/Widgets/PreferencesPopover.vala:106
-msgid "Import Station UUIDs as Starred Stations"
-msgstr "インポートステーションUUIDをスターレッドステーションとして"
-
-#: src/Widgets/Display.vala:557
-msgid "Jukebox"
-msgstr "ジュークボックス"
-
-#: src/Widgets/PreferencesPopover.vala:87
-msgid "Language"
-msgstr "言語"
-
-#: src/Widgets/Display.vala:422
-msgid "Latest Search"
-msgstr "最新の検索"
-
-#: src/Widgets/Display.vala:99
-msgid "Library"
-msgstr "図書館"
-
-#: src/Widgets/PreferencesPopover.vala:34
-msgid "Light mode"
-msgstr "ライトモード"
-
-#: src/Models/StreamMetadata.vala:30
-msgid "Location"
-msgstr "場所"
-
-#: src/Models/StreamMetadata.vala:39
-msgid "Maximum Bitrate"
-msgstr "最高のビットレート"
-
-#: src/Models/StreamMetadata.vala:38
-msgid "Minimum Bitrate"
-msgstr "最小ビットレート"
-
-#: src/Widgets/Display.vala:362
-msgid "Most listened to Stations in the last 24 hours"
-msgstr "最後の24時間ステーションに最も耳を傾けました"
-
-#: src/Widgets/base/StationListBox.vala:156
-msgid "No stations found"
-msgstr "駅が見つかりませんでした"
-
-#: src/Models/StreamMetadata.vala:37
-msgid "Nominal Bitrate"
-msgstr "わずかなビットレート"
-
-#: src/Widgets/base/StationListBox.vala:146
-msgid "Nothing here"
-msgstr "ここには何もありません"
-
-#: src/Widgets/PreferencesPopover.vala:58
-msgid "Open to Starred Stations"
-msgstr "星付き駅にオープン"
-
-#: src/Models/StreamMetadata.vala:29
-msgid "Organization"
-msgstr "組織図"
-
-#: src/Widgets/Window.vala:68
-msgid "Playing in background"
-msgstr "バックグラウンドで再生中"
-
-#: src/Widgets/base/StationListBox.vala:156
-msgid "Please try a different search term."
-msgstr "別の検索語句をお試しください。"
-
-#: src/Widgets/Display.vala:361
-msgid "Popular"
-msgstr "人気のある"
-
-#: src/Widgets/HeaderBar.vala:208
-msgid "Preferences"
-msgstr "設定"
+#: src/Models/StreamMetadata.vala:44
+msgid "Date Time"
+msgstr "日付の時間"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
 msgstr "プライベートデータ"
 
-#: src/Widgets/Display.vala:627
-msgid "Remove this saved search"
-msgstr "保存された検索を削除"
+#: src/Models/StreamMetadata.vala:46
+msgid "Has CRC"
+msgstr "CRC の"
 
-#: src/Widgets/PreferencesPopover.vala:88
-msgid "Requires restarting Tuner"
-msgstr "チューナーを再起動する必要があります"
+#.
+#. Display Assets
+#.
+#: src/Widgets/Display.vala:98
+msgid "Selections"
+msgstr "選択肢"
 
-#: src/Widgets/PreferencesPopover.vala:185
-msgid "Save File"
-msgstr "ファイルを保存"
-
-#: src/Widgets/Display.vala:426
-msgid "Save this search"
-msgstr "この検索を保存"
-
-#: src/Widgets/Display.vala:625
-msgid "Saved Search"
-msgstr "保存検索"
+#: src/Widgets/Display.vala:99
+msgid "Library"
+msgstr "図書館"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
 msgstr "保存された検索"
 
-#: src/Widgets/Display.vala:423
-msgid "Search Results"
-msgstr "検索結果"
+#: src/Widgets/Display.vala:101
+msgid "Explore"
+msgstr "探す"
 
-#: src/Widgets/Display.vala:98
-msgid "Selections"
-msgstr "選択肢"
-
-#: src/Widgets/PreferencesPopover.vala:65
-msgid "Show stream info when playing"
-msgstr "再生するときにストリーム情報を表示する"
-
-#: src/Widgets/base/StationListBox.vala:146
-msgid ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
-msgstr ""
-"ステーションプロバイダから電波局データを誤って読み込みました。 もう一度お試し"
-"ください."
-
-#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
-msgid "Star this station"
-msgstr "この放送局をお気に入りに追加する"
-
-#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
-msgid "Starred by You"
-msgstr "あなたがスターを付けました"
-
-#: src/Widgets/HeaderBar.vala:191
-msgid "Station Search"
-msgstr "ステーション検索"
-
-#: src/Widgets/StationContextMenu.vala:89
-msgid "Station info updated Online - View changes"
-msgstr "駅情報更新 オンライン - 変更の表示"
-
-#: src/Models/Station.vala:133
-msgid "Station no longer in the index"
-msgstr "インデックスに場所がなくなった"
-
-#: src/Models/Station.vala:362
-msgid "Station tags"
-msgstr "ステーションタグ"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Stations"
-msgstr "ステーション"
-
-#: src/Widgets/Display.vala:326
-msgid "Stations to Discover"
-msgstr "発見する駅"
-
-#: src/Widgets/Window.vala:286
-msgid "Stop Playback requested"
-msgstr "プレイバック停止リクエスト"
-
-#: src/Widgets/HeaderBar.vala:62
-msgid "Stream Metadata"
-msgstr "メタデータをストリームする"
-
-#: src/Models/Station.vala:359
-msgid "Stream Resolved Url"
-msgstr "ストリーム 解決 ログイン"
-
-#: src/Models/Station.vala:358
-msgid "Stream Url"
-msgstr "ストリームウルル"
+#: src/Widgets/Display.vala:102
+msgid "Genres"
+msgstr "ジャンル"
 
 #: src/Widgets/Display.vala:103
 msgid "Subgenres"
 msgstr "サプリメント"
 
-#: src/Widgets/PreferencesPopover.vala:33
-msgid "System"
-msgstr "システム"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Tags"
-msgstr "タグ"
+#: src/Widgets/Display.vala:104
+msgid "Eras"
+msgstr "エラス"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
 msgstr "トーク、ニュース、スポーツ"
 
-#: src/Widgets/PreferencesPopover.vala:46
-msgid "Theme"
-msgstr "テーマ"
+#: src/Widgets/Display.vala:247
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Models/StreamMetadata.vala:23
-msgid "Title"
-msgstr "ヘッダー"
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr "発見する"
 
-#: src/Models/StreamMetadata.vala:36
-msgid "Track Count"
-msgstr "トラックカウント"
+#: src/Widgets/Display.vala:326
+msgid "Stations to Discover"
+msgstr "発見する駅"
 
-#: src/Models/StreamMetadata.vala:35
-msgid "Track Number"
-msgstr "トラックナンバー"
+#: src/Widgets/Display.vala:329
+msgid "Discover more stations"
+msgstr "その他の駅を探す"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
@@ -441,37 +214,299 @@ msgstr "トレンド"
 msgid "Trending Stations in the last 24 hours"
 msgstr "過去24時間のトレンドステーション"
 
-#: src/Widgets/StationContextMenu.vala:145
-#, fuzzy
-msgid "Unable to open website"
-msgstr "Unable to open website"
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr "人気のある"
 
-#: src/Widgets/StationContextMenu.vala:168
-msgid "Unstar this station"
-msgstr "このステーションのお気に入り登録を解除する"
+#: src/Widgets/Display.vala:362
+msgid "Most listened to Stations in the last 24 hours"
+msgstr "最後の24時間ステーションに最も耳を傾けました"
 
-#: src/Widgets/StationContextMenu.vala:90
-msgid "Update Station from Online"
-msgstr "オンラインからステーションを更新する"
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+msgid "Starred by You"
+msgstr "あなたがスターを付けました"
 
-#: src/Widgets/StationContextMenu.vala:98
-msgid "Visit Website"
-msgstr "ウェブサイトをご覧ください"
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr "最新の検索"
 
-#: src/Widgets/PreferencesPopover.vala:188
-#: src/Widgets/PreferencesPopover.vala:225
-msgid "_Cancel"
-msgstr "キャンセル(_C)"
+#: src/Widgets/Display.vala:423
+msgid "Search Results"
+msgstr "検索結果"
 
-#: src/Widgets/PreferencesPopover.vala:226
-msgid "_Open"
-msgstr "開く(_O)"
+#: src/Widgets/Display.vala:426
+msgid "Save this search"
+msgstr "この検索を保存"
 
-#: src/Widgets/PreferencesPopover.vala:189
-msgid "_Save"
-msgstr "保存(_S)"
+#: src/Widgets/Display.vala:557
+msgid "Jukebox"
+msgstr "ジュークボックス"
+
+#: src/Widgets/Display.vala:559
+#, fuzzy, c-format
+msgid "Double click to shuffle through %1$u stations"
+msgstr "Double click to shuffle through %1$u stations"
 
 #: src/Widgets/Display.vala:560
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
+
+#: src/Widgets/Display.vala:625
+msgid "Saved Search"
+msgstr "保存検索"
+
+#: src/Widgets/Display.vala:627
+msgid "Remove this saved search"
+msgstr "保存された検索を削除"
+
+#: src/Widgets/HeaderBar.vala:62
+msgid "Stream Metadata"
+msgstr "メタデータをストリームする"
+
+#. 20px padding on the right
+#. 20px padding on the right
+#. 20px padding on the right
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:149
+msgid "Data Provider"
+msgstr "データプロバイダ"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Stations"
+msgstr "ステーション"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Tags"
+msgstr "タグ"
+
+#: src/Widgets/HeaderBar.vala:171 src/Widgets/StationContextMenu.vala:171
+msgid "Star this station"
+msgstr "この放送局をお気に入りに追加する"
+
+#.
+#. Create and configure play button
+#.
+#. Toggles player state
+#.
+#. RHS Controls
+#.
+#. Search entry
+#: src/Widgets/HeaderBar.vala:192
+msgid "Station Search"
+msgstr "ステーション検索"
+
+#: src/Widgets/HeaderBar.vala:209
+msgid "Preferences"
+msgstr "設定"
+
+#: src/Widgets/HeaderBar.vala:213
+msgid "History"
+msgstr "履歴"
+
+#: src/Widgets/PreferencesPopover.vala:22
+msgid "About"
+msgstr "について"
+
+#. Voting
+#: src/Widgets/PreferencesPopover.vala:27
+msgid "Do not participate in Station voting"
+msgstr "駅の投票に参加しないでください"
+
+#: src/Widgets/PreferencesPopover.vala:29
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr ""
+"チェックすると、スタードとストリームされたステーションは、駅の人気投票を計算"
+"するために使用されません。, 人気とトレンドステーション"
+
+#. Theme
+#: src/Widgets/PreferencesPopover.vala:34
+msgid "System"
+msgstr "システム"
+
+#: src/Widgets/PreferencesPopover.vala:35
+msgid "Light mode"
+msgstr "ライトモード"
+
+#: src/Widgets/PreferencesPopover.vala:36
+msgid "Dark mode"
+msgstr "ダークモード"
+
+#: src/Widgets/PreferencesPopover.vala:41
+msgid "Theme"
+msgstr "テーマ"
+
+#. Autoplay
+#: src/Widgets/PreferencesPopover.vala:46
+msgid "Auto-play last station on startup"
+msgstr "スタートアップのオートプレイ最終駅"
+
+#: src/Widgets/PreferencesPopover.vala:48
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr ""
+"有効にすると、Tunerが起動すると、最後に再生されたステーションが自動的に再生さ"
+"れます"
+
+#. Start on Starred
+#: src/Widgets/PreferencesPopover.vala:53
+msgid "Open to Starred Stations"
+msgstr "星付き駅にオープン"
+
+#: src/Widgets/PreferencesPopover.vala:55
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"有効にすると、チューナーがスタートすると、スタードステーションビューに開きま"
+"す"
+
+#. Play Display
+#: src/Widgets/PreferencesPopover.vala:60
+msgid "Show stream info when playing"
+msgstr "再生するときにストリーム情報を表示する"
+
+#: src/Widgets/PreferencesPopover.vala:62
+msgid "Cycle through the metadata from the playing stream"
+msgstr "再生ストリームからメタデータを介してサイクル"
+
+#: src/Widgets/PreferencesPopover.vala:65
+msgid "Faster cycling through stream info"
+msgstr "ストリーム情報による高速サイクリング"
+
+#: src/Widgets/PreferencesPopover.vala:67
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr ""
+"ストリーム情報が有効になっている場合、再生ストリームからメタデータを高速サイ"
+"クル"
+
+#: src/Widgets/PreferencesPopover.vala:78
+msgid "Language"
+msgstr "言語"
+
+#: src/Widgets/PreferencesPopover.vala:79
+#, fuzzy
+msgid "Language changes restart Tuner"
+msgstr "Language changes restart Tuner"
+
+#. Export starred
+#: src/Widgets/PreferencesPopover.vala:84
+msgid "Export Starred Stations to Playlist"
+msgstr "プレイリストにスタードステーションをエクスポート"
+
+#. Import starred
+#: src/Widgets/PreferencesPopover.vala:93
+msgid "Import Station UUIDs as Starred Stations"
+msgstr "インポートステーションUUIDをスターレッドステーションとして"
+
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
+msgid "Save File"
+msgstr "ファイルを保存"
+
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
+msgid "_Cancel"
+msgstr "キャンセル(_C)"
+
+#: src/Widgets/PreferencesPopover.vala:164
+msgid "_Save"
+msgstr "保存(_S)"
+
+#. warning("Error: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:185
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:198
+msgid "Choose a file"
+msgstr "ファイルを選択"
+
+#: src/Widgets/PreferencesPopover.vala:202
+msgid "_Open"
+msgstr "開く(_O)"
+
+#. warning("Error reading file: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:225
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
+
+#. ----------------------------------------------
+#: src/Widgets/StationContextMenu.vala:91
+msgid "Station info updated Online - View changes"
+msgstr "駅情報更新 オンライン - 変更の表示"
+
+#: src/Widgets/StationContextMenu.vala:92
+msgid "Update Station from Online"
+msgstr "オンラインからステーションを更新する"
+
+#: src/Widgets/StationContextMenu.vala:100
+msgid "Visit Website"
+msgstr "ウェブサイトをご覧ください"
+
+#: src/Widgets/StationContextMenu.vala:106
+msgid "Copy Stream-URI to clipboard"
+msgstr "ストリームURIをクリップボードにコピーする"
+
+#. warning (@"Unable to open website: $(e.message)");
+#: src/Widgets/StationContextMenu.vala:147
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
+
+#. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+#: src/Widgets/StationContextMenu.vala:170
+msgid "Unstar this station"
+msgstr "このステーションのお気に入り登録を解除する"
+
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
+#: src/Widgets/Window.vala:68
+msgid "Playing in background"
+msgstr "バックグラウンドで再生中"
+
+#: src/Widgets/Window.vala:69
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr ""
+"ウィンドウを再開するにはここをクリックしてください。 チューナーを終了するに"
+"は、再生を一時停止し、ウィンドウを閉じます."
+
+#: src/Widgets/Window.vala:240
+msgid "Error while trying to autoplay, aborting…"
+msgstr "自動再生しようとするとエラー, 退屈.."
+
+#: src/Widgets/Window.vala:284
+msgid "Stop Playback requested"
+msgstr "プレイバック停止リクエスト"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid "Nothing here"
+msgstr "ここには何もありません"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr ""
+"ステーションプロバイダから電波局データを誤って読み込みました。 もう一度お試し"
+"ください."
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "No stations found"
+msgstr "駅が見つかりませんでした"
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "Please try a different search term."
+msgstr "別の検索語句をお試しください。"
+
+#~ msgid "Default"
+#~ msgstr "デフォルト"
+
+#~ msgid "Requires restarting Tuner"
+#~ msgstr "チューナーを再起動する必要があります"
