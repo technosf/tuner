@@ -45,7 +45,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4  
+    
+    - name: Install gettext
+      run: apt-get update && apt-get install -y gettext
 
     - name: Install gettext (for msgcat)
       run: apt-get install -y gettext
