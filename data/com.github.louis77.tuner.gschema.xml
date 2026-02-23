@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+Copyright © 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: 2026 <https://github.com/technosf>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 <schemalist>
     <schema path="/com/github/louis77/tuner/" id="com.github.louis77.tuner">
         <key name="pos-x" type="i">

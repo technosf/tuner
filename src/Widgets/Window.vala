@@ -64,7 +64,7 @@ public class Tuner.Window : Gtk.ApplicationWindow
 
     /* Private */   
 
-	private const string CSS                               = "io/github/louis77/tuner/Application.css";
+	//private const string CSS                               = "com/github/louis77/tuner/Application.css";
 	private const string NOTIFICATION_PLAYING_BACKGROUND   = _("Playing in background");
 	private const string NOTIFICATION_CLICK_RESUME         = _("Click here to resume window. To quit Tuner, pause playback and close the window.");
 	private const string NOTIFICATION_APP_RESUME_WINDOW    = "app.resume-window";
@@ -97,17 +97,6 @@ public class Tuner.Window : Gtk.ApplicationWindow
 	private signal void refresh_saved_searches_sig (bool add, string search_text);
 
 
-    //  /* Construct Static*/
-    //  static construct {
-    //      var provider = new Gtk.CssProvider ();
-    //      provider.load_from_resource (CSS);
-    //      Gtk.StyleContext.add_provider_for_screen (
-    //          Gdk.Screen.get_default (),
-    //          provider,
-    //          Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-    //      );
-    //  } // static construct
-
 
     /**
      * @brief Constructs a new Window instance.
@@ -130,6 +119,15 @@ public class Tuner.Window : Gtk.ApplicationWindow
         if ( settings.start_on_starred ) choose_starred_stations();  // Start on starred  
 
         show_all ();
+
+        Idle.add(() => {
+            settings.configure();
+            /* Start with the window invisible and fade it in so restarts
+             * have a matching fade-in to the fade-out used on shutdown. */
+            this.opacity = 0.0;
+            Tuner.fade_window.begin(this, Tuner.WINDOW_FADE_MS, true, () => { });
+            return false;
+        });
 
 		application.set_accels_for_action (ACTION_PREFIX + ACTION_PAUSE, {"<Control>5"});
 		application.set_accels_for_action (ACTION_PREFIX + ACTION_QUIT, {"<Control>q"});
@@ -239,7 +237,7 @@ public class Tuner.Window : Gtk.ApplicationWindow
                 }
             } catch (SourceError e)
             {
-                warning ("Error while trying to autoplay, aborting...");
+                warning (_("Error while trying to autoplay, aborting…"));
             }
         }
     } // add_widgets

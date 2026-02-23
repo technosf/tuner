@@ -16,7 +16,6 @@
  */
 public class Tuner.StackLabel : Gtk.Label
 {
-
 	public StackLabel (string label, int xpad = 0, int ypad = 0 )
 	{
 		Object (

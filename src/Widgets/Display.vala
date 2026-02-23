@@ -100,7 +100,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
 	private SourceList.ExpandableItem _saved_searches_category = new SourceList.ExpandableItem (_("Saved Searches"));
 	private SourceList.ExpandableItem _explore_category        = new SourceList.ExpandableItem (_("Explore"));
 	private SourceList.ExpandableItem _genres_category         = new SourceList.ExpandableItem (_("Genres"));
-	private SourceList.ExpandableItem _subgenres_category      = new SourceList.ExpandableItem (_("Sub Genres"));
+	private SourceList.ExpandableItem _subgenres_category      = new SourceList.ExpandableItem (_("Subgenres"));
 	private SourceList.ExpandableItem _eras_category           = new SourceList.ExpandableItem (_("Eras"));
 	private SourceList.ExpandableItem _talk_category           = new SourceList.ExpandableItem (_("Talk, News, Sport"));
 
@@ -244,7 +244,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
 		}
 		catch (SourceError e)
 		{
-			warning(_(@"Could not get random station: $(e.message)"));
+			warning ((_("Could not get random station") + ": %s" ).printf (e.message));    
 		}
 	} // jukebox_shuffle
 
@@ -395,8 +395,8 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
                 , "starred"
                 , "starred"
                 , _("Starred by You")
-                , _("Starred by You :")
-                ,_directory.get_starred() 
+                , _("Starred by You") + " :"
+                , _directory.get_starred() 
             );
 
             starred.badge ( @"$(starred.item_count)\t");
@@ -419,7 +419,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
         , _library_category
         , "searched"
         , "folder-saved-search"
-        , _("Recent Search")
+        , _("Latest Search")
         , _("Search Results")
         , false
         , null
@@ -556,7 +556,13 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
     {
         SourceList.Item item = new SourceList.Item(_("Jukebox"));
         item.icon = new ThemedIcon("jukebox");
-        item.tooltip = _(@"Double click to shuffle through $(app().provider.available_stations()) stations,\none, every ten minutes, for $(app().provider.available_stations()/(6*24)) days");
+        item.tooltip = (_("Double click to shuffle through %1$u stations")
+                    + "\n" + _("one, every ten minutes, for %2$u days")
+        ).printf (
+            app ().provider.available_stations (),
+            app ().provider.available_stations () / (6 * 24)
+        );
+       // item.tooltip = (_(@"Double click to shuffle through $(app().provider.available_stations()) stations,\none, every ten minutes, for $(app().provider.available_stations()/(6*24)) days"));
         item.activated.connect(() =>
         {
                 _shuffle = true;
@@ -616,7 +622,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
             , search
             , "playlist-symbolic"
             , search
-            , _(@"Saved Search :  $search")
+            , (_("Saved Search") + " :  %s").printf (search)
             , station_set
             , _("Remove this saved search")
             , "starred-symbolic"

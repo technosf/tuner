@@ -1,8 +1,17 @@
-#
-# Data meson build file
-#
-# Icons, desktop file, appdata and schema
-#
+##
+## SPDX-FileCopyrightText: Copyright © 2024 technosf <https://github.com/technosf>
+## SPDX-License-Identifier: GPL-3.0-or-later
+##
+## @file meson.build
+## @brief Data meson build file
+## 
+## This file defines how data files are handled for the project, including:
+## - installation of icons
+## - installation of the desktop file
+## - installation of the appdata file
+## - installation of the GSettings schema
+##
+
 
 #
 # Install icons
@@ -51,6 +60,8 @@ message('Installed desktop file\n')
 #
 message('Installing appdata...')
 
+i18n = import ('i18n')
+
 # Translate and install our .appdata.xml file so AppCenter will see it
 i18n.merge_file (
     input: meson.project_name () + '.appdata.xml.in',
@@ -75,7 +86,11 @@ settings_schemas = [ meson.project_name() + '.gschema.xml' ]
 
 install_data(settings_schemas, install_dir: schemas_dir)
 
-meson.add_install_script('glib-compile-schemas', schemas_dir, install_tag: 'schemas')
+meson.add_install_script (
+    'glib-compile-schemas',
+    schemas_dir,
+    install_tag: 'schemas'
+)
 
 
 message('Installed schema\n')

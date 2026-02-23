@@ -1,63 +1,44 @@
-# Packaging instructions for various platform
+<!--
+Copyright © 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
 
-## General
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
 
-### Desktop Menu
+# Packaging Tuner for Various Platforms
 
-The desktop file must be validated using this command:
+The **flathub** packaging for **Tuner** is documented in <RELEASE.md>
 
-```
-$ desktop-file-validate [name-of-desktop-file]
-```
+Other packaged versions of Tuner maybe available, but are maintained outside of Tuner itself; Versions may be out of date.
 
-### AppData
+If you are packaging **Tuner** please contribute to this page.
 
-The AppData.xml must be validated using this command:
+## Arch Linux / AUR
 
-```
-$ flatpak run org.freedesktop.appstream-glib validate [path-to-xml]
+Arch-based GNU/Linux users can find `Tuner` under the name [tuner-git](https://aur.archlinux.org/packages/tuner-git/) in the **AUR**:
 
-```
-
-### Test different languages
-
-```
-$ LANGUAGE=de_DE ./com.github.louis77.tuner
-
+```bash
+yay -S tuner-git
 ```
 
-## Flatpak
+Thanks to [@btd1377](https://github.com/btd1337) for supporting Tuner on Arch Linux!
 
-The flathub build manifest can be found here:
-https://github.com/louis77/flathub/tree/com.github.louis77.tuner
+## MX Linux
 
-- [ ] Move over to a non-elementary base image
+MX Linux users can find `Tuner` by using the MX Package Installer (currently under the MX Test Repo tab for MX-19 and the Stable Repo for MX-21)
+
+Thanks to SwampRabbit for packaging Tuner for MX Linux!
 
 ## Pacstall
 
-Tuner is in the pacstall repo with the lastest release (1.3.1):
-https://github.com/louis77/pacstall-programs
+Pacstall is a totally new package manager for Ubuntu that provides an AUR-like community-driven repo for package builds.
 
-## Dev Tricks
-
-### See Debug Log
-
-https://docs.elementary.io/develop/writing-apps/logging
+If you already use `pacstall` you can install Tuner:
 
 ```bash
-$ G_MESSAGES_DEBUG=all ./com.github.louis77.tuner
+pacstall -I tuner
 ```
 
-### Available elementary Icons
+If you have Ubuntu and want a clean build of Tuner on your system, consider using `pacstall` instead of Flatpak if you don't feat beta software. Get `pacstall` here:
 
-Use LookBook app.
-
-### Manually compile schemas
-
-```bash
-sudo /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas/
-```
-
-## Release Checklist
-
-- [ ] Create Release Tag in AppData
+<https://pacstall.dev>

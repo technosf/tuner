@@ -7,6 +7,7 @@
  * @file PreferencesPopover.vala
  */
 
+using Tuner.Model;
 
 /**
  *
@@ -15,7 +16,8 @@
 public class Tuner.PreferencesPopover : Gtk.Popover
 {
 
-	construct {
+	construct // Construct the preferences popover widget
+	{
 		var about_menuitem = new Gtk.ModelButton ();
 		about_menuitem.text        = _("About");
 		about_menuitem.action_name = Window.ACTION_PREFIX + Window.ACTION_ABOUT;
@@ -28,20 +30,14 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 
 		//Theme
-		var theme_combo = new Gtk.ComboBoxText ();
-		theme_combo.append(THEME.SYSTEM.get_name (), _("System"));
-		theme_combo.append(THEME.LIGHT.get_name (), _("Light mode"));
-		theme_combo.append(THEME.DARK.get_name (), _("Dark mode"));
-		theme_combo.halign    = Gtk.Align.CENTER;
-		theme_combo.active_id = app().settings.theme_mode;   // Initial state from settings
-
-		theme_combo.changed.connect ((elem) => {
-			apply_theme_name(elem.active_id);
-			app().settings.theme_mode = elem.active_id;
-		});
+		var theme_selector = new SelectorButton (app().lookup_action ("set-theme-name"))
+			.with_item (THEME.SYSTEM.get_name (), _("System"))
+			.with_item (THEME.LIGHT.get_name (), _("Light mode"))
+			.with_item (THEME.DARK.get_name (), _("Dark mode"))
+			.with_active_id (app().settings.theme_mode);   
 
 		var theme_box = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 3);
-		theme_box.pack_end (theme_combo, true, true, 5);
+		theme_box.pack_end (theme_selector, true, true, 5);
 		theme_box.pack_end (new Gtk.Label(_("Theme")), false, false, 12);
 
 
@@ -72,28 +68,20 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 
 		//Language
-		var lang_combo = new Gtk.ComboBoxText ();
-		lang_combo.append("", _("Default"));
-		foreach( var lang in Application.LANGUAGES)
-		{
-			lang_combo.append(lang, lang);
-		}
-		lang_combo.halign    = Gtk.Align.CENTER;
-		lang_combo.active_id = app().settings.language;   // Initial state from settings
+		var lang_selector = new SelectorButton (app().lookup_action ("set-language"))
+			.with_item("", "Default")
+			.with_items (Languages.get_language_map())
+			.with_active_id(app().settings.language);
 
 		var lang_box = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 3);
-		lang_box.pack_end (lang_combo, true, true, 5);
+		lang_box.pack_end (lang_selector, true, true, 5);
 		lang_box.pack_end (new Gtk.Label(_("Language")), false, false, 12);
-		lang_box.tooltip_text = _("Requires restarting Tuner");
-
-		lang_combo.changed.connect ((elem) => {
-			app().language = elem.active_id;
-		});
+		lang_box.tooltip_text = _("Language changes restart Tuner");
 
 
 		// Export starred
 		var export_starred = new Gtk.ModelButton ();
-		export_starred.text = _("Export Starred Sations to Playlist");
+		export_starred.text = _("Export Starred Stations to Playlist");
 		export_starred.button_press_event.connect (() =>
 		{
 			export_m3u8 ();
@@ -102,7 +90,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 		// Import starred
 		var import_starred = new Gtk.ModelButton ();
-		import_starred.text = _("Import Station UUIDs as Starred Sations");
+		import_starred.text = _("Import Station UUIDs as Starred Stations");
 		import_starred.button_press_event.connect (() =>
 		{
 			import_stationuuids ();
@@ -154,11 +142,11 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 	}     // construct
 
 
-/**
- * @brief Export Starred Stations as a m3u playlist
- *
- *
- */
+	/**
+	* @brief Export Starred Stations as a m3u playlist
+	*
+	*
+	*/
 	public void export_m3u8()
 	{
 		try
@@ -167,17 +155,15 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 			GLib.FileUtils.open_tmp ("XXXXXX.starred.m3u8", out temp_file);
 			GLib.FileUtils.set_contents(temp_file, app().stars.export_m3u8 ());
 
-			// Create the file chooser dialog for saving
+			// Create the file chooser dialog for saving the exported playlist					
 			var dialog = new Gtk.FileChooserDialog(
-				"Save File",
-				null,
-				Gtk.FileChooserAction.SAVE
-				);
-
-			// Add buttons to the dialog
-			dialog.add_button("_Cancel", Gtk.ResponseType.CANCEL);
-			dialog.add_button("_Save", Gtk.ResponseType.ACCEPT);
-
+			_("Save File"),
+			app().window,
+			Gtk.FileChooserAction.SAVE,
+			_("_Cancel"), Gtk.ResponseType.CANCEL,
+			_("_Save"), Gtk.ResponseType.ACCEPT
+			);
+			
 			// Suggest a default filename
 			dialog.set_current_name("tuner-starred.m3u8");
 
@@ -188,31 +174,34 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 				var source_file = GLib.File.new_for_path(temp_file);
 				var dest_file   = GLib.File.new_for_path(save_path);
 				source_file.copy(dest_file, GLib.FileCopyFlags.OVERWRITE); // Overwrite
-			}
+			} // if
 
 			dialog.destroy();
 
-		} catch (GLib.Error e)
+		} // try
+		catch (GLib.Error e)
 		{
-			warning("Error: $(e.message)");
-		}
+			//warning("Error: $(e.message)");
+			warning ((_("Error") + ": %s").printf (e.message));
+		} // catch
 	}     // export_m3u8
 
 
-/**
- * @brief Select and read a file for Station UUIDs to be imported as Satrred
- *
- *
- */
+	/**
+	* @brief Select and read a file for Station UUIDs to be imported as Starred
+	*
+	*
+	*/
 	public void import_stationuuids()
 	{
 		var dialog = new Gtk.FileChooserDialog(
 			_("Choose a file"),
 			app().window,
 			Gtk.FileChooserAction.OPEN,
-			"_Cancel", Gtk.ResponseType.CANCEL,
-			"_Open", Gtk.ResponseType.ACCEPT
+			_("_Cancel"), Gtk.ResponseType.CANCEL,
+			_("_Open"), Gtk.ResponseType.ACCEPT
 			);
+
 		string filepath;
 
 		if (dialog.run() == Gtk.ResponseType.ACCEPT)
@@ -221,7 +210,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 			try
 			{
-				var             file   = File.new_for_path(filepath);
+				var file   = File.new_for_path(filepath);
 				FileInputStream stream = file.read();
 
 				// Read content into a string buffer
@@ -232,12 +221,13 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 				stream.close();
 			} catch (Error e)
 			{
-				warning(@"Error reading file: $(e.message)");
+				//warning("Error reading file: $(e.message)");
+				warning ((_("Error reading file") + ": %s").printf (e.message));
 			}
 		} // if
 
 		dialog.destroy();
 
-	}     // import_stationuuids
+	} // import_stationuuids
 
-}
+} // class PreferencesPopover

@@ -1,3 +1,9 @@
+# Copyright © 2026 <https://github.com/technosf>
+# SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+
 name: CI
 
 # This workflow will run for any pull request or pushed commit
@@ -5,19 +11,22 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - '.github/**'
-      - 'docs/**'
-      - '**.md'
-      - '**.mm'
+    paths:
+      - 'src/**'
+      - '**/meson.build'
+      - '!.github/**'
+      - '!apidocs/**'
+      - '!docs/**'
+
   pull_request:
     branches:
       - main
-    paths-ignore:
-      - '.github/**'
-      - 'docs/**'
-      - '**.md'
-      - '**.mm'
+    paths:
+      - 'src/**'
+      - '**/meson.build'
+      - '!.github/**'
+      - '!apidocs/**'
+      - '!docs/**'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -49,5 +58,5 @@ jobs:
 
         # You can automatically run any of the tests you've created as part of this workflow
         run-tests: true
-        
+
         cache-key: "flatpak-builder-${{ github.sha }}"

@@ -1,22 +1,31 @@
+# Copyright © 2026 <https://github.com/technosf>
+# SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+
 name: Build and Test
 
 on:      
   push:
     branches:
       - development
-    paths-ignore:
-      - '.github/**'
-      - 'docs/**'
-      - '**.md'
-      - '**.mm'
+    paths:
+      - 'src/**'
+      - '**/meson.build'
+      - '!.github/**'
+      - '!apidocs/**'
+      - '!docs/**'
+
   pull_request:
     branches:
-      - development
-    paths-ignore:
-      - '.github/**'
-      - 'docs/**'
-      - '**.md'
-      - '**.mm'
+      - development      
+    paths:
+      - 'src/**'
+      - '**/meson.build'
+      - '!.github/**'
+      - '!apidocs/**'
+      - '!docs/**'
       
 jobs:
   flatpak:

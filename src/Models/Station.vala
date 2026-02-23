@@ -126,8 +126,6 @@ public class Tuner.Model.Station : Favicon
         }
     }
 
-
-    //  public int favicon_loaded;  // Indicates the number of times the favicon has been loaded from cache or internet
     public bool is_in_index;    // Indicates if the station is in the provider index
     public bool is_up_to_date;  // Indicates if the station is up-to-date with the provider index
     public string up_to_date_difference = _("Station no longer in the index");
@@ -354,14 +352,14 @@ public class Tuner.Model.Station : Favicon
         }
         else
         {   
-            StringBuilder sb = new StringBuilder(_("Changes:"));
-            if ( this.url != p.url) sb.append(_("\n\tStream Url"));
-            if ( this.urlResolved != p.urlResolved) sb.append(_("\n\tStream Resolved Url"));
-            if ( this.favicon != p.favicon) sb.append(_("\n\tFavicon address"));
-            if ( this.homepage != p.homepage) sb.append(_("\n\tHomepage address"));
-            if ( this.tags != p.tags) sb.append(_("\n\tStation tags"));
-            if ( this.bitrate != p.bitrate) sb.append(_("\n\tBitrate: $(this.bitrate) > $(p.bitrate)"));
-            if ( this.codec != p.codec) sb.append(_("\n\todec: $(this.codec) > $(p.codec)"));
+            StringBuilder sb = new StringBuilder(_("Changes")+":");
+            if ( this.url != p.url) sb.append("\n\t").append(_("Stream Url"));
+            if ( this.urlResolved != p.urlResolved) sb.append("\n\t").append(_("Stream Resolved Url"));
+            if ( this.favicon != p.favicon) sb.append("\n\t").append(_("Favicon address"));
+            if ( this.homepage != p.homepage) sb.append("\n\t").append(_("Homepage address"));
+            if ( this.tags != p.tags) sb.append("\n\t").append(_("Station tags"));
+            if ( this.bitrate != p.bitrate) sb.append("\n\t").append(_("Bitrate")).append(": $(this.bitrate) > $(p.bitrate)");
+            if ( this.codec != p.codec) sb.append("\n\t").append(_("Codec")).append(": $(this.codec) > $(p.codec)");
             //  if (this.changeuuid != p.changeuuid) sb.append(_("\nOther minor items have changed"));
             //  sb.append(@"\n\n stationuuid: $(p.stationuuid) - $(this.stationuuid) ");
             //  sb.append(@"\n\n changeuuid: $(p.changeuuid) - $(this.changeuuid) ");

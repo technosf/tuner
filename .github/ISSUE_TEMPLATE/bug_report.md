@@ -1,3 +1,10 @@
+<!--
+Copyright © 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 ---
 name: Bug report
 about: Create a report to help us improve

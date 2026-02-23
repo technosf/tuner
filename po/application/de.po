@@ -1,0 +1,517 @@
+# German translations for com.github.louis77.tuner package.
+# Copyright (C) 2020 THE com.github.louis77.tuner'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.louis77.tuner package.
+# Automatically generated, 2020.
+#
+# Louis Brauer <louis@openbooking.ch>, 2022.
+# J. Lavoie <j.lavoie@net-c.ca>, 2022.
+# Tobias S <tobias.schmalzried@gmx.de>, 2022.
+# uwe-ss <u.senkler@gmx.de>, 2022, 2025, 2026.
+# technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
+# "J. Lavoie" <j.lavoie@net-c.ca>, 2025, 2026.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.louis77.tuner\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"PO-Revision-Date: 2026-02-23 04:06+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/tuner/tuner-ui/"
+"de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.1-dev\n"
+
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
+msgid "Station no longer in the index"
+msgstr "Station nicht mehr im Index"
+
+#: src/Models/Station.vala:355
+msgid "Changes"
+msgstr "Änderungen"
+
+#: src/Models/Station.vala:356
+msgid "Stream Url"
+msgstr "In den Warenkorb"
+
+#: src/Models/Station.vala:357
+msgid "Stream Resolved Url"
+msgstr "Stream aufgelöst Url"
+
+#: src/Models/Station.vala:358
+msgid "Favicon address"
+msgstr "Favicon Adresse"
+
+#: src/Models/Station.vala:359
+msgid "Homepage address"
+msgstr "Homepage Adresse"
+
+#: src/Models/Station.vala:360
+msgid "Station tags"
+msgstr "Station tags"
+
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
+msgid "Bitrate"
+msgstr "Bitrate"
+
+#: src/Models/Station.vala:362
+msgid "Codec"
+msgstr "Codec"
+
+#. Ordered array of tags and descriptions
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
+msgstr "Titel"
+
+#: src/Models/StreamMetadata.vala:24
+msgid "Artist"
+msgstr "Künstler"
+
+#: src/Models/StreamMetadata.vala:25
+msgid "Album"
+msgstr "Album"
+
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr "Bild"
+
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr "Genre"
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
+msgstr "Homepage"
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
+msgstr "Organisation"
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr "Position"
+
+#: src/Models/StreamMetadata.vala:31
+msgid "Extended Comment"
+msgstr "Erweiterte Anmerkung"
+
+#: src/Models/StreamMetadata.vala:33
+msgid "Audio Codec"
+msgstr "Audio-Code"
+
+#: src/Models/StreamMetadata.vala:34
+msgid "Channel Mode"
+msgstr "Kanalmodus"
+
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr "Titelnummer"
+
+#: src/Models/StreamMetadata.vala:36
+msgid "Track Count"
+msgstr "Tracking Count"
+
+#: src/Models/StreamMetadata.vala:37
+msgid "Nominal Bitrate"
+msgstr "Nominale Bitrate"
+
+#: src/Models/StreamMetadata.vala:38
+msgid "Minimum Bitrate"
+msgstr "Mindestbitrate"
+
+#: src/Models/StreamMetadata.vala:39
+msgid "Maximum Bitrate"
+msgstr "Maximale Bitrate"
+
+#: src/Models/StreamMetadata.vala:40
+msgid "Container Format"
+msgstr "Container Format"
+
+#: src/Models/StreamMetadata.vala:41
+msgid "Application Name"
+msgstr "Anwendungsname"
+
+#: src/Models/StreamMetadata.vala:42
+msgid "Encoder"
+msgstr "Encoder"
+
+#: src/Models/StreamMetadata.vala:43
+msgid "Encoder Version"
+msgstr "Encoder Version"
+
+#: src/Models/StreamMetadata.vala:44
+msgid "Date Time"
+msgstr "Datum"
+
+#: src/Models/StreamMetadata.vala:45
+msgid "Private Data"
+msgstr "Private Daten"
+
+#: src/Models/StreamMetadata.vala:46
+msgid "Has CRC"
+msgstr "Hat CRC"
+
+#.
+#. Display Assets
+#.
+#: src/Widgets/Display.vala:98
+msgid "Selections"
+msgstr "Auswahl"
+
+#: src/Widgets/Display.vala:99
+msgid "Library"
+msgstr "Bibliothek"
+
+#: src/Widgets/Display.vala:100
+msgid "Saved Searches"
+msgstr "Gemte søgninger"
+
+#: src/Widgets/Display.vala:101
+msgid "Explore"
+msgstr "Erkunden"
+
+#: src/Widgets/Display.vala:102
+msgid "Genres"
+msgstr "Genres"
+
+#: src/Widgets/Display.vala:103
+msgid "Subgenres"
+msgstr "Subgene"
+
+#: src/Widgets/Display.vala:104
+msgid "Eras"
+msgstr "Eras"
+
+#: src/Widgets/Display.vala:105
+msgid "Talk, News, Sport"
+msgstr "Talk, Nachrichten, Sport"
+
+#: src/Widgets/Display.vala:247
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
+
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr "Entdecken"
+
+#: src/Widgets/Display.vala:326
+msgid "Stations to Discover"
+msgstr "Stationen zum Entdecken"
+
+#: src/Widgets/Display.vala:329
+msgid "Discover more stations"
+msgstr "Weitere Sender entdecken"
+
+#: src/Widgets/Display.vala:346
+msgid "Trending"
+msgstr "Im Trend"
+
+#: src/Widgets/Display.vala:347
+msgid "Trending Stations in the last 24 hours"
+msgstr "Trending Stations in den letzten 24 Stunden"
+
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr "Populär"
+
+#: src/Widgets/Display.vala:362
+msgid "Most listened to Stations in the last 24 hours"
+msgstr "Die meisten hörten Stationen in den letzten 24 Stunden"
+
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+msgid "Starred by You"
+msgstr "Favoriten"
+
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr "Letzte Suche"
+
+#: src/Widgets/Display.vala:423
+msgid "Search Results"
+msgstr "Suchergebnisse"
+
+#: src/Widgets/Display.vala:426
+msgid "Save this search"
+msgstr "Diese Suche speichern"
+
+#: src/Widgets/Display.vala:557
+msgid "Jukebox"
+msgstr "Der Präsident"
+
+#: src/Widgets/Display.vala:559
+#, fuzzy, c-format
+msgid "Double click to shuffle through %1$u stations"
+msgstr "Double click to shuffle through %1$u stations"
+
+#: src/Widgets/Display.vala:560
+#, fuzzy
+msgid "one, every ten minutes, for %2$u days"
+msgstr "one, every ten minutes, for %2$u days"
+
+#: src/Widgets/Display.vala:625
+msgid "Saved Search"
+msgstr "Gespeicherte Suche"
+
+#: src/Widgets/Display.vala:627
+msgid "Remove this saved search"
+msgstr "Diese gespeicherte Suche entfernen"
+
+#: src/Widgets/HeaderBar.vala:62
+msgid "Stream Metadata"
+msgstr "Metadaten speichern"
+
+#. 20px padding on the right
+#. 20px padding on the right
+#. 20px padding on the right
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:149
+msgid "Data Provider"
+msgstr "Datenanbieter"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Stations"
+msgstr "Stationen"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Tags"
+msgstr "Tags"
+
+#: src/Widgets/HeaderBar.vala:171 src/Widgets/StationContextMenu.vala:171
+msgid "Star this station"
+msgstr "Star dieser Station"
+
+#.
+#. Create and configure play button
+#.
+#. Toggles player state
+#.
+#. RHS Controls
+#.
+#. Search entry
+#: src/Widgets/HeaderBar.vala:192
+msgid "Station Search"
+msgstr "Stationsuchen"
+
+#: src/Widgets/HeaderBar.vala:209
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: src/Widgets/HeaderBar.vala:213
+msgid "History"
+msgstr "Verlauf"
+
+#: src/Widgets/PreferencesPopover.vala:22
+msgid "About"
+msgstr "Über"
+
+#. Voting
+#: src/Widgets/PreferencesPopover.vala:27
+msgid "Do not participate in Station voting"
+msgstr "Nicht an der Station teilnehmen"
+
+#: src/Widgets/PreferencesPopover.vala:29
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr ""
+"Wenn Sie überprüft werden, werden Ihre Stars und Streaming-Stationen nicht "
+"verwendet, um die Station Index Popularity-Abstimmung zu berechnen, noch die "
+"populären und trendigen Stationen"
+
+#. Theme
+#: src/Widgets/PreferencesPopover.vala:34
+msgid "System"
+msgstr "System"
+
+#: src/Widgets/PreferencesPopover.vala:35
+msgid "Light mode"
+msgstr "Helle Ansicht"
+
+#: src/Widgets/PreferencesPopover.vala:36
+msgid "Dark mode"
+msgstr "Dunkle Ansicht"
+
+#: src/Widgets/PreferencesPopover.vala:41
+msgid "Theme"
+msgstr "Theme"
+
+#. Autoplay
+#: src/Widgets/PreferencesPopover.vala:46
+msgid "Auto-play last station on startup"
+msgstr "Autoplay letzte Station auf Start"
+
+#: src/Widgets/PreferencesPopover.vala:48
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr ""
+"Wenn aktiviert, wenn Tuner startet, startet es automatisch die letzte "
+"gespielte Station"
+
+#. Start on Starred
+#: src/Widgets/PreferencesPopover.vala:53
+msgid "Open to Starred Stations"
+msgstr "Offen zu Starred Stationen"
+
+#: src/Widgets/PreferencesPopover.vala:55
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"Wenn aktiviert, wenn Tuner anfängt, wird es geöffnet, um die Stars zu sehen"
+
+#. Play Display
+#: src/Widgets/PreferencesPopover.vala:60
+msgid "Show stream info when playing"
+msgstr "Stream-Info anzeigen beim Spielen"
+
+#: src/Widgets/PreferencesPopover.vala:62
+msgid "Cycle through the metadata from the playing stream"
+msgstr "Radfahren durch die Metadaten aus dem Spielstrom"
+
+#: src/Widgets/PreferencesPopover.vala:65
+msgid "Faster cycling through stream info"
+msgstr "Schnelleres Radfahren durch Stream-Info"
+
+#: src/Widgets/PreferencesPopover.vala:67
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr ""
+"Schneller Zyklus durch die Metadaten aus dem Spielstrom, wenn Stream-Info "
+"aktiviert ist"
+
+#: src/Widgets/PreferencesPopover.vala:78
+msgid "Language"
+msgstr "Sprache"
+
+#: src/Widgets/PreferencesPopover.vala:79
+#, fuzzy
+msgid "Language changes restart Tuner"
+msgstr "Language changes restart Tuner"
+
+#. Export starred
+#: src/Widgets/PreferencesPopover.vala:84
+msgid "Export Starred Stations to Playlist"
+msgstr "Starred Stations nach Playlist exportieren"
+
+#. Import starred
+#: src/Widgets/PreferencesPopover.vala:93
+msgid "Import Station UUIDs as Starred Stations"
+msgstr "Import Station UUIDs als Starred Stationen"
+
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
+msgid "Save File"
+msgstr "Datei speichern"
+
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
+msgid "_Cancel"
+msgstr "_Schließen"
+
+#: src/Widgets/PreferencesPopover.vala:164
+msgid "_Save"
+msgstr "_Speichern"
+
+#. warning("Error: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:185
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:198
+msgid "Choose a file"
+msgstr "Wähle eine Datei"
+
+#: src/Widgets/PreferencesPopover.vala:202
+msgid "_Open"
+msgstr "Ö_ffnen"
+
+#. warning("Error reading file: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:225
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
+
+#. ----------------------------------------------
+#: src/Widgets/StationContextMenu.vala:91
+msgid "Station info updated Online - View changes"
+msgstr "Informationen zum Thema Online - Änderungen anzeigen"
+
+#: src/Widgets/StationContextMenu.vala:92
+msgid "Update Station from Online"
+msgstr "Update Station von Online"
+
+#: src/Widgets/StationContextMenu.vala:100
+msgid "Visit Website"
+msgstr "Besuche Webseite"
+
+#: src/Widgets/StationContextMenu.vala:106
+msgid "Copy Stream-URI to clipboard"
+msgstr "Kopieren Sie Stream-URI in die Zwischenablage"
+
+#. warning (@"Unable to open website: $(e.message)");
+#: src/Widgets/StationContextMenu.vala:147
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
+
+#. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+#: src/Widgets/StationContextMenu.vala:170
+msgid "Unstar this station"
+msgstr "Aus Favoriten entfernen"
+
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
+#: src/Widgets/Window.vala:68
+msgid "Playing in background"
+msgstr "Im Hintergrund abspielen"
+
+#: src/Widgets/Window.vala:69
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr ""
+"Klicken Sie hier, um das Fenster wieder aufzunehmen. Um Tuner zu beenden, "
+"die Wiedergabe zu stoppen und das Fenster zu schließen."
+
+#: src/Widgets/Window.vala:240
+msgid "Error while trying to autoplay, aborting…"
+msgstr "Fehler beim Autoplay, Abbrechen.."
+
+#: src/Widgets/Window.vala:284
+msgid "Stop Playback requested"
+msgstr "Zurück zur Übersicht"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid "Nothing here"
+msgstr "Hier ist nichts"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr ""
+"Etwas ging schief, Funkstationen-Daten von Stationsanbietern zu laden. Bitte "
+"versuchen Sie es später wieder."
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "No stations found"
+msgstr "Keine Sender gefunden"
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "Please try a different search term."
+msgstr "Bitte einen anderen Suchbegriff versuchen."
+
+#~ msgid "Default"
+#~ msgstr "Wert"
+
+#~ msgid "Requires restarting Tuner"
+#~ msgstr "Erfordert den Neustart von Tuner"

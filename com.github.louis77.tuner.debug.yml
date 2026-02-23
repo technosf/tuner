@@ -1,0 +1,82 @@
+# Copyright © 2026 <https://github.com/technosf>
+# SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+---
+app-id: com.github.louis77.tuner
+
+command: com.github.louis77.tuner
+
+runtime: org.freedesktop.Platform.GL.default
+runtime-version: '25.08'
+
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.vala
+
+build-options:
+  prepend-path: /usr/lib/sdk/vala/bin/
+  prepend-ld-library-path: /usr/lib/sdk/vala/lib
+
+finish-args:
+  - "--share=ipc"
+  - "--socket=fallback-x11"
+  - "--socket=wayland"
+  - "--talk-name=org.gtk.vfs.*"
+  - "--filesystem=xdg-run/gvfsd"
+  - "--filesystem=xdg-desktop"
+  - "--share=network"
+  - "--socket=pulseaudio"
+  - "--talk-name=org.freedesktop.Notifications"
+  - "--own-name=org.mpris.MediaPlayer2.Tuner"
+  - "--env=PATH=/usr/bin:/app/bin:/app/vala/bin"
+
+cleanup:
+  - "/include"
+  - "/lib/pkgconfig"
+  - "/share/pkgconfig"
+  - "/share/aclocal"
+  - "/man"
+  - "/share/man"
+  - "/share/gtk-doc"
+  - "/share/vala"
+  - "*.la"
+  - "*.a"
+
+modules:
+
+- name: libgee
+  buildsystem: autotools
+  build-options:
+    cflags: -Wno-error=incompatible-pointer-types
+  sources:
+    - type: archive
+      url: https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
+      sha256: 189815ac143d89867193b0c52b7dc31f3aa108a15f04d6b5dca2b6adfad0b0ee
+
+- name: granite
+  buildsystem: meson
+  config-opts:
+    - "--buildtype=release"    
+    - "--prefix=/app"
+    - "--libdir=lib"
+  sources:
+    - type: archive
+      url: https://github.com/elementary/granite/archive/refs/tags/6.2.0.tar.gz
+      sha256: 067d31445da9808a802fca523630c3e4b84d2d7c78ae547ced017cb7f3b9c6b5
+
+- name: tuner
+  buildsystem: meson
+  build-options:
+    cflags: "-g"
+    cxxflags: "-g"
+    buildtype: "debug"
+  config-opts:
+  - "--buildtype=debug"  
+  post-install:
+  - install -Dm644 /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.svg  -t /app/share/icons/hicolor/128x128/apps/
+  sources:
+  - type: dir
+    path: .
+

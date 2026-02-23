@@ -1,14 +1,18 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the extra package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SPDX-FileCopyrightText: Copyright © 2020-2024 Louis Brauer <louis@brauer.family>
+# SPDX-FileCopyrightText: Copyright © 2024-2026 technosf <https://github.com/technosf>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# Extra translations for Tuner, the Internet Radio Player. These are translations
+# that are not directly related to the application itself, but are used in other
+# contexts, such as packaging and indexing. 
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-08 19:20+0100\n"
+"POT-Creation-Date: 2026-01-31 02:10-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,196 +21,330 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/com.github.louis77.tuner.desktop.in:4
-#: data/com.github.louis77.tuner.appdata.xml.in:8
 msgid "Tuner"
 msgstr ""
 
-#: data/com.github.louis77.tuner.desktop.in:5
 msgid "Internet Radio Player"
 msgstr ""
 
-#: data/com.github.louis77.tuner.desktop.in:6
 msgid "Listen to Radio Stations all over the world"
 msgstr ""
 
-#: data/com.github.louis77.tuner.desktop.in:9
-msgid "com.github.louis77.tuner"
-msgstr ""
-
-#: data/com.github.louis77.tuner.desktop.in:11
 msgid "Radio;Audio;Listen;Stations;Receiver;"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:9
-msgid "Louis Brauer"
+msgid "technosf"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:11
-msgid "Discover and listen to internet radio stations"
+msgid "Internet Radio"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:14
-msgid "Make listening to internet radio stations fun again!"
+msgid "Make finding and listening to internet radio stations fun again!"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:15
 msgid ""
-"Instead of providing you with all the stations you already know, Tuner "
-"presents you a new selection of stations from all over the world every time "
-"you hit the Shuffle button."
+"Instead of showing all the stations you already know, Tuner presents you a "
+"new selection of stations from all over the world every time you hit the "
+"Shuffle button."
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:18
 msgid "Tuner uses the community-driven station catalog radio-browser.info."
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:20
 msgid "Discover new stations every day"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:21
 msgid "Star stations you like and visit their website"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:22
 msgid "Control Tuner from your volume indicator"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:64
-#: data/com.github.louis77.tuner.appdata.xml.in:95
-#: data/com.github.louis77.tuner.appdata.xml.in:116
+msgid "Tuner with dark theme, discovery"
+msgstr ""
+
+msgid "Tuner with light theme, starred stations"
+msgstr ""
+
+msgid "Tuner search for stations"
+msgstr ""
+
+msgid "Tuner saved searches"
+msgstr ""
+
+msgid "Tuner playing station metadata"
+msgstr ""
+
+msgid "Tuner preferences"
+msgstr ""
+
+msgid "Tuner station context information"
+msgstr ""
+
+msgid "Tuner jukebox station shuffle"
+msgstr ""
+
+msgid "Maintanance release:"
+msgstr ""
+
+msgid "Updated freedesktop platform from 24.08 to 25.08"
+msgstr ""
+
+msgid "Removed module vala as now included in freedesktop platform"
+msgstr ""
+
+msgid "Removed module libsoup as now included in freedesktop platform"
+msgstr ""
+
+msgid "Bumped libgee to 0.20.8"
+msgstr ""
+
+msgid "Sharpened some wording, fixed typos"
+msgstr ""
+
+msgid "Updated translated strings and incorporated fresh translations"
+msgstr ""
+
+msgid "i18n - Broke out Country translation to separate module"
+msgstr ""
+
+msgid ""
+"i18n - Added trad Chinese, Estonian, Romaian, Tamil and Latin American "
+"Spanish"
+msgstr ""
+
+msgid "New Version!"
+msgstr ""
+
+msgid "Saved Searches - new feature"
+msgstr ""
+
+msgid "Explore Genres - new feature"
+msgstr ""
+
+msgid "Jukebox Shuffle - Play Random Station - new feature"
+msgstr ""
+
+msgid "New Default Genres added"
+msgstr ""
+
+msgid "Updated look and feel"
+msgstr ""
+
+msgid "Station and Stream History - new feature"
+msgstr ""
+
+msgid "More Station and Stream Metadata - new feature"
+msgstr ""
+
+msgid "Save, import Starred Stations to playlists - new feature"
+msgstr ""
+
+msgid "Faster responsiveness and image loading"
+msgstr ""
+
+msgid "New data provider API, plus better support for Radio Browser"
+msgstr ""
+
+msgid "Refactored for separation of concerns, OO, maintainability"
+msgstr ""
+
+msgid ""
+"Renamed, updated icons, description and screenshots per Flathub quality "
+"directives"
+msgstr ""
+
+msgid "Updated HTTP Session params to improve response"
+msgstr ""
+
+msgid ""
+"Increased Search re-fire interval to reduce number of concurrent searches"
+msgstr ""
+
+msgid "Made Search asynchronous so UI remains responsive during searches"
+msgstr ""
+
+msgid "Ignore request to load failing favicons URLs"
+msgstr ""
+
+msgid "Removed org.gnome.SettingsDaemon.MediaKeys from manifest per flathub"
+msgstr ""
+
+msgid "Added API server lookup via SRV and backup via JSON, plus randomization"
+msgstr ""
+
+msgid "Added JSON validation for empty nodes"
+msgstr ""
+
+msgid "Refactored libsoup calls out to HttpClient.vala"
+msgstr ""
+
+msgid "Refactored loading of favicons to Favicon.vala"
+msgstr ""
+
+msgid ""
+"Turned off TLS checks for HTTP calls to avoid non loading of favicons with "
+"invalid certs"
+msgstr ""
+
+msgid "Upgrade to taglib 1.13.1"
+msgstr ""
+
+msgid "Corrected README (apt libs)"
+msgstr ""
+
+msgid "Upgrade to libsoup-3.0"
+msgstr ""
+
+msgid "Fix issue where radio-browser.info API did not work"
+msgstr ""
+
+msgid "Remove Geolocation service"
+msgstr ""
+
+msgid "Change flatpak runtime to lastest eOS 6.1"
+msgstr ""
+
+msgid "Change pause button to stop button"
+msgstr ""
+
 msgid "New features:"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:66
-msgid "Show the current track playing if supported by station"
+msgid ""
+"Background playback: Tuner can be closed and playback will continue. A "
+"notification provides easy access to bring the Tuner window back."
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:67
-msgid "Show Top 100 stations of user country if detectable"
-msgstr ""
-
-#: data/com.github.louis77.tuner.appdata.xml.in:68
-msgid "\"Visit Website\" link in station context menu"
-msgstr ""
-
-#: data/com.github.louis77.tuner.appdata.xml.in:70
-#: data/com.github.louis77.tuner.appdata.xml.in:82
-#: data/com.github.louis77.tuner.appdata.xml.in:101
-#: data/com.github.louis77.tuner.appdata.xml.in:123
 msgid "Other improvements:"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:72
+msgid ""
+"Dark/light mode optimized with new dropdown (use system, dark or light theme)"
+msgstr ""
+
+msgid "Dark/light mode adapts to system settings"
+msgstr ""
+
+msgid "Use elementary OS 6 flatpak runtime"
+msgstr ""
+
+msgid "Show codec and bitrate on station"
+msgstr ""
+
+msgid "New volume control"
+msgstr ""
+
+msgid "New setting: Auto-play last station"
+msgstr ""
+
+msgid "Dark mode is now saved in settings"
+msgstr ""
+
+msgid "Improved Italian translation"
+msgstr ""
+
+msgid "Properly set Window name"
+msgstr ""
+
+msgid "Added Turkish translation"
+msgstr ""
+
+msgid "Improved French translation"
+msgstr ""
+
+msgid "Minor improvements in Country name translations"
+msgstr ""
+
+msgid "Show the current track playing if supported by station"
+msgstr ""
+
+msgid "Show Top 100 stations of user country if detectable"
+msgstr ""
+
+msgid "\"Visit Website\" link in station context menu"
+msgstr ""
+
 msgid "Added Dutch translation"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:74
-#: data/com.github.louis77.tuner.appdata.xml.in:87
-#: data/com.github.louis77.tuner.appdata.xml.in:108
-#: data/com.github.louis77.tuner.appdata.xml.in:130
 msgid "Bugfixes:"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:76
-#: data/com.github.louis77.tuner.appdata.xml.in:89
 msgid "Fix missing icons for non elementary OS systems"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:84
 msgid "Add manual dark mode switch in settings"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:85
 msgid "Compact sidebar and content window"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:97
 msgid "Right-click a station to add or remove to favourites directly"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:98
 msgid ""
 "Add settings menu with \"Do-Not-Track\" option, disables sending station "
 "listening events to radio-browser.org"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:99
 msgid "Add About dialog"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:103
 msgid ""
 "If a station is already in your favourites, you'll see a little star in the "
 "title"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:104
 msgid ""
 "Randomly selects one of the available radio-browser.org servers (was always "
 "de1 before)"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:105
 msgid ""
 "Favourites are now stored in a local favourites.json file to improve app "
 "startup time"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:106
 msgid "Added Italian translation"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:110
 msgid ""
 "Fix broken dark theme support (elementary and Adwaita dark look fine now)"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:118
 msgid "Search for radio stations"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:119
 msgid "New \"Genres\" section with select popular genres"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:120
 msgid "Added French translation"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:121
 msgid "Added German translation"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:125
 msgid "Each section now displays the most-voted-for 40 stations"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:126
 msgid "Station images are now being cached"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:127
 msgid "The app icon now appears more vertically centered"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:128
 msgid "Station images are now always the same size"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:132
 msgid "Fixed a bug where starred stations appeared as unstarred"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:133
 msgid "Display a nice API error screen"
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:140
 msgid "New sidebar menu with different selections and your favourite stations."
 msgstr ""
 
-#: data/com.github.louis77.tuner.appdata.xml.in:145
 msgid "Initial release"
 msgstr ""

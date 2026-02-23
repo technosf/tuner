@@ -1,0 +1,507 @@
+# Dutch translations for com.github.louis77.tuner package.
+# Copyright (C) 2020 THE com.github.louis77.tuner'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.louis77.tuner package.
+# Automatically generated, 2020.
+#
+# technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.louis77.tuner\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"PO-Revision-Date: 2026-02-23 04:06+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/tuner/tuner-ui/nl/>"
+"\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.1-dev\n"
+
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
+msgid "Station no longer in the index"
+msgstr "Station niet langer in de index"
+
+#: src/Models/Station.vala:355
+msgid "Changes"
+msgstr "Aanpassingen"
+
+#: src/Models/Station.vala:356
+msgid "Stream Url"
+msgstr "Stream Url"
+
+#: src/Models/Station.vala:357
+msgid "Stream Resolved Url"
+msgstr "Stream Resolve Url"
+
+#: src/Models/Station.vala:358
+msgid "Favicon address"
+msgstr "Favicon adres"
+
+#: src/Models/Station.vala:359
+msgid "Homepage address"
+msgstr "Homepagina adres"
+
+#: src/Models/Station.vala:360
+msgid "Station tags"
+msgstr "Stationslabels"
+
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
+msgid "Bitrate"
+msgstr "Bitrate"
+
+#: src/Models/Station.vala:362
+msgid "Codec"
+msgstr "Codec"
+
+#. Ordered array of tags and descriptions
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
+msgstr "Titel"
+
+#: src/Models/StreamMetadata.vala:24
+msgid "Artist"
+msgstr "Artiest"
+
+#: src/Models/StreamMetadata.vala:25
+msgid "Album"
+msgstr "Album"
+
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr "Afbeelding"
+
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr "Genre"
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
+msgstr "Homepage"
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
+msgstr "Organisatie"
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr "Locatie"
+
+#: src/Models/StreamMetadata.vala:31
+msgid "Extended Comment"
+msgstr "Verlenging"
+
+#: src/Models/StreamMetadata.vala:33
+msgid "Audio Codec"
+msgstr "Audio Code"
+
+#: src/Models/StreamMetadata.vala:34
+msgid "Channel Mode"
+msgstr "Kanaalmodus"
+
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr "Tracknummer"
+
+#: src/Models/StreamMetadata.vala:36
+msgid "Track Count"
+msgstr "Track graaf"
+
+#: src/Models/StreamMetadata.vala:37
+msgid "Nominal Bitrate"
+msgstr "Nominal Bit"
+
+#: src/Models/StreamMetadata.vala:38
+msgid "Minimum Bitrate"
+msgstr "Minimum Bit"
+
+#: src/Models/StreamMetadata.vala:39
+msgid "Maximum Bitrate"
+msgstr "Maximum Bit"
+
+#: src/Models/StreamMetadata.vala:40
+msgid "Container Format"
+msgstr "Containerformaat"
+
+#: src/Models/StreamMetadata.vala:41
+msgid "Application Name"
+msgstr "Applicatie Naam"
+
+#: src/Models/StreamMetadata.vala:42
+msgid "Encoder"
+msgstr "Encoder"
+
+#: src/Models/StreamMetadata.vala:43
+msgid "Encoder Version"
+msgstr "Encoderversie"
+
+#: src/Models/StreamMetadata.vala:44
+msgid "Date Time"
+msgstr "Datum Time"
+
+#: src/Models/StreamMetadata.vala:45
+msgid "Private Data"
+msgstr "Soldaat Data"
+
+#: src/Models/StreamMetadata.vala:46
+msgid "Has CRC"
+msgstr "Heeft CRC"
+
+#.
+#. Display Assets
+#.
+#: src/Widgets/Display.vala:98
+msgid "Selections"
+msgstr "Selecties"
+
+#: src/Widgets/Display.vala:99
+msgid "Library"
+msgstr "Verzameling"
+
+#: src/Widgets/Display.vala:100
+msgid "Saved Searches"
+msgstr "Opgeslagen zoekopdrachten"
+
+#: src/Widgets/Display.vala:101
+msgid "Explore"
+msgstr "Verkennen"
+
+#: src/Widgets/Display.vala:102
+msgid "Genres"
+msgstr "Genres"
+
+#: src/Widgets/Display.vala:103
+msgid "Subgenres"
+msgstr "Subgenres"
+
+#: src/Widgets/Display.vala:104
+msgid "Eras"
+msgstr "Er"
+
+#: src/Widgets/Display.vala:105
+msgid "Talk, News, Sport"
+msgstr "Praat, News, Sport"
+
+#: src/Widgets/Display.vala:247
+msgid "Could not get random station"
+msgstr "Kon niet willekeurig station"
+
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr "Ontdekken"
+
+#: src/Widgets/Display.vala:326
+msgid "Stations to Discover"
+msgstr "Stations naar Discover"
+
+#: src/Widgets/Display.vala:329
+msgid "Discover more stations"
+msgstr "Meer radiostations tonen"
+
+#: src/Widgets/Display.vala:346
+msgid "Trending"
+msgstr "Uitgelicht"
+
+#: src/Widgets/Display.vala:347
+msgid "Trending Stations in the last 24 hours"
+msgstr "Populaire Stations in de afgelopen 24 uur"
+
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr "Populair"
+
+#: src/Widgets/Display.vala:362
+msgid "Most listened to Stations in the last 24 hours"
+msgstr "De meesten luisterden naar Stations in de afgelopen 24 uur"
+
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+msgid "Starred by You"
+msgstr "Favorieten"
+
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr "Laatste Zoekopdracht"
+
+#: src/Widgets/Display.vala:423
+msgid "Search Results"
+msgstr "Zoekresultaten"
+
+#: src/Widgets/Display.vala:426
+msgid "Save this search"
+msgstr "Red deze zoektocht"
+
+#: src/Widgets/Display.vala:557
+msgid "Jukebox"
+msgstr "Jukebox"
+
+#: src/Widgets/Display.vala:559
+#, c-format
+msgid "Double click to shuffle through %1$u stations"
+msgstr "Dubbelklik om door de %1$u-stations te bladeren"
+
+#: src/Widgets/Display.vala:560
+msgid "one, every ten minutes, for %2$u days"
+msgstr "eén, elke tien minuten, voor %2 dollar"
+
+#: src/Widgets/Display.vala:625
+msgid "Saved Search"
+msgstr "Opgeslagen zoekopdracht"
+
+#: src/Widgets/Display.vala:627
+msgid "Remove this saved search"
+msgstr "Verwijder dit gerede zoektocht"
+
+#: src/Widgets/HeaderBar.vala:62
+msgid "Stream Metadata"
+msgstr "Streammetadata"
+
+#. 20px padding on the right
+#. 20px padding on the right
+#. 20px padding on the right
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:149
+msgid "Data Provider"
+msgstr "Data Provider"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Stations"
+msgstr "Stations"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Tags"
+msgstr "Markeringen"
+
+#: src/Widgets/HeaderBar.vala:171 src/Widgets/StationContextMenu.vala:171
+msgid "Star this station"
+msgstr "Toevoegen aan favorieten"
+
+#.
+#. Create and configure play button
+#.
+#. Toggles player state
+#.
+#. RHS Controls
+#.
+#. Search entry
+#: src/Widgets/HeaderBar.vala:192
+msgid "Station Search"
+msgstr "Stations Zoeken"
+
+#: src/Widgets/HeaderBar.vala:209
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: src/Widgets/HeaderBar.vala:213
+msgid "History"
+msgstr "Geschiedenis"
+
+#: src/Widgets/PreferencesPopover.vala:22
+msgid "About"
+msgstr "Over"
+
+#. Voting
+#: src/Widgets/PreferencesPopover.vala:27
+msgid "Do not participate in Station voting"
+msgstr "Maak geen deel uit van het stemmen van de Station"
+
+#: src/Widgets/PreferencesPopover.vala:29
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr ""
+"Als het klopt, zullen je verhongerde en gestroomde stations niet gebruikt "
+"worden om de Station Index populariteitsstemming te berekenen, noch de "
+"populaire en trending stations"
+
+#. Theme
+#: src/Widgets/PreferencesPopover.vala:34
+msgid "System"
+msgstr "Systeem"
+
+#: src/Widgets/PreferencesPopover.vala:35
+msgid "Light mode"
+msgstr "Licht thema"
+
+#: src/Widgets/PreferencesPopover.vala:36
+msgid "Dark mode"
+msgstr "Donker thema"
+
+#: src/Widgets/PreferencesPopover.vala:41
+msgid "Theme"
+msgstr "Thema"
+
+#. Autoplay
+#: src/Widgets/PreferencesPopover.vala:46
+msgid "Auto-play last station on startup"
+msgstr "Autoplay laatste station opstart"
+
+#: src/Widgets/PreferencesPopover.vala:48
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr ""
+"Als het goedgekeurd is, wanneer Tuner begint, zal het automatisch het "
+"laatste speelstation spelen"
+
+#. Start on Starred
+#: src/Widgets/PreferencesPopover.vala:53
+msgid "Open to Starred Stations"
+msgstr "Open voor Starred Stations"
+
+#: src/Widgets/PreferencesPopover.vala:55
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"Als het goedgekeurd is, wanneer Tuner begint, zal het openen voor de "
+"uitgehongerde stations"
+
+#. Play Display
+#: src/Widgets/PreferencesPopover.vala:60
+msgid "Show stream info when playing"
+msgstr "Showstream info als je speelt"
+
+#: src/Widgets/PreferencesPopover.vala:62
+msgid "Cycle through the metadata from the playing stream"
+msgstr "Cycle door de metadata van de speelbaan"
+
+#: src/Widgets/PreferencesPopover.vala:65
+msgid "Faster cycling through stream info"
+msgstr "Sneller door de streaminformatie bladeren"
+
+#: src/Widgets/PreferencesPopover.vala:67
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr ""
+"Fast cyclus door de metadata van de speelstroom als de info in staat is"
+
+#: src/Widgets/PreferencesPopover.vala:78
+msgid "Language"
+msgstr "Taal"
+
+#: src/Widgets/PreferencesPopover.vala:79
+#, fuzzy
+msgid "Language changes restart Tuner"
+msgstr "Language changes restart Tuner"
+
+#. Export starred
+#: src/Widgets/PreferencesPopover.vala:84
+msgid "Export Starred Stations to Playlist"
+msgstr "Exporteer favoriete stations naar afspeellijst"
+
+#. Import starred
+#: src/Widgets/PreferencesPopover.vala:93
+msgid "Import Station UUIDs as Starred Stations"
+msgstr "Import Station UUIDS als Starred Station"
+
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
+msgid "Save File"
+msgstr "Bestand opslaan"
+
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
+msgid "_Cancel"
+msgstr "_Annuleren"
+
+#: src/Widgets/PreferencesPopover.vala:164
+msgid "_Save"
+msgstr "Op_slaan"
+
+#. warning("Error: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:185
+msgid "Error"
+msgstr "Fout"
+
+#: src/Widgets/PreferencesPopover.vala:198
+msgid "Choose a file"
+msgstr "Kies een bestand"
+
+#: src/Widgets/PreferencesPopover.vala:202
+msgid "_Open"
+msgstr "_Open"
+
+#. warning("Error reading file: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:225
+msgid "Error reading file"
+msgstr "Fout bij het lezen van bestand"
+
+#. ----------------------------------------------
+#: src/Widgets/StationContextMenu.vala:91
+msgid "Station info updated Online - View changes"
+msgstr "Station info geüpload Online"
+
+#: src/Widgets/StationContextMenu.vala:92
+msgid "Update Station from Online"
+msgstr "Update Station"
+
+#: src/Widgets/StationContextMenu.vala:100
+msgid "Visit Website"
+msgstr "Website openen"
+
+#: src/Widgets/StationContextMenu.vala:106
+msgid "Copy Stream-URI to clipboard"
+msgstr "Begrepen"
+
+#. warning (@"Unable to open website: $(e.message)");
+#: src/Widgets/StationContextMenu.vala:147
+msgid "Unable to open website"
+msgstr "Niet in staat om website te openen"
+
+#. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+#: src/Widgets/StationContextMenu.vala:170
+msgid "Unstar this station"
+msgstr "Verwijderen uit favorieten"
+
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
+#: src/Widgets/Window.vala:68
+msgid "Playing in background"
+msgstr "Speelt af op achtergrond"
+
+#: src/Widgets/Window.vala:69
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr ""
+"Klik hier om het raam te hervatten. Om Tuner te stoppen, een pauze en het "
+"raam dicht te doen."
+
+#: src/Widgets/Window.vala:240
+msgid "Error while trying to autoplay, aborting…"
+msgstr "Fout tijdens het automatisch afspelen, programma wordt afgebroken…"
+
+#: src/Widgets/Window.vala:284
+msgid "Stop Playback requested"
+msgstr "Stop Playback verzoekt"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid "Nothing here"
+msgstr "Er is hier niks"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr ""
+"Er ging iets mis met het laden van radiostations data van station provider. "
+"Probeer het later nog eens."
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "No stations found"
+msgstr "Geen radiostations gevonden"
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "Please try a different search term."
+msgstr "Probeer een andere zoekopdracht."
+
+#~ msgid "Default"
+#~ msgstr "Standaard"
+
+#~ msgid "Requires restarting Tuner"
+#~ msgstr "Requires herstart Tuner"
