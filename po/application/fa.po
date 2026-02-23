@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-02-03 01:06-0800\n"
-"PO-Revision-Date: 2026-02-17 21:09+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"PO-Revision-Date: 2026-02-23 04:06+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "fa/>\n"
 "Language: fa\n"
@@ -20,107 +20,116 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.16.1-dev\n"
 
-#: src/Widgets/PreferencesPopover.vala:21
-msgid "About"
-msgstr "درباره‌ی Psiphon"
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
+msgid "Station no longer in the index"
+msgstr "ایستگاه دیگر در شاخص"
 
-#: src/Models/StreamMetadata.vala:25
-msgid "Album"
-msgstr "آلبوم"
+#: src/Models/Station.vala:355
+msgid "Changes"
+msgstr "تغییرات"
 
-#: src/Models/StreamMetadata.vala:41
-msgid "Application Name"
-msgstr "نام کاربری"
+#: src/Models/Station.vala:356
+msgid "Stream Url"
+msgstr "جریان Url"
+
+#: src/Models/Station.vala:357
+msgid "Stream Resolved Url"
+msgstr "جریان حل شده Url"
+
+#: src/Models/Station.vala:358
+msgid "Favicon address"
+msgstr "آدرس Favicon"
+
+#: src/Models/Station.vala:359
+msgid "Homepage address"
+msgstr "آدرس صفحه اصلی"
+
+#: src/Models/Station.vala:360
+msgid "Station tags"
+msgstr "برچسب های ایستگاه"
+
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
+msgid "Bitrate"
+msgstr "بیت کردن"
+
+#: src/Models/Station.vala:362
+msgid "Codec"
+msgstr "کدک"
+
+#. Ordered array of tags and descriptions
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
+msgstr "عنوان"
 
 #: src/Models/StreamMetadata.vala:24
 msgid "Artist"
 msgstr "هنرمند"
 
+#: src/Models/StreamMetadata.vala:25
+msgid "Album"
+msgstr "آلبوم"
+
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr "تصویر"
+
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr "ژانر"
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
+msgstr "صفحه اصلی"
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
+msgstr "سازمان"
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr "محل"
+
+#: src/Models/StreamMetadata.vala:31
+msgid "Extended Comment"
+msgstr "توضیحات گسترده"
+
 #: src/Models/StreamMetadata.vala:33
 msgid "Audio Codec"
 msgstr "Audio Codec"
-
-#: src/Widgets/PreferencesPopover.vala:51
-msgid "Auto-play last station on startup"
-msgstr "آخرین ایستگاه Auto-play در استارت آپ"
-
-#: src/Models/Station.vala:363 src/Models/StreamMetadata.vala:32
-msgid "Bitrate"
-msgstr "بیت کردن"
-
-#: src/Models/Station.vala:357
-msgid "Changes"
-msgstr "تغییرات"
 
 #: src/Models/StreamMetadata.vala:34
 msgid "Channel Mode"
 msgstr "کانال Mode"
 
-#: src/Widgets/PreferencesPopover.vala:222
-msgid "Choose a file"
-msgstr "انتخاب یک فایل"
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr "شماره‌ی شیار"
 
-#: src/Widgets/Window.vala:69
-msgid ""
-"Click here to resume window. To quit Tuner, pause playback and close the "
-"window."
-msgstr ""
-"اینجا کلیک کنید تا پنجره را از سر بگیرید. برای ترک تونس، پخش مکث و بستن "
-"پنجره."
+#: src/Models/StreamMetadata.vala:36
+msgid "Track Count"
+msgstr "دانلود آهنگ زیبای Count"
 
-#: src/Models/Station.vala:364
-msgid "Codec"
-msgstr "کدک"
+#: src/Models/StreamMetadata.vala:37
+msgid "Nominal Bitrate"
+msgstr "نام تجاری Bitrate"
+
+#: src/Models/StreamMetadata.vala:38
+msgid "Minimum Bitrate"
+msgstr "حداقل Bitrate"
+
+#: src/Models/StreamMetadata.vala:39
+msgid "Maximum Bitrate"
+msgstr "حداکثر Bitrate"
 
 #: src/Models/StreamMetadata.vala:40
 msgid "Container Format"
 msgstr "Container Format"
 
-#: src/Widgets/StationContextMenu.vala:104
-msgid "Copy Stream-URI to clipboard"
-msgstr "Copy Stream-URI to Clipboard"
-
-#: src/Widgets/Display.vala:247
-#, fuzzy
-msgid "Could not get random station"
-msgstr "Could not get random station"
-
-#: src/Widgets/PreferencesPopover.vala:67
-msgid "Cycle through the metadata from the playing stream"
-msgstr "چرخه از طریق متاداده از جریان بازی"
-
-#: src/Widgets/PreferencesPopover.vala:35
-msgid "Dark mode"
-msgstr "Dark mode"
-
-#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:148
-msgid "Data Provider"
-msgstr "Data Provider"
-
-#: src/Models/StreamMetadata.vala:44
-msgid "Date Time"
-msgstr "تاریخ زمان"
-
-#: src/Widgets/PreferencesPopover.vala:77
-msgid "Default"
-msgstr "Default"
-
-#: src/Widgets/Display.vala:325
-msgid "Discover"
-msgstr "کشف"
-
-#: src/Widgets/Display.vala:329
-msgid "Discover more stations"
-msgstr "کشف ایستگاه های بیشتر"
-
-#: src/Widgets/PreferencesPopover.vala:26
-msgid "Do not participate in Station voting"
-msgstr "در رای گیری ایستگاه شرکت نکنید"
-
-#: src/Widgets/Display.vala:559
-#, c-format, fuzzy
-msgid "Double click to shuffle through %1$u stations"
-msgstr "Double click to shuffle through %1$u stations"
+#: src/Models/StreamMetadata.vala:41
+msgid "Application Name"
+msgstr "نام کاربری"
 
 #: src/Models/StreamMetadata.vala:42
 msgid "Encoder"
@@ -130,302 +139,69 @@ msgstr "نرم افزار"
 msgid "Encoder Version"
 msgstr "نسخه های Dynamic"
 
-#: src/Widgets/Display.vala:104
-msgid "Eras"
-msgstr "دوران‌ها"
-
-#: src/Widgets/PreferencesPopover.vala:209
-#, fuzzy
-msgid "Error"
-msgstr "Error"
-
-#: src/Widgets/PreferencesPopover.vala:248
-#, fuzzy
-msgid "Error reading file"
-msgstr "Error reading file"
-
-#: src/Widgets/Window.vala:242
-msgid "Error while trying to autoplay, aborting…"
-msgstr "خطا در هنگام تلاش برای بازی خودکار، سقط .."
-
-#: src/Widgets/Display.vala:101
-msgid "Explore"
-msgstr "بررسی کنید"
-
-#: src/Widgets/PreferencesPopover.vala:97
-msgid "Export Starred Stations to Playlist"
-msgstr "ایستگاه های Starred برای Playlist"
-
-#: src/Models/StreamMetadata.vala:31
-msgid "Extended Comment"
-msgstr "توضیحات گسترده"
-
-#: src/Widgets/PreferencesPopover.vala:72
-msgid ""
-"Fast cycle through the metadata from the playing stream if show stream info "
-"is enabled"
-msgstr "چرخه سریع از طریق متاداده از جریان بازی اگر نمایش داده می شود"
-
-#: src/Widgets/PreferencesPopover.vala:70
-msgid "Faster cycling through stream info"
-msgstr "سریع تر دوچرخه سواری از طریق جریان اطلاعات"
-
-#: src/Models/Station.vala:360
-msgid "Favicon address"
-msgstr "آدرس Favicon"
-
-#: src/Models/StreamMetadata.vala:27
-msgid "Genre"
-msgstr "ژانر"
-
-#: src/Widgets/Display.vala:102
-msgid "Genres"
-msgstr "ژانرها"
-
-#: src/Models/StreamMetadata.vala:46
-msgid "Has CRC"
-msgstr "صلیب سرخ"
-
-#: src/Widgets/HeaderBar.vala:212
-msgid "History"
-msgstr "تاریخ"
-
-#: src/Models/StreamMetadata.vala:28
-msgid "Homepage"
-msgstr "صفحه اصلی"
-
-#: src/Models/Station.vala:361
-msgid "Homepage address"
-msgstr "آدرس صفحه اصلی"
-
-#: src/Widgets/PreferencesPopover.vala:28
-msgid ""
-"If checked, your starred and streamed stations will not be used to calculate "
-"the Station index popularity vote, nor the popular and trending stations"
-msgstr ""
-"اگر بررسی شود، ایستگاه های ستاره دار و جریانی شما برای محاسبه رای گیری شاخص "
-"ایستگاه و نه ایستگاه های محبوب و مرسوم استفاده نخواهد شد"
-
-#: src/Widgets/PreferencesPopover.vala:53
-msgid ""
-"If enabled, when Tuner starts it will automatically start to play the last "
-"played station"
-msgstr ""
-"اگر فعال شود، زمانی که Tuner شروع به کار کند، به طور خودکار شروع به بازی "
-"آخرین ایستگاه بازی خواهد کرد"
-
-#: src/Widgets/PreferencesPopover.vala:60
-msgid "If enabled, when Tuner starts it will open to the starred stations view"
-msgstr ""
-"اگر فعال شود، هنگامی که Tuner شروع به باز شدن به ایستگاه های ستاره دار می کند"
-
-#: src/Models/StreamMetadata.vala:26
-msgid "Image"
-msgstr "تصویر"
-
-#: src/Widgets/PreferencesPopover.vala:106
-msgid "Import Station UUIDs as Starred Stations"
-msgstr "ایستگاه واردات UUID به عنوان ایستگاه های Starred"
-
-#: src/Widgets/Display.vala:557
-msgid "Jukebox"
-msgstr "خرید پستی"
-
-#: src/Widgets/PreferencesPopover.vala:87
-msgid "Language"
-msgstr "زبان"
-
-#: src/Widgets/Display.vala:422
-msgid "Latest Search"
-msgstr "آخرین جستجو"
-
-#: src/Widgets/Display.vala:99
-msgid "Library"
-msgstr "کتابخانه"
-
-#: src/Widgets/PreferencesPopover.vala:34
-msgid "Light mode"
-msgstr "حالت نور"
-
-#: src/Models/StreamMetadata.vala:30
-msgid "Location"
-msgstr "محل"
-
-#: src/Models/StreamMetadata.vala:39
-msgid "Maximum Bitrate"
-msgstr "حداکثر Bitrate"
-
-#: src/Models/StreamMetadata.vala:38
-msgid "Minimum Bitrate"
-msgstr "حداقل Bitrate"
-
-#: src/Widgets/Display.vala:362
-msgid "Most listened to Stations in the last 24 hours"
-msgstr "بیشتر آنها در 24 ساعت گذشته به ایستگاه ها گوش دادند"
-
-#: src/Widgets/base/StationListBox.vala:156
-msgid "No stations found"
-msgstr "هیچ ایستگاهی پیدا نشد"
-
-#: src/Models/StreamMetadata.vala:37
-msgid "Nominal Bitrate"
-msgstr "نام تجاری Bitrate"
-
-#: src/Widgets/base/StationListBox.vala:146
-msgid "Nothing here"
-msgstr "هیچ چیز در اینجا"
-
-#: src/Widgets/PreferencesPopover.vala:58
-msgid "Open to Starred Stations"
-msgstr "ایستگاه های Starred"
-
-#: src/Models/StreamMetadata.vala:29
-msgid "Organization"
-msgstr "سازمان"
-
-#: src/Widgets/Window.vala:68
-msgid "Playing in background"
-msgstr "در حال پخش در پس‌زمینه"
-
-#: src/Widgets/base/StationListBox.vala:156
-msgid "Please try a different search term."
-msgstr "لطفا یک عبارت جستجوی مختلف را امتحان کنید."
-
-#: src/Widgets/Display.vala:361
-msgid "Popular"
-msgstr "محبوب"
-
-#: src/Widgets/HeaderBar.vala:208
-msgid "Preferences"
-msgstr "ترجیحات"
+#: src/Models/StreamMetadata.vala:44
+msgid "Date Time"
+msgstr "تاریخ زمان"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Private Data"
 msgstr "داده های خصوصی"
 
-#: src/Widgets/Display.vala:627
-msgid "Remove this saved search"
-msgstr "حذف این جستجو نجات یافته"
+#: src/Models/StreamMetadata.vala:46
+msgid "Has CRC"
+msgstr "صلیب سرخ"
 
-#: src/Widgets/PreferencesPopover.vala:88
-msgid "Requires restarting Tuner"
-msgstr "دانلود آهنگ Restarting Tuner"
+#.
+#. Display Assets
+#.
+#: src/Widgets/Display.vala:98
+msgid "Selections"
+msgstr "انتخاب"
 
-#: src/Widgets/PreferencesPopover.vala:185
-msgid "Save File"
-msgstr "Save File"
-
-#: src/Widgets/Display.vala:426
-msgid "Save this search"
-msgstr "نجات این جستجو"
-
-#: src/Widgets/Display.vala:625
-msgid "Saved Search"
-msgstr "جستجوی ذخیره شده"
+#: src/Widgets/Display.vala:99
+msgid "Library"
+msgstr "کتابخانه"
 
 #: src/Widgets/Display.vala:100
 msgid "Saved Searches"
 msgstr "جستجوهای ذخیره شده"
 
-#: src/Widgets/Display.vala:423
-msgid "Search Results"
-msgstr "نتایج جستجو"
+#: src/Widgets/Display.vala:101
+msgid "Explore"
+msgstr "بررسی کنید"
 
-#: src/Widgets/Display.vala:98
-msgid "Selections"
-msgstr "انتخاب"
-
-#: src/Widgets/PreferencesPopover.vala:65
-msgid "Show stream info when playing"
-msgstr "نمایش اطلاعات جریان هنگام بازی"
-
-#: src/Widgets/base/StationListBox.vala:146
-msgid ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
-msgstr ""
-"چیزی که داده های ایستگاه های رادیویی را از ارائه دهنده ایستگاه به اشتباه "
-"بارگیری کرد. لطفا دوباره امتحان کنید."
-
-#: src/Widgets/HeaderBar.vala:170 src/Widgets/StationContextMenu.vala:169
-msgid "Star this station"
-msgstr "ستاره این ایستگاه"
-
-#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
-msgid "Starred by You"
-msgstr "ستاره ای از تو"
-
-#: src/Widgets/HeaderBar.vala:191
-msgid "Station Search"
-msgstr "ایستگاه جستجو"
-
-#: src/Widgets/StationContextMenu.vala:89
-msgid "Station info updated Online - View changes"
-msgstr "اطلاعات ایستگاه به روز شده آنلاین - تغییرات مشاهده"
-
-#: src/Models/Station.vala:133
-msgid "Station no longer in the index"
-msgstr "ایستگاه دیگر در شاخص"
-
-#: src/Models/Station.vala:362
-msgid "Station tags"
-msgstr "برچسب های ایستگاه"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Stations"
-msgstr "ایستگاه ها"
-
-#: src/Widgets/Display.vala:326
-msgid "Stations to Discover"
-msgstr "ایستگاه ها برای کشف"
-
-#: src/Widgets/Window.vala:286
-msgid "Stop Playback requested"
-msgstr "درخواست توقف Playback"
-
-#: src/Widgets/HeaderBar.vala:62
-msgid "Stream Metadata"
-msgstr "فراداده جریان"
-
-#: src/Models/Station.vala:359
-msgid "Stream Resolved Url"
-msgstr "جریان حل شده Url"
-
-#: src/Models/Station.vala:358
-msgid "Stream Url"
-msgstr "جریان Url"
+#: src/Widgets/Display.vala:102
+msgid "Genres"
+msgstr "ژانرها"
 
 #: src/Widgets/Display.vala:103
 msgid "Subgenres"
 msgstr "Subgenre"
 
-#: src/Widgets/PreferencesPopover.vala:33
-msgid "System"
-msgstr "سیستم"
-
-#: src/Widgets/HeaderBar.vala:148
-msgid "Tags"
-msgstr "برچسب ها"
+#: src/Widgets/Display.vala:104
+msgid "Eras"
+msgstr "دوران‌ها"
 
 #: src/Widgets/Display.vala:105
 msgid "Talk, News, Sport"
 msgstr "گفتگو، اخبار، ورزش"
 
-#: src/Widgets/PreferencesPopover.vala:46
-msgid "Theme"
-msgstr "پوسته"
+#: src/Widgets/Display.vala:247
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
 
-#: src/Models/StreamMetadata.vala:23
-msgid "Title"
-msgstr "عنوان"
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr "کشف"
 
-#: src/Models/StreamMetadata.vala:36
-msgid "Track Count"
-msgstr "دانلود آهنگ زیبای Count"
+#: src/Widgets/Display.vala:326
+msgid "Stations to Discover"
+msgstr "ایستگاه ها برای کشف"
 
-#: src/Models/StreamMetadata.vala:35
-msgid "Track Number"
-msgstr "شماره‌ی شیار"
+#: src/Widgets/Display.vala:329
+msgid "Discover more stations"
+msgstr "کشف ایستگاه های بیشتر"
 
 #: src/Widgets/Display.vala:346
 msgid "Trending"
@@ -435,38 +211,297 @@ msgstr "روندها"
 msgid "Trending Stations in the last 24 hours"
 msgstr "ایستگاه های روندینگ در 24 ساعت گذشته"
 
-#: src/Widgets/StationContextMenu.vala:145
-#, fuzzy
-msgid "Unable to open website"
-msgstr "Unable to open website"
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr "محبوب"
 
-#: src/Widgets/StationContextMenu.vala:168
-#, fuzzy
-msgid "Unstar this station"
-msgstr "Unstar this station"
+#: src/Widgets/Display.vala:362
+msgid "Most listened to Stations in the last 24 hours"
+msgstr "بیشتر آنها در 24 ساعت گذشته به ایستگاه ها گوش دادند"
 
-#: src/Widgets/StationContextMenu.vala:90
-msgid "Update Station from Online"
-msgstr "ایستگاه به روز رسانی آنلاین"
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+msgid "Starred by You"
+msgstr "ستاره ای از تو"
 
-#: src/Widgets/StationContextMenu.vala:98
-msgid "Visit Website"
-msgstr "دیدن وبسایت"
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr "آخرین جستجو"
 
-#: src/Widgets/PreferencesPopover.vala:188
-#: src/Widgets/PreferencesPopover.vala:225
-msgid "_Cancel"
-msgstr "_لغو"
+#: src/Widgets/Display.vala:423
+msgid "Search Results"
+msgstr "نتایج جستجو"
 
-#: src/Widgets/PreferencesPopover.vala:226
-msgid "_Open"
-msgstr "_باز کردن"
+#: src/Widgets/Display.vala:426
+msgid "Save this search"
+msgstr "نجات این جستجو"
 
-#: src/Widgets/PreferencesPopover.vala:189
-msgid "_Save"
-msgstr "_ذخیره"
+#: src/Widgets/Display.vala:557
+msgid "Jukebox"
+msgstr "خرید پستی"
+
+#: src/Widgets/Display.vala:559
+#, fuzzy, c-format
+msgid "Double click to shuffle through %1$u stations"
+msgstr "Double click to shuffle through %1$u stations"
 
 #: src/Widgets/Display.vala:560
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
+
+#: src/Widgets/Display.vala:625
+msgid "Saved Search"
+msgstr "جستجوی ذخیره شده"
+
+#: src/Widgets/Display.vala:627
+msgid "Remove this saved search"
+msgstr "حذف این جستجو نجات یافته"
+
+#: src/Widgets/HeaderBar.vala:62
+msgid "Stream Metadata"
+msgstr "فراداده جریان"
+
+#. 20px padding on the right
+#. 20px padding on the right
+#. 20px padding on the right
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:149
+msgid "Data Provider"
+msgstr "Data Provider"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Stations"
+msgstr "ایستگاه ها"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Tags"
+msgstr "برچسب ها"
+
+#: src/Widgets/HeaderBar.vala:171 src/Widgets/StationContextMenu.vala:171
+msgid "Star this station"
+msgstr "ستاره این ایستگاه"
+
+#.
+#. Create and configure play button
+#.
+#. Toggles player state
+#.
+#. RHS Controls
+#.
+#. Search entry
+#: src/Widgets/HeaderBar.vala:192
+msgid "Station Search"
+msgstr "ایستگاه جستجو"
+
+#: src/Widgets/HeaderBar.vala:209
+msgid "Preferences"
+msgstr "ترجیحات"
+
+#: src/Widgets/HeaderBar.vala:213
+msgid "History"
+msgstr "تاریخ"
+
+#: src/Widgets/PreferencesPopover.vala:22
+msgid "About"
+msgstr "درباره‌ی Psiphon"
+
+#. Voting
+#: src/Widgets/PreferencesPopover.vala:27
+msgid "Do not participate in Station voting"
+msgstr "در رای گیری ایستگاه شرکت نکنید"
+
+#: src/Widgets/PreferencesPopover.vala:29
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr ""
+"اگر بررسی شود، ایستگاه های ستاره دار و جریانی شما برای محاسبه رای گیری شاخص "
+"ایستگاه و نه ایستگاه های محبوب و مرسوم استفاده نخواهد شد"
+
+#. Theme
+#: src/Widgets/PreferencesPopover.vala:34
+msgid "System"
+msgstr "سیستم"
+
+#: src/Widgets/PreferencesPopover.vala:35
+msgid "Light mode"
+msgstr "حالت نور"
+
+#: src/Widgets/PreferencesPopover.vala:36
+msgid "Dark mode"
+msgstr "Dark mode"
+
+#: src/Widgets/PreferencesPopover.vala:41
+msgid "Theme"
+msgstr "پوسته"
+
+#. Autoplay
+#: src/Widgets/PreferencesPopover.vala:46
+msgid "Auto-play last station on startup"
+msgstr "آخرین ایستگاه Auto-play در استارت آپ"
+
+#: src/Widgets/PreferencesPopover.vala:48
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr ""
+"اگر فعال شود، زمانی که Tuner شروع به کار کند، به طور خودکار شروع به بازی "
+"آخرین ایستگاه بازی خواهد کرد"
+
+#. Start on Starred
+#: src/Widgets/PreferencesPopover.vala:53
+msgid "Open to Starred Stations"
+msgstr "ایستگاه های Starred"
+
+#: src/Widgets/PreferencesPopover.vala:55
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"اگر فعال شود، هنگامی که Tuner شروع به باز شدن به ایستگاه های ستاره دار می کند"
+
+#. Play Display
+#: src/Widgets/PreferencesPopover.vala:60
+msgid "Show stream info when playing"
+msgstr "نمایش اطلاعات جریان هنگام بازی"
+
+#: src/Widgets/PreferencesPopover.vala:62
+msgid "Cycle through the metadata from the playing stream"
+msgstr "چرخه از طریق متاداده از جریان بازی"
+
+#: src/Widgets/PreferencesPopover.vala:65
+msgid "Faster cycling through stream info"
+msgstr "سریع تر دوچرخه سواری از طریق جریان اطلاعات"
+
+#: src/Widgets/PreferencesPopover.vala:67
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr "چرخه سریع از طریق متاداده از جریان بازی اگر نمایش داده می شود"
+
+#: src/Widgets/PreferencesPopover.vala:78
+msgid "Language"
+msgstr "زبان"
+
+#: src/Widgets/PreferencesPopover.vala:79
+#, fuzzy
+msgid "Language changes restart Tuner"
+msgstr "Language changes restart Tuner"
+
+#. Export starred
+#: src/Widgets/PreferencesPopover.vala:84
+msgid "Export Starred Stations to Playlist"
+msgstr "ایستگاه های Starred برای Playlist"
+
+#. Import starred
+#: src/Widgets/PreferencesPopover.vala:93
+msgid "Import Station UUIDs as Starred Stations"
+msgstr "ایستگاه واردات UUID به عنوان ایستگاه های Starred"
+
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
+msgid "Save File"
+msgstr "Save File"
+
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
+msgid "_Cancel"
+msgstr "_لغو"
+
+#: src/Widgets/PreferencesPopover.vala:164
+msgid "_Save"
+msgstr "_ذخیره"
+
+#. warning("Error: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:185
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:198
+msgid "Choose a file"
+msgstr "انتخاب یک فایل"
+
+#: src/Widgets/PreferencesPopover.vala:202
+msgid "_Open"
+msgstr "_باز کردن"
+
+#. warning("Error reading file: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:225
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
+
+#. ----------------------------------------------
+#: src/Widgets/StationContextMenu.vala:91
+msgid "Station info updated Online - View changes"
+msgstr "اطلاعات ایستگاه به روز شده آنلاین - تغییرات مشاهده"
+
+#: src/Widgets/StationContextMenu.vala:92
+msgid "Update Station from Online"
+msgstr "ایستگاه به روز رسانی آنلاین"
+
+#: src/Widgets/StationContextMenu.vala:100
+msgid "Visit Website"
+msgstr "دیدن وبسایت"
+
+#: src/Widgets/StationContextMenu.vala:106
+msgid "Copy Stream-URI to clipboard"
+msgstr "Copy Stream-URI to Clipboard"
+
+#. warning (@"Unable to open website: $(e.message)");
+#: src/Widgets/StationContextMenu.vala:147
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
+
+#. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+#: src/Widgets/StationContextMenu.vala:170
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
+#: src/Widgets/Window.vala:68
+msgid "Playing in background"
+msgstr "در حال پخش در پس‌زمینه"
+
+#: src/Widgets/Window.vala:69
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr ""
+"اینجا کلیک کنید تا پنجره را از سر بگیرید. برای ترک تونس، پخش مکث و بستن "
+"پنجره."
+
+#: src/Widgets/Window.vala:240
+msgid "Error while trying to autoplay, aborting…"
+msgstr "خطا در هنگام تلاش برای بازی خودکار، سقط .."
+
+#: src/Widgets/Window.vala:284
+msgid "Stop Playback requested"
+msgstr "درخواست توقف Playback"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid "Nothing here"
+msgstr "هیچ چیز در اینجا"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr ""
+"چیزی که داده های ایستگاه های رادیویی را از ارائه دهنده ایستگاه به اشتباه "
+"بارگیری کرد. لطفا دوباره امتحان کنید."
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "No stations found"
+msgstr "هیچ ایستگاهی پیدا نشد"
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "Please try a different search term."
+msgstr "لطفا یک عبارت جستجوی مختلف را امتحان کنید."
+
+#~ msgid "Default"
+#~ msgstr "Default"
+
+#~ msgid "Requires restarting Tuner"
+#~ msgstr "دانلود آهنگ Restarting Tuner"
