@@ -4,29 +4,32 @@ SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
-# Translations (po/)
+# Translations (Portable Objects)
 
 This document explains how translation targets in `po/` are generated, what each build step produces, and the recommended command order for common tasks. ✅
 
 ---
 
 ## Overview 🔧
-- `po/` holds the project's translation workflow and `.po` files.
-- `po/countries/` contains country-specific or extra locale catalogs treated as a separate gettext domain (`countries`). They are not installed by default.
+
+- `po/` holds the project's translation build file and the subdirectories that hold the actual generated translated material which is installed by default
+- `po/application/` contains the application translatable strings, catalog and linguas. They are not installed by default, but combined with other translations into `po`.
+- `po/countries/` contains country and language names, catalog and linguas. They are not installed by default.
+- `po/extra/` contains metadata catalog and linguas. They are not installed by default, but combined with other translations into `po`.
+- The translated `.po` files in `application`, `countries` and `extra` are provided by _Weblate_ via _git_ pull requests.
+- 
 - Main actions in the Meson build: generate a `.pot` template (optional), compile `.po` files to binary `.mo` files, and install `.mo` files into the configured `localedir`.
 
-## Required tools 🛠️
-- meson, ninja
-- gettext utilities: `xgettext`, `msgfmt` (ensure they are in your PATH)
 
 ## Typical command sequence (recommended) ▶️
+
 1. Configure or prepare the build dir (if not already done):
 
    ```bash
-   meson setup builddir
-   # or update options of an existing build dir:
-   meson configure builddir -Dtranslation=update
+   meson setup builddir -Dtranslation=update
    ```
+
+   `setup` will fire a 
 
 2. (Optional) Generate the POT template (only when updating strings):
 
@@ -59,17 +62,17 @@ Notes:
 - The `pot` target runs `xgettext` and produces a `.pot` file when `-Dtranslation=update` is set.
 
 ## Country catalogs (po/countries/) 🇺🇳
+
 - These are registered via a separate gettext domain named `countries`.
 - They are **not installed** by default (`install: false`). To include/install them you can:
   - Change `install: false` → `install: true` in `po/countries/meson.build`, or
   - Add `po/countries` as an `extra_po_dirs` to the main i18n call in `po/meson.build`.
 
 ## Debugging & troubleshooting ⚠️
+
 - Missing tools: install the `gettext` package for your OS.
 - No output for a language: ensure `po/LINGUAS` lists the language and `po/<lang>.po` exists.
 - Check Meson's log: `builddir/meson-logs/meson-log.txt` for configure-time issues.
 - To get more verbose Meson output: use `meson setup --log-level=debug` or consult `meson --help`.
 
 ---
-
-If you want, I can add a small script to run these steps or include a short example how to prepare translations prior to a release. 💡
