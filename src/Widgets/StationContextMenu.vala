@@ -7,6 +7,8 @@
  * @file StationContextMenu.vala
  */
  
+using Tuner.Model;
+
 /**
  * @class StationContextMenu
  * @brief A context menu for radio stations.
@@ -53,14 +55,16 @@ public class Tuner.StationContextMenu : Gtk.Menu
         // Country
         if ( _station.countrycode != null && _station.countrycode.length > 0 )
         {
-            var sb = new StringBuilder (_station.countrycode);
+            var sb = new StringBuilder (Countries.get_by_code(_station.countrycode) + "\n");
             if ( _station.state != null && _station.state.length > 0 )
-            sb.append (" - ").append (_station.state);
+            sb.append (_station.state).append ("\t");
 
             // Language
             if ( station_button.station.language != null && station_button.station.language.length > 0 )
             {
-                sb.append ("\t[").append (station_button.station.language).append ("]");
+                sb.append ("[")
+                .append (Languages.get_by_code ( station_button.station.languagecodes,  station_button.station.language))
+                .append ("]");
             }
 
             var info = new Gtk.MenuItem.with_label (sb.str);
@@ -99,7 +103,7 @@ public class Tuner.StationContextMenu : Gtk.Menu
 			website.activate.connect (on_website_handler);
 		}
 
-		var stream_url = new Gtk.MenuItem.with_label (_("Copy Stream-URL to clipboard"));
+		var stream_url = new Gtk.MenuItem.with_label (_("Copy Stream-URI to clipboard"));
 		stream_url.sensitive = true;
 		stream_url.activate.connect (on_streamurl_handler);
 
@@ -139,7 +143,8 @@ public class Tuner.StationContextMenu : Gtk.Menu
 			Gtk.show_uri_on_window (app().window, _station.homepage, Gdk.CURRENT_TIME);
 		} catch (Error e)
 		{
-			warning (@"Unable to open website: $(e.message)");
+			//warning (@"Unable to open website: $(e.message)");
+			warning ((_("Unable to open website") + ": %s").printf (e.message));
 		}
 	}
 
@@ -160,7 +165,10 @@ public class Tuner.StationContextMenu : Gtk.Menu
     */
 	private void set_context_star (Gtk.MenuItem item)
 	{
-		item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
-	}
+		//item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+        item.label = _station.starred
+        ? ("%s" + _("Unstar this station")).printf (Application.UNSTAR_CHAR)
+        : ("%s" + _("Star this station")).printf (Application.STAR_CHAR);
+    }
 
 }

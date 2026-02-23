@@ -1,0 +1,511 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# technosf <535060+technosf@users.noreply.github.com>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"PO-Revision-Date: 2026-02-23 04:06+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/tuner/tuner-"
+"ui/id/>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.16.1-dev\n"
+
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
+msgid "Station no longer in the index"
+msgstr "Tidak lagi di indeks"
+
+#: src/Models/Station.vala:355
+msgid "Changes"
+msgstr "Perubahan"
+
+#: src/Models/Station.vala:356
+msgid "Stream Url"
+msgstr "Sitemap"
+
+#: src/Models/Station.vala:357
+msgid "Stream Resolved Url"
+msgstr "Streaming Dilarutkan Sitemap"
+
+#: src/Models/Station.vala:358
+msgid "Favicon address"
+msgstr "Login"
+
+#: src/Models/Station.vala:359
+msgid "Homepage address"
+msgstr "Login"
+
+#: src/Models/Station.vala:360
+msgid "Station tags"
+msgstr "Tag stasiun"
+
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
+msgid "Bitrate"
+msgstr "Tingkat bita"
+
+#: src/Models/Station.vala:362
+msgid "Codec"
+msgstr "Kodek"
+
+#. Ordered array of tags and descriptions
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
+msgstr "Judul"
+
+#: src/Models/StreamMetadata.vala:24
+msgid "Artist"
+msgstr "Artis"
+
+#: src/Models/StreamMetadata.vala:25
+msgid "Album"
+msgstr "Album"
+
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr "Gambar"
+
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr "Genre"
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
+msgstr "Beranda"
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
+msgstr "Organisasi"
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr "Lokasi"
+
+#: src/Models/StreamMetadata.vala:31
+msgid "Extended Comment"
+msgstr "Komentar"
+
+#: src/Models/StreamMetadata.vala:33
+msgid "Audio Codec"
+msgstr "Catalog"
+
+#: src/Models/StreamMetadata.vala:34
+msgid "Channel Mode"
+msgstr "Saluran Mode"
+
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr "Nomor Trek"
+
+#: src/Models/StreamMetadata.vala:36
+msgid "Track Count"
+msgstr "Hitungan Hitungan"
+
+#: src/Models/StreamMetadata.vala:37
+msgid "Nominal Bitrate"
+msgstr "Bitrate nominal"
+
+#: src/Models/StreamMetadata.vala:38
+msgid "Minimum Bitrate"
+msgstr "Bitrate minimum"
+
+#: src/Models/StreamMetadata.vala:39
+msgid "Maximum Bitrate"
+msgstr "Bitrate maksimum"
+
+#: src/Models/StreamMetadata.vala:40
+msgid "Container Format"
+msgstr "Catalog"
+
+#: src/Models/StreamMetadata.vala:41
+msgid "Application Name"
+msgstr "Nama Aplikasi"
+
+#: src/Models/StreamMetadata.vala:42
+msgid "Encoder"
+msgstr "Login"
+
+#: src/Models/StreamMetadata.vala:43
+msgid "Encoder Version"
+msgstr "Versi Encoder"
+
+#: src/Models/StreamMetadata.vala:44
+msgid "Date Time"
+msgstr "Waktu Tanggal"
+
+#: src/Models/StreamMetadata.vala:45
+msgid "Private Data"
+msgstr "Data Pribadi"
+
+#: src/Models/StreamMetadata.vala:46
+msgid "Has CRC"
+msgstr "Login"
+
+#.
+#. Display Assets
+#.
+#: src/Widgets/Display.vala:98
+msgid "Selections"
+msgstr "Pilihan"
+
+#: src/Widgets/Display.vala:99
+msgid "Library"
+msgstr "Perpustakaan"
+
+#: src/Widgets/Display.vala:100
+msgid "Saved Searches"
+msgstr "Pencarian Tersimpan"
+
+#: src/Widgets/Display.vala:101
+msgid "Explore"
+msgstr "Jelajahi"
+
+#: src/Widgets/Display.vala:102
+msgid "Genres"
+msgstr "Genre"
+
+#: src/Widgets/Display.vala:103
+msgid "Subgenres"
+msgstr "Login"
+
+#: src/Widgets/Display.vala:104
+msgid "Eras"
+msgstr "Login"
+
+#: src/Widgets/Display.vala:105
+msgid "Talk, News, Sport"
+msgstr "Panggilan, Berita, Olahraga"
+
+#: src/Widgets/Display.vala:247
+#, fuzzy
+msgid "Could not get random station"
+msgstr "Could not get random station"
+
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr "Jelajahi"
+
+#: src/Widgets/Display.vala:326
+msgid "Stations to Discover"
+msgstr "Stasiun untuk Temukan"
+
+#: src/Widgets/Display.vala:329
+msgid "Discover more stations"
+msgstr "Temukan lebih banyak stasiun"
+
+#: src/Widgets/Display.vala:346
+msgid "Trending"
+msgstr "Sedang tren"
+
+#: src/Widgets/Display.vala:347
+msgid "Trending Stations in the last 24 hours"
+msgstr "Stasiun Trending dalam 24 jam terakhir"
+
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr "Populer"
+
+#: src/Widgets/Display.vala:362
+msgid "Most listened to Stations in the last 24 hours"
+msgstr "Kebanyakan didengarkan ke stasiun di 24 jam terakhir"
+
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+msgid "Starred by You"
+msgstr "Dibintangi oleh Anda"
+
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr "Pencarian terbaru"
+
+#: src/Widgets/Display.vala:423
+msgid "Search Results"
+msgstr "Hasil Pencarian"
+
+#: src/Widgets/Display.vala:426
+msgid "Save this search"
+msgstr "Simpan pencarian ini"
+
+#: src/Widgets/Display.vala:557
+msgid "Jukebox"
+msgstr "Login"
+
+#: src/Widgets/Display.vala:559
+#, fuzzy, c-format
+msgid "Double click to shuffle through %1$u stations"
+msgstr "Double click to shuffle through %1$u stations"
+
+#: src/Widgets/Display.vala:560
+#, fuzzy
+msgid "one, every ten minutes, for %2$u days"
+msgstr "one, every ten minutes, for %2$u days"
+
+#: src/Widgets/Display.vala:625
+msgid "Saved Search"
+msgstr "Sitemap"
+
+#: src/Widgets/Display.vala:627
+msgid "Remove this saved search"
+msgstr "Hapus pencarian yang tersimpan ini"
+
+#: src/Widgets/HeaderBar.vala:62
+msgid "Stream Metadata"
+msgstr "Metadata"
+
+#. 20px padding on the right
+#. 20px padding on the right
+#. 20px padding on the right
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:149
+msgid "Data Provider"
+msgstr "Database"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Stations"
+msgstr "Login"
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Tags"
+msgstr "Tag"
+
+#: src/Widgets/HeaderBar.vala:171 src/Widgets/StationContextMenu.vala:171
+msgid "Star this station"
+msgstr "Sitemap"
+
+#.
+#. Create and configure play button
+#.
+#. Toggles player state
+#.
+#. RHS Controls
+#.
+#. Search entry
+#: src/Widgets/HeaderBar.vala:192
+msgid "Station Search"
+msgstr "Pencarian Stasiun"
+
+#: src/Widgets/HeaderBar.vala:209
+msgid "Preferences"
+msgstr "Preferensi"
+
+#: src/Widgets/HeaderBar.vala:213
+msgid "History"
+msgstr "History"
+
+#: src/Widgets/PreferencesPopover.vala:22
+msgid "About"
+msgstr "Mengenai"
+
+#. Voting
+#: src/Widgets/PreferencesPopover.vala:27
+msgid "Do not participate in Station voting"
+msgstr "Jangan berpartisipasi dalam pemilihan stasiun"
+
+#: src/Widgets/PreferencesPopover.vala:29
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr ""
+"Jika diperiksa, stasiun starred dan streamed Anda tidak akan digunakan untuk "
+"menghitung pemilihan popularitas indeks stasiun, atau stasiun tren populer "
+"dan"
+
+#. Theme
+#: src/Widgets/PreferencesPopover.vala:34
+msgid "System"
+msgstr "Sistem"
+
+#: src/Widgets/PreferencesPopover.vala:35
+msgid "Light mode"
+msgstr "Mode cahaya"
+
+#: src/Widgets/PreferencesPopover.vala:36
+msgid "Dark mode"
+msgstr "Mode gelap"
+
+#: src/Widgets/PreferencesPopover.vala:41
+msgid "Theme"
+msgstr "Tema"
+
+#. Autoplay
+#: src/Widgets/PreferencesPopover.vala:46
+msgid "Auto-play last station on startup"
+msgstr "Stasiun terakhir auto-play pada startup"
+
+#: src/Widgets/PreferencesPopover.vala:48
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr ""
+"Jika diaktifkan, ketika Tuner memulainya secara otomatis akan mulai bermain "
+"stasiun bermain terakhir"
+
+#. Start on Starred
+#: src/Widgets/PreferencesPopover.vala:53
+msgid "Open to Starred Stations"
+msgstr "Buka Stasiun Starred"
+
+#: src/Widgets/PreferencesPopover.vala:55
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+"Jika diaktifkan, ketika Tuner memulai itu akan terbuka ke tampilan stasiun "
+"starred"
+
+#. Play Display
+#: src/Widgets/PreferencesPopover.vala:60
+msgid "Show stream info when playing"
+msgstr "Tampilkan info aliran saat bermain"
+
+#: src/Widgets/PreferencesPopover.vala:62
+msgid "Cycle through the metadata from the playing stream"
+msgstr "Siklus melalui metadata dari aliran bermain"
+
+#: src/Widgets/PreferencesPopover.vala:65
+msgid "Faster cycling through stream info"
+msgstr "Lebih cepat bersepeda melalui streaming info"
+
+#: src/Widgets/PreferencesPopover.vala:67
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr ""
+"Siklus cepat melalui metadata dari aliran bermain jika menunjukkan info "
+"aliran diaktifkan"
+
+#: src/Widgets/PreferencesPopover.vala:78
+msgid "Language"
+msgstr "Bahasa"
+
+#: src/Widgets/PreferencesPopover.vala:79
+#, fuzzy
+msgid "Language changes restart Tuner"
+msgstr "Language changes restart Tuner"
+
+#. Export starred
+#: src/Widgets/PreferencesPopover.vala:84
+msgid "Export Starred Stations to Playlist"
+msgstr "Ekspor Stasiun stared untuk Playlist"
+
+#. Import starred
+#: src/Widgets/PreferencesPopover.vala:93
+msgid "Import Station UUIDs as Starred Stations"
+msgstr "Stasiun Impor UUID sebagai Stasiun Starred"
+
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
+msgid "Save File"
+msgstr "Simpan Berkas"
+
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
+msgid "_Cancel"
+msgstr "_Batal"
+
+#: src/Widgets/PreferencesPopover.vala:164
+msgid "_Save"
+msgstr "_Simpan"
+
+#. warning("Error: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:185
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: src/Widgets/PreferencesPopover.vala:198
+msgid "Choose a file"
+msgstr "Pilih berkas"
+
+#: src/Widgets/PreferencesPopover.vala:202
+msgid "_Open"
+msgstr "_Buka"
+
+#. warning("Error reading file: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:225
+#, fuzzy
+msgid "Error reading file"
+msgstr "Error reading file"
+
+#. ----------------------------------------------
+#: src/Widgets/StationContextMenu.vala:91
+msgid "Station info updated Online - View changes"
+msgstr "Info stasiun diperbarui Online - Melihat perubahan"
+
+#: src/Widgets/StationContextMenu.vala:92
+msgid "Update Station from Online"
+msgstr "Stasiun Update dari Online"
+
+#: src/Widgets/StationContextMenu.vala:100
+msgid "Visit Website"
+msgstr "Kunjungi Situs web"
+
+#: src/Widgets/StationContextMenu.vala:106
+msgid "Copy Stream-URI to clipboard"
+msgstr "Copy Stream-URI ke clipboard"
+
+#. warning (@"Unable to open website: $(e.message)");
+#: src/Widgets/StationContextMenu.vala:147
+#, fuzzy
+msgid "Unable to open website"
+msgstr "Unable to open website"
+
+#. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+#: src/Widgets/StationContextMenu.vala:170
+#, fuzzy
+msgid "Unstar this station"
+msgstr "Unstar this station"
+
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
+#: src/Widgets/Window.vala:68
+msgid "Playing in background"
+msgstr "Memutar di latar belakang"
+
+#: src/Widgets/Window.vala:69
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr ""
+"Klik di sini untuk melanjutkan jendela. Untuk berhenti Tuner, jeda pemutaran "
+"dan menutup jendela."
+
+#: src/Widgets/Window.vala:240
+msgid "Error while trying to autoplay, aborting…"
+msgstr "Kesalahan saat mencoba untuk autoplay, aborting .."
+
+#: src/Widgets/Window.vala:284
+msgid "Stop Playback requested"
+msgstr "Stop Playback diminta"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid "Nothing here"
+msgstr "Sitemap"
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr ""
+"Sesuatu yang salah memuat data stasiun radio dari penyedia stasiun. Silahkan "
+"coba lagi nanti."
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "No stations found"
+msgstr "Tidak ada stasiun yang ditemukan"
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "Please try a different search term."
+msgstr "Silakan mencoba istilah pencarian yang berbeda."
+
+#~ msgid "Default"
+#~ msgstr "Standar"
+
+#~ msgid "Requires restarting Tuner"
+#~ msgstr "Persyaratan restart Tuner"

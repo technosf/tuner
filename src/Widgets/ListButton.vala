@@ -86,7 +86,7 @@ public class Tuner.ListButton : Gtk.Button
 		menu_items   = new List<Gtk.MenuItem>();
 		context_menu = new Gtk.Menu();
 
-		var copy_item = new Gtk.MenuItem.with_label("Copy List to Clipboard");
+		var copy_item = new Gtk.MenuItem.with_label(_("Copy List to Clipboard"));
 		copy_item.activate.connect(() => {
 			copy_list_to_clipboard();
 			context_menu.popdown();
@@ -94,7 +94,7 @@ public class Tuner.ListButton : Gtk.Button
 		});
 		context_menu.append(copy_item);
 
-		var clear_item = new Gtk.MenuItem.with_label("Clear All Items");
+		var clear_item = new Gtk.MenuItem.with_label(_("Clear All Items"));
 		clear_item.activate.connect(() => {
 			clear_all_items();
 			context_menu.popdown();

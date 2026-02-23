@@ -1,12 +1,18 @@
 /**
+ * SPDX-FileCopyrightText: Copyright © 2020-2024 Louis Brauer <louis@brauer.family>
+ * SPDX-FileCopyrightText: Copyright © 2024-2026 technosf <https://github.com/technosf>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ *
  * @file Application.vala
  * @brief Contains the main Application class for the Tuner application
  *
- * SPDX-License-Identifier: GPL-3.0-or-later
- * SPDX-FileCopyrightText: 2020-2022 Louis Brauer <louis@brauer.family>
  */
 
-
+/**
+ *
+ * @brief Tuner application settings management.
+ */
 public class Tuner.Settings : GLib.Settings 
 {  
     private const string SETTINGS_AUTO_PLAY = "auto-play";
@@ -38,8 +44,16 @@ public class Tuner.Settings : GLib.Settings
     private int _window_height;
     private int _window_width;
 
-
-    public Settings() {
+    /** 
+    * @brief Constructor for the Settings class
+    *
+    * This constructor initializes the Settings object by calling the parent constructor with the appropriate schema ID.
+    * It then loads the settings values from the GSettings backend and assigns them to the corresponding properties of the Settings class. 
+    *
+    * Settings keyfile file path .var/app/app id/config/glib-2.0/settings/keyfile
+    */
+    public Settings() 
+    {
        Object(
             schema_id : Application.APP_ID
        );
@@ -61,25 +75,83 @@ public class Tuner.Settings : GLib.Settings
     } // Settings
 
     
+    /** */
     public void configure()
     {        
-        app().window.resize(_window_width, _window_height);
-        app().window.move(_pos_x, _pos_y);
-        app().player.volume = _volume;             
+        if (_pos_x != 0 && _pos_y != 0) {
+            app().window.window_position = Gtk.WindowPosition.NONE;
+            app().window.move(_pos_x, _pos_y);
+        }
+        // else, leave as CENTER
+        if (_window_width > 0 && _window_height > 0) {
+            app().window.resize(_window_width, _window_height);
+        }
+        app().player.volume = _volume;     
+
+        //   warning(@"\nConfig settings: pos_x: %d, pos_y: %d, window_width: %d, window_height: %d",
+        //      _pos_x, _pos_y, _window_width, _window_height);
+         
     } // configure
 
 
+    /** */
     public void save()
     {
         app().window.get_position(out _pos_x, out _pos_y);
+
+        /* If GTK reports (0,0) it's possible the window isn't mapped or the
+         * toolkit hasn't updated the frame extents yet. Fall back to the
+         * underlying GDK window geometry which is more reliable for the
+         * toplevel position on many window managers. */
+        if (_pos_x == 0 && _pos_y == 0) {
+            var gwin = app().window.get_window();
+            if (gwin != null) 
+            {
+                int gx = 0; int gy = 0; int gw = 0; int gh = 0;
+                gwin.get_geometry(out gx, out gy, out gw, out gh);
+                if (gx != 0 || gy != 0) 
+                {
+                    _pos_x = gx;
+                    _pos_y = gy;
+                } // else, leave as (0,0) which will be interpreted as "center" on next launch
+            } // else, leave as (0,0) which will be interpreted as "center" on next launch
+        } // else, use the (0,0) position which will be interpreted as "center" on next launch
+
         if ( _pos_x !=0 && _pos_y != 0 )
         {
             set_int(SETTINGS_POS_X, _pos_x);
             set_int(SETTINGS_POS_Y, _pos_y);
         }
 
-        set_int(SETTINGS_WINDOW_HEIGHT, app().window.height);
-        set_int(SETTINGS_WINDOW_WIDTH, app().window.width);
+        // Refresh cached window size from the widget allocation; fall back
+        // to the underlying GDK window geometry if needed. This is more
+        // reliable than reading `window.width`/`window.height` directly.
+        int w = 0;
+        int h = 0;
+        app().window.get_size(out w, out h);
+        if (w > 0 && h > 0) {
+            _window_width = w;
+            _window_height = h;
+            set_int(SETTINGS_WINDOW_WIDTH, _window_width);
+            set_int(SETTINGS_WINDOW_HEIGHT, _window_height);
+        } // if
+        else 
+        {
+            var gwin = app().window.get_window();
+                if (gwin != null) {
+                    int gx = 0; int gy = 0; int gw = 0; int gh = 0;
+                    gwin.get_geometry(out gx, out gy, out gw, out gh);
+                if (gw > 0 && gh > 0) {
+                    _window_width = gw;
+                    _window_height = gh;
+                    set_int(SETTINGS_WINDOW_WIDTH, _window_width);
+                    set_int(SETTINGS_WINDOW_HEIGHT, _window_height);
+                } // 
+            } // else, leave as is which will be interpreted as "default" on next launch
+        } // else, use the (0,0) position which will be interpreted as "default" on next launch
+
+        //  warning(@"Save settings: pos_x: %d, pos_y: %d, window_width: %d, window_height: %d",
+        //      _pos_x, _pos_y, _window_width, _window_height);
 
         set_boolean(SETTINGS_AUTO_PLAY, auto_play);
         set_boolean(SETTINGS_DO_NOT_VOTE, do_not_vote);
@@ -90,5 +162,7 @@ public class Tuner.Settings : GLib.Settings
         set_string(SETTINGS_THEME_MODE, theme_mode);
         set_string(SETTINGS_LANGUAGE, language);
         set_double(SETTINGS_VOLUME, app().player.volume);
+        sync();
     } // save
+
 } // Tuner.Settings

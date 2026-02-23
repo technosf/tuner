@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2020-2024 Louis Brauer / <louis@brauer.family> -->
+
+<!--
+Copyright 2020-2024 Louis Brauer / <louis@brauer.family>
+Copyright © 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: 2024<https://github.com/technosf>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 <component type="desktop-application">
+
   <id>com.github.louis77.tuner</id>
+
   <metadata_license>FSFAP</metadata_license>
-  <project_group>tuner-elementary</project_group>
   <project_license>GPL-3.0+</project_license>
+
   <name>Tuner</name>
-  <developer_name>Louis Brauer</developer_name>
-  <developer_name>technosf</developer_name>
+  <developer id="com.github.louis77.tuner">
+    <name>technosf</name>
+  </developer>
   <launchable type="desktop-id">com.github.louis77.tuner.desktop</launchable>
   <branding>
-    <color type="primary" scheme_preference="light">#fafafa</color>
-    <color type="primary" scheme_preference="dark">#abacae</color>
+    <color type="primary" scheme_preference="light">#d2d9db</color>
+    <color type="primary" scheme_preference="dark">#77b8f1</color>
   </branding>
   <summary>Internet Radio</summary>
   <description>
@@ -26,6 +37,8 @@
       <li>Control Tuner from your volume indicator</li>
     </ul>
   </description>
+
+  <translation type="gettext">gnome-builder</translation>
 
   <screenshots>
     <screenshot type="default">
@@ -63,9 +76,12 @@
   </screenshots>
 
   <update_contact>tuner.10.technomation_AT_xoxy.net</update_contact>
-  <url type="homepage">https://github.com/louis77/tuner</url>
-  <url type="bugtracker">http://github.com/louis77/tuner/issues</url>
-  <url type="help">http://github.com/louis77/tuner/issues</url>
+  <url type="homepage">https://github.com/tuner-labs/tuner</url>
+  <url type="bugtracker">http://github.com/tuner-labs/tuner/issues</url>
+  <url type="help">http://github.com/tuner-labs/tuner/issues</url>
+  <url type="translate">https://hosted.weblate.org/projects/tuner/</url>
+  <url type="vcs-browser">https://github.com/tuner-labs/tuner</url>
+
   <content_rating type="oars-1.1">
     <content_attribute id="violence-slavery">mild</content_attribute>
     <content_attribute id="violence-worship">mild</content_attribute>
@@ -93,6 +109,23 @@
   </replaces>
 
   <releases>
+    <release version="2.0.1-beta2" date="2026-02-23">
+      <description>
+        <p>Maintanance release:</p>
+        <ul>
+          <li>Updated freedesktop platform from 24.08 to 25.08</li>
+          <li>Removed module vala as now included in freedesktop platform</li>
+          <li>Removed module libsoup as now included in freedesktop platform</li>
+          <li>Bumped libgee to 0.20.8</li>
+          <li>Sharpened some wording, fixed typos</li>
+          <li>Updated translated strings and incorporated fresh translations</li>
+          <li>Refactored Language change mechanism and applied translations to more UI elements</li>
+          <li>i18n - Broke out Country and Language translations to separate module</li>
+          <li>i18n - Added trad Chinese, Estonian, Romaian, Tamil and Latin American Spanish</li>
+        </ul>
+      </description>
+    </release>     
+
     <release version="2.0.0" date="2025-01-10">
       <description>
         <p>New Version!</p>
@@ -112,8 +145,9 @@
         </ul>
       </description>
     </release>     
+
     <release version="1.5.5" date="2024-11-08">
-      <url type="details">https://github.com/louis77/tuner/releases/tag/v1.5.5</url>
+      <url type="details">https://github.com/tuner-labs/tuner/releases/tag/v1.5.5</url>
       <description>
         <p>Maintanance release:</p>
         <ul>
@@ -125,6 +159,7 @@
         </ul>
       </description>
     </release>    
+
     <release version="1.5.4" date="2024-10-10">
       <description>
         <p>Maintanance release:</p>
@@ -137,6 +172,7 @@
         </ul>
       </description>
     </release>
+
     <release version="1.5.3" date="2024-09-22">
       <description>
         <p>Maintanance release:</p>
@@ -146,6 +182,7 @@
         </ul>
       </description>
     </release>
+
     <release version="1.5.2" date="2024-06-22">
       <description>
         <p>Maintanance release:</p>
@@ -156,6 +193,7 @@
         </ul>
       </description>
     </release>
+
     <release version="1.5.1" date="2022-02-06">
       <description>
         <p>Maintanance release:</p>
@@ -165,6 +203,7 @@
         </ul>
       </description>
     </release>
+
     <release version="1.5.0" date="2021-10-14">
       <description>
         <p>New features:</p>
@@ -215,6 +254,7 @@
         </ul>
       </description>
     </release>
+    
     <release version="1.3.0" date="2020-09-24">
       <description>
         <p>New features:</p>
@@ -233,6 +273,7 @@
         </ul>
       </description>
     </release>
+
     <release version="1.2.5" date="2020-08-14">
       <description>
         <p>Other improvements:</p>
@@ -246,6 +287,7 @@
         </ul>
       </description>
     </release>
+
     <release version="1.2.4" date="2020-08-10">
       <description>
         <p>New features:</p>
@@ -267,6 +309,7 @@
         </ul>
       </description>
     </release>
+
     <release version="1.2.3" date="2020-06-29">
       <description>
         <p>New features:</p>

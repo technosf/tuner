@@ -143,9 +143,15 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 		_tuner.tooltip_text = _("Data Provider");
 		_tuner.query_tooltip.connect((x, y, keyboard_tooltip, tooltip) =>
 		{
+			
 			if (app().is_offline)
 				return false;
-			tooltip.set_text(_(@"Data Provider: $(window.directory.provider())\n\n$(app().provider.available_stations()) Stations,\t$(app().provider.available_tags()) Tags"));
+			string _provider = _("Data Provider") + ": %s\n\n%u " + _("Stations") + ",\t%u " + _("Tags");
+			tooltip.set_text (_provider.printf (window.directory.provider (),
+			app ().provider.available_stations (),
+			app ().provider.available_tags ()
+			));
+
 			return true;
 		});
 
@@ -251,7 +257,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 		{
 			if (_station == null)
 				return false;
-			tooltip.set_text(_(@"$(_station.popularity())\n\n$(_player_info.metadata)"));
+			tooltip.set_text(@"$(_station.popularity())\n\n$(_player_info.metadata)");
 			return true;
 		});
 

@@ -1,0 +1,482 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the application package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: application\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Indicates if the station is in the provider index
+#. Indicates if the station is up-to-date with the provider index
+#: src/Models/Station.vala:131
+msgid "Station no longer in the index"
+msgstr ""
+
+#: src/Models/Station.vala:355
+msgid "Changes"
+msgstr ""
+
+#: src/Models/Station.vala:356
+msgid "Stream Url"
+msgstr ""
+
+#: src/Models/Station.vala:357
+msgid "Stream Resolved Url"
+msgstr ""
+
+#: src/Models/Station.vala:358
+msgid "Favicon address"
+msgstr ""
+
+#: src/Models/Station.vala:359
+msgid "Homepage address"
+msgstr ""
+
+#: src/Models/Station.vala:360
+msgid "Station tags"
+msgstr ""
+
+#: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
+msgid "Bitrate"
+msgstr ""
+
+#: src/Models/Station.vala:362
+msgid "Codec"
+msgstr ""
+
+#. Ordered array of tags and descriptions
+#: src/Models/StreamMetadata.vala:23
+msgid "Title"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:24
+msgid "Artist"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:25
+msgid "Album"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:26
+msgid "Image"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:27
+msgid "Genre"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:28
+msgid "Homepage"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:29
+msgid "Organization"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:30
+msgid "Location"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:31
+msgid "Extended Comment"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:33
+msgid "Audio Codec"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:34
+msgid "Channel Mode"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:35
+msgid "Track Number"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:36
+msgid "Track Count"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:37
+msgid "Nominal Bitrate"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:38
+msgid "Minimum Bitrate"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:39
+msgid "Maximum Bitrate"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:40
+msgid "Container Format"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:41
+msgid "Application Name"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:42
+msgid "Encoder"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:43
+msgid "Encoder Version"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:44
+msgid "Date Time"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:45
+msgid "Private Data"
+msgstr ""
+
+#: src/Models/StreamMetadata.vala:46
+msgid "Has CRC"
+msgstr ""
+
+#.
+#. Display Assets
+#.
+#: src/Widgets/Display.vala:98
+msgid "Selections"
+msgstr ""
+
+#: src/Widgets/Display.vala:99
+msgid "Library"
+msgstr ""
+
+#: src/Widgets/Display.vala:100
+msgid "Saved Searches"
+msgstr ""
+
+#: src/Widgets/Display.vala:101
+msgid "Explore"
+msgstr ""
+
+#: src/Widgets/Display.vala:102
+msgid "Genres"
+msgstr ""
+
+#: src/Widgets/Display.vala:103
+msgid "Subgenres"
+msgstr ""
+
+#: src/Widgets/Display.vala:104
+msgid "Eras"
+msgstr ""
+
+#: src/Widgets/Display.vala:105
+msgid "Talk, News, Sport"
+msgstr ""
+
+#: src/Widgets/Display.vala:247
+msgid "Could not get random station"
+msgstr ""
+
+#: src/Widgets/Display.vala:325
+msgid "Discover"
+msgstr ""
+
+#: src/Widgets/Display.vala:326
+msgid "Stations to Discover"
+msgstr ""
+
+#: src/Widgets/Display.vala:329
+msgid "Discover more stations"
+msgstr ""
+
+#: src/Widgets/Display.vala:346
+msgid "Trending"
+msgstr ""
+
+#: src/Widgets/Display.vala:347
+msgid "Trending Stations in the last 24 hours"
+msgstr ""
+
+#: src/Widgets/Display.vala:361
+msgid "Popular"
+msgstr ""
+
+#: src/Widgets/Display.vala:362
+msgid "Most listened to Stations in the last 24 hours"
+msgstr ""
+
+#: src/Widgets/Display.vala:397 src/Widgets/Display.vala:398
+msgid "Starred by You"
+msgstr ""
+
+#: src/Widgets/Display.vala:422
+msgid "Latest Search"
+msgstr ""
+
+#: src/Widgets/Display.vala:423
+msgid "Search Results"
+msgstr ""
+
+#: src/Widgets/Display.vala:426
+msgid "Save this search"
+msgstr ""
+
+#: src/Widgets/Display.vala:557
+msgid "Jukebox"
+msgstr ""
+
+#: src/Widgets/Display.vala:559
+#, c-format
+msgid "Double click to shuffle through %1$u stations"
+msgstr ""
+
+#: src/Widgets/Display.vala:560
+msgid "one, every ten minutes, for %2$u days"
+msgstr ""
+
+#: src/Widgets/Display.vala:625
+msgid "Saved Search"
+msgstr ""
+
+#: src/Widgets/Display.vala:627
+msgid "Remove this saved search"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:62
+msgid "Stream Metadata"
+msgstr ""
+
+#. 20px padding on the right
+#. 20px padding on the right
+#. 20px padding on the right
+#: src/Widgets/HeaderBar.vala:143 src/Widgets/HeaderBar.vala:149
+msgid "Data Provider"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Stations"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:149
+msgid "Tags"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:171 src/Widgets/StationContextMenu.vala:171
+msgid "Star this station"
+msgstr ""
+
+#.
+#. Create and configure play button
+#.
+#. Toggles player state
+#.
+#. RHS Controls
+#.
+#. Search entry
+#: src/Widgets/HeaderBar.vala:192
+msgid "Station Search"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:209
+msgid "Preferences"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:213
+msgid "History"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:22
+msgid "About"
+msgstr ""
+
+#. Voting
+#: src/Widgets/PreferencesPopover.vala:27
+msgid "Do not participate in Station voting"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:29
+msgid ""
+"If checked, your starred and streamed stations will not be used to calculate "
+"the Station index popularity vote, nor the popular and trending stations"
+msgstr ""
+
+#. Theme
+#: src/Widgets/PreferencesPopover.vala:34
+msgid "System"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:35
+msgid "Light mode"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:36
+msgid "Dark mode"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:41
+msgid "Theme"
+msgstr ""
+
+#. Autoplay
+#: src/Widgets/PreferencesPopover.vala:46
+msgid "Auto-play last station on startup"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:48
+msgid ""
+"If enabled, when Tuner starts it will automatically start to play the last "
+"played station"
+msgstr ""
+
+#. Start on Starred
+#: src/Widgets/PreferencesPopover.vala:53
+msgid "Open to Starred Stations"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:55
+msgid "If enabled, when Tuner starts it will open to the starred stations view"
+msgstr ""
+
+#. Play Display
+#: src/Widgets/PreferencesPopover.vala:60
+msgid "Show stream info when playing"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:62
+msgid "Cycle through the metadata from the playing stream"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:65
+msgid "Faster cycling through stream info"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:67
+msgid ""
+"Fast cycle through the metadata from the playing stream if show stream info "
+"is enabled"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:78
+msgid "Language"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:79
+msgid "Language changes restart Tuner"
+msgstr ""
+
+#. Export starred
+#: src/Widgets/PreferencesPopover.vala:84
+msgid "Export Starred Stations to Playlist"
+msgstr ""
+
+#. Import starred
+#: src/Widgets/PreferencesPopover.vala:93
+msgid "Import Station UUIDs as Starred Stations"
+msgstr ""
+
+#. Create the file chooser dialog for saving the exported playlist
+#: src/Widgets/PreferencesPopover.vala:160
+msgid "Save File"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:163
+#: src/Widgets/PreferencesPopover.vala:201
+msgid "_Cancel"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:164
+msgid "_Save"
+msgstr ""
+
+#. warning("Error: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:185
+msgid "Error"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:198
+msgid "Choose a file"
+msgstr ""
+
+#: src/Widgets/PreferencesPopover.vala:202
+msgid "_Open"
+msgstr ""
+
+#. warning("Error reading file: $(e.message)");
+#: src/Widgets/PreferencesPopover.vala:225
+msgid "Error reading file"
+msgstr ""
+
+#. ----------------------------------------------
+#: src/Widgets/StationContextMenu.vala:91
+msgid "Station info updated Online - View changes"
+msgstr ""
+
+#: src/Widgets/StationContextMenu.vala:92
+msgid "Update Station from Online"
+msgstr ""
+
+#: src/Widgets/StationContextMenu.vala:100
+msgid "Visit Website"
+msgstr ""
+
+#: src/Widgets/StationContextMenu.vala:106
+msgid "Copy Stream-URI to clipboard"
+msgstr ""
+
+#. warning (@"Unable to open website: $(e.message)");
+#: src/Widgets/StationContextMenu.vala:147
+msgid "Unable to open website"
+msgstr ""
+
+#. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
+#: src/Widgets/StationContextMenu.vala:170
+msgid "Unstar this station"
+msgstr ""
+
+#. Private
+#. private const string CSS                               = "com/github/louis77/tuner/Application.css";
+#: src/Widgets/Window.vala:68
+msgid "Playing in background"
+msgstr ""
+
+#: src/Widgets/Window.vala:69
+msgid ""
+"Click here to resume window. To quit Tuner, pause playback and close the "
+"window."
+msgstr ""
+
+#: src/Widgets/Window.vala:240
+msgid "Error while trying to autoplay, aborting…"
+msgstr ""
+
+#: src/Widgets/Window.vala:284
+msgid "Stop Playback requested"
+msgstr ""
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid "Nothing here"
+msgstr ""
+
+#: src/Widgets/base/StationListBox.vala:146
+msgid ""
+"Something went wrong loading radio stations data from station provider. "
+"Please try again later."
+msgstr ""
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "No stations found"
+msgstr ""
+
+#: src/Widgets/base/StationListBox.vala:156
+msgid "Please try a different search term."
+msgstr ""

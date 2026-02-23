@@ -1,3 +1,10 @@
+<!--
+Copyright © 2026 <https://github.com/technosf>
+SPDX-FileCopyrightText: © 2026 <https://github.com/technosf>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 ---
 name: Feature request
 about: Suggest an idea for this project

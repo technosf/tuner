@@ -1,69 +1,42 @@
-#
-# PO meson build file
-#
+##
+## SPDX-FileCopyrightText: Copyright © 2024 technosf <https://github.com/technosf>
+## SPDX-License-Identifier: GPL-3.0-or-later
+##
+## @file meson.build
+## @brief PO meson build file
+##
+## This file defines how translations are handled for the project, including:
+## - inclusion of additional translation subdirectories
+## - optional generation of POT templates (when updating translations)
+## - compilation of .po files into .mo files and installation to the locale dir
+## - calling Meson's i18n helper to gather and validate gettext resources
+##
 
 message('Installing translations...')
 
-# Generate POT file if not a snapshot build
-if get_option('translation') == 'update'
-    pot = custom_target('pot',
-        input: 'POTFILES',
-        output: meson.project_name() + '.pot',
-        command: [
-            'xgettext',
-            '--files-from=@INPUT@',
-            '--output=' + meson.current_source_dir() + '/' + meson.project_name() + '.pot',
-            '--from-code=UTF-8',
-            '--package-name=' + meson.project_name(),
-            '--package-version=' + meson.project_version(),
-            '--keyword=_',
-            '--keyword=N_',
-            '--keyword=C_:1c,2',
-            '--keyword=NC_:1c,2',
-            '--add-comments=TRANSLATORS',
-            '--sort-output',
-            '--width=80',
-            '--foreign-user',
-            '--directory=' + meson.project_source_root(),
-        ]
-    )
-    
-    # Make POT a build dependency for translations in debug mode
-    translations = [pot]
-else
-    translations = []
-endif
 
-# Process .po files
-foreach lang : run_command('cat', 'LINGUAS', check: true).stdout().strip().split('\n')
-    po_file = lang + '.po'
-    if run_command('test', '-f', po_file, check: false).returncode() == 0
-        translations += custom_target('translation-' + lang,
-            input: po_file,
-            output: lang + '.mo',
-            command: [
-                find_program('msgfmt'),
-                '-c',  # check for format string issues
-                '-v',  # verbose output
-                '@INPUT@',
-                '-o', '@OUTPUT@'
-            ],
-            build_by_default: true,
-            install: true,
-            install_dir: join_paths(get_option('localedir'), lang, 'LC_MESSAGES')
-        )
-    endif
-endforeach
+# - `application/` contains application translations and data
+subdir('application') # Generate .po from the .pot, if needed
+
+
+# - `countries/` contains country-specific translations and data
+subdir('countries') # Generate .po from the .pot, if needed
+
+
+# - `extra/` can contain supplementary .po files or helper data
+subdir('extra')
+
+
+message('Scanning gettext resources...') 
+
+# Let Meson/i18n scan and register gettext resources. The `preset: 'glib'`
+# config tells Meson to use glib-style message catalogs and conventions.
+# `--no-location` prevents adding source file locations to generated messages,
+# and '-cTRANSLATORS' keeps translator comments from source.
 
 i18n.gettext(meson.project_name(),
-    args: [
-        '--directory=' + meson.project_source_root(),
-        '--from-code=UTF-8',
-        '-cTRANSLATORS'
-    ],
-    preset: 'glib'
+  preset: 'glib',
+  install: true
 )
-
-subdir('extra')
 
 message('Installed translations')
