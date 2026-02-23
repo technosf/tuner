@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-02-03 01:06-0800\n"
-"PO-Revision-Date: 2026-02-03 23:06+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-02-23 02:01+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/tuner/tuner-"
 "ui/vi/>\n"
 "Language: vi\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: src/Widgets/PreferencesPopover.vala:21
 msgid "About"
@@ -148,14 +149,12 @@ msgid "Eras"
 msgstr "Eras"
 
 #: src/Widgets/PreferencesPopover.vala:209
-#, fuzzy
 msgid "Error"
-msgstr "Error"
+msgstr "Lỗi"
 
 #: src/Widgets/PreferencesPopover.vala:248
-#, fuzzy
 msgid "Error reading file"
-msgstr "Error reading file"
+msgstr "Lỗi khi đọc tệp"
 
 #: src/Widgets/Window.vala:242
 #, fuzzy
