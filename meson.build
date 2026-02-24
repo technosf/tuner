@@ -49,8 +49,6 @@ else
   config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 endif
 
-#config_data.set_quoted('LOCALEDIR', localedir)
-#config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
 config_data.set_quoted('VERSION', meson.project_version())
 config_file = configure_file(
