@@ -104,65 +104,6 @@ namespace Tuner {
     } // app
 
 
-    //  /**
-    //  * @brief Send the calling method for a nap
-    //  *
-    //  * @param interval the time to nap
-    //  * @param priority priority of chacking nap is over
-    //  */
-    //  public static async void nap (uint interval) {
-    //      Timeout.add (interval, () => {
-    //          nap.callback ();
-    //          return Source.REMOVE;
-    //      }, Priority.LOW);
-    //      yield;
-    //  } // nap
-
-
-    //  /**
-    //  * @brief Asynchronously transitions the image with a fade effect.
-    //  * 
-    //  * @param {Gtk.Image} image - The image to transition.
-    //  * @param {uint} duration_ms - Duration of the fade effect in milliseconds.
-    //  * @param {Closure} callback - Optional callback function to execute after fading.
-    //  */
-    //  public static async void fade(Gtk.Image image, uint duration_ms, bool fading_in) 
-    //  {
-    //      double step = 0.05; // Adjust opacity in 5% increments
-    //      uint interval = (uint) (duration_ms / (1.0 / step)); // Interval based on duration
-
-    //      while ( ( !fading_in && image.opacity != 0 ) || (fading_in && image.opacity != 1) ) 
-    //      {      
-    //          double op = image.opacity + (fading_in ? step : -step); 
-    //          image.opacity = op.clamp(0, 1); 
-    //          yield nap (interval);
-    //      }
-    //  } // fade
-
-    //  /**
-    //   * Fade the entire toplevel window by adjusting its `opacity` property.
-    //   */
-    //  public static async void fade_window(Gtk.Window window, uint duration_ms, bool fading_in)
-    //  {
-    //      double step = 0.05;
-    //      uint interval = (uint) (duration_ms / (1.0 / step));
-
-    //      while (( !fading_in && window.opacity != 0 ) || (fading_in && window.opacity != 1))
-    //      {
-    //          double op = window.opacity + (fading_in ? step : -step);
-    //          window.opacity = op.clamp(0, 1);
-    //          yield nap(interval);
-    //      }
-    //  }
-
-
-    //  public static unowned string safestrip( string? text )
-    //  {
-    //      if ( text == null ) return "";
-    //      if ( text.length == 0 ) return "";
-    //      return text._strip();
-    //  } // safestrip
-
     //-------------------------------------
 
     /*
@@ -233,6 +174,7 @@ namespace Tuner {
             try {
                 // Add translations
                 var dir = File.new_for_path(LOCALEDIR);
+                warning(@"LOCALEDIR path: $(dir.get_path())");
                 var enumerator = dir.enumerate_children("standard::*", FileQueryInfoFlags.NONE);
                 FileInfo info;
                 while ((info = enumerator.next_file()) != null) 

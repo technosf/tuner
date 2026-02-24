@@ -105,15 +105,15 @@ public abstract class Tuner.Model.Favicon : Object
             try{
                 if ( _favicon_pixbuf == null || FAILING_FAVICON.contains(_favicon)) 
                 {
-                    yield fade(favicon_image, FADE_MS, false);
+                    yield fade_image(favicon_image, FADE_MS, false);
                     favicon_image.set_from_icon_name(defaulticon,Gtk.IconSize.DIALOG);
-                    yield fade(favicon_image, FADE_MS, true);
+                    yield fade_image(favicon_image, FADE_MS, true);
                 }
                 else{
 
-                    yield fade(favicon_image, FADE_MS, false);
+                    yield fade_image(favicon_image, FADE_MS, false);
                     favicon_image.set_from_pixbuf(_favicon_pixbuf);
-                    yield fade(favicon_image, FADE_MS, true);
+                    yield fade_image(favicon_image, FADE_MS, true);
                 }
             } finally {
                 favicon_image.opacity = 1;
