@@ -16,6 +16,9 @@
  */
 namespace Tuner {
 
+    // Fade duration used for window and image transitions (milliseconds)
+    public const uint WINDOW_FADE_MS = 400;
+
     /**
     * @brief Available themes
     *
@@ -53,7 +56,7 @@ namespace Tuner {
     public static void apply_theme(THEME requested_theme)
     {
         apply_theme_name( requested_theme.get_name() );
-    }
+    } // apply_theme
 
 
     public static void apply_theme_name(string requested_theme)
@@ -81,9 +84,6 @@ namespace Tuner {
         assert_not_reached();
     } // apply_theme
 
-    // Fade duration used for window and image transitions (milliseconds)
-    public const uint WINDOW_FADE_MS = 400;
-
 
     /**
     * @brief Send the calling method for a nap
@@ -107,7 +107,7 @@ namespace Tuner {
     * @param {uint} duration_ms - Duration of the fade effect in milliseconds.
     * @param {Closure} callback - Optional callback function to execute after fading.
     */
-    public static async void fade(Gtk.Image image, uint duration_ms, bool fading_in) 
+    public static async void fade_image(Gtk.Image image, uint duration_ms, bool fading_in) 
     {
         double step = 0.05; // Adjust opacity in 5% increments
         uint interval = (uint) (duration_ms / (1.0 / step)); // Interval based on duration
@@ -118,7 +118,8 @@ namespace Tuner {
             image.opacity = op.clamp(0, 1); 
             yield nap (interval);
         }
-    } // fade
+    } // fade_image
+
 
     /**
      * Fade the entire toplevel window by adjusting its `opacity` property.
@@ -134,7 +135,8 @@ namespace Tuner {
             window.opacity = op.clamp(0, 1);
             yield nap(interval);
         }
-    }
+    } // fade_window
+
 
     /**
      * Safely strips whitespace from a string, handling null and empty strings.
