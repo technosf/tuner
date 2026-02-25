@@ -43,6 +43,8 @@ cleanup:
   - "/share/vala"
   - "*.la"
   - "*.a"
+  
+separate-locales: false
 
 modules:
 
