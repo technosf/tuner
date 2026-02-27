@@ -46,6 +46,16 @@ namespace Tuner.Model {
             get {
                 if (_reference_map == null) {
                     _reference_map = new TreeMap<string, string> ();
+
+                    // Language code we have translations for which have a different name than the default one.
+
+                    _reference_map["es_419"] = NC_("Languages","Spanish (Latin America)");
+                    _reference_map["nb_NO"] = NC_("Languages","Norwegian (Bokmal)");
+                    _reference_map["pt_BR"] = NC_("Languages","Portuguese (Brazil)");
+                    _reference_map["zh_Hant"] = NC_("Languages","Traditional Chinese");
+
+                    // Populate the reference map with language codes and their corresponding translated names, 
+                    // which we may or may not have translations for, but we want to have a reference for the default name.
                     _reference_map["aa"] = NC_("Languages","Afar");
                     _reference_map["ab"] = NC_("Languages","Abkhazian");
                     _reference_map["ae"] = NC_("Languages","Avestan");
@@ -90,7 +100,6 @@ namespace Tuner.Model {
                     _reference_map["en"] = NC_("Languages","English");
                     _reference_map["eo"] = NC_("Languages","Esperanto");
                     _reference_map["es"] = NC_("Languages","Spanish");
-                    _reference_map["es_419"] = NC_("Languages","Spanish (Latin America)");
                     _reference_map["et"] = NC_("Languages","Estonian");
                     _reference_map["eu"] = NC_("Languages","Basque");
 
@@ -171,7 +180,6 @@ namespace Tuner.Model {
 
                     _reference_map["na"] = NC_("Languages","Nauru");
                     _reference_map["nb"] = NC_("Languages","Norwegian Bokmal");
-                    _reference_map["nb_NO"] = NC_("Languages","Norwegian (Bokmal)");
                     _reference_map["nd"] = NC_("Languages","North Ndebele");
                     _reference_map["ne"] = NC_("Languages","Nepali");
                     _reference_map["ng"] = NC_("Languages","Ndonga");
@@ -193,7 +201,6 @@ namespace Tuner.Model {
                     _reference_map["pl"] = NC_("Languages","Polish");
                     _reference_map["ps"] = NC_("Languages","Pashto");
                     _reference_map["pt"] = NC_("Languages","Portuguese");
-                    _reference_map["pt_BR"] = NC_("Languages","Portuguese (Brazil)");
 
                     _reference_map["qu"] = NC_("Languages","Quechua");
 
@@ -256,7 +263,6 @@ namespace Tuner.Model {
 
                     _reference_map["za"] = NC_("Languages","Zhuang");
                     _reference_map["zh"] = NC_("Languages","Chinese");
-                    _reference_map["zh_Hant"] = NC_("Languages","Traditional Chinese");
                     _reference_map["zu"] = NC_("Languages","Zulu");
 
                 } // if
@@ -292,27 +298,31 @@ namespace Tuner.Model {
             ensure_locale ();
             return _cached_translated_map;
         } // get_language_map
+
         
         /**
-        * @brief Rebuilds the cached map of language codes to their translated names based on the current locale.
+         * @brief Returns the language code for the current environment locale.
+         * @return The language code corresponding to the current environment locale.
          */
-        private static void rebuild_language_cache () 
-        {
-            _cached_translated_map = new TreeMap<string,string> ();
+        public static unowned string get_environment_code () 
+        {   
+            unowned string result = "";
+            foreach ( string lang in Intl.get_language_names_with_category (Application.ENV_LANG))
+            {
+                if ( map.has_key (lang) && lang.length > result.length) result = lang;
+            }
 
-            foreach (string id in Application.LANGUAGES) {
-                _cached_translated_map[id] = dpgettext2(null, "Languages", map.get(id));
-            } // foreach
-            
-        } // rebuild_language_cache
+            return result;
+        } // get_environment_code  
 
 
         /**
-        * @brief Ensures that the language map is built for the current locale, rebuilding it if the locale has changed.
+        * @brief Ensures that the language map is built for the current locale, 
+        * rebuilding it if the locale has changed.
          */
         private static void ensure_locale () 
         {
-            string loc = Intl.get_language_names ()[0]; // Get the current locale (language code)
+            string loc = get_environment_code () ; // Get the current locale (language code)
 
             if (current_locale == loc && _cached_translated_map != null)
                 return;
@@ -321,5 +331,20 @@ namespace Tuner.Model {
             rebuild_language_cache ();
 
         } // ensure_locale
+
+
+        /**
+        * @brief Rebuilds the cached map of language codes to their translated names based on the current locale.
+         */
+        private static void rebuild_language_cache () 
+        {
+            _cached_translated_map = new TreeMap<string,string> ();
+
+            foreach (string id in Application.LOCALES_FOUND) {
+                _cached_translated_map[id] = dpgettext2(null, "Languages", map.get(id));
+            } // foreach
+            
+        } // rebuild_language_cache
+
    } // Languages
 } // Tuner.Model
