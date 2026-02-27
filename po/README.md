@@ -13,60 +13,48 @@ This document explains how translation targets in `po/` are generated, what each
 ## Overview 🔧
 
 - `po/` holds the project's translation build file and the subdirectories that hold the actual generated translated material which is installed by default
-- `po/application/` contains the application translatable strings, catalog and linguas. They are not installed by default, but combined with other translations into `po`.
-- `po/countries/` contains country and language names, catalog and linguas. They are not installed by default.
-- `po/extra/` contains metadata catalog and linguas. They are not installed by default, but combined with other translations into `po`.
+- `po/application/` contains the application translatable strings, catalog and linguas. They are not installed by default, but later combined with other translations into `po`.
+- `po/countries/` contains country and language names, catalog and linguas. They are not installed by default, but later combined with other translations into `po`.
+- `po/extra/` contains metadata catalog and linguas. They are installed by default.
 - The translated `.po` files in `application`, `countries` and `extra` are provided by _Weblate_ via _git_ pull requests.
-- 
-- Main actions in the Meson build: generate a `.pot` template (optional), compile `.po` files to binary `.mo` files, and install `.mo` files into the configured `localedir`.
+- Targets in the Meson build: generate a `.pot` template (optional), compile `.po` files to binary `.mo` files, and install `.mo` files into the configured `localedir`.
+- In the Flatpak the different languages go into different `.Locale`s which are installed alongside the app dependent on the Locales in your environment.
+
+## Typical command sequence (when translatable strings have changed) ▶️
+
+1.  Regenerate the POT template [only when translatable strings have been updated in the app]:
+
+    ```bash
+    # Enable POT generation via Meson option, then run the pot target
+    meson setup builddir -Dtranslation=update
+    meson build application-pot
+    meson build countries-pot
+    meson build extra-pot
+    ``` 
+
+2.  Generate translations:
+    - Git - Check in the `.pot` files into the tuner `development` branch
+    - Update (Weblate)[https://hosted.weblate.org/projects/tuner/] from the Operation-Repository Maintanence menu
+    - Translate the strings
+    - Push the translations back to the tuner development branch
+
+3.  Incorporate the updated translation  
+    - Update your work folder from the `develoment` branch
+    - `rm -r builddir` - clear the build
+    - `meson setup builddir` will fire a hook that concatenates the `.po` files in `po/application` and `po/countries` into `po`
+
+4. Compile translations (.po → .mo):
+    - `meson compile -C builddir` fires of the meson gettext target in `po`, compiling the `.po`'s into `.mo`'s and installing them 
 
 
-## Typical command sequence (recommended) ▶️
+## Design Choices 🇺🇳
 
-1. Configure or prepare the build dir (if not already done):
-
-   ```bash
-   meson setup builddir -Dtranslation=update
-   ```
-
-   `setup` will fire a 
-
-2. (Optional) Generate the POT template (only when updating strings):
-
-   ```bash
-   # Enable POT generation via Meson option, then run the pot target
-   meson configure builddir -Dtranslation=update
-   ninja -C builddir pot
-   # Output: builddir/<project>.pot (contains extracted translatable strings)
-   ```
-
-3. Compile translations (.po → .mo):
-
-   ```bash
-   # Build all default targets (translations are built_by_default)
-   ninja -C builddir
-   # Or compile a specific language and show verbose command output
-   ninja -C builddir -v translation-<lang>
-   # Output: builddir/<lang>.mo
-   ```
-
-4. (Optional) Install compiled translations to `localedir`:
-
-   ```bash
-   # Installs the .mo files into the configured localedir (e.g. /usr/share/locale/<lang>/LC_MESSAGES/)
-   ninja -C builddir install
-   ```
-
-Notes:
-- Each translation target uses `msgfmt -c -v` to validate and compile `.po` files; `-v` prints validation output (warnings/errors). Use `ninja -v` to see command stdout/stderr.
-- The `pot` target runs `xgettext` and produces a `.pot` file when `-Dtranslation=update` is set.
-
-## Country catalogs (po/countries/) 🇺🇳
-
-- These are registered via a separate gettext domain named `countries`.
-- They are **not installed** by default (`install: false`). To include/install them you can:
-  - Change `install: false` → `install: true` in `po/countries/meson.build`, or
-  - Add `po/countries` as an `extra_po_dirs` to the main i18n call in `po/meson.build`.
+- The more volatile translatable strings in the application were split into two components:
+    - `countries` constains the larger set of more static translatable strings
+    - `application` contains the smaller set of more volatile strings in the UI
+- Separate components simplifies the management of translations on Weblate
+- Script `scripts\update-po.sh` concatenates `.po` files using `gettext msgcat` during setup
+- A single `.po` per LINGUA means that only a single domain is needed in the code
 
 ## Debugging & troubleshooting ⚠️
 
