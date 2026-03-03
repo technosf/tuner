@@ -18,7 +18,7 @@
 public class Tuner.StationButton : Tuner.DisplayButton
 {
 
-    private const string DEFAULT_ICON_NAME = "internet-radio";
+    private const string DEFAULT_ICON_NAME = "tuner:internet-radio";
 
     /**
      * @property station

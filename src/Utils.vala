@@ -61,6 +61,9 @@ namespace Tuner {
 
     public static void apply_theme_name(string requested_theme)
     {
+
+        // gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'.
+        
         if ( requested_theme == THEME.LIGHT.get_name() )
         {
             debug(@"Applying theme: light");           

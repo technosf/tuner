@@ -30,8 +30,8 @@ using Granite.Widgets;
  */
 public class Tuner.Display : Gtk.Paned, StationListHookup {
 
-	private const string BACKGROUND_TUNER                               = "/com/github/louis77/tuner/icons/background-tuner";
-	private const string BACKGROUND_JUKEBOX                             = "/com/github/louis77/tuner/icons/background-jukebox";
+	private const string BACKGROUND_TUNER                               = "tuner:background-tuner";
+	private const string BACKGROUND_JUKEBOX                             = "tuner:background-jukebox";
 	private const int EXPLORE_CATEGORIES                                = 5;     // How many explore categories to display
 	private const double BACKGROUND_OPACITY                             = 0.15;
 	private const int BACKGROUND_TRANSITION_TIME_MS                     = 1500;
@@ -142,14 +142,14 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
 				jukebox_shuffle.begin();
 		});
 
-		var tuner = new Gtk.Image.from_resource (BACKGROUND_TUNER);
+		var tuner = new Gtk.Image.from_icon_name (BACKGROUND_TUNER, Gtk.IconSize.INVALID);
 		tuner.opacity                         = BACKGROUND_OPACITY;
 		_background_tuner.transition_duration = BACKGROUND_TRANSITION_TIME_MS;
 		_background_tuner.transition_type     = BACKGROUND_TRANSITION_TYPE;
 		_background_tuner.reveal_child        = true;
 		_background_tuner.child               = tuner;
 
-		var jukebox = new Gtk.Image.from_resource (BACKGROUND_JUKEBOX);
+		var jukebox = new Gtk.Image.from_icon_name (BACKGROUND_JUKEBOX, Gtk.IconSize.INVALID);
 		jukebox.opacity                         = BACKGROUND_OPACITY;
 		_background_jukebox.transition_duration = BACKGROUND_TRANSITION_TIME_MS;
 		_background_jukebox.transition_type     = BACKGROUND_TRANSITION_TYPE;
@@ -342,7 +342,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
 		        source_list,
 		        _selections_category,
 		        "trending",
-		        "playlist-queue",
+		        "tuner:playlist-queue",
 		        _("Trending"),
 		        _("Trending Stations in the last 24 hours"),
 		        _directory.load_trending_stations(40)
@@ -357,7 +357,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
                 , source_list
                 , _selections_category
                 , "popular"
-                , "playlist-similar"
+                , "tuner:playlist-similar"
                 , _("Popular")
                 , _("Most listened to Stations in the last 24 hours")
                 ,_directory.load_popular_stations(40)
@@ -479,7 +479,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
             if ( Model.Genre.in_genre (tag.name)) break;  // Predefined genre, ignore
             StationListBox.create_category_specific( stack, source_list, _explore_category
                     , @"$(explore++)"   // tag names can have charaters that are not suitable for name
-                    , "playlist-symbolic"
+                    , "tuner:playlist-symbolic"
                     , tag.name
                     , tag.name
                     , _directory.load_by_tag (tag.name));
@@ -555,7 +555,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
     private void jukebox(SourceList.ExpandableItem category)
     {
         SourceList.Item item = new SourceList.Item(_("Jukebox"));
-        item.icon = new ThemedIcon("jukebox");
+        item.icon = new ThemedIcon("tuner:jukebox");
         item.tooltip = (_("Double click to shuffle through %1$u stations")
                     + "\n" + _("one, every ten minutes, for %2$u days")
         ).printf (
@@ -620,7 +620,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
             , source_list
             , _saved_searches_category
             , search
-            , "playlist-symbolic"
+            , "tuner:playlist-symbolic"
             , search
             , (_("Saved Search") + " :  %s").printf (search)
             , station_set
@@ -665,7 +665,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
 			                         source_list,
 			                         category,
 			                         genre,
-			                         "playlist-symbolic",
+			                         "tuner:playlist-symbolic",
 			                         genre,
 			                         genre,
 			                         directory.load_by_tag (genre.down ()));

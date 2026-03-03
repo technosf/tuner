@@ -2,8 +2,8 @@
 
 <!--
 Copyright 2020-2024 Louis Brauer / <louis@brauer.family>
-Copyright © 2026 <https://github.com/technosf>
-SPDX-FileCopyrightText: 2024<https://github.com/technosf>
+Copyright © 2024 <https://github.com/technosf>
+SPDX-FileCopyrightText: 2024 <https://github.com/technosf>
 
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
@@ -21,8 +21,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
   </developer>
   <launchable type="desktop-id">com.github.louis77.tuner.desktop</launchable>
   <branding>
-    <color type="primary" scheme_preference="light">#d2d9db</color>
-    <color type="primary" scheme_preference="dark">#77b8f1</color>
+    <color type="primary" scheme_preference="light">#eff744</color>
+    <color type="primary" scheme_preference="dark">#c599f4</color>
   </branding>
   <summary>Internet Radio</summary>
   <description>
@@ -38,47 +38,43 @@ SPDX-License-Identifier: GPL-3.0-or-later
     </ul>
   </description>
 
-  <translation type="gettext">gnome-builder</translation>
+  <translation type="gettext">com.github.louis77.tuner</translation>
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/louis77/tuner/master/docs/Tuner_2.0_discover.png</image>
-      <caption>Tuner with dark theme, discovery</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_one.png</image>
+      <caption>Tuner with light theme, Discover</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/louis77/tuner/master/docs/Tuner_2.0_starred.png</image>
-      <caption>Tuner with light theme, starred stations</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_stream.png</image>
+      <caption>Tuner stream metadata</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/louis77/tuner/master/docs/Tuner_2.0_search.png</image>
-      <caption>Tuner search for stations</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_star.png</image>
+      <caption>Tuner starred stations</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/louis77/tuner/master/docs/Tuner_2.0_saved.png</image>
-      <caption>Tuner saved searches</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_lang.png</image>
+      <caption>Tuner translation languages</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/louis77/tuner/master/docs/Tuner_2.0_meta.png</image>
-      <caption>Tuner playing station metadata</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_jukebox.png</image>
+      <caption>Tuner Jukebox and options popover</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/louis77/tuner/master/docs/Tuner_2.0_pref.png</image>
-      <caption>Tuner preferences</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_genre.png</image>
+      <caption>Tuner genres and subgenres</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/louis77/tuner/master/docs/Tuner_2.0_context.png</image>
-      <caption>Tuner station context information</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/louis77/tuner/master/docs/Tuner_2.0_jukebox.png</image>
-      <caption>Tuner jukebox station shuffle</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_dark.png</image>
+      <caption>Tuner with dark theme, saved search</caption>
     </screenshot>
   </screenshots>
 
   <update_contact>tuner.10.technomation_AT_xoxy.net</update_contact>
   <url type="homepage">https://github.com/tuner-labs/tuner</url>
-  <url type="bugtracker">http://github.com/tuner-labs/tuner/issues</url>
-  <url type="help">http://github.com/tuner-labs/tuner/issues</url>
+  <url type="bugtracker">https://github.com/tuner-labs/tuner/issues</url>
+  <url type="help">https://github.com/tuner-labs/tuner/issues</url>
   <url type="translate">https://hosted.weblate.org/projects/tuner/</url>
   <url type="vcs-browser">https://github.com/tuner-labs/tuner</url>
 
@@ -100,8 +96,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
   <provides>
     <binary>com.github.louis77.tuner</binary>
-    <dbus type="system">org.mpris.MediaPlayer2</dbus>
-    <dbus type="system">org.mpris.MediaPlayer2.Player</dbus>
+    <dbus type="session">org.mpris.MediaPlayer2.Tuner</dbus>
   </provides>
 
   <replaces>
@@ -109,13 +104,13 @@ SPDX-License-Identifier: GPL-3.0-or-later
   </replaces>
 
   <releases>
-    <release version="2.0.1-beta2" date="2026-02-23">
+    <release version="2.0.1" date="2026-02-26">
       <description>
-        <p>Maintanance release:</p>
+        <p>Maintenance release:</p>
         <ul>
           <li>Updated freedesktop platform from 24.08 to 25.08</li>
-          <li>Removed module vala as now included in freedesktop platform</li>
-          <li>Removed module libsoup as now included in freedesktop platform</li>
+          <li>Removed vala module as now included in freedesktop platform</li>
+          <li>Removed libsoup module as now included in freedesktop platform</li>
           <li>Bumped libgee to 0.20.8</li>
           <li>Sharpened some wording, fixed typos</li>
           <li>Updated translated strings and incorporated fresh translations</li>
@@ -149,7 +144,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
     <release version="1.5.5" date="2024-11-08">
       <url type="details">https://github.com/tuner-labs/tuner/releases/tag/v1.5.5</url>
       <description>
-        <p>Maintanance release:</p>
+        <p>Maintenance release:</p>
         <ul>
           <li>Updated HTTP Session params to improve response</li>
           <li>Increased Search re-fire interval to reduce number of concurrent searches</li>
@@ -162,7 +157,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
     <release version="1.5.4" date="2024-10-10">
       <description>
-        <p>Maintanance release:</p>
+        <p>Maintenance release:</p>
         <ul>
           <li>Added API server lookup via SRV and backup via JSON, plus randomization</li>
           <li>Added JSON validation for empty nodes</li>
@@ -175,7 +170,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
     <release version="1.5.3" date="2024-09-22">
       <description>
-        <p>Maintanance release:</p>
+        <p>Maintenance release:</p>
         <ul>
           <li>Upgrade to taglib 1.13.1</li>
           <li>Corrected README (apt libs)</li>
@@ -185,7 +180,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
     <release version="1.5.2" date="2024-06-22">
       <description>
-        <p>Maintanance release:</p>
+        <p>Maintenance release:</p>
         <ul>
           <li>Upgrade to libsoup-3.0</li>
           <li>Fix issue where radio-browser.info API did not work</li>
@@ -196,7 +191,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
     <release version="1.5.1" date="2022-02-06">
       <description>
-        <p>Maintanance release:</p>
+        <p>Maintenance release:</p>
         <ul>
           <li>Change flatpak runtime to lastest eOS 6.1</li>
           <li>Change pause button to stop button</li>

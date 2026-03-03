@@ -25,74 +25,6 @@ namespace Tuner {
 
     private static string[] APP_ARGV; 
 
-    //  /**
-    //  * @brief Available themes
-    //  *
-    //  */
-    //  public enum THEME
-    //  {
-    //      SYSTEM,
-    //      LIGHT,
-    //      DARK;
-
-    //      public unowned string get_name ()
-    //      {
-    //          switch (this) {
-    //              case SYSTEM:
-    //                  return "system";
-
-    //              case LIGHT:
-    //                  return "light";
-
-    //              case DARK:
-    //                  return "dark";
-
-    //              default:
-    //                  assert_not_reached();
-    //          }
-    //      }
-    //  } // THEME
-
-
-    //  /**
-    //  * @brief Applys the given theme to the app
-    //  *
-    //  * @return The Application instance
-    //  */
-    //  public static void apply_theme(THEME requested_theme)
-    //  {
-    //      apply_theme_name( requested_theme.get_name() );
-    //  }
-
-
-    //  public static void apply_theme_name(string requested_theme)
-    //  {
-    //      if ( requested_theme == THEME.LIGHT.get_name() )
-    //      {
-    //          debug(@"Applying theme: light");           
-    //          Gtk.Settings.get_default().set_property("gtk-theme-name", "Adwaita");
-    //          return;
-    //      }
-
-    //      if ( requested_theme == THEME.DARK.get_name() )
-    //      {
-    //          debug(@"Applying theme: dark");            
-    //          Gtk.Settings.get_default().set_property("gtk-theme-name", "Adwaita-dark");
-    //          return;
-    //      }
-
-    //      if ( requested_theme == THEME.SYSTEM.get_name() )
-    //      {
-    //          debug(@"System theme X: $(Application.SYSTEM_THEME())");       
-    //          Gtk.Settings.get_default().set_property("gtk-theme-name", Application.SYSTEM_THEME());
-    //          return;
-    //      }
-    //      assert_not_reached();
-    //  } // apply_theme
-
-    //  // Fade duration used for window and image transitions (milliseconds)
-    //  public const uint WINDOW_FADE_MS = 400;
-
 
     /**
     * @brief Getter for the singleton instance
@@ -133,9 +65,7 @@ namespace Tuner {
         /** @brief Signal emitted when the shuffle mode changes   */
         public signal void shuffle_mode_sig(bool shuffle);
 
-        private static Gtk.Settings GTK_SETTINGS;
-        private static string GTK_SYSTEM_THEME = "unset";
-        private static string ENV_LANG = "LANGUAGE";
+        public static string ENV_LANG = "LANGUAGE";
 
         /** @brief Application version */
         public const string APP_VERSION = VERSION;
@@ -155,12 +85,16 @@ namespace Tuner {
         /** @brief File name for starred station sore */
         public const string STARRED = "starred.json";
 
-        public static Gee.Collection<string> LANGUAGES = new Gee.TreeSet<string>();
+        public static Gee.Collection<string> LOCALES_FOUND = new Gee.TreeSet<string>();
 
         /** @brief Connectivity monitoring*/
         private static NetworkMonitor NETMON = NetworkMonitor.get_default ();
 
         private static Gtk.CssProvider CSSPROVIDER = new Gtk.CssProvider();
+
+        private static Gtk.Settings GTK_SETTINGS;
+
+        private static string GTK_SYSTEM_THEME = "unset";
 
         public static string SYSTEM_THEME() { return GTK_SYSTEM_THEME; }
 
@@ -170,11 +104,10 @@ namespace Tuner {
             Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
             Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
             Intl.textdomain (GETTEXT_PACKAGE);
-            LANGUAGES.add("en");    // App core language - no .po created for it, but should always be available as fallback
-            try {
+
+            try {   
                 // Add translations
                 var dir = File.new_for_path(LOCALEDIR);
-                warning(@"LOCALEDIR path: $(dir.get_path())");
                 var enumerator = dir.enumerate_children("standard::*", FileQueryInfoFlags.NONE);
                 FileInfo info;
                 while ((info = enumerator.next_file()) != null) 
@@ -183,7 +116,10 @@ namespace Tuner {
                     {
                         var lang_dir = dir.get_child(info.get_name());
                         var mo_file = lang_dir.get_child("LC_MESSAGES").get_child(GETTEXT_PACKAGE + ".mo");
-                        if (mo_file.query_exists()) LANGUAGES.add(info.get_name());
+                        if (mo_file.query_exists()) 
+                        {
+                            LOCALES_FOUND.add(info.get_name());
+                        }
                     }
                 } //  while
             } catch (Error e) {
@@ -195,9 +131,10 @@ namespace Tuner {
 
         public string language { 
             get { return GLib.Environment.get_variable(ENV_LANG); }
+            //get { return Model.Languages.get_environment_code(); }
             set { 
                 if ( GLib.Environment.get_variable(ENV_LANG) == value 
-                || ( value != "" && !LANGUAGES.contains(value )) ) return;
+                || ( value != "" && !LOCALES_FOUND.contains(value )) ) return;
 
                 if ( settings.language != value ) 
                 {
@@ -323,7 +260,6 @@ namespace Tuner {
 
             cache_dir = stat_dir(Environment.get_user_cache_dir ());
             data_dir = stat_dir(Environment.get_user_data_dir ());
-
 
             /* 
                 Starred file and migration of favorites
@@ -457,7 +393,9 @@ namespace Tuner {
                 language = settings.language;  
                      
                 window = new Window (this, player, settings, directory); 
-                //app().window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
+
+                // Flathub screenshot sizing 
+                app().window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
 
                 add_window (window);
             } else {

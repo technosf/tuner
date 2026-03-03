@@ -8,7 +8,7 @@
 project (
     'com.github.louis77.tuner',
     'vala', 'c',
-    version: '2.0.1-beta.2',
+    version: '2.0.1-beta.4',
     meson_version: '>= 1.3.2',
 )
 
@@ -43,8 +43,11 @@ add_project_arguments (
 
 config_data = configuration_data()
 
-config_data.set_quoted('LOCALEDIR',
-  join_paths(get_option('prefix'), get_option('localedir')))
+if get_option('debug')
+  config_data.set_quoted('LOCALEDIR', join_paths(meson.global_build_root(), 'po'))
+else
+  config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+endif
 config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
 config_data.set_quoted('VERSION', meson.project_version())
 config_file = configure_file(
