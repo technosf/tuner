@@ -8,7 +8,7 @@
 project (
     'com.github.louis77.tuner',
     'vala', 'c',
-    version: '2.0.1-beta.2',
+    version: '2.0.1-beta.4',
     meson_version: '>= 1.3.2',
 )
 

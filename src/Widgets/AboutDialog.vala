@@ -3,13 +3,9 @@
  * SPDX-FileCopyrightText: Copyright © 2024 technosf <https://github.com/technosf>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
- *
- * @file AboutDialog.vala
- *
- * @brief App About dialogue
- * 
  */
 
+ 
 /**
  * @class AboutDialog
  * @brief A dialog displaying information about the Tuner application.
@@ -33,7 +29,8 @@ public class Tuner.AboutDialog : Gtk.AboutDialog {
 		artists            = {"https://faleksandar.com/"};
 		authors            = {"Louis Brauer, technosf"};
 		documenters        = null;
-		translator_credits = """French translation by NathanBnm https://github.com/NathanBnm
+		translator_credits = """Estonian tranlation by Priit Jõerüüt
+French translation by NathanBnm https://github.com/NathanBnm
 Italian translation by DevAlien https://github.com/DevAlien
 and albanobattistella https://github.com/albanobattistella
 Dutch translation by Vistaus https://github.com/Vistaus
@@ -42,7 +39,7 @@ Turkish translation by safak45x https://github.com/safak45x""";
 		program_name       = "Tuner";
 		comments           = "Find & listen to internet radio stations";
 		copyright          = "Copyright © 2020-2024 Louis Brauer\nCopyright © 2024 technosf https://github.com/technosf";
-		version            = @"v$(Application.APP_VERSION)";
+		version            = @"v$(VERSION)";
 
 		license      = """* Copyright (c) 2020-2024 Louis Brauer <louis@brauer.family>, 
         Copyright © 2024 technosf <https://github.com/technosf>
@@ -61,7 +58,7 @@ You should have received a copy of the GNU General Public License
 along with Tuner.  If not, see <http://www.gnu.org/licenses/>.""";
         wrap_license = true;
 
-		website       = "https://github.com/louis77/tuner";
+		website       = "https://github.com/tuner-labs/tuner";
 		website_label = "Tuner on Github";
 
 		response.connect ((response_id) => {

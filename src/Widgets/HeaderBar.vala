@@ -30,7 +30,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
     /* Constants    */
 
     // Default icon name for stations without a custom favicon
-    private const string DEFAULT_ICON_NAME = "internet-radio-symbolic";
+    private const string DEFAULT_ICON_NAME = "tuner:internet-radio-symbolic";
 
 	// Search delay in milliseconds
 	private const int SEARCH_DELAY = 400;
@@ -78,7 +78,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 		secondary display assets
 	*/
 	private Overlay _tuner_icon = new Overlay();
-	private Image _tuner_on     = new Image.from_icon_name("tuner-on", IconSize.DIALOG);
+	private Image _tuner_on     = new Image.from_icon_name("tuner:tuner-on", IconSize.DIALOG);
 
     // data and state variables
 
@@ -131,7 +131,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
         */        
 
         // Tuner icon
-        _tuner_icon.add(new Image.from_icon_name("tuner-off", IconSize.DIALOG));
+        _tuner_icon.add(new Image.from_icon_name("tuner:tuner-off", IconSize.DIALOG));
         _tuner_icon.add_overlay(_tuner_on);
         _tuner_icon.valign = Align.START;
 

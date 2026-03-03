@@ -6,43 +6,20 @@
 ## @brief Data meson build file
 ## 
 ## This file defines how data files are handled for the project, including:
-## - installation of icons
 ## - installation of the desktop file
 ## - installation of the appdata file
 ## - installation of the GSettings schema
+## - subinstallation of icons
 ##
-
-
-#
-# Install icons
-#
-message('Installing Icons...')
-
-icon_sizes = ['16', '24', '32', '48', '64', '128']
-
-foreach i : icon_sizes
-    install_data (
-        join_paths ('icons', i, meson.project_name () + '.svg'),
-        install_dir: join_paths (get_option ('datadir'), 'icons','hicolor', i + 'x' + i, 'apps'),
-        install_tag: 'icons'
-    )
-    install_data (
-        join_paths ('icons', i, meson.project_name () + '.svg'),
-        install_dir: join_paths (get_option ('datadir'), 'icons','hicolor', i + 'x' + i + '@2', 'apps'),
-        install_tag: 'icons'
-    )
-endforeach
-
-
-message('Installed icons\n')
-
 
 #
 # Install desktop file
 #
+
 message('Installing desktop file...')
+
 # Translate and install our .desktop file so the Applications Menu will see it
-i18n.merge_file (
+desktop_file = i18n.merge_file (
     input: meson.project_name () + '.desktop.in',
     output: meson.project_name () + '.desktop',
     po_dir: join_paths (meson.project_source_root(), 'po', 'extra'),
@@ -51,6 +28,11 @@ i18n.merge_file (
     install_dir: join_paths (get_option ('datadir'), 'applications'),
     install_tag: 'applications'
 )
+
+desktop_utils = find_program('desktop-file-validate', required: false)
+if desktop_utils.found()
+  test('Validate desktop file', desktop_utils, args: [desktop_file])
+endif
 
 message('Installed desktop file\n')
 
@@ -63,7 +45,7 @@ message('Installing appdata...')
 i18n = import ('i18n')
 
 # Translate and install our .appdata.xml file so AppCenter will see it
-i18n.merge_file (
+appstream_file = i18n.merge_file (
     input: meson.project_name () + '.appdata.xml.in',
     output: meson.project_name () + '.appdata.xml',
     po_dir: join_paths (meson.project_source_root(), 'po', 'extra'),
@@ -71,6 +53,11 @@ i18n.merge_file (
     install_dir: join_paths (get_option ('datadir'), 'metainfo'),
     install_tag: 'metainfo'
 )
+
+appstream_util = find_program('appstream-util', required: false)
+if appstream_util.found()
+  test('Validate appstream file', appstream_util, args: ['validate', appstream_file])
+endif
 
 message('Installed appdata\n')
 
@@ -94,3 +81,5 @@ meson.add_install_script (
 
 
 message('Installed schema\n')
+
+subdir('icons')

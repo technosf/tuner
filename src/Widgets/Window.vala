@@ -138,15 +138,20 @@ public class Tuner.Window : Gtk.ApplicationWindow
     /* 
         Construct 
     */
-    construct 
+	construct 
     { 
-		set_icon_name(Application.APP_ID);
-		add_action_entries (ACTION_ENTRIES, this);
-		set_title (WINDOW_NAME);
-		window_position = Gtk.WindowPosition.CENTER;
-		set_geometry_hints (null, Gdk.Geometry() {
-			min_height = GEOMETRY_MIN_HEIGHT, min_width = GEOMETRY_MIN_WIDTH
-		}, Gdk.WindowHints.MIN_SIZE);
+        set_icon_name(Application.APP_ID);
+        add_action_entries (ACTION_ENTRIES, this);
+        set_title (WINDOW_NAME);
+        window_position = Gtk.WindowPosition.CENTER;
+        set_geometry_hints (
+                null, 
+                Gdk.Geometry() 
+                {
+                    min_height = GEOMETRY_MIN_HEIGHT, min_width = GEOMETRY_MIN_WIDTH
+                }, 
+                Gdk.WindowHints.MIN_SIZE
+            );
 		change_action_state (ACTION_DISABLE_TRACKING, settings.do_not_vote);
 		change_action_state (ACTION_ENABLE_AUTOPLAY, settings.auto_play);
 		change_action_state (ACTION_START_ON_STARRED, settings.start_on_starred);
