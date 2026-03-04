@@ -71,7 +71,7 @@ namespace Tuner {
         public const string APP_VERSION = VERSION;
         
         /** @brief Application ID */
-        public const string APP_ID = "com.github.louis77.tuner";
+        public const string APP_ID = "io.github.tuner_labs.tuner";
         
         /** @brief Unicode character for starred items ★ */
         public const string STAR_CHAR = "\u2605 ";

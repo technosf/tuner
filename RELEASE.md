@@ -14,14 +14,14 @@ Building Tuner locally is described in the [development doc](DEVELOP.md).
 ## Flathub
 
 The flathub packaging for **Tuner** is maintained in its own github repo:
-<https://github.com/tuner-labs/tuner-flathub> on branch *com.github.louis77.tuner*
+<https://github.com/tuner-labs/tuner-flathub> on branch *io.github.tuner_labs.tuner*
 
 ### Desktop Menu
 
 The desktop file must be validated using this command:
 
 ```bash
-desktop-file-validate com.github.louis77.tuner.desktop
+desktop-file-validate io.github.tuner_labs.tuner.desktop
 ```
 
 ### AppData
@@ -36,12 +36,12 @@ flatpak run org.freedesktop.appstream-glib validate [path-to-xml]
 ### Test different languages
 
 ```bash
-LANGUAGE=de_DE ./com.github.louis77.tuner
+LANGUAGE=de_DE ./io.github.tuner_labs.tuner
 ```
 
 ## Flatpak
 
-Releasing *Tuner* comprises cutting a release of the code in [tuner github](https://github.com/tuner-app/tuner) and then updating the [flathub repo](https://github.com/flathub/com.github.louis77.tuner) which will automatically have the flatpak generated and rolled to Flathub for distribution.
+Releasing *Tuner* comprises cutting a release of the code in [tuner github](https://github.com/tuner-app/tuner) and then updating the [flathub repo](https://github.com/flathub/io.github.tuner_labs.tuner) which will automatically have the flatpak generated and rolled to Flathub for distribution.
 
 ## Flathub Builds
 
@@ -61,12 +61,12 @@ Once a beta roll is deemed a success its pull request can be merged, and a produ
 
 Production releases are generated from *development* pull requests into *main*. The updated *main* branch should be tagged with a version number format of *v2.\*.\**
 
-Once a release has been tagged, the [flathub repo](https://github.com/flathub/com.github.louis77.tuner) *main* branch can be updated with the *release* tag going into the manifest *.json*, and any patches and documentation updated as needed. Updates from the *main* branch should be copied in from a direct *pull request* of the *main* branch. The *main* branch **should not** come from a merge *beta* branch to avoid triggering subsequent builds in *beta*.
+Once a release has been tagged, the [flathub repo](https://github.com/flathub/io.github.tuner_labs.tuner) *main* branch can be updated with the *release* tag going into the manifest *.json*, and any patches and documentation updated as needed. Updates from the *main* branch should be copied in from a direct *pull request* of the *main* branch. The *main* branch **should not** come from a merge *beta* branch to avoid triggering subsequent builds in *beta*.
 
 Once the main production release is built by flathub it will be available for installation and automatically distributed to user community.
 
 The flathub build manifest can be found here:
-<https://github.com/louis77/flathub/tree/com.github.louis77.tuner>
+<https://github.com/louis77/flathub/tree/io.github.tuner_labs.tuner>
 
 ### Dev Tricks
 
@@ -75,7 +75,7 @@ The flathub build manifest can be found here:
 <https://docs.elementary.io/develop/writing-apps/logging>
 
 ```bash
-G_MESSAGES_DEBUG=all ./com.github.louis77.tuner
+G_MESSAGES_DEBUG=all ./io.github.tuner_labs.tuner
 ```
 
 ### Manually compile schemas

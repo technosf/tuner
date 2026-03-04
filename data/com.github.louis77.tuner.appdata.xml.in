@@ -10,16 +10,16 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 <component type="desktop-application">
 
-  <id>com.github.louis77.tuner</id>
+  <id>io.github.tuner_labs.tuner</id>
 
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-3.0+</project_license>
 
   <name>Tuner</name>
-  <developer id="com.github.louis77.tuner">
+  <developer id="io.github.tuner_labs.tuner">
     <name>technosf</name>
   </developer>
-  <launchable type="desktop-id">com.github.louis77.tuner.desktop</launchable>
+  <launchable type="desktop-id">io.github.tuner_labs.tuner.desktop</launchable>
   <branding>
     <color type="primary" scheme_preference="light">#eff744</color>
     <color type="primary" scheme_preference="dark">#c599f4</color>
@@ -38,7 +38,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
     </ul>
   </description>
 
-  <translation type="gettext">com.github.louis77.tuner</translation>
+  <translation type="gettext">io.github.tuner_labs.tuner</translation>
 
   <screenshots>
     <screenshot type="default">
@@ -95,7 +95,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
   </content_rating>
 
   <provides>
-    <binary>com.github.louis77.tuner</binary>
+    <binary>io.github.tuner_labs.tuner</binary>
     <dbus type="session">org.mpris.MediaPlayer2.Tuner</dbus>
   </provides>
 

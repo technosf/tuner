@@ -6,7 +6,7 @@
 
 # Project name, programming language and version
 project (
-    'com.github.louis77.tuner',
+    'io.github.tuner_labs.tuner',
     'vala', 'c',
     version: '2.0.1',
     meson_version: '>= 1.3.2',

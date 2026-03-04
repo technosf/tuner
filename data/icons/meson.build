@@ -14,7 +14,7 @@
 #
 message('Installing Icons...')
 
-application_id = 'com.github.louis77.tuner'
+application_id = 'io.github.tuner_labs.tuner'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(
