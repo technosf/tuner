@@ -104,7 +104,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
   </replaces>
 
   <releases>
-    <release version="2.0.1" date="2026-02-26">
+    <release version="2.0.1" date="2026-03-26">
       <description>
         <p>Maintenance release:</p>
         <ul>
@@ -115,6 +115,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
           <li>Sharpened some wording, fixed typos</li>
           <li>Updated translated strings and incorporated fresh translations</li>
           <li>Refactored Language change mechanism and applied translations to more UI elements</li>
+          <li>Refactored Icon layout and build, removing unused icon files</li>
           <li>i18n - Broke out Country and Language translations to separate module</li>
           <li>i18n - Added trad Chinese, Estonian, Romaian, Tamil and Latin American Spanish</li>
         </ul>

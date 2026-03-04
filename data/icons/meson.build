@@ -14,28 +14,11 @@
 #
 message('Installing Icons...')
 
-#icon_sizes = ['16', '24', '32', '48', '64', '128']
-# icon_sizes = ['16', '48', '128']
-
-# foreach i : icon_sizes
-#     install_data (
-#         join_paths ('icons', i, meson.project_name () + '.png'),
-#         install_dir: join_paths (get_option ('datadir'), 'icons','hicolor', i + 'x' + i, 'apps'),
-#         install_tag: 'icons'
-#     )
-# endforeach
-
-# install_data (
-#     join_paths ('icons', '128', meson.project_name () + '.svg'),
-#     install_dir: join_paths (get_option ('datadir'), 'icons','hicolor', 'scalable', 'apps'),
-#     install_tag: 'icons'
-# )
-
 application_id = 'com.github.louis77.tuner'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(
-  join_paths(scalable_dir, ('@0@.svg').format(application_id)),
+  join_paths(scalable_dir, ('@0@-scalable.svg').format(application_id)),
   install_dir: join_paths(get_option('datadir'), 'icons', scalable_dir),
   install_tag: 'icons'
 )

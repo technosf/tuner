@@ -8,10 +8,9 @@ SPDX-License-Identifier: GPL-3.0-or-later
 <svg
    id="svg2981"
    xml:space="preserve"
-   style="enable-background:new 0 0 128 128;"
+   width="128"
+   height="128"
    viewBox="0 0 128 128"
-   y="0px"
-   x="0px"
    version="1.1"
    sodipodi:docname="com.github.louis77.tuner.svg"
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
