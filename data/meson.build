@@ -68,13 +68,29 @@ message('Installed appdata\n')
 message('Installing schema...')
 
 schemas_dir = join_paths (get_option('prefix'), get_option('datadir'), 'glib-2.0', 'schemas')
+glib_compile_schemas = find_program('glib-compile-schemas')
 
 settings_schemas = [ meson.project_name() + '.gschema.xml' ]
+
+# Keep a compiled schema in the build tree so local debug runs work without install.
+custom_target(
+    'compile-local-schemas',
+    output: 'gschemas.compiled',
+    command: [
+        glib_compile_schemas,
+        '--strict',
+        '--targetdir',
+        meson.current_build_dir(),
+        meson.current_source_dir()
+    ],
+    depend_files: settings_schemas,
+    build_by_default: true
+)
 
 install_data(settings_schemas, install_dir: schemas_dir)
 
 meson.add_install_script (
-    'glib-compile-schemas',
+    glib_compile_schemas,
     schemas_dir,
     install_tag: 'schemas'
 )

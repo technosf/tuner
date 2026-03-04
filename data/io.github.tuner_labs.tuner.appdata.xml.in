@@ -104,7 +104,18 @@ SPDX-License-Identifier: GPL-3.0-or-later
   </replaces>
 
   <releases>
-    <release version="2.0.1" date="2026-03-26">
+    <release version="2.0.2" date="2026-03-04">
+      <description>
+        <p>Maintenance release:</p>
+        <ul>
+          <li>Renamed the app to io.github.tuner_labs.tuner (see https://github.com/flathub/flathub/issues/7468)</li>
+          <li>Added code to rename settings file</li>
+          <li>Added 'en' into Language list as its the gettext default</li>
+        </ul>
+      </description>
+    </release>     
+
+    <release version="2.0.1" date="2026-03-03">
       <description>
         <p>Maintenance release:</p>
         <ul>
