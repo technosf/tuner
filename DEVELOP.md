@@ -161,6 +161,13 @@ valadoc --force \
   $(find src -type f -name '*.vala')
 ```
 
+## Local Build and Test
+
+meson compile -C builddir
+meson compile -C builddir export-and-compile-local-schemas
+GSETTINGS_SCHEMA_DIR="builddir/data" ./builddir/io.github.tuner_labs.tuner
+
+
 ## Building the Tuner Flatpak
 
 Tuner uses the **org.freedesktop.Sdk** version **25.08** with the  **Vala** extension. To build the tuner flatpak, install the freedesktop SDK, Platform and Vala extension. For example, for x86:

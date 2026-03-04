@@ -71,19 +71,23 @@ schemas_dir = join_paths (get_option('prefix'), get_option('datadir'), 'glib-2.0
 glib_compile_schemas = find_program('glib-compile-schemas')
 
 settings_schemas = [ meson.project_name() + '.gschema.xml' ]
+fs_mod = import('fs')
 
-# Keep a compiled schema in the build tree so local debug runs work without install.
+# Export schema XML to the build tree.
+exported_schema = fs_mod.copyfile(settings_schemas[0], settings_schemas[0])
+
+# Compile schemas in the build tree so local debug runs work without install.
 custom_target(
-    'compile-local-schemas',
+    'export-and-compile-local-schemas',
     output: 'gschemas.compiled',
     command: [
         glib_compile_schemas,
         '--strict',
         '--targetdir',
         meson.current_build_dir(),
-        meson.current_source_dir()
+        meson.current_build_dir()
     ],
-    depend_files: settings_schemas,
+    depends: exported_schema,
     build_by_default: true
 )
 
