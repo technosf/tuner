@@ -104,7 +104,7 @@ namespace Tuner {
             Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
             Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
             Intl.textdomain (GETTEXT_PACKAGE);
-
+            LOCALES_FOUND.add("en"); // English is always available as default
             try {   
                 // Add translations
                 var dir = File.new_for_path(LOCALEDIR);
