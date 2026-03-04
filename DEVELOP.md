@@ -39,9 +39,9 @@ cd tuner
 checkout development
 meson setup --buildtype=debug builddir
 meson compile -C builddir
-./builddir/com.github.louis77.tuner
-flatpak-builder --force-clean --user --sandbox --install build-dir com.github.louis77.tuner.yml
-flatpak --user run com.github.louis77.tuner
+./builddir/io.github.tuner_labs.tuner
+flatpak-builder --force-clean --user --sandbox --install build-dir io.github.tuner_labs.tuner.yml
+flatpak --user run io.github.tuner_labs.tuner
 ```
 
 ## Prerequisits
@@ -135,7 +135,7 @@ Configure Meson for development debug build, build Tuner with Ninja, and run the
 meson setup --buildtype=debug builddir -Dtranslate=update
 meson compile -C builddir
 meson install -C builddir     # only needed once to get the gschema in place
-./builddir/com.github.louis77.tuner
+./builddir/io.github.tuner_labs.tuner
 ```
 
 Tuner can be deployed to the local system to bypass flatpak if required, however it is _recommended to use flatpak_.To do deploy locally, run the following command:
@@ -161,6 +161,13 @@ valadoc --force \
   $(find src -type f -name '*.vala')
 ```
 
+## Local Build and Test
+
+meson compile -C builddir
+meson compile -C builddir export-and-compile-local-schemas
+GSETTINGS_SCHEMA_DIR="builddir/data" ./builddir/io.github.tuner_labs.tuner
+
+
 ## Building the Tuner Flatpak
 
 Tuner uses the **org.freedesktop.Sdk** version **25.08** with the  **Vala** extension. To build the tuner flatpak, install the freedesktop SDK, Platform and Vala extension. For example, for x86:
@@ -175,15 +182,15 @@ flatpak install flathub org.freedesktop.Sdk.Extension.vala/x86_64/25.08
 Build the flatpak in the _user_ scope with and without debug:
 
 ```bash
-flatpak-builder --force-clean --user --sandbox --install build-dir com.github.louis77.tuner.debug.yml
+flatpak-builder --force-clean --user --sandbox --install build-dir io.github.tuner_labs.tuner.debug.yml
 
-flatpak-builder --force-clean --user --sandbox --install build-dir com.github.louis77.tuner.yml
+flatpak-builder --force-clean --user --sandbox --install build-dir io.github.tuner_labs.tuner.yml
 ```
 
 Run the Tuner flatpack:
 
 ```bash
-flatpak --user run com.github.louis77.tuner
+flatpak --user run io.github.tuner_labs.tuner
 ```
 
 Check the app version to ensure that it matches the version in the manifest.
@@ -213,7 +220,7 @@ If the _.po_ files change, the meson build setup should be rerun.
 Before a pull request can be accepted, the code must pass linting. This is done by running the following command:
 
 ```bash
-flatpak run --command=flatpak-builder-lint org.flatpak.Builder manifest com.github.louis77.tuner.yml
+flatpak run --command=flatpak-builder-lint org.flatpak.Builder manifest io.github.tuner_labs.tuner.yml
 ```
 
 Linting currently produces the following issues (adddressed in ticket #140):
@@ -246,7 +253,7 @@ Debugging from VSCode using GDB, set up the launch.json file as follows:
       "name": "Debug Vala with Meson",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/builddir/com.github.louis77.tuner",
+      "program": "${workspaceFolder}/builddir/io.github.tuner_labs.tuner",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",

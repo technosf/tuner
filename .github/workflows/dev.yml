@@ -43,6 +43,6 @@ jobs:
 
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
-        bundle: com.github.louis77.tuner.flatpak
-        manifest-path: com.github.louis77.tuner.yml
+        bundle: io.github.tuner_labs.tuner.flatpak
+        manifest-path: io.github.tuner_labs.tuner.yml
         cache-key: flatpak-builder-${{ github.sha }}
