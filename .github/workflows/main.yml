@@ -17,6 +17,8 @@ on:
       - '!.github/**'
       - '!apidocs/**'
       - '!docs/**'
+      - '!**/*.md'
+      - '!**/*.svg'
 
   pull_request:
     branches:
@@ -27,6 +29,8 @@ on:
       - '!.github/**'
       - '!apidocs/**'
       - '!docs/**'
+      - '!**/*.md'
+      - '!**/*.svg'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
