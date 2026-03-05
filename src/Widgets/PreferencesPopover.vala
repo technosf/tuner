@@ -18,15 +18,19 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 	construct // Construct the preferences popover widget
 	{
+		const int ROW_INDENT = 8;
+
 		var about_menuitem = new Gtk.ModelButton ();
 		about_menuitem.text        = _("About");
 		about_menuitem.action_name = Window.ACTION_PREFIX + Window.ACTION_ABOUT;
+		about_menuitem.margin_start = ROW_INDENT;
 
 		// Voting
 		var disable_tracking_item = new Gtk.ModelButton ();
 		disable_tracking_item.text         = _("Do not participate in Station voting");
 		disable_tracking_item.action_name  = Window.ACTION_PREFIX + Window.ACTION_DISABLE_TRACKING;
 		disable_tracking_item.tooltip_text = _("If checked, your starred and streamed stations will not be used to calculate the Station index popularity vote, nor the popular and trending stations");
+		disable_tracking_item.margin_start = ROW_INDENT;
 
 
 		//Theme
@@ -37,6 +41,8 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 			.with_active_id (app().settings.theme_mode);   
 
 		var theme_box = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 3);
+		theme_box.hexpand = true;
+		theme_box.halign  = Gtk.Align.FILL;
 		theme_box.pack_end (theme_selector, true, true, 5);
 		theme_box.pack_end (new Gtk.Label(_("Theme")), false, false, 12);
 
@@ -46,6 +52,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		autoplay_item.text         = _("Auto-play last station on startup");
 		autoplay_item.action_name  = Window.ACTION_PREFIX + Window.ACTION_ENABLE_AUTOPLAY;
 		autoplay_item.tooltip_text = _("If enabled, when Tuner starts it will automatically start to play the last played station");
+		autoplay_item.margin_start = ROW_INDENT;
 
 
 		// Start on Starred
@@ -53,6 +60,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		start_on_starred.text         = _("Open to Starred Stations");
 		start_on_starred.action_name  = Window.ACTION_PREFIX + Window.ACTION_START_ON_STARRED;
 		start_on_starred.tooltip_text = _("If enabled, when Tuner starts it will open to the starred stations view");
+		start_on_starred.margin_start = ROW_INDENT;
 
 
 		// Play Display
@@ -60,11 +68,13 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		stream_info.text         = _("Show stream info when playing");
 		stream_info.action_name  = Window.ACTION_PREFIX + Window.ACTION_STREAM_INFO;
 		stream_info.tooltip_text = _("Cycle through the metadata from the playing stream");
+		stream_info.margin_start = ROW_INDENT;
 
 		var stream_info_fast = new Gtk.ModelButton ();
 		stream_info_fast.text         = _("Faster cycling through stream info");
 		stream_info_fast.action_name  = Window.ACTION_PREFIX + Window.ACTION_STREAM_INFO_FAST;
 		stream_info_fast.tooltip_text = _("Fast cycle through the metadata from the playing stream if show stream info is enabled");
+		stream_info_fast.margin_start = ROW_INDENT;
 
 
 		//Language
@@ -73,7 +83,9 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 			.with_items (Languages.get_language_map())
 			.with_active_id(app().settings.language);
 
-		var lang_box = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 3);
+		var lang_box = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 0);
+		lang_box.hexpand = true;
+		lang_box.halign  = Gtk.Align.FILL;
 		lang_box.pack_end (lang_selector, true, true, 5);
 		lang_box.pack_end (new Gtk.Label(_("Language")), false, false, 12);
 		lang_box.tooltip_text = _("Language changes restart Tuner");
@@ -82,6 +94,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		// Export starred
 		var export_starred = new Gtk.ModelButton ();
 		export_starred.text = _("Export Starred Stations to Playlist");
+		export_starred.margin_start = ROW_INDENT;
 		export_starred.button_press_event.connect (() =>
 		{
 			export_m3u8 ();
@@ -91,6 +104,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		// Import starred
 		var import_starred = new Gtk.ModelButton ();
 		import_starred.text = _("Import Station UUIDs as Starred Stations");
+		import_starred.margin_start = ROW_INDENT;
 		import_starred.button_press_event.connect (() =>
 		{
 			import_stationuuids ();
@@ -107,7 +121,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		menu_grid.row_spacing   = 3;
 		menu_grid.orientation   = Gtk.Orientation.VERTICAL;
 
-		menu_grid.attach (theme_box, 0, vpos++);
+		menu_grid.attach (theme_box, 0, vpos++, 4, 1);
 
 		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
 
