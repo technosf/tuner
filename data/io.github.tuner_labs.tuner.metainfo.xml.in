@@ -95,10 +95,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
   </content_rating>
 
   <provides>
-    <binary>io.github.tuner_labs.tuner</binary>
-    <dbus type="session">org.mpris.MediaPlayer2.Tuner</dbus>
+    <binary>com.github.louis77.tuner</binary>
   </provides>
-
   <replaces>
     <id>com.github.louis77.tuner</id>
   </replaces>

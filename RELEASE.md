@@ -24,9 +24,9 @@ The desktop file must be validated using this command:
 desktop-file-validate io.github.tuner_labs.tuner.desktop
 ```
 
-### AppData
+### metainfo
 
-The AppData.xml must be validated using this command:
+The metainfo.xml must be validated using this command:
 
 ```bash
 flatpak run org.freedesktop.appstream-glib validate [path-to-xml]
@@ -86,4 +86,4 @@ sudo /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 ### Release Checklist
 
-- [ ] Create Release Tag in AppData
+- [ ] Create Release Tag in metainfo
