@@ -8,7 +8,7 @@
 project (
     'io.github.tuner_labs.tuner',
     'vala', 'c',
-    version: '2.0.2',
+    version: '2.0.3-beta.1',
     meson_version: '>= 1.3.2',
 )
 
@@ -73,7 +73,7 @@ dependencies = [
     dependency ('gtk+-3.0'),
     dependency ('gee-0.8'),
     dependency ('gio-2.0'),
-    dependency ('granite'),
+    # dependency ('granite'),
     dependency ('gstreamer-1.0'),
     dependency ('gstreamer-player-1.0'),
     dependency ('libsoup-3.0'),

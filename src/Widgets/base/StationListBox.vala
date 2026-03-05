@@ -7,7 +7,7 @@
 
 using Gtk;
 using Gee;
-using Granite.Widgets;
+//  using Granite.Widgets;
 
 /**
  * @file SourceListBox.vala
@@ -395,8 +395,8 @@ namespace Tuner
         public static StationListBox create_category_predefined
         ( StationListHookup slh
         , Gtk.Stack stack
-        , Granite.Widgets.SourceList source_list
-        , Granite.Widgets.SourceList.ExpandableItem category
+        , SourceList source_list
+        , SourceList.ExpandableItem category
         , string name
         , string icon
         , string title
@@ -442,8 +442,8 @@ namespace Tuner
         */
         public static StationListBox create_category_specific
         ( Gtk.Stack stack,
-        Granite.Widgets.SourceList source_list,
-        Granite.Widgets.SourceList.ExpandableItem category,
+        SourceList source_list,
+        SourceList.ExpandableItem category,
         string name,
         string icon,
         string title,

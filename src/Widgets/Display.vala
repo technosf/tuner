@@ -20,7 +20,7 @@
 
 
 using Gee;
-using Granite.Widgets;
+//  using Granite.Widgets;
 
 
 /**
@@ -371,7 +371,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
         // ---------------------------------------------------------------------------
         // Country-specific stations list
         
-        //  var item4 = new Granite.Widgets.SourceList.Item (_("Your Country"));
+        //  var item4 = new SourceList.Item (_("Your Country"));
         //  item4.icon = new ThemedIcon ("emblem-web");
         //  ContentBox c_country;
         //  c_country = create_content_box ("my-country", item4,
@@ -654,8 +654,8 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
 	*/
 	private void create_category_genre
 	        ( Gtk.Stack stack,
-	        Granite.Widgets.SourceList source_list,
-	        Granite.Widgets.SourceList.ExpandableItem category,
+	        SourceList source_list,
+	        SourceList.ExpandableItem category,
 	        DirectoryController directory,
 	        string[] genres
 	        ){

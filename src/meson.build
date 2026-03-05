@@ -34,6 +34,11 @@ sources = files (
     'Widgets/base/StackLabel.vala',
     'Widgets/base/StationList.vala',
 
+    'Widgets/base/AlertView.vala',
+    'Widgets/base/CellRendererBadge.vala',
+    'Widgets/base/CellRendererExpander.vala',
+    'Widgets/base/SourceList.vala',
+
     'Widgets/HeaderBar.vala',
     'Widgets/PlayButton.vala',
     'Widgets/ListButton.vala',
