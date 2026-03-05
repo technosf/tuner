@@ -9,7 +9,7 @@
 
 namespace Tuner.DBus {
 
-	const string ServerName     = "org.mpris.MediaPlayer2.Tuner";
+	const string ServerName     = "org.mpris.MediaPlayer2.io.github.tuner_labs.tuner";
 	const string ServerPath     = "/org/mpris/MediaPlayer2";
 	private bool is_initialized = false;
 
