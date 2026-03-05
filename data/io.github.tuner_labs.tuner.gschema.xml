@@ -8,7 +8,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
 <schemalist>
-    <schema path="/com/github/louis77/tuner/" id="com.github.louis77.tuner">
+    <schema path="/io/github/tuner_labs/tuner/" id="io.github.tuner_labs.tuner">
         <key name="pos-x" type="i">
             <default>0</default>
             <summary>Horizontal position</summary>

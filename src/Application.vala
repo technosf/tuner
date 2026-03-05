@@ -71,7 +71,7 @@ namespace Tuner {
         public const string APP_VERSION = VERSION;
         
         /** @brief Application ID */
-        public const string APP_ID = "com.github.louis77.tuner";
+        public const string APP_ID = "io.github.tuner_labs.tuner";
         
         /** @brief Unicode character for starred items ★ */
         public const string STAR_CHAR = "\u2605 ";
@@ -104,7 +104,7 @@ namespace Tuner {
             Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
             Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
             Intl.textdomain (GETTEXT_PACKAGE);
-
+            LOCALES_FOUND.add("en"); // English is always available as default
             try {   
                 // Add translations
                 var dir = File.new_for_path(LOCALEDIR);
@@ -382,7 +382,7 @@ namespace Tuner {
 
                 GTK_SETTINGS = Gtk.Settings.get_default();
                 GTK_SYSTEM_THEME = GTK_SETTINGS.gtk_theme_name;
-                CSSPROVIDER.load_from_resource ("/com/github/louis77/tuner/css/Tuner-system.css");
+                CSSPROVIDER.load_from_resource ("/io/github/tuner_labs/tuner/css/Tuner-system.css");
                 Gtk.StyleContext.add_provider_for_screen(
                     Gdk.Screen.get_default(),
                     CSSPROVIDER,

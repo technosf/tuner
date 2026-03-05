@@ -47,7 +47,7 @@ _January 2025_ Version 2 released with major new features and performance improv
 
 ## Installation
 
-**Tuner** is primarily [developed](DEVELOP.md) and distributed as a Flatpak on [Flathub](https://flathub.org/apps/details/com.github.louis77.tuner).
+**Tuner** is primarily [developed](DEVELOP.md) and distributed as a Flatpak on [Flathub](https://flathub.org/apps/details/io.github.tuner_labs.tuner).
 
 It can also be built and [distributed via other platforms and distos](PACKAGING.md).
 Please help make **Tuner** work on your favorite Disto/Package.
@@ -70,7 +70,7 @@ sudo apt install gstreamer1.0-libav
 
 #### 'Failed to load module "xapp-gtk3-module"'
 
-Running Tuner from the CLI with `flatpak run com.github.louis77.tuner` may produce a message like the following:
+Running Tuner from the CLI with `flatpak run io.github.tuner_labs.tuner` may produce a message like the following:
 
 `Gtk-Message: 10:01:00.561: Failed to load module "xapp-gtk3-module"`
 
@@ -81,7 +81,7 @@ This relates to Gtk looking for Xapp (which isn't used by Tuner) and can be igno
 The radio station index server can be specified via and environmental varible at startup:
 
 `TUNER_API` - a `:` separated list of API servers to read from, e.g.
-_ `export TUNER_API="de1.api.radio-browser.info:nl1.api.radio-browser.info"; com.github.louis77.tuner`
+_ `export TUNER_API="de1.api.radio-browser.info:nl1.api.radio-browser.info"; io.github.tuner_labs.tuner`
 
 ## Contribute
 

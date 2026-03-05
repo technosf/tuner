@@ -39,7 +39,7 @@ If applicable, add screenshots to help explain your problem.
 
 **If Tuner is Crashing or Hanging**
 Start Tuner from the command line and post the output using the command - for flatpak this is:
-```flatpak run com.github.louis77.tuner``` 
+```flatpak run io.github.tuner_labs.tuner``` 
 
 **OS & Desktop (please complete the following information):**
  - OS: [e.g. iOS]

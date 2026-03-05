@@ -7,7 +7,7 @@
 ## 
 ## This file defines how data files are handled for the project, including:
 ## - installation of the desktop file
-## - installation of the appdata file
+## - installation of the metainfo file
 ## - installation of the GSettings schema
 ## - subinstallation of icons
 ##
@@ -38,16 +38,16 @@ message('Installed desktop file\n')
 
 
 #
-# Install appdata
+# Install metainfo
 #
-message('Installing appdata...')
+message('Installing metainfo...')
 
 i18n = import ('i18n')
 
-# Translate and install our .appdata.xml file so AppCenter will see it
+# Translate and install our .metainfo.xml file so AppCenter will see it
 appstream_file = i18n.merge_file (
-    input: meson.project_name () + '.appdata.xml.in',
-    output: meson.project_name () + '.appdata.xml',
+    input: meson.project_name () + '.metainfo.xml.in',
+    output: meson.project_name () + '.metainfo.xml',
     po_dir: join_paths (meson.project_source_root(), 'po', 'extra'),
     install: true,
     install_dir: join_paths (get_option ('datadir'), 'metainfo'),
@@ -59,7 +59,7 @@ if appstream_util.found()
   test('Validate appstream file', appstream_util, args: ['validate', appstream_file])
 endif
 
-message('Installed appdata\n')
+message('Installed metainfo\n')
 
 
 #
@@ -68,13 +68,33 @@ message('Installed appdata\n')
 message('Installing schema...')
 
 schemas_dir = join_paths (get_option('prefix'), get_option('datadir'), 'glib-2.0', 'schemas')
+glib_compile_schemas = find_program('glib-compile-schemas')
 
 settings_schemas = [ meson.project_name() + '.gschema.xml' ]
+fs_mod = import('fs')
+
+# Export schema XML to the build tree.
+exported_schema = fs_mod.copyfile(settings_schemas[0], settings_schemas[0])
+
+# Compile schemas in the build tree so local debug runs work without install.
+custom_target(
+    'export-and-compile-local-schemas',
+    output: 'gschemas.compiled',
+    command: [
+        glib_compile_schemas,
+        '--strict',
+        '--targetdir',
+        meson.current_build_dir(),
+        meson.current_build_dir()
+    ],
+    depends: exported_schema,
+    build_by_default: true
+)
 
 install_data(settings_schemas, install_dir: schemas_dir)
 
 meson.add_install_script (
-    'glib-compile-schemas',
+    glib_compile_schemas,
     schemas_dir,
     install_tag: 'schemas'
 )
