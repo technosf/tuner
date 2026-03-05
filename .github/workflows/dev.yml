@@ -16,6 +16,8 @@ on:
       - '!.github/**'
       - '!apidocs/**'
       - '!docs/**'
+      - '!**/*.md'
+      - '!**/*.svg'
 
   pull_request:
     branches:
@@ -26,6 +28,12 @@ on:
       - '!.github/**'
       - '!apidocs/**'
       - '!docs/**'
+      - '!**/*.md'
+      - '!**/*.svg'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
       
 jobs:
   flatpak:

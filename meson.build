@@ -16,7 +16,6 @@ message('Starting build for project: ' + meson.project_name())
 message('Build type: ' + get_option('buildtype'))
 
 
-
 # Imports
 
 i18n = import ('i18n') # Translation module
@@ -25,7 +24,7 @@ fs = import('fs')   # Filesystem
 
 # Translations and i18n handling
 
-po_script = join_paths(meson.global_source_root(),'scripts','update-po.sh')
+po_script = join_paths(meson.global_source_root(),'scripts','merge-po.sh')
 
 if fs.exists(po_script)
   message('Running PO merge hook...')
@@ -43,11 +42,15 @@ add_project_arguments (
 
 config_data = configuration_data()
 
-if get_option('debug')
+## Enable local debug of translations if we're doing a local debug build
+if get_option('debug') and get_option('prefix') != '/app'
+## Local debug build, install translations to build dir
   config_data.set_quoted('LOCALEDIR', join_paths(meson.global_build_root(), 'po'))
 else
+## Everything else, install translations to prefix
   config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 endif
+
 config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
 config_data.set_quoted('VERSION', meson.project_version())
 config_file = configure_file(
