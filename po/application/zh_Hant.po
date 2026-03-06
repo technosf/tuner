@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-03-06 00:43-0800\n"
-"PO-Revision-Date: 2026-03-06 08:52+0000\n"
+"POT-Creation-Date: 2026-03-06 02:11-0800\n"
+"PO-Revision-Date: 2026-03-06 10:24+0000\n"
 "Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/tuner/tuner-ui/zh_Hant/>\n"
@@ -342,17 +342,17 @@ msgstr "如果啟用此功能，Tuner 將在啟動時自動播放上次收聽的
 #. Restart Playing after network interuption
 #: src/Widgets/PreferencesPopover.vala:60
 #, fuzzy
-msgid "Restart playing after a network interruption"
-msgstr "Restart playing after a network interruption"
+msgid "Restart playing after a network outage"
+msgstr "Restart playing after a network outage"
 
 #: src/Widgets/PreferencesPopover.vala:62
 #, fuzzy
 msgid ""
-"If enabled, if there is an network interuption and Tuner was playing Tuner "
-"will automatically start to play the last played station"
+"If enabled, Tuner will restart playing the current station if it was stopped "
+"by a network outage"
 msgstr ""
-"If enabled, if there is an network interuption and Tuner was playing Tuner "
-"will automatically start to play the last played station"
+"If enabled, Tuner will restart playing the current station if it was stopped "
+"by a network outage"
 
 #. Start on Starred
 #: src/Widgets/PreferencesPopover.vala:68
@@ -500,6 +500,18 @@ msgstr "未找到站點"
 #: src/Widgets/base/StationListBox.vala:157
 msgid "Please try a different search term."
 msgstr "請嘗試其他搜尋字詞。"
+
+#, fuzzy
+#~ msgid "Restart playing after a network interruption"
+#~ msgstr "Restart playing after a network interruption"
+
+#, fuzzy
+#~ msgid ""
+#~ "If enabled, if there is an network interuption and Tuner was playing "
+#~ "Tuner will automatically start to play the last played station"
+#~ msgstr ""
+#~ "If enabled, if there is an network interuption and Tuner was playing "
+#~ "Tuner will automatically start to play the last played station"
 
 #, fuzzy
 #~ msgid "Could not get random station"
