@@ -22,6 +22,7 @@
 using Gee;
 using Tuner.Controllers;
 using Tuner.Models;
+using Tuner.Services;
 using Tuner.Widgets.Base;
 using Tuner.Widgets.Granite;
 
@@ -46,19 +47,6 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
      * @param station The clicked station.
      */
     public signal void station_clicked_sig (Station station);
-
-
-    /**
-     * @brief Signal emitted when the favourites list changes.
-     */
-    public signal void favourites_changed_sig ();
-
-
-    /**
-     * @brief Signal emitted to refresh starred stations.
-     */
-    public signal void refresh_starred_stations_sig ();
-
 
 	/**
 	 * @brief Handles focus entering the search entry.
@@ -121,6 +109,10 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	private bool _first_activation           = true;     // display has not been activated before
 	private bool _active                     = false;     // display is active
 	private bool _shuffle                    = false;     // Shuffle mode
+	private Application _app;
+	private PlayerController _player;
+	private StarStore _stars;
+	private DataProvider.API _provider;
 	private Gtk.Revealer _background_tuner   = new Gtk.Revealer();     // Background image
 	private Gtk.Revealer _background_jukebox = new Gtk.Revealer();      // Background image
 	private Gtk.Overlay _overlay             = new Gtk.Overlay ();
@@ -138,25 +130,39 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
     /**
      * @brief Constructs a new Display instance.
+     * @param app Application context for connectivity and app-level signals.
      * @param directory The directory controller to use.
+     * @param player Player controller used for playback-driven behavior.
+     * @param stars Star storage service for starred-station updates.
+     * @param provider Data provider for station-count metadata and genre loading.
      */
-    public Display(DirectoryController directory)
+    public Display(
+		Application app,
+		DirectoryController directory,
+		PlayerController player,
+		StarStore stars,
+		DataProvider.API provider
+	)
     {
         Object(
             directory : directory,
             source_list : new SourceList(),
             stack : new Gtk.Stack ()
         );
+		_app = app;
+		_player = player;
+		_stars = stars;
+		_provider = provider;
 
         // Jukebox set up - get the station set and connect signals for shuffle and tape counter
-		jukebox_station_set = _directory.load_random_stations(1);
-		app().player.shuffle_requested_sig.connect(() =>
-		{
-			if (_shuffle)
-				jukebox_shuffle.begin();
-		});
+			jukebox_station_set = _directory.load_random_stations(1);
+			_player.shuffle_requested_sig.connect(() =>
+			{
+				if (_shuffle)
+					jukebox_shuffle.begin();
+			});
 
-        app().player.state_changed_sig.connect((station, state) =>
+        _player.state_changed_sig.connect((station, state) =>
         {
             if (_shuffle && state == PlayerController.Is.STOPPED_ERROR)
             {
@@ -471,14 +477,14 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         });
 
 
-		// Add saved search from star press
-		_search_results.action_button_activated_sig.connect (() =>
+			// Add saved search from star press
+			_search_results.action_button_activated_sig.connect (() =>
         // FIXME - Causes double wrap of a widget
-		{
-			if (app().is_offline)
-				return;
-			_search_results.tooltip_button.sensitive = false;
-			var new_saved_search= 
+			{
+				if (_app.is_offline)
+					return;
+				_search_results.tooltip_button.sensitive = false;
+				var new_saved_search= 
                 add_saved_search( _search_results.parameter, _directory.add_saved_search (_search_results.parameter));
 			new_saved_search.list(_search_results.content);
 			source_list.selected = source_list.get_last_child (_saved_searches_category);
@@ -502,7 +508,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
         // Explore Categories category
         // Get random categories and stations in them
-        if ( app().is_online)
+        if ( _app.is_online)
         {
             uint explore = 0;
             foreach (var tag in _directory.load_random_genres(EXPLORE_CATEGORIES))
@@ -534,14 +540,14 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         // --------------------------------------------------------------------
 
 
-        app().stars.starred_stations_changed_sig.connect ((station) =>
+        _stars.starred_stations_changed_sig.connect ((station) =>
         /*
         * Refresh the starred stations list when a station is starred or unstarred
          */
         {
-			if (app().is_offline && _directory.get_starred ().size > 0)
-				return;
-			var _slist = StationList.with_stations (_directory.get_starred ());
+				if (_app.is_offline && _directory.get_starred ().size > 0)
+					return;
+				var _slist = StationList.with_stations (_directory.get_starred ());
 			station_list_hookup(_slist);
 			starred.content = _slist;
             starred.parameter = @"$(starred.item_count)";
@@ -575,20 +581,20 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         item.tooltip = (_("Double click to shuffle through %1$u stations")
                     + "\n" + _("one, every ten minutes, for %2$u days")
         ).printf (
-            app ().provider.available_stations (),
-            app ().provider.available_stations () / (6 * 24)
+            _provider.available_stations (),
+            _provider.available_stations () / (6 * 24)
         );
        // item.tooltip = (_(@"Double click to shuffle through $(app().provider.available_stations()) stations,\none, every ten minutes, for $(app().provider.available_stations()/(6*24)) days"));
         item.activated.connect(() =>
         {
                 _shuffle = true;
                 jukebox_shuffle.begin();
-                app().shuffle_mode_sig(true);
+                _app.shuffle_mode_sig(true);
                 _background_tuner.reveal_child = false;    
                 _background_jukebox.reveal_child = true; 
         });
 
-		app().player.tape_counter_sig.connect((oldstation) =>
+		_player.tape_counter_sig.connect((oldstation) =>
 		{
 			if (_shuffle)
 				jukebox_shuffle.begin();
@@ -611,7 +617,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             if ( _shuffle ) 
             {
                 _shuffle = false;
-                app().shuffle_mode_sig(false);
+                _app.shuffle_mode_sig(false);
                 _background_jukebox.reveal_child = false;
                 _background_tuner.reveal_child   = true;
             } // if
@@ -649,7 +655,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         //  }
 
         saved_search.action_button_activated_sig.connect (() => {
-            if ( app().is_offline ) return;
+            if ( _app.is_offline ) return;
             _directory.remove_saved_search (search);
             if ( _search_results.parameter == search )
                 _search_results.tooltip_button.sensitive = true;

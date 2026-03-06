@@ -105,3 +105,33 @@ This document tracks the event orchestration introduced in the 2026 refactor.
     - `apply_offline_ui_state()`
     - `apply_online_ui_state()`
   - Keeps online/offline behavior explicit and reduces branching complexity.
+
+## Display API Cleanup
+
+- `src/Widgets/Display.vala`
+  - Removed unused public signals:
+    - `favourites_changed_sig`
+    - `refresh_starred_stations_sig`
+  - Keeps the public event surface aligned with active call paths.
+
+## Dependency Injection Sweep
+
+- Replaced singleton `app()` lookups with injected references in:
+  - `src/Widgets/HeaderBar.vala`
+  - `src/Widgets/Display.vala`
+  - `src/Services/DBusMediaPlayer.vala`
+- Constructors and initializers now receive required collaborators explicitly
+  (`Application`, `PlayerController`, `DataProvider.API`, `StarStore`), reducing
+  hidden coupling and startup-order risk.
+
+## Coordinator Connectivity Injection
+
+- Removed remaining coordinator singleton lookups by injecting `Application`
+  explicitly into:
+  - `src/Coordinators/StartupCoordinator.vala`
+  - `src/Coordinators/PlaybackRecoveryCoordinator.vala`
+- `StartupCoordinator.try_autoplay()` now checks `_app.is_offline`.
+- `PlaybackRecoveryCoordinator.on_player_state_changed()` now checks
+  `_app.is_online`.
+- `src/Application.vala` constructor wiring now passes `this` into coordinator
+  constructors, making coordinator connectivity decisions explicit and testable.

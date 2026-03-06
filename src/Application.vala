@@ -154,12 +154,12 @@ namespace Tuner {
                         // Start a fade-out using the shared fade constant and
                         // hide the window after the fade so opacity doesn't revert.
                         uint fade_ms = WINDOW_FADE_MS;
-                        fade_window.begin(app().window, fade_ms, false, () => { });
+                        fade_window.begin(window, fade_ms, false, () => { });
 
                         GLib.Timeout.add((uint) (fade_ms + 80), () => {
                             while (Gtk.events_pending()) Gtk.main_iteration();
                             settings.save();
-                            app().window.hide();
+                            window.hide();
                             // Stop GTK main loop cleanly
                             spawn_restart();
                             quit();
@@ -428,7 +428,7 @@ namespace Tuner {
         */
         private void initialize_coordinators()
         {
-            _playback_recovery_coordinator = new PlaybackRecoveryCoordinator(events, player, settings);
+            _playback_recovery_coordinator = new PlaybackRecoveryCoordinator(this, events, player, settings);
             _usage_tracking_coordinator = new UsageTrackingCoordinator(settings, player, provider);
         }
 
@@ -514,7 +514,7 @@ namespace Tuner {
         */
         private void initialize_runtime_presentation()
         {
-            Services.DBus.initialize ();
+            Services.DBus.initialize (this);
 
             GTK_SETTINGS = Gtk.Settings.get_default();
             GTK_SYSTEM_THEME = GTK_SETTINGS.gtk_theme_name;
@@ -548,7 +548,7 @@ namespace Tuner {
         private void create_main_window()
         {
             window = new Window (this, player, settings, directory);
-            _startup_coordinator = new StartupCoordinator(events, window, settings, directory);
+            _startup_coordinator = new StartupCoordinator(this, events, window, settings, directory);
             _startup_coordinator.start();
 
             // Flathub screenshot sizing

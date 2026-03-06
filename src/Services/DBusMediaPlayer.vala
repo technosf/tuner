@@ -19,14 +19,21 @@ namespace Tuner.Services.DBus
 	const string ServerName     = "org.mpris.MediaPlayer2.io.github.tuner_labs.tuner";
 	const string ServerPath     = "/org/mpris/MediaPlayer2";
 	private bool is_initialized = false;
+	private Application? _application = null;
 
-	public void initialize ()
+	/**
+	 * @brief Initializes and registers the MPRIS DBus service.
+	 *
+	 * @param application Application context used by DBus handlers.
+	 */
+	public void initialize (Application application)
 	{
 		if (is_initialized)
 		{
 			// App is already running, do nothing
 			return;
 		}
+		_application = application;
 
 		var owner_id = Bus.own_name(
 			BusType.SESSION,
@@ -48,10 +55,16 @@ namespace Tuner.Services.DBus
 
 	void onBusAcquired (DBusConnection conn)
 	{
+		if (_application == null)
+		{
+			warning ("DBus initialized without application context");
+			return;
+		}
+
 		try
 		{
-			conn.register_object<IMediaPlayer2> (ServerPath, new MediaPlayer ());
-			conn.register_object<IMediaPlayer2Player> (ServerPath, new MediaPlayerPlayer (conn));
+			conn.register_object<IMediaPlayer2> (ServerPath, new MediaPlayer (_application));
+			conn.register_object<IMediaPlayer2Player> (ServerPath, new MediaPlayerPlayer (conn, _application, _application.player));
 		} catch (IOError e)
 		{
 			error (@"Could not acquire path $ServerPath: $(e.message)");
@@ -62,12 +75,26 @@ namespace Tuner.Services.DBus
 
 	public class MediaPlayer : Object, DBus.IMediaPlayer2
 	{
+		private Application _app;
+
+		/**
+		 * @brief Creates the root MPRIS media-player object.
+		 *
+		 * @param app Application context used for raise/present behavior.
+		 */
+		public MediaPlayer (Application app)
+		{
+			Object ();
+			_app = app;
+		}
+
 		public void raise() throws DBusError, IOError
 		{
 			debug ("DBus Raise() requested");
 			var now       = new DateTime.now_local ();
 			var timestamp = (uint32)now.to_unix ();
-			app().window.present_with_time (timestamp);
+			if (_app.window != null)
+				_app.window.present_with_time (timestamp);
 		}
 
 		public void quit() throws DBusError, IOError
@@ -144,11 +171,23 @@ namespace Tuner.Services.DBus
 		public unowned DBusConnection conn { get; construct set; }
 
 		private const string INTERFACE_NAME = "org.mpris.MediaPlayer2.Player";
+		private Application _app;
+		private PlayerController _player;
 
-		public MediaPlayerPlayer (DBusConnection conn)
+		/**
+		 * @brief Creates the MPRIS player interface object.
+		 *
+		 * @param conn DBus connection used to emit property changes.
+		 * @param app Application context used for app-level signals.
+		 * @param player Player controller used for playback and metadata.
+		 */
+		public MediaPlayerPlayer (DBusConnection conn, Application app, PlayerController player)
 		{
 			Object (conn: conn);
-			app().player.state_changed_sig.connect ((station, state) =>
+			_app = app;
+			_player = player;
+
+			_player.state_changed_sig.connect ((station, state) =>
 			{
 				switch (state)
 				{
@@ -166,7 +205,7 @@ namespace Tuner.Services.DBus
 			});
 
 
-			app().player.metadata_changed_sig.connect (( station, metadata) =>
+			_player.metadata_changed_sig.connect (( station, metadata) =>
 			{				
 				_station         = station;
 				_current_title   = station.name;
@@ -178,7 +217,7 @@ namespace Tuner.Services.DBus
 				trigger_metadata_update ();
 			});
 
-			app().shuffle_mode_sig.connect ((shuffle) =>
+			_app.shuffle_mode_sig.connect ((shuffle) =>
 			{
 				_shuffle = shuffle;
 			});
@@ -199,7 +238,7 @@ namespace Tuner.Services.DBus
 
 		public void next() throws DBusError, IOError
 		{
-			app().player.shuffle();
+			_player.shuffle();
 		}
 
 		public void previous() throws DBusError, IOError
@@ -215,19 +254,19 @@ namespace Tuner.Services.DBus
 		public void play_pause() throws DBusError, IOError
 		{
 			//  debug ("DBus PlayPause() requested");
-			app().player.play_pause();
+			_player.play_pause();
 		}
 
 		public void stop() throws DBusError, IOError
 		{
 			//  debug ("DBus stop() requested");
-			app().player.stop();
+			_player.stop();
 		}
 
 		public void play() throws DBusError, IOError
 		{
 			//  debug ("DBus Play() requested");
-			app().player.play_pause ();
+			_player.play_pause ();
 		}
 
 		public void seek(int64 Offset) throws DBusError, IOError
@@ -295,7 +334,7 @@ namespace Tuner.Services.DBus
 		public bool can_play {
 			get {
 				//  debug ("CanPlay() requested");
-				return app().player.can_play ();
+				return _player.can_play ();
 			}
 		}
 		public bool can_pause {  get; }

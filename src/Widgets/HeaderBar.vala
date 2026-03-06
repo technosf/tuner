@@ -13,6 +13,7 @@
 using Gtk;
 using Tuner.Controllers;
 using Tuner.Models;
+using Tuner.Services;
 
 /*
  * @class Tuner.HeaderBar
@@ -87,6 +88,9 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 	private Mutex _station_update_lock = Mutex();       // Lock out concurrent updates
 	private bool _station_locked       = false;
 	private ulong _station_handler_id  = 0;
+	private Application _app;
+	private PlayerController _player;
+	private DataProvider.API _provider;
 
     private VolumeButton _volume_button = new VolumeButton();
     
@@ -116,10 +120,18 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
      * This method sets up all the UI elements of the header bar, including
      * station info display, play button, preferences button, search entry,
      * star button, and volume button.
+     *
+     * @param app Application context for connectivity and app-level events.
+     * @param window Parent window that owns this header bar.
+     * @param player Player controller used for playback state and volume.
+     * @param provider Data provider used for provider statistics tooltip text.
      */
-    public HeaderBar(Window window)
+    public HeaderBar(Application app, Window window, PlayerController player, DataProvider.API provider)
     {
         Object();
+		_app = app;
+		_player = player;
+		_provider = provider;
 
 		get_style_context ().add_class ("header-bar");
 
@@ -141,25 +153,25 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		_tuner.query_tooltip.connect((x, y, keyboard_tooltip, tooltip) =>
 		{
 			
-			if (app().is_offline)
-				return false;
-			string _provider = _("Data Provider") + ": %s\n\n%u " + _("Stations") + ",\t%u " + _("Tags");
-			tooltip.set_text (_provider.printf (window.directory.provider (),
-			app ().provider.available_stations (),
-			app ().provider.available_tags ()
-			));
+				if (_app.is_offline)
+					return false;
+				string provider_text = _("Data Provider") + ": %s\n\n%u " + _("Stations") + ",\t%u " + _("Tags");
+				tooltip.set_text (provider_text.printf (window.directory.provider (),
+				_provider.available_stations (),
+				_provider.available_tags ()
+				));
 
 			return true;
 		});
 
-        // Volume
-        _volume_button.set_valign(Align.CENTER);
-        _volume_button.value_changed.connect ((value) => {
-            app().player.volume = value;
-        });
-        app().player.volume_changed_sig.connect((value) => {
-            _volume_button.value =  value;
-        });
+	        // Volume
+	        _volume_button.set_valign(Align.CENTER);
+	        _volume_button.value_changed.connect ((value) => {
+	            _player.volume = value;
+	        });
+	        _player.volume_changed_sig.connect((value) => {
+	            _volume_button.value =  value;
+	        });
 
 
 		// Star button
@@ -218,7 +230,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
         pack_start (_star_button);
         pack_start (_play_button);
 
-        _player_info = new PlayerInfo(window);
+	        _player_info = new PlayerInfo(window, _player);
         custom_title = _player_info; // Station display
 
 		// pack RHS
@@ -240,15 +252,15 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		    Tuner icon and online/offline behavior
 		 */
 		// HeaderBar reacts to app-level connectivity changes for visual state updates.
-		app().events.connectivity_changed.connect((is_online, is_offline) =>
-		{
-			update_controls_state();
-		});
+			_app.events.connectivity_changed.connect((is_online, is_offline) =>
+			{
+				update_controls_state();
+			});
 
-		app().player.state_changed_sig.connect ((station, state) =>
-		{
-			update_controls_state();
-		});
+			_player.state_changed_sig.connect ((station, state) =>
+			{
+				update_controls_state();
+			});
 
 	    update_controls_state();
 
@@ -274,10 +286,10 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		});
 
 
-		app().player.metadata_changed_sig.connect ((station, metadata) =>
-		{
-			_list_button.append_station_title_pair(station, metadata.title);
-		});
+			_player.metadata_changed_sig.connect ((station, metadata) =>
+			{
+				_list_button.append_station_title_pair(station, metadata.title);
+			});
 
 		_list_button.item_station_selected_sig.connect((station) =>
 		{
@@ -301,7 +313,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 	*/
 	public bool update_playing_station(Station station)
 	{
-		if ( app().is_offline || ( _station != null && _station == station && app().player.player_state != Tuner.Controllers.PlayerController.Is.STOPPED_ERROR ) )
+		if ( _app.is_offline || ( _station != null && _station == station && _player.player_state != Tuner.Controllers.PlayerController.Is.STOPPED_ERROR ) )
 			return false;
 
 		if (_station_update_lock.trylock())
@@ -389,10 +401,10 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 	*/
 	private void update_controls_state()
 	{
-		bool is_playing_now = app().player.player_state == PlayerController.Is.PLAYING
-			|| app().player.player_state == PlayerController.Is.BUFFERING;
+		bool is_playing_now = _player.player_state == PlayerController.Is.PLAYING
+			|| _player.player_state == PlayerController.Is.BUFFERING;
 
-		if (app().is_offline)
+		if (_app.is_offline)
 		{
 			_player_info.favicon_image.opacity = 0.5;
 			_tuner_on.opacity                  = 0.0;
@@ -446,9 +458,9 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		 *
 		 * @since 1.0
 		 */
-        public PlayerInfo(Window window)
-        {
-            Object();
+	        public PlayerInfo(Window window, PlayerController player)
+	        {
+	            Object();
 
 			transition_duration = REVEAL_DELAY;
 			transition_type     = RevealerTransitionType.CROSSFADE;
@@ -483,7 +495,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 			reveal_child = false;     // Make it invisible initially
 
 			metadata = STREAM_METADATA;
-			app().player.metadata_changed_sig.connect (handle_metadata_changed);
+				player.metadata_changed_sig.connect (handle_metadata_changed);
 
         } // PlayerInfo
 

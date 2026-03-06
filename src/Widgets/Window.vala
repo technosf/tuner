@@ -200,12 +200,14 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
     /**
         Add widgets after Window creation
     */
-    private void add_widgets()
-    {
-        /*
-            Headerbar hookups
-        */
-        _headerbar = new HeaderBar (this);
+	    private void add_widgets()
+	    {
+	        var app_ref = (Application)application;
+
+	        /*
+	            Headerbar hookups
+	        */
+	        _headerbar = new HeaderBar (app_ref, this, player_ctrl, app_ref.provider);
 
         _headerbar.search_has_focus_sig.connect (() => 
         // Show searched stack when cursor hits search text area
@@ -222,12 +224,12 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 
 		set_titlebar (_headerbar);
 
-        /*
-            Display
-        */
-        _display = new Display(directory);  
-        _display.station_clicked_sig.connect (handle_play_station);  // Station clicked -> change station     
-        add (_display);
+	        /*
+	            Display
+	        */
+	        _display = new Display(app_ref, directory, player_ctrl, app_ref.stars, app_ref.provider);  
+	        _display.station_clicked_sig.connect (handle_play_station);  // Station clicked -> change station     
+	        add (_display);
 
 	    } // add_widgets
 

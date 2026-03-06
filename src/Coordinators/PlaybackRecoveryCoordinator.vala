@@ -17,6 +17,7 @@ namespace Tuner.Coordinators {
 	 */
 	public class PlaybackRecoveryCoordinator : GLib.Object
 	{
+		private Application _app;
 		private AppEventBus _events;
 		private PlayerController _player;
 		private Settings _settings;
@@ -29,16 +30,19 @@ namespace Tuner.Coordinators {
 			/**
 			 * @brief Creates a playback recovery coordinator.
 			 *
+			 * @param app Application context used for connectivity state checks.
 			 * @param events App-level event bus used for connectivity changes.
 			 * @param player Player controller used to inspect and restart playback.
 			 * @param settings Application settings controlling recovery behavior.
 			 */
 			public PlaybackRecoveryCoordinator (
+				Application app,
 				AppEventBus events,
 				PlayerController player,
 				Settings settings
 		) {
 			Object();
+			_app = app;
 			_events = events;
 			_player = player;
 			_settings = settings;
@@ -93,7 +97,7 @@ namespace Tuner.Coordinators {
 			if (state == PlayerController.Is.PLAYING || state == PlayerController.Is.BUFFERING)
 				_was_playing_before_offline = true;
 
-			if (app().is_online && state == PlayerController.Is.STOPPED)
+			if (_app.is_online && state == PlayerController.Is.STOPPED)
 				_was_playing_before_offline = false;
 			}
 

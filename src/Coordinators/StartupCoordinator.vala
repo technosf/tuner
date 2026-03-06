@@ -20,6 +20,7 @@ namespace Tuner.Coordinators {
 	 */
 	public class StartupCoordinator : GLib.Object
 	{
+		private Application _app;
 		private AppEventBus _events;
 		private Window _window;
 		private Settings _settings;
@@ -33,18 +34,21 @@ namespace Tuner.Coordinators {
 			/**
 			 * @brief Creates a startup coordinator bound to the app event bus.
 			 *
+			 * @param app Application context used for connectivity state checks.
 			 * @param events App-level event bus used for connectivity events.
 			 * @param window Main window used to dispatch station playback.
 			 * @param settings Application settings that control auto-play behavior.
 			 * @param directory Directory controller used to resolve last station UUID.
 			 */
 			public StartupCoordinator (
+				Application app,
 				AppEventBus events,
 				Window window,
 				Settings settings,
 				DirectoryController directory
 		) {
 			Object();
+			_app = app;
 			_events = events;
 			_window = window;
 			_settings = settings;
@@ -84,7 +88,7 @@ namespace Tuner.Coordinators {
 				if (!_autoplay_pending || _autoplay_attempted)
 					return;
 
-			if (app().is_offline)
+			if (_app.is_offline)
 				return;
 
 			if (_settings.last_played_station.strip().length == 0)
