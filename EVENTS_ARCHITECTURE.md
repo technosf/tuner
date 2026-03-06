@@ -82,3 +82,14 @@ This document tracks the event orchestration introduced in the 2026 refactor.
     - `on_search_focused()`
     - `on_search_requested(string text)`
   - No longer routes search input through internal self-signals.
+
+## Application Bootstrap Decomposition
+
+- `src/Application.vala`
+  - Keeps construct-only property assignment in the `construct` block.
+  - Splits initialization responsibilities into helper methods:
+    - runtime storage preparation + migration
+    - connectivity monitoring setup
+    - core service factory helpers
+    - coordinator initialization
+    - action registration helpers
