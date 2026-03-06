@@ -247,10 +247,17 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		    Tuner icon and online/offline behavior
 		 */
 		app().notify["is-online"].connect(() => {
-			check_online_status();
+			update_controls_state();
+		});
+		app().notify["is-offline"].connect(() => {
+			update_controls_state();
+		});
+		app().player.state_changed_sig.connect ((station, state) =>
+		{
+			update_controls_state();
 		});
 
-        check_online_status();
+	    update_controls_state();
 
 		/*
 		    Hook up title to metadata as tooltip
@@ -387,17 +394,20 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 	*
 	* Desensitive when off-line
 	*/
-	private void check_online_status()
+	private void update_controls_state()
 	{
+		bool is_playing_now = app().player.player_state == Tuner.Controllers.PlayerController.Is.PLAYING
+			|| app().player.player_state == Tuner.Controllers.PlayerController.Is.BUFFERING;
+
 		if (app().is_offline)
 		{
 			_player_info.favicon_image.opacity = 0.5;
 			_tuner_on.opacity                  = 0.0;
 			_star_button.sensitive             = false;
-			_play_button.sensitive             = false;
-			_play_button.opacity               = 0.5;
+			_play_button.sensitive             = is_playing_now;
+			_play_button.opacity               = is_playing_now ? 1.0 : 0.5;
 			_volume_button.sensitive           = false;
-			_list_button.sensitive             = false;
+			_list_button.sensitive             = true;
 			_search_entry.sensitive             = false;
 
 		}
@@ -412,7 +422,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 			_list_button.sensitive             = true;
 			_search_entry.sensitive             = true;
 		}
-	} // check_online_status
+	} // update_controls_state
 
 
     /**
