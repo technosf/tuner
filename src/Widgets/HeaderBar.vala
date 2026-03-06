@@ -90,7 +90,6 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 	private Mutex _station_update_lock = Mutex();       // Lock out concurrent updates
 	private bool _station_locked       = false;
 	private ulong _station_handler_id  = 0;
-	private bool _was_playing_before_offline = false;
 
     private VolumeButton _volume_button = new VolumeButton();
     
@@ -248,33 +247,14 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		/*
 		    Tuner icon and online/offline behavior
 		 */
-		// Playback restart-after-outage logic listens to one app-level connectivity event.
+		// HeaderBar reacts to app-level connectivity changes for visual state updates.
 		app().events.connectivity_changed.connect((is_online, is_offline) =>
 		{
-			if (is_offline)
-			{
-				_was_playing_before_offline = _was_playing_before_offline ||
-					app().player.player_state == PlayerController.Is.PLAYING
-					|| app().player.player_state == PlayerController.Is.BUFFERING;
-			}
-			if (is_online)
-			{
-				bool already_playing = app().player.player_state == PlayerController.Is.PLAYING
-					|| app().player.player_state == PlayerController.Is.BUFFERING;
-				if (app().settings.play_restart && _was_playing_before_offline && app().player.can_play () && !already_playing)
-					app().player.play_station(app().player.station);
-				_was_playing_before_offline = false;
-			}
 			update_controls_state();
 		});
 
 		app().player.state_changed_sig.connect ((station, state) =>
 		{
-			if (state == PlayerController.Is.PLAYING || state == PlayerController.Is.BUFFERING)
-				_was_playing_before_offline = true;
-
-			if (app().is_online && state == PlayerController.Is.STOPPED)
-				_was_playing_before_offline = false;
 			update_controls_state();
 		});
 

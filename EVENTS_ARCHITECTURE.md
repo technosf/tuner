@@ -16,18 +16,25 @@ This document tracks the event orchestration introduced in the 2026 refactor.
     - waits for online connectivity before autoplay attempt
     - attempts autoplay once per app start
 
+- `src/Coordinators/PlaybackRecoveryCoordinator.vala`
+  - Owns restart-after-outage playback behavior.
+  - Tracks whether playback was active before loss of connectivity.
+  - Restarts playback on reconnect when `settings.play_restart` is enabled.
+
 - `src/Application.vala`
   - Owns the shared `events` bus instance.
   - Emits `connectivity_changed` when `is_online`/`is_offline` changes.
-  - Instantiates and starts `StartupCoordinator` after creating the main window.
+  - Instantiates coordinators:
+    - `PlaybackRecoveryCoordinator` during app construction.
+    - `StartupCoordinator` after creating the main window.
 
 - `src/Widgets/Window.vala`
   - Consumes app-level connectivity events to update interactive window state.
   - No longer owns autoplay orchestration.
 
 - `src/Widgets/HeaderBar.vala`
-  - Consumes app-level connectivity events for restart-after-outage behavior.
-  - Keeps playback restart logic local to header bar UI behavior.
+  - Consumes app-level connectivity and player-state events for control-state updates.
+  - No longer owns restart-after-outage orchestration.
 
 - `src/meson.build`
   - Registers the new event/coordinator source files in build inputs.
@@ -39,7 +46,8 @@ This document tracks the event orchestration introduced in the 2026 refactor.
 3. `Application` emits `events.connectivity_changed(...)`.
 4. Subscribers react:
    - `Window` updates active UI state.
-   - `HeaderBar` manages restart-after-outage behavior.
+   - `HeaderBar` updates visual controls.
+   - `PlaybackRecoveryCoordinator` manages restart-after-outage behavior.
    - `StartupCoordinator` tries deferred autoplay when online.
 
 ## Design Notes

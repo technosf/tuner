@@ -250,6 +250,8 @@ namespace Tuner {
         private bool _has_started = false;
         // Coordinates startup-only cross-component flows (e.g., deferred autoplay).
         private StartupCoordinator _startup_coordinator;
+        // Coordinates playback restart behavior after online/offline transitions.
+        private PlaybackRecoveryCoordinator _playback_recovery_coordinator;
 
 
         /**
@@ -310,6 +312,7 @@ namespace Tuner {
             player = new PlayerController ();
             stars = new StarStore(_starred_file);
             directory = new DirectoryController(provider, stars);
+            _playback_recovery_coordinator = new PlaybackRecoveryCoordinator(events, player, settings);
 
             add_action_entries(ACTION_ENTRIES, this);
 

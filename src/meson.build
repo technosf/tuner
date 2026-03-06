@@ -7,6 +7,7 @@
 # Listing files to compile
 sources = files (
     'Events/AppEventBus.vala',
+    'Coordinators/PlaybackRecoveryCoordinator.vala',
     'Coordinators/StartupCoordinator.vala',
 
     'Controllers/DirectoryController.vala',
