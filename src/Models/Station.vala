@@ -16,7 +16,7 @@ using Gee;
  * @class Station
  * @brief Represents a radio station with various properties.
  */
-public class Tuner.Model.Station : Favicon
+public class Tuner.Models.Station : Favicon
 {
 
     // ----------------------------------------------------------

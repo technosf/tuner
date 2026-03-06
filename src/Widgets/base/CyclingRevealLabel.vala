@@ -20,7 +20,7 @@
  *
  * @extends Tuner.RevealLabel
  */
-public class Tuner.CyclingRevealLabel : RevealLabel {
+public class Tuner.Widgets.Base.CyclingRevealLabel : RevealLabel {
 
     private const int SUBTITLE_MIN_DISPLAY_SECONDS = 3;
     private const int LABEL_WIDTH_MIN = 100;

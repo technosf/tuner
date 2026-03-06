@@ -17,17 +17,17 @@
  * It also manages application settings and handles user actions like playback
  * control, station selection, and theme adjustments.
  *
- * @see Tuner.Application
- * @see Tuner.PlayerController
- * @see Tuner.DirectoryController
- * @see Tuner.HeaderBar
- * @see Tuner.Display
+ * @see Tuner.Widgets.Application
+ * @see Tuner.Widgets.PlayerController
+ * @see Tuner.Widgets.DirectoryController
+ * @see Tuner.Widgets.HeaderBar
+ * @see Tuner.Widgets.Display
  */
 
 
 using Gee;
-//  using Granite.Widgets;
-
+using Tuner.Controllers;
+using Tuner.Models;
 
 /**
  * The main application window for the Tuner app.
@@ -35,7 +35,7 @@ using Gee;
  * This class extends Gtk.ApplicationWindow and serves as the primary container
  * for all other widgets and functionality in the Tuner application.
  */
-public class Tuner.Window : Gtk.ApplicationWindow
+public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 {
 
     /* Public */
@@ -358,7 +358,7 @@ public class Tuner.Window : Gtk.ApplicationWindow
 	* @brief Handles a station selection and plays the station
 	* @param station The selected station.
 	*/
-	public void handle_play_station (Model.Station station)
+	public void handle_play_station (Station station)
 	{
 		if ( app().is_offline || !_headerbar.update_playing_station(station) )
 			return;                                                                                          // Online and not already changing station

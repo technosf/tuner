@@ -10,7 +10,10 @@
  */
 
  using GLib;
-
+ using Tuner.Controllers;
+ using Tuner.Providers;
+ using Tuner.Services;
+ using Tuner.Widgets;
 /**
  * @namespace Tuner
  * @brief Main namespace for the Tuner application
@@ -293,7 +296,7 @@ namespace Tuner {
                 Init Tuner assets 
             */
             settings = new Settings ();
-            provider = new DataProvider.RadioBrowser(null);
+            provider = new RadioBrowser(null);
             player = new PlayerController ();
             stars = new StarStore(_starred_file);
             directory = new DirectoryController(provider, stars);
@@ -378,7 +381,7 @@ namespace Tuner {
         protected override void activate() 
         {
             if (window == null) { 
-                DBus.initialize (); 
+                Services.DBus.initialize (); 
 
                 GTK_SETTINGS = Gtk.Settings.get_default();
                 GTK_SYSTEM_THEME = GTK_SETTINGS.gtk_theme_name;

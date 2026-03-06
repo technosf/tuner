@@ -7,13 +7,13 @@
  * @file PreferencesPopover.vala
  */
 
-using Tuner.Model;
+using Tuner.Models;
 
 /**
  *
  * @brief Tuner preferences and selections.
  */
-public class Tuner.PreferencesPopover : Gtk.Popover
+public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 {
 
 	construct // Construct the preferences popover widget
@@ -34,7 +34,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 
 		//Theme
-		var theme_selector = new SelectorButton (app().lookup_action ("set-theme-name"))
+		var theme_selector = new Base.SelectorButton (app().lookup_action ("set-theme-name"))
 			.with_item (THEME.SYSTEM.get_name (), _("System"))
 			.with_item (THEME.LIGHT.get_name (), _("Light mode"))
 			.with_item (THEME.DARK.get_name (), _("Dark mode"))
@@ -78,7 +78,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 
 		//Language
-		var lang_selector = new SelectorButton (app().lookup_action ("set-language"))
+		var lang_selector = new Base.SelectorButton (app().lookup_action ("set-language"))
 			.with_item("", "Default")
 			.with_items (Languages.get_language_map())
 			.with_active_id(app().settings.language);

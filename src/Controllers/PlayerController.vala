@@ -8,6 +8,7 @@
  */
 
 using Gst;
+using Tuner.Models;
 
 /**
  * @class Tuner.PlayerController
@@ -17,7 +18,7 @@ using Gst;
  * from the media stream. It emits signals when the station, state, title,
  * or volume changes.
  */
-public class Tuner.PlayerController : GLib.Object 
+public class Tuner.Controllers.PlayerController : GLib.Object 
 {
     /**
      * @brief the Tuner play state
@@ -34,19 +35,19 @@ public class Tuner.PlayerController : GLib.Object
 
  
     /** Signal emitted when the station changes. */
-    public signal void station_changed_sig (Model.Station station);
+    public signal void station_changed_sig (Station station);
 
     /** Signal emitted when the player state changes. */
-    public signal void state_changed_sig (Model.Station station, Is state);
+    public signal void state_changed_sig (Station station, Is state);
 
     //  /** Signal emitted when the title changes. */
-    public signal void metadata_changed_sig (Model.Station station, Model.Metadata metadata);
+    public signal void metadata_changed_sig (Station station, Metadata metadata);
 
     /** Signal emitted when the volume changes. */
     public signal void volume_changed_sig (double volume);
 
     /** Signal emitted every ten minutes that a station has been playing continuously. */
-    public signal void tape_counter_sig (Model.Station station);
+    public signal void tape_counter_sig (Station station);
 
     /** @brief Signal emitted when the shuffle is requested   */
     public signal void shuffle_requested_sig();
@@ -57,8 +58,8 @@ public class Tuner.PlayerController : GLib.Object
     private const uint TEN_MINUTES_IN_SECONDS = 606;  // tape counter timer - 10 mins plus 1%
     
     private Player _player;
-    private Model.Station _station; 
-    private Model.Metadata _metadata;
+    private Station _station; 
+    private Metadata _metadata;
     private Is _player_state;
     private string _player_state_name;
     private uint _tape_counter_id = 0;
@@ -184,14 +185,14 @@ public class Tuner.PlayerController : GLib.Object
      * @brief Station
      * @return The current station being played.
      */
-    public Model.Station station {
+    public Station station {
         get {
             return _station;
         }
         set {
             if ( ( _station == null ) ||  ( _station != value ) )
             {
-                _metadata =  new Model.Metadata();
+                _metadata =  new Metadata();
                 _station = value;
                 play_station (_station);
             }
@@ -214,7 +215,7 @@ public class Tuner.PlayerController : GLib.Object
     *
     * @param station The station to play.
     */
-	public void play_station (Model.Station station)
+	public void play_station (Station station)
 	{
 		_player.stop ();
         _station = station;

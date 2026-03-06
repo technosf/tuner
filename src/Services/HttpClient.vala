@@ -20,7 +20,7 @@ using Gee;
  * This class provides static methods for making HTTP requests using the Soup library.
  * It includes a singleton Soup.Session instance for efficient request handling.
  */
-public class Tuner.HttpClient : Object
+public class Tuner.Services.HttpClient : Object
 {
 
     /**

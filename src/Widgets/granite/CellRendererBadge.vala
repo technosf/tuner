@@ -28,7 +28,7 @@
  *
  * @since 0.2
  */
-public class Tuner.CellRendererBadge : Gtk.CellRenderer {
+public class Tuner.Widgets.Granite.CellRendererBadge : Gtk.CellRenderer {
 
     public string text { get; set; default = ""; }
 

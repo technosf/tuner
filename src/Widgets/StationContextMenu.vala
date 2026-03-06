@@ -7,7 +7,7 @@
  * @file StationContextMenu.vala
  */
  
-using Tuner.Model;
+using Tuner.Models;
 
 /**
  * @class StationContextMenu
@@ -19,14 +19,14 @@ using Tuner.Model;
  *
  * @extends Gtk.Menu
  */
-public class Tuner.StationContextMenu : Gtk.Menu 
+public class Tuner.Widgets.StationContextMenu : Gtk.Menu 
 {
     /**
      * @property station
      * @brief The radio station associated with this context menu.
      */
     public StationButton station_button { get; construct; }
-    private Model.Station _station;
+    private Station _station;
 
     /**
      * @brief Constructs a new StationContextMenu.

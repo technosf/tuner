@@ -40,7 +40,7 @@
  * }
  * }}}
  */
-public class Tuner.AlertView : Gtk.Grid {
+public class Tuner.Widgets.Granite.AlertView : Gtk.Grid {
     public signal void action_activated ();
 
     /**

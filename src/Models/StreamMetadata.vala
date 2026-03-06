@@ -15,7 +15,7 @@ using Gst;
  * @brief Stream Metadata transform
  *
  */
-public class Tuner.Model.Metadata : GLib.Object
+public class Tuner.Models.Metadata : GLib.Object
 {
     private static string[,] METADATA_TITLES =
         // Ordered array of tags and descriptions

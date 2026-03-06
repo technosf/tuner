@@ -27,7 +27,7 @@
  */
 
 
-public class Tuner.CellRendererExpander : Gtk.CellRenderer {
+public class Tuner.Widgets.Granite.CellRendererExpander : Gtk.CellRenderer {
     public bool is_category_expander { get; set; default = false; }
 
     public CellRendererExpander () {

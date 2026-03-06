@@ -17,7 +17,7 @@
  * (see COPYING.LESSER or https://www.gnu.org/licenses/lgpl-3.0.html)
  */
 
-namespace Tuner {
+namespace Tuner.Widgets.Granite {
 
 /**
  * An interface for sorting items.

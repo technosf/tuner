@@ -5,7 +5,7 @@
 
 using Gee;
 
-namespace Tuner.Model.Genre {
+namespace Tuner.Models.Genre {
 
     private static Set<string> PREDEFINED;
 

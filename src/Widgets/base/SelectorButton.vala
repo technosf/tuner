@@ -20,7 +20,7 @@ using Gtk;
  * @extends Gtk.Button
  */
 
-public class Tuner.SelectorButton : Gtk.Button 
+public class Tuner.Widgets.Base.SelectorButton : Gtk.Button 
 {
 
     private static int min_height = 100;

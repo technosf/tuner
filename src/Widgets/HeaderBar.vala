@@ -11,6 +11,7 @@
  */
 
 using Gtk;
+using Tuner.Models;
 
 /*
  * @class Tuner.HeaderBar
@@ -24,7 +25,7 @@ using Gtk;
  *
  * @extends HeaderBar
  */
-public class Tuner.HeaderBar : Gtk.HeaderBar
+public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 {
 
     /* Constants    */
@@ -82,7 +83,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 
     // data and state variables
 
-	private Model.Station _station;
+	private Station _station;
 	private Mutex _station_update_lock = Mutex();       // Lock out concurrent updates
 	private bool _station_locked       = false;
 	private ulong _station_handler_id  = 0;
@@ -207,7 +208,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 		_prefs_button.image  = new Image.from_icon_name ("open-menu", IconSize.LARGE_TOOLBAR);
 		_prefs_button.valign = Align.CENTER;
 		_prefs_button.tooltip_text = _("Preferences");
-		_prefs_button.popover      = new Tuner.PreferencesPopover();
+		_prefs_button.popover      = new PreferencesPopover();
 
 		_list_button.valign       = Align.CENTER;
 		_list_button.tooltip_text = _("History");
@@ -296,7 +297,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 	*
 	* @param station The new station to display information for.
 	*/
-	public bool update_playing_station(Model.Station station)
+	public bool update_playing_station(Station station)
 	{
 		if ( app().is_offline || ( _station != null && _station== station ) )
 			return false;
@@ -439,12 +440,12 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
     private class PlayerInfo : Revealer
     {
         public Label station_label { get; private set; }
-        public CyclingRevealLabel title_label { get; private set; }
+        public Base.CyclingRevealLabel title_label { get; private set; }
         public StationContextMenu menu { get; private set; }    
         public Image favicon_image = new Image.from_icon_name (DEFAULT_ICON_NAME, IconSize.DIALOG);
         public string metadata { get; internal set; }
 
-        private Model.Station _station;
+        private Station _station;
         private uint grid_min_width = 0;
 
         internal signal void info_changed_completed_sig ();
@@ -469,7 +470,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 			station_label.get_style_context ().add_class ("station-label");
 			station_label.ellipsize = Pango.EllipsizeMode.MIDDLE;
 
-			title_label                     = new CyclingRevealLabel (window,100);
+			title_label                     = new Base.CyclingRevealLabel (window,100);
 			title_label.get_style_context ().add_class ("track-info");
 			title_label.halign              = Align.CENTER;
 			title_label.valign              = Align.CENTER;
@@ -505,7 +506,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
         *
         * Desensitive when off-line
         */
-        internal async void change_station( Model.Station station )
+        internal async void change_station( Station station )
         {
             reveal_child = false;
 
@@ -545,7 +546,7 @@ public class Tuner.HeaderBar : Gtk.HeaderBar
 		*
 		* Desensitive when off-line
 		*/
-		public void handle_metadata_changed ( Model.Station station, Model.Metadata metadata )
+		public void handle_metadata_changed ( Station station, Metadata metadata )
 		{
 			if (_metadata == metadata.pretty_print)
 				return;                                                                  // No change

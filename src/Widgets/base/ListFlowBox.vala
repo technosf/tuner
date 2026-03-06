@@ -15,7 +15,7 @@
  *
  * @extends Gtk.FlowBox
  */
-public class Tuner.ListFlowBox : Gtk.FlowBox 
+public class Tuner.Widgets.Base.ListFlowBox : Gtk.FlowBox 
 {
 
     /**

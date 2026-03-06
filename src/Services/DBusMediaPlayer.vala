@@ -7,7 +7,14 @@
  * @file DBusMediaPlayer.vala
  */
 
-namespace Tuner.DBus {
+using Tuner.Controllers;
+using Tuner.Models;
+
+/**
+ * @brief DBusMediaPlayer namespace for handling MPRIS interface integration.
+ */
+namespace Tuner.Services.DBus 
+{
 
 	const string ServerName     = "org.mpris.MediaPlayer2.io.github.tuner_labs.tuner";
 	const string ServerPath     = "/org/mpris/MediaPlayer2";
@@ -123,7 +130,7 @@ namespace Tuner.DBus {
 	public class MediaPlayerPlayer : Object, DBus.IMediaPlayer2Player
 	{
 		[DBus (visible = false)]
-		private Model.Station _station;
+		private Station _station;
 		private string _playback_status                       = "Stopped";
 		private string _current_title                         = "";
 		private string _current_artist                        = "Tuner";
