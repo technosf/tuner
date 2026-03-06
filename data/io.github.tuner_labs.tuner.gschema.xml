@@ -89,5 +89,10 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <summary>Display Language</summary>
             <description>Language to use for UI</description>
         </key>
+        <key name="play-restart" type="b">
+            <default>false</default>
+            <summary>Restart playing after a network interuption</summary>
+            <description>If enabled, if there is an network interuption and Tuner was playing Tuner will automatically start to play the last played station</description>
+        </key>
     </schema>
 </schemalist>

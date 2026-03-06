@@ -55,6 +55,14 @@ public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 		autoplay_item.margin_start = ROW_INDENT;
 
 
+		// Restart Playing after network interuption
+		var play_restart_item = new Gtk.ModelButton ();
+		play_restart_item.text         = _("Restart playing after a network interruption");
+		play_restart_item.action_name  = Window.ACTION_PREFIX + Window.ACTION_ENABLE_PLAY_RESTART;
+		play_restart_item.tooltip_text = _("If enabled, if there is an network interuption and Tuner was playing Tuner will automatically start to play the last played station");
+		play_restart_item.margin_start = ROW_INDENT;
+
+
 		// Start on Starred
 		var start_on_starred = new Gtk.ModelButton ();
 		start_on_starred.text         = _("Open to Starred Stations");
@@ -125,8 +133,16 @@ public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 
 		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
 
-		menu_grid.attach (autoplay_item, 0, vpos++, 4, 1);
 		menu_grid.attach (start_on_starred, 0, vpos++, 4, 1);
+
+		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
+
+		menu_grid.attach (autoplay_item, 0, vpos++, 4, 1);
+
+		menu_grid.attach (play_restart_item, 0, vpos++, 4, 1);
+
+		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
+		
 		menu_grid.attach (stream_info, 0, vpos++, 4, 1);
 		menu_grid.attach (stream_info_fast, 0, vpos++, 4, 1);
 

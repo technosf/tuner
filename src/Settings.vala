@@ -28,6 +28,7 @@ public class Tuner.Settings : GLib.Settings
     private const string SETTINGS_VOLUME = "volume";
     private const string SETTINGS_WINDOW_HEIGHT = "window-height";
     private const string SETTINGS_WINDOW_WIDTH = "window-width";
+    private const string SETTINGS_PLAY_RESTART = "play-restart";
 
     public bool auto_play { get; set; }
     public bool do_not_vote { get; set; }
@@ -38,6 +39,7 @@ public class Tuner.Settings : GLib.Settings
     public string theme_mode { get; set; }
     public string language { get; set; }
     public double volume { get; set; }
+    public bool play_restart { get; set; }
 
     private int _pos_x;
     private int _pos_y;
@@ -72,6 +74,8 @@ public class Tuner.Settings : GLib.Settings
         theme_mode = get_string(SETTINGS_THEME_MODE);
         language = get_string(SETTINGS_LANGUAGE);
         volume = get_double(SETTINGS_VOLUME);
+        play_restart = get_boolean(SETTINGS_PLAY_RESTART);
+
     } // Settings
 
     
@@ -162,6 +166,7 @@ public class Tuner.Settings : GLib.Settings
         set_string(SETTINGS_THEME_MODE, theme_mode);
         set_string(SETTINGS_LANGUAGE, language);
         set_double(SETTINGS_VOLUME, app().player.volume);
+        set_boolean(SETTINGS_PLAY_RESTART, play_restart);
         sync();
     } // save
 

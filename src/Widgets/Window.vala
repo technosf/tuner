@@ -40,17 +40,18 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 
     /* Public */
 
-	public const string WINDOW_NAME             = "Tuner";
-	public const string ACTION_PREFIX           = "win.";
-	public const string ACTION_PAUSE            = "action_pause";
-	public const string ACTION_QUIT             = "action_quit";
-	public const string ACTION_HIDE             = "action_hide";
-	public const string ACTION_ABOUT            = "action_about";
-	public const string ACTION_DISABLE_TRACKING = "action_disable_tracking";
-	public const string ACTION_ENABLE_AUTOPLAY  = "action_enable_autoplay";
-	public const string ACTION_START_ON_STARRED = "action_starred_start";
-	public const string ACTION_STREAM_INFO      = "action_stream_info";
-	public const string ACTION_STREAM_INFO_FAST = "action_stream_info_fast";
+	public const string WINDOW_NAME                 = "Tuner";
+	public const string ACTION_PREFIX               = "win.";
+	public const string ACTION_PAUSE                = "action_pause";
+	public const string ACTION_QUIT                 = "action_quit";
+	public const string ACTION_HIDE                 = "action_hide";
+	public const string ACTION_ABOUT                = "action_about";
+	public const string ACTION_DISABLE_TRACKING     = "action_disable_tracking";
+	public const string ACTION_ENABLE_AUTOPLAY      = "action_enable_autoplay";
+	public const string ACTION_ENABLE_PLAY_RESTART  = "action_enable_play_restart";
+	public const string ACTION_START_ON_STARRED     = "action_starred_start";
+	public const string ACTION_STREAM_INFO          = "action_stream_info";
+	public const string ACTION_STREAM_INFO_FAST     = "action_stream_info_fast";
 
 
 	public Settings settings { get; construct; }
@@ -76,14 +77,15 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	private const int GEOMETRY_MIN_WIDTH  = 600;
 
 	private const ActionEntry[] ACTION_ENTRIES = {
-		{ ACTION_PAUSE,            on_toggle_playback                         },
-		{ ACTION_QUIT,             on_action_quit                             },
-		{ ACTION_ABOUT,            on_action_about                            },
-		{ ACTION_DISABLE_TRACKING, on_action_disable_tracking, null, "false"  },
-		{ ACTION_ENABLE_AUTOPLAY,  on_action_enable_autoplay, null, "false"   },
-		{ ACTION_START_ON_STARRED, on_action_start_on_starred, null, "false"  },
-		{ ACTION_STREAM_INFO,      on_action_stream_info, null, "true"        },
-		{ ACTION_STREAM_INFO_FAST, on_action_stream_info_fast, null, "false"  },
+		{ ACTION_PAUSE,                 on_toggle_playback                         },
+		{ ACTION_QUIT,                  on_action_quit                             },
+		{ ACTION_ABOUT,                 on_action_about                            },
+		{ ACTION_DISABLE_TRACKING,      on_action_disable_tracking, null, "false"  },
+		{ ACTION_ENABLE_AUTOPLAY,       on_action_enable_autoplay, null, "false"   },
+		{ ACTION_ENABLE_PLAY_RESTART,   on_action_enable_play_restart, null, "false" },
+		{ ACTION_START_ON_STARRED,      on_action_start_on_starred, null, "false"  },
+		{ ACTION_STREAM_INFO,           on_action_stream_info, null, "true"        },
+		{ ACTION_STREAM_INFO_FAST,      on_action_stream_info_fast, null, "false"  },
 	};
 
     /*
@@ -315,6 +317,19 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
         action.set_state (settings.auto_play);
         debug (@"on_action_enable_autoplay: $(settings.auto_play)");
     } // on_action_enable_autoplay
+
+
+    /**
+     * @brief Handles the enable autoplay action.
+     * @param action The SimpleAction that triggered this method.
+     * @param parameter The parameter passed with the action (unused).
+     */
+     public void on_action_enable_play_restart (SimpleAction action, Variant? parameter) 
+     {
+        settings.play_restart = !settings.play_restart;
+        action.set_state (settings.play_restart);
+        debug (@"on_action_enable_play_restart: $(settings.play_restart)");
+    } // on_action_enable_play_restart
 
 
     /**
