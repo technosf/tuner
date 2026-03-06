@@ -248,24 +248,22 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		/*
 		    Tuner icon and online/offline behavior
 		 */
-		app().notify["is-online"].connect(() => {
-			if (app().is_online)
-			{
-				bool already_playing = app().player.player_state == PlayerController.Is.PLAYING
-					|| app().player.player_state == PlayerController.Is.BUFFERING;
-				if ( app().settings.play_restart && _was_playing_before_offline && app().player.can_play () && !already_playing )
-					app().player.play_station(app().player.station);
-				_was_playing_before_offline = false;
-			}
-			update_controls_state();
-		});
-
-		app().notify["is-offline"].connect(() => {
-			if (app().is_offline)
+		// Playback restart-after-outage logic listens to one app-level connectivity event.
+		app().events.connectivity_changed.connect((is_online, is_offline) =>
+		{
+			if (is_offline)
 			{
 				_was_playing_before_offline = _was_playing_before_offline ||
 					app().player.player_state == PlayerController.Is.PLAYING
 					|| app().player.player_state == PlayerController.Is.BUFFERING;
+			}
+			if (is_online)
+			{
+				bool already_playing = app().player.player_state == PlayerController.Is.PLAYING
+					|| app().player.player_state == PlayerController.Is.BUFFERING;
+				if (app().settings.play_restart && _was_playing_before_offline && app().player.can_play () && !already_playing)
+					app().player.play_station(app().player.station);
+				_was_playing_before_offline = false;
 			}
 			update_controls_state();
 		});

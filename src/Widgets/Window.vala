@@ -95,8 +95,6 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	private HeaderBar _headerbar;
 	private Display _display;
     private bool _start_on_starred = false;
-    private bool _autoplay_pending = false;
-    private bool _autoplay_attempted = false;
 
 	private signal void refresh_saved_searches_sig (bool add, string search_text);
 
@@ -178,8 +176,8 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 
             Keep in mind that network availability is noisy
         */
-        app().notify["is-online"].connect(() => 
-        {
+        // Window state responds to app-level connectivity events.
+        app().events.connectivity_changed.connect((is_online, is_offline) => {
             check_online_status();
         });
     } // construct
@@ -232,48 +230,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
         _display.station_clicked_sig.connect (handle_play_station);  // Station clicked -> change station     
         add (_display);
 
-	        // Auto-play
-	        if (_settings.auto_play)
-	        {
-	            _autoplay_pending = true;
-	            try_autoplay();
-	        }
 	    } // add_widgets
-
-
-	private void try_autoplay()
-	{
-		if (!_autoplay_pending || _autoplay_attempted)
-			return;
-
-		if (app().is_offline)
-			return;
-
-		if (_settings.last_played_station.strip().length == 0)
-		{
-			_autoplay_pending = false;
-			_autoplay_attempted = true;
-			return;
-		}
-
-		_autoplay_pending = false;
-		_autoplay_attempted = true;
-		_directory.load();
-		var source = _directory.load_station_uuid(_settings.last_played_station);
-
-		try
-		{
-			foreach (var station in source.next_page())
-			{
-				handle_play_station(station);
-				break;
-			}
-		}
-		catch (SourceError e)
-		{
-			warning(_("Error while trying to autoplay, aborting…"));
-		}
-	}
 
 
     /* --------------------------------------------------------
@@ -459,7 +416,6 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 			this.accept_focus = true;
 			active            = true;
 		}
-	        try_autoplay();
 	        _display.update_state (active, _start_on_starred );
 	    } // check_online_status
 } // Window

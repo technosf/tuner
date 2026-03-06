@@ -10,7 +10,9 @@
  */
 
  using GLib;
+ using Tuner.Coordinators;
  using Tuner.Controllers;
+ using Tuner.Events;
  using Tuner.Providers;
  using Tuner.Services;
  using Tuner.Widgets;
@@ -181,6 +183,9 @@ namespace Tuner {
 
         /** @brief Application settings */
         public Settings settings { get; construct; }  
+
+        /** @brief Cross-component event hub */
+        public AppEventBus events { get; construct; }
         
         /** @brief Player controller */
         public PlayerController player { get; construct; }  
@@ -220,6 +225,8 @@ namespace Tuner {
                 }
                 _is_online = value;
                 is_offline = !value;
+                if (events != null)
+                    events.connectivity_changed(_is_online, is_offline);
             }
         }   
 
@@ -241,6 +248,8 @@ namespace Tuner {
 
         private uint _monitor_changed_id = 0;
         private bool _has_started = false;
+        // Coordinates startup-only cross-component flows (e.g., deferred autoplay).
+        private StartupCoordinator _startup_coordinator;
 
 
         /**
@@ -285,6 +294,7 @@ namespace Tuner {
                 Create the cancellable.
                 Wrap network monitoring into a bool property 
             */
+            events = new AppEventBus ();
             offline_cancel = new Cancellable();
             is_online = NETMON.get_network_available ();   
             NETMON.network_changed.connect((monitor) => {      
@@ -331,9 +341,6 @@ namespace Tuner {
                 station.clickcount++;
                 station.clicktrend++;
             });
-
-            // Add application actions
-            add_action_entries(ACTION_ENTRIES, this);
 
             // Add set-theme-name action
             var set_theme_action = new SimpleAction("set-theme-name", VariantType.STRING);
@@ -396,6 +403,8 @@ namespace Tuner {
                 language = settings.language;  
                      
                 window = new Window (this, player, settings, directory); 
+                _startup_coordinator = new StartupCoordinator(events, window, settings, directory);
+                _startup_coordinator.start();
 
                 // Flathub screenshot sizing 
                 app().window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
