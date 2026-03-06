@@ -57,9 +57,9 @@ public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 
 		// Restart Playing after network interuption
 		var play_restart_item = new Gtk.ModelButton ();
-		play_restart_item.text         = _("Restart playing after a network interruption");
+		play_restart_item.text         = _("Restart playing after a network outage");
 		play_restart_item.action_name  = Window.ACTION_PREFIX + Window.ACTION_ENABLE_PLAY_RESTART;
-		play_restart_item.tooltip_text = _("If enabled, if there is an network interuption and Tuner was playing Tuner will automatically start to play the last played station");
+		play_restart_item.tooltip_text = _("If enabled, Tuner will restart playing the current station if it was stopped by a network outage");
 		play_restart_item.margin_start = ROW_INDENT;
 
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: application\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-06 00:43-0800\n"
+"POT-Creation-Date: 2026-03-06 02:11-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -336,13 +336,13 @@ msgstr ""
 
 #. Restart Playing after network interuption
 #: src/Widgets/PreferencesPopover.vala:60
-msgid "Restart playing after a network interruption"
+msgid "Restart playing after a network outage"
 msgstr ""
 
 #: src/Widgets/PreferencesPopover.vala:62
 msgid ""
-"If enabled, if there is an network interuption and Tuner was playing Tuner "
-"will automatically start to play the last played station"
+"If enabled, Tuner will restart playing the current station if it was stopped "
+"by a network outage"
 msgstr ""
 
 #. Start on Starred
