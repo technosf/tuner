@@ -85,7 +85,11 @@ public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 		stream_info_fast.margin_start = ROW_INDENT;
 
 
-		//Language
+/* 
+	Enable in-app language selection for local debug or if specifically set in build options
+*/
+#if DEBUG_LOCAL 
+
 		var lang_selector = new Base.SelectorButton (app().lookup_action ("set-language"))
 			.with_item("", "Default")
 			.with_items (Languages.get_language_map())
@@ -97,6 +101,9 @@ public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 		lang_box.pack_end (lang_selector, true, true, 5);
 		lang_box.pack_end (new Gtk.Label(_("Language")), false, false, 12);
 		lang_box.tooltip_text = _("Language changes restart Tuner");
+		
+#endif
+// end language selection
 
 
 		// Export starred
@@ -160,9 +167,17 @@ public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 
 		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
 
+		/* 
+			Enable in-app language selection for local debug or if specifically set in build options
+		*/
+		#if DEBUG_LOCAL || ENABLE_IN_APP_LANGUAGE_SELECTION
+
 		menu_grid.attach (lang_box, 0, vpos++, 4, 1);
 
 		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
+
+		#endif
+		// end language selection
 
 		menu_grid.attach (about_menuitem, 0, vpos++, 4, 1);
 		

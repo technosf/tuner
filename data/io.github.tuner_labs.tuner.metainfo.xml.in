@@ -111,6 +111,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
           <li>Refactored namespaces</li>
           <li>Fixed: play/stop buttons disabled #223</li>
           <li>Fixed: Jukebox stops when tuning to a dead station #256</li>
+          <li>Disabled in-app language selection for non-debug and flatpak builds</li>
         </ul>
       </description>
     </release>     

@@ -156,6 +156,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
             );
 		change_action_state (ACTION_DISABLE_TRACKING, settings.do_not_vote);
 		change_action_state (ACTION_ENABLE_AUTOPLAY, settings.auto_play);
+		change_action_state (ACTION_ENABLE_PLAY_RESTART, settings.play_restart);
 		change_action_state (ACTION_START_ON_STARRED, settings.start_on_starred);
 		change_action_state (ACTION_STREAM_INFO, settings.stream_info);
 		change_action_state (ACTION_STREAM_INFO_FAST, settings.stream_info_fast);
