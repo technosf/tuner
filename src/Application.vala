@@ -486,28 +486,9 @@ namespace Tuner {
         protected override void activate() 
         {
             if (window == null) { 
-                Services.DBus.initialize (); 
-
-                GTK_SETTINGS = Gtk.Settings.get_default();
-                GTK_SYSTEM_THEME = GTK_SETTINGS.gtk_theme_name;
-                CSSPROVIDER.load_from_resource ("/io/github/tuner_labs/tuner/css/Tuner-system.css");
-                Gtk.StyleContext.add_provider_for_screen(
-                    Gdk.Screen.get_default(),
-                    CSSPROVIDER,
-                    Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-                );
-
-                apply_theme_name( settings.theme_mode);    
-                language = settings.language;  
-                     
-                window = new Window (this, player, settings, directory); 
-                _startup_coordinator = new StartupCoordinator(events, window, settings, directory);
-                _startup_coordinator.start();
-
-                // Flathub screenshot sizing 
-                app().window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
-
-                add_window (window);
+                initialize_runtime_presentation();
+                apply_runtime_preferences();
+                create_main_window();
             } else {
                 window.present ();
             }
@@ -520,7 +501,60 @@ namespace Tuner {
         * This method is called to bring the main window to the foreground.
         */
         private void on_resume_window() {
-            window.present();
+            if (window != null)
+                window.present();
+        }
+
+
+        /**
+        * @brief Initializes runtime services required for visual presentation.
+        *
+        * Sets up DBus media integration, caches system GTK theme, and installs
+        * the application CSS provider on the default screen.
+        */
+        private void initialize_runtime_presentation()
+        {
+            Services.DBus.initialize ();
+
+            GTK_SETTINGS = Gtk.Settings.get_default();
+            GTK_SYSTEM_THEME = GTK_SETTINGS.gtk_theme_name;
+            CSSPROVIDER.load_from_resource ("/io/github/tuner_labs/tuner/css/Tuner-system.css");
+            Gtk.StyleContext.add_provider_for_screen(
+                Gdk.Screen.get_default(),
+                CSSPROVIDER,
+                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            );
+        }
+
+
+        /**
+        * @brief Applies persisted runtime preferences before creating widgets.
+        *
+        * Theme and language are applied early so the first rendered window
+        * reflects the user's configured preferences.
+        */
+        private void apply_runtime_preferences()
+        {
+            apply_theme_name(settings.theme_mode);
+            language = settings.language;
+        }
+
+
+        /**
+        * @brief Creates and registers the main application window.
+        *
+        * Also starts startup-only orchestration and applies screenshot sizing.
+        */
+        private void create_main_window()
+        {
+            window = new Window (this, player, settings, directory);
+            _startup_coordinator = new StartupCoordinator(events, window, settings, directory);
+            _startup_coordinator.start();
+
+            // Flathub screenshot sizing
+            window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
+
+            add_window(window);
         }
 
 

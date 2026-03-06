@@ -93,3 +93,7 @@ This document tracks the event orchestration introduced in the 2026 refactor.
     - core service factory helpers
     - coordinator initialization
     - action registration helpers
+  - Activation flow is split into explicit lifecycle helpers:
+    - `initialize_runtime_presentation()`
+    - `apply_runtime_preferences()`
+    - `create_main_window()`
