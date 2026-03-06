@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-06 00:43-0800\n"
-"PO-Revision-Date: 2026-03-06 10:17+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"PO-Revision-Date: 2026-03-06 08:51+0000\n"
+"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "es/>\n"
 "Language: es\n"
@@ -238,11 +238,12 @@ msgid "Jukebox"
 msgstr "Gramola"
 
 #: src/Widgets/Display.vala:580
-#, c-format
+#, fuzzy, c-format
 msgid "Double click to shuffle through %1$u stations"
 msgstr "Haga doble clic para navegar entre %1$u estaciones"
 
 #: src/Widgets/Display.vala:581
+#, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "uno, cada diez minutos, durante %2$u días"
 
@@ -397,6 +398,7 @@ msgid "Language"
 msgstr "Idioma"
 
 #: src/Widgets/PreferencesPopover.vala:99
+#, fuzzy
 msgid "Language changes restart Tuner"
 msgstr "Los cambios de idioma reinician Tuner"
 
@@ -426,6 +428,7 @@ msgstr "_Guardar"
 
 #. warning("Error: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:215
+#, fuzzy
 msgid "Error"
 msgstr "Error"
 
@@ -439,6 +442,7 @@ msgstr "_Abrir"
 
 #. warning("Error reading file: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:255
+#, fuzzy
 msgid "Error reading file"
 msgstr "Error al leer el archivo"
 

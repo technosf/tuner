@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: countries\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"POT-Creation-Date: 2026-03-06 00:43-0800\n"
 "PO-Revision-Date: 2026-02-18 20:22+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/tuner/countries-"
@@ -1269,937 +1269,940 @@ msgctxt "Countries"
 msgid "Kosovo"
 msgstr "Kosovo"
 
-#: src/Models/Languages.vala:49
-msgctxt "Languages"
-msgid "Afar"
-msgstr "afari keel"
-
-#: src/Models/Languages.vala:50
-msgctxt "Languages"
-msgid "Abkhazian"
-msgstr "abhaasi keel"
-
-#: src/Models/Languages.vala:51
-msgctxt "Languages"
-msgid "Avestan"
-msgstr "avestani keel"
-
+#. Language code we have translations for which have a different name than the default one.
 #: src/Models/Languages.vala:52
-msgctxt "Languages"
-msgid "Afrikaans"
-msgstr "afrikaani keel"
-
-#: src/Models/Languages.vala:53
-msgctxt "Languages"
-msgid "Akan"
-msgstr "akani keel"
-
-#: src/Models/Languages.vala:54
-msgctxt "Languages"
-msgid "Amharic"
-msgstr "amhara keel"
-
-#: src/Models/Languages.vala:55
-msgctxt "Languages"
-msgid "Aragonese"
-msgstr "aragoni keel"
-
-#: src/Models/Languages.vala:56
-msgctxt "Languages"
-msgid "Arabic"
-msgstr "araabia keel"
-
-#: src/Models/Languages.vala:57
-msgctxt "Languages"
-msgid "Assamese"
-msgstr "assami keel"
-
-#: src/Models/Languages.vala:58
-msgctxt "Languages"
-msgid "Avaric"
-msgstr "avaari keel"
-
-#: src/Models/Languages.vala:59
-msgctxt "Languages"
-msgid "Aymara"
-msgstr "aimara keel"
-
-#: src/Models/Languages.vala:60
-msgctxt "Languages"
-msgid "Azerbaijani"
-msgstr "aserbaidžaani keel"
-
-#: src/Models/Languages.vala:62
-msgctxt "Languages"
-msgid "Bashkir"
-msgstr "baškiiri keel"
-
-#: src/Models/Languages.vala:63
-msgctxt "Languages"
-msgid "Belarusian"
-msgstr "valgevene keel"
-
-#: src/Models/Languages.vala:64
-msgctxt "Languages"
-msgid "Bulgarian"
-msgstr "bulgaaria keel"
-
-#: src/Models/Languages.vala:65
-msgctxt "Languages"
-msgid "Bihari"
-msgstr "bihaari keel"
-
-#: src/Models/Languages.vala:66
-msgctxt "Languages"
-msgid "Bislama"
-msgstr "bislama keel"
-
-#: src/Models/Languages.vala:67
-msgctxt "Languages"
-msgid "Bambara"
-msgstr "bambara keel"
-
-#: src/Models/Languages.vala:68
-msgctxt "Languages"
-msgid "Bengali"
-msgstr "bengali keel"
-
-#: src/Models/Languages.vala:69
-msgctxt "Languages"
-msgid "Tibetan"
-msgstr "tiibeti keel"
-
-#: src/Models/Languages.vala:70
-msgctxt "Languages"
-msgid "Breton"
-msgstr "bretooni keel"
-
-#: src/Models/Languages.vala:71
-msgctxt "Languages"
-msgid "Bosnian"
-msgstr "bosnia keel"
-
-#: src/Models/Languages.vala:73
-msgctxt "Languages"
-msgid "Catalan"
-msgstr "katalaani keel"
-
-#: src/Models/Languages.vala:74
-msgctxt "Languages"
-msgid "Chechen"
-msgstr "tšetšeeni keel"
-
-#: src/Models/Languages.vala:75
-msgctxt "Languages"
-msgid "Chamorro"
-msgstr "tšamorro keel"
-
-#: src/Models/Languages.vala:76
-msgctxt "Languages"
-msgid "Corsican"
-msgstr "korsika keel"
-
-#: src/Models/Languages.vala:77
-msgctxt "Languages"
-msgid "Cree"
-msgstr "krii keel"
-
-#: src/Models/Languages.vala:78
-msgctxt "Languages"
-msgid "Czech"
-msgstr "tšehhi keel"
-
-#: src/Models/Languages.vala:79
-msgctxt "Languages"
-msgid "Church Slavic"
-msgstr "kirikuslaavi keel"
-
-#: src/Models/Languages.vala:80
-msgctxt "Languages"
-msgid "Chuvash"
-msgstr "tšuvašši keel"
-
-#: src/Models/Languages.vala:81
-msgctxt "Languages"
-msgid "Welsh"
-msgstr "kõmri keel"
-
-#: src/Models/Languages.vala:83
-msgctxt "Languages"
-msgid "Danish"
-msgstr "taani keel"
-
-#: src/Models/Languages.vala:84
-msgctxt "Languages"
-msgid "German"
-msgstr "saksa keel"
-
-#: src/Models/Languages.vala:85
-msgctxt "Languages"
-msgid "Divehi"
-msgstr "maldiivi keel"
-
-#: src/Models/Languages.vala:86
-msgctxt "Languages"
-msgid "Dzongkha"
-msgstr "dzongkha keel"
-
-#: src/Models/Languages.vala:88
-msgctxt "Languages"
-msgid "Ewe"
-msgstr "eve keel"
-
-#: src/Models/Languages.vala:89
-msgctxt "Languages"
-msgid "Greek"
-msgstr "kreeka keel"
-
-#: src/Models/Languages.vala:90
-msgctxt "Languages"
-msgid "English"
-msgstr "inglise keel"
-
-#: src/Models/Languages.vala:91
-msgctxt "Languages"
-msgid "Esperanto"
-msgstr "esperanto keel"
-
-#: src/Models/Languages.vala:92
-msgctxt "Languages"
-msgid "Spanish"
-msgstr "hispaania keel"
-
-#: src/Models/Languages.vala:93
 msgctxt "Languages"
 msgid "Spanish (Latin America)"
 msgstr "hispaania keel (Ladina Ameerika)"
 
-#: src/Models/Languages.vala:94
-msgctxt "Languages"
-msgid "Estonian"
-msgstr "eesti keel"
-
-#: src/Models/Languages.vala:95
-msgctxt "Languages"
-msgid "Basque"
-msgstr "baski keel"
-
-#: src/Models/Languages.vala:97
-msgctxt "Languages"
-msgid "Persian"
-msgstr "pärsia keel"
-
-#: src/Models/Languages.vala:98
-msgctxt "Languages"
-msgid "Fulah"
-msgstr "fula keel"
-
-#: src/Models/Languages.vala:99
-msgctxt "Languages"
-msgid "Finnish"
-msgstr "soome keel"
-
-#: src/Models/Languages.vala:100
-msgctxt "Languages"
-msgid "Fijian"
-msgstr "fidži keel"
-
-#: src/Models/Languages.vala:101
-msgctxt "Languages"
-msgid "Faroese"
-msgstr "fääri keel"
-
-#: src/Models/Languages.vala:102
-msgctxt "Languages"
-msgid "French"
-msgstr "prantsuse keel"
-
-#: src/Models/Languages.vala:103
-msgctxt "Languages"
-msgid "Western Frisian"
-msgstr "läänefriisi keel"
-
-#: src/Models/Languages.vala:105
-msgctxt "Languages"
-msgid "Irish"
-msgstr "iiri keel"
-
-#: src/Models/Languages.vala:106
-msgctxt "Languages"
-msgid "Scottish Gaelic"
-msgstr "gaeli keel"
-
-#: src/Models/Languages.vala:107
-msgctxt "Languages"
-msgid "Galician"
-msgstr "galeegi keel"
-
-#: src/Models/Languages.vala:108
-msgctxt "Languages"
-msgid "Guarani"
-msgstr "guaranii keel"
-
-#: src/Models/Languages.vala:109
-msgctxt "Languages"
-msgid "Gujarati"
-msgstr "gudžarati keel"
-
-#: src/Models/Languages.vala:110
-msgctxt "Languages"
-msgid "Manx"
-msgstr "mänksi keel"
-
-#: src/Models/Languages.vala:112
-msgctxt "Languages"
-msgid "Hausa"
-msgstr "hausa keel"
-
-#: src/Models/Languages.vala:113
-msgctxt "Languages"
-msgid "Hebrew"
-msgstr "heebrea keel"
-
-#: src/Models/Languages.vala:114
-msgctxt "Languages"
-msgid "Hindi"
-msgstr "hindi keel"
-
-#: src/Models/Languages.vala:115
-msgctxt "Languages"
-msgid "Hiri Motu"
-msgstr "hirimotu keel"
-
-#: src/Models/Languages.vala:116
-msgctxt "Languages"
-msgid "Croatian"
-msgstr "horvaadi keelne"
-
-#: src/Models/Languages.vala:117
-msgctxt "Languages"
-msgid "Haitian"
-msgstr "haiti keel"
-
-#: src/Models/Languages.vala:118
-msgctxt "Languages"
-msgid "Hungarian"
-msgstr "ungari keel"
-
-#: src/Models/Languages.vala:119
-msgctxt "Languages"
-msgid "Armenian"
-msgstr "armeenia keel"
-
-#: src/Models/Languages.vala:120
-msgctxt "Languages"
-msgid "Herero"
-msgstr "herero keel"
-
-#: src/Models/Languages.vala:122
-msgctxt "Languages"
-msgid "Interlingua"
-msgstr "interlingua"
-
-#: src/Models/Languages.vala:123
-msgctxt "Languages"
-msgid "Indonesian"
-msgstr "indoneesia keel"
-
-#: src/Models/Languages.vala:124
-msgctxt "Languages"
-msgid "Interlingue"
-msgstr "interlingue"
-
-#: src/Models/Languages.vala:125
-msgctxt "Languages"
-msgid "Igbo"
-msgstr "ibo keel"
-
-#: src/Models/Languages.vala:126
-msgctxt "Languages"
-msgid "Sichuan Yi"
-msgstr "nuosu keel"
-
-#: src/Models/Languages.vala:127
-msgctxt "Languages"
-msgid "Inupiaq"
-msgstr "injupiaki keel"
-
-#: src/Models/Languages.vala:128
-msgctxt "Languages"
-msgid "Ido"
-msgstr "ido"
-
-#: src/Models/Languages.vala:129
-msgctxt "Languages"
-msgid "Icelandic"
-msgstr "islandi keel"
-
-#: src/Models/Languages.vala:130
-msgctxt "Languages"
-msgid "Italian"
-msgstr "itaalia keel"
-
-#: src/Models/Languages.vala:131
-msgctxt "Languages"
-msgid "Inuktitut"
-msgstr "inuktituti keel"
-
-#: src/Models/Languages.vala:133
-msgctxt "Languages"
-msgid "Japanese"
-msgstr "jaapani keel"
-
-#: src/Models/Languages.vala:134
-msgctxt "Languages"
-msgid "Javanese"
-msgstr "jaava keel"
-
-#: src/Models/Languages.vala:136
-msgctxt "Languages"
-msgid "Georgian"
-msgstr "gruusia keel"
-
-#: src/Models/Languages.vala:137
-msgctxt "Languages"
-msgid "Kongo"
-msgstr "kongo keel"
-
-#: src/Models/Languages.vala:138
-msgctxt "Languages"
-msgid "Kikuyu"
-msgstr "kikuju keel"
-
-#: src/Models/Languages.vala:139
-msgctxt "Languages"
-msgid "Kwanyama"
-msgstr "kvanjama keel"
-
-#: src/Models/Languages.vala:140
-msgctxt "Languages"
-msgid "Kazakh"
-msgstr "kasahhi keel"
-
-#: src/Models/Languages.vala:141
-msgctxt "Languages"
-msgid "Kalaallisut"
-msgstr "grööni keel"
-
-#: src/Models/Languages.vala:142
-msgctxt "Languages"
-msgid "Khmer"
-msgstr "khmeeri keel"
-
-#: src/Models/Languages.vala:143
-msgctxt "Languages"
-msgid "Kannada"
-msgstr "kannada keel"
-
-#: src/Models/Languages.vala:144
-msgctxt "Languages"
-msgid "Korean"
-msgstr "korea keel"
-
-#: src/Models/Languages.vala:145
-msgctxt "Languages"
-msgid "Kanuri"
-msgstr "kanuri keel"
-
-#: src/Models/Languages.vala:146
-msgctxt "Languages"
-msgid "Kashmiri"
-msgstr "kašmiiri keel"
-
-#: src/Models/Languages.vala:147
-msgctxt "Languages"
-msgid "Kurdish"
-msgstr "kurdi keel"
-
-#: src/Models/Languages.vala:148
-msgctxt "Languages"
-msgid "Komi"
-msgstr "komi keel"
-
-#: src/Models/Languages.vala:149
-msgctxt "Languages"
-msgid "Cornish"
-msgstr "korni keel"
-
-#: src/Models/Languages.vala:150
-msgctxt "Languages"
-msgid "Kirghiz"
-msgstr "kirgiisi keel"
-
-#: src/Models/Languages.vala:152
-msgctxt "Languages"
-msgid "Latin"
-msgstr "ladina keel"
-
-#: src/Models/Languages.vala:153
-msgctxt "Languages"
-msgid "Luxembourgish"
-msgstr "letseburgi keel"
-
-#: src/Models/Languages.vala:154
-msgctxt "Languages"
-msgid "Ganda"
-msgstr "ganda keel"
-
-#: src/Models/Languages.vala:155
-msgctxt "Languages"
-msgid "Limburgish"
-msgstr "limburgi keel"
-
-#: src/Models/Languages.vala:156
-msgctxt "Languages"
-msgid "Lingala"
-msgstr "lingala keel"
-
-#: src/Models/Languages.vala:157
-msgctxt "Languages"
-msgid "Lao"
-msgstr "lao keel"
-
-#: src/Models/Languages.vala:158
-msgctxt "Languages"
-msgid "Lithuanian"
-msgstr "leedu keel"
-
-#: src/Models/Languages.vala:159
-msgctxt "Languages"
-msgid "Latvian"
-msgstr "läti keel"
-
-#: src/Models/Languages.vala:161
-msgctxt "Languages"
-msgid "Malagasy"
-msgstr "malagassi keel"
-
-#: src/Models/Languages.vala:162
-msgctxt "Languages"
-msgid "Marshallese"
-msgstr "maršalli keel"
-
-#: src/Models/Languages.vala:163
-msgctxt "Languages"
-msgid "Maori"
-msgstr "maoori keel"
-
-#: src/Models/Languages.vala:164
-msgctxt "Languages"
-msgid "Macedonian"
-msgstr "makedoonia keel"
-
-#: src/Models/Languages.vala:165
-msgctxt "Languages"
-msgid "Malayalam"
-msgstr "malajalami keel"
-
-#: src/Models/Languages.vala:166
-msgctxt "Languages"
-msgid "Mongolian"
-msgstr "mongoli keel"
-
-#: src/Models/Languages.vala:167
-msgctxt "Languages"
-msgid "Marathi"
-msgstr "marathi keel"
-
-#: src/Models/Languages.vala:168
-msgctxt "Languages"
-msgid "Malay"
-msgstr "malai keel"
-
-#: src/Models/Languages.vala:169
-msgctxt "Languages"
-msgid "Maltese"
-msgstr "malta keel"
-
-#: src/Models/Languages.vala:170
-msgctxt "Languages"
-msgid "Burmese"
-msgstr "birma keel"
-
-#: src/Models/Languages.vala:172
-msgctxt "Languages"
-msgid "Nauru"
-msgstr "nauru keel"
-
-#: src/Models/Languages.vala:173
-msgctxt "Languages"
-msgid "Norwegian Bokmal"
-msgstr "norra keel (bokmål)"
-
-#: src/Models/Languages.vala:174
+#: src/Models/Languages.vala:53
 msgctxt "Languages"
 msgid "Norwegian (Bokmal)"
 msgstr "norra keel (bokmål)"
 
-#: src/Models/Languages.vala:175
-msgctxt "Languages"
-msgid "North Ndebele"
-msgstr "ndebele keel"
-
-#: src/Models/Languages.vala:176
-msgctxt "Languages"
-msgid "Nepali"
-msgstr "Nepali"
-
-#: src/Models/Languages.vala:177
-msgctxt "Languages"
-msgid "Ndonga"
-msgstr "ndonga keel"
-
-#: src/Models/Languages.vala:178
-msgctxt "Languages"
-msgid "Dutch"
-msgstr "hollandi keel"
-
-#: src/Models/Languages.vala:179
-msgctxt "Languages"
-msgid "Norwegian Nynorsk"
-msgstr "uusnorra keel"
-
-#: src/Models/Languages.vala:180
-msgctxt "Languages"
-msgid "Norwegian"
-msgstr "norra keel"
-
-#: src/Models/Languages.vala:181
-msgctxt "Languages"
-msgid "South Ndebele"
-msgstr "lõunandebele keel"
-
-#: src/Models/Languages.vala:182
-msgctxt "Languages"
-msgid "Navajo"
-msgstr "navaho keel"
-
-#: src/Models/Languages.vala:183
-msgctxt "Languages"
-msgid "Chichewa"
-msgstr "njandža keel"
-
-#: src/Models/Languages.vala:185
-msgctxt "Languages"
-msgid "Occitan"
-msgstr "oksitaani keel"
-
-#: src/Models/Languages.vala:186
-msgctxt "Languages"
-msgid "Ojibwa"
-msgstr "odžibvei keel"
-
-#: src/Models/Languages.vala:187
-msgctxt "Languages"
-msgid "Oromo"
-msgstr "oromo keel"
-
-#: src/Models/Languages.vala:188
-msgctxt "Languages"
-msgid "Oriya"
-msgstr "oria keel"
-
-#: src/Models/Languages.vala:189
-msgctxt "Languages"
-msgid "Ossetian"
-msgstr "osseedi keel"
-
-#: src/Models/Languages.vala:191
-msgctxt "Languages"
-msgid "Punjabi"
-msgstr "pandžabi keel"
-
-#: src/Models/Languages.vala:192
-msgctxt "Languages"
-msgid "Pali"
-msgstr "paali keel"
-
-#: src/Models/Languages.vala:193
-msgctxt "Languages"
-msgid "Polish"
-msgstr "poola keel"
-
-#: src/Models/Languages.vala:194
-msgctxt "Languages"
-msgid "Pashto"
-msgstr "puštu keel"
-
-#: src/Models/Languages.vala:195
-msgctxt "Languages"
-msgid "Portuguese"
-msgstr "portugali keel"
-
-#: src/Models/Languages.vala:196
+#: src/Models/Languages.vala:54
 msgctxt "Languages"
 msgid "Portuguese (Brazil)"
 msgstr "portugali keel (Brasiilia)"
 
-#: src/Models/Languages.vala:198
-msgctxt "Languages"
-msgid "Quechua"
-msgstr "ketšua keel"
-
-#: src/Models/Languages.vala:200
-msgctxt "Languages"
-msgid "Romansh"
-msgstr "romanši keel"
-
-#: src/Models/Languages.vala:201
-msgctxt "Languages"
-msgid "Rundi"
-msgstr "rundi keel"
-
-#: src/Models/Languages.vala:202
-msgctxt "Languages"
-msgid "Romanian"
-msgstr "rumeenia keel"
-
-#: src/Models/Languages.vala:203
-msgctxt "Languages"
-msgid "Russian"
-msgstr "vene keel"
-
-#: src/Models/Languages.vala:204
-msgctxt "Languages"
-msgid "Kinyarwanda"
-msgstr "ruanda keel"
-
-#: src/Models/Languages.vala:206
-msgctxt "Languages"
-msgid "Sanskrit"
-msgstr "sanskriti keel"
-
-#: src/Models/Languages.vala:207
-msgctxt "Languages"
-msgid "Sardinian"
-msgstr "sardi keel"
-
-#: src/Models/Languages.vala:208
-msgctxt "Languages"
-msgid "Sindhi"
-msgstr "sindhi keel"
-
-#: src/Models/Languages.vala:209
-msgctxt "Languages"
-msgid "Northern Sami"
-msgstr "põhjasaami keel"
-
-#: src/Models/Languages.vala:210
-msgctxt "Languages"
-msgid "Sango"
-msgstr "sango keel"
-
-#: src/Models/Languages.vala:211
-msgctxt "Languages"
-msgid "Sinhala"
-msgstr "singali keel"
-
-#: src/Models/Languages.vala:212
-msgctxt "Languages"
-msgid "Slovak"
-msgstr "slovaki keel"
-
-#: src/Models/Languages.vala:213
-msgctxt "Languages"
-msgid "Slovenian"
-msgstr "sloveeni keel"
-
-#: src/Models/Languages.vala:214
-msgctxt "Languages"
-msgid "Samoan"
-msgstr "samoa keel"
-
-#: src/Models/Languages.vala:215
-msgctxt "Languages"
-msgid "Shona"
-msgstr "šona keel"
-
-#: src/Models/Languages.vala:216
-msgctxt "Languages"
-msgid "Somali"
-msgstr "somaali keel"
-
-#: src/Models/Languages.vala:217
-msgctxt "Languages"
-msgid "Albanian"
-msgstr "albaania keel"
-
-#: src/Models/Languages.vala:218
-msgctxt "Languages"
-msgid "Serbian"
-msgstr "serbia keel"
-
-#: src/Models/Languages.vala:219
-msgctxt "Languages"
-msgid "Swati"
-msgstr "svaasi keel"
-
-#: src/Models/Languages.vala:220
-msgctxt "Languages"
-msgid "Southern Sotho"
-msgstr "sotho keel"
-
-#: src/Models/Languages.vala:221
-msgctxt "Languages"
-msgid "Sundanese"
-msgstr "sunda keel"
-
-#: src/Models/Languages.vala:222
-msgctxt "Languages"
-msgid "Swedish"
-msgstr "rootsi keel"
-
-#: src/Models/Languages.vala:223
-msgctxt "Languages"
-msgid "Swahili"
-msgstr "suahiili keel"
-
-#: src/Models/Languages.vala:225
-msgctxt "Languages"
-msgid "Tamil"
-msgstr "tamili keel"
-
-#: src/Models/Languages.vala:226
-msgctxt "Languages"
-msgid "Telugu"
-msgstr "telugu keel"
-
-#: src/Models/Languages.vala:227
-msgctxt "Languages"
-msgid "Tajik"
-msgstr "tadžiki keel"
-
-#: src/Models/Languages.vala:228
-msgctxt "Languages"
-msgid "Thai"
-msgstr "tai keel"
-
-#: src/Models/Languages.vala:229
-msgctxt "Languages"
-msgid "Tigrinya"
-msgstr "tigrinja keel"
-
-#: src/Models/Languages.vala:230
-msgctxt "Languages"
-msgid "Turkmen"
-msgstr "türkmeeni keel"
-
-#: src/Models/Languages.vala:231
-msgctxt "Languages"
-msgid "Tagalog"
-msgstr "tagalogi keel"
-
-#: src/Models/Languages.vala:232
-msgctxt "Languages"
-msgid "Tswana"
-msgstr "tsvana keel"
-
-#: src/Models/Languages.vala:233
-msgctxt "Languages"
-msgid "Tonga"
-msgstr "tonga keel"
-
-#: src/Models/Languages.vala:234
-msgctxt "Languages"
-msgid "Turkish"
-msgstr "türgi keel"
-
-#: src/Models/Languages.vala:235
-msgctxt "Languages"
-msgid "Tsonga"
-msgstr "tsonga keel"
-
-#: src/Models/Languages.vala:236
-msgctxt "Languages"
-msgid "Tatar"
-msgstr "tatari keel"
-
-#: src/Models/Languages.vala:237
-msgctxt "Languages"
-msgid "Twi"
-msgstr "tvii keel"
-
-#: src/Models/Languages.vala:238
-msgctxt "Languages"
-msgid "Tahitian"
-msgstr "tahiti keel"
-
-#: src/Models/Languages.vala:240
-msgctxt "Languages"
-msgid "Uighur"
-msgstr "uiguuri keel"
-
-#: src/Models/Languages.vala:241
-msgctxt "Languages"
-msgid "Ukrainian"
-msgstr "ukraina keel"
-
-#: src/Models/Languages.vala:242
-msgctxt "Languages"
-msgid "Urdu"
-msgstr "urdu keel"
-
-#: src/Models/Languages.vala:243
-msgctxt "Languages"
-msgid "Uzbek"
-msgstr "usbeki keel"
-
-#: src/Models/Languages.vala:245
-msgctxt "Languages"
-msgid "Venda"
-msgstr "venda keel"
-
-#: src/Models/Languages.vala:246
-msgctxt "Languages"
-msgid "Vietnamese"
-msgstr "vietnami keel"
-
-#: src/Models/Languages.vala:247
-msgctxt "Languages"
-msgid "Volapuk"
-msgstr "volapüki keel"
-
-#: src/Models/Languages.vala:249
-msgctxt "Languages"
-msgid "Walloon"
-msgstr "vallooni keel"
-
-#: src/Models/Languages.vala:250
-msgctxt "Languages"
-msgid "Wolof"
-msgstr "volofi keel"
-
-#: src/Models/Languages.vala:252
-msgctxt "Languages"
-msgid "Xhosa"
-msgstr "koosa keel"
-
-#: src/Models/Languages.vala:254
-msgctxt "Languages"
-msgid "Yiddish"
-msgstr "jidiši keel"
-
-#: src/Models/Languages.vala:255
-msgctxt "Languages"
-msgid "Yoruba"
-msgstr "joruba keel"
-
-#: src/Models/Languages.vala:257
-msgctxt "Languages"
-msgid "Zhuang"
-msgstr "tšuangi keel"
-
-#: src/Models/Languages.vala:258
-msgctxt "Languages"
-msgid "Chinese"
-msgstr "hiina keel"
-
-#: src/Models/Languages.vala:259
+#: src/Models/Languages.vala:55
 msgctxt "Languages"
 msgid "Traditional Chinese"
 msgstr "hiina keel (traditsiooniline)"
 
-#: src/Models/Languages.vala:260
+#. Populate the reference map with language codes and their corresponding translated names,
+#. which we may or may not have translations for, but we want to have a reference for the default name.
+#: src/Models/Languages.vala:59
+msgctxt "Languages"
+msgid "Afar"
+msgstr "afari keel"
+
+#: src/Models/Languages.vala:60
+msgctxt "Languages"
+msgid "Abkhazian"
+msgstr "abhaasi keel"
+
+#: src/Models/Languages.vala:61
+msgctxt "Languages"
+msgid "Avestan"
+msgstr "avestani keel"
+
+#: src/Models/Languages.vala:62
+msgctxt "Languages"
+msgid "Afrikaans"
+msgstr "afrikaani keel"
+
+#: src/Models/Languages.vala:63
+msgctxt "Languages"
+msgid "Akan"
+msgstr "akani keel"
+
+#: src/Models/Languages.vala:64
+msgctxt "Languages"
+msgid "Amharic"
+msgstr "amhara keel"
+
+#: src/Models/Languages.vala:65
+msgctxt "Languages"
+msgid "Aragonese"
+msgstr "aragoni keel"
+
+#: src/Models/Languages.vala:66
+msgctxt "Languages"
+msgid "Arabic"
+msgstr "araabia keel"
+
+#: src/Models/Languages.vala:67
+msgctxt "Languages"
+msgid "Assamese"
+msgstr "assami keel"
+
+#: src/Models/Languages.vala:68
+msgctxt "Languages"
+msgid "Avaric"
+msgstr "avaari keel"
+
+#: src/Models/Languages.vala:69
+msgctxt "Languages"
+msgid "Aymara"
+msgstr "aimara keel"
+
+#: src/Models/Languages.vala:70
+msgctxt "Languages"
+msgid "Azerbaijani"
+msgstr "aserbaidžaani keel"
+
+#: src/Models/Languages.vala:72
+msgctxt "Languages"
+msgid "Bashkir"
+msgstr "baškiiri keel"
+
+#: src/Models/Languages.vala:73
+msgctxt "Languages"
+msgid "Belarusian"
+msgstr "valgevene keel"
+
+#: src/Models/Languages.vala:74
+msgctxt "Languages"
+msgid "Bulgarian"
+msgstr "bulgaaria keel"
+
+#: src/Models/Languages.vala:75
+msgctxt "Languages"
+msgid "Bihari"
+msgstr "bihaari keel"
+
+#: src/Models/Languages.vala:76
+msgctxt "Languages"
+msgid "Bislama"
+msgstr "bislama keel"
+
+#: src/Models/Languages.vala:77
+msgctxt "Languages"
+msgid "Bambara"
+msgstr "bambara keel"
+
+#: src/Models/Languages.vala:78
+msgctxt "Languages"
+msgid "Bengali"
+msgstr "bengali keel"
+
+#: src/Models/Languages.vala:79
+msgctxt "Languages"
+msgid "Tibetan"
+msgstr "tiibeti keel"
+
+#: src/Models/Languages.vala:80
+msgctxt "Languages"
+msgid "Breton"
+msgstr "bretooni keel"
+
+#: src/Models/Languages.vala:81
+msgctxt "Languages"
+msgid "Bosnian"
+msgstr "bosnia keel"
+
+#: src/Models/Languages.vala:83
+msgctxt "Languages"
+msgid "Catalan"
+msgstr "katalaani keel"
+
+#: src/Models/Languages.vala:84
+msgctxt "Languages"
+msgid "Chechen"
+msgstr "tšetšeeni keel"
+
+#: src/Models/Languages.vala:85
+msgctxt "Languages"
+msgid "Chamorro"
+msgstr "tšamorro keel"
+
+#: src/Models/Languages.vala:86
+msgctxt "Languages"
+msgid "Corsican"
+msgstr "korsika keel"
+
+#: src/Models/Languages.vala:87
+msgctxt "Languages"
+msgid "Cree"
+msgstr "krii keel"
+
+#: src/Models/Languages.vala:88
+msgctxt "Languages"
+msgid "Czech"
+msgstr "tšehhi keel"
+
+#: src/Models/Languages.vala:89
+msgctxt "Languages"
+msgid "Church Slavic"
+msgstr "kirikuslaavi keel"
+
+#: src/Models/Languages.vala:90
+msgctxt "Languages"
+msgid "Chuvash"
+msgstr "tšuvašši keel"
+
+#: src/Models/Languages.vala:91
+msgctxt "Languages"
+msgid "Welsh"
+msgstr "kõmri keel"
+
+#: src/Models/Languages.vala:93
+msgctxt "Languages"
+msgid "Danish"
+msgstr "taani keel"
+
+#: src/Models/Languages.vala:94
+msgctxt "Languages"
+msgid "German"
+msgstr "saksa keel"
+
+#: src/Models/Languages.vala:95
+msgctxt "Languages"
+msgid "Divehi"
+msgstr "maldiivi keel"
+
+#: src/Models/Languages.vala:96
+msgctxt "Languages"
+msgid "Dzongkha"
+msgstr "dzongkha keel"
+
+#: src/Models/Languages.vala:98
+msgctxt "Languages"
+msgid "Ewe"
+msgstr "eve keel"
+
+#: src/Models/Languages.vala:99
+msgctxt "Languages"
+msgid "Greek"
+msgstr "kreeka keel"
+
+#: src/Models/Languages.vala:100
+msgctxt "Languages"
+msgid "English"
+msgstr "inglise keel"
+
+#: src/Models/Languages.vala:101
+msgctxt "Languages"
+msgid "Esperanto"
+msgstr "esperanto keel"
+
+#: src/Models/Languages.vala:102
+msgctxt "Languages"
+msgid "Spanish"
+msgstr "hispaania keel"
+
+#: src/Models/Languages.vala:103
+msgctxt "Languages"
+msgid "Estonian"
+msgstr "eesti keel"
+
+#: src/Models/Languages.vala:104
+msgctxt "Languages"
+msgid "Basque"
+msgstr "baski keel"
+
+#: src/Models/Languages.vala:106
+msgctxt "Languages"
+msgid "Persian"
+msgstr "pärsia keel"
+
+#: src/Models/Languages.vala:107
+msgctxt "Languages"
+msgid "Fulah"
+msgstr "fula keel"
+
+#: src/Models/Languages.vala:108
+msgctxt "Languages"
+msgid "Finnish"
+msgstr "soome keel"
+
+#: src/Models/Languages.vala:109
+msgctxt "Languages"
+msgid "Fijian"
+msgstr "fidži keel"
+
+#: src/Models/Languages.vala:110
+msgctxt "Languages"
+msgid "Faroese"
+msgstr "fääri keel"
+
+#: src/Models/Languages.vala:111
+msgctxt "Languages"
+msgid "French"
+msgstr "prantsuse keel"
+
+#: src/Models/Languages.vala:112
+msgctxt "Languages"
+msgid "Western Frisian"
+msgstr "läänefriisi keel"
+
+#: src/Models/Languages.vala:114
+msgctxt "Languages"
+msgid "Irish"
+msgstr "iiri keel"
+
+#: src/Models/Languages.vala:115
+msgctxt "Languages"
+msgid "Scottish Gaelic"
+msgstr "gaeli keel"
+
+#: src/Models/Languages.vala:116
+msgctxt "Languages"
+msgid "Galician"
+msgstr "galeegi keel"
+
+#: src/Models/Languages.vala:117
+msgctxt "Languages"
+msgid "Guarani"
+msgstr "guaranii keel"
+
+#: src/Models/Languages.vala:118
+msgctxt "Languages"
+msgid "Gujarati"
+msgstr "gudžarati keel"
+
+#: src/Models/Languages.vala:119
+msgctxt "Languages"
+msgid "Manx"
+msgstr "mänksi keel"
+
+#: src/Models/Languages.vala:121
+msgctxt "Languages"
+msgid "Hausa"
+msgstr "hausa keel"
+
+#: src/Models/Languages.vala:122
+msgctxt "Languages"
+msgid "Hebrew"
+msgstr "heebrea keel"
+
+#: src/Models/Languages.vala:123
+msgctxt "Languages"
+msgid "Hindi"
+msgstr "hindi keel"
+
+#: src/Models/Languages.vala:124
+msgctxt "Languages"
+msgid "Hiri Motu"
+msgstr "hirimotu keel"
+
+#: src/Models/Languages.vala:125
+msgctxt "Languages"
+msgid "Croatian"
+msgstr "horvaadi keelne"
+
+#: src/Models/Languages.vala:126
+msgctxt "Languages"
+msgid "Haitian"
+msgstr "haiti keel"
+
+#: src/Models/Languages.vala:127
+msgctxt "Languages"
+msgid "Hungarian"
+msgstr "ungari keel"
+
+#: src/Models/Languages.vala:128
+msgctxt "Languages"
+msgid "Armenian"
+msgstr "armeenia keel"
+
+#: src/Models/Languages.vala:129
+msgctxt "Languages"
+msgid "Herero"
+msgstr "herero keel"
+
+#: src/Models/Languages.vala:131
+msgctxt "Languages"
+msgid "Interlingua"
+msgstr "interlingua"
+
+#: src/Models/Languages.vala:132
+msgctxt "Languages"
+msgid "Indonesian"
+msgstr "indoneesia keel"
+
+#: src/Models/Languages.vala:133
+msgctxt "Languages"
+msgid "Interlingue"
+msgstr "interlingue"
+
+#: src/Models/Languages.vala:134
+msgctxt "Languages"
+msgid "Igbo"
+msgstr "ibo keel"
+
+#: src/Models/Languages.vala:135
+msgctxt "Languages"
+msgid "Sichuan Yi"
+msgstr "nuosu keel"
+
+#: src/Models/Languages.vala:136
+msgctxt "Languages"
+msgid "Inupiaq"
+msgstr "injupiaki keel"
+
+#: src/Models/Languages.vala:137
+msgctxt "Languages"
+msgid "Ido"
+msgstr "ido"
+
+#: src/Models/Languages.vala:138
+msgctxt "Languages"
+msgid "Icelandic"
+msgstr "islandi keel"
+
+#: src/Models/Languages.vala:139
+msgctxt "Languages"
+msgid "Italian"
+msgstr "itaalia keel"
+
+#: src/Models/Languages.vala:140
+msgctxt "Languages"
+msgid "Inuktitut"
+msgstr "inuktituti keel"
+
+#: src/Models/Languages.vala:142
+msgctxt "Languages"
+msgid "Japanese"
+msgstr "jaapani keel"
+
+#: src/Models/Languages.vala:143
+msgctxt "Languages"
+msgid "Javanese"
+msgstr "jaava keel"
+
+#: src/Models/Languages.vala:145
+msgctxt "Languages"
+msgid "Georgian"
+msgstr "gruusia keel"
+
+#: src/Models/Languages.vala:146
+msgctxt "Languages"
+msgid "Kongo"
+msgstr "kongo keel"
+
+#: src/Models/Languages.vala:147
+msgctxt "Languages"
+msgid "Kikuyu"
+msgstr "kikuju keel"
+
+#: src/Models/Languages.vala:148
+msgctxt "Languages"
+msgid "Kwanyama"
+msgstr "kvanjama keel"
+
+#: src/Models/Languages.vala:149
+msgctxt "Languages"
+msgid "Kazakh"
+msgstr "kasahhi keel"
+
+#: src/Models/Languages.vala:150
+msgctxt "Languages"
+msgid "Kalaallisut"
+msgstr "grööni keel"
+
+#: src/Models/Languages.vala:151
+msgctxt "Languages"
+msgid "Khmer"
+msgstr "khmeeri keel"
+
+#: src/Models/Languages.vala:152
+msgctxt "Languages"
+msgid "Kannada"
+msgstr "kannada keel"
+
+#: src/Models/Languages.vala:153
+msgctxt "Languages"
+msgid "Korean"
+msgstr "korea keel"
+
+#: src/Models/Languages.vala:154
+msgctxt "Languages"
+msgid "Kanuri"
+msgstr "kanuri keel"
+
+#: src/Models/Languages.vala:155
+msgctxt "Languages"
+msgid "Kashmiri"
+msgstr "kašmiiri keel"
+
+#: src/Models/Languages.vala:156
+msgctxt "Languages"
+msgid "Kurdish"
+msgstr "kurdi keel"
+
+#: src/Models/Languages.vala:157
+msgctxt "Languages"
+msgid "Komi"
+msgstr "komi keel"
+
+#: src/Models/Languages.vala:158
+msgctxt "Languages"
+msgid "Cornish"
+msgstr "korni keel"
+
+#: src/Models/Languages.vala:159
+msgctxt "Languages"
+msgid "Kirghiz"
+msgstr "kirgiisi keel"
+
+#: src/Models/Languages.vala:161
+msgctxt "Languages"
+msgid "Latin"
+msgstr "ladina keel"
+
+#: src/Models/Languages.vala:162
+msgctxt "Languages"
+msgid "Luxembourgish"
+msgstr "letseburgi keel"
+
+#: src/Models/Languages.vala:163
+msgctxt "Languages"
+msgid "Ganda"
+msgstr "ganda keel"
+
+#: src/Models/Languages.vala:164
+msgctxt "Languages"
+msgid "Limburgish"
+msgstr "limburgi keel"
+
+#: src/Models/Languages.vala:165
+msgctxt "Languages"
+msgid "Lingala"
+msgstr "lingala keel"
+
+#: src/Models/Languages.vala:166
+msgctxt "Languages"
+msgid "Lao"
+msgstr "lao keel"
+
+#: src/Models/Languages.vala:167
+msgctxt "Languages"
+msgid "Lithuanian"
+msgstr "leedu keel"
+
+#: src/Models/Languages.vala:168
+msgctxt "Languages"
+msgid "Latvian"
+msgstr "läti keel"
+
+#: src/Models/Languages.vala:170
+msgctxt "Languages"
+msgid "Malagasy"
+msgstr "malagassi keel"
+
+#: src/Models/Languages.vala:171
+msgctxt "Languages"
+msgid "Marshallese"
+msgstr "maršalli keel"
+
+#: src/Models/Languages.vala:172
+msgctxt "Languages"
+msgid "Maori"
+msgstr "maoori keel"
+
+#: src/Models/Languages.vala:173
+msgctxt "Languages"
+msgid "Macedonian"
+msgstr "makedoonia keel"
+
+#: src/Models/Languages.vala:174
+msgctxt "Languages"
+msgid "Malayalam"
+msgstr "malajalami keel"
+
+#: src/Models/Languages.vala:175
+msgctxt "Languages"
+msgid "Mongolian"
+msgstr "mongoli keel"
+
+#: src/Models/Languages.vala:176
+msgctxt "Languages"
+msgid "Marathi"
+msgstr "marathi keel"
+
+#: src/Models/Languages.vala:177
+msgctxt "Languages"
+msgid "Malay"
+msgstr "malai keel"
+
+#: src/Models/Languages.vala:178
+msgctxt "Languages"
+msgid "Maltese"
+msgstr "malta keel"
+
+#: src/Models/Languages.vala:179
+msgctxt "Languages"
+msgid "Burmese"
+msgstr "birma keel"
+
+#: src/Models/Languages.vala:181
+msgctxt "Languages"
+msgid "Nauru"
+msgstr "nauru keel"
+
+#: src/Models/Languages.vala:182
+msgctxt "Languages"
+msgid "Norwegian Bokmal"
+msgstr "norra keel (bokmål)"
+
+#: src/Models/Languages.vala:183
+msgctxt "Languages"
+msgid "North Ndebele"
+msgstr "ndebele keel"
+
+#: src/Models/Languages.vala:184
+msgctxt "Languages"
+msgid "Nepali"
+msgstr "Nepali"
+
+#: src/Models/Languages.vala:185
+msgctxt "Languages"
+msgid "Ndonga"
+msgstr "ndonga keel"
+
+#: src/Models/Languages.vala:186
+msgctxt "Languages"
+msgid "Dutch"
+msgstr "hollandi keel"
+
+#: src/Models/Languages.vala:187
+msgctxt "Languages"
+msgid "Norwegian Nynorsk"
+msgstr "uusnorra keel"
+
+#: src/Models/Languages.vala:188
+msgctxt "Languages"
+msgid "Norwegian"
+msgstr "norra keel"
+
+#: src/Models/Languages.vala:189
+msgctxt "Languages"
+msgid "South Ndebele"
+msgstr "lõunandebele keel"
+
+#: src/Models/Languages.vala:190
+msgctxt "Languages"
+msgid "Navajo"
+msgstr "navaho keel"
+
+#: src/Models/Languages.vala:191
+msgctxt "Languages"
+msgid "Chichewa"
+msgstr "njandža keel"
+
+#: src/Models/Languages.vala:193
+msgctxt "Languages"
+msgid "Occitan"
+msgstr "oksitaani keel"
+
+#: src/Models/Languages.vala:194
+msgctxt "Languages"
+msgid "Ojibwa"
+msgstr "odžibvei keel"
+
+#: src/Models/Languages.vala:195
+msgctxt "Languages"
+msgid "Oromo"
+msgstr "oromo keel"
+
+#: src/Models/Languages.vala:196
+msgctxt "Languages"
+msgid "Oriya"
+msgstr "oria keel"
+
+#: src/Models/Languages.vala:197
+msgctxt "Languages"
+msgid "Ossetian"
+msgstr "osseedi keel"
+
+#: src/Models/Languages.vala:199
+msgctxt "Languages"
+msgid "Punjabi"
+msgstr "pandžabi keel"
+
+#: src/Models/Languages.vala:200
+msgctxt "Languages"
+msgid "Pali"
+msgstr "paali keel"
+
+#: src/Models/Languages.vala:201
+msgctxt "Languages"
+msgid "Polish"
+msgstr "poola keel"
+
+#: src/Models/Languages.vala:202
+msgctxt "Languages"
+msgid "Pashto"
+msgstr "puštu keel"
+
+#: src/Models/Languages.vala:203
+msgctxt "Languages"
+msgid "Portuguese"
+msgstr "portugali keel"
+
+#: src/Models/Languages.vala:205
+msgctxt "Languages"
+msgid "Quechua"
+msgstr "ketšua keel"
+
+#: src/Models/Languages.vala:207
+msgctxt "Languages"
+msgid "Romansh"
+msgstr "romanši keel"
+
+#: src/Models/Languages.vala:208
+msgctxt "Languages"
+msgid "Rundi"
+msgstr "rundi keel"
+
+#: src/Models/Languages.vala:209
+msgctxt "Languages"
+msgid "Romanian"
+msgstr "rumeenia keel"
+
+#: src/Models/Languages.vala:210
+msgctxt "Languages"
+msgid "Russian"
+msgstr "vene keel"
+
+#: src/Models/Languages.vala:211
+msgctxt "Languages"
+msgid "Kinyarwanda"
+msgstr "ruanda keel"
+
+#: src/Models/Languages.vala:213
+msgctxt "Languages"
+msgid "Sanskrit"
+msgstr "sanskriti keel"
+
+#: src/Models/Languages.vala:214
+msgctxt "Languages"
+msgid "Sardinian"
+msgstr "sardi keel"
+
+#: src/Models/Languages.vala:215
+msgctxt "Languages"
+msgid "Sindhi"
+msgstr "sindhi keel"
+
+#: src/Models/Languages.vala:216
+msgctxt "Languages"
+msgid "Northern Sami"
+msgstr "põhjasaami keel"
+
+#: src/Models/Languages.vala:217
+msgctxt "Languages"
+msgid "Sango"
+msgstr "sango keel"
+
+#: src/Models/Languages.vala:218
+msgctxt "Languages"
+msgid "Sinhala"
+msgstr "singali keel"
+
+#: src/Models/Languages.vala:219
+msgctxt "Languages"
+msgid "Slovak"
+msgstr "slovaki keel"
+
+#: src/Models/Languages.vala:220
+msgctxt "Languages"
+msgid "Slovenian"
+msgstr "sloveeni keel"
+
+#: src/Models/Languages.vala:221
+msgctxt "Languages"
+msgid "Samoan"
+msgstr "samoa keel"
+
+#: src/Models/Languages.vala:222
+msgctxt "Languages"
+msgid "Shona"
+msgstr "šona keel"
+
+#: src/Models/Languages.vala:223
+msgctxt "Languages"
+msgid "Somali"
+msgstr "somaali keel"
+
+#: src/Models/Languages.vala:224
+msgctxt "Languages"
+msgid "Albanian"
+msgstr "albaania keel"
+
+#: src/Models/Languages.vala:225
+msgctxt "Languages"
+msgid "Serbian"
+msgstr "serbia keel"
+
+#: src/Models/Languages.vala:226
+msgctxt "Languages"
+msgid "Swati"
+msgstr "svaasi keel"
+
+#: src/Models/Languages.vala:227
+msgctxt "Languages"
+msgid "Southern Sotho"
+msgstr "sotho keel"
+
+#: src/Models/Languages.vala:228
+msgctxt "Languages"
+msgid "Sundanese"
+msgstr "sunda keel"
+
+#: src/Models/Languages.vala:229
+msgctxt "Languages"
+msgid "Swedish"
+msgstr "rootsi keel"
+
+#: src/Models/Languages.vala:230
+msgctxt "Languages"
+msgid "Swahili"
+msgstr "suahiili keel"
+
+#: src/Models/Languages.vala:232
+msgctxt "Languages"
+msgid "Tamil"
+msgstr "tamili keel"
+
+#: src/Models/Languages.vala:233
+msgctxt "Languages"
+msgid "Telugu"
+msgstr "telugu keel"
+
+#: src/Models/Languages.vala:234
+msgctxt "Languages"
+msgid "Tajik"
+msgstr "tadžiki keel"
+
+#: src/Models/Languages.vala:235
+msgctxt "Languages"
+msgid "Thai"
+msgstr "tai keel"
+
+#: src/Models/Languages.vala:236
+msgctxt "Languages"
+msgid "Tigrinya"
+msgstr "tigrinja keel"
+
+#: src/Models/Languages.vala:237
+msgctxt "Languages"
+msgid "Turkmen"
+msgstr "türkmeeni keel"
+
+#: src/Models/Languages.vala:238
+msgctxt "Languages"
+msgid "Tagalog"
+msgstr "tagalogi keel"
+
+#: src/Models/Languages.vala:239
+msgctxt "Languages"
+msgid "Tswana"
+msgstr "tsvana keel"
+
+#: src/Models/Languages.vala:240
+msgctxt "Languages"
+msgid "Tonga"
+msgstr "tonga keel"
+
+#: src/Models/Languages.vala:241
+msgctxt "Languages"
+msgid "Turkish"
+msgstr "türgi keel"
+
+#: src/Models/Languages.vala:242
+msgctxt "Languages"
+msgid "Tsonga"
+msgstr "tsonga keel"
+
+#: src/Models/Languages.vala:243
+msgctxt "Languages"
+msgid "Tatar"
+msgstr "tatari keel"
+
+#: src/Models/Languages.vala:244
+msgctxt "Languages"
+msgid "Twi"
+msgstr "tvii keel"
+
+#: src/Models/Languages.vala:245
+msgctxt "Languages"
+msgid "Tahitian"
+msgstr "tahiti keel"
+
+#: src/Models/Languages.vala:247
+msgctxt "Languages"
+msgid "Uighur"
+msgstr "uiguuri keel"
+
+#: src/Models/Languages.vala:248
+msgctxt "Languages"
+msgid "Ukrainian"
+msgstr "ukraina keel"
+
+#: src/Models/Languages.vala:249
+msgctxt "Languages"
+msgid "Urdu"
+msgstr "urdu keel"
+
+#: src/Models/Languages.vala:250
+msgctxt "Languages"
+msgid "Uzbek"
+msgstr "usbeki keel"
+
+#: src/Models/Languages.vala:252
+msgctxt "Languages"
+msgid "Venda"
+msgstr "venda keel"
+
+#: src/Models/Languages.vala:253
+msgctxt "Languages"
+msgid "Vietnamese"
+msgstr "vietnami keel"
+
+#: src/Models/Languages.vala:254
+msgctxt "Languages"
+msgid "Volapuk"
+msgstr "volapüki keel"
+
+#: src/Models/Languages.vala:256
+msgctxt "Languages"
+msgid "Walloon"
+msgstr "vallooni keel"
+
+#: src/Models/Languages.vala:257
+msgctxt "Languages"
+msgid "Wolof"
+msgstr "volofi keel"
+
+#: src/Models/Languages.vala:259
+msgctxt "Languages"
+msgid "Xhosa"
+msgstr "koosa keel"
+
+#: src/Models/Languages.vala:261
+msgctxt "Languages"
+msgid "Yiddish"
+msgstr "jidiši keel"
+
+#: src/Models/Languages.vala:262
+msgctxt "Languages"
+msgid "Yoruba"
+msgstr "joruba keel"
+
+#: src/Models/Languages.vala:264
+msgctxt "Languages"
+msgid "Zhuang"
+msgstr "tšuangi keel"
+
+#: src/Models/Languages.vala:265
+msgctxt "Languages"
+msgid "Chinese"
+msgstr "hiina keel"
+
+#: src/Models/Languages.vala:266
 msgctxt "Languages"
 msgid "Zulu"
 msgstr "suulu keel"
