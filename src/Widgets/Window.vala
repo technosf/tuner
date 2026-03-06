@@ -478,18 +478,36 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	private void check_online_status()
 	{
 		if (active && app().is_offline)
-		/* Present Offline look */
-		{
-			this.accept_focus = false;
-			active            = false;
-		}
+			apply_offline_ui_state();
 
 		if (!active && app().is_online)
-		// Online but not active
-		{
-			this.accept_focus = true;
-			active            = true;
-		}
+			apply_online_ui_state();
 	        _display.update_state (active, _start_on_starred );
 	    } // check_online_status
+
+
+	/**
+	 * @brief Applies UI state for offline mode.
+	 *
+	 * Disables focus acceptance and marks the window as inactive so dependent
+	 * widgets render their offline state.
+	 */
+	private void apply_offline_ui_state()
+	{
+		this.accept_focus = false;
+		active            = false;
+	}
+
+
+	/**
+	 * @brief Applies UI state for online mode.
+	 *
+	 * Re-enables focus acceptance and marks the window active so dependent
+	 * widgets render their interactive state.
+	 */
+	private void apply_online_ui_state()
+	{
+		this.accept_focus = true;
+		active            = true;
+	}
 } // Window

@@ -97,3 +97,11 @@ This document tracks the event orchestration introduced in the 2026 refactor.
     - `initialize_runtime_presentation()`
     - `apply_runtime_preferences()`
     - `create_main_window()`
+
+## Window Connectivity UI State
+
+- `src/Widgets/Window.vala`
+  - `check_online_status()` now delegates UI transitions to:
+    - `apply_offline_ui_state()`
+    - `apply_online_ui_state()`
+  - Keeps online/offline behavior explicit and reduces branching complexity.
