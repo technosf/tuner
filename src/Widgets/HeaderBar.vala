@@ -11,6 +11,7 @@
  */
 
 using Gtk;
+using Tuner.Controllers;
 using Tuner.Models;
 
 /*
@@ -89,6 +90,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 	private Mutex _station_update_lock = Mutex();       // Lock out concurrent updates
 	private bool _station_locked       = false;
 	private ulong _station_handler_id  = 0;
+	private bool _was_playing_before_offline = false;
 
     private VolumeButton _volume_button = new VolumeButton();
     
@@ -247,13 +249,34 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		    Tuner icon and online/offline behavior
 		 */
 		app().notify["is-online"].connect(() => {
+			if (app().is_online)
+			{
+				bool already_playing = app().player.player_state == PlayerController.Is.PLAYING
+					|| app().player.player_state == PlayerController.Is.BUFFERING;
+				if ( app().settings.play_restart && _was_playing_before_offline && app().player.can_play () && !already_playing )
+					app().player.play_station(app().player.station);
+				_was_playing_before_offline = false;
+			}
 			update_controls_state();
 		});
+
 		app().notify["is-offline"].connect(() => {
+			if (app().is_offline)
+			{
+				_was_playing_before_offline = _was_playing_before_offline ||
+					app().player.player_state == PlayerController.Is.PLAYING
+					|| app().player.player_state == PlayerController.Is.BUFFERING;
+			}
 			update_controls_state();
 		});
+
 		app().player.state_changed_sig.connect ((station, state) =>
 		{
+			if (state == PlayerController.Is.PLAYING || state == PlayerController.Is.BUFFERING)
+				_was_playing_before_offline = true;
+
+			if (app().is_online && state == PlayerController.Is.STOPPED)
+				_was_playing_before_offline = false;
 			update_controls_state();
 		});
 
@@ -396,8 +419,8 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 	*/
 	private void update_controls_state()
 	{
-		bool is_playing_now = app().player.player_state == Tuner.Controllers.PlayerController.Is.PLAYING
-			|| app().player.player_state == Tuner.Controllers.PlayerController.Is.BUFFERING;
+		bool is_playing_now = app().player.player_state == PlayerController.Is.PLAYING
+			|| app().player.player_state == PlayerController.Is.BUFFERING;
 
 		if (app().is_offline)
 		{
@@ -412,6 +435,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 
 		}
 		else
+		// Online - restore full functionality
 		{
 			_player_info.favicon_image.opacity = 1.0;
 			_tuner_on.opacity                  = 1.0;

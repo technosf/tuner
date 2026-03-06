@@ -446,6 +446,8 @@ namespace Tuner {
         */
         private void check_online_status()
         {
+            bool network_available = NETMON.get_network_available ();
+
             if(_monitor_changed_id > 0) 
             {
                 Source.remove(_monitor_changed_id);
@@ -457,8 +459,11 @@ namespace Tuner {
                 wait 1 seconds before setting to online status
                 to whatever the state is at that time
             */
-            if ( is_offline && NETMON.get_network_available ()  )
+            if (network_available)
             {
+                if (is_online)
+                    return;
+
                 _monitor_changed_id = Timeout.add_seconds( (uint)_has_started+1, () => 
                 {           
                     _monitor_changed_id = 0; // Reset timeout ID after scheduling  

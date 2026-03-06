@@ -315,7 +315,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
      {
         settings.auto_play = !settings.auto_play;
         action.set_state (settings.auto_play);
-        debug (@"on_action_enable_autoplay: $(settings.auto_play)");
+        debug (@"on_action_enable_autoplay: $(settings.auto_play ? "enabled" : "disabled")");
     } // on_action_enable_autoplay
 
 
@@ -328,7 +328,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
      {
         settings.play_restart = !settings.play_restart;
         action.set_state (settings.play_restart);
-        debug (@"on_action_enable_play_restart: $(settings.play_restart)");
+        debug (@"on_action_enable_play_restart: $(settings.play_restart ? "enabled" : "disabled")");
     } // on_action_enable_play_restart
 
 

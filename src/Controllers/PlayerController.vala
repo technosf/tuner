@@ -53,7 +53,8 @@ public class Tuner.Controllers.PlayerController : GLib.Object
     public signal void shuffle_requested_sig();
 
     /** The error received when playing, if any */
-    public bool play_error{ get; private set; }
+    private bool _play_error = false;
+    public bool play_error { get { return _play_error; } }
 
     private const uint TEN_MINUTES_IN_SECONDS = 606;  // tape counter timer - 10 mins plus 1%
     
@@ -72,8 +73,10 @@ public class Tuner.Controllers.PlayerController : GLib.Object
         _player.error.connect ((error) => 
         // There was an error playing the stream
         {
-            play_error = true;
-            info (@"player error on url $(_player.uri): $(error.message)");
+            Gdk.threads_add_idle (() => {
+                _play_error = true;
+                return false;
+            });
         });
 
 		_player.media_info_updated.connect ((obj) =>
@@ -115,6 +118,14 @@ public class Tuner.Controllers.PlayerController : GLib.Object
         switch (state) {
             case "playing":
                 Gdk.threads_add_idle (() => {
+                    if (app().is_offline)
+                    {
+                        _play_error = false;
+                        _player.stop ();
+                        player_state = Is.STOPPED;
+                        return false;
+                    }
+                    _play_error = false;
                     player_state = Is.PLAYING;
                     return false;
                 });
@@ -122,26 +133,36 @@ public class Tuner.Controllers.PlayerController : GLib.Object
 
             case "buffering":            
                 Gdk.threads_add_idle (() => {
+                    if (app().is_offline)
+                    {
+                        _play_error = false;
+                        _player.stop ();
+                        player_state = Is.STOPPED;
+                        return false;
+                    }
+                    _play_error = false;
                     player_state = Is.BUFFERING;
                     return false;
                 });
                 break;
 
             default :       //  STOPPED:
-                if ( play_error )
-                {
-                    Gdk.threads_add_idle (() => {
+                Gdk.threads_add_idle (() => {
+                    bool network_available = NetworkMonitor.get_default ().get_network_available ();
+                    bool offline_or_lost_network = app().is_offline || !network_available;
+
+                    if ( _play_error && !offline_or_lost_network )
+                    {
                         player_state = Is.STOPPED_ERROR;
-                        return false;
-                    });
-                }
-                else
-                {
-                    Gdk.threads_add_idle (() => {
+                    }
+                    else
+                    {
+                        if (offline_or_lost_network)
+                            _play_error = false;
                         player_state = Is.STOPPED;
-                        return false;
-                    });
-                }
+                    }
+                    return false;
+                });
                 break;
         }
     } // set_reverse_symbol
@@ -159,7 +180,8 @@ public class Tuner.Controllers.PlayerController : GLib.Object
 
         private set {
             _player_state = value;
-            state_changed_sig( _station, value );
+            if (_station != null)
+                state_changed_sig(_station, value);
 
 			if (value == Is.STOPPED || value == Is.STOPPED_ERROR)
 			{
@@ -173,6 +195,8 @@ public class Tuner.Controllers.PlayerController : GLib.Object
 			{
 				_tape_counter_id = Timeout.add_seconds_full(Priority.LOW, TEN_MINUTES_IN_SECONDS, () =>
 				{
+					if (_station == null)
+						return Source.REMOVE;
 					tape_counter_sig(_station);
 					return Source.CONTINUE;
 				});
@@ -215,13 +239,13 @@ public class Tuner.Controllers.PlayerController : GLib.Object
     *
     * @param station The station to play.
     */
-	public void play_station (Station station)
+		public void play_station (Station station)
 	{
 		_player.stop ();
         _station = station;
         station_changed_sig (_station);
 		_player.uri = (_station.urlResolved != null && _station.urlResolved != "") ? _station.urlResolved : _station.url;
-		play_error  = false;
+		_play_error = false;
 		Timeout.add (500, () =>
 		// Wait a half of a second to play the station to help flush metadata
 		{
@@ -251,6 +275,7 @@ public class Tuner.Controllers.PlayerController : GLib.Object
                 _player.stop ();
                 break;
             default:
+                _play_error = false;
                 _player.play ();
                 break;
         }
