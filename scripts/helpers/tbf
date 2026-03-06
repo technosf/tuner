@@ -6,6 +6,10 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 
+##
+## Flatpak debug build and install
+##
+
 set -e
 
-flatpak-builder --force-clean --user --install build-dir io.github.tuner_labs.tuner.yml
+flatpak-builder --force-clean --user --install build-dir io.github.tuner_labs.tuner.debug.yml

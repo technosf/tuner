@@ -7,9 +7,9 @@
 #
 
 ##
-## Flatpak repo run
+## Flatpak debug run
 ##
 
 set -e
 
-flatpak --user run io.github.tuner_labs.tuner
+flatpak-builder --run build-dir io.github.tuner_labs.tuner.debug.yml io.github.tuner_labs.tuner
