@@ -77,3 +77,8 @@ This document tracks the event orchestration introduced in the 2026 refactor.
 - `src/Controllers/SearchController.vala`
   - Owns debounce and pending-search cancellation.
   - Uses configured `_max_search_results` instead of a hardcoded limit.
+- `src/Widgets/Display.vala`
+  - Receives search focus/query via explicit methods:
+    - `on_search_focused()`
+    - `on_search_requested(string text)`
+  - No longer routes search input through internal self-signals.

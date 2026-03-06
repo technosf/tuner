@@ -210,14 +210,14 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
         _headerbar.search_has_focus_sig.connect (() => 
         // Show searched stack when cursor hits search text area
         {
-            _display.search_focused_sig( );
+	            _display.on_search_focused();
         });
 
         _headerbar.searching_for_sig.connect ( (text) => 
         // process the searched text, stripping it, and sensitizing the save 
         // search star depending on if the search is already saved
         {
-            _display.searched_for_sig( text);
+	            _display.on_search_requested(text);
         });
 
 		set_titlebar (_headerbar);

@@ -60,17 +60,27 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
     public signal void refresh_starred_stations_sig ();
 
 
-    /**
-     * @brief Signal emitted when a search is performed.
-     * @param text The search text.
-     */
-    public signal void searched_for_sig(string text);
+	/**
+	 * @brief Handles focus entering the search entry.
+	 *
+	 * Switches the display stack to the search-results view.
+	 */
+	public void on_search_focused()
+	{
+		stack.visible_child_name = "searched";
+	}
 
 
-    /**
-     * @brief Signal emitted when the search is focused.
-     */
-     public signal void search_focused_sig();
+	/**
+	 * @brief Handles search text updates from the header bar.
+	 *
+	 * @param text Search text submitted by the header bar.
+	 */
+	public void on_search_requested(string text)
+	{
+		_search_results.tooltip_button.sensitive = false;
+		_search_controller.handle_search_for(text);
+	}
 
 
     /**
@@ -538,21 +548,6 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             starred.show_all();
 		});
 
-
-		search_focused_sig.connect (() =>
-		/* Show searched stack when cursor hits search text area */
-		{
-			stack.visible_child_name = "searched";
-		});
-
-
-		searched_for_sig.connect ((text) =>
-        /* process the searched text, stripping it, and sensitizing the save
-        search star depending on if the search is already saved */
-		{
-            _search_results.tooltip_button.sensitive = false;
-			_search_controller.handle_search_for(text);
-		});
 
         source_list.selected = source_list.get_first_child(_selections_category);
 
