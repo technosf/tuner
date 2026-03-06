@@ -10,7 +10,9 @@
  */
 
  using GLib;
+ using Tuner.Coordinators;
  using Tuner.Controllers;
+ using Tuner.Events;
  using Tuner.Providers;
  using Tuner.Services;
  using Tuner.Widgets;
@@ -64,6 +66,7 @@ namespace Tuner {
     */
     public class Application : Gtk.Application 
     {
+        private delegate void StringActionHandler(string value);
 
         /** @brief Signal emitted when the shuffle mode changes   */
         public signal void shuffle_mode_sig(bool shuffle);
@@ -151,12 +154,12 @@ namespace Tuner {
                         // Start a fade-out using the shared fade constant and
                         // hide the window after the fade so opacity doesn't revert.
                         uint fade_ms = WINDOW_FADE_MS;
-                        fade_window.begin(app().window, fade_ms, false, () => { });
+                        fade_window.begin(window, fade_ms, false, () => { });
 
                         GLib.Timeout.add((uint) (fade_ms + 80), () => {
                             while (Gtk.events_pending()) Gtk.main_iteration();
                             settings.save();
-                            app().window.hide();
+                            window.hide();
                             // Stop GTK main loop cleanly
                             spawn_restart();
                             quit();
@@ -181,6 +184,9 @@ namespace Tuner {
 
         /** @brief Application settings */
         public Settings settings { get; construct; }  
+
+        /** @brief Cross-component event hub */
+        public AppEventBus events { get; construct; }
         
         /** @brief Player controller */
         public PlayerController player { get; construct; }  
@@ -220,6 +226,8 @@ namespace Tuner {
                 }
                 _is_online = value;
                 is_offline = !value;
+                if (events != null)
+                    events.connectivity_changed(_is_online, is_offline);
             }
         }   
 
@@ -241,6 +249,12 @@ namespace Tuner {
 
         private uint _monitor_changed_id = 0;
         private bool _has_started = false;
+        // Coordinates startup-only cross-component flows (e.g., deferred autoplay).
+        private StartupCoordinator _startup_coordinator;
+        // Coordinates playback restart behavior after online/offline transitions.
+        private PlaybackRecoveryCoordinator _playback_recovery_coordinator;
+        // Coordinates provider click/vote updates from player events.
+        private UsageTrackingCoordinator _usage_tracking_coordinator;
 
 
         /**
@@ -259,101 +273,192 @@ namespace Tuner {
         */
         construct 
         {           
-            // Create required directories and files
-
             cache_dir = stat_dir(Environment.get_user_cache_dir ());
             data_dir = stat_dir(Environment.get_user_data_dir ());
 
-            /* 
-                Starred file and migration of favorites
-            */
-            var _favorites_file =  File.new_build_filename (data_dir, "favorites.json"); // v1 file
-            var _starred_file =  File.new_build_filename (data_dir, Application.STARRED);   // v2 file
+            var starred_file = setup_runtime_storage ();
 
-            /* Migration not possible with renamed app */
-            try {
-                _favorites_file.open_readwrite().close ();   // Try to open, if succeeds it exists, if not err - no migration
-                _starred_file.create(NONE); // Try to create, if fails starred already exists, if not ok to migrate
-                _favorites_file.copy (_starred_file, FileCopyFlags.NONE);  // Copy
-                warning(@"Migrated v1 Favorites to v2 Starred");
-            }     
-            catch (Error e) {
-                // Peconditions not met
-            }
+            events = create_event_bus();
+            offline_cancel = create_offline_cancellable();
+            initialize_connectivity_monitoring ();
 
-            /* 
-                Create the cancellable.
-                Wrap network monitoring into a bool property 
-            */
-            offline_cancel = new Cancellable();
-            is_online = NETMON.get_network_available ();   
-            NETMON.network_changed.connect((monitor) => {      
-                check_online_status();
-            });        
+            settings = create_settings();
+            provider = create_provider();
+            player = create_player();
+            stars = create_star_store(starred_file);
+            directory = create_directory_controller(provider, stars);
+            initialize_coordinators();
 
-
-            /* 
-                Init Tuner assets 
-            */
-            settings = new Settings ();
-            provider = new RadioBrowser(null);
-            player = new PlayerController ();
-            stars = new StarStore(_starred_file);
-            directory = new DirectoryController(provider, stars);
-
-            add_action_entries(ACTION_ENTRIES, this);
-
-            /*
-                Hook up voting and counting
-            */
-            player.state_changed_sig.connect ((station, state) => 
-            // Do a provider click when starting to play a sation
-            {
-                if ( !settings.do_not_vote  && state == PlayerController.Is.PLAYING )
-                {
-                    provider.click(station.stationuuid);                
-                    station.clickcount++;
-                    station.clicktrend++;
-                }
-            });
-
-            player.tape_counter_sig.connect((station) =>
-            // Every ten minutes of continuous playing tape counter sigs are emitted
-            // Vote and click the station each time as appropriate
-            {     
-                if ( settings.do_not_vote ) return;
-                if ( station.starred ) 
-                { 
-                    provider.vote(station.stationuuid); 
-                    station.votes++;
-                }
-                provider.click(station.stationuuid);
-                station.clickcount++;
-                station.clicktrend++;
-            });
-
-            // Add application actions
-            add_action_entries(ACTION_ENTRIES, this);
-
-            // Add set-theme-name action
-            var set_theme_action = new SimpleAction("set-theme-name", VariantType.STRING);
-            set_theme_action.activate.connect((parameter) => {
-                if (parameter != null) {
-                    theme_name = parameter.get_string();
-                }
-            });
-            add_action(set_theme_action);
-
-            // Add set-language action
-            var set_language_action = new SimpleAction("set-language", VariantType.STRING);
-            set_language_action.activate.connect((parameter) => {
-                if (parameter != null) {
-                    language = parameter.get_string();
-                }
-            });
-            add_action(set_language_action);
-
+            register_application_actions ();
         } // construct
+
+
+        /**
+        * @brief Prepares the starred data file path under runtime data storage.
+        *
+        * Requires `data_dir` to already be initialized in the construct block.
+        * Also attempts one-time migration from the legacy favorites file.
+        *
+        * @return The target starred data file handle.
+        */
+        private File setup_runtime_storage ()
+        {
+            var favorites_file = File.new_build_filename(data_dir, "favorites.json");
+            var starred_file   = File.new_build_filename(data_dir, Application.STARRED);
+            migrate_legacy_favorites(favorites_file, starred_file);
+
+            return starred_file;
+        }
+
+
+        /**
+        * @brief Attempts migration from the legacy favorites file to starred file.
+        *
+        * @param favorites_file Legacy file path from older versions.
+        * @param starred_file Current starred file path.
+        */
+        private void migrate_legacy_favorites(File favorites_file, File starred_file)
+        {
+            try {
+                favorites_file.open_readwrite().close ();
+                starred_file.create(NONE);
+                favorites_file.copy(starred_file, FileCopyFlags.NONE);
+                warning(@"Migrated v1 Favorites to v2 Starred");
+            }
+            catch (Error e) {
+                // Preconditions not met, no migration needed.
+            }
+        }
+
+
+        /**
+        * @brief Creates the application event bus instance.
+        *
+        * @return Newly created app event bus.
+        */
+        private AppEventBus create_event_bus()
+        {
+            return new AppEventBus();
+        }
+
+
+        /**
+        * @brief Creates cancellable token used by online operations.
+        *
+        * @return Newly created cancellable instance.
+        */
+        private Cancellable create_offline_cancellable()
+        {
+            return new Cancellable();
+        }
+
+
+        /**
+        * @brief Initializes connectivity monitor hooks and initial online state.
+        */
+        private void initialize_connectivity_monitoring()
+        {
+            is_online = NETMON.get_network_available ();
+            NETMON.network_changed.connect((monitor) => {
+                check_online_status();
+            });
+        }
+
+
+        /**
+        * @brief Creates application settings service.
+        *
+        * @return Newly created settings instance.
+        */
+        private Settings create_settings()
+        {
+            return new Settings ();
+        }
+
+
+        /**
+        * @brief Creates radio-provider service.
+        *
+        * @return Newly created provider API implementation.
+        */
+        private DataProvider.API create_provider()
+        {
+            return new RadioBrowser(null);
+        }
+
+
+        /**
+        * @brief Creates player controller service.
+        *
+        * @return Newly created player controller.
+        */
+        private PlayerController create_player()
+        {
+            return new PlayerController ();
+        }
+
+
+        /**
+        * @brief Creates star-store service for station persistence.
+        *
+        * @param starred_file Runtime starred data file path.
+        * @return Newly created star-store instance.
+        */
+        private StarStore create_star_store(File starred_file)
+        {
+            return new StarStore(starred_file);
+        }
+
+
+        /**
+        * @brief Creates directory controller service.
+        *
+        * @param provider Provider API instance.
+        * @param stars Star-store instance.
+        * @return Newly created directory controller.
+        */
+        private DirectoryController create_directory_controller(DataProvider.API provider, StarStore stars)
+        {
+            return new DirectoryController(provider, stars);
+        }
+
+
+        /**
+        * @brief Initializes app coordinators that consume initialized services.
+        */
+        private void initialize_coordinators()
+        {
+            _playback_recovery_coordinator = new PlaybackRecoveryCoordinator(this, events, player, settings);
+            _usage_tracking_coordinator = new UsageTrackingCoordinator(settings, player, provider);
+        }
+
+
+        /**
+        * @brief Registers app-level actions used by UI and preferences widgets.
+        */
+        private void register_application_actions()
+        {
+            add_action_entries(ACTION_ENTRIES, this);
+            add_string_action("set-theme-name", (value) => { theme_name = value; });
+            add_string_action("set-language", (value) => { language = value; });
+        }
+
+
+        /**
+        * @brief Adds a string-parameter action and binds it to a typed handler.
+        *
+        * @param action_name Action name to register.
+        * @param handler Callback that receives the string payload.
+        */
+        private void add_string_action(string action_name, StringActionHandler handler)
+        {
+            var action = new SimpleAction(action_name, VariantType.STRING);
+            action.activate.connect((parameter) => {
+                if (parameter != null)
+                    handler(parameter.get_string());
+            });
+            add_action(action);
+        }
 
 
         /**
@@ -381,26 +486,9 @@ namespace Tuner {
         protected override void activate() 
         {
             if (window == null) { 
-                Services.DBus.initialize (); 
-
-                GTK_SETTINGS = Gtk.Settings.get_default();
-                GTK_SYSTEM_THEME = GTK_SETTINGS.gtk_theme_name;
-                CSSPROVIDER.load_from_resource ("/io/github/tuner_labs/tuner/css/Tuner-system.css");
-                Gtk.StyleContext.add_provider_for_screen(
-                    Gdk.Screen.get_default(),
-                    CSSPROVIDER,
-                    Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-                );
-
-                apply_theme_name( settings.theme_mode);    
-                language = settings.language;  
-                     
-                window = new Window (this, player, settings, directory); 
-
-                // Flathub screenshot sizing 
-                app().window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
-
-                add_window (window);
+                initialize_runtime_presentation();
+                apply_runtime_preferences();
+                create_main_window();
             } else {
                 window.present ();
             }
@@ -413,7 +501,60 @@ namespace Tuner {
         * This method is called to bring the main window to the foreground.
         */
         private void on_resume_window() {
-            window.present();
+            if (window != null)
+                window.present();
+        }
+
+
+        /**
+        * @brief Initializes runtime services required for visual presentation.
+        *
+        * Sets up DBus media integration, caches system GTK theme, and installs
+        * the application CSS provider on the default screen.
+        */
+        private void initialize_runtime_presentation()
+        {
+            Services.DBus.initialize (this);
+
+            GTK_SETTINGS = Gtk.Settings.get_default();
+            GTK_SYSTEM_THEME = GTK_SETTINGS.gtk_theme_name;
+            CSSPROVIDER.load_from_resource ("/io/github/tuner_labs/tuner/css/Tuner-system.css");
+            Gtk.StyleContext.add_provider_for_screen(
+                Gdk.Screen.get_default(),
+                CSSPROVIDER,
+                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            );
+        }
+
+
+        /**
+        * @brief Applies persisted runtime preferences before creating widgets.
+        *
+        * Theme and language are applied early so the first rendered window
+        * reflects the user's configured preferences.
+        */
+        private void apply_runtime_preferences()
+        {
+            apply_theme_name(settings.theme_mode);
+            language = settings.language;
+        }
+
+
+        /**
+        * @brief Creates and registers the main application window.
+        *
+        * Also starts startup-only orchestration and applies screenshot sizing.
+        */
+        private void create_main_window()
+        {
+            window = new Window (this, player, settings, directory);
+            _startup_coordinator = new StartupCoordinator(this, events, window, settings, directory);
+            _startup_coordinator.start();
+
+            // Flathub screenshot sizing
+            window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
+
+            add_window(window);
         }
 
 

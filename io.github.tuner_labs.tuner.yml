@@ -19,6 +19,7 @@ build-options:
   prepend-path: /usr/lib/sdk/vala/bin/
   prepend-ld-library-path: /usr/lib/sdk/vala/lib
 
+
 finish-args:
   - --share=ipc
   - --socket=fallback-x11
@@ -28,6 +29,7 @@ finish-args:
   - --own-name=org.mpris.MediaPlayer2.io.github.tuner_labs.tuner
   - --filesystem=xdg-desktop # Playlist import export
 
+
 cleanup:
   - /include
   - /lib/girepository-1.0
@@ -36,9 +38,7 @@ cleanup:
   - /share/vala
   - "*.la"
   - "*.a"
-  
-# Build flatpak with --no-separate-locales to avoid having to deal with translations in a separate module  
-separate-locales: false
+
 
 modules:
 

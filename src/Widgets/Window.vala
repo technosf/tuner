@@ -76,6 +76,10 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	private const int GEOMETRY_MIN_HEIGHT = 440;
 	private const int GEOMETRY_MIN_WIDTH  = 600;
 
+	private delegate bool SettingBoolGetter();
+	private delegate void SettingBoolSetter(bool value);
+	private delegate void ToggleBoolCallback(bool value);
+
 	private const ActionEntry[] ACTION_ENTRIES = {
 		{ ACTION_PAUSE,                 on_toggle_playback                         },
 		{ ACTION_QUIT,                  on_action_quit                             },
@@ -154,11 +158,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
                 }, 
                 Gdk.WindowHints.MIN_SIZE
             );
-		change_action_state (ACTION_DISABLE_TRACKING, settings.do_not_vote);
-		change_action_state (ACTION_ENABLE_AUTOPLAY, settings.auto_play);
-		change_action_state (ACTION_START_ON_STARRED, settings.start_on_starred);
-		change_action_state (ACTION_STREAM_INFO, settings.stream_info);
-		change_action_state (ACTION_STREAM_INFO_FAST, settings.stream_info_fast);
+		sync_action_states_from_settings();
 
                
         /*
@@ -175,8 +175,8 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 
             Keep in mind that network availability is noisy
         */
-        app().notify["is-online"].connect(() => 
-        {
+        // Window state responds to app-level connectivity events.
+        app().events.connectivity_changed.connect((is_online, is_offline) => {
             check_online_status();
         });
     } // construct
@@ -200,54 +200,38 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
     /**
         Add widgets after Window creation
     */
-    private void add_widgets()
-    {
-        /*
-            Headerbar hookups
-        */
-        _headerbar = new HeaderBar (this);
+	    private void add_widgets()
+	    {
+	        var app_ref = (Application)application;
+
+	        /*
+	            Headerbar hookups
+	        */
+	        _headerbar = new HeaderBar (app_ref, this, player_ctrl, app_ref.provider);
 
         _headerbar.search_has_focus_sig.connect (() => 
         // Show searched stack when cursor hits search text area
         {
-            _display.search_focused_sig( );
+	            _display.on_search_focused();
         });
 
         _headerbar.searching_for_sig.connect ( (text) => 
         // process the searched text, stripping it, and sensitizing the save 
         // search star depending on if the search is already saved
         {
-            _display.searched_for_sig( text);
+	            _display.on_search_requested(text);
         });
 
 		set_titlebar (_headerbar);
 
-        /*
-            Display
-        */
-        _display = new Display(directory);  
-        _display.station_clicked_sig.connect (handle_play_station);  // Station clicked -> change station     
-        add (_display);
+	        /*
+	            Display
+	        */
+	        _display = new Display(app_ref, directory, player_ctrl, app_ref.stars, app_ref.provider);  
+	        _display.station_clicked_sig.connect (handle_play_station);  // Station clicked -> change station     
+	        add (_display);
 
-        // Auto-play
-        if (_settings.auto_play) 
-        {
-            _directory.load ();
-            var source = _directory.load_station_uuid (_settings.last_played_station);
-
-            try
-            {
-                foreach (var station in source.next_page ())
-                {
-                    handle_play_station(station);
-                    break;
-                }
-            } catch (SourceError e)
-            {
-                warning (_("Error while trying to autoplay, aborting…"));
-            }
-        }
-    } // add_widgets
+	    } // add_widgets
 
 
     /* --------------------------------------------------------
@@ -257,11 +241,54 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
         ----------------------------------------------------------
     */
 
-    // ----------------------------------------------------------------------
-    //
-    // Actions
-    //
-    // ----------------------------------------------------------------------
+	    // ----------------------------------------------------------------------
+	    //
+	    // Actions
+	    //
+	    // ----------------------------------------------------------------------
+
+	/**
+	 * @brief Synchronizes all window action states from persisted settings.
+	 *
+	 * This keeps toggle action state in sync with the values used by model buttons
+	 * and other action-bound widgets when the window is constructed.
+	 */
+	private void sync_action_states_from_settings()
+	{
+		change_action_state (ACTION_DISABLE_TRACKING, settings.do_not_vote);
+		change_action_state (ACTION_ENABLE_AUTOPLAY, settings.auto_play);
+		change_action_state (ACTION_ENABLE_PLAY_RESTART, settings.play_restart);
+		change_action_state (ACTION_START_ON_STARRED, settings.start_on_starred);
+		change_action_state (ACTION_STREAM_INFO, settings.stream_info);
+		change_action_state (ACTION_STREAM_INFO_FAST, settings.stream_info_fast);
+	}
+
+
+	/**
+	 * @brief Toggles a boolean setting and mirrors it to the action state.
+	 *
+	 * @param action Action whose state should be updated.
+	 * @param debug_name Identifier included in debug output.
+	 * @param getter Callback that reads the current setting value.
+	 * @param setter Callback that persists the new setting value.
+	 * @param on_changed Optional callback invoked with the new value.
+	 */
+	private void toggle_setting_action(
+		SimpleAction action,
+		string debug_name,
+		SettingBoolGetter getter,
+		SettingBoolSetter setter,
+		ToggleBoolCallback? on_changed = null
+	) {
+		bool enabled = !getter();
+		setter(enabled);
+		action.set_state(enabled);
+
+		if (on_changed != null)
+			on_changed(enabled);
+
+		debug (@"$debug_name: $(enabled ? "enabled" : "disabled")");
+	}
 
 
     /**
@@ -300,9 +327,12 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
      */
     public void on_action_disable_tracking (SimpleAction action, Variant? parameter) 
     {
-        settings.do_not_vote = !settings.do_not_vote;
-        action.set_state (settings.do_not_vote);
-        debug (@"on_action_disable_tracking: $(settings.do_not_vote)");
+		toggle_setting_action(
+			action,
+			"on_action_disable_tracking",
+			() => { return settings.do_not_vote; },
+			(value) => { settings.do_not_vote = value; }
+		);
     } // on_action_disable_tracking
 
 
@@ -313,51 +343,80 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
      */
      public void on_action_enable_autoplay (SimpleAction action, Variant? parameter) 
      {
-        settings.auto_play = !settings.auto_play;
-        action.set_state (settings.auto_play);
-        debug (@"on_action_enable_autoplay: $(settings.auto_play ? "enabled" : "disabled")");
+		toggle_setting_action(
+			action,
+			"on_action_enable_autoplay",
+			() => { return settings.auto_play; },
+			(value) => { settings.auto_play = value; }
+		);
     } // on_action_enable_autoplay
 
 
     /**
-     * @brief Handles the enable autoplay action.
+     * @brief Handles the enable play-restart action.
      * @param action The SimpleAction that triggered this method.
      * @param parameter The parameter passed with the action (unused).
      */
      public void on_action_enable_play_restart (SimpleAction action, Variant? parameter) 
      {
-        settings.play_restart = !settings.play_restart;
-        action.set_state (settings.play_restart);
-        debug (@"on_action_enable_play_restart: $(settings.play_restart ? "enabled" : "disabled")");
+		toggle_setting_action(
+			action,
+			"on_action_enable_play_restart",
+			() => { return settings.play_restart; },
+			(value) => { settings.play_restart = value; }
+		);
     } // on_action_enable_play_restart
 
 
     /**
-     * @brief Handles the enable autoplay action.
+     * @brief Handles the start-on-starred action.
      * @param action The SimpleAction that triggered this method.
      * @param parameter The parameter passed with the action (unused).
      */
      public void on_action_start_on_starred (SimpleAction action, Variant? parameter) 
      {
-        settings.start_on_starred = !settings.start_on_starred;
-        action.set_state (settings.start_on_starred);
-        debug (@"on_action_enable_autoplay: $(settings.auto_play)");
-    } // on_action_enable_autoplay
+		toggle_setting_action(
+			action,
+			"on_action_start_on_starred",
+			() => { return settings.start_on_starred; },
+			(value) => { settings.start_on_starred = value; }
+		);
+    } // on_action_start_on_starred
 
 
+	/**
+	 * @brief Handles stream metadata display preference changes.
+	 *
+	 * @param action The SimpleAction that triggered this method.
+	 * @param parameter The parameter passed with the action (unused).
+	 */
     public void on_action_stream_info (SimpleAction action, Variant? parameter) 
     {
-        settings.stream_info = !settings.stream_info;
-        action.set_state (settings.stream_info);
-        _headerbar.stream_info (action.get_state ().get_boolean ());
+		toggle_setting_action(
+			action,
+			"on_action_stream_info",
+			() => { return settings.stream_info; },
+			(value) => { settings.stream_info = value; },
+			(value) => { _headerbar.stream_info(value); }
+		);
     } // on_action_enable_stream_info
 
 
+	/**
+	 * @brief Handles stream metadata fast-cycle preference changes.
+	 *
+	 * @param action The SimpleAction that triggered this method.
+	 * @param parameter The parameter passed with the action (unused).
+	 */
     public void on_action_stream_info_fast (SimpleAction action, Variant? parameter) 
     {
-        settings.stream_info_fast = !settings.stream_info_fast;
-        action.set_state (settings.stream_info_fast);
-        _headerbar.stream_info_fast (action.get_state ().get_boolean ());
+		toggle_setting_action(
+			action,
+			"on_action_stream_info_fast",
+			() => { return settings.stream_info_fast; },
+			(value) => { settings.stream_info_fast = value; },
+			(value) => { _headerbar.stream_info_fast(value); }
+		);
     } // on_action_stream_info_fast
 
 
@@ -421,18 +480,36 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	private void check_online_status()
 	{
 		if (active && app().is_offline)
-		/* Present Offline look */
-		{
-			this.accept_focus = false;
-			active            = false;
-		}
+			apply_offline_ui_state();
 
 		if (!active && app().is_online)
-		// Online but not active
-		{
-			this.accept_focus = true;
-			active            = true;
-		}
-        _display.update_state (active, _start_on_starred );
-    } // check_online_status
+			apply_online_ui_state();
+	        _display.update_state (active, _start_on_starred );
+	    } // check_online_status
+
+
+	/**
+	 * @brief Applies UI state for offline mode.
+	 *
+	 * Disables focus acceptance and marks the window as inactive so dependent
+	 * widgets render their offline state.
+	 */
+	private void apply_offline_ui_state()
+	{
+		this.accept_focus = false;
+		active            = false;
+	}
+
+
+	/**
+	 * @brief Applies UI state for online mode.
+	 *
+	 * Re-enables focus acceptance and marks the window active so dependent
+	 * widgets render their interactive state.
+	 */
+	private void apply_online_ui_state()
+	{
+		this.accept_focus = true;
+		active            = true;
+	}
 } // Window
