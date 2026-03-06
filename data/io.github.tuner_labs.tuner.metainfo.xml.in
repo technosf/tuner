@@ -103,12 +103,13 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
   <releases>
   
-    <release version="2.0.3" date="2026-03-05">
+    <release version="2.0.3-beta.1" date="2026-03-05">
       <description>
         <p>Maintenance release:</p>
         <ul>
           <li>Refactored Elementry Granite library out as a module</li>
           <li>Refactored namespaces</li>
+          <li>Fixed: play/stop buttons disabled #223</li>
           <li>Fixed: Jukebox stops when tuning to a dead station #256</li>
         </ul>
       </description>
