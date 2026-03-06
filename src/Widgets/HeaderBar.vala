@@ -38,6 +38,8 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 
 	// Search delay in milliseconds
 	private const uint REVEAL_DELAY = 400u;
+	public const uint STATION_CHANGE_SETTLE_DELAY_MS = 1200u;
+	public const uint SHUFFLE_ERROR_RETRY_DELAY_MS = 1500u;
 
 	private static Image STAR   = new Image.from_icon_name ("starred", IconSize.LARGE_TOOLBAR);
 	private static Image UNSTAR = new Image.from_icon_name ("non-starred", IconSize.LARGE_TOOLBAR);
@@ -299,7 +301,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 	*/
 	public bool update_playing_station(Station station)
 	{
-		if ( app().is_offline || ( _station != null && _station== station ) )
+		if ( app().is_offline || ( _station != null && _station == station && app().player.player_state != Tuner.Controllers.PlayerController.Is.STOPPED_ERROR ) )
 			return false;
 
 		if (_station_update_lock.trylock())
@@ -522,7 +524,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 					return Source.REMOVE;
 				});
 
-				Timeout.add (3*REVEAL_DELAY, () =>
+				Timeout.add (HeaderBar.STATION_CHANGE_SETTLE_DELAY_MS, () =>
 				             // Redisplay after fade out and clear have completed
 				{
 					station.update_favicon_image.begin(favicon_image, true, DEFAULT_ICON_NAME,() =>

@@ -138,12 +138,26 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             stack : new Gtk.Stack ()
         );
 
+        // Jukebox set up - get the station set and connect signals for shuffle and tape counter
 		jukebox_station_set = _directory.load_random_stations(1);
 		app().player.shuffle_requested_sig.connect(() =>
 		{
 			if (_shuffle)
 				jukebox_shuffle.begin();
 		});
+
+        app().player.state_changed_sig.connect((station, state) =>
+        {
+            if (_shuffle && state == PlayerController.Is.STOPPED_ERROR)
+            {
+	                Timeout.add(HeaderBar.SHUFFLE_ERROR_RETRY_DELAY_MS, () =>
+	                {
+	                    jukebox_shuffle.begin();
+	                    return Source.REMOVE;
+                });
+            }
+        });
+
 
 		var tuner = new Gtk.Image.from_icon_name (BACKGROUND_TUNER, Gtk.IconSize.INVALID);
 		tuner.opacity                         = BACKGROUND_OPACITY;
@@ -240,15 +254,19 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	public async void jukebox_shuffle(){
 		if (!_shuffle)
 			return;
-		try
-		{
-            var station = jukebox_station_set.next_page().to_array()[0];
+
+        try 
+        {
+            var page = yield jukebox_station_set.next_page_async();
+            if (page == null || page.size == 0)
+                return;
+
+            var station = page.to_array()[0];
+
 			station_clicked_sig(station);
 		}
 		catch (SourceError e)
-		{
-			warning ((_("Could not get random station") + ": %s" ).printf (e.message));    
-		}
+		{}
 	} // jukebox_shuffle
 
 
