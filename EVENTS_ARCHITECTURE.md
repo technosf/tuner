@@ -55,3 +55,20 @@ This document tracks the event orchestration introduced in the 2026 refactor.
 - Keep local widget events in widget files.
 - Use `AppEventBus` for cross-component events that otherwise create tight coupling.
 - Use coordinators for workflows that span UI + services + application state.
+
+## Window Action Handling
+
+- `src/Widgets/Window.vala` now centralizes action-state initialization with:
+  - `sync_action_states_from_settings()`
+- Boolean toggle actions now use a shared path:
+  - `toggle_setting_action(...)`
+- This reduces copy/paste logic across action handlers and lowers the chance of mismatched setting/action wiring.
+
+## Search Debounce Ownership
+
+- `src/Widgets/HeaderBar.vala`
+  - Emits `searching_for_sig` immediately on text change.
+  - No longer owns debounce timers.
+- `src/Controllers/SearchController.vala`
+  - Owns debounce and pending-search cancellation.
+  - Uses configured `_max_search_results` instead of a hardcoded limit.

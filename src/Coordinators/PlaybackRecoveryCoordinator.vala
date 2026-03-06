@@ -22,14 +22,21 @@ namespace Tuner.Coordinators {
 		private Settings _settings;
 
 		private bool _was_playing_before_offline = false;
-		private ulong _connectivity_handler_id = 0;
-		private ulong _player_state_handler_id = 0;
+			private ulong _connectivity_handler_id = 0;
+			private ulong _player_state_handler_id = 0;
 
 
-		public PlaybackRecoveryCoordinator (
-			AppEventBus events,
-			PlayerController player,
-			Settings settings
+			/**
+			 * @brief Creates a playback recovery coordinator.
+			 *
+			 * @param events App-level event bus used for connectivity changes.
+			 * @param player Player controller used to inspect and restart playback.
+			 * @param settings Application settings controlling recovery behavior.
+			 */
+			public PlaybackRecoveryCoordinator (
+				AppEventBus events,
+				PlayerController player,
+				Settings settings
 		) {
 			Object();
 			_events = events;
@@ -43,11 +50,20 @@ namespace Tuner.Coordinators {
 			_player_state_handler_id = _player.state_changed_sig.connect((station, state) => {
 				on_player_state_changed(station, state);
 			});
-		}
+			}
 
 
-		private void on_connectivity_changed(bool is_online, bool is_offline)
-		{
+			/**
+			 * @brief Handles connectivity transitions for playback recovery.
+			 *
+			 * On offline transition, remembers whether playback was active.
+			 * On online transition, optionally restarts playback if enabled.
+			 *
+			 * @param is_online True when app has network connectivity.
+			 * @param is_offline True when app has no network connectivity.
+			 */
+			private void on_connectivity_changed(bool is_online, bool is_offline)
+			{
 			if (is_offline)
 			{
 				_was_playing_before_offline = _was_playing_before_offline
@@ -63,21 +79,30 @@ namespace Tuner.Coordinators {
 					_player.play_station(_player.station);
 				_was_playing_before_offline = false;
 			}
-		}
+			}
 
 
-		private void on_player_state_changed(Station station, PlayerController.Is state)
-		{
+			/**
+			 * @brief Tracks player state to refine recovery decisions.
+			 *
+			 * @param station Current station associated with the state change.
+			 * @param state Current player state.
+			 */
+			private void on_player_state_changed(Station station, PlayerController.Is state)
+			{
 			if (state == PlayerController.Is.PLAYING || state == PlayerController.Is.BUFFERING)
 				_was_playing_before_offline = true;
 
 			if (app().is_online && state == PlayerController.Is.STOPPED)
 				_was_playing_before_offline = false;
-		}
+			}
 
 
-		public override void dispose()
-		{
+			/**
+			 * @brief Disconnects coordinator signal handlers and releases resources.
+			 */
+			public override void dispose()
+			{
 			if (_connectivity_handler_id > 0)
 			{
 				_events.disconnect(_connectivity_handler_id);

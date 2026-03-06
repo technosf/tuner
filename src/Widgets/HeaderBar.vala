@@ -34,10 +34,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
     // Default icon name for stations without a custom favicon
     private const string DEFAULT_ICON_NAME = "tuner:internet-radio-symbolic";
 
-	// Search delay in milliseconds
-	private const int SEARCH_DELAY = 400;
-
-	// Search delay in milliseconds
+	// Reveal animation delay in milliseconds
 	private const uint REVEAL_DELAY = 400u;
 	public const uint STATION_CHANGE_SETTLE_DELAY_MS = 1200u;
 	public const uint SHUFFLE_ERROR_RETRY_DELAY_MS = 1500u;
@@ -93,10 +90,6 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 
     private VolumeButton _volume_button = new VolumeButton();
     
-    // Search-related variables
-    private uint _delayed_changed_id;
-    private string _searchentry_text = "";
-
 	private PlayerInfo _player_info;
 
 	/** @property {bool} starred - Station starred. */
@@ -193,14 +186,13 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
         */     
 
 		// Search entry
-		_search_entry.placeholder_text = _("Station Search");
-		_search_entry.set_margin_start(5);   // 5 pixels padding on the left
-		_search_entry.valign           = Align.CENTER;
+			_search_entry.placeholder_text = _("Station Search");
+			_search_entry.set_margin_start(5);   // 5 pixels padding on the left
+			_search_entry.valign           = Align.CENTER;
 
-		_search_entry.changed.connect (() => {
-			_searchentry_text = _search_entry.text;
-			reset_search_timeout();
-		});
+			_search_entry.changed.connect (() => {
+				searching_for_sig(_search_entry.text);
+			});
 
 		_search_entry.focus_in_event.connect ((e) => {
 			search_has_focus_sig ();
@@ -425,25 +417,6 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 			_search_entry.sensitive             = true;
 		}
 	} // update_controls_state
-
-
-    /**
-    * @brief Reset the search timeout.
-    *
-    * This method removes any existing timeout and sets a new one for delayed search.
-    */
-    private void reset_search_timeout()
-    {
-        if(_delayed_changed_id > 0)
-            Source.remove(_delayed_changed_id);
-
-        _delayed_changed_id = Timeout.add(SEARCH_DELAY, () => 
-        {                   
-            _delayed_changed_id = 0; // Reset timeout ID after scheduling               
-            searching_for_sig (_searchentry_text); // Emit the custom signal with the search query
-            return Source.REMOVE;
-        });
-    } // reset_search_timeout
 
 
     /**

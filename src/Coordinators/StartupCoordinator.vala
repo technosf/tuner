@@ -26,15 +26,23 @@ namespace Tuner.Coordinators {
 		private DirectoryController _directory;
 
 		private bool _autoplay_pending = false;
-		private bool _autoplay_attempted = false;
-		private ulong _connectivity_handler_id = 0;
+			private bool _autoplay_attempted = false;
+			private ulong _connectivity_handler_id = 0;
 
 
-		public StartupCoordinator (
-			AppEventBus events,
-			Window window,
-			Settings settings,
-			DirectoryController directory
+			/**
+			 * @brief Creates a startup coordinator bound to the app event bus.
+			 *
+			 * @param events App-level event bus used for connectivity events.
+			 * @param window Main window used to dispatch station playback.
+			 * @param settings Application settings that control auto-play behavior.
+			 * @param directory Directory controller used to resolve last station UUID.
+			 */
+			public StartupCoordinator (
+				AppEventBus events,
+				Window window,
+				Settings settings,
+				DirectoryController directory
 		) {
 			Object();
 			_events = events;
@@ -46,23 +54,35 @@ namespace Tuner.Coordinators {
 				if (is_online)
 					try_autoplay();
 			});
-		}
+			}
 
 
-		public void start()
-		{
-			if (!_settings.auto_play)
-				return;
+			/**
+			 * @brief Starts startup workflows managed by this coordinator.
+			 *
+			 * If auto-play is enabled, this queues an attempt and executes it
+			 * immediately when possible or later on connectivity changes.
+			 */
+			public void start()
+			{
+				if (!_settings.auto_play)
+					return;
 
 			_autoplay_pending = true;
 			try_autoplay();
-		}
+			}
 
 
-		private void try_autoplay()
-		{
-			if (!_autoplay_pending || _autoplay_attempted)
-				return;
+			/**
+			 * @brief Attempts one deferred auto-play run.
+			 *
+			 * This method is idempotent for a single app session and returns early
+			 * when offline, already attempted, or when no last-played station exists.
+			 */
+			private void try_autoplay()
+			{
+				if (!_autoplay_pending || _autoplay_attempted)
+					return;
 
 			if (app().is_offline)
 				return;
@@ -91,12 +111,15 @@ namespace Tuner.Coordinators {
 			{
 				warning(_("Error while trying to autoplay, aborting…"));
 			}
-		}
+			}
 
 
-		public override void dispose()
-		{
-			if (_connectivity_handler_id > 0)
+			/**
+			 * @brief Disconnects coordinator event handlers and releases resources.
+			 */
+			public override void dispose()
+			{
+				if (_connectivity_handler_id > 0)
 			{
 				_events.disconnect(_connectivity_handler_id);
 				_connectivity_handler_id = 0;
