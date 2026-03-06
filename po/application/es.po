@@ -240,12 +240,12 @@ msgstr "Gramola"
 #: src/Widgets/Display.vala:580
 #, fuzzy, c-format
 msgid "Double click to shuffle through %1$u stations"
-msgstr "Double click to shuffle through %1$u stations"
+msgstr "Haga doble clic para navegar entre %1$u estaciones"
 
 #: src/Widgets/Display.vala:581
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
-msgstr "one, every ten minutes, for %2$u days"
+msgstr "uno, cada diez minutos, durante %2$u días"
 
 #: src/Widgets/Display.vala:646
 msgid "Saved Search"
@@ -349,18 +349,17 @@ msgstr ""
 
 #. Restart Playing after network interuption
 #: src/Widgets/PreferencesPopover.vala:60
-#, fuzzy
 msgid "Restart playing after a network interruption"
-msgstr "Restart playing after a network interruption"
+msgstr "Reiniciar la reproducción después de una interrupción de la red"
 
 #: src/Widgets/PreferencesPopover.vala:62
-#, fuzzy
 msgid ""
 "If enabled, if there is an network interuption and Tuner was playing Tuner "
 "will automatically start to play the last played station"
 msgstr ""
-"If enabled, if there is an network interuption and Tuner was playing Tuner "
-"will automatically start to play the last played station"
+"Si está habilitado, si hay una interrupción de la red y el sintonizador "
+"estaba reproduciendo, el sintonizador comenzará a reproducir automáticamente "
+"la última estación reproducida"
 
 #. Start on Starred
 #: src/Widgets/PreferencesPopover.vala:68
@@ -401,7 +400,7 @@ msgstr "Idioma"
 #: src/Widgets/PreferencesPopover.vala:99
 #, fuzzy
 msgid "Language changes restart Tuner"
-msgstr "Language changes restart Tuner"
+msgstr "Los cambios de idioma reinician Tuner"
 
 #. Export starred
 #: src/Widgets/PreferencesPopover.vala:104
@@ -445,7 +444,7 @@ msgstr "_Abrir"
 #: src/Widgets/PreferencesPopover.vala:255
 #, fuzzy
 msgid "Error reading file"
-msgstr "Error reading file"
+msgstr "Error al leer el archivo"
 
 #. ----------------------------------------------
 #: src/Widgets/StationContextMenu.vala:91
@@ -466,9 +465,8 @@ msgstr "Copiar la URI de la transmisión al portapapeles"
 
 #. warning (@"Unable to open website: $(e.message)");
 #: src/Widgets/StationContextMenu.vala:147
-#, fuzzy
 msgid "Unable to open website"
-msgstr "Unable to open website"
+msgstr "No se puede abrir el sitio web"
 
 #. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
 #: src/Widgets/StationContextMenu.vala:170
