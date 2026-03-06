@@ -3,6 +3,7 @@
  * SPDX-FileCopyrightText: 2020-2022 Louis Brauer <louis@brauer.family>
  */
 
+ using Tuner.Widgets.Base;
 /**
  * @class CountryList
  * @brief A widget for displaying a list of countries.
@@ -12,7 +13,7 @@
  *
  * @extends ListFlowBox
  */
-public class Tuner.CountryList : ListFlowBox
+public class Tuner.Widgets.CountryList : Base.ListFlowBox
 {
 
 /**

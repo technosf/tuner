@@ -20,7 +20,7 @@
  *
  * @extends Gtk.Revealer
  */
-public class Tuner.RevealLabel : Gtk.Revealer 
+public class Tuner.Widgets.Base.RevealLabel : Gtk.Revealer 
 {
     private Mutex _set_text_lock = Mutex();   // Lock out concurrent updates
     private string _next_text;

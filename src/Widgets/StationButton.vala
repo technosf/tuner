@@ -5,6 +5,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+ using Tuner.Models;
+ using Tuner.Widgets;
+
 /**
  * @class StationBox
  * @brief A custom button widget representing a radio station.
@@ -15,7 +18,7 @@
  * 
  * @extends Tuner.DisplayButton
  */
-public class Tuner.StationButton : Tuner.DisplayButton
+public class Tuner.Widgets.StationButton : Base.DisplayButton
 {
 
     private const string DEFAULT_ICON_NAME = "tuner:internet-radio";
@@ -24,7 +27,7 @@ public class Tuner.StationButton : Tuner.DisplayButton
      * @property station
      * @brief The radio station represented by this StationBox.
      */
-    public Model.Station station { get; construct; }
+    public Station station { get; construct; }
 
     /**
      * @property menu
@@ -38,7 +41,7 @@ public class Tuner.StationButton : Tuner.DisplayButton
      * @brief Constructs a new StationBox instance.
      * @param station The radio station to represent.
      */
-    public StationButton (Model.Station station) 
+    public StationButton (Station station) 
     {
         Object (
             description: make_description (station.countrycode),

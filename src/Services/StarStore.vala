@@ -17,7 +17,8 @@
 
 using Gee;
 using GLib;
-using Tuner.Model;
+using Tuner.Models;
+using Tuner.Services;
 
 
 /**
@@ -30,10 +31,10 @@ using Tuner.Model;
  *
  * DirectoryController uses StationStore to load the starred stations from RadioBrowser
  */
-public class Tuner.StarStore : Object 
+public class Tuner.Services.StarStore : Object 
 {
 
-    public signal void starred_stations_changed_sig ( Model.Station station ); ///< Emitted when the starred stations change.
+    public signal void starred_stations_changed_sig ( Station station ); ///< Emitted when the starred stations change.
 
     private const string FAVORITES_PROPERTY_APP = "app";
     private const string FAVORITES_PROPERTY_FILE = "file";

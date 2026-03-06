@@ -138,3 +138,12 @@ Help is apreciated:
 
 Tuner uses the community-driven radio station catalog radio-browser.info. Tuner
 is not responsible for the stations shown or the actual streaming audio content.
+
+## Third-party code
+
+This project contains small portions of code derived from the
+Granite library (https://github.com/elementary/granite), used by
+the elementary OS project.
+
+The copied components remain licensed under the LGPL-3.0 and retain
+their original copyright notices.

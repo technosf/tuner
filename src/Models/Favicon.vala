@@ -11,12 +11,13 @@
  */
 
 using Gee;
+using Tuner.Services;
 
 /**
  * @class Favicon
  * @brief Favicon location and loading.
  */
-public abstract class Tuner.Model.Favicon : Object
+public abstract class Tuner.Models.Favicon : Object
 {
     public signal void favicon_sig();  // Station favicon loaded
 

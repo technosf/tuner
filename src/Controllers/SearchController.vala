@@ -19,6 +19,7 @@
  */
 
 using Gee;
+using Tuner.Widgets.Base;
 
 /**
  * A controller class that handles searching functionality within the Tuner application.
@@ -26,7 +27,7 @@ using Gee;
  * This class manages search operations and provides an interface for performing
  * searches within the application.
  */
-public class Tuner.SearchController : Object
+public class Tuner.Controllers.SearchController : Object
 {
 	private const uint SEARCH_DELAY = 333;
 	public signal void search_for_sig(string text);

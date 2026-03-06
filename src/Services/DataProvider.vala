@@ -14,6 +14,7 @@
  */
 
 using Gee;
+using Tuner.Models;
 
 /**
  * @namespace Tuner.DataProvider
@@ -21,7 +22,7 @@ using Gee;
  * @brief API for radio station information provider inplementations
  *
  */
-namespace Tuner.DataProvider {
+namespace Tuner.Services.DataProvider {
 
     /**
      * @struct SearchParams
@@ -264,8 +265,8 @@ namespace Tuner.DataProvider {
          * @return Station object if found, null otherwise
          * @throw DataError if unable to retrieve or parse station data
          */
-         public abstract Set<Model.Station> by_uuid(string uuids) throws DataError;
-         public abstract Set<Model.Station> by_uuids(Collection<string> uuids) throws DataError;
+         public abstract Set<Station> by_uuid(string uuids) throws DataError;
+         public abstract Set<Station> by_uuids(Collection<string> uuids) throws DataError;
 
         /**
          * @brief Get a station or stations by Streaming URL  
@@ -285,8 +286,8 @@ namespace Tuner.DataProvider {
  * @return ArrayList of Station objects matching the search criteria
  * @throw DataError if unable to retrieve or parse station data
  */
-		public abstract Set<Model.Station> search(SearchParams params, uint rowcount, uint offset             = 0) throws DataError;
-		public async abstract Set<Model.Station> search_async(SearchParams params, uint rowcount, uint offset = 0) throws DataError;
+		public abstract Set<Station> search(SearchParams params, uint rowcount, uint offset             = 0) throws DataError;
+		public async abstract Set<Station> search_async(SearchParams params, uint rowcount, uint offset = 0) throws DataError;
 
     } // API
 } // DataProvider

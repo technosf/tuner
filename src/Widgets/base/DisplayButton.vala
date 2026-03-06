@@ -10,7 +10,7 @@
  * This class extends Gtk.Button and is used to represent a display button
  * in the tuner application, showing relevant information about a station.
  */
-public class Tuner.DisplayButton : Gtk.Button 
+public class Tuner.Widgets.Base.DisplayButton : Gtk.Button 
 {
 
     private const int TITLE_WIDTH =  25;
@@ -82,7 +82,7 @@ public class Tuner.DisplayButton : Gtk.Button
         // Title label
         button_title = new Gtk.Label (null);
         button_title.set_max_width_chars (TITLE_WIDTH);
-        button_title.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        //  button_title.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
         button_title.halign = Gtk.Align.START;
         button_title.valign = Gtk.Align.END;
         button_title.ellipsize = Pango.EllipsizeMode.END;

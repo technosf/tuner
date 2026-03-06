@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
- 
+
 /**
  * @class AboutDialog
  * @brief A dialog displaying information about the Tuner application.
@@ -15,7 +15,7 @@
  *
  * @extends Gtk.AboutDialog
  */
-public class Tuner.AboutDialog : Gtk.AboutDialog {
+public class Tuner.Widgets.AboutDialog : Gtk.AboutDialog {
     /**
      * @brief Constructs a new AboutDialog.
      * @param window The parent window for this dialog.
@@ -36,6 +36,7 @@ and albanobattistella https://github.com/albanobattistella
 Dutch translation by Vistaus https://github.com/Vistaus
 Turkish translation by safak45x https://github.com/safak45x""";
 		logo_icon_name     = app().get_application_id ()+"-scalable";
+	//	logo_icon_name     = app().get_application_id ();
 		program_name       = "Tuner";
 		comments           = "Find & listen to Internet radio stations";
 		copyright          = "Copyright © 2020-2024 Louis Brauer\nCopyright © 2024 technosf https://github.com/technosf";

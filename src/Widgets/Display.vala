@@ -20,7 +20,10 @@
 
 
 using Gee;
-using Granite.Widgets;
+using Tuner.Controllers;
+using Tuner.Models;
+using Tuner.Widgets.Base;
+using Tuner.Widgets.Granite;
 
 
 /**
@@ -28,7 +31,7 @@ using Granite.Widgets;
  *
  * Display should be initialized and re-initialized by its owning class
  */
-public class Tuner.Display : Gtk.Paned, StationListHookup {
+public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
 	private const string BACKGROUND_TUNER                               = "tuner:background-tuner";
 	private const string BACKGROUND_JUKEBOX                             = "tuner:background-jukebox";
@@ -42,7 +45,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
      * @brief Signal emitted when a station is clicked.
      * @param station The clicked station.
      */
-    public signal void station_clicked_sig (Model.Station station);
+    public signal void station_clicked_sig (Station station);
 
 
     /**
@@ -371,7 +374,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
         // ---------------------------------------------------------------------------
         // Country-specific stations list
         
-        //  var item4 = new Granite.Widgets.SourceList.Item (_("Your Country"));
+        //  var item4 = new SourceList.Item (_("Your Country"));
         //  item4.icon = new ThemedIcon ("emblem-web");
         //  ContentBox c_country;
         //  c_country = create_content_box ("my-country", item4,
@@ -476,7 +479,7 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
             uint explore = 0;
             foreach (var tag in _directory.load_random_genres(EXPLORE_CATEGORIES))
             {
-            if ( Model.Genre.in_genre (tag.name)) break;  // Predefined genre, ignore
+            if ( Genre.in_genre (tag.name)) break;  // Predefined genre, ignore
             StationListBox.create_category_specific( stack, source_list, _explore_category
                     , @"$(explore++)"   // tag names can have charaters that are not suitable for name
                     , "tuner:playlist-symbolic"
@@ -489,16 +492,16 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
         // ---------------------------------------------------------------------------
 
         // Genre Boxes
-        create_category_genre( stack, source_list, _genres_category, _directory,   Model.Genre.GENRES );
+        create_category_genre( stack, source_list, _genres_category, _directory,   Genre.GENRES );
 
         // Sub Genre Boxes
-        create_category_genre( stack, source_list, _subgenres_category, _directory,   Model.Genre.SUBGENRES );
+        create_category_genre( stack, source_list, _subgenres_category, _directory,   Genre.SUBGENRES );
 
         // Eras Boxes
-        create_category_genre( stack, source_list, _eras_category,   _directory, Model.Genre.ERAS );
+        create_category_genre( stack, source_list, _eras_category,   _directory, Genre.ERAS );
     
         // Talk Boxes
-        create_category_genre( stack, source_list, _talk_category, _directory,   Model.Genre.TALK );
+        create_category_genre( stack, source_list, _talk_category, _directory,   Genre.TALK );
     
         // --------------------------------------------------------------------
 
@@ -654,8 +657,8 @@ public class Tuner.Display : Gtk.Paned, StationListHookup {
 	*/
 	private void create_category_genre
 	        ( Gtk.Stack stack,
-	        Granite.Widgets.SourceList source_list,
-	        Granite.Widgets.SourceList.ExpandableItem category,
+	        SourceList source_list,
+	        SourceList.ExpandableItem category,
 	        DirectoryController directory,
 	        string[] genres
 	        ){

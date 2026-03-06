@@ -11,6 +11,7 @@
  */
 
 using Gtk;
+using Tuner.Controllers;
 
 /**
  * @class PlayButton
@@ -21,7 +22,7 @@ using Gtk;
  *
  * @extends Gtk.Button
  */
-public class Tuner.PlayButton : Gtk.Button
+public class Tuner.Widgets.PlayButton : Gtk.Button
 {
 
 /* Constants    */

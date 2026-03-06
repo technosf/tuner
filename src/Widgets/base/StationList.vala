@@ -8,6 +8,7 @@
  */
 
 using Gee;
+using Tuner.Models;
 
 /**
  * @class StationList
@@ -18,7 +19,7 @@ using Gee;
  *
  * @extends ListFlowBox
  */
-public class Tuner.StationList : ListFlowBox
+public class Tuner.Widgets.Base.StationList : ListFlowBox
 {
 	/**
 	* @signal selection_changed
@@ -27,7 +28,7 @@ public class Tuner.StationList : ListFlowBox
 	*
 	* @param station The selected Model.Station.
 	*/
-	public signal void station_clicked_sig (Model.Station station);
+	public signal void station_clicked_sig (Station station);
 
 
 	/**
@@ -57,7 +58,7 @@ public class Tuner.StationList : ListFlowBox
 	*
 	* @param stations The ArrayList of Model.Station objects to populate the list.
 	*/
-	public static StationList? with_stations (Gee.Collection<Model.Station>? stations)
+	public static StationList? with_stations (Gee.Collection<Station>? stations)
 	{
 		if (stations == null)
 			return null;
@@ -73,7 +74,7 @@ public class Tuner.StationList : ListFlowBox
 	* When set, this property clears the existing list and populates it with
 	* the new stations. It also sets up signal connections for each station.
 	*/
-	public Collection<Model.Station> stations 
+	public Collection<Station> stations 
 	{
 		// FIXME Wraps stations in SttionButtons, adds to flowbox
 		set construct {

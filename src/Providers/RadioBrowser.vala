@@ -11,6 +11,9 @@
  */
 
 using Gee;
+using Tuner.Models;
+using Tuner.Services;
+using Tuner.Services.DataProvider;
 
 /**
  * @namespace Tuner.RadioBrowser
@@ -25,7 +28,7 @@ using Gee;
  * - Tag and other metadata retrieval
  * - API Server discovery and connection handling from DNS and from round-robin API server
  */
-namespace Tuner.DataProvider {
+namespace Tuner.Providers {
 
     private const string SRV_SERVICE    = "api";
     private const string SRV_PROTOCOL   = "tcp";
@@ -53,7 +56,7 @@ namespace Tuner.DataProvider {
      * 
      * See https://www.radio-browser.info/ for API details.
      */
-    public class RadioBrowser : Object, DataProvider.API 
+    public class RadioBrowser : Object, API 
     {
         private const int DEGRADE_CAPITAL = 100;
         private const int DEGRADE_COST = 7;
@@ -239,8 +242,8 @@ namespace Tuner.DataProvider {
          * @return Station object if found, null otherwise
          * @throw DataError if unable to retrieve or parse station data
          */
-         public Set<Model.Station> by_uuid(string uuid) throws DataError {
-            if ( app().is_offline || safestrip(uuid).length == 0 ) return new HashSet<Model.Station>();
+         public Set<Station> by_uuid(string uuid) throws DataError {
+            if ( app().is_offline || safestrip(uuid).length == 0 ) return new HashSet<Station>();
             var result = station_query(RBI_UUID,@"uuids=$uuid");
             return result;
         } // by_uuid
@@ -253,7 +256,7 @@ namespace Tuner.DataProvider {
          * @return Station object if found, null otherwise
          * @throw DataError if unable to retrieve or parse station data
          */
-        public Set<Model.Station> by_uuids(Collection<string> uuids) throws DataError {
+        public Set<Station> by_uuids(Collection<string> uuids) throws DataError {
             StringBuilder sb = new StringBuilder();
             foreach ( var uuid in uuids) { sb.append(uuid).append(","); }
             return by_uuid(sb.str);
@@ -263,8 +266,8 @@ namespace Tuner.DataProvider {
         /**
             Not implemented
         */
-        public Set<Model.Station> by_url(string url) throws DataError {
-            if ( app().is_offline || safestrip(url).length == 0 ) return new HashSet<Model.Station>();
+        public Set<Station> by_url(string url) throws DataError {
+            if ( app().is_offline || safestrip(url).length == 0 ) return new HashSet<Station>();
             var result = station_query(RBI_URL,@"$url");
             return result;
         } // by_url
@@ -279,7 +282,7 @@ namespace Tuner.DataProvider {
         * @return ArrayList of Station objects matching the search criteria
         * @throw DataError if unable to retrieve or parse station data
         */
-		public Set<Model.Station> search(SearchParams params, uint rowcount, uint offset = 0) throws DataError
+		public Set<Station> search(SearchParams params, uint rowcount, uint offset = 0) throws DataError
 		{
 			// by uuids
 			if (params.uuids != null)
@@ -306,7 +309,7 @@ namespace Tuner.DataProvider {
         * @return ArrayList of Station objects matching the search criteria
         * @throw DataError if unable to retrieve or parse station data
         */
-		public async Set<Model.Station> search_async(SearchParams params, uint rowcount, uint offset = 0) throws DataError
+		public async Set<Station> search_async(SearchParams params, uint rowcount, uint offset = 0) throws DataError
 		{
 			// by uuids
 			if (params.uuids != null)
@@ -423,7 +426,7 @@ namespace Tuner.DataProvider {
          * @return ArrayList of Station objects
          * @throw DataError if unable to retrieve or parse station data
          */
-        private Set<Model.Station> station_query(string path, string query) throws DataError {
+        private Set<Station> station_query(string path, string query) throws DataProvider.DataError {
 
             
             debug(@"station_query - $(path) $(query)");
@@ -451,7 +454,7 @@ namespace Tuner.DataProvider {
 				warning(@"Response from 'radio-browser.info': $(status_code) for url: $(uri.to_string())");
 				degrade();
 			}
-			return new HashSet<Model.Station>();
+			return new HashSet<Station>();
 		} // station_query
 
 
@@ -462,7 +465,7 @@ namespace Tuner.DataProvider {
         * @return ArrayList of Station objects
         * @throw DataError if unable to retrieve or parse station data
         */
-		private async Set<Model.Station> station_query_async(string path, string query) throws DataError
+		private async Set<Station> station_query_async(string path, string query) throws DataError
 		{
 			debug(@"station_query - $(path) $(query)");
 
@@ -489,7 +492,7 @@ namespace Tuner.DataProvider {
 				warning(@"Response from 'radio-browser.info': $(status_code) for url: $(uri.to_string())");
 				degrade();
 			}
-			return new HashSet<Model.Station>();
+			return new HashSet<Station>();
 		} // station_query_async
 
 
@@ -503,7 +506,7 @@ namespace Tuner.DataProvider {
          *
          * @return String containing formatted query parameters
          */
-        private string get_search_query_params(SearchParams params, uint rowcount, uint offset)
+        private string get_search_query_params(DataProvider.SearchParams params, uint rowcount, uint offset)
         {
                         // by text or tags
             var query = @"limit=$rowcount&order=$(params.order)&offset=$offset";
@@ -514,7 +517,7 @@ namespace Tuner.DataProvider {
             if (params.countrycode.length > 0) {
                 query += @"&countrycode=$(params.countrycode)";
             }
-            if (params.order != SortOrder.RANDOM) {
+            if (params.order != DataProvider.SortOrder.RANDOM) {
                 // random and reverse doesn't make sense
                 query += @"&reverse=$(params.reverse)";
             }
@@ -535,11 +538,11 @@ namespace Tuner.DataProvider {
          *
          * @param stream The input stream containing JSON data to be parsed
          *
-         * @return Set<Model.Station> A set of Station objects parsed from the JSON
+         * @return Set<Station> A set of Station objects parsed from the JSON
          *
          * @throws Error If there is an error parsing the JSON or processing the data
          */
-         private Set<Model.Station> parse_json_response(InputStream stream) throws Error
+         private Set<Station> parse_json_response(InputStream stream) throws Error
          {
              var parser = new Json.Parser.immutable_new ();
              parser.load_from_stream(stream, null);
@@ -557,14 +560,14 @@ namespace Tuner.DataProvider {
         * @param data JSON array containing station data
         * @return ArrayList of Station objects
         */
-		private Set<Model.Station> jarray_to_stations(Json.Array data)
+		private Set<Station> jarray_to_stations(Json.Array data)
 		{
-			var stations = new HashSet<Model.Station>();
+			var stations = new HashSet<Station>();
 
             if ( data != null )
             {
                 data.foreach_element((array, index, element) => {
-                    Model.Station s = Model.Station.make(element);
+                    Station s = Station.make(element);
                     stations.add(s);
                 });
             }
@@ -578,9 +581,9 @@ namespace Tuner.DataProvider {
         * @param node JSON node representing a tag
         * @return Tag object
         */
-		private Tag jnode_to_tag(Json.Node node)
+		private DataProvider.Tag jnode_to_tag(Json.Node node)
 		{
-			return Json.gobject_deserialize(typeof(Tag), node) as Tag;
+			return Json.gobject_deserialize(typeof(DataProvider.Tag), node) as DataProvider.Tag;
 		} // jnode_to_tag
 
 
@@ -592,14 +595,14 @@ namespace Tuner.DataProvider {
         * @param data JSON array containing tag data
         * @return ArrayList of Tag objects
         */
-		private Set<Tag> jarray_to_tags(Json.Array? data)
+		private Set<DataProvider.Tag> jarray_to_tags(Json.Array? data)
 		{
-			var tags = new HashSet<Tag>();
+			var tags = new HashSet<DataProvider.Tag>();
 
             if ( data != null )
             {
                 data.foreach_element((array, index, element) => {
-                    Tag s = jnode_to_tag(element);
+                    DataProvider.Tag s = jnode_to_tag(element);
                     tags.add(s);
                 });
             }
@@ -618,7 +621,7 @@ namespace Tuner.DataProvider {
          * @return ArrayList of strings containing the resolved hostnames
          * @throw DataError if unable to resolve DNS records
          */
-        private ArrayList<string> get_srv_api_servers() throws DataError 
+        private ArrayList<string> get_srv_api_servers() throws DataProvider.DataError 
         {
             var results = new ArrayList<string>();
 
@@ -656,7 +659,7 @@ namespace Tuner.DataProvider {
                             parser.load_from_stream(stream);
                             root_node = parser.get_root();
                         } catch (Error e) {
-                            throw new DataError.PARSE_DATA(@"RBI API get servers - unable to parse JSON response: $(e.message)");
+                            throw new DataProvider.DataError.PARSE_DATA(@"RBI API get servers - unable to parse JSON response: $(e.message)");
                         }
 
                         if (root_node != null && root_node.get_node_type() == Json.NodeType.ARRAY) {

@@ -11,6 +11,8 @@
 
 using Gtk;
 
+using Tuner.Models;
+
 /**
  * @class ListButton
  * @brief A custom button with a dropdown menu for station selection and context actions
@@ -21,21 +23,21 @@ using Gtk;
  *
  * @extends Gtk.Button
  */
-public class Tuner.ListButton : Gtk.Button
+public class Tuner.Widgets.ListButton : Gtk.Button
 {
 /**
  * @signal item_station_selected_sig
  * @brief Emitted when a station is selected from the dropdown menu.
  * @param station The selected station.
  */
-	public signal void item_station_selected_sig(Model.Station station);
+	public signal void item_station_selected_sig(Station station);
 
 	private Gtk.Menu dropdown_menu;
 	private Gtk.Menu context_menu;
 	private List<Gtk.MenuItem> menu_items;
 	private StringBuilder clipboard_text = new StringBuilder();
 
-	Model.Station last_station;
+	Station last_station;
 	string last_title;
 	Gtk.MenuItem last_menu_item;
 
@@ -134,7 +136,7 @@ public class Tuner.ListButton : Gtk.Button
  * @param station The station to add.
  * @param title The title associated with the station.
  */
-	public void append_station_title_pair(Model.Station station, string title)
+	public void append_station_title_pair(Station station, string title)
 	{
 		if (station == last_station && title == last_title)
 			return;
