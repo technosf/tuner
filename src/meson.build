@@ -9,6 +9,7 @@ sources = files (
     'Events/AppEventBus.vala',
     'Coordinators/PlaybackRecoveryCoordinator.vala',
     'Coordinators/StartupCoordinator.vala',
+    'Coordinators/UsageTrackingCoordinator.vala',
 
     'Controllers/DirectoryController.vala',
     'Controllers/PlayerController.vala',

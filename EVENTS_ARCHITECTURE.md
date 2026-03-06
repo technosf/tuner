@@ -21,11 +21,16 @@ This document tracks the event orchestration introduced in the 2026 refactor.
   - Tracks whether playback was active before loss of connectivity.
   - Restarts playback on reconnect when `settings.play_restart` is enabled.
 
+- `src/Coordinators/UsageTrackingCoordinator.vala`
+  - Owns provider click/vote updates driven by player events.
+  - Handles both play-start click tracking and periodic tape-counter tracking.
+
 - `src/Application.vala`
   - Owns the shared `events` bus instance.
   - Emits `connectivity_changed` when `is_online`/`is_offline` changes.
   - Instantiates coordinators:
     - `PlaybackRecoveryCoordinator` during app construction.
+    - `UsageTrackingCoordinator` during app construction.
     - `StartupCoordinator` after creating the main window.
 
 - `src/Widgets/Window.vala`

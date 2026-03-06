@@ -252,6 +252,8 @@ namespace Tuner {
         private StartupCoordinator _startup_coordinator;
         // Coordinates playback restart behavior after online/offline transitions.
         private PlaybackRecoveryCoordinator _playback_recovery_coordinator;
+        // Coordinates provider click/vote updates from player events.
+        private UsageTrackingCoordinator _usage_tracking_coordinator;
 
 
         /**
@@ -313,37 +315,9 @@ namespace Tuner {
             stars = new StarStore(_starred_file);
             directory = new DirectoryController(provider, stars);
             _playback_recovery_coordinator = new PlaybackRecoveryCoordinator(events, player, settings);
+            _usage_tracking_coordinator = new UsageTrackingCoordinator(settings, player, provider);
 
             add_action_entries(ACTION_ENTRIES, this);
-
-            /*
-                Hook up voting and counting
-            */
-            player.state_changed_sig.connect ((station, state) => 
-            // Do a provider click when starting to play a sation
-            {
-                if ( !settings.do_not_vote  && state == PlayerController.Is.PLAYING )
-                {
-                    provider.click(station.stationuuid);                
-                    station.clickcount++;
-                    station.clicktrend++;
-                }
-            });
-
-            player.tape_counter_sig.connect((station) =>
-            // Every ten minutes of continuous playing tape counter sigs are emitted
-            // Vote and click the station each time as appropriate
-            {     
-                if ( settings.do_not_vote ) return;
-                if ( station.starred ) 
-                { 
-                    provider.vote(station.stationuuid); 
-                    station.votes++;
-                }
-                provider.click(station.stationuuid);
-                station.clickcount++;
-                station.clicktrend++;
-            });
 
             // Add set-theme-name action
             var set_theme_action = new SimpleAction("set-theme-name", VariantType.STRING);
