@@ -38,6 +38,11 @@ cleanup:
   - "*.la"
   - "*.a"
 
+
+# Build flatpak with --no-separate-locales to avoid having to deal with translations in a separate module  
+separate-locales: false     # Debug builds only
+
+
 modules:
 
 - name: libgee
