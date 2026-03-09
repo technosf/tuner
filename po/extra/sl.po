@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-06 00:43-0800\n"
+"POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-02-03 23:05+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/tuner/tuner-"
@@ -93,6 +93,9 @@ msgid "Fixed: play/stop buttons disabled #223"
 msgstr ""
 
 msgid "Fixed: Jukebox stops when tuning to a dead station #256"
+msgstr ""
+
+msgid "Disabled in-app language selection for non-debug and flatpak builds"
 msgstr ""
 
 msgid ""
