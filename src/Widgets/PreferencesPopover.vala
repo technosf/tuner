@@ -7,13 +7,13 @@
  * @file PreferencesPopover.vala
  */
 
-using Tuner.Model;
+using Tuner.Models;
 
 /**
  *
  * @brief Tuner preferences and selections.
  */
-public class Tuner.PreferencesPopover : Gtk.Popover
+public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 {
 
 	construct // Construct the preferences popover widget
@@ -34,7 +34,7 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 
 		//Theme
-		var theme_selector = new SelectorButton (app().lookup_action ("set-theme-name"))
+		var theme_selector = new Base.SelectorButton (app().lookup_action ("set-theme-name"))
 			.with_item (THEME.SYSTEM.get_name (), _("System"))
 			.with_item (THEME.LIGHT.get_name (), _("Light mode"))
 			.with_item (THEME.DARK.get_name (), _("Dark mode"))
@@ -53,6 +53,14 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		autoplay_item.action_name  = Window.ACTION_PREFIX + Window.ACTION_ENABLE_AUTOPLAY;
 		autoplay_item.tooltip_text = _("If enabled, when Tuner starts it will automatically start to play the last played station");
 		autoplay_item.margin_start = ROW_INDENT;
+
+
+		// Restart Playing after network interuption
+		var play_restart_item = new Gtk.ModelButton ();
+		play_restart_item.text         = _("Restart playing after a network outage");
+		play_restart_item.action_name  = Window.ACTION_PREFIX + Window.ACTION_ENABLE_PLAY_RESTART;
+		play_restart_item.tooltip_text = _("If enabled, Tuner will restart playing the current station if it was stopped by a network outage");
+		play_restart_item.margin_start = ROW_INDENT;
 
 
 		// Start on Starred
@@ -77,8 +85,12 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		stream_info_fast.margin_start = ROW_INDENT;
 
 
-		//Language
-		var lang_selector = new SelectorButton (app().lookup_action ("set-language"))
+/* 
+	Enable in-app language selection for local debug or if specifically set in build options
+*/
+#if DEBUG_LOCAL 
+
+		var lang_selector = new Base.SelectorButton (app().lookup_action ("set-language"))
 			.with_item("", "Default")
 			.with_items (Languages.get_language_map())
 			.with_active_id(app().settings.language);
@@ -89,6 +101,9 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 		lang_box.pack_end (lang_selector, true, true, 5);
 		lang_box.pack_end (new Gtk.Label(_("Language")), false, false, 12);
 		lang_box.tooltip_text = _("Language changes restart Tuner");
+		
+#endif
+// end language selection
 
 
 		// Export starred
@@ -125,8 +140,16 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
 
-		menu_grid.attach (autoplay_item, 0, vpos++, 4, 1);
 		menu_grid.attach (start_on_starred, 0, vpos++, 4, 1);
+
+		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
+
+		menu_grid.attach (autoplay_item, 0, vpos++, 4, 1);
+
+		menu_grid.attach (play_restart_item, 0, vpos++, 4, 1);
+
+		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
+		
 		menu_grid.attach (stream_info, 0, vpos++, 4, 1);
 		menu_grid.attach (stream_info_fast, 0, vpos++, 4, 1);
 
@@ -144,9 +167,17 @@ public class Tuner.PreferencesPopover : Gtk.Popover
 
 		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
 
+		/* 
+			Enable in-app language selection for local debug or if specifically set in build options
+		*/
+		#if DEBUG_LOCAL || ENABLE_IN_APP_LANGUAGE_SELECTION
+
 		menu_grid.attach (lang_box, 0, vpos++, 4, 1);
 
 		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
+
+		#endif
+		// end language selection
 
 		menu_grid.attach (about_menuitem, 0, vpos++, 4, 1);
 		

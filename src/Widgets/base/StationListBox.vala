@@ -7,7 +7,8 @@
 
 using Gtk;
 using Gee;
-using Granite.Widgets;
+using Tuner.Models;
+using Tuner.Widgets.Granite;
 
 /**
  * @file SourceListBox.vala
@@ -20,7 +21,7 @@ using Granite.Widgets;
  *
  * @namespace Tuner
  */
-namespace Tuner
+namespace Tuner.Widgets.Base
 {
     public interface StationListHookup : Object
     {
@@ -215,7 +216,7 @@ namespace Tuner
         * @return A Set of Model.Station objects, or null if no data source exists
         * @throws SourceError If there's an error retrieving the next page
         */
-        public Set<Model.Station>? next_page () throws SourceError
+        public Set<Station>? next_page () throws SourceError
         {
             if ( _data == null ) return null;
             return _data.next_page();
@@ -395,13 +396,13 @@ namespace Tuner
         public static StationListBox create_category_predefined
         ( StationListHookup slh
         , Gtk.Stack stack
-        , Granite.Widgets.SourceList source_list
-        , Granite.Widgets.SourceList.ExpandableItem category
+        , SourceList source_list
+        , SourceList.ExpandableItem category
         , string name
         , string icon
         , string title
         , string subtitle
-        , Collection<Model.Station>? stations
+        , Collection<Station>? stations
         )
         {
             var genre = StationListBox.create 
@@ -442,8 +443,8 @@ namespace Tuner
         */
         public static StationListBox create_category_specific
         ( Gtk.Stack stack,
-        Granite.Widgets.SourceList source_list,
-        Granite.Widgets.SourceList.ExpandableItem category,
+        SourceList source_list,
+        SourceList.ExpandableItem category,
         string name,
         string icon,
         string title,

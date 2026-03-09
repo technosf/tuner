@@ -6,6 +6,11 @@
 
 # Listing files to compile
 sources = files (
+    'Events/AppEventBus.vala',
+    'Coordinators/PlaybackRecoveryCoordinator.vala',
+    'Coordinators/StartupCoordinator.vala',
+    'Coordinators/UsageTrackingCoordinator.vala',
+
     'Controllers/DirectoryController.vala',
     'Controllers/PlayerController.vala',
     'Controllers/SearchController.vala',
@@ -33,6 +38,11 @@ sources = files (
     'Widgets/base/StationListBox.vala',
     'Widgets/base/StackLabel.vala',
     'Widgets/base/StationList.vala',
+
+    'Widgets/granite/AlertView.vala',
+    'Widgets/granite/CellRendererBadge.vala',
+    'Widgets/granite/CellRendererExpander.vala',
+    'Widgets/granite/SourceList.vala',
 
     'Widgets/HeaderBar.vala',
     'Widgets/PlayButton.vala',

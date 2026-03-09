@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-31 02:10-0800\n"
+"POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-02-03 23:06+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Malay <https://hosted.weblate.org/projects/tuner/tuner-"
@@ -25,10 +25,10 @@ msgstr ""
 msgid "Internet Radio Player"
 msgstr "Pemain Radio Internet"
 
-msgid "Listen to Radio Stations all over the world"
+msgid "Listen to Radio Stations from around the world"
 msgstr ""
 
-msgid "Radio;Audio;Listen;Stations;Receiver;"
+msgid "Radio;Receiver;FM;Talk;Sport;News"
 msgstr ""
 
 msgid "technosf"
@@ -58,40 +58,60 @@ msgstr ""
 msgid "Control Tuner from your volume indicator"
 msgstr ""
 
-msgid "Tuner with dark theme, discovery"
+msgid "Tuner with light theme, Discover"
 msgstr ""
 
-msgid "Tuner with light theme, starred stations"
+msgid "Tuner stream metadata"
 msgstr ""
 
-msgid "Tuner search for stations"
+msgid "Tuner starred stations"
 msgstr ""
 
-msgid "Tuner saved searches"
+msgid "Tuner translation languages"
 msgstr ""
 
-msgid "Tuner playing station metadata"
+msgid "Tuner Jukebox and options popover"
 msgstr ""
 
-msgid "Tuner preferences"
+msgid "Tuner genres and subgenres"
 msgstr ""
 
-msgid "Tuner station context information"
+msgid "Tuner with dark theme, saved search"
 msgstr ""
 
-msgid "Tuner jukebox station shuffle"
+msgid "Maintenance release:"
 msgstr ""
 
-msgid "Maintanance release:"
+msgid "Refactored Elementry Granite library out as a module"
+msgstr ""
+
+msgid "Refactored namespaces"
+msgstr ""
+
+msgid "Fixed: play/stop buttons disabled #223"
+msgstr ""
+
+msgid "Fixed: Jukebox stops when tuning to a dead station #256"
+msgstr ""
+
+msgid "Disabled in-app language selection for non-debug and flatpak builds"
+msgstr ""
+
+msgid ""
+"Renamed the app to io.github.tuner_labs.tuner (see https://github.com/"
+"flathub/flathub/issues/7468)"
+msgstr ""
+
+msgid "Added 'en' into Language list as its the gettext default"
 msgstr ""
 
 msgid "Updated freedesktop platform from 24.08 to 25.08"
 msgstr ""
 
-msgid "Removed module vala as now included in freedesktop platform"
+msgid "Removed vala module as now included in freedesktop platform"
 msgstr ""
 
-msgid "Removed module libsoup as now included in freedesktop platform"
+msgid "Removed libsoup module as now included in freedesktop platform"
 msgstr ""
 
 msgid "Bumped libgee to 0.20.8"
@@ -103,7 +123,15 @@ msgstr ""
 msgid "Updated translated strings and incorporated fresh translations"
 msgstr ""
 
-msgid "i18n - Broke out Country translation to separate module"
+msgid ""
+"Refactored Language change mechanism and applied translations to more UI "
+"elements"
+msgstr ""
+
+msgid "Refactored Icon layout and build, removing unused icon files"
+msgstr ""
+
+msgid "i18n - Broke out Country and Language translations to separate module"
 msgstr ""
 
 msgid ""

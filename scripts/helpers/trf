@@ -6,6 +6,10 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 
+##
+## Flatpak repo run
+##
+
 set -e
 
 flatpak --user run io.github.tuner_labs.tuner

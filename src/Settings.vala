@@ -28,6 +28,7 @@ public class Tuner.Settings : GLib.Settings
     private const string SETTINGS_VOLUME = "volume";
     private const string SETTINGS_WINDOW_HEIGHT = "window-height";
     private const string SETTINGS_WINDOW_WIDTH = "window-width";
+    private const string SETTINGS_PLAY_RESTART = "play-restart";
 
     public bool auto_play { get; set; }
     public bool do_not_vote { get; set; }
@@ -38,6 +39,7 @@ public class Tuner.Settings : GLib.Settings
     public string theme_mode { get; set; }
     public string language { get; set; }
     public double volume { get; set; }
+    public bool play_restart { get; set; }
 
     private int _pos_x;
     private int _pos_y;
@@ -72,6 +74,8 @@ public class Tuner.Settings : GLib.Settings
         theme_mode = get_string(SETTINGS_THEME_MODE);
         language = get_string(SETTINGS_LANGUAGE);
         volume = get_double(SETTINGS_VOLUME);
+        play_restart = get_boolean(SETTINGS_PLAY_RESTART);
+
     } // Settings
 
     
@@ -87,9 +91,6 @@ public class Tuner.Settings : GLib.Settings
             app().window.resize(_window_width, _window_height);
         }
         app().player.volume = _volume;     
-
-        //   warning(@"\nConfig settings: pos_x: %d, pos_y: %d, window_width: %d, window_height: %d",
-        //      _pos_x, _pos_y, _window_width, _window_height);
          
     } // configure
 
@@ -150,9 +151,6 @@ public class Tuner.Settings : GLib.Settings
             } // else, leave as is which will be interpreted as "default" on next launch
         } // else, use the (0,0) position which will be interpreted as "default" on next launch
 
-        //  warning(@"Save settings: pos_x: %d, pos_y: %d, window_width: %d, window_height: %d",
-        //      _pos_x, _pos_y, _window_width, _window_height);
-
         set_boolean(SETTINGS_AUTO_PLAY, auto_play);
         set_boolean(SETTINGS_DO_NOT_VOTE, do_not_vote);
         set_string(SETTINGS_LAST_PLAYED_STATION, last_played_station);
@@ -161,7 +159,9 @@ public class Tuner.Settings : GLib.Settings
         set_boolean(SETTINGS_STREAM_INFO_FAST, stream_info_fast);
         set_string(SETTINGS_THEME_MODE, theme_mode);
         set_string(SETTINGS_LANGUAGE, language);
-        set_double(SETTINGS_VOLUME, app().player.volume);
+        set_double(SETTINGS_VOLUME, volume);
+        set_boolean(SETTINGS_PLAY_RESTART, play_restart);
+
         sync();
     } // save
 

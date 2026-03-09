@@ -25,7 +25,7 @@ using Gee;
         https://stringcatalog.com/languages/es/es-419
 
 */
-namespace Tuner.Model {
+namespace Tuner.Models {
 
     /**
      * @brief The Languages class provides a mapping of language codes to their translated names, 

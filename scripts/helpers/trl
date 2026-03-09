@@ -6,6 +6,10 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 
+##
+## Local debug run
+##
+
 set -e
 
 GSETTINGS_SCHEMA_DIR="builddir/data" ./builddir/io.github.tuner_labs.tuner

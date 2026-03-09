@@ -26,6 +26,7 @@ finish-args:
   - --share=network
   - --socket=pulseaudio
   - --own-name=org.mpris.MediaPlayer2.io.github.tuner_labs.tuner
+  - --filesystem=xdg-desktop # Playlist import export
 
 
 cleanup:
@@ -36,10 +37,11 @@ cleanup:
   - /share/vala
   - "*.la"
   - "*.a"
-  - granite.mo
-  - granite-demo
-  - granite.appdata.xml
-  - io.elementary.granite.demo.desktop
+
+
+# Build flatpak with --no-separate-locales to avoid having to deal with translations in a separate module  
+separate-locales: false     # Debug builds only
+
 
 modules:
 
@@ -51,21 +53,6 @@ modules:
     - type: archive
       url: https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
       sha256: 189815ac143d89867193b0c52b7dc31f3aa108a15f04d6b5dca2b6adfad0b0ee
-
-- name: granite
-  buildsystem: meson
-  cleanup:
-    - /bin
-    - /share/applications
-    - /share/metainfo
-  config-opts:
-    - --buildtype=release
-    - --prefix=/app
-    - --libdir=lib
-  sources:
-    - type: archive
-      url: https://github.com/elementary/granite/archive/refs/tags/6.2.0.tar.gz
-      sha256: 067d31445da9808a802fca523630c3e4b84d2d7c78ae547ced017cb7f3b9c6b5
 
 - name: tuner
   buildsystem: meson

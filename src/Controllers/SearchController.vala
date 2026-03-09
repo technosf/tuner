@@ -19,6 +19,7 @@
  */
 
 using Gee;
+using Tuner.Widgets.Base;
 
 /**
  * A controller class that handles searching functionality within the Tuner application.
@@ -26,10 +27,9 @@ using Gee;
  * This class manages search operations and provides an interface for performing
  * searches within the application.
  */
-public class Tuner.SearchController : Object
+public class Tuner.Controllers.SearchController : Object
 {
 	private const uint SEARCH_DELAY = 333;
-	public signal void search_for_sig(string text);
 
 	private DirectoryController _directory;
 	private StationListBox _station_list_box;
@@ -66,26 +66,50 @@ public class Tuner.SearchController : Object
 	public void handle_search_for(string search_term)
 	{
 		var search = search_term.strip();
-		if (search.length == 0 || _current_search_term == search)
-			return;                                                                               // No new search
-
-		_current_search_term = search;
-
-		if (_search_handler_id > 0)
-		// Cancel any ongoing search
+		if (search.length == 0)
 		{
-			Source.remove(_search_handler_id);			
-			_search_handler_id = 0;
+			_current_search_term = "";
+			cancel_pending_search();
+			return;
 		}
 
+		if (_current_search_term == search)
+			return;
+
+		_current_search_term = search;
+		cancel_pending_search();
+		schedule_search(search);
+	} // handle_search_for
+
+
+	/**
+	 * @brief Removes any currently scheduled delayed search callback.
+	 */
+	private void cancel_pending_search()
+	{
+		if (_search_handler_id == 0)
+			return;
+
+		Source.remove(_search_handler_id);
+		_search_handler_id = 0;
+	}
+
+
+	/**
+	 * @brief Schedules the search execution after the debounce interval.
+	 *
+	 * @param search_term Search term to execute after debounce delay.
+	 */
+	private void schedule_search(string search_term)
+	{
 		_search_handler_id = Timeout.add(SEARCH_DELAY, () =>
-		                                 // After a brief delay, start the search
+			                                 // After a brief delay, start the search
 		{
-            _search_handler_id = 0;
-			load_station_search_results.begin(search, _station_list_box);
+			_search_handler_id = 0;
+			load_station_search_results.begin(search_term, _station_list_box);
 			return Source.REMOVE;
 		}); // _search_handler_id
-	} // handle_search_for
+	}
 
 	/**
 	* @brief Loads search stations based on the provided text and updates the content box.
@@ -97,7 +121,7 @@ public class Tuner.SearchController : Object
 	private async void load_station_search_results(string search_term, StationListBox results_box)
 		throws SourceError
 	{
-		var station_set = _directory.load_search_stations(search_term, 100);
+		var station_set = _directory.load_search_stations(search_term, _max_search_results);
 
 		try
 		{

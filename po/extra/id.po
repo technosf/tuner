@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-31 02:10-0800\n"
+"POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-02-03 23:06+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
@@ -26,11 +26,11 @@ msgstr "Tuner"
 msgid "Internet Radio Player"
 msgstr "Radio Internet"
 
-msgid "Listen to Radio Stations all over the world"
-msgstr "Mendengarkan Stasiun Radio di seluruh dunia"
+msgid "Listen to Radio Stations from around the world"
+msgstr ""
 
-msgid "Radio;Audio;Listen;Stations;Receiver;"
-msgstr "Radio;Audio;Listen;Stations;Receiver;"
+msgid "Radio;Receiver;FM;Talk;Sport;News"
+msgstr ""
 
 msgid "technosf"
 msgstr "login"
@@ -64,42 +64,61 @@ msgstr "Stasiun bintang Anda suka dan mengunjungi situs web mereka"
 msgid "Control Tuner from your volume indicator"
 msgstr "Kontrol Tuner dari indikator volume Anda"
 
-msgid "Tuner with dark theme, discovery"
-msgstr "Tuner dengan tema gelap, penemuan"
+msgid "Tuner with light theme, Discover"
+msgstr ""
 
-msgid "Tuner with light theme, starred stations"
-msgstr "Tuner dengan tema ringan, stasiun starred"
+msgid "Tuner stream metadata"
+msgstr ""
 
-msgid "Tuner search for stations"
-msgstr "Tuner pencarian untuk stasiun"
+msgid "Tuner starred stations"
+msgstr ""
 
-msgid "Tuner saved searches"
-msgstr "Tuner pencarian yang tersimpan"
+msgid "Tuner translation languages"
+msgstr ""
 
-msgid "Tuner playing station metadata"
-msgstr "Tuner bermain metadata stasiun"
+msgid "Tuner Jukebox and options popover"
+msgstr ""
 
-msgid "Tuner preferences"
-msgstr "Tuner preferensi"
+msgid "Tuner genres and subgenres"
+msgstr ""
 
-msgid "Tuner station context information"
-msgstr "Informasi konteks stasiun Tuner"
+msgid "Tuner with dark theme, saved search"
+msgstr ""
 
-msgid "Tuner jukebox station shuffle"
-msgstr "Home > Sitemap"
+msgid "Maintenance release:"
+msgstr ""
 
-msgid "Maintanance release:"
-msgstr "Rilis utama:"
+msgid "Refactored Elementry Granite library out as a module"
+msgstr ""
+
+msgid "Refactored namespaces"
+msgstr ""
+
+msgid "Fixed: play/stop buttons disabled #223"
+msgstr ""
+
+msgid "Fixed: Jukebox stops when tuning to a dead station #256"
+msgstr ""
+
+msgid "Disabled in-app language selection for non-debug and flatpak builds"
+msgstr ""
+
+msgid ""
+"Renamed the app to io.github.tuner_labs.tuner (see https://github.com/"
+"flathub/flathub/issues/7468)"
+msgstr ""
+
+msgid "Added 'en' into Language list as its the gettext default"
+msgstr ""
 
 msgid "Updated freedesktop platform from 24.08 to 25.08"
 msgstr "Diperbarui platform freedesktop dari 24.08 ke 25.08"
 
-msgid "Removed module vala as now included in freedesktop platform"
-msgstr "Hapus modul vala saat ini disertakan dalam platform freedesktop"
-
-msgid "Removed module libsoup as now included in freedesktop platform"
+msgid "Removed vala module as now included in freedesktop platform"
 msgstr ""
-"Hapus modul libsoup seperti sekarang disertakan dalam platform freedesktop"
+
+msgid "Removed libsoup module as now included in freedesktop platform"
+msgstr ""
 
 msgid "Bumped libgee to 0.20.8"
 msgstr "Bumped libgee ke 0.20.8"
@@ -110,8 +129,16 @@ msgstr "Tertatata beberapa kata, tipos tetap"
 msgid "Updated translated strings and incorporated fresh translations"
 msgstr "Diperbaharui string diterjemahkan dan dimasukkan terjemahan segar"
 
-msgid "i18n - Broke out Country translation to separate module"
-msgstr "i18n - Broke out Negara terjemahan untuk modul terpisah"
+msgid ""
+"Refactored Language change mechanism and applied translations to more UI "
+"elements"
+msgstr ""
+
+msgid "Refactored Icon layout and build, removing unused icon files"
+msgstr ""
+
+msgid "i18n - Broke out Country and Language translations to separate module"
+msgstr ""
 
 msgid ""
 "i18n - Added trad Chinese, Estonian, Romaian, Tamil and Latin American "
@@ -380,3 +407,46 @@ msgstr "Menu sidebar baru dengan berbagai pilihan dan stasiun favorit Anda."
 
 msgid "Initial release"
 msgstr "Rilis awal"
+
+#~ msgid "Listen to Radio Stations all over the world"
+#~ msgstr "Mendengarkan Stasiun Radio di seluruh dunia"
+
+#~ msgid "Radio;Audio;Listen;Stations;Receiver;"
+#~ msgstr "Radio;Audio;Listen;Stations;Receiver;"
+
+#~ msgid "Tuner with dark theme, discovery"
+#~ msgstr "Tuner dengan tema gelap, penemuan"
+
+#~ msgid "Tuner with light theme, starred stations"
+#~ msgstr "Tuner dengan tema ringan, stasiun starred"
+
+#~ msgid "Tuner search for stations"
+#~ msgstr "Tuner pencarian untuk stasiun"
+
+#~ msgid "Tuner saved searches"
+#~ msgstr "Tuner pencarian yang tersimpan"
+
+#~ msgid "Tuner playing station metadata"
+#~ msgstr "Tuner bermain metadata stasiun"
+
+#~ msgid "Tuner preferences"
+#~ msgstr "Tuner preferensi"
+
+#~ msgid "Tuner station context information"
+#~ msgstr "Informasi konteks stasiun Tuner"
+
+#~ msgid "Tuner jukebox station shuffle"
+#~ msgstr "Home > Sitemap"
+
+#~ msgid "Maintanance release:"
+#~ msgstr "Rilis utama:"
+
+#~ msgid "Removed module vala as now included in freedesktop platform"
+#~ msgstr "Hapus modul vala saat ini disertakan dalam platform freedesktop"
+
+#~ msgid "Removed module libsoup as now included in freedesktop platform"
+#~ msgstr ""
+#~ "Hapus modul libsoup seperti sekarang disertakan dalam platform freedesktop"
+
+#~ msgid "i18n - Broke out Country translation to separate module"
+#~ msgstr "i18n - Broke out Negara terjemahan untuk modul terpisah"

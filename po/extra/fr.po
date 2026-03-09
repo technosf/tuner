@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-31 02:10-0800\n"
-"PO-Revision-Date: 2026-02-03 23:07+0000\n"
-"Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
+"POT-Creation-Date: 2026-03-06 14:33-0800\n"
+"PO-Revision-Date: 2026-03-09 17:26+0000\n"
+"Last-Translator: \"David D.\" <dadu042@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-"
 "desktop/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 msgid "Tuner"
 msgstr "Tuner"
@@ -25,11 +25,11 @@ msgstr "Tuner"
 msgid "Internet Radio Player"
 msgstr "Lecteur de Web Radios"
 
-msgid "Listen to Radio Stations all over the world"
-msgstr "Écoutez les stations de radio du monde entier"
+msgid "Listen to Radio Stations from around the world"
+msgstr "Écoutez des stations de radio du monde entier"
 
-msgid "Radio;Audio;Listen;Stations;Receiver;"
-msgstr "Radio;Audio;Écouter;Stations;Récepteur;"
+msgid "Radio;Receiver;FM;Talk;Sport;News"
+msgstr "Radio;Récepteur;FM;Débat;Sport;Nouvelles"
 
 msgid "technosf"
 msgstr ""
@@ -65,40 +65,60 @@ msgstr ""
 msgid "Control Tuner from your volume indicator"
 msgstr "Contrôlez la lecture de Tuner depuis votre indicateur de volume"
 
-msgid "Tuner with dark theme, discovery"
-msgstr "Tuner avec thème sombre, découverte"
-
-msgid "Tuner with light theme, starred stations"
-msgstr "Tuner avec thème clair, stations favorites"
-
-msgid "Tuner search for stations"
-msgstr "Tuner recherchant des stations"
-
-msgid "Tuner saved searches"
-msgstr "Recherches enregistrées dans Tuner"
-
-msgid "Tuner playing station metadata"
-msgstr "Tuner affichant des métadonnées de la station"
-
-msgid "Tuner preferences"
-msgstr "Préférences dans Tuner"
-
-msgid "Tuner station context information"
-msgstr "Informations contextuelles d'une station Tuner"
-
-msgid "Tuner jukebox station shuffle"
+msgid "Tuner with light theme, Discover"
 msgstr ""
 
-msgid "Maintanance release:"
+msgid "Tuner stream metadata"
+msgstr ""
+
+msgid "Tuner starred stations"
+msgstr ""
+
+msgid "Tuner translation languages"
+msgstr ""
+
+msgid "Tuner Jukebox and options popover"
+msgstr ""
+
+msgid "Tuner genres and subgenres"
+msgstr ""
+
+msgid "Tuner with dark theme, saved search"
+msgstr ""
+
+msgid "Maintenance release:"
 msgstr "Version de maintenance :"
+
+msgid "Refactored Elementry Granite library out as a module"
+msgstr ""
+
+msgid "Refactored namespaces"
+msgstr ""
+
+msgid "Fixed: play/stop buttons disabled #223"
+msgstr ""
+
+msgid "Fixed: Jukebox stops when tuning to a dead station #256"
+msgstr ""
+
+msgid "Disabled in-app language selection for non-debug and flatpak builds"
+msgstr ""
+
+msgid ""
+"Renamed the app to io.github.tuner_labs.tuner (see https://github.com/"
+"flathub/flathub/issues/7468)"
+msgstr ""
+
+msgid "Added 'en' into Language list as its the gettext default"
+msgstr ""
 
 msgid "Updated freedesktop platform from 24.08 to 25.08"
 msgstr ""
 
-msgid "Removed module vala as now included in freedesktop platform"
+msgid "Removed vala module as now included in freedesktop platform"
 msgstr ""
 
-msgid "Removed module libsoup as now included in freedesktop platform"
+msgid "Removed libsoup module as now included in freedesktop platform"
 msgstr ""
 
 msgid "Bumped libgee to 0.20.8"
@@ -110,7 +130,15 @@ msgstr ""
 msgid "Updated translated strings and incorporated fresh translations"
 msgstr ""
 
-msgid "i18n - Broke out Country translation to separate module"
+msgid ""
+"Refactored Language change mechanism and applied translations to more UI "
+"elements"
+msgstr ""
+
+msgid "Refactored Icon layout and build, removing unused icon files"
+msgstr ""
+
+msgid "i18n - Broke out Country and Language translations to separate module"
 msgstr ""
 
 msgid ""
@@ -256,10 +284,10 @@ msgid "Added Turkish translation"
 msgstr ""
 
 msgid "Improved French translation"
-msgstr ""
+msgstr "Amélioration de la traduction française"
 
 msgid "Minor improvements in Country name translations"
-msgstr ""
+msgstr "Améliorations mineures dans les traductions des noms de pays"
 
 msgid "Show the current track playing if supported by station"
 msgstr ""
@@ -375,3 +403,33 @@ msgstr ""
 
 msgid "Initial release"
 msgstr "Version initiale"
+
+#~ msgid "Listen to Radio Stations all over the world"
+#~ msgstr "Écoutez les stations de radio du monde entier"
+
+#~ msgid "Radio;Audio;Listen;Stations;Receiver;"
+#~ msgstr "Radio;Audio;Écouter;Stations;Récepteur;"
+
+#~ msgid "Tuner with dark theme, discovery"
+#~ msgstr "Tuner avec thème sombre, découverte"
+
+#~ msgid "Tuner with light theme, starred stations"
+#~ msgstr "Tuner avec thème clair, stations favorites"
+
+#~ msgid "Tuner search for stations"
+#~ msgstr "Tuner recherchant des stations"
+
+#~ msgid "Tuner saved searches"
+#~ msgstr "Recherches enregistrées dans Tuner"
+
+#~ msgid "Tuner playing station metadata"
+#~ msgstr "Tuner affichant des métadonnées de la station"
+
+#~ msgid "Tuner preferences"
+#~ msgstr "Préférences dans Tuner"
+
+#~ msgid "Tuner station context information"
+#~ msgstr "Informations contextuelles d'une station Tuner"
+
+#~ msgid "Maintanance release:"
+#~ msgstr "Version de maintenance :"

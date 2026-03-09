@@ -13,7 +13,7 @@ using Gee;
     to represent countries, dependent territories, 
     and special areas of geographical interest.
 */
-namespace Tuner.Model {
+namespace Tuner.Models {
 
     public class Countries {
         

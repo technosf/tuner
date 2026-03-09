@@ -11,6 +11,8 @@
  */
 
 using Gee;
+using Tuner.Models;
+using Tuner.Services;
 
 /**
  * @brief Error domain for source-related errors.
@@ -28,7 +30,7 @@ public errordomain SourceError {
  * such as file system operations, directory navigation, and file monitoring within the
  * context of the Tuner namespace.
  */
-public class Tuner.DirectoryController : Object
+public class Tuner.Controllers.DirectoryController : Object
 {
 
     private const uint DIRECTORY_LIMIT = 41;
@@ -83,16 +85,16 @@ public class Tuner.DirectoryController : Object
 	* @return A StationSet object for the requested station.
 	* @todo radio-browser should handle multiple UUID on a query, but is broken
 	*/
-	public Set<Model.Station> get_stations_by_uuid (Collection<string> uuids)
+	public Set<Models.Station> get_stations_by_uuid (Collection<string> uuids)
 	{
 		try
 		{
 			return _provider.by_uuids(uuids);
-		} catch (Tuner.DataProvider.DataError e)
+		} catch (DataProvider.DataError e)
 		{
 			critical (@"$(_provider.name()) unavailable");
 		}
-		return new HashSet<Model.Station>();
+		return new HashSet<Station>();
 	} // get_stations_by_uuid
 
 
@@ -238,7 +240,7 @@ public class Tuner.DirectoryController : Object
      *
      * @return An Collection of starred Model.Station objects.
      */
-    public Collection<Model.Station> get_starred () {
+    public Collection<Station> get_starred () {
         return _star_store.get_all_stations();
     } // get_starred
 
@@ -331,7 +333,7 @@ public class Tuner.DirectoryController : Object
 	*
 	* @param station The station that was clicked.
 	*/
-	public void count_station_click (Model.Station station)
+	public void count_station_click (Station station)
 	{
 		if (!app().settings.do_not_vote)
 		{
@@ -420,7 +422,7 @@ public class Tuner.StationSet : Object
 	* @return An ArrayList of Model.Station objects.
 	* @throws SourceError If the source is unavailable.
 	*/
-	public Set<Model.Station>? next_page () throws SourceError
+	public Set<Station>? next_page () throws SourceError
 	{
 
 		if (app().is_offline)
@@ -452,7 +454,7 @@ public class Tuner.StationSet : Object
 	* @return An ArrayList of Model.Station objects.
 	* @throws SourceError If the source is unavailable.
 	*/
-	public async Set<Model.Station>? next_page_async () throws SourceError
+	public async Set<Station>? next_page_async () throws SourceError
 	{
 
 		if (app().is_offline)
@@ -496,9 +498,9 @@ public class Tuner.StationSet : Object
 	* @param raw_stations An iterator of RadioBrowser.Station objects.
 	* @return An ArrayList of converted Model.Station objects.
 	*/
-	private Set<Model.Station> convert_stations (Iterator<Model.Station> raw_stations)
+	private Set<	Station> convert_stations (Iterator<Station> raw_stations)
 	{
-		var stations = new HashSet<Model.Station> ();
+		var stations = new HashSet<Station> ();
 
 		while (raw_stations.next())
 		{

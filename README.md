@@ -11,7 +11,9 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 Minimalist radio station player - **Tuner** Version 2
 
-![Screenshot 01](docs/Tuner_2.0_discover.png?raw=true)
+<p align="center">
+  <img src="docs/Tuner_201_one.png" width="600">
+</p>
 
 >I love listening to radio while I work. There are tens of thousands of cool internet radio stations available, however I find it hard to "find" new stations by using filters and genres. As of now, this little app takes away all the filtering and just presents me with new radio stations every time I use it.
 >
@@ -114,7 +116,7 @@ Help is apreciated:
 - [technosf](https://github.com/technosf) Current maintainer and rewriter of a swarthe of Tuner for V2
 - [louis77](https://github.com/louis77) Originator and genius behind Tuner
 - [@jrthwlate](https://hosted.weblate.org/user/jrthwlate/) - Estonian translation
-- [faleksandar.com](https://faleksandar.com/) for icons and colors
+- [@yakushabb](https://github.com/yakushabb) for flathub and flatpak config help
 - [faleksandar.com](https://faleksandar.com/) for icons and colors
 - [@NathanBnm](https://github.com/NathanBnm) - French translation
 - [@DevAlien](https://github.com/DevAlien) - Italian translation
@@ -138,3 +140,12 @@ Help is apreciated:
 
 Tuner uses the community-driven radio station catalog radio-browser.info. Tuner
 is not responsible for the stations shown or the actual streaming audio content.
+
+## Third-party code
+
+This project contains small portions of code derived from the
+Granite library (https://github.com/elementary/granite), used by
+the elementary OS project.
+
+The copied components remain licensed under the LGPL-3.0 and retain
+their original copyright notices.

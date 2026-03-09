@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: countries\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-22 11:06-0800\n"
+"POT-Creation-Date: 2026-03-06 00:43-0800\n"
 "PO-Revision-Date: 2026-02-18 09:22+0000\n"
 "Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/tuner/countries-"
@@ -1269,937 +1269,940 @@ msgctxt "Countries"
 msgid "Kosovo"
 msgstr "Kosovo"
 
-#: src/Models/Languages.vala:49
-msgctxt "Languages"
-msgid "Afar"
-msgstr "Zďaleka"
-
-#: src/Models/Languages.vala:50
-msgctxt "Languages"
-msgid "Abkhazian"
-msgstr "Abkazian"
-
-#: src/Models/Languages.vala:51
-msgctxt "Languages"
-msgid "Avestan"
-msgstr "Avestan"
-
+#. Language code we have translations for which have a different name than the default one.
 #: src/Models/Languages.vala:52
-msgctxt "Languages"
-msgid "Afrikaans"
-msgstr "Afrikáni"
-
-#: src/Models/Languages.vala:53
-msgctxt "Languages"
-msgid "Akan"
-msgstr "Akan"
-
-#: src/Models/Languages.vala:54
-msgctxt "Languages"
-msgid "Amharic"
-msgstr "Amharický"
-
-#: src/Models/Languages.vala:55
-msgctxt "Languages"
-msgid "Aragonese"
-msgstr "Aragonský"
-
-#: src/Models/Languages.vala:56
-msgctxt "Languages"
-msgid "Arabic"
-msgstr "Arabský"
-
-#: src/Models/Languages.vala:57
-msgctxt "Languages"
-msgid "Assamese"
-msgstr "Asamský"
-
-#: src/Models/Languages.vala:58
-msgctxt "Languages"
-msgid "Avaric"
-msgstr "Avarický"
-
-#: src/Models/Languages.vala:59
-msgctxt "Languages"
-msgid "Aymara"
-msgstr "Aymara"
-
-#: src/Models/Languages.vala:60
-msgctxt "Languages"
-msgid "Azerbaijani"
-msgstr "Azerbajžan"
-
-#: src/Models/Languages.vala:62
-msgctxt "Languages"
-msgid "Bashkir"
-msgstr "Bashkir"
-
-#: src/Models/Languages.vala:63
-msgctxt "Languages"
-msgid "Belarusian"
-msgstr "bieloruština"
-
-#: src/Models/Languages.vala:64
-msgctxt "Languages"
-msgid "Bulgarian"
-msgstr "Bulharský"
-
-#: src/Models/Languages.vala:65
-msgctxt "Languages"
-msgid "Bihari"
-msgstr "Bihárčina"
-
-#: src/Models/Languages.vala:66
-msgctxt "Languages"
-msgid "Bislama"
-msgstr "Bislama"
-
-#: src/Models/Languages.vala:67
-msgctxt "Languages"
-msgid "Bambara"
-msgstr "Bambara"
-
-#: src/Models/Languages.vala:68
-msgctxt "Languages"
-msgid "Bengali"
-msgstr "Bengálsky"
-
-#: src/Models/Languages.vala:69
-msgctxt "Languages"
-msgid "Tibetan"
-msgstr "Tibetský"
-
-#: src/Models/Languages.vala:70
-msgctxt "Languages"
-msgid "Breton"
-msgstr "Bretón"
-
-#: src/Models/Languages.vala:71
-msgctxt "Languages"
-msgid "Bosnian"
-msgstr "bosniansky"
-
-#: src/Models/Languages.vala:73
-msgctxt "Languages"
-msgid "Catalan"
-msgstr "Katalánčina"
-
-#: src/Models/Languages.vala:74
-msgctxt "Languages"
-msgid "Chechen"
-msgstr "Čečenčina"
-
-#: src/Models/Languages.vala:75
-msgctxt "Languages"
-msgid "Chamorro"
-msgstr "Čamorčina"
-
-#: src/Models/Languages.vala:76
-msgctxt "Languages"
-msgid "Corsican"
-msgstr "Korzívny"
-
-#: src/Models/Languages.vala:77
-msgctxt "Languages"
-msgid "Cree"
-msgstr "Zátoka"
-
-#: src/Models/Languages.vala:78
-msgctxt "Languages"
-msgid "Czech"
-msgstr "Český"
-
-#: src/Models/Languages.vala:79
-msgctxt "Languages"
-msgid "Church Slavic"
-msgstr "Cirkevný slovanský"
-
-#: src/Models/Languages.vala:80
-msgctxt "Languages"
-msgid "Chuvash"
-msgstr "Čuvaština"
-
-#: src/Models/Languages.vala:81
-msgctxt "Languages"
-msgid "Welsh"
-msgstr "Waleský"
-
-#: src/Models/Languages.vala:83
-msgctxt "Languages"
-msgid "Danish"
-msgstr "Dánsky"
-
-#: src/Models/Languages.vala:84
-msgctxt "Languages"
-msgid "German"
-msgstr "Nemecký"
-
-#: src/Models/Languages.vala:85
-msgctxt "Languages"
-msgid "Divehi"
-msgstr "Potápanie"
-
-#: src/Models/Languages.vala:86
-msgctxt "Languages"
-msgid "Dzongkha"
-msgstr "Dzongkha"
-
-#: src/Models/Languages.vala:88
-msgctxt "Languages"
-msgid "Ewe"
-msgstr "Ewe"
-
-#: src/Models/Languages.vala:89
-msgctxt "Languages"
-msgid "Greek"
-msgstr "Grécky"
-
-#: src/Models/Languages.vala:90
-msgctxt "Languages"
-msgid "English"
-msgstr "Angličtina"
-
-#: src/Models/Languages.vala:91
-msgctxt "Languages"
-msgid "Esperanto"
-msgstr "Esperanto"
-
-#: src/Models/Languages.vala:92
-msgctxt "Languages"
-msgid "Spanish"
-msgstr "Španielsky"
-
-#: src/Models/Languages.vala:93
 msgctxt "Languages"
 msgid "Spanish (Latin America)"
 msgstr "Španielčina (Latinská Amerika)"
 
-#: src/Models/Languages.vala:94
-msgctxt "Languages"
-msgid "Estonian"
-msgstr "Estónsky"
-
-#: src/Models/Languages.vala:95
-msgctxt "Languages"
-msgid "Basque"
-msgstr "Baskický"
-
-#: src/Models/Languages.vala:97
-msgctxt "Languages"
-msgid "Persian"
-msgstr "Perzský"
-
-#: src/Models/Languages.vala:98
-msgctxt "Languages"
-msgid "Fulah"
-msgstr "Fulah"
-
-#: src/Models/Languages.vala:99
-msgctxt "Languages"
-msgid "Finnish"
-msgstr "Fínsky"
-
-#: src/Models/Languages.vala:100
-msgctxt "Languages"
-msgid "Fijian"
-msgstr "Fidžijčina"
-
-#: src/Models/Languages.vala:101
-msgctxt "Languages"
-msgid "Faroese"
-msgstr "Farársky"
-
-#: src/Models/Languages.vala:102
-msgctxt "Languages"
-msgid "French"
-msgstr "Francúzsky"
-
-#: src/Models/Languages.vala:103
-msgctxt "Languages"
-msgid "Western Frisian"
-msgstr "Západný fríán"
-
-#: src/Models/Languages.vala:105
-msgctxt "Languages"
-msgid "Irish"
-msgstr "Írsky"
-
-#: src/Models/Languages.vala:106
-msgctxt "Languages"
-msgid "Scottish Gaelic"
-msgstr "Škótska gaelčina"
-
-#: src/Models/Languages.vala:107
-msgctxt "Languages"
-msgid "Galician"
-msgstr "Galícia"
-
-#: src/Models/Languages.vala:108
-msgctxt "Languages"
-msgid "Guarani"
-msgstr "Guarani"
-
-#: src/Models/Languages.vala:109
-msgctxt "Languages"
-msgid "Gujarati"
-msgstr "Gudžarát"
-
-#: src/Models/Languages.vala:110
-msgctxt "Languages"
-msgid "Manx"
-msgstr "Manx"
-
-#: src/Models/Languages.vala:112
-msgctxt "Languages"
-msgid "Hausa"
-msgstr "Hausa"
-
-#: src/Models/Languages.vala:113
-msgctxt "Languages"
-msgid "Hebrew"
-msgstr "Hebrejčina"
-
-#: src/Models/Languages.vala:114
-msgctxt "Languages"
-msgid "Hindi"
-msgstr "Hindčina"
-
-#: src/Models/Languages.vala:115
-msgctxt "Languages"
-msgid "Hiri Motu"
-msgstr "Hiri motu"
-
-#: src/Models/Languages.vala:116
-msgctxt "Languages"
-msgid "Croatian"
-msgstr "Chorvátsky"
-
-#: src/Models/Languages.vala:117
-msgctxt "Languages"
-msgid "Haitian"
-msgstr "Haitčina"
-
-#: src/Models/Languages.vala:118
-msgctxt "Languages"
-msgid "Hungarian"
-msgstr "Maďarský"
-
-#: src/Models/Languages.vala:119
-msgctxt "Languages"
-msgid "Armenian"
-msgstr "Arménsky"
-
-#: src/Models/Languages.vala:120
-msgctxt "Languages"
-msgid "Herero"
-msgstr "Herero"
-
-#: src/Models/Languages.vala:122
-msgctxt "Languages"
-msgid "Interlingua"
-msgstr "Interlingua"
-
-#: src/Models/Languages.vala:123
-msgctxt "Languages"
-msgid "Indonesian"
-msgstr "Indonézsky"
-
-#: src/Models/Languages.vala:124
-msgctxt "Languages"
-msgid "Interlingue"
-msgstr "Aktuality"
-
-#: src/Models/Languages.vala:125
-msgctxt "Languages"
-msgid "Igbo"
-msgstr "Igbo"
-
-#: src/Models/Languages.vala:126
-msgctxt "Languages"
-msgid "Sichuan Yi"
-msgstr "Sichuan Yi"
-
-#: src/Models/Languages.vala:127
-msgctxt "Languages"
-msgid "Inupiaq"
-msgstr "Inupiaq"
-
-#: src/Models/Languages.vala:128
-msgctxt "Languages"
-msgid "Ido"
-msgstr "Ido"
-
-#: src/Models/Languages.vala:129
-msgctxt "Languages"
-msgid "Icelandic"
-msgstr "Islandský"
-
-#: src/Models/Languages.vala:130
-msgctxt "Languages"
-msgid "Italian"
-msgstr "taliančina"
-
-#: src/Models/Languages.vala:131
-msgctxt "Languages"
-msgid "Inuktitut"
-msgstr "Inuktitut"
-
-#: src/Models/Languages.vala:133
-msgctxt "Languages"
-msgid "Japanese"
-msgstr "Japonský"
-
-#: src/Models/Languages.vala:134
-msgctxt "Languages"
-msgid "Javanese"
-msgstr "javajčina"
-
-#: src/Models/Languages.vala:136
-msgctxt "Languages"
-msgid "Georgian"
-msgstr "Gruzínsky"
-
-#: src/Models/Languages.vala:137
-msgctxt "Languages"
-msgid "Kongo"
-msgstr "Konggo"
-
-#: src/Models/Languages.vala:138
-msgctxt "Languages"
-msgid "Kikuyu"
-msgstr "Kikuyu"
-
-#: src/Models/Languages.vala:139
-msgctxt "Languages"
-msgid "Kwanyama"
-msgstr "Kwanyamačina"
-
-#: src/Models/Languages.vala:140
-msgctxt "Languages"
-msgid "Kazakh"
-msgstr "kazaština"
-
-#: src/Models/Languages.vala:141
-msgctxt "Languages"
-msgid "Kalaallisut"
-msgstr "Kalaallisut"
-
-#: src/Models/Languages.vala:142
-msgctxt "Languages"
-msgid "Khmer"
-msgstr "Khmérčina"
-
-#: src/Models/Languages.vala:143
-msgctxt "Languages"
-msgid "Kannada"
-msgstr "kannadčina"
-
-#: src/Models/Languages.vala:144
-msgctxt "Languages"
-msgid "Korean"
-msgstr "kórejčina"
-
-#: src/Models/Languages.vala:145
-msgctxt "Languages"
-msgid "Kanuri"
-msgstr "Kanurijčina"
-
-#: src/Models/Languages.vala:146
-msgctxt "Languages"
-msgid "Kashmiri"
-msgstr "kašmírčina"
-
-#: src/Models/Languages.vala:147
-msgctxt "Languages"
-msgid "Kurdish"
-msgstr "Kurdský"
-
-#: src/Models/Languages.vala:148
-msgctxt "Languages"
-msgid "Komi"
-msgstr "Komijčina"
-
-#: src/Models/Languages.vala:149
-msgctxt "Languages"
-msgid "Cornish"
-msgstr "Kukurica"
-
-#: src/Models/Languages.vala:150
-msgctxt "Languages"
-msgid "Kirghiz"
-msgstr "Kirgizština"
-
-#: src/Models/Languages.vala:152
-msgctxt "Languages"
-msgid "Latin"
-msgstr "Latinský"
-
-#: src/Models/Languages.vala:153
-msgctxt "Languages"
-msgid "Luxembourgish"
-msgstr "Luxembursky"
-
-#: src/Models/Languages.vala:154
-msgctxt "Languages"
-msgid "Ganda"
-msgstr "Ganda"
-
-#: src/Models/Languages.vala:155
-msgctxt "Languages"
-msgid "Limburgish"
-msgstr "Limburgčina"
-
-#: src/Models/Languages.vala:156
-msgctxt "Languages"
-msgid "Lingala"
-msgstr "Lingala"
-
-#: src/Models/Languages.vala:157
-msgctxt "Languages"
-msgid "Lao"
-msgstr "Laosk"
-
-#: src/Models/Languages.vala:158
-msgctxt "Languages"
-msgid "Lithuanian"
-msgstr "Litovský"
-
-#: src/Models/Languages.vala:159
-msgctxt "Languages"
-msgid "Latvian"
-msgstr "Lotyš"
-
-#: src/Models/Languages.vala:161
-msgctxt "Languages"
-msgid "Malagasy"
-msgstr "Nečestný"
-
-#: src/Models/Languages.vala:162
-msgctxt "Languages"
-msgid "Marshallese"
-msgstr "Marsalský"
-
-#: src/Models/Languages.vala:163
-msgctxt "Languages"
-msgid "Maori"
-msgstr "Maorský"
-
-#: src/Models/Languages.vala:164
-msgctxt "Languages"
-msgid "Macedonian"
-msgstr "Macedónsky"
-
-#: src/Models/Languages.vala:165
-msgctxt "Languages"
-msgid "Malayalam"
-msgstr "Malajálam"
-
-#: src/Models/Languages.vala:166
-msgctxt "Languages"
-msgid "Mongolian"
-msgstr "Mongolský"
-
-#: src/Models/Languages.vala:167
-msgctxt "Languages"
-msgid "Marathi"
-msgstr "maráthčina"
-
-#: src/Models/Languages.vala:168
-msgctxt "Languages"
-msgid "Malay"
-msgstr "malajčina"
-
-#: src/Models/Languages.vala:169
-msgctxt "Languages"
-msgid "Maltese"
-msgstr "Maltský"
-
-#: src/Models/Languages.vala:170
-msgctxt "Languages"
-msgid "Burmese"
-msgstr "Barmský"
-
-#: src/Models/Languages.vala:172
-msgctxt "Languages"
-msgid "Nauru"
-msgstr "Nauru"
-
-#: src/Models/Languages.vala:173
-msgctxt "Languages"
-msgid "Norwegian Bokmal"
-msgstr "Nórsky Bokmal"
-
-#: src/Models/Languages.vala:174
+#: src/Models/Languages.vala:53
 msgctxt "Languages"
 msgid "Norwegian (Bokmal)"
 msgstr "Nórsky (Bokmal)"
 
-#: src/Models/Languages.vala:175
-msgctxt "Languages"
-msgid "North Ndebele"
-msgstr "Severná Ndebele"
-
-#: src/Models/Languages.vala:176
-msgctxt "Languages"
-msgid "Nepali"
-msgstr "Nepálsky"
-
-#: src/Models/Languages.vala:177
-msgctxt "Languages"
-msgid "Ndonga"
-msgstr "Nonga"
-
-#: src/Models/Languages.vala:178
-msgctxt "Languages"
-msgid "Dutch"
-msgstr "Holanďan"
-
-#: src/Models/Languages.vala:179
-msgctxt "Languages"
-msgid "Norwegian Nynorsk"
-msgstr "Nórsky"
-
-#: src/Models/Languages.vala:180
-msgctxt "Languages"
-msgid "Norwegian"
-msgstr "Nórsky"
-
-#: src/Models/Languages.vala:181
-msgctxt "Languages"
-msgid "South Ndebele"
-msgstr "Južný Ndebele"
-
-#: src/Models/Languages.vala:182
-msgctxt "Languages"
-msgid "Navajo"
-msgstr "Navajsky"
-
-#: src/Models/Languages.vala:183
-msgctxt "Languages"
-msgid "Chichewa"
-msgstr "Chichewa"
-
-#: src/Models/Languages.vala:185
-msgctxt "Languages"
-msgid "Occitan"
-msgstr "Okcitan"
-
-#: src/Models/Languages.vala:186
-msgctxt "Languages"
-msgid "Ojibwa"
-msgstr "odžibwa"
-
-#: src/Models/Languages.vala:187
-msgctxt "Languages"
-msgid "Oromo"
-msgstr "Oromo"
-
-#: src/Models/Languages.vala:188
-msgctxt "Languages"
-msgid "Oriya"
-msgstr "Oriya"
-
-#: src/Models/Languages.vala:189
-msgctxt "Languages"
-msgid "Ossetian"
-msgstr "Osetčina"
-
-#: src/Models/Languages.vala:191
-msgctxt "Languages"
-msgid "Punjabi"
-msgstr "Pandžábčina"
-
-#: src/Models/Languages.vala:192
-msgctxt "Languages"
-msgid "Pali"
-msgstr "Pay"
-
-#: src/Models/Languages.vala:193
-msgctxt "Languages"
-msgid "Polish"
-msgstr "Leštiť"
-
-#: src/Models/Languages.vala:194
-msgctxt "Languages"
-msgid "Pashto"
-msgstr "Paštčina"
-
-#: src/Models/Languages.vala:195
-msgctxt "Languages"
-msgid "Portuguese"
-msgstr "Portugalský"
-
-#: src/Models/Languages.vala:196
+#: src/Models/Languages.vala:54
 msgctxt "Languages"
 msgid "Portuguese (Brazil)"
 msgstr "Portugalčina (Brazília)"
 
-#: src/Models/Languages.vala:198
-msgctxt "Languages"
-msgid "Quechua"
-msgstr "Quechua"
-
-#: src/Models/Languages.vala:200
-msgctxt "Languages"
-msgid "Romansh"
-msgstr "Rimans"
-
-#: src/Models/Languages.vala:201
-msgctxt "Languages"
-msgid "Rundi"
-msgstr "Rundčina"
-
-#: src/Models/Languages.vala:202
-msgctxt "Languages"
-msgid "Romanian"
-msgstr "Rumunský"
-
-#: src/Models/Languages.vala:203
-msgctxt "Languages"
-msgid "Russian"
-msgstr "Ruský"
-
-#: src/Models/Languages.vala:204
-msgctxt "Languages"
-msgid "Kinyarwanda"
-msgstr "rwandčina"
-
-#: src/Models/Languages.vala:206
-msgctxt "Languages"
-msgid "Sanskrit"
-msgstr "Sanskrit"
-
-#: src/Models/Languages.vala:207
-msgctxt "Languages"
-msgid "Sardinian"
-msgstr "Sardínsky"
-
-#: src/Models/Languages.vala:208
-msgctxt "Languages"
-msgid "Sindhi"
-msgstr "Sindhi"
-
-#: src/Models/Languages.vala:209
-msgctxt "Languages"
-msgid "Northern Sami"
-msgstr "Severný Sami"
-
-#: src/Models/Languages.vala:210
-msgctxt "Languages"
-msgid "Sango"
-msgstr "Sango"
-
-#: src/Models/Languages.vala:211
-msgctxt "Languages"
-msgid "Sinhala"
-msgstr "Sinhalčina"
-
-#: src/Models/Languages.vala:212
-msgctxt "Languages"
-msgid "Slovak"
-msgstr "Slovenský"
-
-#: src/Models/Languages.vala:213
-msgctxt "Languages"
-msgid "Slovenian"
-msgstr "Slovinský"
-
-#: src/Models/Languages.vala:214
-msgctxt "Languages"
-msgid "Samoan"
-msgstr "Samoan"
-
-#: src/Models/Languages.vala:215
-msgctxt "Languages"
-msgid "Shona"
-msgstr "Shona"
-
-#: src/Models/Languages.vala:216
-msgctxt "Languages"
-msgid "Somali"
-msgstr "Somálsky"
-
-#: src/Models/Languages.vala:217
-msgctxt "Languages"
-msgid "Albanian"
-msgstr "Albánsky"
-
-#: src/Models/Languages.vala:218
-msgctxt "Languages"
-msgid "Serbian"
-msgstr "Srbský"
-
-#: src/Models/Languages.vala:219
-msgctxt "Languages"
-msgid "Swati"
-msgstr "Swati"
-
-#: src/Models/Languages.vala:220
-msgctxt "Languages"
-msgid "Southern Sotho"
-msgstr "Južná Sotho"
-
-#: src/Models/Languages.vala:221
-msgctxt "Languages"
-msgid "Sundanese"
-msgstr "sundčina"
-
-#: src/Models/Languages.vala:222
-msgctxt "Languages"
-msgid "Swedish"
-msgstr "Švédsky"
-
-#: src/Models/Languages.vala:223
-msgctxt "Languages"
-msgid "Swahili"
-msgstr "Svalstvo"
-
-#: src/Models/Languages.vala:225
-msgctxt "Languages"
-msgid "Tamil"
-msgstr "Tamilský"
-
-#: src/Models/Languages.vala:226
-msgctxt "Languages"
-msgid "Telugu"
-msgstr "Telugu"
-
-#: src/Models/Languages.vala:227
-msgctxt "Languages"
-msgid "Tajik"
-msgstr "Tadžijik"
-
-#: src/Models/Languages.vala:228
-msgctxt "Languages"
-msgid "Thai"
-msgstr "Thajský"
-
-#: src/Models/Languages.vala:229
-msgctxt "Languages"
-msgid "Tigrinya"
-msgstr "Tigrinya"
-
-#: src/Models/Languages.vala:230
-msgctxt "Languages"
-msgid "Turkmen"
-msgstr "Turkmén"
-
-#: src/Models/Languages.vala:231
-msgctxt "Languages"
-msgid "Tagalog"
-msgstr "Tagalog"
-
-#: src/Models/Languages.vala:232
-msgctxt "Languages"
-msgid "Tswana"
-msgstr "Tswančina"
-
-#: src/Models/Languages.vala:233
-msgctxt "Languages"
-msgid "Tonga"
-msgstr "Tonga"
-
-#: src/Models/Languages.vala:234
-msgctxt "Languages"
-msgid "Turkish"
-msgstr "Turecký"
-
-#: src/Models/Languages.vala:235
-msgctxt "Languages"
-msgid "Tsonga"
-msgstr "Tsonga"
-
-#: src/Models/Languages.vala:236
-msgctxt "Languages"
-msgid "Tatar"
-msgstr "Tatar"
-
-#: src/Models/Languages.vala:237
-msgctxt "Languages"
-msgid "Twi"
-msgstr "Dvakrát"
-
-#: src/Models/Languages.vala:238
-msgctxt "Languages"
-msgid "Tahitian"
-msgstr "Tahitčina"
-
-#: src/Models/Languages.vala:240
-msgctxt "Languages"
-msgid "Uighur"
-msgstr "Ujguri"
-
-#: src/Models/Languages.vala:241
-msgctxt "Languages"
-msgid "Ukrainian"
-msgstr "Ukrajinský"
-
-#: src/Models/Languages.vala:242
-msgctxt "Languages"
-msgid "Urdu"
-msgstr "Urdu"
-
-#: src/Models/Languages.vala:243
-msgctxt "Languages"
-msgid "Uzbek"
-msgstr "Uzbek"
-
-#: src/Models/Languages.vala:245
-msgctxt "Languages"
-msgid "Venda"
-msgstr "Vendčina"
-
-#: src/Models/Languages.vala:246
-msgctxt "Languages"
-msgid "Vietnamese"
-msgstr "Vietnamský"
-
-#: src/Models/Languages.vala:247
-msgctxt "Languages"
-msgid "Volapuk"
-msgstr "Volapuk"
-
-#: src/Models/Languages.vala:249
-msgctxt "Languages"
-msgid "Walloon"
-msgstr "Valón"
-
-#: src/Models/Languages.vala:250
-msgctxt "Languages"
-msgid "Wolof"
-msgstr "Wolofčina"
-
-#: src/Models/Languages.vala:252
-msgctxt "Languages"
-msgid "Xhosa"
-msgstr "Xhosa"
-
-#: src/Models/Languages.vala:254
-msgctxt "Languages"
-msgid "Yiddish"
-msgstr "jidiš"
-
-#: src/Models/Languages.vala:255
-msgctxt "Languages"
-msgid "Yoruba"
-msgstr "Joruba"
-
-#: src/Models/Languages.vala:257
-msgctxt "Languages"
-msgid "Zhuang"
-msgstr "Čuangčina"
-
-#: src/Models/Languages.vala:258
-msgctxt "Languages"
-msgid "Chinese"
-msgstr "Čínsky"
-
-#: src/Models/Languages.vala:259
+#: src/Models/Languages.vala:55
 msgctxt "Languages"
 msgid "Traditional Chinese"
 msgstr "Tradičný Číňan"
 
-#: src/Models/Languages.vala:260
+#. Populate the reference map with language codes and their corresponding translated names,
+#. which we may or may not have translations for, but we want to have a reference for the default name.
+#: src/Models/Languages.vala:59
+msgctxt "Languages"
+msgid "Afar"
+msgstr "Zďaleka"
+
+#: src/Models/Languages.vala:60
+msgctxt "Languages"
+msgid "Abkhazian"
+msgstr "Abkazian"
+
+#: src/Models/Languages.vala:61
+msgctxt "Languages"
+msgid "Avestan"
+msgstr "Avestan"
+
+#: src/Models/Languages.vala:62
+msgctxt "Languages"
+msgid "Afrikaans"
+msgstr "Afrikáni"
+
+#: src/Models/Languages.vala:63
+msgctxt "Languages"
+msgid "Akan"
+msgstr "Akan"
+
+#: src/Models/Languages.vala:64
+msgctxt "Languages"
+msgid "Amharic"
+msgstr "Amharický"
+
+#: src/Models/Languages.vala:65
+msgctxt "Languages"
+msgid "Aragonese"
+msgstr "Aragonský"
+
+#: src/Models/Languages.vala:66
+msgctxt "Languages"
+msgid "Arabic"
+msgstr "Arabský"
+
+#: src/Models/Languages.vala:67
+msgctxt "Languages"
+msgid "Assamese"
+msgstr "Asamský"
+
+#: src/Models/Languages.vala:68
+msgctxt "Languages"
+msgid "Avaric"
+msgstr "Avarický"
+
+#: src/Models/Languages.vala:69
+msgctxt "Languages"
+msgid "Aymara"
+msgstr "Aymara"
+
+#: src/Models/Languages.vala:70
+msgctxt "Languages"
+msgid "Azerbaijani"
+msgstr "Azerbajžan"
+
+#: src/Models/Languages.vala:72
+msgctxt "Languages"
+msgid "Bashkir"
+msgstr "Bashkir"
+
+#: src/Models/Languages.vala:73
+msgctxt "Languages"
+msgid "Belarusian"
+msgstr "bieloruština"
+
+#: src/Models/Languages.vala:74
+msgctxt "Languages"
+msgid "Bulgarian"
+msgstr "Bulharský"
+
+#: src/Models/Languages.vala:75
+msgctxt "Languages"
+msgid "Bihari"
+msgstr "Bihárčina"
+
+#: src/Models/Languages.vala:76
+msgctxt "Languages"
+msgid "Bislama"
+msgstr "Bislama"
+
+#: src/Models/Languages.vala:77
+msgctxt "Languages"
+msgid "Bambara"
+msgstr "Bambara"
+
+#: src/Models/Languages.vala:78
+msgctxt "Languages"
+msgid "Bengali"
+msgstr "Bengálsky"
+
+#: src/Models/Languages.vala:79
+msgctxt "Languages"
+msgid "Tibetan"
+msgstr "Tibetský"
+
+#: src/Models/Languages.vala:80
+msgctxt "Languages"
+msgid "Breton"
+msgstr "Bretón"
+
+#: src/Models/Languages.vala:81
+msgctxt "Languages"
+msgid "Bosnian"
+msgstr "bosniansky"
+
+#: src/Models/Languages.vala:83
+msgctxt "Languages"
+msgid "Catalan"
+msgstr "Katalánčina"
+
+#: src/Models/Languages.vala:84
+msgctxt "Languages"
+msgid "Chechen"
+msgstr "Čečenčina"
+
+#: src/Models/Languages.vala:85
+msgctxt "Languages"
+msgid "Chamorro"
+msgstr "Čamorčina"
+
+#: src/Models/Languages.vala:86
+msgctxt "Languages"
+msgid "Corsican"
+msgstr "Korzívny"
+
+#: src/Models/Languages.vala:87
+msgctxt "Languages"
+msgid "Cree"
+msgstr "Zátoka"
+
+#: src/Models/Languages.vala:88
+msgctxt "Languages"
+msgid "Czech"
+msgstr "Český"
+
+#: src/Models/Languages.vala:89
+msgctxt "Languages"
+msgid "Church Slavic"
+msgstr "Cirkevný slovanský"
+
+#: src/Models/Languages.vala:90
+msgctxt "Languages"
+msgid "Chuvash"
+msgstr "Čuvaština"
+
+#: src/Models/Languages.vala:91
+msgctxt "Languages"
+msgid "Welsh"
+msgstr "Waleský"
+
+#: src/Models/Languages.vala:93
+msgctxt "Languages"
+msgid "Danish"
+msgstr "Dánsky"
+
+#: src/Models/Languages.vala:94
+msgctxt "Languages"
+msgid "German"
+msgstr "Nemecký"
+
+#: src/Models/Languages.vala:95
+msgctxt "Languages"
+msgid "Divehi"
+msgstr "Potápanie"
+
+#: src/Models/Languages.vala:96
+msgctxt "Languages"
+msgid "Dzongkha"
+msgstr "Dzongkha"
+
+#: src/Models/Languages.vala:98
+msgctxt "Languages"
+msgid "Ewe"
+msgstr "Ewe"
+
+#: src/Models/Languages.vala:99
+msgctxt "Languages"
+msgid "Greek"
+msgstr "Grécky"
+
+#: src/Models/Languages.vala:100
+msgctxt "Languages"
+msgid "English"
+msgstr "Angličtina"
+
+#: src/Models/Languages.vala:101
+msgctxt "Languages"
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: src/Models/Languages.vala:102
+msgctxt "Languages"
+msgid "Spanish"
+msgstr "Španielsky"
+
+#: src/Models/Languages.vala:103
+msgctxt "Languages"
+msgid "Estonian"
+msgstr "Estónsky"
+
+#: src/Models/Languages.vala:104
+msgctxt "Languages"
+msgid "Basque"
+msgstr "Baskický"
+
+#: src/Models/Languages.vala:106
+msgctxt "Languages"
+msgid "Persian"
+msgstr "Perzský"
+
+#: src/Models/Languages.vala:107
+msgctxt "Languages"
+msgid "Fulah"
+msgstr "Fulah"
+
+#: src/Models/Languages.vala:108
+msgctxt "Languages"
+msgid "Finnish"
+msgstr "Fínsky"
+
+#: src/Models/Languages.vala:109
+msgctxt "Languages"
+msgid "Fijian"
+msgstr "Fidžijčina"
+
+#: src/Models/Languages.vala:110
+msgctxt "Languages"
+msgid "Faroese"
+msgstr "Farársky"
+
+#: src/Models/Languages.vala:111
+msgctxt "Languages"
+msgid "French"
+msgstr "Francúzsky"
+
+#: src/Models/Languages.vala:112
+msgctxt "Languages"
+msgid "Western Frisian"
+msgstr "Západný fríán"
+
+#: src/Models/Languages.vala:114
+msgctxt "Languages"
+msgid "Irish"
+msgstr "Írsky"
+
+#: src/Models/Languages.vala:115
+msgctxt "Languages"
+msgid "Scottish Gaelic"
+msgstr "Škótska gaelčina"
+
+#: src/Models/Languages.vala:116
+msgctxt "Languages"
+msgid "Galician"
+msgstr "Galícia"
+
+#: src/Models/Languages.vala:117
+msgctxt "Languages"
+msgid "Guarani"
+msgstr "Guarani"
+
+#: src/Models/Languages.vala:118
+msgctxt "Languages"
+msgid "Gujarati"
+msgstr "Gudžarát"
+
+#: src/Models/Languages.vala:119
+msgctxt "Languages"
+msgid "Manx"
+msgstr "Manx"
+
+#: src/Models/Languages.vala:121
+msgctxt "Languages"
+msgid "Hausa"
+msgstr "Hausa"
+
+#: src/Models/Languages.vala:122
+msgctxt "Languages"
+msgid "Hebrew"
+msgstr "Hebrejčina"
+
+#: src/Models/Languages.vala:123
+msgctxt "Languages"
+msgid "Hindi"
+msgstr "Hindčina"
+
+#: src/Models/Languages.vala:124
+msgctxt "Languages"
+msgid "Hiri Motu"
+msgstr "Hiri motu"
+
+#: src/Models/Languages.vala:125
+msgctxt "Languages"
+msgid "Croatian"
+msgstr "Chorvátsky"
+
+#: src/Models/Languages.vala:126
+msgctxt "Languages"
+msgid "Haitian"
+msgstr "Haitčina"
+
+#: src/Models/Languages.vala:127
+msgctxt "Languages"
+msgid "Hungarian"
+msgstr "Maďarský"
+
+#: src/Models/Languages.vala:128
+msgctxt "Languages"
+msgid "Armenian"
+msgstr "Arménsky"
+
+#: src/Models/Languages.vala:129
+msgctxt "Languages"
+msgid "Herero"
+msgstr "Herero"
+
+#: src/Models/Languages.vala:131
+msgctxt "Languages"
+msgid "Interlingua"
+msgstr "Interlingua"
+
+#: src/Models/Languages.vala:132
+msgctxt "Languages"
+msgid "Indonesian"
+msgstr "Indonézsky"
+
+#: src/Models/Languages.vala:133
+msgctxt "Languages"
+msgid "Interlingue"
+msgstr "Aktuality"
+
+#: src/Models/Languages.vala:134
+msgctxt "Languages"
+msgid "Igbo"
+msgstr "Igbo"
+
+#: src/Models/Languages.vala:135
+msgctxt "Languages"
+msgid "Sichuan Yi"
+msgstr "Sichuan Yi"
+
+#: src/Models/Languages.vala:136
+msgctxt "Languages"
+msgid "Inupiaq"
+msgstr "Inupiaq"
+
+#: src/Models/Languages.vala:137
+msgctxt "Languages"
+msgid "Ido"
+msgstr "Ido"
+
+#: src/Models/Languages.vala:138
+msgctxt "Languages"
+msgid "Icelandic"
+msgstr "Islandský"
+
+#: src/Models/Languages.vala:139
+msgctxt "Languages"
+msgid "Italian"
+msgstr "taliančina"
+
+#: src/Models/Languages.vala:140
+msgctxt "Languages"
+msgid "Inuktitut"
+msgstr "Inuktitut"
+
+#: src/Models/Languages.vala:142
+msgctxt "Languages"
+msgid "Japanese"
+msgstr "Japonský"
+
+#: src/Models/Languages.vala:143
+msgctxt "Languages"
+msgid "Javanese"
+msgstr "javajčina"
+
+#: src/Models/Languages.vala:145
+msgctxt "Languages"
+msgid "Georgian"
+msgstr "Gruzínsky"
+
+#: src/Models/Languages.vala:146
+msgctxt "Languages"
+msgid "Kongo"
+msgstr "Konggo"
+
+#: src/Models/Languages.vala:147
+msgctxt "Languages"
+msgid "Kikuyu"
+msgstr "Kikuyu"
+
+#: src/Models/Languages.vala:148
+msgctxt "Languages"
+msgid "Kwanyama"
+msgstr "Kwanyamačina"
+
+#: src/Models/Languages.vala:149
+msgctxt "Languages"
+msgid "Kazakh"
+msgstr "kazaština"
+
+#: src/Models/Languages.vala:150
+msgctxt "Languages"
+msgid "Kalaallisut"
+msgstr "Kalaallisut"
+
+#: src/Models/Languages.vala:151
+msgctxt "Languages"
+msgid "Khmer"
+msgstr "Khmérčina"
+
+#: src/Models/Languages.vala:152
+msgctxt "Languages"
+msgid "Kannada"
+msgstr "kannadčina"
+
+#: src/Models/Languages.vala:153
+msgctxt "Languages"
+msgid "Korean"
+msgstr "kórejčina"
+
+#: src/Models/Languages.vala:154
+msgctxt "Languages"
+msgid "Kanuri"
+msgstr "Kanurijčina"
+
+#: src/Models/Languages.vala:155
+msgctxt "Languages"
+msgid "Kashmiri"
+msgstr "kašmírčina"
+
+#: src/Models/Languages.vala:156
+msgctxt "Languages"
+msgid "Kurdish"
+msgstr "Kurdský"
+
+#: src/Models/Languages.vala:157
+msgctxt "Languages"
+msgid "Komi"
+msgstr "Komijčina"
+
+#: src/Models/Languages.vala:158
+msgctxt "Languages"
+msgid "Cornish"
+msgstr "Kukurica"
+
+#: src/Models/Languages.vala:159
+msgctxt "Languages"
+msgid "Kirghiz"
+msgstr "Kirgizština"
+
+#: src/Models/Languages.vala:161
+msgctxt "Languages"
+msgid "Latin"
+msgstr "Latinský"
+
+#: src/Models/Languages.vala:162
+msgctxt "Languages"
+msgid "Luxembourgish"
+msgstr "Luxembursky"
+
+#: src/Models/Languages.vala:163
+msgctxt "Languages"
+msgid "Ganda"
+msgstr "Ganda"
+
+#: src/Models/Languages.vala:164
+msgctxt "Languages"
+msgid "Limburgish"
+msgstr "Limburgčina"
+
+#: src/Models/Languages.vala:165
+msgctxt "Languages"
+msgid "Lingala"
+msgstr "Lingala"
+
+#: src/Models/Languages.vala:166
+msgctxt "Languages"
+msgid "Lao"
+msgstr "Laosk"
+
+#: src/Models/Languages.vala:167
+msgctxt "Languages"
+msgid "Lithuanian"
+msgstr "Litovský"
+
+#: src/Models/Languages.vala:168
+msgctxt "Languages"
+msgid "Latvian"
+msgstr "Lotyš"
+
+#: src/Models/Languages.vala:170
+msgctxt "Languages"
+msgid "Malagasy"
+msgstr "Nečestný"
+
+#: src/Models/Languages.vala:171
+msgctxt "Languages"
+msgid "Marshallese"
+msgstr "Marsalský"
+
+#: src/Models/Languages.vala:172
+msgctxt "Languages"
+msgid "Maori"
+msgstr "Maorský"
+
+#: src/Models/Languages.vala:173
+msgctxt "Languages"
+msgid "Macedonian"
+msgstr "Macedónsky"
+
+#: src/Models/Languages.vala:174
+msgctxt "Languages"
+msgid "Malayalam"
+msgstr "Malajálam"
+
+#: src/Models/Languages.vala:175
+msgctxt "Languages"
+msgid "Mongolian"
+msgstr "Mongolský"
+
+#: src/Models/Languages.vala:176
+msgctxt "Languages"
+msgid "Marathi"
+msgstr "maráthčina"
+
+#: src/Models/Languages.vala:177
+msgctxt "Languages"
+msgid "Malay"
+msgstr "malajčina"
+
+#: src/Models/Languages.vala:178
+msgctxt "Languages"
+msgid "Maltese"
+msgstr "Maltský"
+
+#: src/Models/Languages.vala:179
+msgctxt "Languages"
+msgid "Burmese"
+msgstr "Barmský"
+
+#: src/Models/Languages.vala:181
+msgctxt "Languages"
+msgid "Nauru"
+msgstr "Nauru"
+
+#: src/Models/Languages.vala:182
+msgctxt "Languages"
+msgid "Norwegian Bokmal"
+msgstr "Nórsky Bokmal"
+
+#: src/Models/Languages.vala:183
+msgctxt "Languages"
+msgid "North Ndebele"
+msgstr "Severná Ndebele"
+
+#: src/Models/Languages.vala:184
+msgctxt "Languages"
+msgid "Nepali"
+msgstr "Nepálsky"
+
+#: src/Models/Languages.vala:185
+msgctxt "Languages"
+msgid "Ndonga"
+msgstr "Nonga"
+
+#: src/Models/Languages.vala:186
+msgctxt "Languages"
+msgid "Dutch"
+msgstr "Holanďan"
+
+#: src/Models/Languages.vala:187
+msgctxt "Languages"
+msgid "Norwegian Nynorsk"
+msgstr "Nórsky"
+
+#: src/Models/Languages.vala:188
+msgctxt "Languages"
+msgid "Norwegian"
+msgstr "Nórsky"
+
+#: src/Models/Languages.vala:189
+msgctxt "Languages"
+msgid "South Ndebele"
+msgstr "Južný Ndebele"
+
+#: src/Models/Languages.vala:190
+msgctxt "Languages"
+msgid "Navajo"
+msgstr "Navajsky"
+
+#: src/Models/Languages.vala:191
+msgctxt "Languages"
+msgid "Chichewa"
+msgstr "Chichewa"
+
+#: src/Models/Languages.vala:193
+msgctxt "Languages"
+msgid "Occitan"
+msgstr "Okcitan"
+
+#: src/Models/Languages.vala:194
+msgctxt "Languages"
+msgid "Ojibwa"
+msgstr "odžibwa"
+
+#: src/Models/Languages.vala:195
+msgctxt "Languages"
+msgid "Oromo"
+msgstr "Oromo"
+
+#: src/Models/Languages.vala:196
+msgctxt "Languages"
+msgid "Oriya"
+msgstr "Oriya"
+
+#: src/Models/Languages.vala:197
+msgctxt "Languages"
+msgid "Ossetian"
+msgstr "Osetčina"
+
+#: src/Models/Languages.vala:199
+msgctxt "Languages"
+msgid "Punjabi"
+msgstr "Pandžábčina"
+
+#: src/Models/Languages.vala:200
+msgctxt "Languages"
+msgid "Pali"
+msgstr "Pay"
+
+#: src/Models/Languages.vala:201
+msgctxt "Languages"
+msgid "Polish"
+msgstr "Leštiť"
+
+#: src/Models/Languages.vala:202
+msgctxt "Languages"
+msgid "Pashto"
+msgstr "Paštčina"
+
+#: src/Models/Languages.vala:203
+msgctxt "Languages"
+msgid "Portuguese"
+msgstr "Portugalský"
+
+#: src/Models/Languages.vala:205
+msgctxt "Languages"
+msgid "Quechua"
+msgstr "Quechua"
+
+#: src/Models/Languages.vala:207
+msgctxt "Languages"
+msgid "Romansh"
+msgstr "Rimans"
+
+#: src/Models/Languages.vala:208
+msgctxt "Languages"
+msgid "Rundi"
+msgstr "Rundčina"
+
+#: src/Models/Languages.vala:209
+msgctxt "Languages"
+msgid "Romanian"
+msgstr "Rumunský"
+
+#: src/Models/Languages.vala:210
+msgctxt "Languages"
+msgid "Russian"
+msgstr "Ruský"
+
+#: src/Models/Languages.vala:211
+msgctxt "Languages"
+msgid "Kinyarwanda"
+msgstr "rwandčina"
+
+#: src/Models/Languages.vala:213
+msgctxt "Languages"
+msgid "Sanskrit"
+msgstr "Sanskrit"
+
+#: src/Models/Languages.vala:214
+msgctxt "Languages"
+msgid "Sardinian"
+msgstr "Sardínsky"
+
+#: src/Models/Languages.vala:215
+msgctxt "Languages"
+msgid "Sindhi"
+msgstr "Sindhi"
+
+#: src/Models/Languages.vala:216
+msgctxt "Languages"
+msgid "Northern Sami"
+msgstr "Severný Sami"
+
+#: src/Models/Languages.vala:217
+msgctxt "Languages"
+msgid "Sango"
+msgstr "Sango"
+
+#: src/Models/Languages.vala:218
+msgctxt "Languages"
+msgid "Sinhala"
+msgstr "Sinhalčina"
+
+#: src/Models/Languages.vala:219
+msgctxt "Languages"
+msgid "Slovak"
+msgstr "Slovenský"
+
+#: src/Models/Languages.vala:220
+msgctxt "Languages"
+msgid "Slovenian"
+msgstr "Slovinský"
+
+#: src/Models/Languages.vala:221
+msgctxt "Languages"
+msgid "Samoan"
+msgstr "Samoan"
+
+#: src/Models/Languages.vala:222
+msgctxt "Languages"
+msgid "Shona"
+msgstr "Shona"
+
+#: src/Models/Languages.vala:223
+msgctxt "Languages"
+msgid "Somali"
+msgstr "Somálsky"
+
+#: src/Models/Languages.vala:224
+msgctxt "Languages"
+msgid "Albanian"
+msgstr "Albánsky"
+
+#: src/Models/Languages.vala:225
+msgctxt "Languages"
+msgid "Serbian"
+msgstr "Srbský"
+
+#: src/Models/Languages.vala:226
+msgctxt "Languages"
+msgid "Swati"
+msgstr "Swati"
+
+#: src/Models/Languages.vala:227
+msgctxt "Languages"
+msgid "Southern Sotho"
+msgstr "Južná Sotho"
+
+#: src/Models/Languages.vala:228
+msgctxt "Languages"
+msgid "Sundanese"
+msgstr "sundčina"
+
+#: src/Models/Languages.vala:229
+msgctxt "Languages"
+msgid "Swedish"
+msgstr "Švédsky"
+
+#: src/Models/Languages.vala:230
+msgctxt "Languages"
+msgid "Swahili"
+msgstr "Svalstvo"
+
+#: src/Models/Languages.vala:232
+msgctxt "Languages"
+msgid "Tamil"
+msgstr "Tamilský"
+
+#: src/Models/Languages.vala:233
+msgctxt "Languages"
+msgid "Telugu"
+msgstr "Telugu"
+
+#: src/Models/Languages.vala:234
+msgctxt "Languages"
+msgid "Tajik"
+msgstr "Tadžijik"
+
+#: src/Models/Languages.vala:235
+msgctxt "Languages"
+msgid "Thai"
+msgstr "Thajský"
+
+#: src/Models/Languages.vala:236
+msgctxt "Languages"
+msgid "Tigrinya"
+msgstr "Tigrinya"
+
+#: src/Models/Languages.vala:237
+msgctxt "Languages"
+msgid "Turkmen"
+msgstr "Turkmén"
+
+#: src/Models/Languages.vala:238
+msgctxt "Languages"
+msgid "Tagalog"
+msgstr "Tagalog"
+
+#: src/Models/Languages.vala:239
+msgctxt "Languages"
+msgid "Tswana"
+msgstr "Tswančina"
+
+#: src/Models/Languages.vala:240
+msgctxt "Languages"
+msgid "Tonga"
+msgstr "Tonga"
+
+#: src/Models/Languages.vala:241
+msgctxt "Languages"
+msgid "Turkish"
+msgstr "Turecký"
+
+#: src/Models/Languages.vala:242
+msgctxt "Languages"
+msgid "Tsonga"
+msgstr "Tsonga"
+
+#: src/Models/Languages.vala:243
+msgctxt "Languages"
+msgid "Tatar"
+msgstr "Tatar"
+
+#: src/Models/Languages.vala:244
+msgctxt "Languages"
+msgid "Twi"
+msgstr "Dvakrát"
+
+#: src/Models/Languages.vala:245
+msgctxt "Languages"
+msgid "Tahitian"
+msgstr "Tahitčina"
+
+#: src/Models/Languages.vala:247
+msgctxt "Languages"
+msgid "Uighur"
+msgstr "Ujguri"
+
+#: src/Models/Languages.vala:248
+msgctxt "Languages"
+msgid "Ukrainian"
+msgstr "Ukrajinský"
+
+#: src/Models/Languages.vala:249
+msgctxt "Languages"
+msgid "Urdu"
+msgstr "Urdu"
+
+#: src/Models/Languages.vala:250
+msgctxt "Languages"
+msgid "Uzbek"
+msgstr "Uzbek"
+
+#: src/Models/Languages.vala:252
+msgctxt "Languages"
+msgid "Venda"
+msgstr "Vendčina"
+
+#: src/Models/Languages.vala:253
+msgctxt "Languages"
+msgid "Vietnamese"
+msgstr "Vietnamský"
+
+#: src/Models/Languages.vala:254
+msgctxt "Languages"
+msgid "Volapuk"
+msgstr "Volapuk"
+
+#: src/Models/Languages.vala:256
+msgctxt "Languages"
+msgid "Walloon"
+msgstr "Valón"
+
+#: src/Models/Languages.vala:257
+msgctxt "Languages"
+msgid "Wolof"
+msgstr "Wolofčina"
+
+#: src/Models/Languages.vala:259
+msgctxt "Languages"
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: src/Models/Languages.vala:261
+msgctxt "Languages"
+msgid "Yiddish"
+msgstr "jidiš"
+
+#: src/Models/Languages.vala:262
+msgctxt "Languages"
+msgid "Yoruba"
+msgstr "Joruba"
+
+#: src/Models/Languages.vala:264
+msgctxt "Languages"
+msgid "Zhuang"
+msgstr "Čuangčina"
+
+#: src/Models/Languages.vala:265
+msgctxt "Languages"
+msgid "Chinese"
+msgstr "Čínsky"
+
+#: src/Models/Languages.vala:266
 msgctxt "Languages"
 msgid "Zulu"
 msgstr "Zulu"

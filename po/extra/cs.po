@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-31 02:10-0800\n"
+"POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-02-03 23:06+0000\n"
 "Last-Translator: technosf <535060+technosf@users.noreply.github.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/tuner/tuner-"
@@ -25,11 +25,11 @@ msgstr "Tuner"
 msgid "Internet Radio Player"
 msgstr "Přehrávač Internetového Rádia"
 
-msgid "Listen to Radio Stations all over the world"
-msgstr "Poslouchej rozhlasové stanice po celém světě"
+msgid "Listen to Radio Stations from around the world"
+msgstr ""
 
-msgid "Radio;Audio;Listen;Stations;Receiver;"
-msgstr "Rádio; Audio; Poslouchání; Stanice; Přijímač;"
+msgid "Radio;Receiver;FM;Talk;Sport;News"
+msgstr ""
 
 msgid "technosf"
 msgstr "čeština"
@@ -60,41 +60,61 @@ msgstr "Star stanic, které se vám líbí a navštívíte jejich webové strán
 msgid "Control Tuner from your volume indicator"
 msgstr "Ovládání Tuner z indikátoru hlasitosti"
 
-msgid "Tuner with dark theme, discovery"
-msgstr "Tuner s tmavým tématem, objev"
+msgid "Tuner with light theme, Discover"
+msgstr ""
 
-msgid "Tuner with light theme, starred stations"
-msgstr "Tuner s lehkým tématem, hvězdných stanic"
+msgid "Tuner stream metadata"
+msgstr ""
 
-msgid "Tuner search for stations"
-msgstr "Tuner hledání stanic"
+msgid "Tuner starred stations"
+msgstr ""
 
-msgid "Tuner saved searches"
-msgstr "Tuner zachránil hledání"
+msgid "Tuner translation languages"
+msgstr ""
 
-msgid "Tuner playing station metadata"
-msgstr "Tuner hrací stanice metadata"
+msgid "Tuner Jukebox and options popover"
+msgstr ""
 
-msgid "Tuner preferences"
-msgstr "Tunerové preference"
+msgid "Tuner genres and subgenres"
+msgstr ""
 
-msgid "Tuner station context information"
-msgstr "Informace o kontextových informacích Tuner"
+msgid "Tuner with dark theme, saved search"
+msgstr ""
 
-msgid "Tuner jukebox station shuffle"
-msgstr "Tuner jukebox stanice shuffle"
+msgid "Maintenance release:"
+msgstr ""
 
-msgid "Maintanance release:"
-msgstr "Údržba:"
+msgid "Refactored Elementry Granite library out as a module"
+msgstr ""
+
+msgid "Refactored namespaces"
+msgstr ""
+
+msgid "Fixed: play/stop buttons disabled #223"
+msgstr ""
+
+msgid "Fixed: Jukebox stops when tuning to a dead station #256"
+msgstr ""
+
+msgid "Disabled in-app language selection for non-debug and flatpak builds"
+msgstr ""
+
+msgid ""
+"Renamed the app to io.github.tuner_labs.tuner (see https://github.com/"
+"flathub/flathub/issues/7468)"
+msgstr ""
+
+msgid "Added 'en' into Language list as its the gettext default"
+msgstr ""
 
 msgid "Updated freedesktop platform from 24.08 to 25.08"
 msgstr "Aktualizováno bezplatnádesktop platforma od 24.08 do 25.08"
 
-msgid "Removed module vala as now included in freedesktop platform"
-msgstr "Odebrat modul vala, jak je nyní součástí platformy Freedesktop"
+msgid "Removed vala module as now included in freedesktop platform"
+msgstr ""
 
-msgid "Removed module libsoup as now included in freedesktop platform"
-msgstr "Odebrat modul libsoup, jak je nyní součástí platformy zdarmadesktop"
+msgid "Removed libsoup module as now included in freedesktop platform"
+msgstr ""
 
 msgid "Bumped libgee to 0.20.8"
 msgstr "Bumped libgee na 0.20.8"
@@ -105,8 +125,16 @@ msgstr "Opraveno některé znění, opravený typos"
 msgid "Updated translated strings and incorporated fresh translations"
 msgstr "Aktualizováno přeložené řetězce a začleněné čerstvé překlady"
 
-msgid "i18n - Broke out Country translation to separate module"
-msgstr "i18n - Broke ven Country překlad do samostatného modulu"
+msgid ""
+"Refactored Language change mechanism and applied translations to more UI "
+"elements"
+msgstr ""
+
+msgid "Refactored Icon layout and build, removing unused icon files"
+msgstr ""
+
+msgid "i18n - Broke out Country and Language translations to separate module"
+msgstr ""
 
 msgid ""
 "i18n - Added trad Chinese, Estonian, Romaian, Tamil and Latin American "
@@ -368,3 +396,45 @@ msgstr "Nové postranní menu s různými výběry a oblíbenými stanicemi."
 
 msgid "Initial release"
 msgstr "Počáteční verze"
+
+#~ msgid "Listen to Radio Stations all over the world"
+#~ msgstr "Poslouchej rozhlasové stanice po celém světě"
+
+#~ msgid "Radio;Audio;Listen;Stations;Receiver;"
+#~ msgstr "Rádio; Audio; Poslouchání; Stanice; Přijímač;"
+
+#~ msgid "Tuner with dark theme, discovery"
+#~ msgstr "Tuner s tmavým tématem, objev"
+
+#~ msgid "Tuner with light theme, starred stations"
+#~ msgstr "Tuner s lehkým tématem, hvězdných stanic"
+
+#~ msgid "Tuner search for stations"
+#~ msgstr "Tuner hledání stanic"
+
+#~ msgid "Tuner saved searches"
+#~ msgstr "Tuner zachránil hledání"
+
+#~ msgid "Tuner playing station metadata"
+#~ msgstr "Tuner hrací stanice metadata"
+
+#~ msgid "Tuner preferences"
+#~ msgstr "Tunerové preference"
+
+#~ msgid "Tuner station context information"
+#~ msgstr "Informace o kontextových informacích Tuner"
+
+#~ msgid "Tuner jukebox station shuffle"
+#~ msgstr "Tuner jukebox stanice shuffle"
+
+#~ msgid "Maintanance release:"
+#~ msgstr "Údržba:"
+
+#~ msgid "Removed module vala as now included in freedesktop platform"
+#~ msgstr "Odebrat modul vala, jak je nyní součástí platformy Freedesktop"
+
+#~ msgid "Removed module libsoup as now included in freedesktop platform"
+#~ msgstr "Odebrat modul libsoup, jak je nyní součástí platformy zdarmadesktop"
+
+#~ msgid "i18n - Broke out Country translation to separate module"
+#~ msgstr "i18n - Broke ven Country překlad do samostatného modulu"
