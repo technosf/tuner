@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-03-06 02:11-0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-03-06 10:25+0000\n"
 "Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
-"Language-Team: Arabic <https://hosted.weblate.org/projects/tuner/tuner-ui/"
-"ar/>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/tuner/tuner-ui/ar/"
+">\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -155,123 +155,123 @@ msgstr "لجنة حقوق الطفل"
 #.
 #. Display Assets
 #.
-#: src/Widgets/Display.vala:101
+#: src/Widgets/Display.vala:99
 msgid "Selections"
 msgstr "التحديد"
 
-#: src/Widgets/Display.vala:102
+#: src/Widgets/Display.vala:100
 msgid "Library"
 msgstr "مكتبة"
 
-#: src/Widgets/Display.vala:103
+#: src/Widgets/Display.vala:101
 msgid "Saved Searches"
 msgstr "عمليات البحث المحفوظة"
 
-#: src/Widgets/Display.vala:104
+#: src/Widgets/Display.vala:102
 msgid "Explore"
 msgstr "استكشف"
 
-#: src/Widgets/Display.vala:105
+#: src/Widgets/Display.vala:103
 msgid "Genres"
 msgstr "النوع"
 
-#: src/Widgets/Display.vala:106
+#: src/Widgets/Display.vala:104
 msgid "Subgenres"
 msgstr "المواد الفرعية"
 
-#: src/Widgets/Display.vala:107
+#: src/Widgets/Display.vala:105
 msgid "Eras"
 msgstr "العصور"
 
-#: src/Widgets/Display.vala:108
+#: src/Widgets/Display.vala:106
 msgid "Talk, News, Sport"
 msgstr "الحديث، الأخبار، الرياضة"
 
-#: src/Widgets/Display.vala:346
+#: src/Widgets/Display.vala:362
 msgid "Discover"
 msgstr "استكشف"
 
-#: src/Widgets/Display.vala:347
+#: src/Widgets/Display.vala:363
 msgid "Stations to Discover"
 msgstr "محطات للكشف"
 
-#: src/Widgets/Display.vala:350
+#: src/Widgets/Display.vala:366
 msgid "Discover more stations"
 msgstr "الكشف عن المزيد من المحطات"
 
-#: src/Widgets/Display.vala:367
+#: src/Widgets/Display.vala:383
 msgid "Trending"
 msgstr "مُتداول"
 
-#: src/Widgets/Display.vala:368
+#: src/Widgets/Display.vala:384
 msgid "Trending Stations in the last 24 hours"
 msgstr "محطات التصعيد في الـ 24 ساعة الأخيرة"
 
-#: src/Widgets/Display.vala:382
+#: src/Widgets/Display.vala:398
 msgid "Popular"
 msgstr "شائع"
 
-#: src/Widgets/Display.vala:383
+#: src/Widgets/Display.vala:399
 msgid "Most listened to Stations in the last 24 hours"
 msgstr "معظمهم استمعوا للمحطة خلال الـ 24 ساعة الماضية"
 
-#: src/Widgets/Display.vala:418 src/Widgets/Display.vala:419
+#: src/Widgets/Display.vala:434 src/Widgets/Display.vala:435
 msgid "Starred by You"
 msgstr "نجمت من قبلك"
 
-#: src/Widgets/Display.vala:443
+#: src/Widgets/Display.vala:459
 msgid "Latest Search"
 msgstr "آخر بحث"
 
-#: src/Widgets/Display.vala:444
+#: src/Widgets/Display.vala:460
 msgid "Search Results"
 msgstr "نتائج البحث"
 
-#: src/Widgets/Display.vala:447
+#: src/Widgets/Display.vala:463
 msgid "Save this search"
 msgstr "أنقذ هذا البحث"
 
-#: src/Widgets/Display.vala:578
+#: src/Widgets/Display.vala:579
 msgid "Jukebox"
 msgstr "صندوق الموسيقى"
 
-#: src/Widgets/Display.vala:580
+#: src/Widgets/Display.vala:581
 #, c-format
 msgid "Double click to shuffle through %1$u stations"
 msgstr "انقر نقرًا مزدوجًا للتنقل بين %1$u محطة"
 
-#: src/Widgets/Display.vala:581
+#: src/Widgets/Display.vala:582
 msgid "one, every ten minutes, for %2$u days"
 msgstr "واحدة كل عشر دقائق، لمدة %2$u يومًا"
 
-#: src/Widgets/Display.vala:646
+#: src/Widgets/Display.vala:647
 msgid "Saved Search"
 msgstr "عملية البحث المحفوظة"
 
-#: src/Widgets/Display.vala:648
+#: src/Widgets/Display.vala:649
 msgid "Remove this saved search"
 msgstr "إزالة هذا البحث المنقذ"
 
-#: src/Widgets/HeaderBar.vala:66
+#: src/Widgets/HeaderBar.vala:64
 msgid "Stream Metadata"
 msgstr "بيانات تعريف البث"
 
 #. 20px padding on the right
 #. 20px padding on the right
 #. 20px padding on the right
-#: src/Widgets/HeaderBar.vala:148 src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:152 src/Widgets/HeaderBar.vala:158
 msgid "Data Provider"
 msgstr "مقدِّم البيانات"
 
-#: src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:158
 msgid "Stations"
 msgstr "المحطات"
 
-#: src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:158
 msgid "Tags"
 msgstr "العلامات"
 
-#: src/Widgets/HeaderBar.vala:176 src/Widgets/StationContextMenu.vala:171
+#: src/Widgets/HeaderBar.vala:180 src/Widgets/StationContextMenu.vala:171
 msgid "Star this station"
 msgstr "نجم هذه المحطة"
 
@@ -283,15 +283,15 @@ msgstr "نجم هذه المحطة"
 #. RHS Controls
 #.
 #. Search entry
-#: src/Widgets/HeaderBar.vala:197
+#: src/Widgets/HeaderBar.vala:201
 msgid "Station Search"
 msgstr "محطة البحث"
 
-#: src/Widgets/HeaderBar.vala:214
+#: src/Widgets/HeaderBar.vala:217
 msgid "Preferences"
 msgstr "التفضيلات"
 
-#: src/Widgets/HeaderBar.vala:218
+#: src/Widgets/HeaderBar.vala:221
 msgid "History"
 msgstr "التاريخ"
 
@@ -385,54 +385,55 @@ msgstr ""
 "دورة سريعة من خلال البيانات الفوقية من مجرى اللعب إذا تم توفير معلومات عن "
 "مسار العرض"
 
-#: src/Widgets/PreferencesPopover.vala:98
+#: src/Widgets/PreferencesPopover.vala:102
 msgid "Language"
 msgstr "لغة"
 
-#: src/Widgets/PreferencesPopover.vala:99
+#: src/Widgets/PreferencesPopover.vala:103
 #, fuzzy
 msgid "Language changes restart Tuner"
 msgstr "Language changes restart Tuner"
 
+#. end language selection
 #. Export starred
-#: src/Widgets/PreferencesPopover.vala:104
+#: src/Widgets/PreferencesPopover.vala:111
 msgid "Export Starred Stations to Playlist"
 msgstr "تصدير المحطات المميزة إلى قائمة التشغيل"
 
 #. Import starred
-#: src/Widgets/PreferencesPopover.vala:114
+#: src/Widgets/PreferencesPopover.vala:121
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "محطة استيراد UUIDs as Starred Stations"
 
 #. Create the file chooser dialog for saving the exported playlist
-#: src/Widgets/PreferencesPopover.vala:190
+#: src/Widgets/PreferencesPopover.vala:205
 msgid "Save File"
 msgstr "أنقذ (فايف)"
 
-#: src/Widgets/PreferencesPopover.vala:193
-#: src/Widgets/PreferencesPopover.vala:231
+#: src/Widgets/PreferencesPopover.vala:208
+#: src/Widgets/PreferencesPopover.vala:246
 msgid "_Cancel"
 msgstr "أ_لغِ"
 
-#: src/Widgets/PreferencesPopover.vala:194
+#: src/Widgets/PreferencesPopover.vala:209
 msgid "_Save"
 msgstr "_حفظ"
 
 #. warning("Error: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:215
+#: src/Widgets/PreferencesPopover.vala:230
 msgid "Error"
 msgstr "خطأ"
 
-#: src/Widgets/PreferencesPopover.vala:228
+#: src/Widgets/PreferencesPopover.vala:243
 msgid "Choose a file"
 msgstr "اختيار مِلَفّ"
 
-#: src/Widgets/PreferencesPopover.vala:232
+#: src/Widgets/PreferencesPopover.vala:247
 msgid "_Open"
 msgstr "ا_فتح"
 
 #. warning("Error reading file: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:255
+#: src/Widgets/PreferencesPopover.vala:270
 msgid "Error reading file"
 msgstr "خطأ في قراءة الملف"
 
@@ -475,11 +476,7 @@ msgid ""
 "window."
 msgstr "انقر هنا لاستئناف النافذة لترك (تونر) وتوقف عن العزف وإغلاق النافذة."
 
-#: src/Widgets/Window.vala:247
-msgid "Error while trying to autoplay, aborting…"
-msgstr "أخطأ في محاولة التأقلم، والإجهاض.."
-
-#: src/Widgets/Window.vala:291
+#: src/Widgets/Window.vala:318
 msgid "Stop Playback requested"
 msgstr "توقف بلايباك طلب"
 
@@ -502,6 +499,9 @@ msgstr "لا توجد محطات"
 #: src/Widgets/base/StationListBox.vala:157
 msgid "Please try a different search term."
 msgstr "رجاءً حاولْ a مصطلح بحث مختلف."
+
+#~ msgid "Error while trying to autoplay, aborting…"
+#~ msgstr "أخطأ في محاولة التأقلم، والإجهاض.."
 
 #, fuzzy
 #~ msgid "Restart playing after a network interruption"
