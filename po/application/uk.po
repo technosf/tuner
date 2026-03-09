@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-03-06 02:11-0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-03-06 10:24+0000\n"
 "Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
@@ -155,123 +155,123 @@ msgstr "КАР"
 #.
 #. Display Assets
 #.
-#: src/Widgets/Display.vala:101
+#: src/Widgets/Display.vala:99
 msgid "Selections"
 msgstr "Вибірки"
 
-#: src/Widgets/Display.vala:102
+#: src/Widgets/Display.vala:100
 msgid "Library"
 msgstr "Бібліотека"
 
-#: src/Widgets/Display.vala:103
+#: src/Widgets/Display.vala:101
 msgid "Saved Searches"
 msgstr "Збережені пошуки"
 
-#: src/Widgets/Display.vala:104
+#: src/Widgets/Display.vala:102
 msgid "Explore"
 msgstr "Цікаве"
 
-#: src/Widgets/Display.vala:105
+#: src/Widgets/Display.vala:103
 msgid "Genres"
 msgstr "Жанри"
 
-#: src/Widgets/Display.vala:106
+#: src/Widgets/Display.vala:104
 msgid "Subgenres"
 msgstr "Субгенти"
 
-#: src/Widgets/Display.vala:107
+#: src/Widgets/Display.vala:105
 msgid "Eras"
 msgstr "Еразмус"
 
-#: src/Widgets/Display.vala:108
+#: src/Widgets/Display.vala:106
 msgid "Talk, News, Sport"
 msgstr "Розмова, Новини, Спорт"
 
-#: src/Widgets/Display.vala:346
+#: src/Widgets/Display.vala:362
 msgid "Discover"
 msgstr "Відкрийте для себе"
 
-#: src/Widgets/Display.vala:347
+#: src/Widgets/Display.vala:363
 msgid "Stations to Discover"
 msgstr "Станції для відкриття"
 
-#: src/Widgets/Display.vala:350
+#: src/Widgets/Display.vala:366
 msgid "Discover more stations"
 msgstr "Дізнатися більше станцій"
 
-#: src/Widgets/Display.vala:367
+#: src/Widgets/Display.vala:383
 msgid "Trending"
 msgstr "В тренді"
 
-#: src/Widgets/Display.vala:368
+#: src/Widgets/Display.vala:384
 msgid "Trending Stations in the last 24 hours"
 msgstr "Модні станції в останні 24 години"
 
-#: src/Widgets/Display.vala:382
+#: src/Widgets/Display.vala:398
 msgid "Popular"
 msgstr "Популярне"
 
-#: src/Widgets/Display.vala:383
+#: src/Widgets/Display.vala:399
 msgid "Most listened to Stations in the last 24 hours"
 msgstr "Найпопулярніші станції в останні 24 години"
 
-#: src/Widgets/Display.vala:418 src/Widgets/Display.vala:419
+#: src/Widgets/Display.vala:434 src/Widgets/Display.vala:435
 msgid "Starred by You"
 msgstr "Ви"
 
-#: src/Widgets/Display.vala:443
+#: src/Widgets/Display.vala:459
 msgid "Latest Search"
 msgstr "Пошук"
 
-#: src/Widgets/Display.vala:444
+#: src/Widgets/Display.vala:460
 msgid "Search Results"
 msgstr "Результати пошуку"
 
-#: src/Widgets/Display.vala:447
+#: src/Widgets/Display.vala:463
 msgid "Save this search"
 msgstr "Збережіть цей пошук"
 
-#: src/Widgets/Display.vala:578
+#: src/Widgets/Display.vala:579
 msgid "Jukebox"
 msgstr "Юкбокс"
 
-#: src/Widgets/Display.vala:580
+#: src/Widgets/Display.vala:581
 #, c-format
 msgid "Double click to shuffle through %1$u stations"
 msgstr "Двічі клацніть, щоб перемикати між %1$u станціями"
 
-#: src/Widgets/Display.vala:581
+#: src/Widgets/Display.vala:582
 msgid "one, every ten minutes, for %2$u days"
 msgstr "один раз кожні десять хвилин протягом %2$u днів"
 
-#: src/Widgets/Display.vala:646
+#: src/Widgets/Display.vala:647
 msgid "Saved Search"
 msgstr "Збережений пошук"
 
-#: src/Widgets/Display.vala:648
+#: src/Widgets/Display.vala:649
 msgid "Remove this saved search"
 msgstr "Видалити цей збережений пошук"
 
-#: src/Widgets/HeaderBar.vala:66
+#: src/Widgets/HeaderBar.vala:64
 msgid "Stream Metadata"
 msgstr "Статус на сервери"
 
 #. 20px padding on the right
 #. 20px padding on the right
 #. 20px padding on the right
-#: src/Widgets/HeaderBar.vala:148 src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:152 src/Widgets/HeaderBar.vala:158
 msgid "Data Provider"
 msgstr "Постачальник даних"
 
-#: src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:158
 msgid "Stations"
 msgstr "Станції"
 
-#: src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:158
 msgid "Tags"
 msgstr "Теґи"
 
-#: src/Widgets/HeaderBar.vala:176 src/Widgets/StationContextMenu.vala:171
+#: src/Widgets/HeaderBar.vala:180 src/Widgets/StationContextMenu.vala:171
 msgid "Star this station"
 msgstr "Зірка цієї станції"
 
@@ -283,15 +283,15 @@ msgstr "Зірка цієї станції"
 #. RHS Controls
 #.
 #. Search entry
-#: src/Widgets/HeaderBar.vala:197
+#: src/Widgets/HeaderBar.vala:201
 msgid "Station Search"
 msgstr "Пошук станції"
 
-#: src/Widgets/HeaderBar.vala:214
+#: src/Widgets/HeaderBar.vala:217
 msgid "Preferences"
 msgstr "Властивості"
 
-#: src/Widgets/HeaderBar.vala:218
+#: src/Widgets/HeaderBar.vala:221
 msgid "History"
 msgstr "Історія"
 
@@ -388,54 +388,55 @@ msgstr ""
 "Швидкий цикл за допомогою метаданих з потокового передавання, якщо "
 "активовано інформацію про потік"
 
-#: src/Widgets/PreferencesPopover.vala:98
+#: src/Widgets/PreferencesPopover.vala:102
 msgid "Language"
 msgstr "Мова"
 
-#: src/Widgets/PreferencesPopover.vala:99
+#: src/Widgets/PreferencesPopover.vala:103
 #, fuzzy
 msgid "Language changes restart Tuner"
 msgstr "Language changes restart Tuner"
 
+#. end language selection
 #. Export starred
-#: src/Widgets/PreferencesPopover.vala:104
+#: src/Widgets/PreferencesPopover.vala:111
 msgid "Export Starred Stations to Playlist"
 msgstr "Експортувати Starred Stations для Playlist"
 
 #. Import starred
-#: src/Widgets/PreferencesPopover.vala:114
+#: src/Widgets/PreferencesPopover.vala:121
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Імпортна станція UUIDs як Starred Stations"
 
 #. Create the file chooser dialog for saving the exported playlist
-#: src/Widgets/PreferencesPopover.vala:190
+#: src/Widgets/PreferencesPopover.vala:205
 msgid "Save File"
 msgstr "Зберегти файл"
 
-#: src/Widgets/PreferencesPopover.vala:193
-#: src/Widgets/PreferencesPopover.vala:231
+#: src/Widgets/PreferencesPopover.vala:208
+#: src/Widgets/PreferencesPopover.vala:246
 msgid "_Cancel"
 msgstr "_Скасувати"
 
-#: src/Widgets/PreferencesPopover.vala:194
+#: src/Widgets/PreferencesPopover.vala:209
 msgid "_Save"
 msgstr "_Зберегти"
 
 #. warning("Error: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:215
+#: src/Widgets/PreferencesPopover.vala:230
 msgid "Error"
 msgstr "Помилка"
 
-#: src/Widgets/PreferencesPopover.vala:228
+#: src/Widgets/PreferencesPopover.vala:243
 msgid "Choose a file"
 msgstr "Обрати файл"
 
-#: src/Widgets/PreferencesPopover.vala:232
+#: src/Widgets/PreferencesPopover.vala:247
 msgid "_Open"
 msgstr "_Відкрити"
 
 #. warning("Error reading file: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:255
+#: src/Widgets/PreferencesPopover.vala:270
 msgid "Error reading file"
 msgstr "Помилка читання файлу"
 
@@ -480,11 +481,7 @@ msgstr ""
 "Натисніть тут, щоб відновити вікно. Щоб кинути Тюнер, пауза відтворення і "
 "закрити вікно."
 
-#: src/Widgets/Window.vala:247
-msgid "Error while trying to autoplay, aborting…"
-msgstr "Помилка при спробі автоплея, аборт .."
-
-#: src/Widgets/Window.vala:291
+#: src/Widgets/Window.vala:318
 msgid "Stop Playback requested"
 msgstr "Стоп Playback запитав"
 
@@ -507,6 +504,9 @@ msgstr "Станцій не знайдено"
 #: src/Widgets/base/StationListBox.vala:157
 msgid "Please try a different search term."
 msgstr "Будь ласка, спробуйте інший термін пошуку."
+
+#~ msgid "Error while trying to autoplay, aborting…"
+#~ msgstr "Помилка при спробі автоплея, аборт .."
 
 #, fuzzy
 #~ msgid "Restart playing after a network interruption"

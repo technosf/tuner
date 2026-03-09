@@ -9,12 +9,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
-"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-03-06 02:11-0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-03-06 10:25+0000\n"
 "Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-ui/"
-"fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-ui/fr/"
+">\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -156,123 +156,123 @@ msgstr "Possède CRC"
 #.
 #. Display Assets
 #.
-#: src/Widgets/Display.vala:101
+#: src/Widgets/Display.vala:99
 msgid "Selections"
 msgstr "Sélection"
 
-#: src/Widgets/Display.vala:102
+#: src/Widgets/Display.vala:100
 msgid "Library"
 msgstr "Bibliothèque"
 
-#: src/Widgets/Display.vala:103
+#: src/Widgets/Display.vala:101
 msgid "Saved Searches"
 msgstr "Recherches sauvegardées"
 
-#: src/Widgets/Display.vala:104
+#: src/Widgets/Display.vala:102
 msgid "Explore"
 msgstr "Explorer"
 
-#: src/Widgets/Display.vala:105
+#: src/Widgets/Display.vala:103
 msgid "Genres"
 msgstr "Genres"
 
-#: src/Widgets/Display.vala:106
+#: src/Widgets/Display.vala:104
 msgid "Subgenres"
 msgstr "Sous-genres"
 
-#: src/Widgets/Display.vala:107
+#: src/Widgets/Display.vala:105
 msgid "Eras"
 msgstr "Années"
 
-#: src/Widgets/Display.vala:108
+#: src/Widgets/Display.vala:106
 msgid "Talk, News, Sport"
 msgstr "Discussions, actus, sport"
 
-#: src/Widgets/Display.vala:346
+#: src/Widgets/Display.vala:362
 msgid "Discover"
 msgstr "Découvrir"
 
-#: src/Widgets/Display.vala:347
+#: src/Widgets/Display.vala:363
 msgid "Stations to Discover"
 msgstr "Stations à découvrir"
 
-#: src/Widgets/Display.vala:350
+#: src/Widgets/Display.vala:366
 msgid "Discover more stations"
 msgstr "Découvrir plus de stations"
 
-#: src/Widgets/Display.vala:367
+#: src/Widgets/Display.vala:383
 msgid "Trending"
 msgstr "Tendances"
 
-#: src/Widgets/Display.vala:368
+#: src/Widgets/Display.vala:384
 msgid "Trending Stations in the last 24 hours"
 msgstr "Stations tendances ces dernières 24 heures"
 
-#: src/Widgets/Display.vala:382
+#: src/Widgets/Display.vala:398
 msgid "Popular"
 msgstr "Populaire"
 
-#: src/Widgets/Display.vala:383
+#: src/Widgets/Display.vala:399
 msgid "Most listened to Stations in the last 24 hours"
 msgstr "Stations les plus écoutées ces dernières 24 heures"
 
-#: src/Widgets/Display.vala:418 src/Widgets/Display.vala:419
+#: src/Widgets/Display.vala:434 src/Widgets/Display.vala:435
 msgid "Starred by You"
 msgstr "Vos favorites"
 
-#: src/Widgets/Display.vala:443
+#: src/Widgets/Display.vala:459
 msgid "Latest Search"
 msgstr "Dernière recherche"
 
-#: src/Widgets/Display.vala:444
+#: src/Widgets/Display.vala:460
 msgid "Search Results"
 msgstr "Résultats de recherche"
 
-#: src/Widgets/Display.vala:447
+#: src/Widgets/Display.vala:463
 msgid "Save this search"
 msgstr "Sauvegarder cette recherche"
 
-#: src/Widgets/Display.vala:578
+#: src/Widgets/Display.vala:579
 msgid "Jukebox"
 msgstr "Jukebox"
 
-#: src/Widgets/Display.vala:580
+#: src/Widgets/Display.vala:581
 #, c-format
 msgid "Double click to shuffle through %1$u stations"
 msgstr "Double-cliquez pour parcourir à travers %1$u stations"
 
-#: src/Widgets/Display.vala:581
+#: src/Widgets/Display.vala:582
 msgid "one, every ten minutes, for %2$u days"
 msgstr "une, toutes les dix minutes, durant %2$u jours"
 
-#: src/Widgets/Display.vala:646
+#: src/Widgets/Display.vala:647
 msgid "Saved Search"
 msgstr "Recherche sauvegardée"
 
-#: src/Widgets/Display.vala:648
+#: src/Widgets/Display.vala:649
 msgid "Remove this saved search"
 msgstr "Retirer cette recherche enregistrée"
 
-#: src/Widgets/HeaderBar.vala:66
+#: src/Widgets/HeaderBar.vala:64
 msgid "Stream Metadata"
 msgstr "Métadonnées de flux"
 
 #. 20px padding on the right
 #. 20px padding on the right
 #. 20px padding on the right
-#: src/Widgets/HeaderBar.vala:148 src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:152 src/Widgets/HeaderBar.vala:158
 msgid "Data Provider"
 msgstr "Fournisseur de données"
 
-#: src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:158
 msgid "Stations"
 msgstr "Stations"
 
-#: src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:158
 msgid "Tags"
 msgstr "Étiquettes"
 
-#: src/Widgets/HeaderBar.vala:176 src/Widgets/StationContextMenu.vala:171
+#: src/Widgets/HeaderBar.vala:180 src/Widgets/StationContextMenu.vala:171
 msgid "Star this station"
 msgstr "Ajouter aux favorites"
 
@@ -284,15 +284,15 @@ msgstr "Ajouter aux favorites"
 #. RHS Controls
 #.
 #. Search entry
-#: src/Widgets/HeaderBar.vala:197
+#: src/Widgets/HeaderBar.vala:201
 msgid "Station Search"
 msgstr "Recherche de station"
 
-#: src/Widgets/HeaderBar.vala:214
+#: src/Widgets/HeaderBar.vala:217
 msgid "Preferences"
 msgstr "Préférences"
 
-#: src/Widgets/HeaderBar.vala:218
+#: src/Widgets/HeaderBar.vala:221
 msgid "History"
 msgstr "Historique"
 
@@ -391,54 +391,55 @@ msgstr ""
 "Parcourir rapidement les métadonnées du flux en cours de lecture si les "
 "informations de flux sont activées"
 
-#: src/Widgets/PreferencesPopover.vala:98
+#: src/Widgets/PreferencesPopover.vala:102
 msgid "Language"
 msgstr "Langue"
 
-#: src/Widgets/PreferencesPopover.vala:99
+#: src/Widgets/PreferencesPopover.vala:103
 #, fuzzy
 msgid "Language changes restart Tuner"
 msgstr "Language changes restart Tuner"
 
+#. end language selection
 #. Export starred
-#: src/Widgets/PreferencesPopover.vala:104
+#: src/Widgets/PreferencesPopover.vala:111
 msgid "Export Starred Stations to Playlist"
 msgstr "Exporter stations étoilées vers playlist"
 
 #. Import starred
-#: src/Widgets/PreferencesPopover.vala:114
+#: src/Widgets/PreferencesPopover.vala:121
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Importer des UUID de stations en tant que stations favorites"
 
 #. Create the file chooser dialog for saving the exported playlist
-#: src/Widgets/PreferencesPopover.vala:190
+#: src/Widgets/PreferencesPopover.vala:205
 msgid "Save File"
 msgstr "Fichier de sauvegarde"
 
-#: src/Widgets/PreferencesPopover.vala:193
-#: src/Widgets/PreferencesPopover.vala:231
+#: src/Widgets/PreferencesPopover.vala:208
+#: src/Widgets/PreferencesPopover.vala:246
 msgid "_Cancel"
 msgstr "_Annuler"
 
-#: src/Widgets/PreferencesPopover.vala:194
+#: src/Widgets/PreferencesPopover.vala:209
 msgid "_Save"
 msgstr "_Sauvegarder"
 
 #. warning("Error: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:215
+#: src/Widgets/PreferencesPopover.vala:230
 msgid "Error"
 msgstr "Erreur"
 
-#: src/Widgets/PreferencesPopover.vala:228
+#: src/Widgets/PreferencesPopover.vala:243
 msgid "Choose a file"
 msgstr "Choisir un fichier"
 
-#: src/Widgets/PreferencesPopover.vala:232
+#: src/Widgets/PreferencesPopover.vala:247
 msgid "_Open"
 msgstr "_Ouvrir"
 
 #. warning("Error reading file: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:255
+#: src/Widgets/PreferencesPopover.vala:270
 msgid "Error reading file"
 msgstr "Erreur de lecture du fichier"
 
@@ -483,11 +484,7 @@ msgstr ""
 "Cliquez ici pour reprendre la fenêtre. Pour quitter Tuner, mettez en pause "
 "la lecture et fermez la fenêtre."
 
-#: src/Widgets/Window.vala:247
-msgid "Error while trying to autoplay, aborting…"
-msgstr "Erreur lors de la tentative de lecture automatique, interruption…"
-
-#: src/Widgets/Window.vala:291
+#: src/Widgets/Window.vala:318
 msgid "Stop Playback requested"
 msgstr "Arrêter la lecture demandée"
 
@@ -510,6 +507,9 @@ msgstr "Aucune station trouvée"
 #: src/Widgets/base/StationListBox.vala:157
 msgid "Please try a different search term."
 msgstr "Veuillez essayer une autre recherche."
+
+#~ msgid "Error while trying to autoplay, aborting…"
+#~ msgstr "Erreur lors de la tentative de lecture automatique, interruption…"
 
 #, fuzzy
 #~ msgid "Restart playing after a network interruption"

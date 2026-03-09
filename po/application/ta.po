@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
-"POT-Creation-Date: 2026-03-06 02:11-0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-03-06 10:25+0000\n"
 "Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/tuner/tuner-ui/ta/>"
-"\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/tuner/tuner-ui/ta/"
+">\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -173,133 +173,133 @@ msgstr "Has CRC"
 #.
 #. Display Assets
 #.
-#: src/Widgets/Display.vala:101
+#: src/Widgets/Display.vala:99
 msgid "Selections"
 msgstr "தேர்ந்தெடுக்கப்பட்டது"
 
-#: src/Widgets/Display.vala:102
+#: src/Widgets/Display.vala:100
 msgid "Library"
 msgstr "நூலகம்"
 
-#: src/Widgets/Display.vala:103
+#: src/Widgets/Display.vala:101
 msgid "Saved Searches"
 msgstr "சேமித்த தேடல்கள்"
 
-#: src/Widgets/Display.vala:104
+#: src/Widgets/Display.vala:102
 msgid "Explore"
 msgstr "ஆராய்தல்"
 
-#: src/Widgets/Display.vala:105
+#: src/Widgets/Display.vala:103
 msgid "Genres"
 msgstr "வகைகள்"
 
-#: src/Widgets/Display.vala:106
+#: src/Widgets/Display.vala:104
 #, fuzzy
 msgid "Subgenres"
 msgstr "Subgenres"
 
-#: src/Widgets/Display.vala:107
+#: src/Widgets/Display.vala:105
 msgid "Eras"
 msgstr "காலங்கள்"
 
-#: src/Widgets/Display.vala:108
+#: src/Widgets/Display.vala:106
 msgid "Talk, News, Sport"
 msgstr "பேச்சு, செய்திகள், விளையாட்டு"
 
-#: src/Widgets/Display.vala:346
+#: src/Widgets/Display.vala:362
 msgid "Discover"
 msgstr "கண்டுபிடி"
 
-#: src/Widgets/Display.vala:347
+#: src/Widgets/Display.vala:363
 #, fuzzy
 msgid "Stations to Discover"
 msgstr "Stations to Discover"
 
-#: src/Widgets/Display.vala:350
+#: src/Widgets/Display.vala:366
 #, fuzzy
 msgid "Discover more stations"
 msgstr "Discover more stations"
 
-#: src/Widgets/Display.vala:367
+#: src/Widgets/Display.vala:383
 msgid "Trending"
 msgstr "ட்ரெண்டிங்"
 
-#: src/Widgets/Display.vala:368
+#: src/Widgets/Display.vala:384
 msgid "Trending Stations in the last 24 hours"
 msgstr "கடந்த 24 மணி நேரத்தில் பிரபலமாகி வரும் நிலையங்கள்"
 
-#: src/Widgets/Display.vala:382
+#: src/Widgets/Display.vala:398
 msgid "Popular"
 msgstr "பிரபலமான"
 
-#: src/Widgets/Display.vala:383
+#: src/Widgets/Display.vala:399
 #, fuzzy
 msgid "Most listened to Stations in the last 24 hours"
 msgstr "Most listened to Stations in the last 24 hours"
 
-#: src/Widgets/Display.vala:418 src/Widgets/Display.vala:419
+#: src/Widgets/Display.vala:434 src/Widgets/Display.vala:435
 msgid "Starred by You"
 msgstr "உங்களால் நட்சத்திரமிடப்பட்டது"
 
-#: src/Widgets/Display.vala:443
+#: src/Widgets/Display.vala:459
 #, fuzzy
 msgid "Latest Search"
 msgstr "Latest Search"
 
-#: src/Widgets/Display.vala:444
+#: src/Widgets/Display.vala:460
 msgid "Search Results"
 msgstr "முடிவுகளைத் தேடு"
 
-#: src/Widgets/Display.vala:447
+#: src/Widgets/Display.vala:463
 #, fuzzy
 msgid "Save this search"
 msgstr "Save this search"
 
-#: src/Widgets/Display.vala:578
+#: src/Widgets/Display.vala:579
 msgid "Jukebox"
 msgstr "ஜூக்பாக்ஸ்"
 
-#: src/Widgets/Display.vala:580
+#: src/Widgets/Display.vala:581
 #, fuzzy, c-format
 msgid "Double click to shuffle through %1$u stations"
 msgstr "Double click to shuffle through %1$u stations"
 
-#: src/Widgets/Display.vala:581
+#: src/Widgets/Display.vala:582
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
 
-#: src/Widgets/Display.vala:646
+#: src/Widgets/Display.vala:647
 #, fuzzy
 msgid "Saved Search"
 msgstr "Saved Search"
 
-#: src/Widgets/Display.vala:648
+#: src/Widgets/Display.vala:649
 #, fuzzy
 msgid "Remove this saved search"
 msgstr "Remove this saved search"
 
-#: src/Widgets/HeaderBar.vala:66
+#: src/Widgets/HeaderBar.vala:64
 msgid "Stream Metadata"
 msgstr "ஸ்ட்ரீம் மெட்டாடேட்டா"
 
 #. 20px padding on the right
 #. 20px padding on the right
 #. 20px padding on the right
-#: src/Widgets/HeaderBar.vala:148 src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:152 src/Widgets/HeaderBar.vala:158
 #, fuzzy
 msgid "Data Provider"
 msgstr "Data Provider"
 
-#: src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:158
 msgid "Stations"
 msgstr "நிலையங்கள்"
 
-#: src/Widgets/HeaderBar.vala:154
+#: src/Widgets/HeaderBar.vala:158
 msgid "Tags"
 msgstr "குறிச்சொற்கள்"
 
-#: src/Widgets/HeaderBar.vala:176 src/Widgets/StationContextMenu.vala:171
+#: src/Widgets/HeaderBar.vala:180 src/Widgets/StationContextMenu.vala:171
 #, fuzzy
 msgid "Star this station"
 msgstr "Star this station"
@@ -312,16 +312,16 @@ msgstr "Star this station"
 #. RHS Controls
 #.
 #. Search entry
-#: src/Widgets/HeaderBar.vala:197
+#: src/Widgets/HeaderBar.vala:201
 #, fuzzy
 msgid "Station Search"
 msgstr "Station Search"
 
-#: src/Widgets/HeaderBar.vala:214
+#: src/Widgets/HeaderBar.vala:217
 msgid "Preferences"
 msgstr "விருப்பத்தேர்வுகள்"
 
-#: src/Widgets/HeaderBar.vala:218
+#: src/Widgets/HeaderBar.vala:221
 msgid "History"
 msgstr "வரலாறு"
 
@@ -427,56 +427,57 @@ msgstr ""
 "Fast cycle through the metadata from the playing stream if show stream info "
 "is enabled"
 
-#: src/Widgets/PreferencesPopover.vala:98
+#: src/Widgets/PreferencesPopover.vala:102
 msgid "Language"
 msgstr "மொழி"
 
-#: src/Widgets/PreferencesPopover.vala:99
+#: src/Widgets/PreferencesPopover.vala:103
 #, fuzzy
 msgid "Language changes restart Tuner"
 msgstr "Language changes restart Tuner"
 
+#. end language selection
 #. Export starred
-#: src/Widgets/PreferencesPopover.vala:104
+#: src/Widgets/PreferencesPopover.vala:111
 #, fuzzy
 msgid "Export Starred Stations to Playlist"
 msgstr "Export Starred Stations to Playlist"
 
 #. Import starred
-#: src/Widgets/PreferencesPopover.vala:114
+#: src/Widgets/PreferencesPopover.vala:121
 #, fuzzy
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "Import Station UUIDs as Starred Stations"
 
 #. Create the file chooser dialog for saving the exported playlist
-#: src/Widgets/PreferencesPopover.vala:190
+#: src/Widgets/PreferencesPopover.vala:205
 msgid "Save File"
 msgstr "கோப்பை சேமி"
 
-#: src/Widgets/PreferencesPopover.vala:193
-#: src/Widgets/PreferencesPopover.vala:231
+#: src/Widgets/PreferencesPopover.vala:208
+#: src/Widgets/PreferencesPopover.vala:246
 msgid "_Cancel"
 msgstr "_ரத்துசெய்"
 
-#: src/Widgets/PreferencesPopover.vala:194
+#: src/Widgets/PreferencesPopover.vala:209
 msgid "_Save"
 msgstr "சேமி (_S)"
 
 #. warning("Error: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:215
+#: src/Widgets/PreferencesPopover.vala:230
 msgid "Error"
 msgstr "பிழை"
 
-#: src/Widgets/PreferencesPopover.vala:228
+#: src/Widgets/PreferencesPopover.vala:243
 msgid "Choose a file"
 msgstr "கோப்பினை தேர்ந்தெடுக்கவும்"
 
-#: src/Widgets/PreferencesPopover.vala:232
+#: src/Widgets/PreferencesPopover.vala:247
 msgid "_Open"
 msgstr "_OPEN"
 
 #. warning("Error reading file: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:255
+#: src/Widgets/PreferencesPopover.vala:270
 #, fuzzy
 msgid "Error reading file"
 msgstr "Error reading file"
@@ -527,12 +528,7 @@ msgstr ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 
-#: src/Widgets/Window.vala:247
-#, fuzzy
-msgid "Error while trying to autoplay, aborting…"
-msgstr "Error while trying to autoplay, aborting…"
-
-#: src/Widgets/Window.vala:291
+#: src/Widgets/Window.vala:318
 #, fuzzy
 msgid "Stop Playback requested"
 msgstr "Stop Playback requested"
@@ -558,6 +554,10 @@ msgstr "நிலையங்கள் எதுவும் கிடைக்�
 #, fuzzy
 msgid "Please try a different search term."
 msgstr "Please try a different search term."
+
+#, fuzzy
+#~ msgid "Error while trying to autoplay, aborting…"
+#~ msgstr "Error while trying to autoplay, aborting…"
 
 #, fuzzy
 #~ msgid "Restart playing after a network interruption"
