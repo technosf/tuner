@@ -84,3 +84,6 @@
     padding-bottom: 0px;
 }
 
+tooltip {
+    opacity: 0.85;
+}

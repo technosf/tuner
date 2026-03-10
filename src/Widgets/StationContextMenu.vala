@@ -102,10 +102,12 @@ public class Tuner.Widgets.StationContextMenu : Gtk.Menu
 		{
 			website.activate.connect (on_website_handler);
 		}
+        website.set_tooltip_text (_station.homepage);
 
 		var stream_url = new Gtk.MenuItem.with_label (_("Copy Stream-URI to clipboard"));
 		stream_url.sensitive = true;
 		stream_url.activate.connect (on_streamurl_handler);
+        stream_url.set_tooltip_text (( _station.urlResolved == null || _station.urlResolved == "" ) ? _station.url : _station.urlResolved);
 
 
         // Star
