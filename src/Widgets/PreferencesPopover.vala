@@ -210,7 +210,7 @@ public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 			);
 			
 			// Suggest a default filename
-			dialog.set_current_name("tuner-starred.m3u8");
+			dialog.set_current_name("tuner-starred."+(new DateTime.now_local().format("%Y-%m-%d"))+".m3u8");
 
 			if (dialog.run() == Gtk.ResponseType.ACCEPT)
 			{
