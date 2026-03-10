@@ -30,6 +30,7 @@ sources = files (
     'Services/HttpClient.vala',
     'Services/StarStore.vala',
 
+    'Widgets/base/PlayerInfo.vala',
     'Widgets/base/ListFlowBox.vala',
     'Widgets/base/DisplayButton.vala',
     'Widgets/base/RevealLabel.vala',
@@ -38,6 +39,7 @@ sources = files (
     'Widgets/base/StationListBox.vala',
     'Widgets/base/StackLabel.vala',
     'Widgets/base/StationList.vala',
+    'Widgets/base/TunerStatus.vala',
 
     'Widgets/granite/AlertView.vala',
     'Widgets/granite/CellRendererBadge.vala',
