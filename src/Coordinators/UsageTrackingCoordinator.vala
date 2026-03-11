@@ -7,6 +7,7 @@
  */
 
 using Tuner.Controllers;
+using Tuner.Events;
 using Tuner.Models;
 using Tuner.Services;
 
@@ -18,7 +19,7 @@ namespace Tuner.Coordinators {
 	public class UsageTrackingCoordinator : GLib.Object
 	{
 		private Settings _settings;
-		private PlayerController _player;
+		private AppEventBus _events;
 		private DataProvider.API _provider;
 
 		private ulong _player_state_handler_id = 0;
@@ -29,24 +30,24 @@ namespace Tuner.Coordinators {
 		 * @brief Creates a usage tracking coordinator for player-driven provider events.
 		 *
 		 * @param settings Application settings that gate vote/click behavior.
-		 * @param player Player controller that emits playback lifecycle signals.
+		 * @param events App-level event bus used for player lifecycle signals.
 		 * @param provider Data provider that receives click/vote notifications.
 		 */
 		public UsageTrackingCoordinator(
 			Settings settings,
-			PlayerController player,
+			AppEventBus events,
 			DataProvider.API provider
 		) {
 			Object();
 			_settings = settings;
-			_player = player;
+			_events = events;
 			_provider = provider;
 
-			_player_state_handler_id = _player.state_changed_sig.connect((station, state) => {
+			_player_state_handler_id = _events.state_changed_sig.connect((station, state) => {
 				on_player_state_changed(station, state);
 			});
 
-			_player_tape_handler_id = _player.tape_counter_sig.connect((station) => {
+			_player_tape_handler_id = _events.tape_counter_sig.connect((station) => {
 				on_tape_counter(station);
 			});
 		}
@@ -102,13 +103,13 @@ namespace Tuner.Coordinators {
 		{
 			if (_player_state_handler_id > 0)
 			{
-				_player.disconnect(_player_state_handler_id);
+				_events.disconnect(_player_state_handler_id);
 				_player_state_handler_id = 0;
 			}
 
 			if (_player_tape_handler_id > 0)
 			{
-				_player.disconnect(_player_tape_handler_id);
+				_events.disconnect(_player_tape_handler_id);
 				_player_tape_handler_id = 0;
 			}
 

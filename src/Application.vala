@@ -429,7 +429,7 @@ namespace Tuner {
         private void initialize_coordinators()
         {
             _playback_recovery_coordinator = new PlaybackRecoveryCoordinator(this, events, player, settings);
-            _usage_tracking_coordinator = new UsageTrackingCoordinator(settings, player, provider);
+            _usage_tracking_coordinator = new UsageTrackingCoordinator(settings, events, provider);
         }
 
 

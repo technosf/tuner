@@ -187,7 +187,7 @@ namespace Tuner.Services.DBus
 			_app = app;
 			_player = player;
 
-			_player.state_changed_sig.connect ((station, state) =>
+			_app.events.state_changed_sig.connect ((station, state) =>
 			{
 				switch (state)
 				{
@@ -205,7 +205,7 @@ namespace Tuner.Services.DBus
 			});
 
 
-			_player.metadata_changed_sig.connect (( station, metadata) =>
+			_app.events.metadata_changed_sig.connect (( station, metadata) =>
 			{				
 				_station         = station;
 				_current_title   = station.name;

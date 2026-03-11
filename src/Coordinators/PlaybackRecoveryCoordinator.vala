@@ -51,7 +51,7 @@ namespace Tuner.Coordinators {
 				on_connectivity_changed(is_online );
 			});
 
-			_player_state_handler_id = _player.state_changed_sig.connect((station, state) => {
+			_player_state_handler_id = _events.state_changed_sig.connect((station, state) => {
 				on_player_state_changed(station, state);
 			});
 			}
@@ -114,7 +114,7 @@ namespace Tuner.Coordinators {
 
 			if (_player_state_handler_id > 0)
 			{
-				_player.disconnect(_player_state_handler_id);
+				_events.disconnect(_player_state_handler_id);
 				_player_state_handler_id = 0;
 			}
 

@@ -20,23 +20,23 @@ namespace Tuner {
 		/** @brief Fired when connectivity state changes. */
 		public signal void connectivity_changed_sig (bool is_online);
 
-		//  /** Signal emitted when the station changes. */
-		//  public signal void station_changed_sig (Station station);
+		/** Signal emitted when the station changes. */
+		public signal void station_changed_sig (Station station);
 
-		//  /** Signal emitted when the player state changes. */
-		//  public signal void state_changed_sig (Station station, PlayerController.Is state);
+		/** Signal emitted when the player state changes. */
+		public signal void state_changed_sig (Station station, PlayerController.Is state);
 
-		//  //  /** Signal emitted when the title changes. */
-		//  public signal void metadata_changed_sig (Station station, Metadata metadata);
+		/** Signal emitted when the title changes. */
+		public signal void metadata_changed_sig (Station station, Metadata metadata);
 
-		//  /** Signal emitted when the volume changes. */
-		//  public signal void volume_changed_sig (double volume);
+		/** Signal emitted when the volume changes. */
+		public signal void volume_changed_sig (double volume);
 
-		//  /** Signal emitted every ten minutes that a station has been playing continuously. */
-		//  public signal void tape_counter_sig (Station station);
+		/** Signal emitted every ten minutes that a station has been playing continuously. */
+		public signal void tape_counter_sig (Station station);
 
-		//  /** @brief Signal emitted when the shuffle is requested   */
-		//  public signal void shuffle_requested_sig();
+		/** @brief Signal emitted when the shuffle is requested   */
+		public signal void shuffle_requested_sig();
 
 	} // AppEventBus
 

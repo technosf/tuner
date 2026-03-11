@@ -62,7 +62,7 @@ public class Tuner.Widgets.PlayButton : Gtk.Button
 		image     = PLAY;
 		sensitive = true;
 
-		app().player.state_changed_sig.connect ((station, state) =>
+		app().events.state_changed_sig.connect ((station, state) =>
 		                                        // Link the button image to the inverse of the player state
 		{
 			set_inverse_symbol (state);

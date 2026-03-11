@@ -144,7 +144,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		_volume_button.value_changed.connect ((value) => {
 			_player.volume = value;
 		});
-		_player.volume_changed_sig.connect((value) => {
+		_app.events.volume_changed_sig.connect((value) => {
 			_volume_button.value =  value;
 		});
 
@@ -233,7 +233,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 			update_controls_state();
 		});
 
-		_player.state_changed_sig.connect ((station, state) =>
+		_app.events.state_changed_sig.connect ((station, state) =>
 		{
 			update_controls_state();
 		});
@@ -250,7 +250,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		});
 
 
-		_player.metadata_changed_sig.connect ((station, metadata) =>
+		_app.events.metadata_changed_sig.connect ((station, metadata) =>
 		{
 			_list_button.append_station_title_pair(station, metadata.title);
 		});

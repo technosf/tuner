@@ -156,13 +156,13 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
         // Jukebox set up - get the station set and connect signals for shuffle and tape counter
 			jukebox_station_set = _directory.load_random_stations(1);
-			_player.shuffle_requested_sig.connect(() =>
+			_app.events.shuffle_requested_sig.connect(() =>
 			{
 				if (_shuffle)
 					jukebox_shuffle.begin();
 			});
 
-        _player.state_changed_sig.connect((station, state) =>
+        _app.events.state_changed_sig.connect((station, state) =>
         {
             if (_shuffle && state == PlayerController.Is.STOPPED_ERROR)
             {
@@ -594,7 +594,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
                 _background_jukebox.reveal_child = true; 
         });
 
-		_player.tape_counter_sig.connect((oldstation) =>
+		_app.events.tape_counter_sig.connect((oldstation) =>
 		{
 			if (_shuffle)
 				jukebox_shuffle.begin();
