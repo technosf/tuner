@@ -361,8 +361,9 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             , "face-smile"
             , _("Discover")
             , _("Stations to Discover")
-            , false
-            ,_directory.load_random_stations(20)
+            , _directory.load_random_stations(20)
+            , null
+            , null
             , _("Discover more stations")
             , "media-playlist-shuffle-symbolic");
         
@@ -374,7 +375,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 		/* ---------------------------------------------------------------------------
 		    Trending
 		 */
-         StationListBox.create_category_specific
+         StationListBox.create
 		        ( stack,
 		        source_list,
 		        _selections_category,
@@ -389,7 +390,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             Popular
         */
 
-        StationListBox.create_category_specific
+        StationListBox.create
             ( stack
                 , source_list
                 , _selections_category
@@ -397,7 +398,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
                 , "tuner:playlist-similar"
                 , _("Popular")
                 , _("Most listened to Stations in the last 24 hours")
-                ,_directory.load_popular_stations(40)
+                , _directory.load_popular_stations(40)
             );
     
 
@@ -424,16 +425,17 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             Starred
         */
 
-        var starred = StationListBox.create_category_predefined
-            (   this
-                , stack
+        var starred = StationListBox.create
+            ( stack
                 , source_list
                 , _library_category
                 , "starred"
                 , "starred"
                 , _("Starred by You")
                 , _("Starred by You") + " :"
-                , _directory.get_starred() 
+                , null
+                , this
+                , _directory.get_starred()
             );
 
             starred.badge ( @"$(starred.item_count)\t");
@@ -458,7 +460,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         , "folder-saved-search"
         , _("Latest Search")
         , _("Search Results")
-        , false
+        , null
+        , null
         , null
         , _("Save this search")
         , "non-starred-symbolic");
@@ -514,7 +517,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             foreach (var tag in _directory.load_random_genres(EXPLORE_CATEGORIES))
             {
             if ( Genre.in_genre (tag.name)) break;  // Predefined genre, ignore
-            StationListBox.create_category_specific( stack, source_list, _explore_category
+            StationListBox.create( stack, source_list, _explore_category
                     , @"$(explore++)"   // tag names can have charaters that are not suitable for name
                     , "tuner:playlist-symbolic"
                     , tag.name
@@ -637,7 +640,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
      */
     private StationListBox add_saved_search(string search, StationSet station_set) //, StationList? content = null)//StationSet station_set)
     {
-        var saved_search = StationListBox.create_category_specific 
+        var saved_search = StationListBox.create 
             ( stack
             , source_list
             , _saved_searches_category
@@ -646,6 +649,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             , search
             , (_("Saved Search") + " :  %s").printf (search)
             , station_set
+            , null
+            , null
             , _("Remove this saved search")
             , "starred-symbolic"
             );
@@ -683,7 +688,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	        ){
 		foreach (var genre in genres )
 		{
-			StationListBox.create_category_specific(stack,
+			StationListBox.create(stack,
 			                         source_list,
 			                         category,
 			                         genre,

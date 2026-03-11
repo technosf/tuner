@@ -134,9 +134,8 @@ public class Tuner.Controllers.SearchController : Object
 			else
 			{
 				var _slist = StationList.with_stations(stations);
-				_station_list_hookup.station_list_hookup(_slist);
 				results_box.parameter = search_term;	// set parameter first as content sets off a signal
-				results_box.content   = _slist;
+				results_box.attach_station_list(_station_list_hookup, _slist);
 			}
 		} catch (SourceError e)
 		{

@@ -131,6 +131,7 @@ namespace Tuner.Widgets.Base
             //  get_style_context().add_class("station-list-box");
             
             var _header = base_header();
+            tooltip_button = new Button ();
 
             _stack = stack;
             _source_list = source_list;
@@ -288,6 +289,16 @@ namespace Tuner.Widgets.Base
         } // content
 
 
+        /**
+        * @brief Hooks up and assigns a StationList to this box.
+        */
+        internal void attach_station_list (StationListHookup slh, StationList slist)
+        {
+            slh.station_list_hookup (slist);
+            content = slist;
+        } // attach_station_list
+
+
         // -----------------------------------------------
 
         
@@ -343,8 +354,9 @@ namespace Tuner.Widgets.Base
         * @param icon The icon name to display
         * @param title The title text to display
         * @param subtitle The subtitle text to display
-        * @param prepopulated Whether the content is pre-populated
-        * @param data The station data set
+        * @param station_set The station data set
+        * @param slh The StationListHookup instance
+        * @param stations The collection of stations for prepopulated content
         * @param action_tooltip_text The tooltip text for the action button
         * @param action_icon_name The icon name for the action button
         * @return A new SourceListBox instance
@@ -357,11 +369,13 @@ namespace Tuner.Widgets.Base
             string icon,
             string title,
             string subtitle,
-            bool prepopulated = false,
-            StationSet? data = null,
+            StationSet? station_set = null,
+            StationListHookup? slh = null,
+            Collection<Station>? stations = null,
             string? action_tooltip_text = null,
             string? action_icon_name = null ) 
         {
+            var prepopulated = stations != null;
             var slb = new StationListBox(
                 stack,
                 source_list,
@@ -371,105 +385,28 @@ namespace Tuner.Widgets.Base
                 title,
                 subtitle,
                 prepopulated,
-                data,
+                station_set,
                 action_tooltip_text,
                 action_icon_name,
                 true);
 
             stack.add_named (slb, name);
 
-            return slb;
-        } // create
-
-        /**
-        * @brief Creates a predefined category in the source list.
-        * @param stack The stack widget.
-        * @param source_list The source list widget.
-        * @param category The category to add to.
-        * @param name The name of the category.
-        * @param icon The icon for the category.
-        * @param title The title of the category.
-        * @param subtitle The subtitle of the category.
-        * @param stations The collection of stations for the category.
-        * @return The created SourceListBox for the category.
-        */
-        public static StationListBox create_category_predefined
-        ( StationListHookup slh
-        , Gtk.Stack stack
-        , SourceList source_list
-        , SourceList.ExpandableItem category
-        , string name
-        , string icon
-        , string title
-        , string subtitle
-        , Collection<Station>? stations
-        )
-        {
-            var genre = StationListBox.create 
-                ( stack
-                , source_list
-                , category
-                , name
-                , icon
-                , title
-                , subtitle 
-                , true
-                );
-
             if (stations != null)
             {
                 var slist = StationList.with_stations (stations);
-                slh.station_list_hookup(slist);
-                genre.content = slist;
+                if (slh != null)
+                {
+                    slb.attach_station_list (slh, slist);
+                }
+                else
+                {
+                    slb.content = slist;
+                }
             }
 
-            return genre;
-
-        } // create_category_predefined
-
-        /**
-        * @brief Creates a specific category in the source list.
-        * @param stack The stack widget.
-        * @param source_list The source list widget.
-        * @param category The category to add to.
-        * @param name The name of the category.
-        * @param icon The icon for the category.
-        * @param title The title of the category.
-        * @param subtitle The subtitle of the category.
-        * @param station_set The set of stations for the category.
-        * @param action_tooltip_text Optional tooltip text for the action.
-        * @param action_icon_name Optional icon name for the action.
-        * @return The created SourceListBox for the category.
-        */
-        public static StationListBox create_category_specific
-        ( Gtk.Stack stack,
-        SourceList source_list,
-        SourceList.ExpandableItem category,
-        string name,
-        string icon,
-        string title,
-        string subtitle,
-        StationSet station_set,
-        string? action_tooltip_text = null,
-        string? action_icon_name    = null
-        )
-        {
-            var genre = StationListBox.create
-            ( stack,
-            source_list,
-            category,
-            name,
-            icon,
-            title,
-            subtitle,
-            false,
-            station_set,
-            action_tooltip_text,
-            action_icon_name
-            );
-
-            return genre;
-        } // create_category_specific
+            return slb;
+        } // create
 
     } // SourceListBox
 
@@ -519,9 +456,7 @@ namespace Tuner.Widgets.Base
                 var? slist = StationList.with_stations (_slb.next_page ());
                 if ( slist != null ) 
                 {
-                    station_list.station_list_hookup(slist);
-                    _slb.content = slist;
-                    _slb.content.show_all ();
+                    _slb.attach_station_list (station_list, slist);
                 }
             } catch (SourceError e) {
                 _slb.show_alert ();
