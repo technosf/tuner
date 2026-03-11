@@ -40,6 +40,8 @@ sources = files (
     'Widgets/base/StationListBox.vala',
     'Widgets/base/StationListBoxHeader.vala',
     'Widgets/base/StationListBoxContent.vala',
+    'Widgets/base/StationListBoxFactory.vala',
+    'Widgets/base/StationListItem.vala',
     'Widgets/base/StackLabel.vala',
     'Widgets/base/StationList.vala',
     'Widgets/base/TunerStatus.vala',

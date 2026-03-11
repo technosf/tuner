@@ -50,8 +50,7 @@ namespace Tuner.Widgets.Base
         public Button tooltip_button { get { return _header_view.tooltip_button; } }
         public StationListItem item { get; private set; }
         public uint item_count { get; private set; }
-        public string parameter { get; set; }
-        public bool show_parameter { get; set; }
+        public string parameter { get; set; default = ""; }
 
         /**
         * @brief Updates the badge text for the source list item
@@ -79,13 +78,6 @@ namespace Tuner.Widgets.Base
         public signal void item_count_changed_sig ( uint item_count, string? parameter );
 
 
-        /**
-        * @signal content_changed_sig
-        * @brief Emitted when the content of the ContentBox is changed.
-        */
-        public signal void content_changed_sig (uint count);
-
-
         // -----------------------------------
         
         private SourceList.ExpandableItem _category;
@@ -107,7 +99,7 @@ namespace Tuner.Widgets.Base
         * @param action_icon_name The name of the icon for the action button.
         * @param action_tooltip_text The tooltip text for the action button.
         */
-        private StationListBox (
+        internal StationListBox (
             Stack stack,
             SourceList source_list,
             SourceList.ExpandableItem category,
@@ -118,8 +110,7 @@ namespace Tuner.Widgets.Base
             bool prepopulated = false,
             StationSet? data,
             string? action_tooltip_text,
-            string? action_icon_name,
-            bool enable_count) 
+            string? action_icon_name) 
         {
             Object (
                 name:name,
@@ -212,17 +203,6 @@ namespace Tuner.Widgets.Base
         
 
         /**
-        * @brief Sets the content list and displays it
-        * @param content The ContentList to display
-        */
-        public void list(ListFlowBox content)
-        {
-            this.content = content;
-            show_all();
-        } // list
-
-
-        /**
         * @brief Removes this SourceListBox from the stack and category
         */
         public void delist()
@@ -265,122 +245,6 @@ namespace Tuner.Widgets.Base
 
 
 
-        /**
-        * @brief Factory method to create a new SourceListBox instance
-        * @param stack The main stack widget
-        * @param source_list The source list widget
-        * @param category The category to add this item to
-        * @param name The name identifier for this box
-        * @param icon The icon name to display
-        * @param title The title text to display
-        * @param subtitle The subtitle text to display
-        * @param station_set The station data set
-        * @param slh The StationListHookup instance
-        * @param stations The collection of stations for prepopulated content
-        * @param action_tooltip_text The tooltip text for the action button
-        * @param action_icon_name The icon name for the action button
-        * @return A new SourceListBox instance
-        */
-        public static StationListBox create(
-            Stack stack,
-            SourceList source_list,
-            SourceList.ExpandableItem category,
-            string name,
-            string icon,
-            string title,
-            string subtitle,
-            StationSet? station_set = null,
-            StationListHookup? slh = null,
-            Collection<Station>? stations = null,
-            string? action_tooltip_text = null,
-            string? action_icon_name = null ) 
-        {
-            var prepopulated = stations != null;
-            var slb = new StationListBox(
-                stack,
-                source_list,
-                category,
-                name,
-                icon,
-                title,
-                subtitle,
-                prepopulated,
-                station_set,
-                action_tooltip_text,
-                action_icon_name,
-                true);
-
-            stack.add_named (slb, name);
-
-            if (stations != null)
-            {
-                var slist = StationList.with_stations (stations);
-                if (slh != null)
-                {
-                    slb.attach_station_list (slh, slist);
-                }
-                else
-                {
-                    slb.content = slist;
-                }
-            }
-
-            return slb;
-        } // create
-
     } // SourceListBox
 
-
-    /**
-    * @class StationListItem
-    * @brief A custom source list item that manages its own population state
-    *
-    * This class extends SourceList.Item to provide functionality for lazy-loading
-    * content and managing the populated state of radio station listings.
-    *
-    * @extends SourceList.Item
-    */
-    public class StationListItem : SourceList.Item
-    {
-        private bool _populated;
-        private StationListBox _slb;
-
-        /**
-        * @brief Constructs a new SourceListItem
-        * @param title The display title for the item
-        * @param slb The parent SourceListBox this item belongs to
-        * @param prepopulated Whether this item starts with populated content
-        */
-        public StationListItem(string title, StationListBox slb, bool prepopulated = false ) 
-        {
-            base (
-                title
-            );
-            _slb = slb;
-            _populated = prepopulated;
-        }
-
-        /**
-        * @brief Populates the item with station data if not already populated
-        * @param display The Display instance to hook up the station list
-        * 
-        * This method checks if the item needs population and if the app is online,
-        * then attempts to load the next page of stations. If successful, it hooks
-        * up the station list to the display and updates the content.
-        */
-        public void populate( StationListHookup station_list, bool force = false )
-        {
-            if ( ( _populated && !force ) || app().is_offline ) return;
-            _populated = true;
-            try {
-                var? slist = StationList.with_stations (_slb.next_page ());
-                if ( slist != null ) 
-                {
-                    _slb.attach_station_list (station_list, slist);
-                }
-            } catch (SourceError e) {
-                _slb.show_alert ();
-            }
-        } // populate
-    } // SourceListItem
 } // Tuner
