@@ -47,7 +47,6 @@ public class Tuner.Widgets.PlayButton : Gtk.Button
 		IconSize.LARGE_TOOLBAR
 		);
 
-
 /* Public */
 
 /**

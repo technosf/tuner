@@ -131,7 +131,7 @@ namespace Tuner {
             } catch (Error e) {
                 warning(@"Error reading locale path: $(e.message)");
             }            
-        }
+        } // static construct
 
         // -------------------------------------
 
@@ -227,7 +227,7 @@ namespace Tuner {
                 _is_online = value;
                 is_offline = !value;
                 if (events != null)
-                    events.connectivity_changed(_is_online, is_offline);
+                    events.connectivity_changed_sig(_is_online );
             }
         }   
 
@@ -552,7 +552,7 @@ namespace Tuner {
             _startup_coordinator.start();
 
             // Flathub screenshot sizing
-            window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
+            //window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
 
             add_window(window);
         }
@@ -589,7 +589,8 @@ namespace Tuner {
         {
             bool network_available = NETMON.get_network_available ();
 
-            if(_monitor_changed_id > 0) 
+            // Clean up the prior network monitor task
+            if( _monitor_changed_id > 0) 
             {
                 Source.remove(_monitor_changed_id);
                 _monitor_changed_id = 0;
@@ -600,7 +601,7 @@ namespace Tuner {
                 wait 1 seconds before setting to online status
                 to whatever the state is at that time
             */
-            if (network_available)
+            if ( network_available )
             {
                 if (is_online)
                     return;
@@ -660,7 +661,6 @@ namespace Tuner {
             }
 
             return { exe };
-        }
-
+        } // build_restart_argv
     } // Application
 } // namespace Tuner

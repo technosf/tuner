@@ -6,14 +6,38 @@
  * @file AppEventBus.vala
  */
 
-namespace Tuner.Events {
 
+using Tuner.Models;
+using Tuner.Controllers;
+
+namespace Tuner {
+ 
 	/**
-	 * @brief Typed event hub for application-level cross-component events.
-	 */
-	public class AppEventBus : GLib.Object
+	* @brief Typed event hub for application-level cross-component events.
+	*/
+	public class Events.AppEventBus : GLib.Object
 	{
 		/** @brief Fired when connectivity state changes. */
-		public signal void connectivity_changed (bool is_online, bool is_offline);
-	}
-}
+		public signal void connectivity_changed_sig (bool is_online);
+
+		//  /** Signal emitted when the station changes. */
+		//  public signal void station_changed_sig (Station station);
+
+		//  /** Signal emitted when the player state changes. */
+		//  public signal void state_changed_sig (Station station, PlayerController.Is state);
+
+		//  //  /** Signal emitted when the title changes. */
+		//  public signal void metadata_changed_sig (Station station, Metadata metadata);
+
+		//  /** Signal emitted when the volume changes. */
+		//  public signal void volume_changed_sig (double volume);
+
+		//  /** Signal emitted every ten minutes that a station has been playing continuously. */
+		//  public signal void tape_counter_sig (Station station);
+
+		//  /** @brief Signal emitted when the shuffle is requested   */
+		//  public signal void shuffle_requested_sig();
+
+	} // AppEventBus
+
+ } // Tuner

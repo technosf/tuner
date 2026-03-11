@@ -176,7 +176,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
             Keep in mind that network availability is noisy
         */
         // Window state responds to app-level connectivity events.
-        app().events.connectivity_changed.connect((is_online, is_offline) => {
+        app().events.connectivity_changed_sig.connect((is_online) => {
             check_online_status();
         });
     } // construct

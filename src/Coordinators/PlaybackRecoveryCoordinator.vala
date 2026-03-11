@@ -23,23 +23,23 @@ namespace Tuner.Coordinators {
 		private Settings _settings;
 
 		private bool _was_playing_before_offline = false;
-			private ulong _connectivity_handler_id = 0;
-			private ulong _player_state_handler_id = 0;
+		private ulong _connectivity_handler_id = 0;
+		private ulong _player_state_handler_id = 0;
 
 
-			/**
-			 * @brief Creates a playback recovery coordinator.
-			 *
-			 * @param app Application context used for connectivity state checks.
-			 * @param events App-level event bus used for connectivity changes.
-			 * @param player Player controller used to inspect and restart playback.
-			 * @param settings Application settings controlling recovery behavior.
-			 */
-			public PlaybackRecoveryCoordinator (
-				Application app,
-				AppEventBus events,
-				PlayerController player,
-				Settings settings
+		/**
+			* @brief Creates a playback recovery coordinator.
+			*
+			* @param app Application context used for connectivity state checks.
+			* @param events App-level event bus used for connectivity changes.
+			* @param player Player controller used to inspect and restart playback.
+			* @param settings Application settings controlling recovery behavior.
+			*/
+		public PlaybackRecoveryCoordinator (
+			Application app,
+			AppEventBus events,
+			PlayerController player,
+			Settings settings
 		) {
 			Object();
 			_app = app;
@@ -47,8 +47,8 @@ namespace Tuner.Coordinators {
 			_player = player;
 			_settings = settings;
 
-			_connectivity_handler_id = _events.connectivity_changed.connect((is_online, is_offline) => {
-				on_connectivity_changed(is_online, is_offline);
+			_connectivity_handler_id = _events.connectivity_changed_sig.connect((is_online ) => {
+				on_connectivity_changed(is_online );
 			});
 
 			_player_state_handler_id = _player.state_changed_sig.connect((station, state) => {
@@ -66,24 +66,23 @@ namespace Tuner.Coordinators {
 			 * @param is_online True when app has network connectivity.
 			 * @param is_offline True when app has no network connectivity.
 			 */
-			private void on_connectivity_changed(bool is_online, bool is_offline)
+			private void on_connectivity_changed(bool is_online )
 			{
-			if (is_offline)
-			{
-				_was_playing_before_offline = _was_playing_before_offline
-					|| _player.player_state == PlayerController.Is.PLAYING
-					|| _player.player_state == PlayerController.Is.BUFFERING;
-			}
-
-			if (is_online)
-			{
-				bool already_playing = _player.player_state == PlayerController.Is.PLAYING
-					|| _player.player_state == PlayerController.Is.BUFFERING;
-				if (_settings.play_restart && _was_playing_before_offline && _player.can_play() && !already_playing)
-					_player.play_station(_player.station);
-				_was_playing_before_offline = false;
-			}
-			}
+				if (is_online)
+				{
+					bool already_playing = _player.player_state == PlayerController.Is.PLAYING
+						|| _player.player_state == PlayerController.Is.BUFFERING;
+					if (_settings.play_restart && _was_playing_before_offline && _player.can_play() && !already_playing)
+						_player.play_station(_player.station);
+					_was_playing_before_offline = false;
+				}
+				else
+				{
+					_was_playing_before_offline = _was_playing_before_offline
+						|| _player.player_state == PlayerController.Is.PLAYING
+						|| _player.player_state == PlayerController.Is.BUFFERING;
+				}
+			} // on_connectivity_changed
 
 
 			/**

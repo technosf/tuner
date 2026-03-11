@@ -228,7 +228,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		    Tuner icon and online/offline behavior
 		 */
 		// HeaderBar reacts to app-level connectivity changes for visual state updates.
-		_app.events.connectivity_changed.connect((is_online, is_offline) =>
+		_app.events.connectivity_changed_sig.connect((is_online) =>
 		{
 			update_controls_state();
 		});
