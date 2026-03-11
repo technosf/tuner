@@ -12,6 +12,7 @@
 
 
 using Gtk;
+using Gdk;
 using Tuner.Controllers;
 using Tuner.Models;
 
@@ -39,6 +40,10 @@ public class Tuner.Widgets.Base.PlayerInfo : Revealer
     private string _metadata;
     private Station _station;
     private uint grid_min_width = 0;
+    private Gtk.Popover _metadata_popover;
+    private Gtk.Label _metadata_label;
+    private uint _hover_timeout_id = 0;
+    private bool _popover_visible = false;
 
     internal signal void info_changed_completed_sig();
 
@@ -87,18 +92,41 @@ public class Tuner.Widgets.Base.PlayerInfo : Revealer
         metadata = STREAM_METADATA;
 
         /*
-		    Hook up title to metadata as tooltip
+		    Hook up title to metadata as a delayed popover.
 		 */
-		tooltip_text = STREAM_METADATA;
-		query_tooltip.connect((x, y, keyboard_tooltip, tooltip) =>
-		{
-			if (_station == null)
-				return false;
-			tooltip.set_text(@"$(_station.popularity())\n\n$(metadata)");
-			return true;
-		});
+        add_events(EventMask.ENTER_NOTIFY_MASK | EventMask.LEAVE_NOTIFY_MASK);
+        enter_notify_event.connect((event) =>
+        {
+            if (_hover_timeout_id > 0 || _popover_visible)
+                return false;
+            _hover_timeout_id = Timeout.add(1000, () =>
+            {
+                _hover_timeout_id = 0;
+                show_metadata_popover();
+                return Source.REMOVE;
+            });
+            return false;
+        });
 
-        //player.metadata_changed_sig.connect(handle_metadata_changed);
+        leave_notify_event.connect((event) =>
+        {
+            if (_hover_timeout_id > 0)
+            {
+                Source.remove(_hover_timeout_id);
+                _hover_timeout_id = 0;
+            }
+            return false;
+        });
+
+        window.add_events(EventMask.BUTTON_PRESS_MASK);
+        window.button_press_event.connect((event) =>
+        {
+            if (_popover_visible)
+                hide_metadata_popover();
+            return false;
+        });
+
+        app().events.metadata_changed_sig.connect(handle_metadata_changed);
     }
 
     /**
@@ -106,6 +134,7 @@ public class Tuner.Widgets.Base.PlayerInfo : Revealer
      */
     internal async void change_station(Station station)
     {
+        hide_metadata_popover();
         reveal_child = false;
 
         Idle.add(() =>
@@ -172,6 +201,49 @@ public class Tuner.Widgets.Base.PlayerInfo : Revealer
                 return Source.REMOVE;
             });
         }
+
+        if (_popover_visible)
+            update_metadata_popover_text();
     }
 
-}
+    private void show_metadata_popover()
+    {
+        if (_station == null)
+            return;
+
+        if (_metadata_popover == null)
+        {
+            _metadata_popover = new Gtk.Popover(this);
+            _metadata_popover.position = Gtk.PositionType.BOTTOM;
+            _metadata_popover.set_border_width(8);
+
+            _metadata_label = new Gtk.Label("");
+            _metadata_label.wrap = true;
+            _metadata_label.max_width_chars = 48;
+            _metadata_label.xalign = 0.0f;
+            _metadata_popover.add(_metadata_label);
+            _metadata_popover.show_all();
+            _metadata_popover.hide();
+        }
+
+        update_metadata_popover_text();
+        _metadata_popover.show();
+        _popover_visible = true;
+    }
+
+    private void hide_metadata_popover()
+    {
+        if (_metadata_popover != null)
+            _metadata_popover.hide();
+        _popover_visible = false;
+    }
+
+    private void update_metadata_popover_text()
+    {
+        if (_metadata_label == null)
+            return;
+        var popularity = _station != null ? _station.popularity() : "";
+        var text = _station != null ? @"$popularity\n\n$(metadata)" : STREAM_METADATA;
+        _metadata_label.set_text(text);
+    }
+} 
