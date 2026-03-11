@@ -68,9 +68,6 @@ namespace Tuner {
     {
         private delegate void StringActionHandler(string value);
 
-        /** @brief Signal emitted when the shuffle mode changes   */
-        public signal void shuffle_mode_sig(bool shuffle);
-
         public static string ENV_LANG = "LANGUAGE";
 
         /** @brief Application version */

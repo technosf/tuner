@@ -34,8 +34,6 @@ using Tuner.Services;
 public class Tuner.Services.StarStore : Object 
 {
 
-    public signal void starred_stations_changed_sig ( Station station ); ///< Emitted when the starred stations change.
-
     private const string FAVORITES_PROPERTY_APP = "app";
     private const string FAVORITES_PROPERTY_FILE = "file";
     private const string FAVORITES_PROPERTY_SCHEMA = "schema";
@@ -91,7 +89,7 @@ public class Tuner.Services.StarStore : Object
         if (_starred_station_map.has_key (station.stationuuid)) return;
         _starred_station_map.set (station.stationuuid, station);
         persist ();
-        starred_stations_changed_sig ( station );
+        app().events.starred_stations_changed_sig ( station );
     } // add_station
 
 
@@ -103,7 +101,7 @@ public class Tuner.Services.StarStore : Object
      public void remove_station (Station station) {
         _starred_station_map.unset (station.stationuuid);
         persist ();
-        starred_stations_changed_sig ( station );
+        app().events.starred_stations_changed_sig ( station );
     } // remove_station
 
 

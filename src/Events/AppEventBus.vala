@@ -20,6 +20,12 @@ namespace Tuner {
 		/** @brief Fired when connectivity state changes. */
 		public signal void connectivity_changed_sig (bool is_online);
 
+		/** @brief Fired when shuffle mode changes. */
+		public signal void shuffle_mode_sig (bool shuffle);
+
+		/** @brief Emitted when the starred stations change. */
+		public signal void starred_stations_changed_sig (Station station);
+
 		/** Signal emitted when the station changes. */
 		public signal void station_changed_sig (Station station);
 

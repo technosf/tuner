@@ -540,7 +540,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         // --------------------------------------------------------------------
 
 
-        _stars.starred_stations_changed_sig.connect ((station) =>
+        _app.events.starred_stations_changed_sig.connect ((station) =>
         /*
         * Refresh the starred stations list when a station is starred or unstarred
          */
@@ -589,7 +589,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         {
                 _shuffle = true;
                 jukebox_shuffle.begin();
-                _app.shuffle_mode_sig(true);
+                _app.events.shuffle_mode_sig(true);
                 _background_tuner.reveal_child = false;    
                 _background_jukebox.reveal_child = true; 
         });
@@ -617,7 +617,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             if ( _shuffle ) 
             {
                 _shuffle = false;
-                _app.shuffle_mode_sig(false);
+                _app.events.shuffle_mode_sig(false);
                 _background_jukebox.reveal_child = false;
                 _background_tuner.reveal_child   = true;
             } // if

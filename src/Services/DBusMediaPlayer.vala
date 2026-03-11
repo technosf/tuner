@@ -217,7 +217,7 @@ namespace Tuner.Services.DBus
 				trigger_metadata_update ();
 			});
 
-			_app.shuffle_mode_sig.connect ((shuffle) =>
+			_app.events.shuffle_mode_sig.connect ((shuffle) =>
 			{
 				_shuffle = shuffle;
 			});
