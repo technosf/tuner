@@ -27,7 +27,7 @@ namespace Tuner.Widgets.Base
         /**
         * @brief Constructs a new SourceListItem
         * @param title The display title for the item
-        * @param slb The parent SourceListBox this item belongs to
+        * @param slb The parent StationListBox this item belongs to
         * @param prepopulated Whether this item starts with populated content
         */
         public StationListItem(string title, StationListBox slb, bool prepopulated = false )
@@ -52,7 +52,7 @@ namespace Tuner.Widgets.Base
             if ( ( _populated && !force ) || app().is_offline ) return;
             _populated = true;
             try {
-                var? slist = StationList.with_stations (_slb.next_page ());
+                var? slist = StationList.with_stations (_slb.pager.next_page ());
                 if ( slist != null )
                 {
                     _slb.attach_station_list (station_list, slist);

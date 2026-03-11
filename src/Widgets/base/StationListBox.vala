@@ -9,12 +9,13 @@ using Gtk;
 using Gee;
 using Tuner.Models;
 using Tuner.Widgets.Granite;
+using Tuner.Widgets.Base.Support;
 
 /**
- * @file SourceListBox.vala
- * @brief Defines the ContentBox widget for displaying content with a header and action button.
+ * @file StationListBox.vala
+ * @brief Defines the StationListBox widget for displaying content with a header and action button.
  *
- * This file contains the implementation of the ContentBox class, which is a custom
+ * This file contains the implementation of the StationListBox class, which is a custom
  * Gtk.Box widget used to display content with a header, optional icon, and an
  * optional action button. It provides a flexible layout for presenting various
  * types of content within the Tuner application.
@@ -33,7 +34,7 @@ namespace Tuner.Widgets.Base
     * @class StationListBox
     * @brief A custom Gtk.Box widget for displaying content with a header and action button.
     *
-    * The ContentBox class is a versatile widget used to present various types of content
+    * The StationListBox class is a versatile widget used to present various types of content
     * within the Tuner application. It features a header with an optional icon and action
     * button, and a content area that can display different views based on the current state.
     *
@@ -48,6 +49,7 @@ namespace Tuner.Widgets.Base
         //  public HeaderLabel header_label;
 
         public Button tooltip_button { get { return _header_view.tooltip_button; } }
+        public StationListBoxPager pager { get; private set; }
         public StationListItem item { get; private set; }
         public uint item_count { get; private set; }
         public string parameter { get; set; default = ""; }
@@ -86,7 +88,6 @@ namespace Tuner.Widgets.Base
         private StationListBoxContent _content_view;
         private Stack _stack;
         private SourceList _source_list;
-        private StationSet? _data;
 
 
         
@@ -124,7 +125,7 @@ namespace Tuner.Widgets.Base
             _source_list = source_list;
             _category = category;
 
-            _data = data;
+            pager = new StationListBoxPager (data);
             _icon = new ThemedIcon (icon);
             
             item = new StationListItem (title, this, prepopulated);
@@ -160,7 +161,7 @@ namespace Tuner.Widgets.Base
             });
 
             category.add (item);  
-        } // SourceListBox
+        } // StationListBox
 
         
         /**
@@ -172,18 +173,6 @@ namespace Tuner.Widgets.Base
         construct {
             get_style_context ().add_class ("color-dark");
         } // construct
-
-
-        /**
-        * @brief Retrieves the next page of stations from the data source
-        * @return A Set of Model.Station objects, or null if no data source exists
-        * @throws SourceError If there's an error retrieving the next page
-        */
-        public Set<Station>? next_page () throws SourceError
-        {
-            if ( _data == null ) return null;
-            return _data.next_page();
-        } // next_page
 
 
         /**
@@ -203,7 +192,7 @@ namespace Tuner.Widgets.Base
         
 
         /**
-        * @brief Removes this SourceListBox from the stack and category
+        * @brief Removes this StationListBox from the stack and category
         */
         public void delist()
         {
@@ -245,6 +234,6 @@ namespace Tuner.Widgets.Base
 
 
 
-    } // SourceListBox
+    } // StationListBox
 
 } // Tuner

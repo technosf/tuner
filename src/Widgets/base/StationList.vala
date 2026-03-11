@@ -76,7 +76,7 @@ public class Tuner.Widgets.Base.StationList : ListFlowBox
 	*/
 	public Collection<Station> stations 
 	{
-		// FIXME Wraps stations in SttionButtons, adds to flowbox
+		// FIXME Wraps stations in StationButtons, adds to flowbox
 		set construct {
 			clear ();
 			if (value == null)

@@ -25,6 +25,7 @@ using Tuner.Models;
 using Tuner.Services;
 using Tuner.Widgets.Base;
 using Tuner.Widgets.Granite;
+using Tuner.Widgets.Base.Support;
 
 
 /**
