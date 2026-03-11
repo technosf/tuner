@@ -52,6 +52,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	public const string ACTION_START_ON_STARRED     = "action_starred_start";
 	public const string ACTION_STREAM_INFO          = "action_stream_info";
 	public const string ACTION_STREAM_INFO_FAST     = "action_stream_info_fast";
+	public const string ACTION_STREAM_INFO_IMAGE_POPUP = "action_stream_info_image_popup";
 
 
 	public Settings settings { get; construct; }
@@ -90,6 +91,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 		{ ACTION_START_ON_STARRED,      on_action_start_on_starred, null, "false"  },
 		{ ACTION_STREAM_INFO,           on_action_stream_info, null, "true"        },
 		{ ACTION_STREAM_INFO_FAST,      on_action_stream_info_fast, null, "false"  },
+		{ ACTION_STREAM_INFO_IMAGE_POPUP, on_action_stream_info_image_popup, null, "false" },
 	};
 
     /*
@@ -210,6 +212,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	        */
 	        _headerbar = new HeaderBar (app_ref, this, player_ctrl, app_ref.provider);
 			_metadata_image_popup = new MetadataImagePopup(this);
+			_metadata_image_popup.set_enabled(settings.stream_info_image_popup);
 
         _headerbar.search_has_focus_sig.connect (() => 
         // Show searched stack when cursor hits search text area
@@ -263,6 +266,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 		change_action_state (ACTION_START_ON_STARRED, settings.start_on_starred);
 		change_action_state (ACTION_STREAM_INFO, settings.stream_info);
 		change_action_state (ACTION_STREAM_INFO_FAST, settings.stream_info_fast);
+		change_action_state (ACTION_STREAM_INFO_IMAGE_POPUP, settings.stream_info_image_popup);
 	}
 
 
@@ -420,6 +424,23 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 			(value) => { _headerbar.stream_info_fast(value); }
 		);
     } // on_action_stream_info_fast
+
+	/**
+	 * @brief Handles stream metadata image popup preference changes.
+	 *
+	 * @param action The SimpleAction that triggered this method.
+	 * @param parameter The parameter passed with the action (unused).
+	 */
+	public void on_action_stream_info_image_popup (SimpleAction action, Variant? parameter)
+	{
+		toggle_setting_action(
+			action,
+			"on_action_stream_info_image_popup",
+			() => { return settings.stream_info_image_popup; },
+			(value) => { settings.stream_info_image_popup = value; },
+			(value) => { _metadata_image_popup.set_enabled(value); }
+		);
+	} // on_action_stream_info_image_popup
 
 
 

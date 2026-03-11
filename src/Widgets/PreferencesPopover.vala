@@ -84,6 +84,12 @@ public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 		stream_info_fast.tooltip_text = _("Fast cycle through the metadata from the playing stream if show stream info is enabled");
 		stream_info_fast.margin_start = ROW_INDENT;
 
+		var stream_info_image_popup = new Gtk.ModelButton ();
+		stream_info_image_popup.text         = _("Stream metadata image popup");
+		stream_info_image_popup.action_name  = Window.ACTION_PREFIX + Window.ACTION_STREAM_INFO_IMAGE_POPUP;
+		stream_info_image_popup.tooltip_text = _("Show a movable popup with images discovered in the stream metadata");
+		stream_info_image_popup.margin_start = ROW_INDENT;
+
 
 /* 
 	Enable in-app language selection for local debug or if specifically set in build options
@@ -152,6 +158,7 @@ public class Tuner.Widgets.PreferencesPopover : Gtk.Popover
 		
 		menu_grid.attach (stream_info, 0, vpos++, 4, 1);
 		menu_grid.attach (stream_info_fast, 0, vpos++, 4, 1);
+		menu_grid.attach (stream_info_image_popup, 0, vpos++, 4, 1);
 
 		menu_grid.attach (new Gtk.SeparatorMenuItem (), 0, vpos++, 4, 1);
 

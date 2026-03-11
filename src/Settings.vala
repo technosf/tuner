@@ -23,6 +23,7 @@ public class Tuner.Settings : GLib.Settings
     private const string SETTINGS_START_ON_STARRED = "start-on-starred";
     private const string SETTINGS_STREAM_INFO = "stream-info";
     private const string SETTINGS_STREAM_INFO_FAST = "stream-info-fast";
+    private const string SETTINGS_STREAM_INFO_IMAGE_POPUP = "stream-info-image-popup";
     private const string SETTINGS_THEME_MODE = "theme-mode";
     private const string SETTINGS_LANGUAGE = "language";
     private const string SETTINGS_VOLUME = "volume";
@@ -36,6 +37,7 @@ public class Tuner.Settings : GLib.Settings
     public bool start_on_starred { get; set; }
     public bool stream_info { get; set; }
     public bool stream_info_fast { get; set; }
+    public bool stream_info_image_popup { get; set; }
     public string theme_mode { get; set; }
     public string language { get; set; }
     public double volume { get; set; }
@@ -71,6 +73,7 @@ public class Tuner.Settings : GLib.Settings
         start_on_starred = get_boolean(SETTINGS_START_ON_STARRED);
         stream_info = get_boolean(SETTINGS_STREAM_INFO);
         stream_info_fast = get_boolean(SETTINGS_STREAM_INFO_FAST);
+        stream_info_image_popup = get_boolean(SETTINGS_STREAM_INFO_IMAGE_POPUP);
         theme_mode = get_string(SETTINGS_THEME_MODE);
         language = get_string(SETTINGS_LANGUAGE);
         volume = get_double(SETTINGS_VOLUME);
@@ -157,6 +160,7 @@ public class Tuner.Settings : GLib.Settings
         set_boolean(SETTINGS_START_ON_STARRED, start_on_starred);
         set_boolean(SETTINGS_STREAM_INFO, stream_info);
         set_boolean(SETTINGS_STREAM_INFO_FAST, stream_info_fast);
+        set_boolean(SETTINGS_STREAM_INFO_IMAGE_POPUP, stream_info_image_popup);
         set_string(SETTINGS_THEME_MODE, theme_mode);
         set_string(SETTINGS_LANGUAGE, language);
         set_double(SETTINGS_VOLUME, volume);

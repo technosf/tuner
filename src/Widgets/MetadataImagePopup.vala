@@ -21,6 +21,7 @@ public class Tuner.Widgets.MetadataImagePopup : Gtk.Window
     private Gtk.Image _image;
     private uint _load_generation = 0;
     private string _current_url = "";
+    private bool _enabled = false;
 
     public MetadataImagePopup(Gtk.Window parent)
     {
@@ -58,8 +59,21 @@ public class Tuner.Widgets.MetadataImagePopup : Gtk.Window
         });
     }
 
+    public void set_enabled(bool enabled)
+    {
+        _enabled = enabled;
+        if (!_enabled)
+            hide();
+    }
+
     private void handle_metadata(Metadata metadata)
     {
+        if (!_enabled)
+        {
+            hide();
+            return;
+        }
+
         if (metadata == null || metadata.image == null)
         {
             hide();
