@@ -51,8 +51,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
     // Public properties
 
     // Signals
-    public signal void searching_for_sig (string text);
-    public signal void search_has_focus_sig ();
+    public signal void search_toggle_sig ();
 
 
     /*
@@ -72,7 +71,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		);
 	private PlayButton _play_button  = new PlayButton ();
 	private MenuButton _prefs_button = new MenuButton ();
-	private SearchEntry _search_entry = new SearchEntry ();
+	private Button _search_button = new Button.from_icon_name ("system-search-symbolic", IconSize.LARGE_TOOLBAR);
 	private ListButton _list_button  = new ListButton.from_icon_name ("mark-location-symbolic", IconSize.LARGE_TOOLBAR);
 	private Button _heart_button = new Button();
 
@@ -178,18 +177,11 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
             RHS Controls
         */     
 
-		// Search entry
-			_search_entry.placeholder_text = _("Station Search");
-			_search_entry.set_margin_start(5);   // 5 pixels padding on the left
-			_search_entry.valign           = Align.CENTER;
-
-			_search_entry.changed.connect (() => {
-				searching_for_sig(_search_entry.text);
-			});
-
-		_search_entry.focus_in_event.connect ((e) => {
-			search_has_focus_sig ();
-			return true;
+		// Search button
+		_search_button.valign = Align.CENTER;
+		_search_button.tooltip_text = _("Search");
+		_search_button.clicked.connect (() => {
+			search_toggle_sig();
 		});
 
 		// Preferences button
@@ -235,7 +227,6 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
         pack_start (_volume_button);
         pack_start (_star_button);
         pack_start (_play_button);
-		pack_start (_search_entry);
 
 	    _player_info = new Base.PlayerInfo(window, _player);
         custom_title = _player_info; // Station display
@@ -243,6 +234,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		// pack RHS
 		pack_end (_prefs_button);
 		pack_end (_list_button);
+		pack_end (_search_button);
 
 		/* Test fixture */
 		//  private Button _off_button       = new Button.from_icon_name ("list-add", IconSize.LARGE_TOOLBAR);
@@ -434,7 +426,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 			_play_button.opacity               = is_playing_now ? 1.0 : 0.5;
 			_volume_button.sensitive           = false;
 			_list_button.sensitive             = true;
-			_search_entry.sensitive             = false;
+			_search_button.sensitive             = false;
 
 		}
 		else
@@ -447,7 +439,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 			_play_button.opacity               = 1.0;
 			_volume_button.sensitive           = true;
 			_list_button.sensitive             = true;
-			_search_entry.sensitive             = true;
+			_search_button.sensitive             = true;
 		}
 	} // update_controls_state
 } // Tuner.HeaderBar

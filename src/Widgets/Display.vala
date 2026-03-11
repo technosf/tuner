@@ -67,8 +67,19 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	 */
 	public void on_search_requested(string text)
 	{
+		var search = text.strip();
+		if (search.length == 0)
+		{
+			_search_controller.handle_search_for("");
+			_search_results.tooltip_button.sensitive = false;
+			_search_results.parameter = "";
+			var empty = new StationList();
+			station_list_hookup(empty);
+			_search_results.content = empty;
+			return;
+		}
 		_search_results.tooltip_button.sensitive = false;
-		_search_controller.handle_search_for(text);
+		_search_controller.handle_search_for(search);
 	}
 
 

@@ -95,3 +95,13 @@ tooltip {
 .heart-favorited image {
     color: #d00000;
 }
+
+/* Search revealer background to avoid transparency gaps */
+.search-revealer-bg {
+    /* Use a solid, theme-safe color */
+    background-color: shade(@theme_bg_color, 0.90);
+    background-image: none;
+    box-shadow: none;
+    border: 2px solid shade(@theme_bg_color, 0.8);
+    border-radius: 0;
+}

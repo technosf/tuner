@@ -53,6 +53,7 @@ sources = files (
     'Widgets/granite/CellRendererExpander.vala',
     'Widgets/granite/SourceList.vala',
 
+    'Widgets/Header.vala',
     'Widgets/HeaderBar.vala',
     'Widgets/PlayButton.vala',
     'Widgets/ListButton.vala',
