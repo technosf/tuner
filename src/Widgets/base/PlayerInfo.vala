@@ -216,6 +216,17 @@ public class Tuner.Widgets.Base.PlayerInfo : Revealer
             _metadata_popover = new Gtk.Popover(this);
             _metadata_popover.position = Gtk.PositionType.BOTTOM;
             _metadata_popover.set_border_width(8);
+            _metadata_popover.get_style_context().add_class("metadata-popover");
+            _metadata_popover.add_events(EventMask.BUTTON_PRESS_MASK);
+            _metadata_popover.button_press_event.connect((event) =>
+            {
+                if (event.button == 3)
+                {
+                    copy_metadata_to_clipboard();
+                    return true;
+                }
+                return false;
+            });
 
             _metadata_label = new Gtk.Label("");
             _metadata_label.wrap = true;
@@ -245,5 +256,36 @@ public class Tuner.Widgets.Base.PlayerInfo : Revealer
         var popularity = _station != null ? _station.popularity() : "";
         var text = _station != null ? @"$popularity\n\n$(metadata)" : STREAM_METADATA;
         _metadata_label.set_text(text);
+    }
+
+    private void copy_metadata_to_clipboard()
+    {
+        var popularity = _station != null ? _station.popularity() : "";
+        var text = _station != null ? @"$popularity\n\n$(metadata)" : STREAM_METADATA;
+        var clipboard = Gtk.Clipboard.get_default(Gdk.Display.get_default());
+        if (clipboard != null)
+        {
+            clipboard.set_text(text, -1);
+            show_copy_confirmation();
+        }
+    }
+
+    private void show_copy_confirmation()
+    {
+        if (_metadata_popover == null)
+            return;
+
+        var original_text = _metadata_label != null ? _metadata_label.get_text() : "";
+        _metadata_label.set_text(_("Copied to clipboard"));
+        _metadata_popover.show();
+        _popover_visible = true;
+
+        Timeout.add(1200, () =>
+        {
+            _metadata_label.set_text(original_text);
+            if (!_popover_visible)
+                _metadata_popover.hide();
+            return Source.REMOVE;
+        });
     }
 } 

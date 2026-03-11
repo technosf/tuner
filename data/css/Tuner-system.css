@@ -87,3 +87,7 @@
 tooltip {
     opacity: 0.85;
 }
+
+.metadata-popover {
+    opacity: 0.85;
+}
