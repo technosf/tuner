@@ -36,6 +36,7 @@ sources = files (
     'Widgets/base/RevealLabel.vala',
     'Widgets/base/CyclingRevealLabel.vala',
     'Widgets/base/SelectorButton.vala',
+    'Widgets/base/HistoryList.vala',
     'Widgets/base/StationListBox.vala',
     'Widgets/base/StackLabel.vala',
     'Widgets/base/StationList.vala',

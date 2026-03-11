@@ -91,3 +91,7 @@ tooltip {
 .metadata-popover {
     opacity: 0.85;
 }
+
+.heart-favorited image {
+    color: #d00000;
+}

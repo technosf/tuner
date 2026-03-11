@@ -13,6 +13,7 @@
 using Gtk;
 using Tuner.Controllers;
 using Tuner.Models;
+using Gee;
 using Tuner.Services;
 
 /*
@@ -73,6 +74,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 	private MenuButton _prefs_button = new MenuButton ();
 	private SearchEntry _search_entry = new SearchEntry ();
 	private ListButton _list_button  = new ListButton.from_icon_name ("mark-location-symbolic", IconSize.LARGE_TOOLBAR);
+	private Button _heart_button = new Button();
 
 	/*
 		secondary display assets
@@ -81,6 +83,10 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
     // data and state variables
 
 	private Station _station;
+	private Station _last_metadata_station;
+	private string _last_metadata_title = "";
+	private string _heart_favorited_title = "";
+	private bool _heart_is_favorited = false;
 	private Mutex _station_update_lock = Mutex();       // Lock out concurrent updates
 	private bool _station_locked       = false;
 	private ulong _station_handler_id  = 0;
@@ -195,6 +201,30 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		_list_button.valign       = Align.CENTER;
 		_list_button.tooltip_text = _("History");
 
+		_heart_button.image = new Image.from_icon_name ("emblem-favorite-symbolic", IconSize.LARGE_TOOLBAR);
+		_heart_button.valign = Align.CENTER;
+		_heart_button.tooltip_text = _("Save current track to history");
+		_heart_button.sensitive = false;
+		_heart_button.clicked.connect(() =>
+		{
+			if (_last_metadata_station == null || _last_metadata_title == "")
+				return;
+			var hearted_title = "♥ " + _last_metadata_title;
+			if (_heart_is_favorited && _heart_favorited_title == _last_metadata_title)
+			{
+				if (!_list_button.replace_last_title_if_matches(_last_metadata_station, hearted_title, _last_metadata_title))
+					_list_button.append_station_title_pair(_last_metadata_station, _last_metadata_title);
+				_heart_favorited_title = "";
+				set_heart_favorited(false);
+				return;
+			}
+
+			if (!_list_button.replace_last_title_if_matches(_last_metadata_station, _last_metadata_title, hearted_title))
+				_list_button.append_station_title_pair(_last_metadata_station, hearted_title);
+			_heart_favorited_title = _last_metadata_title;
+			set_heart_favorited(true);
+		});
+
        /*
             Layout
         */
@@ -205,6 +235,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
         pack_start (_volume_button);
         pack_start (_star_button);
         pack_start (_play_button);
+		pack_start (_search_entry);
 
 	    _player_info = new Base.PlayerInfo(window, _player);
         custom_title = _player_info; // Station display
@@ -220,7 +251,8 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		//  	app().is_online = !app().is_online;
 		//  });
 
-		pack_end (_search_entry);
+		pack_end (_heart_button);
+		//pack_end (_search_entry);
 		show_close_button = true;
 
 
@@ -253,6 +285,11 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		_app.events.metadata_changed_sig.connect ((station, metadata) =>
 		{
 			_list_button.append_station_title_pair(station, metadata.title);
+			_last_metadata_station = station;
+			_last_metadata_title = metadata.title != null ? metadata.title : "";
+			_heart_button.sensitive = _last_metadata_title != "";
+			if (_last_metadata_title == "" || _last_metadata_title != _heart_favorited_title)
+				set_heart_favorited(false);
 		});
 
 		_list_button.item_station_selected_sig.connect((station) =>
@@ -261,6 +298,26 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		});
 
 	} // HeaderBar
+
+	private void set_heart_favorited(bool favorited)
+	{
+		var ctx = _heart_button.get_style_context();
+		if (favorited)
+			ctx.add_class("heart-favorited");
+		else
+			ctx.remove_class("heart-favorited");
+		_heart_is_favorited = favorited;
+	}
+
+	public Gee.List<string> get_hearted_titles()
+	{
+		return _list_button.get_hearted_titles();
+	}
+
+	public Gee.List<string> get_hearted_history_lines_without_hearts()
+	{
+		return _list_button.get_hearted_history_lines_without_hearts();
+	}
 
 
     /* 

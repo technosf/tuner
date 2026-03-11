@@ -478,8 +478,8 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	* @brief Performs cleanup actions before the window is destroyed.
 	* @return true if the window should be hidden instead of destroyed, false otherwise.
 	*/
-	public bool before_destroy ()
-	{
+    public bool before_destroy ()
+    {
         get_size (out _width, out _height); // Echo ending dimensions so Settings can pick them up
         _settings.save ();
 
@@ -492,8 +492,59 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
             return true;
         }
 
+		prompt_save_hearted_tracks();
+
         return false;
     } // before_destroy
+
+	private void prompt_save_hearted_tracks()
+	{
+		var hearted_titles = _headerbar.get_hearted_titles();
+		if (hearted_titles.size == 0)
+			return;
+
+		var dialog = new Gtk.MessageDialog(
+			this,
+			Gtk.DialogFlags.MODAL,
+			Gtk.MessageType.QUESTION,
+			Gtk.ButtonsType.NONE,
+			_("Save hearted tracks to a file?")
+		);
+		dialog.add_button(_("_Don't Save"), Gtk.ResponseType.CANCEL);
+		dialog.add_button(_("_Save"), Gtk.ResponseType.ACCEPT);
+
+		var response = dialog.run();
+		dialog.destroy();
+		if (response != Gtk.ResponseType.ACCEPT)
+			return;
+
+		var save_dialog = new Gtk.FileChooserDialog(
+			_("Save File"),
+			this,
+			Gtk.FileChooserAction.SAVE,
+			_("_Cancel"), Gtk.ResponseType.CANCEL,
+			_("_Save"), Gtk.ResponseType.ACCEPT
+		);
+		save_dialog.set_current_name("tuner-hearted-" + (new DateTime.now_local().format("%Y-%m-%d")) + ".txt");
+
+		if (save_dialog.run() == Gtk.ResponseType.ACCEPT)
+		{
+			var save_path = save_dialog.get_filename();
+			if (save_path != null)
+			{
+				var builder = new StringBuilder();
+				var history_lines = _headerbar.get_hearted_history_lines_without_hearts();
+				foreach (var line in history_lines)
+					builder.append(line).append("\n");
+				try {
+					GLib.FileUtils.set_contents(save_path, builder.str);
+				} catch (Error e) {
+					warning(@"Failed to save hearted tracks: $(e.message)");
+				}
+			}
+		}
+		save_dialog.destroy();
+	}
     
 
 	/**
