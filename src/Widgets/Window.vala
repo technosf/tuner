@@ -98,6 +98,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 
 	private HeaderBar _headerbar;
 	private Display _display;
+	private MetadataImagePopup _metadata_image_popup;
     private bool _start_on_starred = false;
 
 	private signal void refresh_saved_searches_sig (bool add, string search_text);
@@ -208,6 +209,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	            Headerbar hookups
 	        */
 	        _headerbar = new HeaderBar (app_ref, this, player_ctrl, app_ref.provider);
+			_metadata_image_popup = new MetadataImagePopup(this);
 
         _headerbar.search_has_focus_sig.connect (() => 
         // Show searched stack when cursor hits search text area

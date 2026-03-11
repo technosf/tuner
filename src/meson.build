@@ -51,6 +51,7 @@ sources = files (
     'Widgets/ListButton.vala',
     'Widgets/StationButton.vala',
     'Widgets/StationContextMenu.vala',
+    'Widgets/MetadataImagePopup.vala',
     'Widgets/Display.vala',
     'Widgets/Window.vala',
     'Widgets/AboutDialog.vala',
