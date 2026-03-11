@@ -38,6 +38,8 @@ sources = files (
     'Widgets/base/SelectorButton.vala',
     'Widgets/base/HistoryList.vala',
     'Widgets/base/StationListBox.vala',
+    'Widgets/base/StationListBoxHeader.vala',
+    'Widgets/base/StationListBoxContent.vala',
     'Widgets/base/StackLabel.vala',
     'Widgets/base/StationList.vala',
     'Widgets/base/TunerStatus.vala',

@@ -47,7 +47,7 @@ namespace Tuner.Widgets.Base
         */
         //  public HeaderLabel header_label;
 
-        public Button tooltip_button{ get; private set; }
+        public Button tooltip_button { get { return _header_view.tooltip_button; } }
         public StationListItem item { get; private set; }
         public uint item_count { get; private set; }
         public string parameter { get; set; }
@@ -90,11 +90,10 @@ namespace Tuner.Widgets.Base
         
         private SourceList.ExpandableItem _category;
         private ThemedIcon _icon;
-        private Box _content = base_content();
-        private ListFlowBox _content_list;
+        private StationListBoxHeader _header_view;
+        private StationListBoxContent _content_view;
         private Stack _stack;
         private SourceList _source_list;
-        private Stack _substack = new Stack ();
         private StationSet? _data;
 
 
@@ -130,9 +129,6 @@ namespace Tuner.Widgets.Base
 
             //  get_style_context().add_class("station-list-box");
             
-            var _header = base_header();
-            tooltip_button = new Button ();
-
             _stack = stack;
             _source_list = source_list;
             _category = category;
@@ -145,40 +141,15 @@ namespace Tuner.Widgets.Base
             item.icon = _icon;
             item.set_data<string> ("stack_child", name);  
 
-            var alert = new AlertView (_("Nothing here"), _("Something went wrong loading radio stations data from station provider. Please try again later."), "dialog-warning");
-            //  /*
-            //  alert.show_action ("Try again");
-            //  alert.action_activated.connect (() => {
-            //      realize ();
-            //  });
-            //  */
-
-            _substack.add_named (alert, "alert");
-
-            var no_results = new AlertView (_("No stations found"), _("Please try a different search term."), "dialog-warning");
-            _substack.add_named (no_results, "nothing-found");
-
-            _header.pack_start (new StackLabel (subtitle, 20, 20 ), false, false);
-
-            if (action_icon_name != null && action_tooltip_text != null) {
-                tooltip_button = new Button.from_icon_name (
-                    action_icon_name,
-                    IconSize.LARGE_TOOLBAR
-                );
-                tooltip_button.valign = Align.CENTER;
-                tooltip_button.tooltip_text = action_tooltip_text;
-                tooltip_button.clicked.connect (() => { action_button_activated_sig (); });
-                _header.pack_start (tooltip_button, false, false);            
-            }
-
-            var _parameter_label = new StackLabel("", 20, 20);
-            _header.pack_start (_parameter_label, false, false);            
-            notify["parameter"].connect (() => 
+            _header_view = new StationListBoxHeader (subtitle, action_tooltip_text, action_icon_name);
+            _header_view.action_activated.connect (() => { action_button_activated_sig (); });
+            _header_view.set_parameter (parameter);
+            notify["parameter"].connect (() =>
             {
-                _parameter_label.label = parameter;
+                _header_view.set_parameter (parameter);
             });
 
-            pack_start (_header, false, false);
+            pack_start (_header_view, false, false);
 
             // -----------------------------------
 
@@ -186,11 +157,11 @@ namespace Tuner.Widgets.Base
 
             // -----------------------------------
 
-            _substack.add_named (content_scroller(_content), "content");
-            add (_substack);
+            _content_view = new StationListBoxContent ();
+            add (_content_view);
             
             show.connect (() => {   
-                _substack.set_visible_child_full ("content", StackTransitionType.NONE);            
+                _content_view.show_content();            
             });
 
             map.connect (() => {
@@ -228,7 +199,7 @@ namespace Tuner.Widgets.Base
         * @brief Displays the alert view in the content area.
         */
         public void show_alert () {
-            _substack.set_visible_child_full ("alert", StackTransitionType.NONE);
+            _content_view.show_alert ();
         } // show_alert
 
 
@@ -236,7 +207,7 @@ namespace Tuner.Widgets.Base
         * @brief Displays the "nothing found" view in the content area.
         */
         public void show_nothing_found () {
-            _substack.set_visible_child_full ("nothing-found", StackTransitionType.NONE);
+            _content_view.show_nothing_found ();
         } // show_nothing_found
         
 
@@ -271,20 +242,14 @@ namespace Tuner.Widgets.Base
         */
         public ListFlowBox content { 
             set {
-            
-                foreach (var child in _content.get_children ()) { child.destroy (); }
-
-                _substack.set_visible_child_full ("content", StackTransitionType.NONE);
-                _content_list = value;
-
-                _content.add (_content_list);   // FIXME analyze why when 'saving a search' content is double wrapped? 
-                item_count = _content_list.item_count;
+                _content_view.set_content (value);
+                item_count = _content_view.content_list.item_count;
                 item_count_changed_sig(item_count, parameter);
                 show_all ();
             }
 
             get {
-                return _content_list; 
+                return _content_view.content_list; 
             }
         } // content
 
@@ -298,51 +263,6 @@ namespace Tuner.Widgets.Base
             content = slist;
         } // attach_station_list
 
-
-        // -----------------------------------------------
-
-        
-        /**
-        * @brief Creates a basic header box with horizontal orientation
-        * @return A new Gtk.Box configured as a header
-        */
-        private static Box base_header()
-        {
-            var header = new Box (Orientation.HORIZONTAL, 0);
-            header.homogeneous = false;
-            return header;
-        } // base_header
-
-
-        /**
-        * @brief Creates a basic content box with vertical orientation
-        * @return A new Gtk.Box configured for content
-        */
-        private static Box base_content()
-        {
-            var content = new Box (Orientation.VERTICAL, 0);
-            content.get_style_context ().add_class ("color-light");
-            content.valign = Align.START;
-            content.get_style_context().add_class("welcome");
-            return content;
-        } // base_content
-
-
-        /**
-        * @brief Creates a scrolled window containing the content box
-        * @param content The content box to be placed in the scrolled window
-        * @return A new Gtk.ScrolledWindow containing the content
-        */
-        private static ScrolledWindow content_scroller(Gtk.Box content)
-        {
-            var scroller = new ScrolledWindow (null, null);
-            scroller.hscrollbar_policy = PolicyType.NEVER;
-            scroller.add (content);
-            scroller.propagate_natural_height = true;        
-            return scroller;
-        } // content_scroller
-
-        // --------------------------------------------------
 
 
         /**
