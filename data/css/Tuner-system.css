@@ -91,6 +91,7 @@ flowboxchild:selected:active {
 .station-list flowboxchild:selected:active,
 .station-list flowboxchild:drop(active),
 .station-list flowboxchild.drag-highlight {
+    /* GTK3 focus ring removal for DnD; note this hides keyboard focus. */
     outline-style: none;
     outline-width: 0;
     -gtk-outline-width: 0;

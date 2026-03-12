@@ -21,9 +21,6 @@ using Tuner.Models;
  */
 public class Tuner.Widgets.Base.StationList : ListFlowBox
 {
-	// Drag-and-drop target used for reordering starred stations.
-	private const string REORDER_TARGET = "application/x-tuner-stationuuid";
-
 	/**
 	* @brief Emitted after the user reorders stations via drag-and-drop.
 	*
@@ -154,11 +151,8 @@ public class Tuner.Widgets.Base.StationList : ListFlowBox
 			return;
 		_reorder_dnd_enabled = true;
 
-
-		var targets = new Gtk.TargetEntry[] {
-			{ REORDER_TARGET, Gtk.TargetFlags.SAME_APP, 0 },
-			{ "text/plain", Gtk.TargetFlags.SAME_APP, 1 }
-		};
+		// GTK3: use flowbox as drop target and transfer via text/plain.
+		var targets = setup_drag_targets ();
 
 		// Accept drops at the flowbox level so GTK can find a target.
 		Gtk.drag_dest_set (this, Gtk.DestDefaults.ALL, targets, Gdk.DragAction.MOVE);
@@ -219,10 +213,7 @@ public class Tuner.Widgets.Base.StationList : ListFlowBox
 
 	private void configure_button_for_reorder (StationButton button)
 	{
-		var targets = new Gtk.TargetEntry[] {
-			{ REORDER_TARGET, Gtk.TargetFlags.SAME_APP, 0 },
-			{ "text/plain", Gtk.TargetFlags.SAME_APP, 1 }
-		};
+		var targets = setup_drag_targets ();
 
 		button.get_style_context().add_class("reorderable");
 		Gtk.drag_source_set (button, Gdk.ModifierType.BUTTON1_MASK, targets, Gdk.DragAction.MOVE);
@@ -335,6 +326,14 @@ public class Tuner.Widgets.Base.StationList : ListFlowBox
 				ordered.add (station.stationuuid);
 		}
 		reordered (ordered);
+	}
+
+	// GTK3 DnD target list shared by sources and destinations.
+	private Gtk.TargetEntry[] setup_drag_targets ()
+	{
+		return new Gtk.TargetEntry[] {
+			{ "text/plain", Gtk.TargetFlags.SAME_APP, 1 }
+		};
 	}
 
 	// Render the station button as the drag ghost.

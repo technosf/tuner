@@ -84,7 +84,8 @@ public class Tuner.Widgets.Base.DisplayButton : Gtk.Button
         _drag_handle = new Gtk.Image.from_icon_name ("view-list-symbolic", Gtk.IconSize.MENU);
         _drag_handle.halign = Gtk.Align.END;
         _drag_handle.valign = Gtk.Align.CENTER;
-        _drag_handle.visible = false;
+        _drag_handle.no_show_all = true;
+        _drag_handle.hide ();
         _drag_handle.get_style_context ().add_class ("drag-handle");
       
         // Title label
@@ -134,7 +135,10 @@ public class Tuner.Widgets.Base.DisplayButton : Gtk.Button
      */
     protected void set_drag_handle_visible (bool visible)
     {
-        _drag_handle.visible = visible;
+        if (visible)
+            _drag_handle.show ();
+        else
+            _drag_handle.hide ();
     }
 
 }
