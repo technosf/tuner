@@ -103,7 +103,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
   <releases>
   
-    <release version="2.1.0" date="2026-03-12">
+    <release version="2.1.0-beta.1" date="2026-03-12">
       <description>
         <p>Feature release:</p>
         <ul>
