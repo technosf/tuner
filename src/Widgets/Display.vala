@@ -67,7 +67,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	 *
 	 * @param text Search text submitted by the header bar.
 	 */
-	public void on_search_requested(string text)
+    public void on_search_requested(string text)
 	{
 		var search = text.strip();
 		if (search.length == 0)
@@ -80,7 +80,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 			station_list_hookup(empty);
 			_search_results.content = empty;
 			return;
-		}
+    }
 		_search_results.tooltip_button.sensitive = false;
 		_search_controller.handle_search_for(search);
 	}
@@ -119,6 +119,16 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	private SourceList.ExpandableItem _subgenres_category      = new SourceList.ExpandableItem (_("Subgenres"));
 	private SourceList.ExpandableItem _eras_category           = new SourceList.ExpandableItem (_("Eras"));
 	private SourceList.ExpandableItem _talk_category           = new SourceList.ExpandableItem (_("Talk, News, Sport"));
+
+	// Bitmask values for expanded source list sections (collapsible only).
+	private const uint SOURCE_LIST_EXPANDED_SAVED_SEARCHES = 1u << 0;
+	private const uint SOURCE_LIST_EXPANDED_EXPLORE        = 1u << 1;
+	private const uint SOURCE_LIST_EXPANDED_GENRES         = 1u << 2;
+	private const uint SOURCE_LIST_EXPANDED_SUBGENRES      = 1u << 3;
+	private const uint SOURCE_LIST_EXPANDED_ERAS           = 1u << 4;
+	private const uint SOURCE_LIST_EXPANDED_TALK           = 1u << 5;
+
+	private bool _suppress_source_list_mask_write = false;
 
 
 	private bool _first_activation           = true;     // display has not been activated before
@@ -226,22 +236,28 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         _library_category.expanded = false;
 
         _saved_searches_category.collapsible = true;
-        _saved_searches_category.expanded = false;
-
         _explore_category.collapsible = true;
-        _explore_category.expanded = true;
-
         _genres_category.collapsible = true;
-        _genres_category.expanded = false;
-
         _subgenres_category.collapsible = true;
-        _subgenres_category.expanded = false;
-
         _eras_category.collapsible = true;
-        _eras_category.expanded = false;
-
         _talk_category.collapsible = true;
+
+        // Reset collapsible sections, then apply saved mask.
+        _saved_searches_category.expanded = false;
+        _explore_category.expanded = false;
+        _genres_category.expanded = false;
+        _subgenres_category.expanded = false;
+        _eras_category.expanded = false;
         _talk_category.expanded = false;
+        apply_source_list_expanded_mask (_app.settings.source_list_expanded_mask);
+
+        // Persist expansion changes from the UI.
+        _saved_searches_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _explore_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _genres_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _subgenres_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _eras_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _talk_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
 
         
         source_list.root.add (_selections_category);
@@ -284,7 +300,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
     * If shuffle mode is active, selects and plays a new random station
     * from the jukebox station set.
     */
-	public async void jukebox_shuffle(){
+    public async void jukebox_shuffle(){
 		if (!_shuffle)
 			return;
 
@@ -301,6 +317,44 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 		catch (SourceError e)
 		{}
 	} // jukebox_shuffle
+
+	// --------------------------------------------------------
+	// Source list expansion mask handling
+	// --------------------------------------------------------
+
+	private void apply_source_list_expanded_mask (uint mask)
+	{
+		_suppress_source_list_mask_write = true;
+		_saved_searches_category.expanded = (mask & SOURCE_LIST_EXPANDED_SAVED_SEARCHES) != 0;
+		_explore_category.expanded = (mask & SOURCE_LIST_EXPANDED_EXPLORE) != 0;
+		_genres_category.expanded = (mask & SOURCE_LIST_EXPANDED_GENRES) != 0;
+		_subgenres_category.expanded = (mask & SOURCE_LIST_EXPANDED_SUBGENRES) != 0;
+		_eras_category.expanded = (mask & SOURCE_LIST_EXPANDED_ERAS) != 0;
+		_talk_category.expanded = (mask & SOURCE_LIST_EXPANDED_TALK) != 0;
+		_suppress_source_list_mask_write = false;
+	}
+
+	private void update_source_list_expanded_mask ()
+	{
+		if (_suppress_source_list_mask_write)
+			return;
+
+		uint mask = 0;
+		if (_saved_searches_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_SAVED_SEARCHES;
+		if (_explore_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_EXPLORE;
+		if (_genres_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_GENRES;
+		if (_subgenres_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_SUBGENRES;
+		if (_eras_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_ERAS;
+		if (_talk_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_TALK;
+
+		_app.settings.persist_source_list_expanded_mask (mask);
+	}
 
 
     /**

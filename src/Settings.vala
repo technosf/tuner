@@ -30,6 +30,7 @@ public class Tuner.Settings : GLib.Settings
     private const string SETTINGS_WINDOW_HEIGHT = "window-height";
     private const string SETTINGS_WINDOW_WIDTH = "window-width";
     private const string SETTINGS_PLAY_RESTART = "play-restart";
+    private const string SETTINGS_SOURCE_LIST_EXPANDED_MASK = "source-list-expanded-mask";
 
     public bool auto_play { get; set; }
     public bool do_not_vote { get; set; }
@@ -42,6 +43,7 @@ public class Tuner.Settings : GLib.Settings
     public string language { get; set; }
     public double volume { get; set; }
     public bool play_restart { get; set; }
+    public uint source_list_expanded_mask { get; set; }
 
     private int _pos_x;
     private int _pos_y;
@@ -78,6 +80,7 @@ public class Tuner.Settings : GLib.Settings
         language = get_string(SETTINGS_LANGUAGE);
         volume = get_double(SETTINGS_VOLUME);
         play_restart = get_boolean(SETTINGS_PLAY_RESTART);
+        source_list_expanded_mask = get_uint(SETTINGS_SOURCE_LIST_EXPANDED_MASK);
 
     } // Settings
 
@@ -165,8 +168,20 @@ public class Tuner.Settings : GLib.Settings
         set_string(SETTINGS_LANGUAGE, language);
         set_double(SETTINGS_VOLUME, volume);
         set_boolean(SETTINGS_PLAY_RESTART, play_restart);
+        set_uint(SETTINGS_SOURCE_LIST_EXPANDED_MASK, source_list_expanded_mask);
 
         sync();
     } // save
+
+    /**
+     * @brief Persist the source list expansion mask immediately.
+     *
+     * @param mask Bitmask representing expanded source list sections.
+     */
+    public void persist_source_list_expanded_mask (uint mask)
+    {
+        source_list_expanded_mask = mask;
+        set_uint(SETTINGS_SOURCE_LIST_EXPANDED_MASK, source_list_expanded_mask);
+    }
 
 } // Tuner.Settings
