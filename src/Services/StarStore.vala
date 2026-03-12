@@ -60,7 +60,8 @@ public class Tuner.Services.StarStore : Object
     private File _starred_file; ///< File to persist favorite stations.
 
 
-    private Map<string,Station> _starred_station_map = new HashMap<string, Station> (); ///< Collection of starred station UUIDs.
+    private Map<string,Station> _starred_station_map = new HashMap<string, Station> (); ///< Collection of starred stations by UUID.
+    private Gee.ArrayList<string> _starred_station_order = new Gee.ArrayList<string>(); ///< Persisted order of starred station UUIDs.
     private Gee.Set<string> _saved_searches = new HashSet<string> (); ///< Collection of saved searchess.
     private bool _loaded = false;
 
@@ -88,6 +89,7 @@ public class Tuner.Services.StarStore : Object
     public void add_station (Station station) {
         if (_starred_station_map.has_key (station.stationuuid)) return;
         _starred_station_map.set (station.stationuuid, station);
+        _starred_station_order.add (station.stationuuid);
         persist ();
         app().events.starred_stations_changed_sig ( station );
     } // add_station
@@ -100,6 +102,7 @@ public class Tuner.Services.StarStore : Object
      */
      public void remove_station (Station station) {
         _starred_station_map.unset (station.stationuuid);
+        _starred_station_order.remove (station.stationuuid);
         persist ();
         app().events.starred_stations_changed_sig ( station );
     } // remove_station
@@ -166,7 +169,17 @@ public class Tuner.Services.StarStore : Object
         // Starred Stations
 	    builder.set_member_name (FAVORITES_PROPERTY_STATIONS);
         builder.begin_array ();
+        foreach (var uuid in _starred_station_order) {
+            var starred = _starred_station_map.get (uuid);
+            if (starred == null)
+                continue;
+            var node = Json.gobject_serialize (starred);
+            builder.add_value (node);
+        }
+        // Append any stations not tracked in order (defensive).
         foreach (var starred in _starred_station_map.values) {
+            if (_starred_station_order.contains (starred.stationuuid))
+                continue;
             var node = Json.gobject_serialize (starred);
             builder.add_value (node);
         }
@@ -195,8 +208,50 @@ public class Tuner.Services.StarStore : Object
      * @return An ArrayList of favorite stations.
      */
      public Collection<Station> get_all_stations () {
-        return _starred_station_map.values;
+        // Return stations in persisted order (falling back to any missing entries).
+        var ordered = new Gee.ArrayList<Station>();
+        var seen = new Gee.HashSet<string>();
+        foreach (var uuid in _starred_station_order)
+        {
+            var station = _starred_station_map.get (uuid);
+            if (station == null)
+                continue;
+            ordered.add (station);
+            seen.add (uuid);
+        }
+        foreach (var station in _starred_station_map.values)
+        {
+            if (!seen.contains (station.stationuuid))
+                ordered.add (station);
+        }
+        return ordered;
     } // get_all_stations
+
+
+    /**
+     * @brief Reorders starred stations and persists the change.
+     *
+     * @param stationuuids The ordered list of station UUIDs.
+     */
+    public void reorder_stations (Gee.List<string> stationuuids)
+    {
+        if (stationuuids == null)
+            return;
+
+        _starred_station_order.clear ();
+        foreach (var uuid in stationuuids)
+        {
+            if (_starred_station_map.has_key (uuid))
+                _starred_station_order.add (uuid);
+        }
+        // Append any stations not present in the reorder list.
+        foreach (var uuid in _starred_station_map.keys)
+        {
+            if (!_starred_station_order.contains (uuid))
+                _starred_station_order.add (uuid);
+        }
+        persist ();
+    } // reorder_stations
     
 
     /**
@@ -302,10 +357,12 @@ public class Tuner.Services.StarStore : Object
         /*
             Read in each starred item
         */
+        _starred_station_order.clear ();
         jstarred.foreach_element ((a, i, elem) => 
         {           
             var station = new Station.basic(elem); // Creates a basic station without adding it to the main station directory
             _starred_station_map.set (station.stationuuid, station);
+            _starred_station_order.add (station.stationuuid);
 
             station.starred = true;
 
@@ -345,8 +402,11 @@ public class Tuner.Services.StarStore : Object
      public string export_m3u8()
      {
          StringBuilder playlist = new StringBuilder(M3U8);
-         foreach ( var station in _starred_station_map.values)
+         foreach (var uuid in _starred_station_order)
          {
+             var station = _starred_station_map.get (uuid);
+             if (station == null)
+                 continue;
              var url = ( station.urlResolved == null || station.urlResolved == "") ? station.url : station.urlResolved;
              playlist.append (@"\n#EXT-X-MEDIA:$M3U8_UUID=\"$(station.stationuuid)\"\n");
              playlist.append (@"#EXTINF:-1,$(station.name)\n$(url)\n");

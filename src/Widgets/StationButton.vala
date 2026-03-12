@@ -93,6 +93,20 @@ public class Tuner.Widgets.StationButton : Base.DisplayButton
         }
     } // StationButton
 
+	/**
+	* @brief Toggles reorder visuals for drag-and-drop.
+	*
+	* @param enabled Whether reorder visuals should be shown.
+	*/
+	public void set_reorder_visuals (bool enabled)
+	{
+		if (enabled)
+			get_style_context().add_class("reorderable");
+		else
+			get_style_context().remove_class("reorderable");
+		set_drag_handle_visible (enabled);
+	}
+
 
 	/**
 	* @brief Updates the station button with current information from the provider.

@@ -466,6 +466,16 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             }
         );
 
+        // Allow drag-and-drop reordering for starred stations only.
+        var starred_list = starred.content as StationList;
+        if (starred_list != null)
+        {
+            starred_list.reorderable = true;
+            starred_list.reordered.connect ((uuids) => {
+                _directory.reorder_starred (uuids);
+            });
+        }
+
             starred.badge ( @"$(starred.item_count)\t");
             starred.parameter = @"$(starred.item_count)";
             

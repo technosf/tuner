@@ -13,4 +13,4 @@
 set -e
 
 meson compile -C builddir 
-GSETTINGS_SCHEMA_DIR="builddir/data" ./builddir/io.github.tuner_labs.tuner
+G_MESSAGES_DEBUG=all GSETTINGS_SCHEMA_DIR="builddir/data" ./builddir/io.github.tuner_labs.tuner

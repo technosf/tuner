@@ -56,6 +56,14 @@
         border-style: ridge;
 }
 
+/* Remove green focus/active outline during drag */
+.station-button.reorderable:focus,
+.station-button.reorderable:active {
+    outline-style: none;
+    -gtk-outline-width: 0;
+    box-shadow: none;
+}
+
 /* Spaces the station button image */
 .station-button image {
 	background-color: darker(@bg_color);
@@ -85,15 +93,14 @@
 }
 
 tooltip {
-    opacity: 0.9;
-    /* Keep tooltip styling deterministic for popover match. */
-    background-color: @tooltip_bg_color;
-}
+    opacity: 0.65;
+    background-color: black;
+} 
 
 .metadata-popover {
-    opacity: 0.9;
+    opacity: 0.65;
     /* Match popover background to tooltip background. */
-    background-color: @tooltip_bg_color;
+    background-color: black;
 }
 
 .heart-favorited image {
