@@ -12,4 +12,4 @@
 
 set -e
 
-G_MESSAGES_DEBUG=all GSETTINGS_SCHEMA_DIR="builddir/data" ./builddir/io.github.tuner_labs.tuner
+GSETTINGS_SCHEMA_DIR="builddir/data" ./builddir/io.github.tuner_labs.tuner

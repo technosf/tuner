@@ -53,12 +53,10 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
 	/**
 	 * @brief Handles focus entering the search entry.
-	 *
-	 * Switches the display stack to the search-results view.
 	 */
 	public void on_search_focused()
 	{
-		stack.visible_child_name = "searched";
+		// Keep the current stack visible until results are ready.
 	}
 
 
@@ -72,6 +70,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 		var search = text.strip();
 		if (search.length == 0)
 		{
+			_pending_search_term = "";
 			// Reset search results to the initial empty state.
 			_search_controller.handle_search_for("");
 			_search_results.tooltip_button.sensitive = false;
@@ -81,6 +80,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 			_search_results.content = empty;
 			return;
     }
+		_pending_search_term = search;
 		_search_results.tooltip_button.sensitive = false;
 		_search_controller.handle_search_for(search);
 	}
@@ -143,7 +143,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	private Gtk.Overlay _overlay             = new Gtk.Overlay ();
 	private StationSet jukebox_station_set;      // Jukebox station set
 	private SearchController _search_controller;      // Search controller
-    private StationListBox _search_results;      // Search results list
+	private StationListBox _search_results;      // Search results list
+	private string _pending_search_term = "";
 
 
 
@@ -174,18 +175,19 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             source_list : new SourceList(),
             stack : new Gtk.Stack ()
         );
+        
 		_app = app;
 		_player = player;
 		_stars = stars;
 		_provider = provider;
 
         // Jukebox set up - get the station set and connect signals for shuffle and tape counter
-			jukebox_station_set = _directory.load_random_stations(1);
-			_app.events.shuffle_requested_sig.connect(() =>
-			{
-				if (_shuffle)
-					jukebox_shuffle.begin();
-			});
+        jukebox_station_set = _directory.load_random_stations(1);
+        _app.events.shuffle_requested_sig.connect(() =>
+        {
+            if (_shuffle)
+                jukebox_shuffle.begin();
+        });
 
         _app.events.state_changed_sig.connect((station, state) =>
         {
@@ -300,7 +302,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
     * If shuffle mode is active, selects and plays a new random station
     * from the jukebox station set.
     */
-    public async void jukebox_shuffle(){
+    public async void jukebox_shuffle()
+    {
 		if (!_shuffle)
 			return;
 
@@ -416,7 +419,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
     * Sets up all categories, loads initial station data, and configures
     * signal handlers for various display components.
     */
-	private async void initialize(){
+	private async void initialize()
+    {
 		_directory.load (); // Initialize the DirectoryController
 
         /* Initialize the directory contents */
@@ -561,6 +565,13 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
 		_search_results.tooltip_button.sensitive = false;
 		_search_controller = new SearchController(directory,this,_search_results );
+		_search_controller.search_results_ready.connect ((search_term) =>
+		{
+			if (_pending_search_term != "" && search_term == _pending_search_term)
+			{
+				stack.visible_child_name = "searched";
+			}
+		});
 
         _search_results.item_count_changed_sig.connect (( item_count, parameter ) =>
         {
@@ -687,7 +698,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             _provider.available_stations (),
             _provider.available_stations () / (6 * 24)
         );
-       // item.tooltip = (_(@"Double click to shuffle through $(app().provider.available_stations()) stations,\none, every ten minutes, for $(app().provider.available_stations()/(6*24)) days"));
+
         item.activated.connect(() =>
         {
                 _shuffle = true;

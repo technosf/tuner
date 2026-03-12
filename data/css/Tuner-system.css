@@ -7,53 +7,50 @@
  * @file Tuner-system.css
  *
  * Base CSS for Tuner - import this into superceding CSS
- * 
+ *
  * Nominal order is top-to-bottom, left-to-right
  */
 
 /*
-    Station Label - top center top line
-*/
-.station-label {
-   font-weight: 500;
+ * Typography: Player info (top center)
+ */
+.station-label,
+label.station-label {
+    font-weight: 500;
     font-size: 12pt;
     letter-spacing: -0.05em;
+    color: @theme_text_color;
+}
+
+.track-info,
+label.track-info {
+    /* font-weight: 150; */
+    font-size: 11pt;
+    letter-spacing: -0.05em;
+    color: @theme_text_color;
 }
 
 /*
-    Track Info - top center bottom line
-*/
-.track-info {
-   /* font-weight: 150; */
-    font-size: 11pt;
-    letter-spacing: -0.05em;
-}
-
-
-
-/* 
-    Stack 
-    The Lower right quadrant that makes up 3/4 of the real estate 
-*/
+ * Typography: Stack label (lower-right quadrant)
+ */
 .stack-label {
     font-weight: 300;
     font-size: 18pt;
     letter-spacing: -0.05em;
 }
 
-
-/* 
-    Station Button 
-*/
+/*
+ * Station list buttons
+ */
 .station-button {
-	font-weight: 500;
+    font-weight: 500;
 }
 
 /* Pops the Station button on hover with a transitioning border */
 .station-button:hover {
-        background-color: lighter(@bg_color);
-        border: 0.1px;
-        border-style: ridge;
+    background-color: lighter(@bg_color);
+    border: 0.1px;
+    border-style: ridge;
 }
 
 /* Remove green focus/active outline during drag */
@@ -63,7 +60,6 @@
 .station-button.reorderable:active {
     outline-style: none;
     outline-width: 0;
-    -gtk-outline-width: 0;
     box-shadow: none;
 }
 
@@ -75,7 +71,6 @@ flowboxchild:selected:focus,
 flowboxchild:selected:active {
     outline-style: none;
     outline-width: 0;
-    -gtk-outline-width: 0;
     box-shadow: none;
     border: none;
     background: transparent;
@@ -94,7 +89,6 @@ flowboxchild:selected:active {
     /* GTK3 focus ring removal for DnD; note this hides keyboard focus. */
     outline-style: none;
     outline-width: 0;
-    -gtk-outline-width: 0;
     box-shadow: none;
     border: none;
     background: transparent;
@@ -102,22 +96,22 @@ flowboxchild:selected:active {
 
 /* Spaces the station button image */
 .station-button image {
-	background-color: darker(@bg_color);
-	margin-right: 5px;
+    background-color: darker(@bg_color);
+    margin-right: 5px;
     min-width: 48px;
 }
 
 /* Description on 2nd line RHS of the station button */
-.station-button-description { 
+.station-button-description {
     font-size: 13px;
-    color: gray; 
+    color: gray;
     background-color: transparent;
     border: none;
 }
 
-/* Used in Station Button for Codec/Bitrate Tag, 2nd line, LHS */
+/* Codec/bitrate tag (2nd line, LHS) */
 .tag {
-	border-radius: 5px;
+    border-radius: 5px;
     box-shadow: none;
     min-width: 20px;
     min-height: 18px;
@@ -128,22 +122,39 @@ flowboxchild:selected:active {
     padding-bottom: 0px;
 }
 
+/*
+ * Tooltips + metadata popover
+ */
 tooltip {
-    opacity: 0.65;
+    opacity: 0.75;
     background-color: black;
-} 
+}
+
+tooltip label {
+    color: white;
+}
 
 .metadata-popover {
-    opacity: 0.65;
+    opacity: 0.75;
     /* Match popover background to tooltip background. */
     background-color: black;
 }
 
+.metadata-popover label,
+.metadata-label {
+    color: white;
+}
+
+/*
+ * Status/UI accents
+ */
 .heart-favorited image {
     color: #d00000;
 }
 
-/* Search revealer background to avoid transparency gaps */
+/*
+ * Search revealer
+ */
 .search-revealer-bg {
     /* Use a solid, theme-safe color */
     background-color: shade(@theme_bg_color, 0.90);
@@ -151,4 +162,13 @@ tooltip {
     box-shadow: none;
     border: 2px solid shade(@theme_bg_color, 0.8);
     border-radius: 0;
+}
+
+/* Subtle, theme-aware focus ring for SearchEntry */
+searchentry:focus,
+entry.search:focus,
+.search-entry:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px alpha(@theme_selected_bg_color, 0.45);
+    border-color: shade(@theme_selected_bg_color, 0.90);
 }

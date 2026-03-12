@@ -39,6 +39,13 @@ public class Tuner.Controllers.SearchController : Object
 	private string _current_search_term;
 
 	/**
+	 * @brief Emitted when the current search finishes updating results.
+	 *
+	 * @param search_term The search term that completed.
+	 */
+	public signal void search_results_ready (string search_term);
+
+	/**
 	* Controller class for handling station search functionality.
 	*
 	* @param dc The directory controller instance to manage station directories
@@ -142,5 +149,6 @@ public class Tuner.Controllers.SearchController : Object
 			results_box.show_alert();
 		}
 		results_box.show_all();
+		search_results_ready (search_term);
 	} // load_search_stations
 } // SearchController

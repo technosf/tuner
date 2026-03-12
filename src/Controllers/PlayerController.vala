@@ -38,7 +38,7 @@ public class Tuner.Controllers.PlayerController : GLib.Object
     private bool _play_error = false;
     public bool play_error { get { return _play_error; } }
 
-    private const uint TEN_MINUTES_IN_SECONDS = 606;  // tape counter timer - 10 mins plus 1%
+    private const uint CLICK_INTERVAL_IN_SECONDS = 606;  // tape counter timer - 10 mins plus 1%
     
     private Player _player;
     private Station _station; 
@@ -175,7 +175,7 @@ public class Tuner.Controllers.PlayerController : GLib.Object
 			}
 			else if (value == Is.PLAYING)
 			{
-				_tape_counter_id = Timeout.add_seconds_full(Priority.LOW, TEN_MINUTES_IN_SECONDS, () =>
+				_tape_counter_id = Timeout.add_seconds_full(Priority.LOW, CLICK_INTERVAL_IN_SECONDS, () =>
 				{
 					if (_station == null)
 						return Source.REMOVE;
