@@ -53,12 +53,10 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
 	/**
 	 * @brief Handles focus entering the search entry.
-	 *
-	 * Switches the display stack to the search-results view.
 	 */
 	public void on_search_focused()
 	{
-		stack.visible_child_name = "searched";
+		// Keep the current stack visible until results are ready.
 	}
 
 
@@ -72,6 +70,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 		var search = text.strip();
 		if (search.length == 0)
 		{
+			_pending_search_term = "";
 			// Reset search results to the initial empty state.
 			_search_controller.handle_search_for("");
 			_search_results.tooltip_button.sensitive = false;
@@ -81,6 +80,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 			_search_results.content = empty;
 			return;
     }
+		_pending_search_term = search;
 		_search_results.tooltip_button.sensitive = false;
 		_search_controller.handle_search_for(search);
 	}
@@ -143,7 +143,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	private Gtk.Overlay _overlay             = new Gtk.Overlay ();
 	private StationSet jukebox_station_set;      // Jukebox station set
 	private SearchController _search_controller;      // Search controller
-    private StationListBox _search_results;      // Search results list
+	private StationListBox _search_results;      // Search results list
+	private string _pending_search_term = "";
 
 
 
@@ -564,6 +565,13 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
 		_search_results.tooltip_button.sensitive = false;
 		_search_controller = new SearchController(directory,this,_search_results );
+		_search_controller.search_results_ready.connect ((search_term) =>
+		{
+			if (_pending_search_term != "" && search_term == _pending_search_term)
+			{
+				stack.visible_child_name = "searched";
+			}
+		});
 
         _search_results.item_count_changed_sig.connect (( item_count, parameter ) =>
         {
