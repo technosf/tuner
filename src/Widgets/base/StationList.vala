@@ -226,7 +226,9 @@ public class Tuner.Widgets.Base.StationList : ListFlowBox
 
 		button.get_style_context().add_class("reorderable");
 		Gtk.drag_source_set (button, Gdk.ModifierType.BUTTON1_MASK, targets, Gdk.DragAction.MOVE);
-		button.drag_begin.connect ((context) => { });
+		button.drag_begin.connect ((context) => {
+			set_drag_icon (button, context);
+		});
 		button.drag_failed.connect ((context, result) => { return false; });
 		button.drag_data_get.connect ((context, selection, info, time) => {
 			var station = button.station;
@@ -333,5 +335,43 @@ public class Tuner.Widgets.Base.StationList : ListFlowBox
 				ordered.add (station.stationuuid);
 		}
 		reordered (ordered);
+	}
+
+	// Render the station button as the drag ghost.
+	private void set_drag_icon (StationButton button, Gdk.DragContext context)
+	{
+		var toplevel = button.get_toplevel () as Gtk.Widget;
+		if (toplevel == null)
+			return;
+
+		var window = toplevel.get_window ();
+		if (window == null) {
+			Gtk.drag_set_icon_name (context, "view-list-symbolic", 0, 0);
+			return;
+		}
+
+		int tx = 0;
+		int ty = 0;
+		button.translate_coordinates (toplevel, 0, 0, out tx, out ty);
+
+		Gtk.Allocation alloc;
+		button.get_allocation (out alloc);
+		var pixbuf = Gdk.pixbuf_get_from_window (window, tx, ty, alloc.width, alloc.height);
+		if (pixbuf != null)
+		{
+			// Scale the ghost to avoid oversized drag feedback.
+			int target_w = (int)(alloc.width * 0.75);
+			int target_h = (int)(alloc.height * 0.75);
+			if (target_w < 24) target_w = 24;
+			if (target_h < 24) target_h = 24;
+			var scaled = pixbuf.scale_simple (target_w, target_h, Gdk.InterpType.BILINEAR);
+			if (scaled != null)
+				Gtk.drag_set_icon_pixbuf (context, scaled, target_w / 2, target_h / 2);
+			else
+				Gtk.drag_set_icon_pixbuf (context, pixbuf, alloc.width / 2, alloc.height / 2);
+			return;
+		}
+
+		Gtk.drag_set_icon_name (context, "view-list-symbolic", 0, 0);
 	}
 } // StationList
