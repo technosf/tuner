@@ -100,7 +100,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
         Assets
     */
 
-	private Header _header;
+	private TitleBox _title;
 	private Display _display;
 	private MetadataImagePopup _metadata_image_popup;
     private bool _start_on_starred = false;
@@ -215,22 +215,22 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 			_metadata_image_popup = new MetadataImagePopup(this);
 			_metadata_image_popup.set_enabled(settings.stream_info_image_popup);
 
-			_header = new Header(app_ref, this, player_ctrl, app_ref.provider);
+			_title = new TitleBox(app_ref, this, player_ctrl, app_ref.provider);
 
-			_header.search_has_focus_sig.connect (() => 
+			_title.search_has_focus_sig.connect (() => 
 			// Show searched stack when cursor hits search text area
 			{
 					_display.on_search_focused();
 			});
 
-			_header.searching_for_sig.connect ( (text) => 
+			_title.searching_for_sig.connect ( (text) => 
 			// process the searched text, stripping it, and sensitizing the save 
 			// search star depending on if the search is already saved
 			{
 					_display.on_search_requested(text);
 			});
 
-			set_titlebar (_header);		
+			set_titlebar (_title);		
 			//set_titlebar (_headerbar);
 
 	        /*
@@ -407,7 +407,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 			"on_action_stream_info",
 			() => { return settings.stream_info; },
 			(value) => { settings.stream_info = value; },
-			(value) => { _header.stream_info(value); }
+			(value) => { _title.stream_info(value); }
 		);
     } // on_action_enable_stream_info
 
@@ -425,7 +425,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 			"on_action_stream_info_fast",
 			() => { return settings.stream_info_fast; },
 			(value) => { settings.stream_info_fast = value; },
-			(value) => { _header.stream_info_fast(value); }
+			(value) => { _title.stream_info_fast(value); }
 		);
     } // on_action_stream_info_fast
 
@@ -461,7 +461,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	*/
 	public void handle_play_station (Station station)
 	{
-		if ( app().is_offline || !_header.update_playing_station(station) )
+		if ( app().is_offline || !_title.update_playing_station(station) )
 			return;                                                                                          // Online and not already changing station
 
         player_ctrl.station = station;
@@ -503,7 +503,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 
 	private void prompt_save_hearted_tracks()
 	{
-		var hearted_titles = _header.get_hearted_titles();
+		var hearted_titles = _title.get_hearted_titles();
 		if (hearted_titles.size == 0)
 			return;
 
@@ -537,7 +537,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 			if (save_path != null)
 			{
 				var builder = new StringBuilder();
-				var history_lines = _header.get_hearted_history_lines_without_hearts();
+				var history_lines = _title.get_hearted_history_lines_without_hearts();
 				foreach (var line in history_lines)
 					builder.append(line).append("\n");
 				try {

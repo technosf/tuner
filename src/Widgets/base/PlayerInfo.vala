@@ -232,6 +232,7 @@ public class Tuner.Widgets.Base.PlayerInfo : Revealer
             _metadata_label.wrap = true;
             _metadata_label.max_width_chars = 48;
             _metadata_label.xalign = 0.0f;
+            _metadata_label.get_style_context().add_class("metadata-label");
             _metadata_popover.add(_metadata_label);
             _metadata_popover.show_all();
             _metadata_popover.hide();

@@ -22,9 +22,9 @@ using Tuner.Services;
  * @brief Custom header bar that centrally displays station info and
  * packs app controls either side.
  *
- * This class extends HeaderBar to create a specialized header bar
+ * This class extends Gtk.HeaderBar to create a specialized header bar
  * with play/pause controls, volume control, station information display,
- * search functionality, and preferences menu.
+ * search button, and preferences menu.
  *
  * @extends HeaderBar
  */
@@ -426,7 +426,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 			_play_button.opacity               = is_playing_now ? 1.0 : 0.5;
 			_volume_button.sensitive           = false;
 			_list_button.sensitive             = true;
-			_search_button.sensitive             = false;
+			_search_button.sensitive           = false;
 
 		}
 		else
@@ -439,7 +439,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 			_play_button.opacity               = 1.0;
 			_volume_button.sensitive           = true;
 			_list_button.sensitive             = true;
-			_search_button.sensitive             = true;
+			_search_button.sensitive           = true;
 		}
 	} // update_controls_state
 } // Tuner.HeaderBar

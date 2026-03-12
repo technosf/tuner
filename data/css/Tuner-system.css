@@ -14,19 +14,23 @@
 /*
     Station Label - top center top line
 */
-.station-label {
+.station-label,
+label.station-label {
    font-weight: 500;
     font-size: 12pt;
     letter-spacing: -0.05em;
+    color: @theme_text_color;
 }
 
 /*
     Track Info - top center bottom line
 */
-.track-info {
+.track-info,
+label.track-info {
    /* font-weight: 150; */
     font-size: 11pt;
     letter-spacing: -0.05em;
+    color: @theme_text_color;
 }
 
 
@@ -63,7 +67,6 @@
 .station-button.reorderable:active {
     outline-style: none;
     outline-width: 0;
-    -gtk-outline-width: 0;
     box-shadow: none;
 }
 
@@ -75,7 +78,6 @@ flowboxchild:selected:focus,
 flowboxchild:selected:active {
     outline-style: none;
     outline-width: 0;
-    -gtk-outline-width: 0;
     box-shadow: none;
     border: none;
     background: transparent;
@@ -94,7 +96,6 @@ flowboxchild:selected:active {
     /* GTK3 focus ring removal for DnD; note this hides keyboard focus. */
     outline-style: none;
     outline-width: 0;
-    -gtk-outline-width: 0;
     box-shadow: none;
     border: none;
     background: transparent;
@@ -129,14 +130,26 @@ flowboxchild:selected:active {
 }
 
 tooltip {
-    opacity: 0.65;
+    opacity: 0.75;
     background-color: black;
-} 
+}
+
+tooltip label {
+    color: white;
+}
 
 .metadata-popover {
-    opacity: 0.65;
+    opacity: 0.75;
     /* Match popover background to tooltip background. */
     background-color: black;
+}
+
+.metadata-popover label {
+    color: white;
+}
+
+.metadata-label {
+    color: white;
 }
 
 .heart-favorited image {

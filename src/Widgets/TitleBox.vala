@@ -1,12 +1,11 @@
 /**
- * SPDX-FileCopyrightText: Copyright © 2020-2024 Louis Brauer <louis@brauer.family>
- * SPDX-FileCopyrightText: Copyright © 2024 technosf <https://github.com/technosf>
+ * SPDX-FileCopyrightText: Copyright © 2026 technosf <https://github.com/technosf>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
- * @file HeaderBox.vala
+ * @file TitleBox.vala
  *
- * @brief HeaderBox classes
+ * @brief TitleBox classes
  *
  */
 
@@ -17,35 +16,15 @@ using Gee;
 using Tuner.Services;
 
 /*
- * @class Tuner.HeaderBox
+ * @class Tuner.TitleBox
  *
- * @brief Custom header bar that centrally displays station info and
- * packs app controls either side.
+ * @brief The TitleBox sits at the top of the Window and presents the Header and Search controls
  *
- * This class extends HeaderBox to create a specialized header bar
- * with play/pause controls, volume control, station information display,
- * search functionality, and preferences menu.
- *
- * @extends HeaderBox
+ * @extends Gtk.Box
  */
-public class Tuner.Widgets.Header : Gtk.Box
+public class Tuner.Widgets.TitleBox : Gtk.Box
 {
-
-    /* Constants    */
-
-    // Default icon name for stations without a custom favicon
-    private const string DEFAULT_ICON_NAME = "tuner:internet-radio-symbolic";
-
-	// Reveal animation delay in milliseconds
-	private const uint REVEAL_DELAY = 400u;
-	public const uint STATION_CHANGE_SETTLE_DELAY_MS = 1200u;
-	public const uint SHUFFLE_ERROR_RETRY_DELAY_MS = 1500u;
-
-
     /* Public */
-
-
-    // Public properties
 
     // Signals
     public signal void searching_for_sig (string text);
@@ -59,44 +38,33 @@ public class Tuner.Widgets.Header : Gtk.Box
 	private SearchEntry _search_entry = new SearchEntry ();
 
 	/*
-		secondary display assets
+		Primary display assets
 	*/
 
-
-	private Application _app;
-	private PlayerController _player;
-	private DataProvider.API _provider;
-
-
-	private Revealer revealer = new Revealer();
+	private Revealer _revealer = new Revealer();
 	private HeaderBar _headerbar;
 		
 
     /**
-     * @brief Construct block for initializing the header bar components.
+     * @brief Construct block for initializing the TitleBox components.
      *
-     * This method sets up all the UI elements of the header bar, including
-     * station info display, play button, preferences button, search entry,
-     * star button, and volume button.
+     * This method sets up the HeaderBar and SearchEntry and wires them up
+	 * so that the Search panel drops down on the search button press
      *
      * @param app Application context for connectivity and app-level events.
      * @param window Parent window that owns this header bar.
      * @param player Player controller used for playback state and volume.
      * @param provider Data provider used for provider statistics tooltip text.
      */
-    public Header(Application app, Window window, PlayerController player, DataProvider.API provider)
+    public TitleBox(Application app, Window window, PlayerController player, DataProvider.API provider)
     {
         Object (
             orientation: Gtk.Orientation.VERTICAL,
             spacing: 0
         );
-		
-		_app = app;
-		_player = player;
-		_provider = provider;
 
-		revealer.set_transition_type(RevealerTransitionType.SLIDE_UP);
-		revealer.reveal_child = false;
+
+		// Search 
 
 		_search_entry.placeholder_text = _("Station Search");
 		_search_entry.set_margin_start(0);
@@ -108,7 +76,7 @@ public class Tuner.Widgets.Header : Gtk.Box
 		_search_entry.activate.connect (() => {
 			// Hide and reset search after submitting.
 			_search_entry.text = "";
-			revealer.set_reveal_child(false);
+			_revealer.set_reveal_child(false);
 		});
 		_search_entry.changed.connect (() => {
 			searching_for_sig(_search_entry.text);
@@ -119,15 +87,14 @@ public class Tuner.Widgets.Header : Gtk.Box
 		});
 
 		// Background panel fills the revealer to avoid transparent gaps.
-		var panel = new Box(Orientation.HORIZONTAL, 0);
-		panel.margin = 0;
-		panel.hexpand = true;
-		revealer.hexpand = true;
-		panel.vexpand = true;
-		panel.valign = Align.FILL;
-		panel.halign = Align.FILL;
-		panel.get_style_context().add_class("search-revealer-bg");
-		revealer.get_style_context().add_class("search-revealer-bg");
+		var search_panel = new Box(Orientation.HORIZONTAL, 0);
+		search_panel.margin = 0;
+		search_panel.hexpand = true;
+		_revealer.hexpand = true;
+		search_panel.vexpand = true;
+		search_panel.valign = Align.FILL;
+		search_panel.halign = Align.FILL;
+		search_panel.get_style_context().add_class("search-revealer-bg");
 
 		// Centered wrapper so the entry can be sized relative to the revealer width.
 		var search_wrap = new Box(Orientation.HORIZONTAL, 0);
@@ -136,28 +103,38 @@ public class Tuner.Widgets.Header : Gtk.Box
 		_search_entry.halign = Align.CENTER;
 		_search_entry.hexpand = false;
 		search_wrap.add(_search_entry);
-		panel.add(search_wrap);
-		revealer.add(panel);
+		search_panel.add(search_wrap);
 
-		revealer.size_allocate.connect((allocation) => {
+		// Header Bar
+
+		_headerbar = new HeaderBar(app, window, player, provider);
+		_headerbar.search_toggle_sig.connect(() => {
+			// Reset on open to avoid showing stale search text.
+			var should_show = !_revealer.reveal_child;
+			if (should_show)
+				_search_entry.text = "";
+			_revealer.set_reveal_child(should_show);
+			if (_revealer.reveal_child)
+				_search_entry.grab_focus();
+		});
+
+		// Revealer config
+		_revealer.set_transition_type(RevealerTransitionType.SLIDE_UP);
+		_revealer.reveal_child = false;
+		_revealer.get_style_context().add_class("search-revealer-bg");
+		_revealer.size_allocate.connect((allocation) => {
 			// Keep the search entry at 1/3 of the revealer width.
 			int target_width = (int)(allocation.width / 3);
 			if (target_width > 0)
 				_search_entry.set_size_request(target_width, -1);
 		});
 
-		_headerbar = new HeaderBar(app, window, player, provider);
-		_headerbar.search_toggle_sig.connect(() => {
-			// Reset on open to avoid showing stale search text.
-			var should_show = !revealer.reveal_child;
-			if (should_show)
-				_search_entry.text = "";
-			revealer.set_reveal_child(should_show);
-			if (revealer.reveal_child)
-				_search_entry.grab_focus();
-		});
+
+		// Add assets
+
+		_revealer.add(search_panel);
 		pack_start (_headerbar, false, false, 0);
-		pack_start (revealer, false, false, 0);
+		pack_start (_revealer, false, false, 0);
 
 	} // HeaderBox
 
@@ -192,4 +169,4 @@ public class Tuner.Widgets.Header : Gtk.Box
 	}
 
 
-} // Tuner.HeaderBox
+} // Tuner.Widgets.TitleBox

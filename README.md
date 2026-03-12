@@ -12,7 +12,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 Minimalist radio station player - **Tuner** Version 2
 
 <p align="center">
-  <img src="docs/Tuner_201_one.png" width="600">
+  <img src="flathub/Tuner_201_one.png" width="600">
 </p>
 
 >I love listening to radio while I work. There are tens of thousands of cool internet radio stations available, however I find it hard to "find" new stations by using filters and genres. As of now, this little app takes away all the filtering and just presents me with new radio stations every time I use it.
@@ -37,7 +37,7 @@ Minimalist radio station player - **Tuner** Version 2
 
 ### Internationalization & Translation
 
-**Tuner** is Internationalized, and is available in various languges. Translations are hosted on [Weblate](https://hosted.weblate.org/engage/tuner/). Please help by [translating Tuner into your language or fix any translation issues](I18N.md) you find.
+**Tuner** is Internationalized, and is available in various languges. Translations are hosted on [Weblate](https://hosted.weblate.org/engage/tuner/). Please help by [translating Tuner into your language or fix any translation issues](doc/I18N.md) you find.
 
 Thanks to the Weblate team for generously hosting **Tuner** for free!
 
@@ -49,10 +49,10 @@ _January 2025_ Version 2 released with major new features and performance improv
 
 ## Installation
 
-**Tuner** is primarily [developed](DEVELOP.md) and distributed as a Flatpak on [Flathub](https://flathub.org/apps/details/io.github.tuner_labs.tuner).
+**Tuner** is primarily [developed](doc/DEVELOP.md) and distributed as a Flatpak on [Flathub](https://flathub.org/apps/details/io.github.tuner_labs.tuner).
 
-It can also be built and [distributed via other platforms and distos](PACKAGING.md).
-Please help make **Tuner** work on your favorite Disto/Package.
+It can also be built and [distributed via other platforms and distros](doc/PACKAGING.md).
+Please help make **Tuner** work on your favorite Distro/Package.
 
 ## Status and Support
 
@@ -60,7 +60,7 @@ Join in or start [discussion about tuner](https://github.com/orgs/tuner-labs/dis
 
 ### Build, Maintance and Development of Tuner
 
-Building, developing and maintianing **Tuner** is detailed seperately and in detail in the [DEVELOP](DEVELOP.md) markdown.
+Building, developing and maintianing **Tuner** is detailed seperately and in detail in the [DEVELOP](doc/DEVELOP.md) markdown.
 
 ### Known Issues
 
@@ -126,15 +126,6 @@ Help is apreciated:
 - [@btd1337](https://github.com/btd1337) - supports Tuner on Arch Linux / AUR
 - [@SwampRabbit](https://github.com/SwampRabbit) - supports Tuner on MX Linux
 
-### Free Software Foundation
-
->~~I'm a member of the Free Software Foundation.~~ Without GNU/Linux and all the great
->work from people all over the world producing free software, this project would
->not have been possible.
->
->_Update 2021-08-01: I'm no longer a member of the Free Software Foundation._
-
--- _**louis77**_
 
 ## Disclaimer
 
