@@ -53,6 +53,8 @@ public class Tuner.Widgets.StationButton : Base.DisplayButton
 
         get_style_context().add_class("station-button");
         always_show_image = true;
+        can_focus = false;
+        focus_on_click = false;
 
 		station.station_star_changed_sig.connect (() =>
 		{
