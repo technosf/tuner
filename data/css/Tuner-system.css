@@ -56,6 +56,50 @@
         border-style: ridge;
 }
 
+/* Remove green focus/active outline during drag */
+.station-button:focus,
+.station-button:active,
+.station-button.reorderable:focus,
+.station-button.reorderable:active {
+    outline-style: none;
+    outline-width: 0;
+    -gtk-outline-width: 0;
+    box-shadow: none;
+}
+
+/* Suppress FlowBox focus rings around station items */
+flowboxchild:focus,
+flowboxchild:active,
+flowboxchild:selected,
+flowboxchild:selected:focus,
+flowboxchild:selected:active {
+    outline-style: none;
+    outline-width: 0;
+    -gtk-outline-width: 0;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+/* Suppress drag outlines within station lists */
+.station-list,
+.station-list flowboxchild,
+.station-list flowboxchild:focus,
+.station-list flowboxchild:active,
+.station-list flowboxchild:selected,
+.station-list flowboxchild:selected:focus,
+.station-list flowboxchild:selected:active,
+.station-list flowboxchild:drop(active),
+.station-list flowboxchild.drag-highlight {
+    /* GTK3 focus ring removal for DnD; note this hides keyboard focus. */
+    outline-style: none;
+    outline-width: 0;
+    -gtk-outline-width: 0;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
 /* Spaces the station button image */
 .station-button image {
 	background-color: darker(@bg_color);
@@ -84,3 +128,27 @@
     padding-bottom: 0px;
 }
 
+tooltip {
+    opacity: 0.65;
+    background-color: black;
+} 
+
+.metadata-popover {
+    opacity: 0.65;
+    /* Match popover background to tooltip background. */
+    background-color: black;
+}
+
+.heart-favorited image {
+    color: #d00000;
+}
+
+/* Search revealer background to avoid transparency gaps */
+.search-revealer-bg {
+    /* Use a solid, theme-safe color */
+    background-color: shade(@theme_bg_color, 0.90);
+    background-image: none;
+    box-shadow: none;
+    border: 2px solid shade(@theme_bg_color, 0.8);
+    border-radius: 0;
+}

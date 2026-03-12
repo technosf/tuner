@@ -24,6 +24,7 @@ public class Tuner.Widgets.Base.DisplayButton : Gtk.Button
     Gtk.Grid button_grid; ///< The grid layout for organizing button contents.
 
     protected Gtk.Image _favicon_image; ///< The image displayed as the favicon. Updated by derived classes
+    protected Gtk.Image _drag_handle; ///< Optional drag handle indicator for reorderable lists.
 
     /**
      * @brief Gets or sets the title of the button.
@@ -78,6 +79,14 @@ public class Tuner.Widgets.Base.DisplayButton : Gtk.Button
         _favicon_image.set_pixel_size (48);
         _favicon_image.halign = Gtk.Align.CENTER;
         _favicon_image.valign = Gtk.Align.CENTER;
+
+        // Drag handle (hidden by default; shown for reorderable lists)
+        _drag_handle = new Gtk.Image.from_icon_name ("view-list-symbolic", Gtk.IconSize.MENU);
+        _drag_handle.halign = Gtk.Align.END;
+        _drag_handle.valign = Gtk.Align.CENTER;
+        _drag_handle.no_show_all = true;
+        _drag_handle.hide ();
+        _drag_handle.get_style_context ().add_class ("drag-handle");
       
         // Title label
         button_title = new Gtk.Label (null);
@@ -113,9 +122,23 @@ public class Tuner.Widgets.Base.DisplayButton : Gtk.Button
         button_grid.attach (button_title, 1, 0, 2, 1);
         button_grid.attach (button_tag, 1, 1, 1, 1);
         button_grid.attach (button_description, 2, 1, 1, 1);
+        button_grid.attach (_drag_handle, 3, 0, 1, 2);
         button_grid.attach (_favicon_image, 0, 0, 1, 2);
 
         add (button_grid);
+    }
+
+    /**
+     * @brief Toggle the drag handle indicator.
+     *
+     * @param visible Whether the drag handle should be shown.
+     */
+    protected void set_drag_handle_visible (bool visible)
+    {
+        if (visible)
+            _drag_handle.show ();
+        else
+            _drag_handle.hide ();
     }
 
 }

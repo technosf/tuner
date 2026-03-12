@@ -48,7 +48,12 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <default>false</default>
             <summary>Faster cycling through stream info</summary>
             <description>Fast cycle through the metadata from the playing stream if show stream info is enabled</description>
-        </key>        
+        </key>
+        <key name="stream-info-image-popup" type="b">
+            <default>false</default>
+            <summary>Stream metadata image popup</summary>
+            <description>Show a movable popup with images discovered in the stream metadata</description>
+        </key>
         <key name="excluded-countries" type="as">
             <default>[]</default>
             <summary>Excluded Countries</summary>
@@ -93,6 +98,11 @@ SPDX-License-Identifier: GPL-3.0-or-later
             <default>false</default>
             <summary>Restart playing after a network interuption</summary>
             <description>If enabled, if there is an network interuption and Tuner was playing Tuner will automatically start to play the last played station</description>
+        </key>
+        <key name="source-list-expanded-mask" type="u">
+            <default>2</default>
+            <summary>Source list expansion state</summary>
+            <description>Bitmask of expanded source list sections</description>
         </key>
     </schema>
 </schemalist>

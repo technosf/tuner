@@ -10,8 +10,10 @@
  */
 
 using Gtk;
+using Gee;
 
 using Tuner.Models;
+using Tuner.Widgets.Base;
 
 /**
  * @class ListButton
@@ -34,12 +36,9 @@ public class Tuner.Widgets.ListButton : Gtk.Button
 
 	private Gtk.Menu dropdown_menu;
 	private Gtk.Menu context_menu;
-	private List<Gtk.MenuItem> menu_items;
+	private Gee.HashMap<HistoryEntry, Gtk.MenuItem> menu_items;
 	private StringBuilder clipboard_text = new StringBuilder();
-
-	Station last_station;
-	string last_title;
-	Gtk.MenuItem last_menu_item;
+	private HistoryList _history;
 
 /**
  * @brief Constructs a new ListButton with an icon.
@@ -52,8 +51,9 @@ public class Tuner.Widgets.ListButton : Gtk.Button
 		var image = new Image.from_icon_name(icon_name, size);
 		this.set_image(image);
 		this.dropdown_menu = new Gtk.Menu();
+		menu_items = new Gee.HashMap<HistoryEntry, Gtk.MenuItem>();
 		this.clicked.connect(() => {
-			if (menu_items.length() > 0)
+			if (menu_items.size > 0)
 			{
 				this.dropdown_menu.popup_at_widget(this, Gdk.Gravity.SOUTH, Gdk.Gravity.NORTH, null);
 				limit_dropdown_menu_width();
@@ -69,8 +69,9 @@ public class Tuner.Widgets.ListButton : Gtk.Button
 	{
 		Object();
 		this.dropdown_menu = new Gtk.Menu();
+		menu_items = new Gee.HashMap<HistoryEntry, Gtk.MenuItem>();
 		this.clicked.connect(() => {
-			if (menu_items.length() > 0)
+			if (menu_items.size > 0)
 			{
 				this.dropdown_menu.popup_at_widget(this, Gdk.Gravity.SOUTH, Gdk.Gravity.NORTH, null);
 				limit_dropdown_menu_width();
@@ -85,7 +86,6 @@ public class Tuner.Widgets.ListButton : Gtk.Button
  */
 	private void initialize_context_menu()
 	{
-		menu_items   = new List<Gtk.MenuItem>();
 		context_menu = new Gtk.Menu();
 
 		var copy_item = new Gtk.MenuItem.with_label(_("Copy List to Clipboard"));
@@ -120,15 +120,12 @@ public class Tuner.Widgets.ListButton : Gtk.Button
  */
 	private void clear_all_items()
 	{
-		foreach (var item in menu_items)
-		{
+		foreach (var item in menu_items.values)
 			dropdown_menu.remove(item);
-		}
-		menu_items     = new List<Gtk.MenuItem>();
-		last_menu_item = null;
-		last_station   = null;
-		last_title     = "";
+		menu_items.clear();
 		clipboard_text.truncate();
+		if (_history != null)
+			_history.clear();
 	}
 
 /**
@@ -138,22 +135,81 @@ public class Tuner.Widgets.ListButton : Gtk.Button
  */
 	public void append_station_title_pair(Station station, string title)
 	{
-		if (station == last_station && title == last_title)
-			return;
-		if (station == last_station && "" == last_title && last_menu_item != null)
+		ensure_history();
+		_history.append(station, title);
+	}
+
+/**
+ * @brief Replaces the last station-title pair if it matches the provided title.
+ *
+ * @param station Station associated with the last item.
+ * @param title_to_match Title to match against the last item.
+ * @param replacement_title Title to use when replacing.
+ * @return True if the last item was replaced.
+ */
+	public bool replace_last_title_if_matches(Station station, string title_to_match, string replacement_title)
+	{
+		ensure_history();
+		return _history.replace_last_if_matches(station, title_to_match, replacement_title);
+	}
+
+/**
+ * @brief Returns all hearted track titles from the list.
+ *
+ * @return List of track titles without the heart prefix.
+ */
+	public Gee.List<string> get_hearted_titles()
+	{
+		ensure_history();
+		return _history.get_hearted_titles();
+	}
+
+	public Gee.List<string> get_hearted_history_lines_without_hearts()
+	{
+		ensure_history();
+		var results = new Gee.ArrayList<string>();
+		foreach (var entry in _history.entries)
 		{
-			dropdown_menu.remove(last_menu_item);
-			int pos = clipboard_text.str.index_of("\n", clipboard_text.str.index_of("\n") + 1) + 1;
-			clipboard_text.erase(0, pos);
+			var title = entry.title;
+			if (!title.has_prefix("♥ "))
+				continue;
+			title = strip_heart_prefix(title);
+			results.add(entry.station.name + ": " + title);
 		}
-		var label = station.name + "\n\t" + title;
-		var item  = new Gtk.MenuItem.with_label(label);
-		menu_items.append(item);
+		return results;
+	}
+
+	private string strip_heart_prefix(string title)
+	{
+		if (!title.has_prefix("♥ "))
+			return title;
+		var space_index = title.index_of(" ");
+		if (space_index < 0)
+			return "";
+		return title.substring(space_index + 1).strip();
+	}
+
+	private void ensure_history()
+	{
+		if (_history != null)
+			return;
+
+		_history = new HistoryList();
+		_history.entry_added_sig.connect((entry) => { add_menu_item(entry); });
+		_history.entry_removed_sig.connect((entry) => { remove_menu_item(entry); });
+		_history.cleared_sig.connect(() => { menu_items.clear(); clipboard_text.truncate(); });
+	}
+
+	private void add_menu_item(HistoryEntry entry)
+	{
+		var label_text = entry.station.name + "\n\t" + entry.title;
+		var item = new Gtk.MenuItem.with_label(label_text);
+		menu_items.set(entry, item);
 
 		item.button_press_event.connect((event) => {
 			if (event.button == 1)   // Left click
 			{
-				item_station_selected_sig(station);
+				item_station_selected_sig(entry.station);
 				dropdown_menu.popdown();
 				return true;
 			}
@@ -167,10 +223,19 @@ public class Tuner.Widgets.ListButton : Gtk.Button
 
 		item.show();
 		dropdown_menu.prepend(item);
-		last_menu_item = item;
-		last_station   = station;
-		last_title     = title;
-		clipboard_text.prepend(label + "\n");
+		clipboard_text.prepend(label_text + "\n");
+	}
+
+	private void remove_menu_item(HistoryEntry entry)
+	{
+		var item = menu_items.get(entry);
+		if (item == null)
+			return;
+		dropdown_menu.remove(item);
+		menu_items.unset(entry);
+		var label_text = entry.station.name + "\n\t" + entry.title;
+		if (clipboard_text.str.has_prefix(label_text + "\n"))
+			clipboard_text.erase(0, label_text.length + 1);
 	}
 
 /**

@@ -34,6 +34,8 @@ using Tuner.Models;
  * 
  * This class extends Gtk.ApplicationWindow and serves as the primary container
  * for all other widgets and functionality in the Tuner application.
+ *
+ * Window consists of the Header (title) and Display (main window)
  */
 public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 {
@@ -52,6 +54,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	public const string ACTION_START_ON_STARRED     = "action_starred_start";
 	public const string ACTION_STREAM_INFO          = "action_stream_info";
 	public const string ACTION_STREAM_INFO_FAST     = "action_stream_info_fast";
+	public const string ACTION_STREAM_INFO_IMAGE_POPUP = "action_stream_info_image_popup";
 
 
 	public Settings settings { get; construct; }
@@ -90,14 +93,16 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 		{ ACTION_START_ON_STARRED,      on_action_start_on_starred, null, "false"  },
 		{ ACTION_STREAM_INFO,           on_action_stream_info, null, "true"        },
 		{ ACTION_STREAM_INFO_FAST,      on_action_stream_info_fast, null, "false"  },
+		{ ACTION_STREAM_INFO_IMAGE_POPUP, on_action_stream_info_image_popup, null, "false" },
 	};
 
     /*
         Assets
     */
 
-	private HeaderBar _headerbar;
+	private Header _header;
 	private Display _display;
+	private MetadataImagePopup _metadata_image_popup;
     private bool _start_on_starred = false;
 
 	private signal void refresh_saved_searches_sig (bool add, string search_text);
@@ -176,7 +181,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
             Keep in mind that network availability is noisy
         */
         // Window state responds to app-level connectivity events.
-        app().events.connectivity_changed.connect((is_online, is_offline) => {
+        app().events.connectivity_changed_sig.connect((is_online) => {
             check_online_status();
         });
     } // construct
@@ -207,22 +212,26 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	        /*
 	            Headerbar hookups
 	        */
-	        _headerbar = new HeaderBar (app_ref, this, player_ctrl, app_ref.provider);
+			_metadata_image_popup = new MetadataImagePopup(this);
+			_metadata_image_popup.set_enabled(settings.stream_info_image_popup);
 
-        _headerbar.search_has_focus_sig.connect (() => 
-        // Show searched stack when cursor hits search text area
-        {
-	            _display.on_search_focused();
-        });
+			_header = new Header(app_ref, this, player_ctrl, app_ref.provider);
 
-        _headerbar.searching_for_sig.connect ( (text) => 
-        // process the searched text, stripping it, and sensitizing the save 
-        // search star depending on if the search is already saved
-        {
-	            _display.on_search_requested(text);
-        });
+			_header.search_has_focus_sig.connect (() => 
+			// Show searched stack when cursor hits search text area
+			{
+					_display.on_search_focused();
+			});
 
-		set_titlebar (_headerbar);
+			_header.searching_for_sig.connect ( (text) => 
+			// process the searched text, stripping it, and sensitizing the save 
+			// search star depending on if the search is already saved
+			{
+					_display.on_search_requested(text);
+			});
+
+			set_titlebar (_header);		
+			//set_titlebar (_headerbar);
 
 	        /*
 	            Display
@@ -261,6 +270,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 		change_action_state (ACTION_START_ON_STARRED, settings.start_on_starred);
 		change_action_state (ACTION_STREAM_INFO, settings.stream_info);
 		change_action_state (ACTION_STREAM_INFO_FAST, settings.stream_info_fast);
+		change_action_state (ACTION_STREAM_INFO_IMAGE_POPUP, settings.stream_info_image_popup);
 	}
 
 
@@ -397,7 +407,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 			"on_action_stream_info",
 			() => { return settings.stream_info; },
 			(value) => { settings.stream_info = value; },
-			(value) => { _headerbar.stream_info(value); }
+			(value) => { _header.stream_info(value); }
 		);
     } // on_action_enable_stream_info
 
@@ -415,9 +425,26 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 			"on_action_stream_info_fast",
 			() => { return settings.stream_info_fast; },
 			(value) => { settings.stream_info_fast = value; },
-			(value) => { _headerbar.stream_info_fast(value); }
+			(value) => { _header.stream_info_fast(value); }
 		);
     } // on_action_stream_info_fast
+
+	/**
+	 * @brief Handles stream metadata image popup preference changes.
+	 *
+	 * @param action The SimpleAction that triggered this method.
+	 * @param parameter The parameter passed with the action (unused).
+	 */
+	public void on_action_stream_info_image_popup (SimpleAction action, Variant? parameter)
+	{
+		toggle_setting_action(
+			action,
+			"on_action_stream_info_image_popup",
+			() => { return settings.stream_info_image_popup; },
+			(value) => { settings.stream_info_image_popup = value; },
+			(value) => { _metadata_image_popup.set_enabled(value); }
+		);
+	} // on_action_stream_info_image_popup
 
 
 
@@ -434,7 +461,7 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	*/
 	public void handle_play_station (Station station)
 	{
-		if ( app().is_offline || !_headerbar.update_playing_station(station) )
+		if ( app().is_offline || !_header.update_playing_station(station) )
 			return;                                                                                          // Online and not already changing station
 
         player_ctrl.station = station;
@@ -455,8 +482,8 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 	* @brief Performs cleanup actions before the window is destroyed.
 	* @return true if the window should be hidden instead of destroyed, false otherwise.
 	*/
-	public bool before_destroy ()
-	{
+    public bool before_destroy ()
+    {
         get_size (out _width, out _height); // Echo ending dimensions so Settings can pick them up
         _settings.save ();
 
@@ -469,8 +496,59 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
             return true;
         }
 
+		prompt_save_hearted_tracks();
+
         return false;
     } // before_destroy
+
+	private void prompt_save_hearted_tracks()
+	{
+		var hearted_titles = _header.get_hearted_titles();
+		if (hearted_titles.size == 0)
+			return;
+
+		var dialog = new Gtk.MessageDialog(
+			this,
+			Gtk.DialogFlags.MODAL,
+			Gtk.MessageType.QUESTION,
+			Gtk.ButtonsType.NONE,
+			_("Save hearted tracks to a file?")
+		);
+		dialog.add_button(_("_Don't Save"), Gtk.ResponseType.CANCEL);
+		dialog.add_button(_("_Save"), Gtk.ResponseType.ACCEPT);
+
+		var response = dialog.run();
+		dialog.destroy();
+		if (response != Gtk.ResponseType.ACCEPT)
+			return;
+
+		var save_dialog = new Gtk.FileChooserDialog(
+			_("Save File"),
+			this,
+			Gtk.FileChooserAction.SAVE,
+			_("_Cancel"), Gtk.ResponseType.CANCEL,
+			_("_Save"), Gtk.ResponseType.ACCEPT
+		);
+		save_dialog.set_current_name("tuner-hearted-" + (new DateTime.now_local().format("%Y-%m-%d")) + ".txt");
+
+		if (save_dialog.run() == Gtk.ResponseType.ACCEPT)
+		{
+			var save_path = save_dialog.get_filename();
+			if (save_path != null)
+			{
+				var builder = new StringBuilder();
+				var history_lines = _header.get_hearted_history_lines_without_hearts();
+				foreach (var line in history_lines)
+					builder.append(line).append("\n");
+				try {
+					GLib.FileUtils.set_contents(save_path, builder.str);
+				} catch (Error e) {
+					warning(@"Failed to save hearted tracks: $(e.message)");
+				}
+			}
+		}
+		save_dialog.destroy();
+	}
     
 
 	/**

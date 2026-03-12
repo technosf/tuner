@@ -10,6 +10,7 @@
  */
 
  using GLib;
+ using Gst;
  using Tuner.Coordinators;
  using Tuner.Controllers;
  using Tuner.Events;
@@ -67,9 +68,6 @@ namespace Tuner {
     public class Application : Gtk.Application 
     {
         private delegate void StringActionHandler(string value);
-
-        /** @brief Signal emitted when the shuffle mode changes   */
-        public signal void shuffle_mode_sig(bool shuffle);
 
         public static string ENV_LANG = "LANGUAGE";
 
@@ -131,7 +129,7 @@ namespace Tuner {
             } catch (Error e) {
                 warning(@"Error reading locale path: $(e.message)");
             }            
-        }
+        } // static construct
 
         // -------------------------------------
 
@@ -227,7 +225,7 @@ namespace Tuner {
                 _is_online = value;
                 is_offline = !value;
                 if (events != null)
-                    events.connectivity_changed(_is_online, is_offline);
+                    events.connectivity_changed_sig(_is_online );
             }
         }   
 
@@ -251,6 +249,7 @@ namespace Tuner {
         private bool _has_started = false;
         // Coordinates startup-only cross-component flows (e.g., deferred autoplay).
         private StartupCoordinator _startup_coordinator;
+        private Gst.Element? _startup_jingle;
         // Coordinates playback restart behavior after online/offline transitions.
         private PlaybackRecoveryCoordinator _playback_recovery_coordinator;
         // Coordinates provider click/vote updates from player events.
@@ -261,7 +260,7 @@ namespace Tuner {
         * @brief Constructor for the Application
         */
         private Application () {
-            Object (
+            GLib.Object (
                 application_id: APP_ID,
                 flags: ApplicationFlags.FLAGS_NONE
             );
@@ -429,7 +428,7 @@ namespace Tuner {
         private void initialize_coordinators()
         {
             _playback_recovery_coordinator = new PlaybackRecoveryCoordinator(this, events, player, settings);
-            _usage_tracking_coordinator = new UsageTrackingCoordinator(settings, player, provider);
+            _usage_tracking_coordinator = new UsageTrackingCoordinator(settings, events, provider);
         }
 
 
@@ -548,13 +547,54 @@ namespace Tuner {
         private void create_main_window()
         {
             window = new Window (this, player, settings, directory);
+            play_startup_jingle ();
             _startup_coordinator = new StartupCoordinator(this, events, window, settings, directory);
             _startup_coordinator.start();
 
             // Flathub screenshot sizing
-            window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
+            //window.resize(1000, 625);    // Screenshot sizing - round corners 80, ds op 1
 
             add_window(window);
+        }
+
+
+        /**
+        * @brief Play the startup jingle (resource-backed WAV) once per launch.
+        */
+        private void play_startup_jingle ()
+        {
+            if (_startup_jingle != null)
+                return;
+
+            var playbin = Gst.ElementFactory.make ("playbin", "startup-jingle");
+            if (playbin == null)
+                return;
+
+            var uri = "resource:///io/github/tuner_labs/tuner/sounds/tuner_startup.mp3";
+            playbin.set ("uri", uri);
+            playbin.set ("volume", settings.volume);
+            _startup_jingle = playbin;
+
+            var bus = playbin.get_bus ();
+            if (bus != null)
+            {
+                bus.add_signal_watch ();
+                bus.message.connect ((message) => {
+                    switch (message.type)
+                    {
+                        case Gst.MessageType.EOS:
+                        case Gst.MessageType.ERROR:
+                            playbin.set_state (Gst.State.NULL);
+                            bus.remove_signal_watch ();
+                            _startup_jingle = null;
+                            break;
+                        default:
+                            break;
+                    }
+                });
+            }
+
+            playbin.set_state (Gst.State.PLAYING);
         }
 
 
@@ -589,7 +629,8 @@ namespace Tuner {
         {
             bool network_available = NETMON.get_network_available ();
 
-            if(_monitor_changed_id > 0) 
+            // Clean up the prior network monitor task
+            if( _monitor_changed_id > 0) 
             {
                 Source.remove(_monitor_changed_id);
                 _monitor_changed_id = 0;
@@ -600,7 +641,7 @@ namespace Tuner {
                 wait 1 seconds before setting to online status
                 to whatever the state is at that time
             */
-            if (network_available)
+            if ( network_available )
             {
                 if (is_online)
                     return;
@@ -660,7 +701,6 @@ namespace Tuner {
             }
 
             return { exe };
-        }
-
+        } // build_restart_argv
     } // Application
 } // namespace Tuner

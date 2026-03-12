@@ -29,5 +29,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
  </gresource>
 
-</gresources>
+  <gresource prefix="/io/github/tuner_labs/tuner/sounds">
+    <file alias="tuner_startup.mp3">sounds/tuner_startup.mp3</file>
+  </gresource>
 
+</gresources>

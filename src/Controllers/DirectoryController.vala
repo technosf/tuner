@@ -245,6 +245,17 @@ public class Tuner.Controllers.DirectoryController : Object
     } // get_starred
 
 
+    /**
+     * @brief Reorders starred stations and persists the change.
+     *
+     * @param stationuuids The ordered list of station UUIDs.
+     */
+    public void reorder_starred (Gee.List<string> stationuuids)
+    {
+        _star_store.reorder_stations (stationuuids);
+    } // reorder_starred
+
+
 // --------------------------------------------------
 
     /**

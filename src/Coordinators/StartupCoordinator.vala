@@ -54,7 +54,7 @@ namespace Tuner.Coordinators {
 			_settings = settings;
 			_directory = directory;
 
-			_connectivity_handler_id = _events.connectivity_changed.connect((is_online, is_offline) => {
+			_connectivity_handler_id = _events.connectivity_changed_sig.connect((is_online ) => {
 				if (is_online)
 					try_autoplay();
 			});
