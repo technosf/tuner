@@ -32,6 +32,8 @@ using Tuner.Widgets.Base.Support;
  * @brief Display class for managing organization and presentation of genres and thier stations
  *
  * Display should be initialized and re-initialized by its owning class
+ *
+ * Display packs a source list and overlay of background icon and content stack
  */
 public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
@@ -70,6 +72,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 		var search = text.strip();
 		if (search.length == 0)
 		{
+			// Reset search results to the initial empty state.
 			_search_controller.handle_search_for("");
 			_search_results.tooltip_button.sensitive = false;
 			_search_results.parameter = "";
@@ -249,7 +252,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         source_list.root.add (_eras_category);
         source_list.root.add (_talk_category);
 
-		source_list.ellipsize_mode = Pango.EllipsizeMode.NONE;
+		// Ellipsize long item names so badges remain visible within the display width.
+		source_list.ellipsize_mode = Pango.EllipsizeMode.END;
 		source_list.item_selected.connect  ((item) =>
 		// Syncs Item choice to Stack view
 		{
@@ -259,6 +263,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 			stack.visible_child_name    = selected_item;
 		});
 
+        // Populate the Display
 		pack1 (source_list, false, false);
 		pack2 (_overlay, true, false);
 		set_position(200);

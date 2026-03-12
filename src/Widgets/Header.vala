@@ -90,6 +90,7 @@ public class Tuner.Widgets.Header : Gtk.Box
             orientation: Gtk.Orientation.VERTICAL,
             spacing: 0
         );
+		
 		_app = app;
 		_player = player;
 		_provider = provider;
@@ -105,6 +106,7 @@ public class Tuner.Widgets.Header : Gtk.Box
 		_search_entry.valign = Align.CENTER;
 		_search_entry.hexpand = true;
 		_search_entry.activate.connect (() => {
+			// Hide and reset search after submitting.
 			_search_entry.text = "";
 			revealer.set_reveal_child(false);
 		});
@@ -116,6 +118,7 @@ public class Tuner.Widgets.Header : Gtk.Box
 			return true;
 		});
 
+		// Background panel fills the revealer to avoid transparent gaps.
 		var panel = new Box(Orientation.HORIZONTAL, 0);
 		panel.margin = 0;
 		panel.hexpand = true;
@@ -126,6 +129,7 @@ public class Tuner.Widgets.Header : Gtk.Box
 		panel.get_style_context().add_class("search-revealer-bg");
 		revealer.get_style_context().add_class("search-revealer-bg");
 
+		// Centered wrapper so the entry can be sized relative to the revealer width.
 		var search_wrap = new Box(Orientation.HORIZONTAL, 0);
 		search_wrap.hexpand = true;
 		search_wrap.halign = Align.CENTER;
@@ -136,6 +140,7 @@ public class Tuner.Widgets.Header : Gtk.Box
 		revealer.add(panel);
 
 		revealer.size_allocate.connect((allocation) => {
+			// Keep the search entry at 1/3 of the revealer width.
 			int target_width = (int)(allocation.width / 3);
 			if (target_width > 0)
 				_search_entry.set_size_request(target_width, -1);
@@ -143,6 +148,7 @@ public class Tuner.Widgets.Header : Gtk.Box
 
 		_headerbar = new HeaderBar(app, window, player, provider);
 		_headerbar.search_toggle_sig.connect(() => {
+			// Reset on open to avoid showing stale search text.
 			var should_show = !revealer.reveal_child;
 			if (should_show)
 				_search_entry.text = "";

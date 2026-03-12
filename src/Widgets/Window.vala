@@ -34,6 +34,8 @@ using Tuner.Models;
  * 
  * This class extends Gtk.ApplicationWindow and serves as the primary container
  * for all other widgets and functionality in the Tuner application.
+ *
+ * Window consists of the Header (title) and Display (main window)
  */
 public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 {
@@ -213,23 +215,23 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 			_metadata_image_popup = new MetadataImagePopup(this);
 			_metadata_image_popup.set_enabled(settings.stream_info_image_popup);
 
-		_header = new Header(app_ref, this, player_ctrl, app_ref.provider);
+			_header = new Header(app_ref, this, player_ctrl, app_ref.provider);
 
-        _header.search_has_focus_sig.connect (() => 
-        // Show searched stack when cursor hits search text area
-        {
-	            _display.on_search_focused();
-        });
+			_header.search_has_focus_sig.connect (() => 
+			// Show searched stack when cursor hits search text area
+			{
+					_display.on_search_focused();
+			});
 
-        _header.searching_for_sig.connect ( (text) => 
-        // process the searched text, stripping it, and sensitizing the save 
-        // search star depending on if the search is already saved
-        {
-	            _display.on_search_requested(text);
-        });
+			_header.searching_for_sig.connect ( (text) => 
+			// process the searched text, stripping it, and sensitizing the save 
+			// search star depending on if the search is already saved
+			{
+					_display.on_search_requested(text);
+			});
 
-		set_titlebar (_header);		
-		//set_titlebar (_headerbar);
+			set_titlebar (_header);		
+			//set_titlebar (_headerbar);
 
 	        /*
 	            Display

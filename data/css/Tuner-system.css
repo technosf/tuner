@@ -85,11 +85,15 @@
 }
 
 tooltip {
-    opacity: 0.85;
+    opacity: 0.9;
+    /* Keep tooltip styling deterministic for popover match. */
+    background-color: @tooltip_bg_color;
 }
 
 .metadata-popover {
-    opacity: 0.85;
+    opacity: 0.9;
+    /* Match popover background to tooltip background. */
+    background-color: @tooltip_bg_color;
 }
 
 .heart-favorited image {
