@@ -67,6 +67,7 @@ public class Tuner.Widgets.TitleBox : Gtk.Box
 		// Search 
 
 		_search_entry.placeholder_text = _("Station Search");
+		_search_entry.get_style_context().add_class("search-entry");
 		_search_entry.set_margin_start(0);
 		_search_entry.set_margin_end(0);
 		_search_entry.set_margin_top(0);

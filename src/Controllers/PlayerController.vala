@@ -38,8 +38,7 @@ public class Tuner.Controllers.PlayerController : GLib.Object
     private bool _play_error = false;
     public bool play_error { get { return _play_error; } }
 
-    //private const uint CLICK_INTERVAL_IN_SECONDS = 606;  // tape counter timer - 10 mins plus 1%
-    private const uint CLICK_INTERVAL_IN_SECONDS = 8;  // tape counter timer - 10 mins plus 1% // FIXME
+    private const uint CLICK_INTERVAL_IN_SECONDS = 606;  // tape counter timer - 10 mins plus 1%
     
     private Player _player;
     private Station _station; 
