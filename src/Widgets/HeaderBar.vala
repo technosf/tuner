@@ -195,7 +195,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 
 		_heart_button.image = new Image.from_icon_name ("emblem-favorite-symbolic", IconSize.LARGE_TOOLBAR);
 		_heart_button.valign = Align.CENTER;
-		_heart_button.tooltip_text = _("Save current track to history");
+		_heart_button.tooltip_text = _("Heart current track in history");
 		_heart_button.sensitive = false;
 		_heart_button.clicked.connect(() =>
 		{
@@ -227,6 +227,7 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
         pack_start (_volume_button);
         pack_start (_star_button);
         pack_start (_play_button);
+		pack_start (_heart_button);
 
 	    _player_info = new Base.PlayerInfo(window, _player);
         custom_title = _player_info; // Station display
@@ -243,8 +244,6 @@ public class Tuner.Widgets.HeaderBar : Gtk.HeaderBar
 		//  	app().is_online = !app().is_online;
 		//  });
 
-		pack_end (_heart_button);
-		//pack_end (_search_entry);
 		show_close_button = true;
 
 
