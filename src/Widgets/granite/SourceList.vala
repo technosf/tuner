@@ -1900,10 +1900,12 @@ public class SourceList : Gtk.ScrolledWindow {
                 set_tooltip_row (tooltip, path);
 
                 if (item.tooltip == null) {
-                    tooltip.set_markup (item.name);
+                    // Use plain text to avoid markup parsing issues.
+                    tooltip.set_text (item.name);
                     should_show = true;
                 } else if (item.tooltip != "") {
-                    tooltip.set_markup (item.tooltip);
+                    // Tooltips are plain text; avoid markup parsing.
+                    tooltip.set_text (item.tooltip);
                     should_show = true;
                 }
 
@@ -1919,7 +1921,8 @@ public class SourceList : Gtk.ScrolledWindow {
                     if (item.activatable_tooltip == "") {
                         return false;
                     } else {
-                        tooltip.set_markup (item.activatable_tooltip);
+                        // Activatable tooltip is plain text; avoid markup parsing.
+                        tooltip.set_text (item.activatable_tooltip);
                         return true;
                     }
                 }

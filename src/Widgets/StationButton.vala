@@ -53,6 +53,8 @@ public class Tuner.Widgets.StationButton : Base.DisplayButton
 
         get_style_context().add_class("station-button");
         always_show_image = true;
+        can_focus = false;
+        focus_on_click = false;
 
 		station.station_star_changed_sig.connect (() =>
 		{
@@ -92,6 +94,20 @@ public class Tuner.Widgets.StationButton : Base.DisplayButton
             station.update_favicon_image.begin (_favicon_image);
         }
     } // StationButton
+
+	/**
+	* @brief Toggles reorder visuals for drag-and-drop.
+	*
+	* @param enabled Whether reorder visuals should be shown.
+	*/
+	public void set_reorder_visuals (bool enabled)
+	{
+		if (enabled)
+			get_style_context().add_class("reorderable");
+		else
+			get_style_context().remove_class("reorderable");
+		set_drag_handle_visible (enabled);
+	}
 
 
 	/**

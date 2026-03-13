@@ -42,32 +42,32 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_one.png</image>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.one.png</image>
       <caption>Tuner with light theme, Discover</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_stream.png</image>
-      <caption>Tuner stream metadata</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.search.png</image>
+      <caption>Tuner search bar</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_star.png</image>
-      <caption>Tuner starred stations</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.starred.png</image>
+      <caption>Tuner starred station with metadata and stream image</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_lang.png</image>
-      <caption>Tuner translation languages</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.history.png</image>
+      <caption>Tuner thistory and favorite tracks</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_jukebox.png</image>
-      <caption>Tuner Jukebox and options popover</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.jukebox.png</image>
+      <caption>Tuner Jukebox playing, looking at saved search</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_genre.png</image>
-      <caption>Tuner genres and subgenres</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.offline.png</image>
+      <caption>Tuner offline</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/docs/Tuner_201_dark.png</image>
-      <caption>Tuner with dark theme, saved search</caption>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.dark.png</image>
+      <caption>Tuner with dark theme, preferences</caption>
     </screenshot>
   </screenshots>
 
@@ -103,6 +103,22 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
   <releases>
   
+    <release version="2.1.0-beta.1" date="2026-03-12">
+      <description>
+        <p>Feature release:</p>
+        <ul>
+          <li>Starred Stations can now be ordered via Drag and Drop</li>
+          <li>Startup Jingle</li>
+          <li>Copy Stream Metadata to clipboard with a Right Click</li>
+          <li>Images in stream metadata are displayed in a frameless window</li>
+          <li>Titles can be Hearted in the play history</li>
+          <li>Exiting with Hearted Titles will prompt to save the list</li>
+          <li>Categories expansion is remembered</li>
+          <li>Refactored mucho</li>
+        </ul>
+      </description>
+    </release>    
+
     <release version="2.0.3" date="2026-03-09">
       <description>
         <p>Maintenance release:</p>

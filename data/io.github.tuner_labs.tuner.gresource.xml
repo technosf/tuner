@@ -10,8 +10,6 @@ SPDX-License-Identifier: GPL-3.0-or-later
 <gresources>
   <gresource prefix="/io/github/tuner_labs/tuner/css">
     <file alias="Tuner-system.css" compressed="true">css/Tuner-system.css</file>
-    <file alias="Tuner-light.css" compressed="true">css/Tuner-light.css</file>
-    <file alias="Tuner-dark.css" compressed="true">css/Tuner-dark.css</file>
   </gresource>
 
 	<gresource prefix="/io/github/tuner_labs/tuner/icons">
@@ -29,5 +27,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
  </gresource>
 
-</gresources>
+  <gresource prefix="/io/github/tuner_labs/tuner/sounds">
+    <file alias="tuner_startup.mp3">sounds/tuner_startup.mp3</file>
+  </gresource>
 
+</gresources>

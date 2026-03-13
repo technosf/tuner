@@ -25,12 +25,15 @@ using Tuner.Models;
 using Tuner.Services;
 using Tuner.Widgets.Base;
 using Tuner.Widgets.Granite;
+using Tuner.Widgets.Base.Support;
 
 
 /**
  * @brief Display class for managing organization and presentation of genres and thier stations
  *
  * Display should be initialized and re-initialized by its owning class
+ *
+ * Display packs a source list and overlay of background icon and content stack
  */
 public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
@@ -50,12 +53,10 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 
 	/**
 	 * @brief Handles focus entering the search entry.
-	 *
-	 * Switches the display stack to the search-results view.
 	 */
 	public void on_search_focused()
 	{
-		stack.visible_child_name = "searched";
+		// Keep the current stack visible until results are ready.
 	}
 
 
@@ -64,10 +65,24 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	 *
 	 * @param text Search text submitted by the header bar.
 	 */
-	public void on_search_requested(string text)
+    public void on_search_requested(string text)
 	{
+		var search = text.strip();
+		if (search.length == 0)
+		{
+			_pending_search_term = "";
+			// Reset search results to the initial empty state.
+			_search_controller.handle_search_for("");
+			_search_results.tooltip_button.sensitive = false;
+			_search_results.parameter = "";
+			var empty = new StationList();
+			station_list_hookup(empty);
+			_search_results.content = empty;
+			return;
+    }
+		_pending_search_term = search;
 		_search_results.tooltip_button.sensitive = false;
-		_search_controller.handle_search_for(text);
+		_search_controller.handle_search_for(search);
 	}
 
 
@@ -105,6 +120,16 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	private SourceList.ExpandableItem _eras_category           = new SourceList.ExpandableItem (_("Eras"));
 	private SourceList.ExpandableItem _talk_category           = new SourceList.ExpandableItem (_("Talk, News, Sport"));
 
+	// Bitmask values for expanded source list sections (collapsible only).
+	private const uint SOURCE_LIST_EXPANDED_SAVED_SEARCHES = 1u << 0;
+	private const uint SOURCE_LIST_EXPANDED_EXPLORE        = 1u << 1;
+	private const uint SOURCE_LIST_EXPANDED_GENRES         = 1u << 2;
+	private const uint SOURCE_LIST_EXPANDED_SUBGENRES      = 1u << 3;
+	private const uint SOURCE_LIST_EXPANDED_ERAS           = 1u << 4;
+	private const uint SOURCE_LIST_EXPANDED_TALK           = 1u << 5;
+
+	private bool _suppress_source_list_mask_write = false;
+
 
 	private bool _first_activation           = true;     // display has not been activated before
 	private bool _active                     = false;     // display is active
@@ -118,7 +143,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	private Gtk.Overlay _overlay             = new Gtk.Overlay ();
 	private StationSet jukebox_station_set;      // Jukebox station set
 	private SearchController _search_controller;      // Search controller
-    private StationListBox _search_results;      // Search results list
+	private StationListBox _search_results;      // Search results list
+	private string _pending_search_term = "";
 
 
 
@@ -149,20 +175,21 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             source_list : new SourceList(),
             stack : new Gtk.Stack ()
         );
+        
 		_app = app;
 		_player = player;
 		_stars = stars;
 		_provider = provider;
 
         // Jukebox set up - get the station set and connect signals for shuffle and tape counter
-			jukebox_station_set = _directory.load_random_stations(1);
-			_player.shuffle_requested_sig.connect(() =>
-			{
-				if (_shuffle)
-					jukebox_shuffle.begin();
-			});
+        jukebox_station_set = _directory.load_random_stations(1);
+        _app.events.shuffle_requested_sig.connect(() =>
+        {
+            if (_shuffle)
+                jukebox_shuffle.begin();
+        });
 
-        _player.state_changed_sig.connect((station, state) =>
+        _app.events.state_changed_sig.connect((station, state) =>
         {
             if (_shuffle && state == PlayerController.Is.STOPPED_ERROR)
             {
@@ -211,22 +238,28 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         _library_category.expanded = false;
 
         _saved_searches_category.collapsible = true;
-        _saved_searches_category.expanded = false;
-
         _explore_category.collapsible = true;
-        _explore_category.expanded = true;
-
         _genres_category.collapsible = true;
-        _genres_category.expanded = false;
-
         _subgenres_category.collapsible = true;
-        _subgenres_category.expanded = false;
-
         _eras_category.collapsible = true;
-        _eras_category.expanded = false;
-
         _talk_category.collapsible = true;
+
+        // Reset collapsible sections, then apply saved mask.
+        _saved_searches_category.expanded = false;
+        _explore_category.expanded = false;
+        _genres_category.expanded = false;
+        _subgenres_category.expanded = false;
+        _eras_category.expanded = false;
         _talk_category.expanded = false;
+        apply_source_list_expanded_mask (_app.settings.source_list_expanded_mask);
+
+        // Persist expansion changes from the UI.
+        _saved_searches_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _explore_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _genres_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _subgenres_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _eras_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
+        _talk_category.notify["expanded"].connect (() => update_source_list_expanded_mask());
 
         
         source_list.root.add (_selections_category);
@@ -237,7 +270,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         source_list.root.add (_eras_category);
         source_list.root.add (_talk_category);
 
-		source_list.ellipsize_mode = Pango.EllipsizeMode.NONE;
+		// Ellipsize long item names so badges remain visible within the display width.
+		source_list.ellipsize_mode = Pango.EllipsizeMode.END;
 		source_list.item_selected.connect  ((item) =>
 		// Syncs Item choice to Stack view
 		{
@@ -247,6 +281,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 			stack.visible_child_name    = selected_item;
 		});
 
+        // Populate the Display
 		pack1 (source_list, false, false);
 		pack2 (_overlay, true, false);
 		set_position(200);
@@ -267,7 +302,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
     * If shuffle mode is active, selects and plays a new random station
     * from the jukebox station set.
     */
-	public async void jukebox_shuffle(){
+    public async void jukebox_shuffle()
+    {
 		if (!_shuffle)
 			return;
 
@@ -284,6 +320,44 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 		catch (SourceError e)
 		{}
 	} // jukebox_shuffle
+
+	// --------------------------------------------------------
+	// Source list expansion mask handling
+	// --------------------------------------------------------
+
+	private void apply_source_list_expanded_mask (uint mask)
+	{
+		_suppress_source_list_mask_write = true;
+		_saved_searches_category.expanded = (mask & SOURCE_LIST_EXPANDED_SAVED_SEARCHES) != 0;
+		_explore_category.expanded = (mask & SOURCE_LIST_EXPANDED_EXPLORE) != 0;
+		_genres_category.expanded = (mask & SOURCE_LIST_EXPANDED_GENRES) != 0;
+		_subgenres_category.expanded = (mask & SOURCE_LIST_EXPANDED_SUBGENRES) != 0;
+		_eras_category.expanded = (mask & SOURCE_LIST_EXPANDED_ERAS) != 0;
+		_talk_category.expanded = (mask & SOURCE_LIST_EXPANDED_TALK) != 0;
+		_suppress_source_list_mask_write = false;
+	}
+
+	private void update_source_list_expanded_mask ()
+	{
+		if (_suppress_source_list_mask_write)
+			return;
+
+		uint mask = 0;
+		if (_saved_searches_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_SAVED_SEARCHES;
+		if (_explore_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_EXPLORE;
+		if (_genres_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_GENRES;
+		if (_subgenres_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_SUBGENRES;
+		if (_eras_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_ERAS;
+		if (_talk_category.expanded)
+			mask |= SOURCE_LIST_EXPANDED_TALK;
+
+		_app.settings.persist_source_list_expanded_mask (mask);
+	}
 
 
     /**
@@ -345,7 +419,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
     * Sets up all categories, loads initial station data, and configures
     * signal handlers for various display components.
     */
-	private async void initialize(){
+	private async void initialize()
+    {
 		_directory.load (); // Initialize the DirectoryController
 
         /* Initialize the directory contents */
@@ -354,17 +429,21 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             Discover
         */
 
-        var discover = StationListBox.create ( stack
-            , source_list
-            ,  _selections_category
-            , "discover"
-            , "face-smile"
-            , _("Discover")
-            , _("Stations to Discover")
-            , false
-            ,_directory.load_random_stations(20)
-            , _("Discover more stations")
-            , "media-playlist-shuffle-symbolic");
+        var discover = StationListBoxFactory.create (
+            new StationListBoxConfig (
+                stack,
+                source_list,
+                _selections_category,
+                "discover",
+                "face-smile",
+                _("Discover"),
+                _("Stations to Discover")
+            ) {
+                station_set = _directory.load_random_stations(20),
+                action_tooltip_text = _("Discover more stations"),
+                action_icon_name = "media-playlist-shuffle-symbolic"
+            }
+        );
         
         discover.action_button_activated_sig.connect (() => {
             discover.item.populate( this, true );
@@ -374,31 +453,37 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 		/* ---------------------------------------------------------------------------
 		    Trending
 		 */
-         StationListBox.create_category_specific
-		        ( stack,
-		        source_list,
-		        _selections_category,
-		        "trending",
-		        "tuner:playlist-queue",
-		        _("Trending"),
-		        _("Trending Stations in the last 24 hours"),
-		        _directory.load_trending_stations(40)
-		        );
+         StationListBoxFactory.create (
+            new StationListBoxConfig (
+                stack,
+                source_list,
+                _selections_category,
+                "trending",
+                "tuner:playlist-queue",
+                _("Trending"),
+                _("Trending Stations in the last 24 hours")
+            ) {
+                station_set = _directory.load_trending_stations(40)
+            }
+         );
 
         /* ---------------------------------------------------------------------------
             Popular
         */
 
-        StationListBox.create_category_specific
-            ( stack
-                , source_list
-                , _selections_category
-                , "popular"
-                , "tuner:playlist-similar"
-                , _("Popular")
-                , _("Most listened to Stations in the last 24 hours")
-                ,_directory.load_popular_stations(40)
-            );
+        StationListBoxFactory.create (
+            new StationListBoxConfig (
+                stack,
+                source_list,
+                _selections_category,
+                "popular",
+                "tuner:playlist-similar",
+                _("Popular"),
+                _("Most listened to Stations in the last 24 hours")
+            ) {
+                station_set = _directory.load_popular_stations(40)
+            }
+        );
     
 
         // ---------------------------------------------------------------------------
@@ -424,17 +509,30 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             Starred
         */
 
-        var starred = StationListBox.create_category_predefined
-            (   this
-                , stack
-                , source_list
-                , _library_category
-                , "starred"
-                , "starred"
-                , _("Starred by You")
-                , _("Starred by You") + " :"
-                , _directory.get_starred() 
-            );
+        var starred = StationListBoxFactory.create (
+            new StationListBoxConfig (
+                stack,
+                source_list,
+                _library_category,
+                "starred",
+                "starred",
+                _("Starred by You"),
+                _("Starred by You") + " :"
+            ) {
+                station_list_hookup = this,
+                stations = _directory.get_starred()
+            }
+        );
+
+        // Allow drag-and-drop reordering for starred stations only.
+        var starred_list = starred.content as StationList;
+        if (starred_list != null)
+        {
+            starred_list.reorderable = true;
+            starred_list.reordered.connect ((uuids) => {
+                _directory.reorder_starred (uuids);
+            });
+        }
 
             starred.badge ( @"$(starred.item_count)\t");
             starred.parameter = @"$(starred.item_count)";
@@ -450,21 +548,30 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         // Search Results Box
         
 
-        _search_results = StationListBox.create 
-        ( stack
-        , source_list
-        , _library_category
-        , "searched"
-        , "folder-saved-search"
-        , _("Latest Search")
-        , _("Search Results")
-        , false
-        , null
-        , _("Save this search")
-        , "non-starred-symbolic");
+        _search_results = StationListBoxFactory.create (
+            new StationListBoxConfig (
+                stack,
+                source_list,
+                _library_category,
+                "searched",
+                "folder-saved-search",
+                _("Latest Search"),
+                _("Search Results")
+            ) {
+                action_tooltip_text = _("Save this search"),
+                action_icon_name = "non-starred-symbolic"
+            }
+        );
 
 		_search_results.tooltip_button.sensitive = false;
 		_search_controller = new SearchController(directory,this,_search_results );
+		_search_controller.search_results_ready.connect ((search_term) =>
+		{
+			if (_pending_search_term != "" && search_term == _pending_search_term)
+			{
+				stack.visible_child_name = "searched";
+			}
+		});
 
         _search_results.item_count_changed_sig.connect (( item_count, parameter ) =>
         {
@@ -484,9 +591,9 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 				if (_app.is_offline)
 					return;
 				_search_results.tooltip_button.sensitive = false;
-				var new_saved_search= 
+				var new_saved_search=
                 add_saved_search( _search_results.parameter, _directory.add_saved_search (_search_results.parameter));
-			new_saved_search.list(_search_results.content);
+			new_saved_search.content = _search_results.content;
 			source_list.selected = source_list.get_last_child (_saved_searches_category);
 		});
 
@@ -514,12 +621,19 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             foreach (var tag in _directory.load_random_genres(EXPLORE_CATEGORIES))
             {
             if ( Genre.in_genre (tag.name)) break;  // Predefined genre, ignore
-            StationListBox.create_category_specific( stack, source_list, _explore_category
-                    , @"$(explore++)"   // tag names can have charaters that are not suitable for name
-                    , "tuner:playlist-symbolic"
-                    , tag.name
-                    , tag.name
-                    , _directory.load_by_tag (tag.name));
+            StationListBoxFactory.create (
+                new StationListBoxConfig (
+                    stack,
+                    source_list,
+                    _explore_category,
+                    @"$(explore++)",   // tag names can have charaters that are not suitable for name
+                    "tuner:playlist-symbolic",
+                    tag.name,
+                    tag.name
+                ) {
+                    station_set = _directory.load_by_tag (tag.name)
+                }
+            );
             }
         }
 
@@ -540,7 +654,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         // --------------------------------------------------------------------
 
 
-        _stars.starred_stations_changed_sig.connect ((station) =>
+        _app.events.starred_stations_changed_sig.connect ((station) =>
         /*
         * Refresh the starred stations list when a station is starred or unstarred
          */
@@ -584,17 +698,17 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             _provider.available_stations (),
             _provider.available_stations () / (6 * 24)
         );
-       // item.tooltip = (_(@"Double click to shuffle through $(app().provider.available_stations()) stations,\none, every ten minutes, for $(app().provider.available_stations()/(6*24)) days"));
+
         item.activated.connect(() =>
         {
                 _shuffle = true;
                 jukebox_shuffle.begin();
-                _app.shuffle_mode_sig(true);
+                _app.events.shuffle_mode_sig(true);
                 _background_tuner.reveal_child = false;    
                 _background_jukebox.reveal_child = true; 
         });
 
-		_player.tape_counter_sig.connect((oldstation) =>
+		_app.events.tape_counter_sig.connect((oldstation) =>
 		{
 			if (_shuffle)
 				jukebox_shuffle.begin();
@@ -617,7 +731,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
             if ( _shuffle ) 
             {
                 _shuffle = false;
-                _app.shuffle_mode_sig(false);
+                _app.events.shuffle_mode_sig(false);
                 _background_jukebox.reveal_child = false;
                 _background_tuner.reveal_child   = true;
             } // if
@@ -637,18 +751,21 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
      */
     private StationListBox add_saved_search(string search, StationSet station_set) //, StationList? content = null)//StationSet station_set)
     {
-        var saved_search = StationListBox.create_category_specific 
-            ( stack
-            , source_list
-            , _saved_searches_category
-            , search
-            , "tuner:playlist-symbolic"
-            , search
-            , (_("Saved Search") + " :  %s").printf (search)
-            , station_set
-            , _("Remove this saved search")
-            , "starred-symbolic"
-            );
+        var saved_search = StationListBoxFactory.create (
+            new StationListBoxConfig (
+                stack,
+                source_list,
+                _saved_searches_category,
+                search,
+                "tuner:playlist-symbolic",
+                search,
+                (_("Saved Search") + " :  %s").printf (search)
+            ) {
+                station_set = station_set,
+                action_tooltip_text = _("Remove this saved search"),
+                action_icon_name = "starred-symbolic"
+            }
+        );
 
         //  if ( content != null ) { 
         //      saved_search.content = content; 
@@ -683,14 +800,19 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
 	        ){
 		foreach (var genre in genres )
 		{
-			StationListBox.create_category_specific(stack,
-			                         source_list,
-			                         category,
-			                         genre,
-			                         "tuner:playlist-symbolic",
-			                         genre,
-			                         genre,
-			                         directory.load_by_tag (genre.down ()));
+			StationListBoxFactory.create (
+                new StationListBoxConfig (
+                    stack,
+                    source_list,
+                    category,
+                    genre,
+                    "tuner:playlist-symbolic",
+                    genre,
+                    genre
+                ) {
+                    station_set = directory.load_by_tag (genre.down ())
+                }
+            );
 		}
 	} // create_category_genre
 } // Display

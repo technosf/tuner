@@ -34,29 +34,11 @@ public class Tuner.Controllers.PlayerController : GLib.Object
     } // Is
 
  
-    /** Signal emitted when the station changes. */
-    public signal void station_changed_sig (Station station);
-
-    /** Signal emitted when the player state changes. */
-    public signal void state_changed_sig (Station station, Is state);
-
-    //  /** Signal emitted when the title changes. */
-    public signal void metadata_changed_sig (Station station, Metadata metadata);
-
-    /** Signal emitted when the volume changes. */
-    public signal void volume_changed_sig (double volume);
-
-    /** Signal emitted every ten minutes that a station has been playing continuously. */
-    public signal void tape_counter_sig (Station station);
-
-    /** @brief Signal emitted when the shuffle is requested   */
-    public signal void shuffle_requested_sig();
-
     /** The error received when playing, if any */
     private bool _play_error = false;
     public bool play_error { get { return _play_error; } }
 
-    private const uint TEN_MINUTES_IN_SECONDS = 606;  // tape counter timer - 10 mins plus 1%
+    private const uint CLICK_INTERVAL_IN_SECONDS = 606;  // tape counter timer - 10 mins plus 1%
     
     private Player _player;
     private Station _station; 
@@ -83,13 +65,13 @@ public class Tuner.Controllers.PlayerController : GLib.Object
 		// Stream metadata received
 		{
 			if (_metadata.process_media_info_update (obj))
-				metadata_changed_sig (_station, _metadata);
+				app().events.metadata_changed_sig (_station, _metadata);
 		});
 
         _player.volume_changed.connect ((obj) => 
         // Volume changed
         {
-            volume_changed_sig(obj.volume);
+            app().events.volume_changed_sig(obj.volume);
             app().settings.volume =  obj.volume;
         });
 
@@ -181,7 +163,7 @@ public class Tuner.Controllers.PlayerController : GLib.Object
         private set {
             _player_state = value;
             if (_station != null)
-                state_changed_sig(_station, value);
+                app().events.state_changed_sig(_station, value);
 
 			if (value == Is.STOPPED || value == Is.STOPPED_ERROR)
 			{
@@ -193,11 +175,11 @@ public class Tuner.Controllers.PlayerController : GLib.Object
 			}
 			else if (value == Is.PLAYING)
 			{
-				_tape_counter_id = Timeout.add_seconds_full(Priority.LOW, TEN_MINUTES_IN_SECONDS, () =>
+				_tape_counter_id = Timeout.add_seconds_full(Priority.LOW, CLICK_INTERVAL_IN_SECONDS, () =>
 				{
 					if (_station == null)
 						return Source.REMOVE;
-					tape_counter_sig(_station);
+					app().events.tape_counter_sig(_station);
 					return Source.CONTINUE;
 				});
 			}
@@ -243,7 +225,7 @@ public class Tuner.Controllers.PlayerController : GLib.Object
 	{
 		_player.stop ();
         _station = station;
-        station_changed_sig (_station);
+        app().events.station_changed_sig (_station);
 		_player.uri = (_station.urlResolved != null && _station.urlResolved != "") ? _station.urlResolved : _station.url;
 		_play_error = false;
 		Timeout.add (500, () =>
@@ -298,6 +280,6 @@ public class Tuner.Controllers.PlayerController : GLib.Object
      */
 	public void shuffle ()
 	{
-		shuffle_requested_sig();
+		app().events.shuffle_requested_sig();
 	} // shuffle
 } // PlayerController
