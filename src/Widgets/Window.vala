@@ -132,6 +132,11 @@ public class Tuner.Widgets.Window : Gtk.ApplicationWindow
 
         Idle.add(() => {
             settings.configure();
+
+            // Test-only sizing: override persisted size after settings are applied.
+            //this.resize(900, 600);  // FIXME Comment out
+			// Test Only
+
             /* Start with the window invisible and fade it in so restarts
              * have a matching fade-in to the fade-out used on shutdown. */
             this.opacity = 0.0;
