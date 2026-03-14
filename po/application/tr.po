@@ -14,7 +14,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-14 13:23-0700\n"
 "PO-Revision-Date: 2026-03-14 23:11+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "tr/>\n"
 "Language: tr\n"
@@ -144,9 +145,8 @@ msgid "Encoder Version"
 msgstr "Encoder Version"
 
 #: src/Models/StreamMetadata.vala:44
-#, fuzzy
 msgid "Encoded by"
-msgstr "Encoded by"
+msgstr "Kodlayan"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Date Time"
@@ -281,9 +281,8 @@ msgstr "Bu istasyonu yıldızla"
 #.
 #. Search button
 #: src/Widgets/HeaderBar.vala:182
-#, fuzzy
 msgid "Search"
-msgstr "Search"
+msgstr "Ara"
 
 #: src/Widgets/HeaderBar.vala:190
 msgid "Preferences"
@@ -433,9 +432,8 @@ msgstr "Ka_ydet"
 
 #. warning("Error: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:237
-#, fuzzy
 msgid "Error"
-msgstr "Error"
+msgstr "Hata"
 
 #: src/Widgets/PreferencesPopover.vala:250
 msgid "Choose a file"
@@ -447,9 +445,8 @@ msgstr "_Aç"
 
 #. warning("Error reading file: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:277
-#, fuzzy
 msgid "Error reading file"
-msgstr "Error reading file"
+msgstr "Dosya okunurken hata oluştu"
 
 #. ----------------------------------------------
 #: src/Widgets/StationContextMenu.vala:91
