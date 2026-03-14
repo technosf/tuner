@@ -6,12 +6,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-06 14:33-0800\n"
-"PO-Revision-Date: 2026-03-06 10:24+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
-"Language-Team: Malay <https://hosted.weblate.org/projects/tuner/tuner-ui/ms/"
-">\n"
+"PO-Revision-Date: 2026-03-14 04:19+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Malay <https://hosted.weblate.org/projects/tuner/tuner-ui/ms/>"
+"\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -468,9 +469,8 @@ msgstr "_Save"
 
 #. warning("Error: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:230
-#, fuzzy
 msgid "Error"
-msgstr "Error"
+msgstr "Ralat"
 
 #: src/Widgets/PreferencesPopover.vala:243
 msgid "Choose a file"
