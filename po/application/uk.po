@@ -7,10 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-06 14:33-0800\n"
-"PO-Revision-Date: 2026-03-06 10:24+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-03-14 04:19+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "uk/>\n"
 "Language: uk\n"
@@ -345,18 +345,16 @@ msgstr ""
 
 #. Restart Playing after network interuption
 #: src/Widgets/PreferencesPopover.vala:60
-#, fuzzy
 msgid "Restart playing after a network outage"
-msgstr "Restart playing after a network outage"
+msgstr "Рештарт грати після виходу мережі"
 
 #: src/Widgets/PreferencesPopover.vala:62
-#, fuzzy
 msgid ""
 "If enabled, Tuner will restart playing the current station if it was stopped "
 "by a network outage"
 msgstr ""
-"If enabled, Tuner will restart playing the current station if it was stopped "
-"by a network outage"
+"Якщо увімкнено, то втенер буде перезавантажити поточну станцію, якщо вона "
+"була зупинена мережею"
 
 #. Start on Starred
 #: src/Widgets/PreferencesPopover.vala:68
@@ -393,9 +391,8 @@ msgid "Language"
 msgstr "Мова"
 
 #: src/Widgets/PreferencesPopover.vala:103
-#, fuzzy
 msgid "Language changes restart Tuner"
-msgstr "Language changes restart Tuner"
+msgstr "Зміни в мовному режимі"
 
 #. end language selection
 #. Export starred

@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-06 14:33-0800\n"
-"PO-Revision-Date: 2026-02-03 23:06+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2026-03-14 04:19+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/tuner/tuner-"
 "desktop/uk/>\n"
 "Language: uk\n"
@@ -19,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 msgid "Tuner"
 msgstr "Тюнер"
@@ -28,10 +27,10 @@ msgid "Internet Radio Player"
 msgstr "Інтернет Радіоплеер"
 
 msgid "Listen to Radio Stations from around the world"
-msgstr ""
+msgstr "Слухати Радіостанції з усього світу"
 
 msgid "Radio;Receiver;FM;Talk;Sport;News"
-msgstr ""
+msgstr "Радіо;Receiver;FM;Talk;Sport;Новини"
 
 msgid "technosf"
 msgstr "электронная пошта"
@@ -64,60 +63,64 @@ msgid "Control Tuner from your volume indicator"
 msgstr "Управління тюнером з індикатора обсягу"
 
 msgid "Tuner with light theme, Discover"
-msgstr ""
+msgstr "Тюнер з темою світла, Знайти"
 
 msgid "Tuner stream metadata"
-msgstr ""
+msgstr "Текстовий потік метаданих"
 
 msgid "Tuner starred stations"
-msgstr ""
+msgstr "Тунер старими станціями"
 
 msgid "Tuner translation languages"
-msgstr ""
+msgstr "Мова перекладу"
 
 msgid "Tuner Jukebox and options popover"
-msgstr ""
+msgstr "Tuner Jukebox і варіанти поповнення"
 
 msgid "Tuner genres and subgenres"
-msgstr ""
+msgstr "Жанри та субгенти"
 
 msgid "Tuner with dark theme, saved search"
-msgstr ""
+msgstr "Тунер з темною темою, збережений пошук"
 
 msgid "Maintenance release:"
-msgstr ""
+msgstr "Видача технічного обслуговування:"
 
 msgid "Refactored Elementry Granite library out as a module"
 msgstr ""
+"Русский EnglishРусскийУкраїнськаPolskiItalianoEspañol汉语Bahasa "
+"Indonesiaहिन्दीPortuguês日本語DeutschFrançaisภาษาไทยελληνικά اللغة العربية"
 
 msgid "Refactored namespaces"
-msgstr ""
+msgstr "Рефакторний простір імен"
 
 msgid "Fixed: play/stop buttons disabled #223"
-msgstr ""
+msgstr "Виправлено: відтворюються/стопні кнопки вимкнено #223"
 
 msgid "Fixed: Jukebox stops when tuning to a dead station #256"
-msgstr ""
+msgstr "Виправлено: Jukebox зупиняється, коли тюнінг до мертвої станції #256"
 
 msgid "Disabled in-app language selection for non-debug and flatpak builds"
-msgstr ""
+msgstr "Вимкнено для вибору мови для неруйнівних та плоских будівель"
 
 msgid ""
 "Renamed the app to io.github.tuner_labs.tuner (see https://github.com/"
 "flathub/flathub/issues/7468)"
 msgstr ""
+"Renamed Додатки до io.github.tuner_labs.tuner (див. https://github.com/"
+"flathub/flathub/flathub/products/7468)"
 
 msgid "Added 'en' into Language list as its the gettext default"
-msgstr ""
+msgstr "Додано 'en' в мовний список як його метод gettext"
 
 msgid "Updated freedesktop platform from 24.08 to 25.08"
 msgstr "Оновлена платформа Freedesktop від 24.08 до 25.08"
 
 msgid "Removed vala module as now included in freedesktop platform"
-msgstr ""
+msgstr "Видалити vala модуль, як тепер включений до платформи Freedesktop"
 
 msgid "Removed libsoup module as now included in freedesktop platform"
-msgstr ""
+msgstr "Видалити модуль libsoup, як тепер включений до платформи Freedesktop"
 
 msgid "Bumped libgee to 0.20.8"
 msgstr "Змащений лібід до 0.20.8"
@@ -132,12 +135,15 @@ msgid ""
 "Refactored Language change mechanism and applied translations to more UI "
 "elements"
 msgstr ""
+"Рефакторний механізм зміни мови та прикладні переклади до більшої кількості "
+"елементів інтерфейсу"
 
 msgid "Refactored Icon layout and build, removing unused icon files"
 msgstr ""
+"Рефакторна іконка макета і збірки, видалення невикористаних іконок файлів"
 
 msgid "i18n - Broke out Country and Language translations to separate module"
-msgstr ""
+msgstr "i18n - Блек з країн та мовних перекладів до окремого модуля"
 
 msgid ""
 "i18n - Added trad Chinese, Estonian, Romaian, Tamil and Latin American "

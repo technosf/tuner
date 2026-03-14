@@ -69,11 +69,22 @@ public class Tuner.Services.HttpClient : Object
      * @return status_code the HTTP status code of the response
      * @throws Error if there's an error sending the request or receiving the response
      */
-     public static uint HEAD(Uri uri) 
+     public static uint HEAD(Uri? uri) 
      {         
         if ( app().is_offline) return 0;
 
+        if (uri == null)
+        {
+            warning("HEAD - Invalid URI (null)");
+            return 0;
+        }
+
         var msg = new Soup.Message.from_uri("HEAD", uri);
+        if (msg == null)
+        {
+            warning(@"HEAD - Failed to create Soup.Message for URI: $(uri.to_string())");
+            return 0;
+        }
         /*
             Ignore all TLS certificate errors
         */
@@ -102,15 +113,27 @@ public class Tuner.Services.HttpClient : Object
      * @return InputStream containing the response body, or null if the request failed
      * @throws Error if there's an error sending the request or receiving the response
      */
-    public static InputStream? GET(Uri uri, out uint status_code) 
+    public static InputStream? GET(Uri? uri, out uint status_code) 
     {
-		debug(@"Get: $(uri.to_string()) ");
 		status_code = 0;
 
 		if (app().is_offline)
 			return null;
 
+        if (uri == null)
+        {
+            warning("GET - Invalid URI (null)");
+            return null;
+        }
+
+		debug(@"Get: $(uri.to_string()) ");
+
         var msg = new Soup.Message.from_uri("GET", uri);
+        if (msg == null)
+        {
+            warning(@"GET - Failed to create Soup.Message for URI: $(uri.to_string())");
+            return null;
+        }
 
         /*
             Ignore all TLS certificate errors
@@ -138,14 +161,26 @@ public class Tuner.Services.HttpClient : Object
      * @param status_code Output parameter for the HTTP status code of the response
      * @return InputStream containing the response body, or null if the request failed
      */
-    public static async InputStream? GETasync(Uri uri, int priority, out uint status_code) 
+    public static async InputStream? GETasync(Uri? uri, int priority, out uint status_code) 
     {
         status_code = 0;
 
 		if (app().is_offline)
 			return null;
 
+        if (uri == null)
+        {
+            warning("GETasync - Invalid URI (null)");
+            return null;
+        }
+
         var msg = new Soup.Message.from_uri("GET", uri);
+        if (msg == null)
+        {
+            warning(@"GETasync - Failed to create Soup.Message for URI: $(uri.to_string())");
+            return null;
+        }
+
 
         /*
             Ignore all TLS certificate errors

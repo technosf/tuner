@@ -6,15 +6,16 @@
 # "David D." <dadu042@users.noreply.hosted.weblate.org>, 2025, 2026.
 # technosf <535060+technosf@users.noreply.github.com>, 2025, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
+# LibreTranslate <noreply-mt-libretranslate@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-06 14:33-0800\n"
-"PO-Revision-Date: 2026-03-06 10:25+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-ui/fr/"
-">\n"
+"PO-Revision-Date: 2026-03-14 04:19+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-ui/"
+"fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -346,18 +347,16 @@ msgstr ""
 
 #. Restart Playing after network interuption
 #: src/Widgets/PreferencesPopover.vala:60
-#, fuzzy
 msgid "Restart playing after a network outage"
-msgstr "Restart playing after a network outage"
+msgstr "Restart jouant après une panne de réseau"
 
 #: src/Widgets/PreferencesPopover.vala:62
-#, fuzzy
 msgid ""
 "If enabled, Tuner will restart playing the current station if it was stopped "
 "by a network outage"
 msgstr ""
-"If enabled, Tuner will restart playing the current station if it was stopped "
-"by a network outage"
+"Si cela est activé, Tuner redémarrera en jouant à la station si elle a été "
+"arrêtée par une panne réseau"
 
 #. Start on Starred
 #: src/Widgets/PreferencesPopover.vala:68
@@ -396,9 +395,8 @@ msgid "Language"
 msgstr "Langue"
 
 #: src/Widgets/PreferencesPopover.vala:103
-#, fuzzy
 msgid "Language changes restart Tuner"
-msgstr "Language changes restart Tuner"
+msgstr "Changements de langue tuner"
 
 #. end language selection
 #. Export starred
