@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: io.github.tuner_labs.tuner 2.0.1-beta.2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-06 14:33-0800\n"
-"PO-Revision-Date: 2026-03-06 10:25+0000\n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
+"POT-Creation-Date: 2026-03-14 13:23-0700\n"
+"PO-Revision-Date: 2026-03-14 22:02+0000\n"
 "Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
-"Language-Team: Thai <https://hosted.weblate.org/projects/tuner/tuner-ui/th/"
-">\n"
+"Language-Team: Thai <https://hosted.weblate.org/projects/tuner/tuner-ui/th/>"
+"\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -140,138 +140,134 @@ msgid "Encoder Version"
 msgstr "เวอร์ชัน"
 
 #: src/Models/StreamMetadata.vala:44
+#, fuzzy
+msgid "Encoded by"
+msgstr "Encoded by"
+
+#: src/Models/StreamMetadata.vala:45
 msgid "Date Time"
 msgstr "วัน"
 
-#: src/Models/StreamMetadata.vala:45
+#: src/Models/StreamMetadata.vala:46
 msgid "Private Data"
 msgstr "ข้อมูลส่วนตัว"
 
-#: src/Models/StreamMetadata.vala:46
+#: src/Models/StreamMetadata.vala:47
 msgid "Has CRC"
 msgstr "มี HM"
+
+#: src/Models/StreamMetadata.vala:48
+#, fuzzy
+msgid "ID3 Private"
+msgstr "ID3 Private"
+
+#: src/Models/StreamMetadata.vala:49
+#, fuzzy
+msgid "GStreamer Sample"
+msgstr "GStreamer Sample"
 
 #.
 #. Display Assets
 #.
-#: src/Widgets/Display.vala:99
+#: src/Widgets/Display.vala:114
 msgid "Selections"
 msgstr "การเลือก"
 
-#: src/Widgets/Display.vala:100
+#: src/Widgets/Display.vala:115
 msgid "Library"
 msgstr "ห้องสมุด"
 
-#: src/Widgets/Display.vala:101
+#: src/Widgets/Display.vala:116
 msgid "Saved Searches"
 msgstr "บันทึกการค้นหา"
 
-#: src/Widgets/Display.vala:102
+#: src/Widgets/Display.vala:117
 msgid "Explore"
 msgstr "สํารวจ"
 
-#: src/Widgets/Display.vala:103
+#: src/Widgets/Display.vala:118
 msgid "Genres"
 msgstr "ประเภท"
 
-#: src/Widgets/Display.vala:104
+#: src/Widgets/Display.vala:119
 msgid "Subgenres"
 msgstr "สารย่อย"
 
-#: src/Widgets/Display.vala:105
+#: src/Widgets/Display.vala:120
 msgid "Eras"
 msgstr "โรค"
 
-#: src/Widgets/Display.vala:106
+#: src/Widgets/Display.vala:121
 msgid "Talk, News, Sport"
 msgstr "พูดคุย, ข่าว, กีฬา"
 
-#: src/Widgets/Display.vala:362
+#: src/Widgets/Display.vala:441
 msgid "Discover"
 msgstr "ค้นหา"
 
-#: src/Widgets/Display.vala:363
+#: src/Widgets/Display.vala:442
 msgid "Stations to Discover"
 msgstr "สถานีเพื่อค้นหา"
 
-#: src/Widgets/Display.vala:366
+#: src/Widgets/Display.vala:445
 msgid "Discover more stations"
 msgstr "ค้นพบสถานี"
 
-#: src/Widgets/Display.vala:383
+#: src/Widgets/Display.vala:465
 msgid "Trending"
 msgstr "เทรนด์"
 
-#: src/Widgets/Display.vala:384
+#: src/Widgets/Display.vala:466
 msgid "Trending Stations in the last 24 hours"
 msgstr "สถานีเทรนด์ใน 24 ชั่วโมง"
 
-#: src/Widgets/Display.vala:398
+#: src/Widgets/Display.vala:483
 msgid "Popular"
 msgstr "ยอดนิยม"
 
-#: src/Widgets/Display.vala:399
+#: src/Widgets/Display.vala:484
 msgid "Most listened to Stations in the last 24 hours"
 msgstr "การเดินทางส่วนใหญ่ถึง 24 ชั่วโมง"
 
-#: src/Widgets/Display.vala:434 src/Widgets/Display.vala:435
+#: src/Widgets/Display.vala:521 src/Widgets/Display.vala:522
 msgid "Starred by You"
 msgstr "วิดีโอ"
 
-#: src/Widgets/Display.vala:459
+#: src/Widgets/Display.vala:560
 msgid "Latest Search"
 msgstr "ค้นหาล่าสุด"
 
-#: src/Widgets/Display.vala:460
+#: src/Widgets/Display.vala:561
 msgid "Search Results"
 msgstr "ค้นหา"
 
-#: src/Widgets/Display.vala:463
+#: src/Widgets/Display.vala:563
 msgid "Save this search"
 msgstr "บันทึกนี้"
 
-#: src/Widgets/Display.vala:579
+#: src/Widgets/Display.vala:697
 msgid "Jukebox"
 msgstr "Jukebox"
 
-#: src/Widgets/Display.vala:581
+#: src/Widgets/Display.vala:699
 #, fuzzy, c-format
 msgid "Double click to shuffle through %1$u stations"
 msgstr "Double click to shuffle through %1$u stations"
 
-#: src/Widgets/Display.vala:582
+#: src/Widgets/Display.vala:700
 #, fuzzy
 msgid "one, every ten minutes, for %2$u days"
 msgstr "one, every ten minutes, for %2$u days"
 
-#: src/Widgets/Display.vala:647
+#: src/Widgets/Display.vala:766
 msgid "Saved Search"
 msgstr "บันทึกการค้นหา"
 
-#: src/Widgets/Display.vala:649
+#: src/Widgets/Display.vala:769
 msgid "Remove this saved search"
 msgstr "ลบการค้นหานี้"
 
-#: src/Widgets/HeaderBar.vala:64
-msgid "Stream Metadata"
-msgstr "สตรีมหน่วยความจํา"
-
-#. 20px padding on the right
-#. 20px padding on the right
-#. 20px padding on the right
-#: src/Widgets/HeaderBar.vala:152 src/Widgets/HeaderBar.vala:158
-msgid "Data Provider"
-msgstr "ผู้ให้บริการ"
-
-#: src/Widgets/HeaderBar.vala:158
-msgid "Stations"
-msgstr "สถานี"
-
-#: src/Widgets/HeaderBar.vala:158
-msgid "Tags"
-msgstr "แท็ก"
-
-#: src/Widgets/HeaderBar.vala:180 src/Widgets/StationContextMenu.vala:171
+#: src/Widgets/HeaderBar.vala:160 src/Widgets/StationContextMenu.vala:173
 msgid "Star this station"
 msgstr "สถานีนี้"
 
@@ -282,18 +278,24 @@ msgstr "สถานีนี้"
 #.
 #. RHS Controls
 #.
-#. Search entry
-#: src/Widgets/HeaderBar.vala:201
-msgid "Station Search"
-msgstr "สถานีค้นหา"
+#. Search button
+#: src/Widgets/HeaderBar.vala:182
+#, fuzzy
+msgid "Search"
+msgstr "Search"
 
-#: src/Widgets/HeaderBar.vala:217
+#: src/Widgets/HeaderBar.vala:190
 msgid "Preferences"
 msgstr "ตั้งความชอบ"
 
-#: src/Widgets/HeaderBar.vala:221
+#: src/Widgets/HeaderBar.vala:194
 msgid "History"
 msgstr "ประวัติศาสตร์"
+
+#: src/Widgets/HeaderBar.vala:198
+#, fuzzy
+msgid "Heart current track in history"
+msgstr "Heart current track in history"
 
 #: src/Widgets/PreferencesPopover.vala:24
 msgid "About"
@@ -381,56 +383,67 @@ msgid ""
 "is enabled"
 msgstr "การหมุนอย่างรวดเร็วผ่านสถิติจากการเล่นเกมหากแสดงข้อมูล"
 
-#: src/Widgets/PreferencesPopover.vala:102
+#: src/Widgets/PreferencesPopover.vala:88
+#, fuzzy
+msgid "Stream metadata image popup"
+msgstr "Stream metadata image popup"
+
+#: src/Widgets/PreferencesPopover.vala:90
+#, fuzzy
+msgid "Show a movable popup with images discovered in the stream metadata"
+msgstr "Show a movable popup with images discovered in the stream metadata"
+
+#: src/Widgets/PreferencesPopover.vala:108
 msgid "Language"
 msgstr "ภาษา"
 
-#: src/Widgets/PreferencesPopover.vala:103
+#: src/Widgets/PreferencesPopover.vala:109
 #, fuzzy
 msgid "Language changes restart Tuner"
 msgstr "Language changes restart Tuner"
 
 #. end language selection
 #. Export starred
-#: src/Widgets/PreferencesPopover.vala:111
+#: src/Widgets/PreferencesPopover.vala:117
 msgid "Export Starred Stations to Playlist"
 msgstr "สถานีส่งออกหลักเพื่อเล่น"
 
 #. Import starred
-#: src/Widgets/PreferencesPopover.vala:121
+#: src/Widgets/PreferencesPopover.vala:127
 msgid "Import Station UUIDs as Starred Stations"
 msgstr "สถานีนําเข้า UUIDs เป็นสถานีหลัก"
 
 #. Create the file chooser dialog for saving the exported playlist
-#: src/Widgets/PreferencesPopover.vala:205
+#: src/Widgets/PreferencesPopover.vala:212 src/Widgets/Window.vala:530
 msgid "Save File"
 msgstr "บันทึกไฟล์"
 
-#: src/Widgets/PreferencesPopover.vala:208
-#: src/Widgets/PreferencesPopover.vala:246
+#: src/Widgets/PreferencesPopover.vala:215
+#: src/Widgets/PreferencesPopover.vala:253 src/Widgets/Window.vala:533
 msgid "_Cancel"
 msgstr "_ยกเลิก"
 
-#: src/Widgets/PreferencesPopover.vala:209
+#: src/Widgets/PreferencesPopover.vala:216 src/Widgets/Window.vala:522
+#: src/Widgets/Window.vala:534
 msgid "_Save"
 msgstr "_บันทึก"
 
 #. warning("Error: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:230
+#: src/Widgets/PreferencesPopover.vala:237
 #, fuzzy
 msgid "Error"
 msgstr "Error"
 
-#: src/Widgets/PreferencesPopover.vala:243
+#: src/Widgets/PreferencesPopover.vala:250
 msgid "Choose a file"
 msgstr "เลือกแฟ้ม"
 
-#: src/Widgets/PreferencesPopover.vala:247
+#: src/Widgets/PreferencesPopover.vala:254
 msgid "_Open"
 msgstr "เ_ปิด"
 
 #. warning("Error reading file: $(e.message)");
-#: src/Widgets/PreferencesPopover.vala:270
+#: src/Widgets/PreferencesPopover.vala:277
 #, fuzzy
 msgid "Error reading file"
 msgstr "Error reading file"
@@ -448,55 +461,75 @@ msgstr "ปรับปรุงสถานีออนไลน์"
 msgid "Visit Website"
 msgstr "เยี่ยมชมเว็บไซต์"
 
-#: src/Widgets/StationContextMenu.vala:106
+#: src/Widgets/StationContextMenu.vala:107
 msgid "Copy Stream-URI to clipboard"
 msgstr "คัดลอกสตรีม"
 
 #. warning (@"Unable to open website: $(e.message)");
-#: src/Widgets/StationContextMenu.vala:147
+#: src/Widgets/StationContextMenu.vala:149
 #, fuzzy
 msgid "Unable to open website"
 msgstr "Unable to open website"
 
 #. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
-#: src/Widgets/StationContextMenu.vala:170
+#: src/Widgets/StationContextMenu.vala:172
 #, fuzzy
 msgid "Unstar this station"
 msgstr "Unstar this station"
 
 #. Private
-#. private const string CSS                               = "io/github/tuner_labs/tuner/Application.css";
-#: src/Widgets/Window.vala:69
+#: src/Widgets/Window.vala:71
 msgid "Playing in background"
 msgstr "กำลังเล่นในโหมดพื้นหลัง"
 
-#: src/Widgets/Window.vala:70
+#: src/Widgets/Window.vala:72
 msgid ""
 "Click here to resume window. To quit Tuner, pause playback and close the "
 "window."
 msgstr "คลิกที่หน้าต่าง เพื่อหยุดหยุดหยุดและปิดหน้าต่าง."
 
-#: src/Widgets/Window.vala:318
+#: src/Widgets/Window.vala:332
 msgid "Stop Playback requested"
 msgstr "หยุดเล่น"
 
-#: src/Widgets/base/StationListBox.vala:147
-msgid "Nothing here"
-msgstr "ไม่มีอะไรที่นี่"
+#: src/Widgets/Window.vala:519
+#, fuzzy
+msgid "Save hearted tracks to a file?"
+msgstr "Save hearted tracks to a file?"
 
-#: src/Widgets/base/StationListBox.vala:147
-msgid ""
-"Something went wrong loading radio stations data from station provider. "
-"Please try again later."
-msgstr "บางสิ่งที่จะโหลดสถานีวิทยุข้อมูลจากผู้ให้บริการ กรุณาลองอีกครั้ง."
+#: src/Widgets/Window.vala:521
+#, fuzzy
+msgid "_Don't Save"
+msgstr "_Don't Save"
 
-#: src/Widgets/base/StationListBox.vala:157
-msgid "No stations found"
-msgstr "ไม่มีสถานี"
+#~ msgid "Stream Metadata"
+#~ msgstr "สตรีมหน่วยความจํา"
 
-#: src/Widgets/base/StationListBox.vala:157
-msgid "Please try a different search term."
-msgstr "โปรดลองคําค้นหาที่แตกต่างกัน."
+#~ msgid "Data Provider"
+#~ msgstr "ผู้ให้บริการ"
+
+#~ msgid "Stations"
+#~ msgstr "สถานี"
+
+#~ msgid "Tags"
+#~ msgstr "แท็ก"
+
+#~ msgid "Station Search"
+#~ msgstr "สถานีค้นหา"
+
+#~ msgid "Nothing here"
+#~ msgstr "ไม่มีอะไรที่นี่"
+
+#~ msgid ""
+#~ "Something went wrong loading radio stations data from station provider. "
+#~ "Please try again later."
+#~ msgstr "บางสิ่งที่จะโหลดสถานีวิทยุข้อมูลจากผู้ให้บริการ กรุณาลองอีกครั้ง."
+
+#~ msgid "No stations found"
+#~ msgstr "ไม่มีสถานี"
+
+#~ msgid "Please try a different search term."
+#~ msgstr "โปรดลองคําค้นหาที่แตกต่างกัน."
 
 #~ msgid "Error while trying to autoplay, aborting…"
 #~ msgstr "ข้อผิดพลาดในขณะที่พยายามที่จะเปิดอัตโนมัติ, ขโมย .."
