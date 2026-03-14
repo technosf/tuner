@@ -72,7 +72,7 @@ namespace Tuner.Providers {
         public string name()
         {
             return @"RadioBrowser 2.0\n\nServer: $_current_server"; 
-        } 
+        } // name
 
 
         public Status status { get; protected set; }
@@ -82,12 +82,12 @@ namespace Tuner.Providers {
 		public int available_stations()
 		{
 			return _available_stations;
-		}
+		} // available_stations
 
 		public int available_tags()
 		{
 			return _available_tags;
-		}
+		} // available_tags
 
 
         /**
@@ -100,7 +100,7 @@ namespace Tuner.Providers {
 			Object( );
 			_optionalservers = optionalservers;
 			status           = NOT_AVAILABLE;
-		}         // RadioBrowser
+		} // RadioBrowser
 
 
         /**
@@ -153,14 +153,14 @@ namespace Tuner.Providers {
                     status = NO_SERVER_LIST;
                     return false;
                 }
-            }
+            } // if
 
 			if (_servers.size == 0)
 			{
 				last_data_error = new DataError.NO_CONNECTION("Unable to resolve API servers for radio-browser.info");
 				status          = NO_SERVERS_PRESENTED;
 				return false;
-			}
+			} // if
 
             choose_server();
             status = OK;
@@ -178,7 +178,13 @@ namespace Tuner.Providers {
         public void click(string stationuuid) {
             debug(@"sending listening event for station $(stationuuid)");
             uint status_code;
-            HttpClient.GET(build_uri(RBI_STATION, stationuuid), out status_code);
+            var uri = build_uri(RBI_STATION, stationuuid);
+            if (uri == null)
+            {
+                warning(@"click - Invalid URI for station $(stationuuid)");
+                return;
+            }
+            HttpClient.GET(uri, out status_code);
             debug(@"response: $(status_code)");
         } // track
 
@@ -191,7 +197,13 @@ namespace Tuner.Providers {
             debug(@"sending vote event for station $(stationuuid)");
             uint status_code;
             //var uri = Uri.build(NONE, "http", null, _current_server, -1, RBI_VOTE, stationuuid, null);
-            HttpClient.GET(build_uri(RBI_VOTE, stationuuid), out status_code);            
+            var uri = build_uri(RBI_VOTE, stationuuid);
+            if (uri == null)
+            {
+                warning(@"vote - Invalid URI for station $(stationuuid)");
+                return;
+            }
+            HttpClient.GET(uri, out status_code);            
             //HttpClient.GET(@"$(_current_server)/$(RBI_VOTE)/$(stationuuid)", Priority.HIGH, out status_code);
             //  HttpClient.GETasync(@"$(_current_server)/$(RBI_VOTE)/$(stationuuid)", out status_code);
             debug(@"response: $(status_code)");
@@ -213,6 +225,11 @@ namespace Tuner.Providers {
                 if (limit > 0) query = @"$query&limit=$limit";
 
 				var uri    = build_uri(RBI_TAGS, query);
+                if (uri == null)
+                {
+                    warning(@"get_tags - Invalid URI for query: $(query)");
+                    return new HashSet<Tag>();
+                } // if
 				var stream = HttpClient.GET(uri, out status_code);
 
                 if ( status_code != 0 && stream != null)
@@ -227,10 +244,11 @@ namespace Tuner.Providers {
                     var rootarray = rootnode.get_array();
                     var tags = jarray_to_tags(rootarray);
                     return tags;
-                }
+                } // if
+
             } catch (GLib.Error e) {
                 debug("cannot get_tags()");
-            }
+            } // try
             return new HashSet<Tag>();
         } // get_tags
 
@@ -297,7 +315,7 @@ namespace Tuner.Providers {
 
 			debug(@"Search: $(query)");
 			return station_query(RBI_SEARCH, query);
-		}         // search
+		} // search
 
 
         /**
@@ -385,8 +403,8 @@ namespace Tuner.Providers {
                 {
                     choose_server();
                     _degrade = DEGRADE_CAPITAL;
-                }
-            }
+                } // if
+            } // if
         } // degrade
 
     
@@ -394,12 +412,19 @@ namespace Tuner.Providers {
          * @brief Retrieve server stats
          *
          */
-         private void stats() 
+        private void stats() 
          {
             uint status_code;
             Json.Node rootnode;
 
-            var stream = HttpClient.GET(build_uri(RBI_STATS), out status_code);
+            var uri = build_uri(RBI_STATS);
+            if (uri == null)
+            {
+                warning("stats - Invalid URI");
+                return;
+            } // if
+
+            var stream = HttpClient.GET(uri, out status_code);
 
             if ( status_code != 0 && stream != null)
             {
@@ -413,8 +438,8 @@ namespace Tuner.Providers {
 
                 } catch (Error e) {
                     warning(@"Could not get server stats: $(e.message)");
-                }
-            }
+                } // try
+            } // if
             debug(@"response: $(status_code) - Stations: $(_available_stations) Tags: $(_available_tags)");
         } // stats
 
@@ -428,11 +453,17 @@ namespace Tuner.Providers {
          */
         private Set<Station> station_query(string path, string query) throws DataProvider.DataError {
 
-            
             debug(@"station_query - $(path) $(query)");
 
             uint status_code;
             var uri = build_uri(path, query);  
+            if (uri == null)
+            {
+                warning(@"station_query - Invalid URI for path $(path) query $(query)");
+                degrade();
+                return new HashSet<Station>();
+            } // if
+
             debug(@"station_query - $(uri.to_string())");
                 
             var stream =  HttpClient.GET(uri,  out status_code);                
@@ -453,7 +484,7 @@ namespace Tuner.Providers {
 			{
 				warning(@"Response from 'radio-browser.info': $(status_code) for url: $(uri.to_string())");
 				degrade();
-			}
+			} // if
 			return new HashSet<Station>();
 		} // station_query
 
@@ -471,6 +502,13 @@ namespace Tuner.Providers {
 
 			uint status_code;
 			var  uri = build_uri(path, query);
+            if (uri == null)
+            {
+                warning(@"station_query_async - Invalid URI for path $(path) query $(query)");
+                degrade();
+                return new HashSet<Station>();
+            } // if
+
 			debug(@"station_query - $(uri.to_string())");
 
 			var stream =  yield HttpClient.GETasync(uri,  Priority.HIGH_IDLE, out status_code);
@@ -485,13 +523,13 @@ namespace Tuner.Providers {
 				} catch (Error e)
 				{
 					debug(@"JSON error \"$(e.message)\" for uri $(uri)");
-				}
+				} // try
 			}
 			else
 			{
 				warning(@"Response from 'radio-browser.info': $(status_code) for url: $(uri.to_string())");
 				degrade();
-			}
+			} // if
 			return new HashSet<Station>();
 		} // station_query_async
 
@@ -508,19 +546,22 @@ namespace Tuner.Providers {
          */
         private string get_search_query_params(DataProvider.SearchParams params, uint rowcount, uint offset)
         {
-                        // by text or tags
+            // by text or tags
             var query = @"limit=$rowcount&order=$(params.order)&offset=$offset";
 
             if (params.text != "") {
                 query += @"&name=$(encode_text(params.text))";  // Encode text for ampersands etc
-            }
+            } // if
+
             if (params.countrycode.length > 0) {
                 query += @"&countrycode=$(params.countrycode)";
-            }
+            } // if
+
             if (params.order != DataProvider.SortOrder.RANDOM) {
                 // random and reverse doesn't make sense
                 query += @"&reverse=$(params.reverse)";
-            }
+            } // if
+
             // Put tags last
             if (params.tags.size > 0) {
                 string tag_list = params.tags.to_array()[0];
@@ -528,7 +569,8 @@ namespace Tuner.Providers {
                     tag_list = string.joinv(",", params.tags.to_array());
                 }
                 query += @"&tagExact=false&tagList=$(encode_text(tag_list))"; // Encode text for ampersands etc
-            }
+            } // if
+
             return query;
         } // get_search_query_params
 
@@ -570,7 +612,8 @@ namespace Tuner.Providers {
                     Station s = Station.make(element);
                     stations.add(s);
                 });
-            }
+            } // if
+
             return stations;
         } // jarray_to_stations
 
@@ -605,7 +648,7 @@ namespace Tuner.Providers {
                     DataProvider.Tag s = jnode_to_tag(element);
                     tags.add(s);
                 });
-            }
+            } // if
 
             return tags;
         }   // jarray_to_tags
@@ -634,12 +677,13 @@ namespace Tuner.Providers {
                 var srv_targets = GLib.Resolver.get_default().lookup_service(SRV_SERVICE, SRV_PROTOCOL, SRV_DOMAIN, null);
                 foreach (var target in srv_targets) {
                     results.add(target.get_hostname());
-                }
+                } // foreach
             } catch (GLib.Error e) {
               @warning(@"Unable to resolve Radio-Browser SRV records: $(e.message)");
-            }
+            } // try
 
-            if (results.is_empty) {
+            if (results.is_empty) 
+            {
                 /*
                     JSON API server lookup as SRV record lookup failed
                     Get the servers from the API itself from a round-robin server
@@ -647,7 +691,14 @@ namespace Tuner.Providers {
                 try {
                     uint status_code;
   
-                    var stream = HttpClient.GET(build_uri(@"$(RBI_SERVERS)"), out status_code);
+                    var uri = build_uri(@"$(RBI_SERVERS)");
+                    if (uri == null)
+                    {
+                        warning("get_srv_api_servers - Invalid URI for servers endpoint");
+                        return results;
+                    } // if
+
+                    var stream = HttpClient.GET(uri, out status_code);
 
                     debug(@"response from $(_current_server)$(RBI_SERVERS): $(status_code)");
 
@@ -660,7 +711,7 @@ namespace Tuner.Providers {
                             root_node = parser.get_root();
                         } catch (Error e) {
                             throw new DataProvider.DataError.PARSE_DATA(@"RBI API get servers - unable to parse JSON response: $(e.message)");
-                        }
+                        } // try
 
                         if (root_node != null && root_node.get_node_type() == Json.NodeType.ARRAY) {
                             root_node.get_array().foreach_element((array, index_, element_node) => {
@@ -669,17 +720,18 @@ namespace Tuner.Providers {
                                     var name = object.get_string_member("name");
                                     if (name != null && !results.contains(name)) {
                                         results.add(name);
-                                    }
-                                }
+                                    } // if
+                                } // if
                             });
-                        }
-                    }
+                        } // if
+                    } // if
                 } catch (Error e) {
                     warning("Failed to parse RBI APIs JSON response: $(e.message)");
-                }
-            }
+                } // try
+            } // if
 
             debug(@"Results $(results.size)");
+
             return results;
         } // get_srv_api_servers
 
@@ -695,7 +747,6 @@ namespace Tuner.Providers {
         */
 		private static string encode_text(string tag)
 		{
-
             string output = tag;
             string[,] x = new string[,]
             {    
@@ -713,8 +764,8 @@ namespace Tuner.Providers {
             for (int a = 0 ; a < 9; a++)
             {   
                 output = output.replace(x[a,0], x[a,1]);
-            }
+            } // for
             return output;
         } // encode_tag
-    }   // RadioBrowser
-}
+    } // RadioBrowser
+} // Providers
