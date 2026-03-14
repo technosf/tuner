@@ -5,7 +5,7 @@
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: com.github.louis77.tuner 2.0.2-BETA\n"
+"Project-Id-Version: io.github.tuner_labs.tuner 2.0.2-BETA\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-03-06 10:24+0000\n"

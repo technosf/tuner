@@ -7,7 +7,7 @@
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: com.github.louis77.tuner 2.0.1-beta.2\n"
+"Project-Id-Version: io.github.tuner_labs.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-06 14:33-0800\n"
 "PO-Revision-Date: 2026-03-06 10:25+0000\n"
