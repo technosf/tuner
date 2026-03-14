@@ -21,8 +21,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
   </developer>
   <launchable type="desktop-id">io.github.tuner_labs.tuner.desktop</launchable>
   <branding>
-    <color type="primary" scheme_preference="light">#eff744</color>
-    <color type="primary" scheme_preference="dark">#c599f4</color>
+    <color type="primary" scheme_preference="light">#f5c211</color>
+    <color type="primary" scheme_preference="dark">#655510</color>
   </branding>
   <summary>Internet Radio</summary>
   <description>
@@ -42,31 +42,31 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.one.png</image>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.210.one.png</image>
       <caption>Tuner with light theme, Discover</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.search.png</image>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.210.search.png</image>
       <caption>Tuner search bar</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.starred.png</image>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.210.starred.png</image>
       <caption>Tuner starred station with metadata and stream image</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.history.png</image>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.210.history.png</image>
       <caption>Tuner thistory and favorite tracks</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.jukebox.png</image>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.210.jukebox.png</image>
       <caption>Tuner Jukebox playing, looking at saved search</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.offline.png</image>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.210.offline.png</image>
       <caption>Tuner offline</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.201.dark.png</image>
+      <image>https://raw.githubusercontent.com/tuner-labs/tuner/refs/heads/main/flathub/Tuner.210.dark.png</image>
       <caption>Tuner with dark theme, preferences</caption>
     </screenshot>
   </screenshots>
