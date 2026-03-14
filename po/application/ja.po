@@ -10,10 +10,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.louis77.tuner\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-06 14:33-0800\n"
-"PO-Revision-Date: 2026-03-06 10:25+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-03-14 04:19+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ja/>\n"
 "Language: ja\n"
@@ -238,14 +239,13 @@ msgid "Jukebox"
 msgstr "ジュークボックス"
 
 #: src/Widgets/Display.vala:581
-#, fuzzy, c-format
+#, c-format
 msgid "Double click to shuffle through %1$u stations"
-msgstr "Double click to shuffle through %1$u stations"
+msgstr "%1$u ステーションをシャッフルするダブルクリック"
 
 #: src/Widgets/Display.vala:582
-#, fuzzy
 msgid "one, every ten minutes, for %2$u days"
-msgstr "one, every ten minutes, for %2$u days"
+msgstr "%2$u 日ごとに 10 分"
 
 #: src/Widgets/Display.vala:647
 msgid "Saved Search"
@@ -347,18 +347,16 @@ msgstr ""
 
 #. Restart Playing after network interuption
 #: src/Widgets/PreferencesPopover.vala:60
-#, fuzzy
 msgid "Restart playing after a network outage"
-msgstr "Restart playing after a network outage"
+msgstr "ネットワークの停電後に再生を開始"
 
 #: src/Widgets/PreferencesPopover.vala:62
-#, fuzzy
 msgid ""
 "If enabled, Tuner will restart playing the current station if it was stopped "
 "by a network outage"
 msgstr ""
-"If enabled, Tuner will restart playing the current station if it was stopped "
-"by a network outage"
+"有効な場合、Tuner はネットワークの停電によって停止されたら、現在の"
+"ステーションを再起動します"
 
 #. Start on Starred
 #: src/Widgets/PreferencesPopover.vala:68
@@ -397,9 +395,8 @@ msgid "Language"
 msgstr "言語"
 
 #: src/Widgets/PreferencesPopover.vala:103
-#, fuzzy
 msgid "Language changes restart Tuner"
-msgstr "Language changes restart Tuner"
+msgstr "言語変更はチュナーを再起動します"
 
 #. end language selection
 #. Export starred
@@ -428,9 +425,8 @@ msgstr "保存(_S)"
 
 #. warning("Error: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:230
-#, fuzzy
 msgid "Error"
-msgstr "Error"
+msgstr "エラー"
 
 #: src/Widgets/PreferencesPopover.vala:243
 msgid "Choose a file"
@@ -442,9 +438,8 @@ msgstr "開く(_O)"
 
 #. warning("Error reading file: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:270
-#, fuzzy
 msgid "Error reading file"
-msgstr "Error reading file"
+msgstr "エラー読み込みファイル"
 
 #. ----------------------------------------------
 #: src/Widgets/StationContextMenu.vala:91
@@ -465,9 +460,8 @@ msgstr "ストリームURIをクリップボードにコピーする"
 
 #. warning (@"Unable to open website: $(e.message)");
 #: src/Widgets/StationContextMenu.vala:147
-#, fuzzy
 msgid "Unable to open website"
-msgstr "Unable to open website"
+msgstr "ウェブサイトを開くことができない"
 
 #. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
 #: src/Widgets/StationContextMenu.vala:170
