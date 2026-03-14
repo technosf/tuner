@@ -2,6 +2,7 @@
 # This file is put in the public domain.
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: io.github.tuner_labs.tuner 2.0.1-beta.2\n"
@@ -66,9 +67,8 @@ msgstr "કોડેક"
 
 #. Ordered array of tags and descriptions
 #: src/Models/StreamMetadata.vala:23
-#, fuzzy
 msgid "Title"
-msgstr "Title"
+msgstr "અધિકાર"
 
 #: src/Models/StreamMetadata.vala:24
 #, fuzzy
@@ -81,14 +81,12 @@ msgid "Album"
 msgstr "Album"
 
 #: src/Models/StreamMetadata.vala:26
-#, fuzzy
 msgid "Image"
-msgstr "Image"
+msgstr "ચિત્ર"
 
 #: src/Models/StreamMetadata.vala:27
-#, fuzzy
 msgid "Genre"
-msgstr "Genre"
+msgstr "જાનર"
 
 #: src/Models/StreamMetadata.vala:28
 #, fuzzy
@@ -121,9 +119,8 @@ msgid "Channel Mode"
 msgstr "Channel Mode"
 
 #: src/Models/StreamMetadata.vala:35
-#, fuzzy
 msgid "Track Number"
-msgstr "Track Number"
+msgstr "ટ્રેક ક્રમાંક"
 
 #: src/Models/StreamMetadata.vala:36
 #, fuzzy
@@ -205,7 +202,7 @@ msgstr "પસંદગીઓ"
 #: src/Widgets/Display.vala:115
 #, fuzzy
 msgid "Library"
-msgstr "Library"
+msgstr "પુસ્તકાલય"
 
 #: src/Widgets/Display.vala:116
 msgid "Saved Searches"
@@ -218,7 +215,7 @@ msgstr "અન્વેષણ કરો"
 #: src/Widgets/Display.vala:118
 #, fuzzy
 msgid "Genres"
-msgstr "Genres"
+msgstr "શ્રેણીઓ"
 
 #: src/Widgets/Display.vala:119
 #, fuzzy
@@ -250,7 +247,7 @@ msgstr "Discover more stations"
 #: src/Widgets/Display.vala:465
 #, fuzzy
 msgid "Trending"
-msgstr "Trending"
+msgstr "વલણમાંનાં"
 
 #: src/Widgets/Display.vala:466
 #, fuzzy
@@ -260,7 +257,7 @@ msgstr "Trending Stations in the last 24 hours"
 #: src/Widgets/Display.vala:483
 #, fuzzy
 msgid "Popular"
-msgstr "Popular"
+msgstr "પ્રસિદ્ધ"
 
 #: src/Widgets/Display.vala:484
 #, fuzzy
@@ -278,7 +275,7 @@ msgstr "નવીનતમ શોધ"
 #: src/Widgets/Display.vala:561
 #, fuzzy
 msgid "Search Results"
-msgstr "Search Results"
+msgstr "પરિણામોને શોધો"
 
 #: src/Widgets/Display.vala:563
 #, fuzzy
@@ -329,12 +326,12 @@ msgstr "Search"
 #: src/Widgets/HeaderBar.vala:190
 #, fuzzy
 msgid "Preferences"
-msgstr "Preferences"
+msgstr "પ્રાથમિકતા"
 
 #: src/Widgets/HeaderBar.vala:194
 #, fuzzy
 msgid "History"
-msgstr "History"
+msgstr "ઈતિહાસ"
 
 #: src/Widgets/HeaderBar.vala:198
 #, fuzzy
@@ -343,8 +340,12 @@ msgstr "Heart current track in history"
 
 #: src/Widgets/PreferencesPopover.vala:24
 #, fuzzy
+msgid "Heart current track in history"
+msgstr "Heart current track in history"
+
+#: src/Widgets/PreferencesPopover.vala:24
 msgid "About"
-msgstr "About"
+msgstr "વિશે"
 
 #. Voting
 #: src/Widgets/PreferencesPopover.vala:30
@@ -363,9 +364,8 @@ msgstr ""
 
 #. Theme
 #: src/Widgets/PreferencesPopover.vala:38
-#, fuzzy
 msgid "System"
-msgstr "System"
+msgstr "તંત્ર"
 
 #: src/Widgets/PreferencesPopover.vala:39
 #, fuzzy
@@ -378,9 +378,8 @@ msgid "Dark mode"
 msgstr "Dark mode"
 
 #: src/Widgets/PreferencesPopover.vala:47
-#, fuzzy
 msgid "Theme"
-msgstr "Theme"
+msgstr "થેમ"
 
 #. Autoplay
 #: src/Widgets/PreferencesPopover.vala:52
@@ -461,8 +460,12 @@ msgstr "Show a movable popup with images discovered in the stream metadata"
 
 #: src/Widgets/PreferencesPopover.vala:108
 #, fuzzy
+msgid "Show a movable popup with images discovered in the stream metadata"
+msgstr "Show a movable popup with images discovered in the stream metadata"
+
+#: src/Widgets/PreferencesPopover.vala:108
 msgid "Language"
-msgstr "Language"
+msgstr "ભાષા"
 
 #: src/Widgets/PreferencesPopover.vala:109
 #, fuzzy
@@ -492,19 +495,19 @@ msgstr "Save File"
 #: src/Widgets/PreferencesPopover.vala:253 src/Widgets/Window.vala:533
 #, fuzzy
 msgid "_Cancel"
-msgstr "_Cancel"
+msgstr "_રદ કરો"
 
 #: src/Widgets/PreferencesPopover.vala:216 src/Widgets/Window.vala:522
 #: src/Widgets/Window.vala:534
 #, fuzzy
 msgid "_Save"
-msgstr "_Save"
+msgstr "_સેવ"
 
 #. warning("Error: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:237
 #, fuzzy
 msgid "Error"
-msgstr "Error"
+msgstr "ખામી"
 
 #: src/Widgets/PreferencesPopover.vala:250
 #, fuzzy
