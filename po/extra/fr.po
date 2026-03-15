@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-14 13:22-0700\n"
-"PO-Revision-Date: 2026-03-14 04:19+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2026-03-15 18:10+0000\n"
+"Last-Translator: \"David D.\" <dadu042@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/tuner/tuner-"
 "desktop/fr/>\n"
 "Language: fr\n"
@@ -70,46 +69,54 @@ msgid "Tuner with light theme, Discover"
 msgstr "Tuner avec thème léger, Découvrez"
 
 msgid "Tuner search bar"
-msgstr ""
+msgstr "Barre de recherche de Tuner"
 
 msgid "Tuner starred station with metadata and stream image"
 msgstr ""
+"Station mise en étoile dans Tuner avec des métadonnées et une image en "
+"streaming"
 
 msgid "Tuner thistory and favorite tracks"
-msgstr ""
+msgstr "Historique de Tuner et pistes préférées"
 
 msgid "Tuner Jukebox playing, looking at saved search"
 msgstr ""
+"Jukebox de Tuner en cours de lecture, regardant la recherche enregistrée"
 
 msgid "Tuner offline"
-msgstr ""
+msgstr "Tuner hors ligne"
 
 msgid "Tuner with dark theme, preferences"
-msgstr ""
+msgstr "Tuner avec thème sombre, préférences"
 
 msgid "Feature release:"
-msgstr ""
+msgstr "Nouvelle fonctionnalité sortie :"
 
 msgid "Starred Stations can now be ordered via Drag and Drop"
 msgstr ""
+"Les stations étoilées peuvent maintenant être ordonnées via glisser-déposer"
 
 msgid "Startup Jingle"
-msgstr ""
+msgstr "Jingle de démarrage"
 
 msgid "Copy Stream Metadata to clipboard with a Right Click"
 msgstr ""
+"Copier les métadonnées du flux dans le presse-papiers avec un clic droit"
 
 msgid "Images in stream metadata are displayed in a frameless window"
 msgstr ""
+"Les images dans les métadonnées de flux sont affichées dans une fenêtre sans "
+"cadre"
 
 msgid "Titles can be Hearted in the play history"
-msgstr ""
+msgstr "Des titres peuvent être mis en coeur dans l’historique de lecture"
 
 msgid "Exiting with Hearted Titles will prompt to save the list"
 msgstr ""
+"Quitter avec des titres mis en coeur vous invitera à enregistrer la liste"
 
 msgid "Categories expansion is remembered"
-msgstr ""
+msgstr "L’expansion des catégories est mémorisée"
 
 msgid "Refactored mucho"
 msgstr ""
