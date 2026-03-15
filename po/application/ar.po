@@ -9,8 +9,9 @@ msgstr ""
 "Project-Id-Version: io.github.tuner_labs.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-14 13:23-0700\n"
-"PO-Revision-Date: 2026-03-14 22:02+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-03-15 18:11+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "ar/>\n"
 "Language: ar\n"
@@ -141,9 +142,8 @@ msgid "Encoder Version"
 msgstr "إصدار برنامج الترميز"
 
 #: src/Models/StreamMetadata.vala:44
-#, fuzzy
 msgid "Encoded by"
-msgstr "Encoded by"
+msgstr "مشفرة"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Date Time"
@@ -158,14 +158,12 @@ msgid "Has CRC"
 msgstr "لجنة حقوق الطفل"
 
 #: src/Models/StreamMetadata.vala:48
-#, fuzzy
 msgid "ID3 Private"
 msgstr "ID3 Private"
 
 #: src/Models/StreamMetadata.vala:49
-#, fuzzy
 msgid "GStreamer Sample"
-msgstr "GStreamer Sample"
+msgstr "العينات"
 
 #.
 #. Display Assets
@@ -280,9 +278,8 @@ msgstr "نجم هذه المحطة"
 #.
 #. Search button
 #: src/Widgets/HeaderBar.vala:182
-#, fuzzy
 msgid "Search"
-msgstr "Search"
+msgstr "بحث"
 
 #: src/Widgets/HeaderBar.vala:190
 msgid "Preferences"
@@ -293,9 +290,8 @@ msgid "History"
 msgstr "التاريخ"
 
 #: src/Widgets/HeaderBar.vala:198
-#, fuzzy
 msgid "Heart current track in history"
-msgstr "Heart current track in history"
+msgstr "مسار القلب في التاريخ"
 
 #: src/Widgets/PreferencesPopover.vala:24
 msgid "About"
@@ -344,18 +340,16 @@ msgstr "إذا مُكّنَ، عندما تَبْدأُ تونر هو سَيَب
 
 #. Restart Playing after network interuption
 #: src/Widgets/PreferencesPopover.vala:60
-#, fuzzy
 msgid "Restart playing after a network outage"
-msgstr "Restart playing after a network outage"
+msgstr "إعادة اللعب بعد انقطاع الشبكة"
 
 #: src/Widgets/PreferencesPopover.vala:62
-#, fuzzy
 msgid ""
 "If enabled, Tuner will restart playing the current station if it was stopped "
 "by a network outage"
 msgstr ""
-"If enabled, Tuner will restart playing the current station if it was stopped "
-"by a network outage"
+"إذا مُكّن من ذلك، (تونر) سيعيد تشغيل المحطة الحالية إذا تم إيقافها من قبل شبكة "
+"خارجية"
 
 #. Start on Starred
 #: src/Widgets/PreferencesPopover.vala:68
@@ -388,23 +382,20 @@ msgstr ""
 "مسار العرض"
 
 #: src/Widgets/PreferencesPopover.vala:88
-#, fuzzy
 msgid "Stream metadata image popup"
-msgstr "Stream metadata image popup"
+msgstr "صورة طبق الأصل"
 
 #: src/Widgets/PreferencesPopover.vala:90
-#, fuzzy
 msgid "Show a movable popup with images discovered in the stream metadata"
-msgstr "Show a movable popup with images discovered in the stream metadata"
+msgstr "اظهروا بعض الصور المتحركة المكتشفة في الميضات"
 
 #: src/Widgets/PreferencesPopover.vala:108
 msgid "Language"
 msgstr "لغة"
 
 #: src/Widgets/PreferencesPopover.vala:109
-#, fuzzy
 msgid "Language changes restart Tuner"
-msgstr "Language changes restart Tuner"
+msgstr "التغييرات اللغوية من جديد"
 
 #. end language selection
 #. Export starred
@@ -493,14 +484,12 @@ msgid "Stop Playback requested"
 msgstr "توقف بلايباك طلب"
 
 #: src/Widgets/Window.vala:519
-#, fuzzy
 msgid "Save hearted tracks to a file?"
-msgstr "Save hearted tracks to a file?"
+msgstr "انقذوا مسارات القلب للملف؟?"
 
 #: src/Widgets/Window.vala:521
-#, fuzzy
 msgid "_Don't Save"
-msgstr "_Don't Save"
+msgstr "لا تنقذ"
 
 #~ msgid "Stream Metadata"
 #~ msgstr "بيانات تعريف البث"

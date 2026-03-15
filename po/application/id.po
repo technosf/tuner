@@ -9,8 +9,9 @@ msgstr ""
 "Project-Id-Version: io.github.tuner_labs.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-14 13:23-0700\n"
-"PO-Revision-Date: 2026-03-14 22:02+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-03-15 18:11+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/tuner/tuner-"
 "ui/id/>\n"
 "Language: id\n"
@@ -140,9 +141,8 @@ msgid "Encoder Version"
 msgstr "Versi Encoder"
 
 #: src/Models/StreamMetadata.vala:44
-#, fuzzy
 msgid "Encoded by"
-msgstr "Encoded by"
+msgstr "Dikodekan oleh"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Date Time"
@@ -157,14 +157,12 @@ msgid "Has CRC"
 msgstr "Login"
 
 #: src/Models/StreamMetadata.vala:48
-#, fuzzy
 msgid "ID3 Private"
-msgstr "ID3 Private"
+msgstr "ID3 Pribadi"
 
 #: src/Models/StreamMetadata.vala:49
-#, fuzzy
 msgid "GStreamer Sample"
-msgstr "GStreamer Sample"
+msgstr "Sampel GStreamer"
 
 #.
 #. Display Assets
@@ -250,14 +248,13 @@ msgid "Jukebox"
 msgstr "Login"
 
 #: src/Widgets/Display.vala:699
-#, fuzzy, c-format
+#, c-format
 msgid "Double click to shuffle through %1$u stations"
-msgstr "Double click to shuffle through %1$u stations"
+msgstr "Klik ganda ke shuffle melalui stasiun %1$u"
 
 #: src/Widgets/Display.vala:700
-#, fuzzy
 msgid "one, every ten minutes, for %2$u days"
-msgstr "one, every ten minutes, for %2$u days"
+msgstr "satu, setiap sepuluh menit, untuk %2$u hari"
 
 #: src/Widgets/Display.vala:766
 msgid "Saved Search"
@@ -280,9 +277,8 @@ msgstr "Sitemap"
 #.
 #. Search button
 #: src/Widgets/HeaderBar.vala:182
-#, fuzzy
 msgid "Search"
-msgstr "Search"
+msgstr "Cari"
 
 #: src/Widgets/HeaderBar.vala:190
 msgid "Preferences"
@@ -293,9 +289,8 @@ msgid "History"
 msgstr "History"
 
 #: src/Widgets/HeaderBar.vala:198
-#, fuzzy
 msgid "Heart current track in history"
-msgstr "Heart current track in history"
+msgstr "Trek arus jantung dalam sejarah"
 
 #: src/Widgets/PreferencesPopover.vala:24
 msgid "About"
@@ -347,18 +342,16 @@ msgstr ""
 
 #. Restart Playing after network interuption
 #: src/Widgets/PreferencesPopover.vala:60
-#, fuzzy
 msgid "Restart playing after a network outage"
-msgstr "Restart playing after a network outage"
+msgstr "Restart bermain setelah pemadaman jaringan"
 
 #: src/Widgets/PreferencesPopover.vala:62
-#, fuzzy
 msgid ""
 "If enabled, Tuner will restart playing the current station if it was stopped "
 "by a network outage"
 msgstr ""
-"If enabled, Tuner will restart playing the current station if it was stopped "
-"by a network outage"
+"Jika diaktifkan, Tuner akan restart bermain stasiun saat ini jika dihentikan "
+"oleh pemadaman jaringan"
 
 #. Start on Starred
 #: src/Widgets/PreferencesPopover.vala:68
@@ -393,23 +386,21 @@ msgstr ""
 "aliran diaktifkan"
 
 #: src/Widgets/PreferencesPopover.vala:88
-#, fuzzy
 msgid "Stream metadata image popup"
-msgstr "Stream metadata image popup"
+msgstr "Streaming gambar metadata popup"
 
 #: src/Widgets/PreferencesPopover.vala:90
-#, fuzzy
 msgid "Show a movable popup with images discovered in the stream metadata"
-msgstr "Show a movable popup with images discovered in the stream metadata"
+msgstr ""
+"Tampilkan popup bergerak dengan gambar yang ditemukan dalam metadata aliran"
 
 #: src/Widgets/PreferencesPopover.vala:108
 msgid "Language"
 msgstr "Bahasa"
 
 #: src/Widgets/PreferencesPopover.vala:109
-#, fuzzy
 msgid "Language changes restart Tuner"
-msgstr "Language changes restart Tuner"
+msgstr "Bahasa perubahan restart Tuner"
 
 #. end language selection
 #. Export starred
@@ -439,7 +430,6 @@ msgstr "_Simpan"
 
 #. warning("Error: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:237
-#, fuzzy
 msgid "Error"
 msgstr "Error"
 
@@ -453,9 +443,8 @@ msgstr "_Buka"
 
 #. warning("Error reading file: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:277
-#, fuzzy
 msgid "Error reading file"
-msgstr "Error reading file"
+msgstr "Galat saat membaca berkas"
 
 #. ----------------------------------------------
 #: src/Widgets/StationContextMenu.vala:91
@@ -476,15 +465,13 @@ msgstr "Copy Stream-URI ke clipboard"
 
 #. warning (@"Unable to open website: $(e.message)");
 #: src/Widgets/StationContextMenu.vala:149
-#, fuzzy
 msgid "Unable to open website"
-msgstr "Unable to open website"
+msgstr "Tidak dapat membuka situs web"
 
 #. item.label = _station.starred ? Application.UNSTAR_CHAR + _("Unstar this station") : Application.STAR_CHAR + _("Star this station");
 #: src/Widgets/StationContextMenu.vala:172
-#, fuzzy
 msgid "Unstar this station"
-msgstr "Unstar this station"
+msgstr "Unstar stasiun ini"
 
 #. Private
 #: src/Widgets/Window.vala:71
@@ -504,14 +491,12 @@ msgid "Stop Playback requested"
 msgstr "Stop Playback diminta"
 
 #: src/Widgets/Window.vala:519
-#, fuzzy
 msgid "Save hearted tracks to a file?"
-msgstr "Save hearted tracks to a file?"
+msgstr "Simpan trek jantung ke file?"
 
 #: src/Widgets/Window.vala:521
-#, fuzzy
 msgid "_Don't Save"
-msgstr "_Don't Save"
+msgstr "Sitemap"
 
 #~ msgid "Stream Metadata"
 #~ msgstr "Metadata"

@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: io.github.tuner_labs.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-14 13:23-0700\n"
-"PO-Revision-Date: 2026-03-14 22:03+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-03-15 18:11+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/tuner/tuner-"
 "ui/lt/>\n"
 "Language: lt\n"
@@ -157,9 +158,8 @@ msgid "Encoder Version"
 msgstr "Encoder Version"
 
 #: src/Models/StreamMetadata.vala:44
-#, fuzzy
 msgid "Encoded by"
-msgstr "Encoded by"
+msgstr "Koduota pasinaudojus"
 
 #: src/Models/StreamMetadata.vala:45
 #, fuzzy
@@ -314,9 +314,8 @@ msgstr "Star this station"
 #.
 #. Search button
 #: src/Widgets/HeaderBar.vala:182
-#, fuzzy
 msgid "Search"
-msgstr "Search"
+msgstr "Ieškoti"
 
 #: src/Widgets/HeaderBar.vala:190
 msgid "Preferences"
@@ -484,9 +483,8 @@ msgstr "Iš_saugoti"
 
 #. warning("Error: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:237
-#, fuzzy
 msgid "Error"
-msgstr "Error"
+msgstr "Klaida"
 
 #: src/Widgets/PreferencesPopover.vala:250
 msgid "Choose a file"
@@ -498,9 +496,8 @@ msgstr "A_tverti"
 
 #. warning("Error reading file: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:277
-#, fuzzy
 msgid "Error reading file"
-msgstr "Error reading file"
+msgstr "Klaida nuskaitant failą"
 
 #. ----------------------------------------------
 #: src/Widgets/StationContextMenu.vala:91
