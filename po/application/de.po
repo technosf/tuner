@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: io.github.tuner_labs.tuner\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-14 13:23-0700\n"
-"PO-Revision-Date: 2026-03-14 22:02+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-03-15 18:11+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "de/>\n"
 "Language: de\n"
@@ -148,9 +148,8 @@ msgid "Encoder Version"
 msgstr "Encoder-Version"
 
 #: src/Models/StreamMetadata.vala:44
-#, fuzzy
 msgid "Encoded by"
-msgstr "Encoded by"
+msgstr "Kodiert durch"
 
 #: src/Models/StreamMetadata.vala:45
 msgid "Date Time"
@@ -165,14 +164,12 @@ msgid "Has CRC"
 msgstr "Hat CRC"
 
 #: src/Models/StreamMetadata.vala:48
-#, fuzzy
 msgid "ID3 Private"
-msgstr "ID3 Private"
+msgstr "ID3 Privat"
 
 #: src/Models/StreamMetadata.vala:49
-#, fuzzy
 msgid "GStreamer Sample"
-msgstr "GStreamer Sample"
+msgstr "GStreamer Stichprobe"
 
 #.
 #. Display Assets
@@ -287,9 +284,8 @@ msgstr "Star dieser Station"
 #.
 #. Search button
 #: src/Widgets/HeaderBar.vala:182
-#, fuzzy
 msgid "Search"
-msgstr "Search"
+msgstr "Suche"
 
 #: src/Widgets/HeaderBar.vala:190
 msgid "Preferences"
@@ -300,9 +296,8 @@ msgid "History"
 msgstr "Verlauf"
 
 #: src/Widgets/HeaderBar.vala:198
-#, fuzzy
 msgid "Heart current track in history"
-msgstr "Heart current track in history"
+msgstr "Herzaktuelle Spur in der Geschichte"
 
 #: src/Widgets/PreferencesPopover.vala:24
 msgid "About"
@@ -397,14 +392,14 @@ msgstr ""
 "aktiviert ist"
 
 #: src/Widgets/PreferencesPopover.vala:88
-#, fuzzy
 msgid "Stream metadata image popup"
-msgstr "Stream metadata image popup"
+msgstr "Metadaten-Bild-Popup"
 
 #: src/Widgets/PreferencesPopover.vala:90
-#, fuzzy
 msgid "Show a movable popup with images discovered in the stream metadata"
-msgstr "Show a movable popup with images discovered in the stream metadata"
+msgstr ""
+"Zeigen Sie einen beweglichen Popup mit Bildern, die in den Stream-Metadaten "
+"entdeckt wurden"
 
 #: src/Widgets/PreferencesPopover.vala:108
 msgid "Language"
@@ -503,14 +498,12 @@ msgid "Stop Playback requested"
 msgstr "Zurück zur Übersicht"
 
 #: src/Widgets/Window.vala:519
-#, fuzzy
 msgid "Save hearted tracks to a file?"
-msgstr "Save hearted tracks to a file?"
+msgstr "Speichern Sie herzhafte Tracks zu einer Datei?"
 
 #: src/Widgets/Window.vala:521
-#, fuzzy
 msgid "_Don't Save"
-msgstr "_Don't Save"
+msgstr "- Nicht speichern"
 
 #~ msgid "Stream Metadata"
 #~ msgstr "Metadaten speichern"

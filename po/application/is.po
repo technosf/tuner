@@ -2,13 +2,15 @@
 # This file is put in the public domain.
 # technosf <535060+technosf@users.noreply.github.com>, 2026.
 # Prefill add-on <noreply-addon-prefill@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: io.github.tuner_labs.tuner 2.0.1-beta.2\n"
 "Report-Msgid-Bugs-To: 535060+technosf@users.noreply.github.com\n"
 "POT-Creation-Date: 2026-03-14 13:23-0700\n"
-"PO-Revision-Date: 2026-03-14 22:02+0000\n"
-"Last-Translator: Prefill add-on <noreply-addon-prefill@weblate.org>\n"
+"PO-Revision-Date: 2026-03-15 18:11+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Icelandic <https://hosted.weblate.org/projects/tuner/tuner-ui/"
 "is/>\n"
 "Language: is\n"
@@ -26,9 +28,8 @@ msgid "Station no longer in the index"
 msgstr "Station no longer in the index"
 
 #: src/Models/Station.vala:355
-#, fuzzy
 msgid "Changes"
-msgstr "Changes"
+msgstr "Breytingar"
 
 #: src/Models/Station.vala:356
 #, fuzzy
@@ -56,9 +57,8 @@ msgid "Station tags"
 msgstr "Station tags"
 
 #: src/Models/Station.vala:361 src/Models/StreamMetadata.vala:32
-#, fuzzy
 msgid "Bitrate"
-msgstr "Bitrate"
+msgstr "Bitrat"
 
 #: src/Models/Station.vala:362
 msgid "Codec"
@@ -66,44 +66,36 @@ msgstr "Kóðari"
 
 #. Ordered array of tags and descriptions
 #: src/Models/StreamMetadata.vala:23
-#, fuzzy
 msgid "Title"
-msgstr "Title"
+msgstr "Titill"
 
 #: src/Models/StreamMetadata.vala:24
-#, fuzzy
 msgid "Artist"
-msgstr "Artist"
+msgstr "Listamaður"
 
 #: src/Models/StreamMetadata.vala:25
-#, fuzzy
 msgid "Album"
-msgstr "Album"
+msgstr "Albúm"
 
 #: src/Models/StreamMetadata.vala:26
-#, fuzzy
 msgid "Image"
-msgstr "Image"
+msgstr "Mynd"
 
 #: src/Models/StreamMetadata.vala:27
-#, fuzzy
 msgid "Genre"
-msgstr "Genre"
+msgstr "Gerð"
 
 #: src/Models/StreamMetadata.vala:28
-#, fuzzy
 msgid "Homepage"
-msgstr "Homepage"
+msgstr "Heimasíða"
 
 #: src/Models/StreamMetadata.vala:29
-#, fuzzy
 msgid "Organization"
-msgstr "Organization"
+msgstr "Skipulagsheild"
 
 #: src/Models/StreamMetadata.vala:30
-#, fuzzy
 msgid "Location"
-msgstr "Location"
+msgstr "Staðsetning"
 
 #: src/Models/StreamMetadata.vala:31
 #, fuzzy
@@ -203,18 +195,16 @@ msgid "Selections"
 msgstr "Val"
 
 #: src/Widgets/Display.vala:115
-#, fuzzy
 msgid "Library"
-msgstr "Library"
+msgstr "Bókasafn"
 
 #: src/Widgets/Display.vala:116
 msgid "Saved Searches"
 msgstr "Vistaðar Leitir"
 
 #: src/Widgets/Display.vala:117
-#, fuzzy
 msgid "Explore"
-msgstr "Explore"
+msgstr "Uppgötva"
 
 #: src/Widgets/Display.vala:118
 msgid "Genres"
@@ -234,9 +224,8 @@ msgid "Talk, News, Sport"
 msgstr "Spjall, fréttir, íþróttir"
 
 #: src/Widgets/Display.vala:441
-#, fuzzy
 msgid "Discover"
-msgstr "Discover"
+msgstr "Kynnast Weblate"
 
 #: src/Widgets/Display.vala:442
 #, fuzzy
@@ -249,9 +238,8 @@ msgid "Discover more stations"
 msgstr "Discover more stations"
 
 #: src/Widgets/Display.vala:465
-#, fuzzy
 msgid "Trending"
-msgstr "Trending"
+msgstr "Vinsælt"
 
 #: src/Widgets/Display.vala:466
 #, fuzzy
@@ -321,19 +309,16 @@ msgstr "Star this station"
 #.
 #. Search button
 #: src/Widgets/HeaderBar.vala:182
-#, fuzzy
 msgid "Search"
-msgstr "Search"
+msgstr "Leita"
 
 #: src/Widgets/HeaderBar.vala:190
-#, fuzzy
 msgid "Preferences"
-msgstr "Preferences"
+msgstr "Kjörstillingar"
 
 #: src/Widgets/HeaderBar.vala:194
-#, fuzzy
 msgid "History"
-msgstr "History"
+msgstr "Breytingaferill"
 
 #: src/Widgets/HeaderBar.vala:198
 #, fuzzy
@@ -341,9 +326,8 @@ msgid "Heart current track in history"
 msgstr "Heart current track in history"
 
 #: src/Widgets/PreferencesPopover.vala:24
-#, fuzzy
 msgid "About"
-msgstr "About"
+msgstr "Um hugbúnaðinn"
 
 #. Voting
 #: src/Widgets/PreferencesPopover.vala:30
@@ -362,9 +346,8 @@ msgstr ""
 
 #. Theme
 #: src/Widgets/PreferencesPopover.vala:38
-#, fuzzy
 msgid "System"
-msgstr "System"
+msgstr "Kerfi"
 
 #: src/Widgets/PreferencesPopover.vala:39
 #, fuzzy
@@ -372,14 +355,12 @@ msgid "Light mode"
 msgstr "Light mode"
 
 #: src/Widgets/PreferencesPopover.vala:40
-#, fuzzy
 msgid "Dark mode"
 msgstr "Dark mode"
 
 #: src/Widgets/PreferencesPopover.vala:47
-#, fuzzy
 msgid "Theme"
-msgstr "Theme"
+msgstr "Þema"
 
 #. Autoplay
 #: src/Widgets/PreferencesPopover.vala:52
@@ -459,9 +440,8 @@ msgid "Show a movable popup with images discovered in the stream metadata"
 msgstr "Show a movable popup with images discovered in the stream metadata"
 
 #: src/Widgets/PreferencesPopover.vala:108
-#, fuzzy
 msgid "Language"
-msgstr "Language"
+msgstr "Tungumál"
 
 #: src/Widgets/PreferencesPopover.vala:109
 #, fuzzy
@@ -489,9 +469,8 @@ msgstr "Save File"
 
 #: src/Widgets/PreferencesPopover.vala:215
 #: src/Widgets/PreferencesPopover.vala:253 src/Widgets/Window.vala:533
-#, fuzzy
 msgid "_Cancel"
-msgstr "_Cancel"
+msgstr "_Hætta við"
 
 #: src/Widgets/PreferencesPopover.vala:216 src/Widgets/Window.vala:522
 #: src/Widgets/Window.vala:534
@@ -501,9 +480,8 @@ msgstr "_Save"
 
 #. warning("Error: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:237
-#, fuzzy
 msgid "Error"
-msgstr "Error"
+msgstr "Villa"
 
 #: src/Widgets/PreferencesPopover.vala:250
 #, fuzzy
@@ -511,9 +489,8 @@ msgid "Choose a file"
 msgstr "Choose a file"
 
 #: src/Widgets/PreferencesPopover.vala:254
-#, fuzzy
 msgid "_Open"
-msgstr "_Open"
+msgstr "_Opna"
 
 #. warning("Error reading file: $(e.message)");
 #: src/Widgets/PreferencesPopover.vala:277
@@ -556,9 +533,8 @@ msgstr "Unstar this station"
 
 #. Private
 #: src/Widgets/Window.vala:71
-#, fuzzy
 msgid "Playing in background"
-msgstr "Playing in background"
+msgstr "Bakgrunnsspilun"
 
 #: src/Widgets/Window.vala:72
 #, fuzzy
