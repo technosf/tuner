@@ -54,6 +54,8 @@ sources = files (
 
     'Widgets/TitleBox.vala',
     'Widgets/HeaderBar.vala',
+    'Widgets/FilterButton.vala',
+    'Widgets/FilterPopover.vala',
     'Widgets/PlayButton.vala',
     'Widgets/ListButton.vala',
     'Widgets/StationButton.vala',

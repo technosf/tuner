@@ -438,7 +438,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
                 "discover",
                 "face-smile",
                 _("Discover"),
-                _("Stations to Discover")
+                _("Stations to Discover"),
+                true
             ) {
                 station_set = _directory.load_random_stations(20),
                 action_tooltip_text = _("Discover more stations"),
@@ -518,7 +519,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
                 "starred",
                 "starred",
                 _("Starred by You"),
-                _("Starred by You") + " :"
+                _("Starred by You") + " : "
             ) {
                 station_list_hookup = this,
                 stations = _directory.get_starred()
@@ -608,7 +609,7 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
         {
            add_saved_search( search_term, saved_searches.get (search_term));
         }
-        _saved_searches_category.icon = new ThemedIcon ("library-music");
+        _saved_searches_category.icon = new ThemedIcon ("folder-music");
         _library_category.add (_saved_searches_category);   // Added as last item of library category
 
         // ---------------------------------------------------------------------------
@@ -812,7 +813,8 @@ public class Tuner.Widgets.Display : Gtk.Paned, StationListHookup {
                     genre,
                     "tuner:playlist-symbolic",
                     genre,
-                    genre
+                    genre,
+                    true
                 ) {
                     station_set = directory.load_by_tag (genre.down ())
                 }
