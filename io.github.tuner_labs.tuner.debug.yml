@@ -62,7 +62,6 @@ modules:
   build-options:
     cflags: -g
     cxxflags: -g
-    buildtype: debug
   config-opts:
   - --buildtype=debug
   sources:

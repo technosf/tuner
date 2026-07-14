@@ -41,7 +41,6 @@ public class Tuner.Widgets.ListButton : Gtk.Button
 	private Gtk.ScrolledWindow history_scroller;
 	private Gtk.Label summary_plays_value;
 	private Gtk.Label summary_changes_value;
-	private Gtk.Label summary_distinct_value;
 	private Gtk.Label summary_hearted_value;
 	private Gtk.Label total_play_time_value;
 	private Gee.HashMap<HistoryEntry, Gtk.ListBoxRow> rows_by_entry;
@@ -108,7 +107,6 @@ public class Tuner.Widgets.ListButton : Gtk.Button
 		summary_box.get_style_context().add_class("history-summary-box");
 		summary_box.pack_start(create_summary_tile(_("Tracks"), out summary_plays_value), true, true, 0);
 		summary_box.pack_start(create_summary_tile(_("Stations"), out summary_changes_value), true, true, 0);
-		summary_box.pack_start(create_summary_tile(_("Unique"), out summary_distinct_value), true, true, 0);
 		summary_box.pack_start(create_summary_tile(_("Hearted"), out summary_hearted_value), true, true, 0);
 		content.pack_start(summary_box, false, false, 0);
 
@@ -436,7 +434,6 @@ public class Tuner.Widgets.ListButton : Gtk.Button
 	{
 		summary_plays_value.label = history.entries.size.to_string();
 		summary_changes_value.label = history.station_change_count.to_string();
-		summary_distinct_value.label = history.distinct_track_count.to_string();
 		summary_hearted_value.label = history.hearted_track_count.to_string();
 		if (total_play_time_value != null)
 			total_play_time_value.label = format_total_play_time();
